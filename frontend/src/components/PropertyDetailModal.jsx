@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   X, Building2, MapPin, Train, Calendar, TrendingUp, DollarSign, 
   ShieldCheck, Calculator, Sparkles, ExternalLink, CheckCircle2, ArrowRight
@@ -7,9 +7,16 @@ import {
 import FloorPlanViewer from './FloorPlanViewer';
 
 export default function PropertyDetailModal({ property, onClose, userCriteria, initialTab = 'all' }) {
+  const [modalTab, setModalTab] = useState(initialTab); // 'all', 'floorPlan', 'financial'
+
+  useEffect(() => {
+    if (initialTab) {
+      setModalTab(initialTab);
+    }
+  }, [initialTab, property]);
+
   if (!property) return null;
 
-  const [modalTab, setModalTab] = useState(initialTab); // 'all', 'floorPlan', 'financial'
   const sim = property.loanSimulation || {};
   const kb = property.kbPrice || {};
 
@@ -100,10 +107,10 @@ export default function PropertyDetailModal({ property, onClose, userCriteria, i
           </div>
 
           {/* Navigation Sub-Tabs in Modal */}
-          <div className="flex border-b border-slate-200 text-xs font-bold gap-4 pb-1">
+          <div className="flex border-b border-slate-200 text-xs font-bold gap-3 sm:gap-4 pb-1 overflow-x-auto no-scrollbar whitespace-nowrap">
             <button
               onClick={() => setModalTab('all')}
-              className={`pb-2 border-b-2 transition-all cursor-pointer ${
+              className={`pb-2 border-b-2 transition-all cursor-pointer whitespace-nowrap ${
                 modalTab === 'all'
                   ? 'border-blue-600 text-blue-600'
                   : 'border-transparent text-slate-400 hover:text-slate-700'
@@ -113,7 +120,7 @@ export default function PropertyDetailModal({ property, onClose, userCriteria, i
             </button>
             <button
               onClick={() => setModalTab('floorPlan')}
-              className={`pb-2 border-b-2 transition-all cursor-pointer flex items-center gap-1.5 ${
+              className={`pb-2 border-b-2 transition-all cursor-pointer flex items-center gap-1.5 whitespace-nowrap ${
                 modalTab === 'floorPlan'
                   ? 'border-blue-600 text-blue-600'
                   : 'border-transparent text-slate-400 hover:text-slate-700'
@@ -126,7 +133,7 @@ export default function PropertyDetailModal({ property, onClose, userCriteria, i
             </button>
             <button
               onClick={() => setModalTab('financial')}
-              className={`pb-2 border-b-2 transition-all cursor-pointer ${
+              className={`pb-2 border-b-2 transition-all cursor-pointer whitespace-nowrap ${
                 modalTab === 'financial'
                   ? 'border-blue-600 text-blue-600'
                   : 'border-transparent text-slate-400 hover:text-slate-700'

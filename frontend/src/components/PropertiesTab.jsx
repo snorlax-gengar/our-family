@@ -654,10 +654,10 @@ export default function PropertiesTab({
                       <button
                         type="button"
                         onClick={(e) => handleOpenFloorPlan(e, property)}
-                        className="bg-slate-50 hover:bg-blue-600 text-slate-600 hover:text-white px-2 py-0.5 rounded-md text-[10px] sm:text-[11px] font-bold transition-colors flex items-center gap-1 shrink-0 border border-slate-200 cursor-pointer"
+                        className="bg-indigo-50 hover:bg-indigo-600 text-indigo-700 hover:text-white px-2 py-0.5 rounded-md text-[10px] sm:text-[11px] font-extrabold transition-colors flex items-center gap-1 shrink-0 border border-indigo-200 cursor-pointer shadow-2xs"
                         title="평형 도면 열기"
                       >
-                        <Eye className="w-3 h-3 text-blue-600 group-hover:text-white" />
+                        <Eye className="w-3 h-3 text-indigo-600 group-hover:text-white" />
                         <span>{fp.bay || '3-Bay'} 도면</span>
                       </button>
                     </div>
@@ -680,6 +680,30 @@ export default function PropertiesTab({
                         {fp.roomsCount ? `${fp.roomsCount}룸 ${fp.bathroomsCount}욕` : property.rooms} · {fp.structure || '판상형'}
                       </span>
                     </div>
+                  </div>
+
+                  {/* 📐 평형 도면 CAD 바로보기 배너 (모바일 친화적 원클릭 오픈) */}
+                  <div className="px-3.5 sm:px-4 pt-2.5">
+                    <button
+                      type="button"
+                      onClick={(e) => handleOpenFloorPlan(e, property)}
+                      className="w-full py-2 px-3 bg-gradient-to-r from-indigo-50/90 via-blue-50/70 to-indigo-50/90 hover:from-indigo-100 hover:to-blue-100 active:scale-[0.98] text-indigo-950 border border-indigo-200/90 rounded-xl text-xs font-bold transition-all flex items-center justify-between group/fp cursor-pointer shadow-2xs"
+                      title="클릭하여 2D CAD 평면도 및 방별 치수 확인"
+                    >
+                      <div className="flex items-center gap-1.5 truncate">
+                        <span className="text-sm">📐</span>
+                        <span className="font-extrabold text-indigo-950 truncate">
+                          {fp.bay || '3-Bay'} {fp.structure || '판상형'} 도면 CAD
+                        </span>
+                        <span className="text-[10px] bg-indigo-200/60 text-indigo-800 px-1.5 py-0.2 rounded font-semibold whitespace-nowrap">
+                          {fp.roomsCount ? `${fp.roomsCount}룸 ${fp.bathroomsCount}욕` : '치수/확장형'}
+                        </span>
+                      </div>
+                      <span className="text-[11px] font-extrabold text-indigo-600 group-hover/fp:text-indigo-800 flex items-center gap-0.5 whitespace-nowrap shrink-0">
+                        <span>도면 보기</span>
+                        <ChevronRight className="w-3.5 h-3.5" />
+                      </span>
+                    </button>
                   </div>
 
                   {/* 2. Unified Financial Block (매매가, 대출가능액, 필요현금, 월상환액 통합 콤팩트 대시보드) */}

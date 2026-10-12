@@ -468,28 +468,28 @@ export default function FloorPlanViewer({ floorPlan, propertyName, areaSqMeter, 
         </div>
 
         {/* View Toggle (확장형 vs 기본형) */}
-        <div className="flex items-center bg-slate-800 p-1 rounded-xl border border-slate-700 shrink-0 self-start sm:self-center">
+        <div className="flex items-center bg-slate-800 p-1 rounded-xl border border-slate-700 shrink-0 w-full sm:w-auto justify-between sm:justify-start">
           <button
             type="button"
             onClick={() => setIsExpandedMode(true)}
-            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+            className={`flex-1 sm:flex-initial px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer text-center whitespace-nowrap ${
               isExpandedMode
                 ? 'bg-blue-600 text-white shadow-xs'
                 : 'text-slate-400 hover:text-white'
             }`}
           >
-            확장형 평면도 (실사용 극대화)
+            확장형 평면도
           </button>
           <button
             type="button"
             onClick={() => setIsExpandedMode(false)}
-            className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+            className={`flex-1 sm:flex-initial px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer text-center whitespace-nowrap ${
               !isExpandedMode
                 ? 'bg-blue-600 text-white shadow-xs'
                 : 'text-slate-400 hover:text-white'
             }`}
           >
-            기본형 (발코니 보존)
+            기본형 (발코니)
           </button>
         </div>
       </div>
