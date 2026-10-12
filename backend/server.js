@@ -17,26 +17,30 @@ const PORT = process.env.PORT || 5001;
 app.use(cors());
 app.use(express.json());
 
-// Load properties dataset
+// Load properties dataset helper
 const propertiesFilePath = path.join(__dirname, 'data', 'properties.json');
-let propertiesData = [];
-try {
-  propertiesData = JSON.parse(fs.readFileSync(propertiesFilePath, 'utf8'));
-} catch (err) {
-  console.error("Failed to read properties.json:", err.message);
+function loadPropertiesData() {
+  try {
+    return JSON.parse(fs.readFileSync(propertiesFilePath, 'utf8'));
+  } catch (err) {
+    console.error("Failed to read properties.json:", err.message);
+    return [];
+  }
 }
+let propertiesData = loadPropertiesData();
 
 /**
- * 1. 부동산 매물 API (서울 / 경기 5~6억 원대)
+ * 1. 부동산 매물 API (서울 / 경기 신생아 특례 대상 4~8억 원대)
  * 사용자 맞춤형 소득, 만기, 생애최초 여부, MCG 가입 여부 파라미터에 따라
  * 각 매물별로 신생아 특례대출 가능액과 필요 자금을 실시간 자동 계산하여 반환
  */
 app.get('/api/properties', (req, res) => {
+  propertiesData = loadPropertiesData();
   const {
     region, // '서울' or '경기' or '전체'
-    district, // '노원구', '수원시' etc.
-    minPrice = 400000000,
-    maxPrice = 700000000,
+    district, // '노원구', '도봉구', '수원시' etc.
+    minPrice = 300000000,
+    maxPrice = 900000000,
     annualIncome = 80000000,
     isFirstHome = 'false',
     loanTenureYears = 30,

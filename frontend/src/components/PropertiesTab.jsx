@@ -561,7 +561,7 @@ export default function PropertiesTab({
             { id: '400M', label: '4억 원대 (실속)', count: priceBandCounts['400M'] },
             { id: '500M_low', label: '5억 초반 (5.0~5.4억)', count: priceBandCounts['500M_low'] },
             { id: '500M_high', label: '5억 후반 (5.5~5.9억)', count: priceBandCounts['500M_high'] },
-            { id: '600M', label: '6억 원대 (~6.3억)', count: priceBandCounts['600M'] },
+            { id: '600M', label: '6억 원대 이상 (6.0억~)', count: priceBandCounts['600M'] },
           ].map((band) => (
             <button
               key={band.id}
