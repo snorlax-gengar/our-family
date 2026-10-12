@@ -1,40 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2563eb" />
-      <stop offset="100%" stop-color="#4f46e5" />
+    <!-- Warm Hearth Sunset Coral Gradient: 100% warm, friendly, cozy family vibe (No purple/indigo, no lightning) -->
+    <linearGradient id="hearthGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4757" />
+      <stop offset="60%" stop-color="#ff6b4a" />
+      <stop offset="100%" stop-color="#ffa502" />
     </linearGradient>
-    <linearGradient id="roofGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="100%" stop-color="#e0e7ff" />
-    </linearGradient>
-    <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f43f5e" />
-      <stop offset="100%" stop-color="#e11d48" />
-    </linearGradient>
-    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-opacity="0.3"/>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-opacity="0.25"/>
     </filter>
   </defs>
 
-  <!-- iOS-style Squircle Rounded Background -->
-  <rect width="64" height="64" rx="16" fill="url(#bgGrad)" />
+  <!-- iOS-style Squircle Rounded Background Tile (Smooth rounded corners) -->
+  <rect width="64" height="64" rx="16" fill="url(#hearthGrad)" />
 
-  <!-- Cozy House Outline & Roof -->
-  <g filter="url(#shadow)">
-    <!-- Chimney -->
-    <rect x="41" y="16" width="6" height="10" rx="1.5" fill="#cbd5e1" />
+  <g filter="url(#softShadow)">
+    <!-- Chimney on Right -->
+    <rect x="42" y="16" width="6.5" height="12" rx="1.5" fill="#ffffff" />
     
-    <!-- Roof Triangular Path -->
-    <path d="M12 30 L32 14 L52 30" stroke="url(#roofGrad)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
-    
-    <!-- House Base Walls -->
-    <path d="M18 29 L18 48 C18 50 19.5 51 21.5 51 L42.5 51 C44.5 51 46 50 46 48 L46 29" stroke="url(#roofGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="#1e1b4b" fill-opacity="0.25" />
-    
-    <!-- Warm Hearth Heart Emblem in the Center -->
-    <path d="M32 44 C32 44 24 38.5 24 33.5 C24 30.5 26.5 28.5 29.5 28.5 C31 28.5 32 29.5 32 29.5 C32 29.5 33 28.5 34.5 28.5 C37.5 28.5 40 30.5 40 33.5 C40 38.5 32 44 32 44 Z" fill="url(#heartGrad)" />
+    <!-- Heart-shaped Smoke floating out of the chimney -->
+    <path d="M49 12 C49 12 46.5 9.2 46.5 7.2 C46.5 5.8 47.5 4.8 49 4.8 C49.8 4.8 50.4 5.3 50.4 5.3 C50.4 5.3 51 4.8 51.8 4.8 C53.3 4.8 54.3 5.8 54.3 7.2 C54.3 9.2 51.8 12 49 12 Z" fill="#ffffff" opacity="0.95" />
+
+    <!-- Solid Bold White Roof (Crisp triangle gable with rounded peak) -->
+    <path d="M11 31 L30.2 14.5 C31.2 13.6 32.8 13.6 33.8 14.5 L53 31 C54 31.8 53.5 33 52 33 L12 33 C10.5 33 10 31.8 11 31 Z" fill="#ffffff" />
+
+    <!-- Solid White House Body with rounded base -->
+    <rect x="15" y="31" width="34" height="21" rx="4" fill="#ffffff" />
+
+    <!-- Warm Loving Heart in the House Center (Symbolizing Our Family / 우리家) -->
+    <path d="M32 46 C32 46 23.5 39.5 23.5 34 C23.5 30.5 26 28.5 29 28.5 C30.6 28.5 31.5 29.5 32 30 C32.5 29.5 33.4 28.5 35 28.5 C38 28.5 40.5 30.5 40.5 34 C40.5 39.5 32 46 32 46 Z" fill="#ff4757" />
+
+    <!-- Warm Glowing Windows on Left & Right -->
+    <circle cx="20" cy="38" r="1.8" fill="#ffd1d5" />
+    <circle cx="44" cy="38" r="1.8" fill="#ffd1d5" />
   </g>
-
-  <!-- Golden Warm Sparkle Top Left -->
-  <circle cx="16" cy="18" r="2" fill="#fbbf24" />
 </svg>
