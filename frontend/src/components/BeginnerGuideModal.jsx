@@ -51,36 +51,39 @@ export default function BeginnerGuideModal({ onClose }) {
   ];
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-900/60 backdrop-blur-xs flex items-end sm:items-center justify-center p-0 sm:p-4">
       <div 
-        className="relative bg-white rounded-3xl max-w-3xl w-full max-h-[92vh] overflow-y-auto shadow-2xl border border-slate-200"
+        className="relative bg-white rounded-t-3xl sm:rounded-3xl max-w-3xl w-full max-h-[92vh] overflow-y-auto shadow-2xl border-t sm:border border-slate-200"
         onClick={(e) => e.stopPropagation()}
       >
+        {/* Mobile pull handle indicator */}
+        <div className="w-12 h-1.5 bg-slate-300 rounded-full mx-auto mt-2.5 mb-1 sm:hidden" />
+
         {/* Modal Header */}
-        <div className="sticky top-0 bg-white/95 backdrop-blur-xs px-6 py-5 border-b border-slate-100 flex items-center justify-between z-10">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-2xl bg-amber-500/10 text-amber-600 flex items-center justify-center font-bold">
+        <div className="sticky top-0 bg-white/95 backdrop-blur-xs px-4 sm:px-6 py-3.5 sm:py-5 border-b border-slate-100 flex items-center justify-between z-10">
+          <div className="flex items-center gap-2.5 sm:gap-3">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-2xl bg-amber-500/10 text-amber-600 flex items-center justify-center font-bold shrink-0">
               🐣
             </div>
             <div>
-              <h2 className="text-xl font-black text-slate-900 tracking-tight flex items-center gap-2">
-                <span>부린이(부동산 초보)를 위한 3분 핵심 가이드</span>
+              <h2 className="text-base sm:text-xl font-black text-slate-900 tracking-tight flex items-center gap-2">
+                <span>부린이 초보 3분 핵심 가이드</span>
               </h2>
-              <p className="text-xs text-slate-500">
-                어려운 용어 없이, 내집마련 준비할 때 꼭 알아야 할 6가지 질문과 해답
+              <p className="text-[11px] sm:text-xs text-slate-500">
+                어려운 용어 없이, 꼭 알아야 할 핵심 Q&A
               </p>
             </div>
           </div>
           <button
             onClick={onClose}
-            className="p-2 text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-full transition-colors cursor-pointer"
+            className="p-1.5 sm:p-2 text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-full transition-colors cursor-pointer shrink-0"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
         {/* Modal Body */}
-        <div className="p-6 space-y-5">
+        <div className="p-4 sm:p-6 space-y-4 sm:space-y-5">
           {/* Top Quick Tip Banner */}
           <div className="bg-gradient-to-r from-blue-50 via-indigo-50 to-blue-50 p-4 rounded-2xl border border-blue-200/80 flex items-start gap-3">
             <Lightbulb className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />

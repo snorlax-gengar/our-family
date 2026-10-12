@@ -504,7 +504,7 @@ export default function FloorPlanViewer({ floorPlan, propertyName, areaSqMeter, 
 
           <div className="absolute bottom-3 left-3 bg-slate-900/90 backdrop-blur-xs text-[11px] text-slate-400 px-2.5 py-1 rounded-md border border-slate-800 flex items-center gap-1.5">
             <Info className="w-3.5 h-3.5 text-blue-400" />
-            <span>각 방을 마우스로 가리키면 세부 설명과 면적이 표시됩니다.</span>
+            <span>각 방을 터치하거나 마우스를 올리면 세부 설명과 면적이 표시됩니다.</span>
           </div>
         </div>
 

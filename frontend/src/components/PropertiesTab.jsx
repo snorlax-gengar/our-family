@@ -26,6 +26,9 @@ export default function PropertiesTab({
   const [selectedProperty, setSelectedProperty] = useState(null);
   const [modalInitialTab, setModalInitialTab] = useState('all');
   
+  // Mobile simulator collapse state (모바일 화면에서 깔끔한 접기/펼치기)
+  const [isMobileSimulatorOpen, setIsMobileSimulatorOpen] = useState(false);
+
   // Income direct input state
   const [isEditingIncome, setIsEditingIncome] = useState(false);
   const [rawIncomeInput, setRawIncomeInput] = useState('');
@@ -137,8 +140,31 @@ export default function PropertiesTab({
           </div>
         </div>
 
-        {/* Simulator Controls Grid: 4 Harmonized, Balanced Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+        {/* 📱 Mobile Quick Condition Summary & Toggle Pill (모바일 화면 전용 빠른 조건 확인 및 접기/펼치기) */}
+        <div className="sm:hidden mb-4">
+          <div className="bg-slate-950/60 rounded-xl p-3 border border-white/15 flex items-center justify-between gap-2 shadow-inner">
+            <div className="text-[11px] leading-tight">
+              <div className="text-amber-300 font-black flex items-center gap-1">
+                <DollarSign className="w-3.5 h-3.5" />
+                <span>{(Math.round(userCriteria.annualIncome / 10000)).toLocaleString()}만 원</span>
+                <span className="text-[10px] text-emerald-400 font-extrabold bg-emerald-500/20 px-1 rounded ml-1">LTV 70%</span>
+              </div>
+              <div className="text-slate-300 text-[10px] mt-0.5">
+                {userCriteria.isFirstHome ? '생애최초(취득세 감면)' : '일반 무주택'} · {userCriteria.loanTenureYears}년 만기 {userCriteria.useMcg && '· MCG'}
+              </div>
+            </div>
+            <button
+              type="button"
+              onClick={() => setIsMobileSimulatorOpen(!isMobileSimulatorOpen)}
+              className="bg-blue-600 hover:bg-blue-500 text-white text-[11px] font-bold px-3 py-1.5 rounded-lg shrink-0 flex items-center gap-1 transition-all cursor-pointer shadow-sm active:scale-95"
+            >
+              <span>{isMobileSimulatorOpen ? '조건 접기 ▴' : '조건 변경 ▾'}</span>
+            </button>
+          </div>
+        </div>
+
+        {/* Simulator Controls Grid: 4 Harmonized, Balanced Cards (모바일에서는 접기/펼치기 제어, 태블릿/데스크톱에서는 상시 표시) */}
+        <div className={`${isMobileSimulatorOpen ? 'grid' : 'hidden'} sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs transition-all`}>
           {/* Card 1: 부부합산 연소득 (정밀 슬라이더 + 직접 입력 + 미세 조정) */}
           <div className="bg-white/10 p-4 rounded-2xl border border-white/15 backdrop-blur-md flex flex-col justify-between shadow-lg hover:border-white/25 transition-all">
             <div>
@@ -450,31 +476,31 @@ export default function PropertiesTab({
           </div>
         </div>
 
-        {/* 🌟 가격별 정렬 바로가기 버튼 바 (요청사항 반영: 가격별 정렬) */}
-        <div className="bg-slate-50 p-3 rounded-xl border border-slate-200/90 flex flex-wrap items-center justify-between gap-2.5">
-          <div className="flex items-center gap-1.5 flex-wrap">
-            <span className="text-xs font-bold text-slate-700 mr-1 flex items-center gap-1">
+        {/* 🌟 가격별 정렬 바로가기 버튼 바 (요청사항 반영: 가격별 정렬, 모바일 가로 스크롤 최적화) */}
+        <div className="bg-slate-50 p-2.5 sm:p-3 rounded-xl border border-slate-200/90 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
+          <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-nowrap pb-1 sm:pb-0">
+            <span className="text-xs font-bold text-slate-700 mr-1 flex items-center gap-1 shrink-0">
               <ArrowUpDown className="w-3.5 h-3.5 text-blue-600" />
-              <span>정렬 기준:</span>
+              <span>정렬:</span>
             </span>
 
             <button
               type="button"
               onClick={() => setSortOption('priceLow')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer flex items-center gap-1 ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap flex items-center gap-1 shrink-0 ${
                 sortOption === 'priceLow'
                   ? 'bg-blue-600 text-white shadow-xs'
                   : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-100'
               }`}
             >
-              <span>💰 가격 낮은순 (4억대부터)</span>
+              <span>💰 가격 낮은순 (4억대~)</span>
               <span className="text-[10px]">▼</span>
             </button>
 
             <button
               type="button"
               onClick={() => setSortOption('priceHigh')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer flex items-center gap-1 ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap flex items-center gap-1 shrink-0 ${
                 sortOption === 'priceHigh'
                   ? 'bg-blue-600 text-white shadow-xs'
                   : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-100'
@@ -487,19 +513,19 @@ export default function PropertiesTab({
             <button
               type="button"
               onClick={() => setSortOption('jeonseHigh')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                 sortOption === 'jeonseHigh'
                   ? 'bg-blue-600 text-white shadow-xs'
                   : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-100'
               }`}
             >
-              전세가율 높은순 (안전갭)
+              전세가율순 (안전갭)
             </button>
 
             <button
               type="button"
               onClick={() => setSortOption('yearNew')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                 sortOption === 'yearNew'
                   ? 'bg-blue-600 text-white shadow-xs'
                   : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-100'
@@ -511,7 +537,7 @@ export default function PropertiesTab({
             <button
               type="button"
               onClick={() => setSortOption('unitsHigh')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                 sortOption === 'unitsHigh'
                   ? 'bg-blue-600 text-white shadow-xs'
                   : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-100'
@@ -521,7 +547,7 @@ export default function PropertiesTab({
             </button>
           </div>
 
-          <div className="text-xs text-slate-500">
+          <div className="text-[11px] sm:text-xs text-slate-500 shrink-0">
             현재 정렬: <strong className="text-blue-600 font-extrabold">{sortOption === 'priceLow' ? '가격 낮은순' : sortOption === 'priceHigh' ? '가격 높은순' : sortOption === 'jeonseHigh' ? '전세가율순' : '추천순'}</strong>
           </div>
         </div>
@@ -608,11 +634,11 @@ export default function PropertiesTab({
               <div
                 key={property.id}
                 onClick={() => handleOpenDetail(property)}
-                className="bg-white rounded-2xl border border-slate-200 hover:border-blue-400 hover:shadow-xl transition-all duration-200 flex flex-col justify-between overflow-hidden cursor-pointer group"
+                className="bg-white rounded-2xl border border-slate-200 hover:border-blue-400 hover:shadow-xl transition-all duration-200 flex flex-col justify-between overflow-hidden cursor-pointer group active:scale-[0.99]"
               >
                 <div>
                   {/* Card Header */}
-                  <div className="p-5 pb-3 border-b border-slate-100">
+                  <div className="p-4 sm:p-5 pb-3 border-b border-slate-100">
                     <div className="flex items-center justify-between gap-2 mb-2">
                       <div className="flex items-center gap-1.5">
                         <span className="bg-slate-100 text-slate-700 text-[11px] font-bold px-2 py-0.5 rounded">
@@ -626,7 +652,7 @@ export default function PropertiesTab({
                     </div>
 
                     <div className="flex items-baseline justify-between">
-                      <h3 className="text-lg font-black text-slate-900 group-hover:text-blue-600 transition-colors">
+                      <h3 className="text-base sm:text-lg font-black text-slate-900 group-hover:text-blue-600 transition-colors">
                         {property.name}
                       </h3>
                       <span className="text-sm font-bold text-slate-600">
@@ -641,12 +667,12 @@ export default function PropertiesTab({
                   </div>
 
                   {/* 🌟 평형 도면 스펙 바 & 도면 바로보기 버튼 */}
-                  <div className="px-5 py-2.5 bg-slate-900 text-white flex items-center justify-between text-xs">
+                  <div className="px-4 sm:px-5 py-2 sm:py-2.5 bg-slate-900 text-white flex items-center justify-between text-xs">
                     <div className="flex items-center gap-2">
                       <span className="bg-blue-600 font-extrabold text-[10px] px-2 py-0.5 rounded">
                         {fp.bay || '3-Bay'}
                       </span>
-                      <span className="text-slate-300 font-medium">
+                      <span className="text-slate-300 font-medium text-[11px] sm:text-xs">
                         {fp.roomsCount ? `${fp.roomsCount}룸 ${fp.bathroomsCount}욕실` : property.rooms}
                       </span>
                       <span className="text-slate-400 text-[11px] hidden sm:inline">
@@ -666,10 +692,10 @@ export default function PropertiesTab({
                   </div>
 
                   {/* Price & KB Price Block */}
-                  <div className="p-5 py-3.5 bg-slate-50/70 border-b border-slate-100">
+                  <div className="p-4 sm:p-5 py-3 sm:py-3.5 bg-slate-50/70 border-b border-slate-100">
                     <div className="flex justify-between items-baseline mb-2">
                       <span className="text-xs font-medium text-slate-500">매매 기준가</span>
-                      <span className="text-2xl font-black text-blue-700 tracking-tight">
+                      <span className="text-xl sm:text-2xl font-black text-blue-700 tracking-tight">
                         {property.priceDisplay}원
                       </span>
                     </div>
@@ -691,7 +717,7 @@ export default function PropertiesTab({
                   </div>
 
                   {/* 신생아 특례대출 계산 결과 하이라이트 */}
-                  <div className="p-5 py-3.5 bg-gradient-to-br from-blue-50/50 to-indigo-50/50 space-y-2">
+                  <div className="p-4 sm:p-5 py-3 sm:py-3.5 bg-gradient-to-br from-blue-50/50 to-indigo-50/50 space-y-2">
                     <div className="flex items-center justify-between text-xs">
                       <span className="font-bold text-blue-900 flex items-center gap-1">
                         <ShieldCheck className="w-4 h-4 text-blue-600" />
@@ -703,7 +729,7 @@ export default function PropertiesTab({
                     </div>
 
                     <div className="flex items-baseline justify-between">
-                      <span className="text-2xl font-black text-blue-800">
+                      <span className="text-xl sm:text-2xl font-black text-blue-800">
                         {sim.maxLoanFormatted}
                       </span>
                       <span className="text-xs text-slate-500">
@@ -732,7 +758,7 @@ export default function PropertiesTab({
                 </div>
 
                 {/* Card Footer */}
-                <div className="p-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                <div className="p-3.5 sm:p-4 pt-2.5 sm:pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
                   <span className="text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded font-semibold text-[11px]">
                     일반대출 대비 월 {sim.comparison?.monthlySavings?.toLocaleString()}원 절약
                   </span>

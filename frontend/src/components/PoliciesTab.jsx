@@ -37,7 +37,7 @@ export default function PoliciesTab({
   return (
     <div className="space-y-8">
       {/* 1. 상단 인트로 배너 */}
-      <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-2xl p-6 text-white shadow-xl">
+      <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-2xl p-4 sm:p-6 text-white shadow-xl">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
             <div className="flex items-center gap-2">
@@ -57,7 +57,7 @@ export default function PoliciesTab({
           <button
             onClick={onRefreshPolicies}
             disabled={policyRefreshing}
-            className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-2 cursor-pointer shadow-md disabled:opacity-50 shrink-0 self-start md:self-center"
+            className="w-full md:w-auto justify-center bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-2 cursor-pointer shadow-md disabled:opacity-50 shrink-0 self-start md:self-center"
           >
             <RefreshCw className={`w-4 h-4 ${policyRefreshing ? 'animate-spin' : ''}`} />
             <span>{policyRefreshing ? '정책 스크래핑 중...' : '국토부·금융위 정책 실시간 스크래핑'}</span>
@@ -66,7 +66,7 @@ export default function PoliciesTab({
       </div>
 
       {/* 2. 미래 & 최신 정부 정책 실시간 알리미 (Scraper Feed) */}
-      <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-4">
+      <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200 shadow-xs space-y-4">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-3">
           <div className="flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
@@ -120,7 +120,7 @@ export default function PoliciesTab({
       </div>
 
       {/* 3. 대한민국 현재 시행 중인 핵심 부동산 정책 총정리 (Detailed Policy Guide) */}
-      <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-4">
+      <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200 shadow-xs space-y-4">
         <div className="border-b border-slate-100 pb-3">
           <div className="flex items-center gap-2">
             <span className="bg-blue-600 text-white text-xs font-bold px-2 py-0.5 rounded">
@@ -205,7 +205,7 @@ export default function PoliciesTab({
       </div>
 
       {/* 4. 부동산 용어 사전 (Real Estate Terms Dictionary) */}
-      <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-5">
+      <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200 shadow-xs space-y-5">
         <div className="border-b border-slate-100 pb-4">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
             <div>

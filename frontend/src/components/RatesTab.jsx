@@ -25,7 +25,7 @@ export default function RatesTab({ ratesData, onRefreshNews, newsRefreshing }) {
   return (
     <div className="space-y-8">
       {/* 1. 상단 인트로 & 요약 */}
-      <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-2xl p-6 text-white shadow-xl">
+      <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-2xl p-4 sm:p-6 text-white shadow-xl">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
             <div className="flex items-center gap-2">
@@ -46,7 +46,7 @@ export default function RatesTab({ ratesData, onRefreshNews, newsRefreshing }) {
             <button
               onClick={onRefreshNews}
               disabled={newsRefreshing}
-              className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-2 cursor-pointer shadow-md disabled:opacity-50"
+              className="w-full sm:w-auto justify-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-2 cursor-pointer shadow-md disabled:opacity-50"
             >
               <RefreshCw className={`w-4 h-4 ${newsRefreshing ? 'animate-spin' : ''}`} />
               <span>{newsRefreshing ? '뉴스 수집 중...' : '매일 최신 뉴스 새로고침'}</span>
@@ -200,7 +200,7 @@ export default function RatesTab({ ratesData, onRefreshNews, newsRefreshing }) {
       </div>
 
       {/* 4. 5대 시중은행 주담대 금리 현황표 */}
-      <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs">
+      <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200 shadow-xs">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
           <div>
             <h3 className="font-black text-slate-900 text-lg flex items-center gap-2">
@@ -248,7 +248,7 @@ export default function RatesTab({ ratesData, onRefreshNews, newsRefreshing }) {
       </div>
 
       {/* 5. 매일 금리 뉴스 섹션 */}
-      <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-5">
+      <div className="bg-white p-4 sm:p-6 rounded-2xl border border-slate-200 shadow-xs space-y-5">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-4">
           <div>
             <h3 className="font-black text-slate-900 text-lg flex items-center gap-2">

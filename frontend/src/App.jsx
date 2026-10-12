@@ -4,7 +4,7 @@ import PropertiesTab from './components/PropertiesTab';
 import RatesTab from './components/RatesTab';
 import PoliciesTab from './components/PoliciesTab';
 import BeginnerGuideModal from './components/BeginnerGuideModal';
-import { Home, Heart, ShieldAlert, Sparkles, Building2 } from 'lucide-react';
+import { Home, Heart, ShieldAlert, Sparkles, Building2, Percent, BookOpen } from 'lucide-react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('properties');
@@ -138,8 +138,8 @@ export default function App() {
         <BeginnerGuideModal onClose={() => setIsGuideOpen(false)} />
       )}
 
-      {/* Main Content Body */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-6 sm:py-8">
+      {/* Main Content Body (Mobile-first responsive container) */}
+      <main className="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 py-3.5 sm:py-8 pb-24 md:pb-8">
         {activeTab === 'properties' && (
           <PropertiesTab
             properties={properties}
@@ -169,7 +169,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-slate-200 mt-12 py-8 text-xs text-slate-500">
+      <footer className="bg-white border-t border-slate-200 mt-12 py-8 pb-28 md:pb-8 text-xs text-slate-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <div className="w-6 h-6 rounded-md bg-blue-600 text-white flex items-center justify-center font-bold text-xs">
@@ -187,6 +187,60 @@ export default function App() {
           </div>
         </div>
       </footer>
+
+      {/* 📱 Mobile Fixed Bottom Navigation Bar (모바일 화면 전용 네이티브 앱 스타일 탭바) */}
+      <nav className="fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200/90 py-1.5 px-3 flex items-center justify-around md:hidden shadow-lg shadow-slate-900/10">
+        <button
+          type="button"
+          onClick={() => {
+            setActiveTab('properties');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          className={`flex flex-col items-center justify-center py-1 px-3 rounded-xl transition-all cursor-pointer ${
+            activeTab === 'properties' ? 'text-blue-600 font-black' : 'text-slate-400 font-semibold hover:text-slate-600'
+          }`}
+        >
+          <Building2 className={`w-5 h-5 mb-0.5 ${activeTab === 'properties' ? 'text-blue-600 stroke-[2.5]' : 'text-slate-400'}`} />
+          <span className="text-[10px]">매물 & 대출</span>
+        </button>
+
+        <button
+          type="button"
+          onClick={() => {
+            setActiveTab('rates');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          className={`flex flex-col items-center justify-center py-1 px-3 rounded-xl transition-all cursor-pointer ${
+            activeTab === 'rates' ? 'text-blue-600 font-black' : 'text-slate-400 font-semibold hover:text-slate-600'
+          }`}
+        >
+          <Percent className={`w-5 h-5 mb-0.5 ${activeTab === 'rates' ? 'text-blue-600 stroke-[2.5]' : 'text-slate-400'}`} />
+          <span className="text-[10px]">금리 & 뉴스</span>
+        </button>
+
+        <button
+          type="button"
+          onClick={() => {
+            setActiveTab('policies');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+          className={`flex flex-col items-center justify-center py-1 px-3 rounded-xl transition-all cursor-pointer ${
+            activeTab === 'policies' ? 'text-blue-600 font-black' : 'text-slate-400 font-semibold hover:text-slate-600'
+          }`}
+        >
+          <BookOpen className={`w-5 h-5 mb-0.5 ${activeTab === 'policies' ? 'text-blue-600 stroke-[2.5]' : 'text-slate-400'}`} />
+          <span className="text-[10px]">정책 & 용어</span>
+        </button>
+
+        <button
+          type="button"
+          onClick={() => setIsGuideOpen(true)}
+          className="flex flex-col items-center justify-center py-1 px-3 rounded-xl transition-all cursor-pointer text-amber-600 hover:text-amber-700 font-black"
+        >
+          <Sparkles className="w-5 h-5 mb-0.5 text-amber-500 fill-amber-400/30 animate-pulse" />
+          <span className="text-[10px]">3분 가이드</span>
+        </button>
+      </nav>
     </div>
   );
 }
