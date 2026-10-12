@@ -80,7 +80,7 @@ export default function Header({ activeTab, setActiveTab, ratesData, onOpenGuide
           </div>
 
           {/* Navigation Tabs */}
-          <nav className="flex space-x-1 sm:space-x-2 bg-slate-100/80 p-1.5 rounded-xl border border-slate-200 overflow-x-auto">
+          <nav className="flex space-x-1 sm:space-x-2 bg-slate-100/80 p-1.5 rounded-xl border border-slate-200 overflow-x-auto no-scrollbar">
             {tabs.map((tab) => {
               const Icon = tab.icon;
               const isActive = activeTab === tab.id;

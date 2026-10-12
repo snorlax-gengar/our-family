@@ -232,7 +232,7 @@ export default function PoliciesTab({
           </div>
 
           {/* 카테고리 필터 버튼 */}
-          <div className="flex items-center gap-1.5 overflow-x-auto text-xs mt-3">
+          <div className="flex items-center gap-1.5 overflow-x-auto text-xs mt-3 no-scrollbar">
             {categories.map((cat) => (
               <button
                 key={cat}

@@ -261,7 +261,7 @@ export default function RatesTab({ ratesData, onRefreshNews, newsRefreshing }) {
           </div>
 
           {/* 뉴스 태그 필터 */}
-          <div className="flex items-center gap-1.5 overflow-x-auto text-xs">
+          <div className="flex items-center gap-1.5 overflow-x-auto text-xs no-scrollbar">
             {tags.map((tag) => (
               <button
                 key={tag}

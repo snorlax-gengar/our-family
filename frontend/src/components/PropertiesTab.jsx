@@ -25,6 +25,10 @@ export default function PropertiesTab({
   // Modal state
   const [selectedProperty, setSelectedProperty] = useState(null);
   const [modalInitialTab, setModalInitialTab] = useState('all');
+  
+  // Income direct input state
+  const [isEditingIncome, setIsEditingIncome] = useState(false);
+  const [rawIncomeInput, setRawIncomeInput] = useState('');
 
   // 구/시 목록 동적 추출
   const districts = useMemo(() => {
@@ -135,83 +139,125 @@ export default function PropertiesTab({
 
         {/* Simulator Controls Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
-          {/* 소득 설정 (100만 원 단위 정밀 세분화 & 직접 숫자 입력 지원) */}
+          {/* 소득 설정 (슬라이더 및 스피너 완전 제거 -> 깔끔한 핀테크형 정밀 컨트롤러) */}
           <div className="bg-white/10 p-3.5 rounded-xl border border-white/10 backdrop-blur-xs flex flex-col justify-between">
-            <div>
-              <div className="flex justify-between items-center mb-1">
-                <label className="text-slate-300 font-medium">부부합산 연소득</label>
-                <div className="flex items-center gap-1">
-                  <input
-                    type="number"
-                    min="2000"
-                    max="20000"
-                    step="100"
-                    value={Math.round(userCriteria.annualIncome / 10000)}
-                    onChange={(e) => {
-                      const val = Number(e.target.value);
-                      if (!isNaN(val) && val >= 0) {
-                        setUserCriteria({ ...userCriteria, annualIncome: Math.min(200000000, val * 10000) });
-                      }
-                    }}
-                    className="w-20 px-1.5 py-0.5 bg-slate-900/80 border border-white/20 rounded text-right font-extrabold text-amber-300 text-xs focus:outline-none focus:ring-1 focus:ring-amber-400"
-                  />
-                  <span className="text-amber-300 font-bold text-xs">만 원</span>
-                </div>
-              </div>
+            <div className="flex justify-between items-center mb-1">
+              <label className="text-slate-300 font-medium">부부합산 연소득</label>
+              <span className="text-[10px] text-amber-300 font-semibold bg-amber-400/10 px-2 py-0.5 rounded border border-amber-400/20">
+                {userCriteria.annualIncome <= 20000000 ? '연 1.6%대 최저' :
+                 userCriteria.annualIncome <= 40000000 ? '연 2.1%대 구간' :
+                 userCriteria.annualIncome <= 60000000 ? '연 2.5%대 구간' :
+                 userCriteria.annualIncome <= 85000000 ? '연 2.7%대 (기본)' :
+                 userCriteria.annualIncome <= 130000000 ? '연 3.1%대 (신혼)' : '연 3.3%대 (2억)'}
+              </span>
+            </div>
 
-              {/* 100만 원 단위 정밀 슬라이더 */}
-              <input
-                type="range"
-                min="20000000"
-                max="200000000"
-                step="1000000"
-                value={userCriteria.annualIncome}
-                onChange={(e) => setUserCriteria({ ...userCriteria, annualIncome: Number(e.target.value) })}
-                className="w-full accent-amber-400 cursor-pointer mt-1"
-              />
-
-              <div className="flex justify-between text-[10px] text-slate-400 mt-1">
-                <span>2,000만</span>
-                <span>8,500만</span>
-                <span>1.3억</span>
-                <span>최대 2억</span>
+            {/* 정갈한 숫자 입력 디스플레이 (스피너 화살표 완전 제거, 자연스러운 타이핑 지원) */}
+            <div className="bg-slate-900/90 border border-white/15 rounded-xl px-3 py-2 flex items-center justify-between focus-within:border-amber-400/80 focus-within:ring-1 focus-within:ring-amber-400/40 transition-all shadow-inner my-1.5">
+              <span className="text-[11px] text-slate-400 font-medium">직접 입력</span>
+              <div className="flex items-baseline gap-1">
+                <input
+                  type="text"
+                  inputMode="numeric"
+                  value={isEditingIncome ? rawIncomeInput : (Math.round(userCriteria.annualIncome / 10000)).toLocaleString()}
+                  onFocus={() => {
+                    setIsEditingIncome(true);
+                    setRawIncomeInput(String(Math.round(userCriteria.annualIncome / 10000)));
+                  }}
+                  onBlur={() => {
+                    setIsEditingIncome(false);
+                    const num = parseInt(rawIncomeInput.replace(/[^0-9]/g, ''), 10);
+                    if (!isNaN(num) && num > 0) {
+                      const clamped = Math.min(20000, Math.max(1000, num));
+                      setUserCriteria(prev => ({ ...prev, annualIncome: clamped * 10000 }));
+                    }
+                  }}
+                  onChange={(e) => {
+                    const clean = e.target.value.replace(/[^0-9]/g, '');
+                    setRawIncomeInput(clean);
+                    const num = parseInt(clean, 10);
+                    if (!isNaN(num) && num > 0) {
+                      const clamped = Math.min(20000, Math.max(1000, num));
+                      setUserCriteria(prev => ({ ...prev, annualIncome: clamped * 10000 }));
+                    }
+                  }}
+                  className="w-24 bg-transparent text-right font-black text-amber-300 text-lg focus:outline-none tracking-tight cursor-text"
+                  placeholder="8,000"
+                />
+                <span className="text-amber-300 font-bold text-xs">만 원</span>
               </div>
             </div>
 
-            {/* ±100만 원 미세 조정 버튼 & 금리 구간 안내 */}
-            <div className="mt-2 pt-2 border-t border-white/10 flex items-center justify-between gap-1">
-              <div className="flex gap-1">
+            {/* 미세 조정 버튼 & 정책 기준 바로가기 칩 */}
+            <div className="space-y-1.5 mt-1">
+              <div className="grid grid-cols-4 gap-1">
                 <button
                   type="button"
-                  onClick={() => setUserCriteria({
-                    ...userCriteria,
-                    annualIncome: Math.max(20000000, userCriteria.annualIncome - 1000000)
-                  })}
-                  className="px-2 py-0.5 bg-white/10 hover:bg-white/20 rounded text-[10px] font-bold text-slate-300 cursor-pointer transition-colors"
-                  title="100만 원 단위 감액"
+                  onClick={() => setUserCriteria(prev => ({
+                    ...prev,
+                    annualIncome: Math.max(20000000, prev.annualIncome - 5000000)
+                  }))}
+                  className="py-1 bg-white/10 hover:bg-white/20 rounded-lg text-[10px] font-bold text-slate-300 cursor-pointer transition-colors"
+                >
+                  -500만
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setUserCriteria(prev => ({
+                    ...prev,
+                    annualIncome: Math.max(20000000, prev.annualIncome - 1000000)
+                  }))}
+                  className="py-1 bg-white/10 hover:bg-white/20 rounded-lg text-[10px] font-bold text-slate-300 cursor-pointer transition-colors"
                 >
                   -100만
                 </button>
                 <button
                   type="button"
-                  onClick={() => setUserCriteria({
-                    ...userCriteria,
-                    annualIncome: Math.min(200000000, userCriteria.annualIncome + 1000000)
-                  })}
-                  className="px-2 py-0.5 bg-white/10 hover:bg-white/20 rounded text-[10px] font-bold text-slate-300 cursor-pointer transition-colors"
-                  title="100만 원 단위 증액"
+                  onClick={() => setUserCriteria(prev => ({
+                    ...prev,
+                    annualIncome: Math.min(200000000, prev.annualIncome + 1000000)
+                  }))}
+                  className="py-1 bg-white/10 hover:bg-white/20 rounded-lg text-[10px] font-bold text-slate-300 cursor-pointer transition-colors"
                 >
                   +100만
                 </button>
+                <button
+                  type="button"
+                  onClick={() => setUserCriteria(prev => ({
+                    ...prev,
+                    annualIncome: Math.min(200000000, prev.annualIncome + 5000000)
+                  }))}
+                  className="py-1 bg-white/10 hover:bg-white/20 rounded-lg text-[10px] font-bold text-slate-300 cursor-pointer transition-colors"
+                >
+                  +500만
+                </button>
               </div>
 
-              <span className="text-[10px] text-amber-300 font-semibold truncate bg-amber-400/10 px-1.5 py-0.5 rounded border border-amber-400/20">
-                {userCriteria.annualIncome <= 20000000 ? '연 1.6%대 최저' :
-                 userCriteria.annualIncome <= 40000000 ? '연 2.1%대 구간' :
-                 userCriteria.annualIncome <= 60000000 ? '연 2.5%대 구간' :
-                 userCriteria.annualIncome <= 85000000 ? '연 2.7%대 구간' :
-                 userCriteria.annualIncome <= 130000000 ? '연 3.1%대 구간' : '연 3.3%대 (2억)'}
-              </span>
+              {/* 핵심 정책 기준 소득 퀵 칩 */}
+              <div className="flex items-center justify-between text-[10px] text-slate-400 pt-0.5">
+                <span className="shrink-0 text-slate-400">기준:</span>
+                <div className="flex gap-1">
+                  {[
+                    { label: '6,000만', val: 60000000 },
+                    { label: '8,500만', val: 85000000 },
+                    { label: '1.3억', val: 130000000 },
+                    { label: '2.0억', val: 200000000 }
+                  ].map((chip) => (
+                    <button
+                      key={chip.val}
+                      type="button"
+                      onClick={() => setUserCriteria(prev => ({ ...prev, annualIncome: chip.val }))}
+                      className={`px-1.5 py-0.5 rounded text-[10px] font-semibold cursor-pointer transition-colors ${
+                        userCriteria.annualIncome === chip.val
+                          ? 'bg-amber-400 text-slate-900 font-bold'
+                          : 'bg-white/5 hover:bg-white/15 text-slate-300'
+                      }`}
+                    >
+                      {chip.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
 
@@ -410,7 +456,7 @@ export default function PropertiesTab({
         </div>
 
         {/* 🌟 가격대별 구간 빠른 필터 (4억대, 5억초반, 5억후반, 6억대) */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs">
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs no-scrollbar">
           <span className="text-slate-400 font-semibold shrink-0 mr-1">가격대 구간:</span>
           {[
             { id: 'all', label: '전체 가격대', count: priceBandCounts.all },
@@ -434,7 +480,7 @@ export default function PropertiesTab({
         </div>
 
         {/* 구 / 시 세부 필터 버튼 바 */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs">
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs no-scrollbar">
           <span className="text-slate-400 font-semibold shrink-0 mr-1">세부지역:</span>
           {districts.map((dist) => (
             <button
