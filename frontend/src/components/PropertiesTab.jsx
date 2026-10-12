@@ -135,28 +135,83 @@ export default function PropertiesTab({
 
         {/* Simulator Controls Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
-          {/* 소득 설정 */}
-          <div className="bg-white/10 p-3.5 rounded-xl border border-white/10 backdrop-blur-xs">
-            <div className="flex justify-between items-center mb-1.5">
-              <label className="text-slate-300 font-medium">부부합산 연소득</label>
-              <span className="font-extrabold text-amber-300 text-sm">
-                {(userCriteria.annualIncome / 10000).toLocaleString()}만 원
-              </span>
+          {/* 소득 설정 (100만 원 단위 정밀 세분화 & 직접 숫자 입력 지원) */}
+          <div className="bg-white/10 p-3.5 rounded-xl border border-white/10 backdrop-blur-xs flex flex-col justify-between">
+            <div>
+              <div className="flex justify-between items-center mb-1">
+                <label className="text-slate-300 font-medium">부부합산 연소득</label>
+                <div className="flex items-center gap-1">
+                  <input
+                    type="number"
+                    min="2000"
+                    max="20000"
+                    step="100"
+                    value={Math.round(userCriteria.annualIncome / 10000)}
+                    onChange={(e) => {
+                      const val = Number(e.target.value);
+                      if (!isNaN(val) && val >= 0) {
+                        setUserCriteria({ ...userCriteria, annualIncome: Math.min(200000000, val * 10000) });
+                      }
+                    }}
+                    className="w-20 px-1.5 py-0.5 bg-slate-900/80 border border-white/20 rounded text-right font-extrabold text-amber-300 text-xs focus:outline-none focus:ring-1 focus:ring-amber-400"
+                  />
+                  <span className="text-amber-300 font-bold text-xs">만 원</span>
+                </div>
+              </div>
+
+              {/* 100만 원 단위 정밀 슬라이더 */}
+              <input
+                type="range"
+                min="20000000"
+                max="200000000"
+                step="1000000"
+                value={userCriteria.annualIncome}
+                onChange={(e) => setUserCriteria({ ...userCriteria, annualIncome: Number(e.target.value) })}
+                className="w-full accent-amber-400 cursor-pointer mt-1"
+              />
+
+              <div className="flex justify-between text-[10px] text-slate-400 mt-1">
+                <span>2,000만</span>
+                <span>8,500만</span>
+                <span>1.3억</span>
+                <span>최대 2억</span>
+              </div>
             </div>
-            <input
-              type="range"
-              min="30000000"
-              max="200000000"
-              step="5000000"
-              value={userCriteria.annualIncome}
-              onChange={(e) => setUserCriteria({ ...userCriteria, annualIncome: Number(e.target.value) })}
-              className="w-full accent-blue-400 cursor-pointer"
-            />
-            <div className="flex justify-between text-[10px] text-slate-400 mt-1">
-              <span>3,000만</span>
-              <span>8,500만</span>
-              <span>1.3억</span>
-              <span>최대 2억</span>
+
+            {/* ±100만 원 미세 조정 버튼 & 금리 구간 안내 */}
+            <div className="mt-2 pt-2 border-t border-white/10 flex items-center justify-between gap-1">
+              <div className="flex gap-1">
+                <button
+                  type="button"
+                  onClick={() => setUserCriteria({
+                    ...userCriteria,
+                    annualIncome: Math.max(20000000, userCriteria.annualIncome - 1000000)
+                  })}
+                  className="px-2 py-0.5 bg-white/10 hover:bg-white/20 rounded text-[10px] font-bold text-slate-300 cursor-pointer transition-colors"
+                  title="100만 원 단위 감액"
+                >
+                  -100만
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setUserCriteria({
+                    ...userCriteria,
+                    annualIncome: Math.min(200000000, userCriteria.annualIncome + 1000000)
+                  })}
+                  className="px-2 py-0.5 bg-white/10 hover:bg-white/20 rounded text-[10px] font-bold text-slate-300 cursor-pointer transition-colors"
+                  title="100만 원 단위 증액"
+                >
+                  +100만
+                </button>
+              </div>
+
+              <span className="text-[10px] text-amber-300 font-semibold truncate bg-amber-400/10 px-1.5 py-0.5 rounded border border-amber-400/20">
+                {userCriteria.annualIncome <= 20000000 ? '연 1.6%대 최저' :
+                 userCriteria.annualIncome <= 40000000 ? '연 2.1%대 구간' :
+                 userCriteria.annualIncome <= 60000000 ? '연 2.5%대 구간' :
+                 userCriteria.annualIncome <= 85000000 ? '연 2.7%대 구간' :
+                 userCriteria.annualIncome <= 130000000 ? '연 3.1%대 구간' : '연 3.3%대 (2억)'}
+              </span>
             </div>
           </div>
 
