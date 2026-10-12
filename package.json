@@ -1,0 +1,15 @@
+{
+  "name": "wooriga",
+  "version": "1.0.0",
+  "description": "우리가 (우리家) - 우리 가족 보금자리 플래너",
+  "main": "backend/server.js",
+  "type": "module",
+  "scripts": {
+    "install:all": "npm install --prefix backend && npm install --prefix frontend",
+    "build": "npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix backend",
+    "start": "node backend/server.js"
+  },
+  "keywords": ["real-estate", "korea", "newborn-loan", "interest-rates"],
+  "author": "",
+  "license": "ISC"
+}
