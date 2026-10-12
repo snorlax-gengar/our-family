@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { 
   Building2, Search, SlidersHorizontal, Train, ArrowUpDown, 
   ChevronRight, Sparkles, ShieldCheck, DollarSign, ExternalLink,
-  Info, Check, RefreshCw, LayoutGrid, Eye, ArrowDownAZ, ArrowUpZA, Maximize2
+  Info, Check, RefreshCw, LayoutGrid, Eye, ArrowDownAZ, ArrowUpZA, Maximize2, Calendar
 } from 'lucide-react';
 import PropertyDetailModal from './PropertyDetailModal';
 
@@ -137,207 +137,278 @@ export default function PropertiesTab({
           </div>
         </div>
 
-        {/* Simulator Controls Grid */}
+        {/* Simulator Controls Grid: 4 Harmonized, Balanced Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
-          {/* 소득 설정 (슬라이더 및 스피너 완전 제거 -> 깔끔한 핀테크형 정밀 컨트롤러) */}
-          <div className="bg-white/10 p-3.5 rounded-xl border border-white/10 backdrop-blur-xs flex flex-col justify-between">
-            <div className="flex justify-between items-center mb-1">
-              <label className="text-slate-300 font-medium">부부합산 연소득</label>
-              <span className="text-[10px] text-amber-300 font-semibold bg-amber-400/10 px-2 py-0.5 rounded border border-amber-400/20">
-                {userCriteria.annualIncome <= 20000000 ? '연 1.6%대 최저' :
-                 userCriteria.annualIncome <= 40000000 ? '연 2.1%대 구간' :
-                 userCriteria.annualIncome <= 60000000 ? '연 2.5%대 구간' :
-                 userCriteria.annualIncome <= 85000000 ? '연 2.7%대 (기본)' :
-                 userCriteria.annualIncome <= 130000000 ? '연 3.1%대 (신혼)' : '연 3.3%대 (2억)'}
-              </span>
-            </div>
+          {/* Card 1: 부부합산 연소득 (정밀 슬라이더 + 직접 입력 + 미세 조정) */}
+          <div className="bg-white/10 p-4 rounded-2xl border border-white/15 backdrop-blur-md flex flex-col justify-between shadow-lg hover:border-white/25 transition-all">
+            <div>
+              {/* Header */}
+              <div className="flex justify-between items-center mb-2">
+                <label className="text-slate-200 font-bold flex items-center gap-1.5">
+                  <DollarSign className="w-3.5 h-3.5 text-amber-300" />
+                  <span>부부합산 연소득</span>
+                </label>
+                <span className="text-[10px] text-amber-300 font-extrabold bg-amber-400/15 px-2 py-0.5 rounded-full border border-amber-400/30">
+                  {userCriteria.annualIncome <= 20000000 ? '연 1.6% 최저' :
+                   userCriteria.annualIncome <= 40000000 ? '연 2.1%대 구간' :
+                   userCriteria.annualIncome <= 60000000 ? '연 2.5%대 구간' :
+                   userCriteria.annualIncome <= 85000000 ? '연 2.7%대 (기본)' :
+                   userCriteria.annualIncome <= 130000000 ? '연 3.1%대 (신혼)' : '연 3.3%대 (2억)'}
+                </span>
+              </div>
 
-            {/* 정갈한 숫자 입력 디스플레이 (스피너 화살표 완전 제거, 자연스러운 타이핑 지원) */}
-            <div className="bg-slate-900/90 border border-white/15 rounded-xl px-3 py-2 flex items-center justify-between focus-within:border-amber-400/80 focus-within:ring-1 focus-within:ring-amber-400/40 transition-all shadow-inner my-1.5">
-              <span className="text-[11px] text-slate-400 font-medium">직접 입력</span>
-              <div className="flex items-baseline gap-1">
+              {/* Amount Display & Direct Typing */}
+              <div className="bg-slate-950/70 border border-white/15 rounded-xl px-3 py-1.5 flex items-center justify-between focus-within:border-amber-400/80 transition-all shadow-inner my-1.5">
+                <span className="text-[11px] text-slate-400 font-medium">직접 입력</span>
+                <div className="flex items-baseline gap-1">
+                  <input
+                    type="text"
+                    inputMode="numeric"
+                    value={isEditingIncome ? rawIncomeInput : (Math.round(userCriteria.annualIncome / 10000)).toLocaleString()}
+                    onFocus={() => {
+                      setIsEditingIncome(true);
+                      setRawIncomeInput(String(Math.round(userCriteria.annualIncome / 10000)));
+                    }}
+                    onBlur={() => {
+                      setIsEditingIncome(false);
+                      const num = parseInt(rawIncomeInput.replace(/[^0-9]/g, ''), 10);
+                      if (!isNaN(num) && num > 0) {
+                        const clamped = Math.min(20000, Math.max(1000, num));
+                        setUserCriteria(prev => ({ ...prev, annualIncome: clamped * 10000 }));
+                      }
+                    }}
+                    onChange={(e) => {
+                      const clean = e.target.value.replace(/[^0-9]/g, '');
+                      setRawIncomeInput(clean);
+                      const num = parseInt(clean, 10);
+                      if (!isNaN(num) && num > 0) {
+                        const clamped = Math.min(20000, Math.max(1000, num));
+                        setUserCriteria(prev => ({ ...prev, annualIncome: clamped * 10000 }));
+                      }
+                    }}
+                    className="w-24 bg-transparent text-right font-black text-amber-300 text-lg focus:outline-none tracking-tight cursor-text"
+                    placeholder="8,000"
+                  />
+                  <span className="text-amber-300 font-bold text-xs">만 원</span>
+                </div>
+              </div>
+
+              {/* Sleek FinTech Custom Range Slider (부드러운 좌우 스크러빙 슬라이더) */}
+              <div className="my-2">
                 <input
-                  type="text"
-                  inputMode="numeric"
-                  value={isEditingIncome ? rawIncomeInput : (Math.round(userCriteria.annualIncome / 10000)).toLocaleString()}
-                  onFocus={() => {
-                    setIsEditingIncome(true);
-                    setRawIncomeInput(String(Math.round(userCriteria.annualIncome / 10000)));
-                  }}
-                  onBlur={() => {
-                    setIsEditingIncome(false);
-                    const num = parseInt(rawIncomeInput.replace(/[^0-9]/g, ''), 10);
-                    if (!isNaN(num) && num > 0) {
-                      const clamped = Math.min(20000, Math.max(1000, num));
-                      setUserCriteria(prev => ({ ...prev, annualIncome: clamped * 10000 }));
-                    }
-                  }}
-                  onChange={(e) => {
-                    const clean = e.target.value.replace(/[^0-9]/g, '');
-                    setRawIncomeInput(clean);
-                    const num = parseInt(clean, 10);
-                    if (!isNaN(num) && num > 0) {
-                      const clamped = Math.min(20000, Math.max(1000, num));
-                      setUserCriteria(prev => ({ ...prev, annualIncome: clamped * 10000 }));
-                    }
-                  }}
-                  className="w-24 bg-transparent text-right font-black text-amber-300 text-lg focus:outline-none tracking-tight cursor-text"
-                  placeholder="8,000"
+                  type="range"
+                  min="20000000"
+                  max="200000000"
+                  step="1000000"
+                  value={userCriteria.annualIncome}
+                  onChange={(e) => setUserCriteria({ ...userCriteria, annualIncome: Number(e.target.value) })}
+                  className="custom-slider w-full cursor-pointer"
+                  title="좌우로 부드럽게 드래그하여 소득 설정"
                 />
-                <span className="text-amber-300 font-bold text-xs">만 원</span>
+                <div className="flex justify-between text-[10px] text-slate-400 mt-1 font-medium">
+                  <span>2,000만</span>
+                  <span>8,500만</span>
+                  <span>1.3억</span>
+                  <span>최대 2억</span>
+                </div>
               </div>
             </div>
 
-            {/* 미세 조정 버튼 & 정책 기준 바로가기 칩 */}
-            <div className="space-y-1.5 mt-1">
-              <div className="grid grid-cols-4 gap-1">
+            {/* Stepper Buttons & Quick Preset Chips */}
+            <div className="pt-2 border-t border-white/10 flex items-center justify-between gap-1">
+              <div className="flex gap-1">
                 <button
                   type="button"
-                  onClick={() => setUserCriteria(prev => ({
-                    ...prev,
-                    annualIncome: Math.max(20000000, prev.annualIncome - 5000000)
-                  }))}
-                  className="py-1 bg-white/10 hover:bg-white/20 rounded-lg text-[10px] font-bold text-slate-300 cursor-pointer transition-colors"
-                >
-                  -500만
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setUserCriteria(prev => ({
-                    ...prev,
-                    annualIncome: Math.max(20000000, prev.annualIncome - 1000000)
-                  }))}
-                  className="py-1 bg-white/10 hover:bg-white/20 rounded-lg text-[10px] font-bold text-slate-300 cursor-pointer transition-colors"
+                  onClick={() => setUserCriteria(prev => ({ ...prev, annualIncome: Math.max(20000000, prev.annualIncome - 1000000) }))}
+                  className="px-2 py-0.5 bg-white/10 hover:bg-white/20 rounded text-[10px] font-bold text-slate-300 cursor-pointer transition-colors"
                 >
                   -100만
                 </button>
                 <button
                   type="button"
-                  onClick={() => setUserCriteria(prev => ({
-                    ...prev,
-                    annualIncome: Math.min(200000000, prev.annualIncome + 1000000)
-                  }))}
-                  className="py-1 bg-white/10 hover:bg-white/20 rounded-lg text-[10px] font-bold text-slate-300 cursor-pointer transition-colors"
+                  onClick={() => setUserCriteria(prev => ({ ...prev, annualIncome: Math.min(200000000, prev.annualIncome + 1000000) }))}
+                  className="px-2 py-0.5 bg-white/10 hover:bg-white/20 rounded text-[10px] font-bold text-slate-300 cursor-pointer transition-colors"
                 >
                   +100만
                 </button>
-                <button
-                  type="button"
-                  onClick={() => setUserCriteria(prev => ({
-                    ...prev,
-                    annualIncome: Math.min(200000000, prev.annualIncome + 5000000)
-                  }))}
-                  className="py-1 bg-white/10 hover:bg-white/20 rounded-lg text-[10px] font-bold text-slate-300 cursor-pointer transition-colors"
-                >
-                  +500만
-                </button>
               </div>
-
-              {/* 핵심 정책 기준 소득 퀵 칩 */}
-              <div className="flex items-center justify-between text-[10px] text-slate-400 pt-0.5">
-                <span className="shrink-0 text-slate-400">기준:</span>
-                <div className="flex gap-1">
-                  {[
-                    { label: '6,000만', val: 60000000 },
-                    { label: '8,500만', val: 85000000 },
-                    { label: '1.3억', val: 130000000 },
-                    { label: '2.0억', val: 200000000 }
-                  ].map((chip) => (
-                    <button
-                      key={chip.val}
-                      type="button"
-                      onClick={() => setUserCriteria(prev => ({ ...prev, annualIncome: chip.val }))}
-                      className={`px-1.5 py-0.5 rounded text-[10px] font-semibold cursor-pointer transition-colors ${
-                        userCriteria.annualIncome === chip.val
-                          ? 'bg-amber-400 text-slate-900 font-bold'
-                          : 'bg-white/5 hover:bg-white/15 text-slate-300'
-                      }`}
-                    >
-                      {chip.label}
-                    </button>
-                  ))}
-                </div>
+              <div className="flex gap-1">
+                {[
+                  { label: '8.5천', val: 85000000 },
+                  { label: '1.3억', val: 130000000 },
+                  { label: '2억', val: 200000000 }
+                ].map((chip) => (
+                  <button
+                    key={chip.val}
+                    type="button"
+                    onClick={() => setUserCriteria(prev => ({ ...prev, annualIncome: chip.val }))}
+                    className={`px-1.5 py-0.5 rounded text-[10px] font-bold cursor-pointer transition-colors ${
+                      userCriteria.annualIncome === chip.val
+                        ? 'bg-amber-400 text-slate-900 shadow-xs'
+                        : 'bg-white/5 hover:bg-white/15 text-slate-300'
+                    }`}
+                  >
+                    {chip.label}
+                  </button>
+                ))}
               </div>
             </div>
           </div>
 
-          {/* 생애최초 여부 및 LTV 70% 안전 준수 */}
-          <div className="bg-white/10 p-3.5 rounded-xl border border-white/10 backdrop-blur-xs flex flex-col justify-between">
-            <div className="flex justify-between items-center">
-              <label className="text-slate-300 font-medium">생애최초 주택구입</label>
-              <span className={`font-bold px-2 py-0.5 rounded text-[10px] ${userCriteria.isFirstHome ? 'bg-emerald-500 text-white' : 'bg-slate-700 text-slate-300'}`}>
-                {userCriteria.isFirstHome ? '취득세 200만 감면' : '일반 무주택'}
-              </span>
-            </div>
-            <div className="flex gap-2 mt-2">
-              <button
-                type="button"
-                onClick={() => setUserCriteria({ ...userCriteria, isFirstHome: false })}
-                className={`flex-1 py-1.5 rounded-lg text-xs font-semibold cursor-pointer transition-colors ${
-                  !userCriteria.isFirstHome ? 'bg-blue-600 text-white font-bold' : 'bg-white/10 text-slate-300 hover:bg-white/20'
-                }`}
-              >
-                일반 무주택
-              </button>
-              <button
-                type="button"
-                onClick={() => setUserCriteria({ ...userCriteria, isFirstHome: true })}
-                className={`flex-1 py-1.5 rounded-lg text-xs font-semibold cursor-pointer transition-colors ${
-                  userCriteria.isFirstHome ? 'bg-emerald-600 text-white font-bold' : 'bg-white/10 text-slate-300 hover:bg-white/20'
-                }`}
-              >
-                생애최초 감면
-              </button>
-            </div>
-            <div className="text-[10px] text-slate-300/80 mt-1.5 text-center">
-              ※ 정부 대출 정책 기준 <strong className="text-amber-300">LTV 70% 안전 한도</strong> 준수
-            </div>
-          </div>
+          {/* Card 2: 생애최초 주택구입 (여백 보강 & 세제 혜택 가이드) */}
+          <div className="bg-white/10 p-4 rounded-2xl border border-white/15 backdrop-blur-md flex flex-col justify-between shadow-lg hover:border-white/25 transition-all">
+            <div>
+              {/* Header */}
+              <div className="flex justify-between items-center mb-2">
+                <label className="text-slate-200 font-bold flex items-center gap-1.5">
+                  <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
+                  <span>생애최초 주택구입</span>
+                </label>
+                <span className={`font-extrabold px-2 py-0.5 rounded-full text-[10px] ${userCriteria.isFirstHome ? 'bg-emerald-500/25 text-emerald-300 border border-emerald-400/40' : 'bg-slate-700/60 text-slate-300'}`}>
+                  {userCriteria.isFirstHome ? '취득세 200만 감면' : '일반 무주택'}
+                </span>
+              </div>
 
-          {/* 대출 만기 */}
-          <div className="bg-white/10 p-3.5 rounded-xl border border-white/10 backdrop-blur-xs">
-            <div className="flex justify-between items-center mb-1.5">
-              <label className="text-slate-300 font-medium">대출 만기 (원리금균등)</label>
-              <span className="font-extrabold text-sky-300 text-sm">
-                {userCriteria.loanTenureYears}년 만기
-              </span>
-            </div>
-            <div className="grid grid-cols-4 gap-1.5 mt-2">
-              {[10, 20, 30, 40].map((yr) => (
+              {/* Toggle Buttons */}
+              <div className="flex gap-2 my-2">
                 <button
-                  key={yr}
                   type="button"
-                  onClick={() => setUserCriteria({ ...userCriteria, loanTenureYears: yr })}
-                  className={`py-1.5 rounded-lg text-xs font-bold cursor-pointer transition-colors ${
-                    userCriteria.loanTenureYears === yr ? 'bg-blue-600 text-white' : 'bg-white/10 text-slate-300 hover:bg-white/20'
+                  onClick={() => setUserCriteria({ ...userCriteria, isFirstHome: false })}
+                  className={`flex-1 py-2.5 rounded-xl text-xs font-bold cursor-pointer transition-all ${
+                    !userCriteria.isFirstHome 
+                      ? 'bg-blue-600 text-white shadow-md' 
+                      : 'bg-white/10 text-slate-300 hover:bg-white/20'
                   }`}
                 >
-                  {yr}년
+                  일반 무주택
                 </button>
-              ))}
+                <button
+                  type="button"
+                  onClick={() => setUserCriteria({ ...userCriteria, isFirstHome: true })}
+                  className={`flex-1 py-2.5 rounded-xl text-xs font-bold cursor-pointer transition-all ${
+                    userCriteria.isFirstHome 
+                      ? 'bg-emerald-600 text-white shadow-md' 
+                      : 'bg-white/10 text-slate-300 hover:bg-white/20'
+                  }`}
+                >
+                  생애최초 감면
+                </button>
+              </div>
+            </div>
+
+            {/* Informative Insight Box to Fill Space Evenly */}
+            <div className="bg-black/25 p-2.5 rounded-xl border border-white/10 space-y-1 mt-2">
+              <div className="flex items-center gap-1 text-[11px] font-bold text-emerald-300">
+                <Sparkles className="w-3 h-3" />
+                <span>{userCriteria.isFirstHome ? '취득세 최대 200만 원 즉시 비과세' : '일반 취득세율 1.1% 정상 적용'}</span>
+              </div>
+              <p className="text-[10px] text-slate-300 leading-tight">
+                {userCriteria.isFirstHome 
+                  ? '지방세특례제한법에 따라 12억 이하 첫 주택 매수 시 취득세 전액 감면' 
+                  : '정부 가계대출 관리 기준 안전 LTV 70% 동일 적용'}
+              </p>
+              <div className="text-[9px] text-amber-300/80 pt-0.5 border-t border-white/5">
+                ※ 대출 한도는 안전 LTV 70% 상한 준수
+              </div>
             </div>
           </div>
 
-          {/* MCG 보증 (방공제 면제) */}
-          <div className="bg-white/10 p-3.5 rounded-xl border border-white/10 backdrop-blur-xs flex flex-col justify-between">
-            <div className="flex justify-between items-center">
-              <label className="text-slate-300 font-medium">MCG 모기지신용보증</label>
-              <span className="font-bold text-[11px] text-emerald-300">
-                {userCriteria.useMcg ? '방공제 면제' : '방공제 차감'}
-              </span>
+          {/* Card 3: 대출 만기 (원리금균등 분할상환 특징 가이드) */}
+          <div className="bg-white/10 p-4 rounded-2xl border border-white/15 backdrop-blur-md flex flex-col justify-between shadow-lg hover:border-white/25 transition-all">
+            <div>
+              {/* Header */}
+              <div className="flex justify-between items-center mb-2">
+                <label className="text-slate-200 font-bold flex items-center gap-1.5">
+                  <Calendar className="w-3.5 h-3.5 text-sky-400" />
+                  <span>대출 만기 (상환기간)</span>
+                </label>
+                <span className="font-extrabold text-sky-300 text-xs bg-sky-500/20 px-2 py-0.5 rounded-full border border-sky-400/30">
+                  {userCriteria.loanTenureYears}년 만기
+                </span>
+              </div>
+
+              {/* 4-way Tenure Buttons */}
+              <div className="grid grid-cols-4 gap-1.5 my-2">
+                {[10, 20, 30, 40].map((yr) => (
+                  <button
+                    key={yr}
+                    type="button"
+                    onClick={() => setUserCriteria({ ...userCriteria, loanTenureYears: yr })}
+                    className={`py-2 rounded-xl text-xs font-bold cursor-pointer transition-all ${
+                      userCriteria.loanTenureYears === yr 
+                        ? 'bg-blue-600 text-white shadow-md' 
+                        : 'bg-white/10 text-slate-300 hover:bg-white/20'
+                    }`}
+                  >
+                    {yr}년
+                  </button>
+                ))}
+              </div>
             </div>
-            <button
-              type="button"
-              onClick={() => setUserCriteria({ ...userCriteria, useMcg: !userCriteria.useMcg })}
-              className={`w-full py-2 rounded-lg text-xs font-bold mt-2 cursor-pointer transition-all flex items-center justify-center gap-1.5 ${
-                userCriteria.useMcg 
-                  ? 'bg-blue-500/40 text-blue-200 border border-blue-400/50' 
-                  : 'bg-rose-500/30 text-rose-200 border border-rose-400/50'
-              }`}
-            >
-              <Check className="w-3.5 h-3.5" />
-              <span>{userCriteria.useMcg ? 'MCG 가입 (한도 최대화)' : 'MCG 미가입 (방공제 차감)'}</span>
-            </button>
+
+            {/* Informative Insight Box to Fill Space Evenly */}
+            <div className="bg-black/25 p-2.5 rounded-xl border border-white/10 space-y-1 mt-2">
+              <div className="flex items-center gap-1 text-[11px] font-bold text-sky-300">
+                <Calendar className="w-3 h-3" />
+                <span>{userCriteria.loanTenureYears}년 상환 플랜 특징</span>
+              </div>
+              <p className="text-[10px] text-slate-300 leading-tight">
+                {userCriteria.loanTenureYears === 40 
+                  ? '만 39세 이하 청년·신혼가구 추천: 매달 나가는 원리금 납부액 최소화' 
+                  : userCriteria.loanTenureYears === 30 
+                  ? '가장 보편적인 표준 만기: 월 원리금과 30년 총이자 균형 최적' 
+                  : '단기 상환 집중: 대출 총 이자를 최소화하고 빠른 자산 형성'}
+              </p>
+              <div className="text-[9px] text-slate-400 pt-0.5 border-t border-white/5">
+                원리금균등분할상환 방식 적용
+              </div>
+            </div>
+          </div>
+
+          {/* Card 4: MCG 모기지신용보증 (방공제 면제 상세 가이드) */}
+          <div className="bg-white/10 p-4 rounded-2xl border border-white/15 backdrop-blur-md flex flex-col justify-between shadow-lg hover:border-white/25 transition-all">
+            <div>
+              {/* Header */}
+              <div className="flex justify-between items-center mb-2">
+                <label className="text-slate-200 font-bold flex items-center gap-1.5">
+                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
+                  <span>MCG 모기지신용보증</span>
+                </label>
+                <span className={`font-extrabold px-2 py-0.5 rounded-full text-[10px] ${userCriteria.useMcg ? 'bg-emerald-500/25 text-emerald-300 border border-emerald-400/40' : 'bg-rose-500/25 text-rose-300 border border-rose-400/40'}`}>
+                  {userCriteria.useMcg ? '방공제 면제' : '방공제 차감'}
+                </span>
+              </div>
+
+              {/* Main Toggle Button */}
+              <button
+                type="button"
+                onClick={() => setUserCriteria({ ...userCriteria, useMcg: !userCriteria.useMcg })}
+                className={`w-full py-2.5 rounded-xl text-xs font-bold my-2 cursor-pointer transition-all flex items-center justify-center gap-1.5 ${
+                  userCriteria.useMcg 
+                    ? 'bg-blue-600 text-white shadow-md border border-blue-400/40' 
+                    : 'bg-rose-600/30 text-rose-200 border border-rose-400/50 hover:bg-rose-600/40'
+                }`}
+              >
+                <Check className="w-3.5 h-3.5" />
+                <span>{userCriteria.useMcg ? 'MCG 가입 (LTV 70% 전액 대출)' : 'MCG 미가입 (방공제 차감)'}</span>
+              </button>
+            </div>
+
+            {/* Informative Insight Box to Fill Space Evenly */}
+            <div className="bg-black/25 p-2.5 rounded-xl border border-white/10 space-y-1 mt-2">
+              <div className="flex items-center gap-1 text-[11px] font-bold text-blue-300">
+                <ShieldCheck className="w-3 h-3" />
+                <span>{userCriteria.useMcg ? '방공제 5,500만 원 차감 면제 성공' : '방공제로 한도 최대 5,500만 원 차감'}</span>
+              </div>
+              <p className="text-[10px] text-slate-300 leading-tight">
+                {userCriteria.useMcg 
+                  ? '보증 가입으로 서울 5,500만 / 경기 4,800만 원 공제 없이 LTV 70% 전액 수령' 
+                  : '미가입 시 최우선변제금만큼 대출금이 깎여 내야 할 현금이 늘어납니다'}
+              </p>
+              <div className="text-[9px] text-emerald-300/90 pt-0.5 border-t border-white/5">
+                연간 수만 원대 보증료로 대출한도 극대화 필수
+              </div>
+            </div>
           </div>
         </div>
       </div>
