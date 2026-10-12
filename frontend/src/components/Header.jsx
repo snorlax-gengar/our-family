@@ -73,9 +73,10 @@ export default function Header({ activeTab, setActiveTab, ratesData, onOpenGuide
                   <span className="text-[10px] bg-amber-500 text-white rounded-full px-1">Q&A</span>
                 </button>
               </div>
-              <p className="text-xs text-slate-500 font-medium">
-                "우리가 함께 짓는, 우리 가족의 첫 보금자리" · 서울·경기 5~6억 아파트 & 신생아 특례대출(LTV 70%) 통합 허브
-              </p>
+              <div className="text-xs text-slate-500 font-medium mt-0.5">
+                <p className="text-slate-700 font-bold">"우리가 함께 짓는, 우리 가족의 첫 보금자리"</p>
+                <p className="text-[11px] text-slate-400 mt-0.5">서울·경기 5~6억 아파트 & 신생아 특례대출(LTV 70%) 통합 허브</p>
+              </div>
             </div>
           </div>
 
