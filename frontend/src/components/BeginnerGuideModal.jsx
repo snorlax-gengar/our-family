@@ -88,39 +88,39 @@ export default function BeginnerGuideModal({ onClose }) {
           <div className="bg-gradient-to-r from-blue-50 via-indigo-50 to-blue-50 p-4 rounded-2xl border border-blue-200/80 flex items-start gap-3">
             <Lightbulb className="w-5 h-5 text-amber-500 shrink-0 mt-0.5" />
             <div className="text-xs space-y-1">
-              <span className="font-extrabold text-blue-900 block text-sm">
+              <span className="font-extrabold text-blue-900 block text-sm break-keep">
                 핵심 요약: "내 돈 얼마 있으면 5~6억 집 살 수 있나요?"
               </span>
-              <p className="text-blue-800 leading-relaxed">
+              <p className="text-blue-800 leading-relaxed break-keep">
                 신생아 특례대출(구입자금)을 활용하면 <strong>현금 약 1억 2,000만 ~ 1억 6,000만 원</strong>(부대비용 포함)만 있으면 서울·경기 5~6억 원대 역세권 대단지 아파트를 내집으로 만들 수 있습니다. 매달 갚는 돈은 연 2%대 금리로 약 140만~160만 원 수준입니다.
               </p>
             </div>
           </div>
 
           {/* QnA Cards */}
-          <div className="space-y-4">
+          <div className="space-y-3.5 sm:space-y-4">
             {qnaList.map((item, idx) => (
               <div 
                 key={idx}
-                className="bg-slate-50/70 hover:bg-slate-50 p-5 rounded-2xl border border-slate-200/80 transition-colors space-y-2.5"
+                className="bg-slate-50/70 hover:bg-slate-50 p-4 sm:p-5 rounded-2xl border border-slate-200/80 transition-colors space-y-2.5"
               >
                 <div className="flex items-start justify-between gap-2">
-                  <h3 className="font-black text-slate-900 text-sm sm:text-base flex items-start gap-2">
+                  <h3 className="font-black text-slate-900 text-sm sm:text-base flex items-start gap-2 break-keep leading-snug">
                     <span className="text-blue-600 font-extrabold shrink-0">Q{idx + 1}.</span>
                     <span>{item.q}</span>
                   </h3>
-                  <span className="bg-slate-200 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded shrink-0">
+                  <span className="bg-slate-200 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded shrink-0 whitespace-nowrap">
                     {item.tag}
                   </span>
                 </div>
 
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed whitespace-pre-line pl-6">
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed whitespace-pre-line pl-5 sm:pl-6 break-keep">
                   {item.a}
                 </p>
 
-                <div className="pl-6 pt-1">
-                  <div className="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs px-2.5 py-1 rounded-lg font-bold">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" />
+                <div className="pl-5 sm:pl-6 pt-1">
+                  <div className="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs px-2.5 py-1 rounded-lg font-bold break-keep">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
                     <span>핵심: {item.highlight}</span>
                   </div>
                 </div>
@@ -129,33 +129,33 @@ export default function BeginnerGuideModal({ onClose }) {
           </div>
 
           {/* 3단계 왕초보 행동 체크리스트 */}
-          <div className="bg-slate-900 text-white p-5 rounded-2xl space-y-3">
-            <h4 className="font-extrabold text-sm text-amber-300 flex items-center gap-1.5">
-              <Sparkles className="w-4 h-4 text-amber-400" />
+          <div className="bg-slate-900 text-white p-4 sm:p-5 rounded-2xl space-y-3">
+            <h4 className="font-extrabold text-sm text-amber-300 flex items-center gap-1.5 break-keep">
+              <Sparkles className="w-4 h-4 text-amber-400 shrink-0" />
               <span>부린이를 위한 '우리가 (우리家)' 활용 3단계</span>
             </h4>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-slate-300">
               <div className="bg-white/10 p-3 rounded-xl border border-white/10">
-                <span className="font-black text-blue-300 block mb-1">1단계: 내 조건 맞추기</span>
-                <p>상단 시뮬레이터에서 우리 부부 합산 연소득과 생애최초 여부를 설정하세요.</p>
+                <span className="font-black text-blue-300 block mb-1 whitespace-nowrap">1단계: 내 조건 맞추기</span>
+                <p className="break-keep leading-relaxed">상단 시뮬레이터에서 우리 부부 합산 연소득과 생애최초 여부를 설정하세요.</p>
               </div>
               <div className="bg-white/10 p-3 rounded-xl border border-white/10">
-                <span className="font-black text-emerald-300 block mb-1">2단계: 가격별 정렬 보기</span>
-                <p>'가격 낮은순(4억대~)' 버튼을 눌러 내 자본금으로 살 수 있는 단지를 둘러보세요.</p>
+                <span className="font-black text-emerald-300 block mb-1 whitespace-nowrap">2단계: 가격별 정렬 보기</span>
+                <p className="break-keep leading-relaxed">'가격 낮은순(4억대~)' 버튼을 눌러 내 자본금으로 살 수 있는 단지를 둘러보세요.</p>
               </div>
               <div className="bg-white/10 p-3 rounded-xl border border-white/10">
-                <span className="font-black text-amber-300 block mb-1">3단계: 도면 & 견적서 확인</span>
-                <p>'도면 보기'를 눌러 방 구조를 보고, 카드를 눌러 취득세 포함 최종 견적서를 확인하세요.</p>
+                <span className="font-black text-amber-300 block mb-1 whitespace-nowrap">3단계: 도면 & 견적서 확인</span>
+                <p className="break-keep leading-relaxed">'도면 보기'를 눌러 방 구조를 보고, 카드를 눌러 취득세 포함 최종 견적서를 확인하세요.</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Modal Footer */}
-        <div className="sticky bottom-0 bg-slate-50 px-6 py-4 border-t border-slate-200 flex justify-end">
+        <div className="sticky bottom-0 bg-slate-50 px-4 sm:px-6 py-3.5 sm:py-4 border-t border-slate-200 flex justify-end">
           <button
             onClick={onClose}
-            className="px-6 py-2.5 bg-blue-600 text-white rounded-xl text-xs font-bold hover:bg-blue-700 transition-colors cursor-pointer shadow-md"
+            className="w-full sm:w-auto px-6 py-2.5 bg-blue-600 text-white rounded-xl text-xs font-bold hover:bg-blue-700 transition-colors cursor-pointer shadow-md text-center"
           >
             이해했어요! 매물 보러가기
           </button>
