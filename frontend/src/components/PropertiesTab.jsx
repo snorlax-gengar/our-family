@@ -119,11 +119,11 @@ export default function PropertiesTab({
                 <span>DSR 규제 미적용</span>
               </span>
             </div>
-            <h2 className="text-base sm:text-xl font-bold tracking-tight text-white break-keep">
+            <h2 className="text-base sm:text-xl font-bold tracking-tight text-white whitespace-nowrap">
               나만의 신생아 특례대출 조건 설정
             </h2>
             <p className="text-[11px] sm:text-xs text-slate-300 mt-1 break-keep leading-tight">
-              소득과 조건을 변경하면 모든 아파트의 대출가능액과 필요 현금이 실시간 재계산됩니다.
+              소득·조건 변경 시 대출가능액과 필요 현금이 실시간 자동 계산됩니다.
             </p>
           </div>
 
@@ -326,15 +326,15 @@ export default function PropertiesTab({
             {/* Informative Insight Box to Fill Space Evenly */}
             <div className="bg-black/25 p-2.5 rounded-xl border border-white/10 space-y-1 mt-2">
               <div className="flex items-center gap-1 text-[11px] font-bold text-emerald-300">
-                <Sparkles className="w-3 h-3" />
-                <span>{userCriteria.isFirstHome ? '취득세 최대 200만 원 즉시 비과세' : '일반 취득세율 1.1% 정상 적용'}</span>
+                <Sparkles className="w-3 h-3 shrink-0" />
+                <span className="whitespace-nowrap">{userCriteria.isFirstHome ? '취득세 최대 200만 원 즉시 비과세' : '일반 취득세율 1.1% 정상 적용'}</span>
               </div>
-              <p className="text-[10px] text-slate-300 leading-tight">
+              <p className="text-[10px] text-slate-300 leading-tight break-keep">
                 {userCriteria.isFirstHome 
-                  ? '지방세특례제한법에 따라 12억 이하 첫 주택 매수 시 취득세 전액 감면' 
+                  ? '첫 주택 매수 시 취득세 최대 200만 원 감면 혜택' 
                   : '정부 가계대출 관리 기준 안전 LTV 70% 동일 적용'}
               </p>
-              <div className="text-[9px] text-amber-300/80 pt-0.5 border-t border-white/5">
+              <div className="text-[9px] text-amber-300/80 pt-0.5 border-t border-white/5 whitespace-nowrap">
                 ※ 대출 한도는 안전 LTV 70% 상한 준수
               </div>
             </div>
@@ -349,7 +349,7 @@ export default function PropertiesTab({
                   <Calendar className="w-3.5 h-3.5 text-sky-400" />
                   <span>대출 만기 (상환기간)</span>
                 </label>
-                <span className="font-extrabold text-sky-300 text-xs bg-sky-500/20 px-2 py-0.5 rounded-full border border-sky-400/30">
+                <span className="font-extrabold text-sky-300 text-xs bg-sky-500/20 px-2 py-0.5 rounded-full border border-sky-400/30 whitespace-nowrap">
                   {userCriteria.loanTenureYears}년 만기
                 </span>
               </div>
@@ -376,17 +376,17 @@ export default function PropertiesTab({
             {/* Informative Insight Box to Fill Space Evenly */}
             <div className="bg-black/25 p-2.5 rounded-xl border border-white/10 space-y-1 mt-2">
               <div className="flex items-center gap-1 text-[11px] font-bold text-sky-300">
-                <Calendar className="w-3 h-3" />
-                <span>{userCriteria.loanTenureYears}년 상환 플랜 특징</span>
+                <Calendar className="w-3 h-3 shrink-0" />
+                <span className="whitespace-nowrap">{userCriteria.loanTenureYears}년 상환 플랜 특징</span>
               </div>
-              <p className="text-[10px] text-slate-300 leading-tight">
+              <p className="text-[10px] text-slate-300 leading-tight break-keep">
                 {userCriteria.loanTenureYears === 40 
-                  ? '만 39세 이하 청년·신혼가구 추천: 매달 나가는 원리금 납부액 최소화' 
+                  ? '청년·신혼가구 추천: 매달 원리금 상환액 최소화' 
                   : userCriteria.loanTenureYears === 30 
-                  ? '가장 보편적인 표준 만기: 월 원리금과 30년 총이자 균형 최적' 
-                  : '단기 상환 집중: 대출 총 이자를 최소화하고 빠른 자산 형성'}
+                  ? '가장 보편적인 표준 만기: 월 원리금과 총이자 균형' 
+                  : '단기 상환 집중: 총이자 절약 및 빠른 자산 형성'}
               </p>
-              <div className="text-[9px] text-slate-400 pt-0.5 border-t border-white/5">
+              <div className="text-[9px] text-slate-400 pt-0.5 border-t border-white/5 whitespace-nowrap">
                 원리금균등분할상환 방식 적용
               </div>
             </div>
@@ -401,7 +401,7 @@ export default function PropertiesTab({
                   <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
                   <span>MCG 모기지신용보증</span>
                 </label>
-                <span className={`font-extrabold px-2 py-0.5 rounded-full text-[10px] ${userCriteria.useMcg ? 'bg-emerald-500/25 text-emerald-300 border border-emerald-400/40' : 'bg-rose-500/25 text-rose-300 border border-rose-400/40'}`}>
+                <span className={`font-extrabold px-2 py-0.5 rounded-full text-[10px] whitespace-nowrap ${userCriteria.useMcg ? 'bg-emerald-500/25 text-emerald-300 border border-emerald-400/40' : 'bg-rose-500/25 text-rose-300 border border-rose-400/40'}`}>
                   {userCriteria.useMcg ? '방공제 면제' : '방공제 차감'}
                 </span>
               </div>
@@ -410,7 +410,7 @@ export default function PropertiesTab({
               <button
                 type="button"
                 onClick={() => setUserCriteria({ ...userCriteria, useMcg: !userCriteria.useMcg })}
-                className={`w-full py-2.5 rounded-xl text-xs font-bold my-2 cursor-pointer transition-all flex items-center justify-center gap-1.5 ${
+                className={`w-full py-2.5 rounded-xl text-xs font-bold my-2 cursor-pointer transition-all flex items-center justify-center gap-1.5 whitespace-nowrap ${
                   userCriteria.useMcg 
                     ? 'bg-blue-600 text-white shadow-md border border-blue-400/40' 
                     : 'bg-rose-600/30 text-rose-200 border border-rose-400/50 hover:bg-rose-600/40'
@@ -424,15 +424,15 @@ export default function PropertiesTab({
             {/* Informative Insight Box to Fill Space Evenly */}
             <div className="bg-black/25 p-2.5 rounded-xl border border-white/10 space-y-1 mt-2">
               <div className="flex items-center gap-1 text-[11px] font-bold text-blue-300">
-                <ShieldCheck className="w-3 h-3" />
-                <span>{userCriteria.useMcg ? '방공제 5,500만 원 차감 면제 성공' : '방공제로 한도 최대 5,500만 원 차감'}</span>
+                <ShieldCheck className="w-3 h-3 shrink-0" />
+                <span className="whitespace-nowrap">{userCriteria.useMcg ? '방공제 5,500만 원 차감 면제 성공' : '방공제로 한도 최대 5,500만 원 차감'}</span>
               </div>
-              <p className="text-[10px] text-slate-300 leading-tight">
+              <p className="text-[10px] text-slate-300 leading-tight break-keep">
                 {userCriteria.useMcg 
-                  ? '보증 가입으로 서울 5,500만 / 경기 4,800만 원 공제 없이 LTV 70% 전액 수령' 
-                  : '미가입 시 최우선변제금만큼 대출금이 깎여 내야 할 현금이 늘어납니다'}
+                  ? '보증 가입으로 방공제 없이 LTV 70% 전액 대출' 
+                  : '미가입 시 최우선변제금(최대 5,500만) 한도 차감'}
               </p>
-              <div className="text-[9px] text-emerald-300/90 pt-0.5 border-t border-white/5">
+              <div className="text-[9px] text-emerald-300/90 pt-0.5 border-t border-white/5 whitespace-nowrap">
                 연간 수만 원대 보증료로 대출한도 극대화 필수
               </div>
             </div>
@@ -596,23 +596,23 @@ export default function PropertiesTab({
         </div>
 
         {/* 평형 필터 버튼 */}
-        <div className="flex items-center gap-2 text-xs pt-1 border-t border-slate-100">
-          <span className="text-slate-400 font-semibold">평형대:</span>
+        <div className="flex items-center gap-2 text-xs pt-1 border-t border-slate-100 flex-wrap sm:flex-nowrap">
+          <span className="text-slate-400 font-semibold shrink-0">평형대:</span>
           {['전체', '20평대', '30평대'].map((size) => (
             <button
               key={size}
               onClick={() => setSizeFilter(size)}
-              className={`px-3 py-0.5 rounded-md cursor-pointer transition-colors ${
+              className={`px-2.5 py-0.5 rounded-md cursor-pointer transition-colors whitespace-nowrap ${
                 sizeFilter === size
                   ? 'bg-indigo-100 text-indigo-800 font-bold border border-indigo-300'
                   : 'bg-slate-50 text-slate-600 hover:bg-slate-100 border border-slate-200'
               }`}
             >
-              {size === '20평대' ? '20평대 (59㎡ 소형)' : size === '30평대' ? '30평대 (84㎡ 국민평형)' : '전체 평형'}
+              {size === '20평대' ? '20평대 (59㎡)' : size === '30평대' ? '30평대 (84㎡)' : '전체'}
             </button>
           ))}
-          <span className="text-slate-400 ml-auto">
-            총 <strong className="text-blue-600">{filteredProperties.length}</strong>개 단지 조회됨
+          <span className="text-slate-400 ml-auto whitespace-nowrap text-[11px]">
+            총 <strong className="text-blue-600">{filteredProperties.length}</strong>개 단지
           </span>
         </div>
       </div>
@@ -691,20 +691,20 @@ export default function PropertiesTab({
                         <span className="text-lg sm:text-xl font-black text-blue-700 tracking-tight">
                           {property.priceDisplay}원
                         </span>
-                        <span className="text-[10px] text-slate-400 block mt-0.5">
+                        <span className="text-[10px] text-slate-400 block mt-0.5 whitespace-nowrap truncate">
                           KB {(kb.generalAvg / 100000000).toFixed(2)}억 · 전세 {(kb.jeonseAvg / 100000000).toFixed(1)}억 ({kb.jeonseRate}%)
                         </span>
                       </div>
 
                       <div className="text-right">
-                        <span className="text-[10px] text-slate-400 font-medium block flex items-center justify-end gap-1">
+                        <span className="text-[10px] text-slate-400 font-medium block flex items-center justify-end gap-1 whitespace-nowrap">
                           <ShieldCheck className="w-3 h-3 text-blue-600" />
                           <span>신생아 특례대출</span>
                         </span>
-                        <span className="text-lg sm:text-xl font-black text-blue-900 tracking-tight">
+                        <span className="text-lg sm:text-xl font-black text-blue-900 tracking-tight whitespace-nowrap">
                           {sim.maxLoanFormatted}
                         </span>
-                        <span className="text-[10px] text-emerald-600 font-bold block mt-0.5">
+                        <span className="text-[10px] text-emerald-600 font-bold block mt-0.5 whitespace-nowrap">
                           LTV {sim.ltvRatio}% (DSR 제외)
                         </span>
                       </div>
@@ -713,17 +713,17 @@ export default function PropertiesTab({
                     {/* 하단: 최소 필요 현금 vs 월 원리금 */}
                     <div className="pt-2 border-t border-slate-200/70 grid grid-cols-2 gap-2 text-xs">
                       <div>
-                        <span className="text-[10px] text-slate-500 block">최소 필요 현금</span>
-                        <span className="font-extrabold text-rose-600 text-sm">
+                        <span className="text-[10px] text-slate-500 block whitespace-nowrap">최소 필요 현금</span>
+                        <span className="font-extrabold text-rose-600 text-sm whitespace-nowrap">
                           {sim.requiredCashFormatted}
                         </span>
                       </div>
                       <div className="text-right">
-                        <span className="text-[10px] text-slate-500 block">월 원리금 ({sim.loanTenureYears}년)</span>
-                        <span className="font-extrabold text-slate-900 text-sm">
+                        <span className="text-[10px] text-slate-500 block whitespace-nowrap">월 원리금 ({sim.loanTenureYears}년)</span>
+                        <span className="font-extrabold text-slate-900 text-sm whitespace-nowrap">
                           약 {sim.monthlyPayment?.toLocaleString()}원
                         </span>
-                        <span className="text-[10px] text-emerald-600 font-semibold block">
+                        <span className="text-[10px] text-emerald-600 font-semibold block whitespace-nowrap">
                           연 {sim.finalInterestRate}%
                         </span>
                       </div>
@@ -733,10 +733,10 @@ export default function PropertiesTab({
 
                 {/* 3. Card Footer: 절약액 배지 & 상세 견적 버튼 */}
                 <div className="px-3.5 sm:px-4 py-2 border-t border-slate-100 flex items-center justify-between text-xs bg-slate-50/40">
-                  <span className="text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded font-semibold text-[10px] sm:text-[11px] truncate max-w-[200px] sm:max-w-none">
+                  <span className="text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded font-semibold text-[10px] sm:text-[11px] whitespace-nowrap truncate">
                     일반대출 대비 월 {sim.comparison?.monthlySavings?.toLocaleString()}원 절약
                   </span>
-                  <div className="flex items-center gap-1 text-blue-600 font-bold text-xs shrink-0 group-hover:translate-x-0.5 transition-transform">
+                  <div className="flex items-center gap-1 text-blue-600 font-bold text-xs shrink-0 whitespace-nowrap group-hover:translate-x-0.5 transition-transform">
                     <span>상세 견적</span>
                     <ChevronRight className="w-3.5 h-3.5" />
                   </div>

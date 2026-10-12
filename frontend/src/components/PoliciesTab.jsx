@@ -47,10 +47,10 @@ export default function PoliciesTab({
               </span>
             </div>
             <h2 className="text-xl sm:text-2xl font-black tracking-tight break-keep">
-              부동산 용어 정리집 & 대한민국 부동산 정책 요약집
+              부동산 필수 용어사전 & 정부 정책 요약집
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 mt-1.5 max-w-2xl break-keep leading-relaxed">
-              어려운 부동산 금융·세금 용어를 알기 쉽게 해설하고, 현재 시행 중인 핵심 부동산 정책과 미래 정부 정책을 실시간 스크래핑하여 알려드립니다.
+              LTV·DSR 등 필수 금융 용어 해설과 함께,<br className="hidden sm:inline" /> 현재 시행 중인 핵심 부동산 정책 및 최신 보도자료를 제공합니다.
             </p>
           </div>
 
@@ -71,7 +71,7 @@ export default function PoliciesTab({
           <div className="flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
             <h3 className="font-black text-slate-900 text-base sm:text-lg break-keep">
-              실시간 정부 정책 보도자료 & 미래 정책 알리미 (자동 스크래핑)
+              실시간 정부 정책 보도자료 & 미래 정책 알리미
             </h3>
           </div>
           <span className="text-xs text-slate-400 whitespace-nowrap self-start sm:self-center">

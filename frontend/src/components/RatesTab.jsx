@@ -38,7 +38,7 @@ export default function RatesTab({ ratesData, onRefreshNews, newsRefreshing }) {
               대한민국 핵심 금리 종합 취합
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 mt-1.5 max-w-2xl break-keep leading-relaxed">
-              한국은행 기준금리부터 COFIX(코픽스), 채권시장 금리, 5대 시중은행 주담대, 정부 정책대출 금리를 매일 취합하고 최신 뉴스를 전달합니다.
+              한국은행 기준금리부터 코픽스, 5대 시중은행 주담대 및 신생아 특례대출까지,<br className="hidden sm:inline" /> 매일 최신 금리 동향과 뉴스를 실시간 취합합니다.
             </p>
           </div>
 
@@ -72,8 +72,8 @@ export default function RatesTab({ ratesData, onRefreshNews, newsRefreshing }) {
               -0.25%p 인하
             </span>
           </div>
-          <p className="text-xs text-slate-400 mt-2 break-keep">
-            최근 의결: {baseRate.decisionDate} (인하 기조 진입)
+          <p className="text-xs text-slate-400 mt-2 whitespace-nowrap">
+            최근 의결: {baseRate.decisionDate} · 인하 기조
           </p>
         </div>
 
@@ -92,8 +92,8 @@ export default function RatesTab({ ratesData, onRefreshNews, newsRefreshing }) {
               -0.09%p 하락
             </span>
           </div>
-          <p className="text-xs text-slate-400 mt-2 break-keep">
-            은행연합회 공시 (주담대 변동금리 직결)
+          <p className="text-xs text-slate-400 mt-2 whitespace-nowrap">
+            은행연합회 공시 · 변동금리 직결
           </p>
         </div>
 
@@ -112,8 +112,8 @@ export default function RatesTab({ ratesData, onRefreshNews, newsRefreshing }) {
               -0.04%p 안정
             </span>
           </div>
-          <p className="text-xs text-slate-400 mt-2 break-keep">
-            5년 주기형 혼합형 주담대 준거금리
+          <p className="text-xs text-slate-400 mt-2 whitespace-nowrap">
+            5년 주기형 혼합형 준거지표
           </p>
         </div>
 
@@ -128,8 +128,8 @@ export default function RatesTab({ ratesData, onRefreshNews, newsRefreshing }) {
           <div className="flex items-baseline gap-2">
             <span className="text-3xl font-black text-blue-800">연 1.6~3.3%</span>
           </div>
-          <p className="text-xs text-blue-700 font-semibold mt-2 break-keep">
-            DSR 스트레스 규제 미적용 / 최대 5억
+          <p className="text-xs text-blue-700 font-semibold mt-2 whitespace-nowrap">
+            DSR 미적용 규제 혜택 · 최대 5억
           </p>
         </div>
       </div>
@@ -205,10 +205,10 @@ export default function RatesTab({ ratesData, onRefreshNews, newsRefreshing }) {
           <div>
             <h3 className="font-black text-slate-900 text-base sm:text-lg flex items-center gap-2 break-keep">
               <Building2 className="w-5 h-5 text-blue-600 shrink-0" />
-              <span>5대 시중은행 주택담보대출 금리 비교 <span className="text-xs font-semibold text-slate-500 block sm:inline">(KB·신한·하나·우리·농협)</span></span>
+              <span>5대 시중은행 주담대 금리 비교 <span className="text-xs font-semibold text-slate-500 whitespace-nowrap block sm:inline">(KB·신한·하나·우리·농협)</span></span>
             </h3>
             <p className="text-xs text-slate-500 mt-1 break-keep">
-              ※ 스트레스 DSR 2단계 수도권 가산금리(1.2%p) 반영 전 실제 고시 금리 구간입니다.
+              ※ 스트레스 DSR 2단계 수도권 가산금리(1.2%p) 반영 전 공시 구간입니다.
             </p>
           </div>
           <span className="text-xs text-slate-400 whitespace-nowrap self-start sm:self-center">은행연합회 소비자포털 취합</span>

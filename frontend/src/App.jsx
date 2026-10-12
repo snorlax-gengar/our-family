@@ -139,7 +139,7 @@ export default function App() {
       )}
 
       {/* Main Content Body (Mobile-first responsive container) */}
-      <main className="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 py-3.5 sm:py-8 pb-24 md:pb-8">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 py-3.5 sm:py-8 pb-32 md:pb-8">
         {activeTab === 'properties' && (
           <PropertiesTab
             properties={properties}
@@ -169,39 +169,41 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-slate-200 mt-12 py-8 pb-28 md:pb-8 text-xs text-slate-500">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-md bg-blue-600 text-white flex items-center justify-center font-bold text-xs">
-              <Home className="w-3.5 h-3.5" />
+      <footer className="bg-white border-t border-slate-200 mt-10 py-8 pb-36 md:pb-10 text-xs text-slate-500">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2.5 text-center sm:text-left">
+            <div className="flex items-center gap-2 shrink-0">
+              <div className="w-6 h-6 rounded-md bg-blue-600 text-white flex items-center justify-center font-bold text-xs">
+                <Home className="w-3.5 h-3.5" />
+              </div>
+              <span className="font-bold text-slate-800 whitespace-nowrap">우리가 (우리家) · 우리 가족 보금자리 플래너</span>
             </div>
-            <span className="font-bold text-slate-800">우리가 (우리家) - 우리 가족 보금자리 플래너</span>
-            <span className="text-slate-300">|</span>
-            <span>수도권 5~6억 원대 매물 · 평형 도면 CAD · 신생아 특례대출(LTV 70%) · 금리 & 정책 통합 허브</span>
+            <p className="text-slate-400 text-[11px] break-keep leading-tight">
+              수도권 5~6억 원대 매물 · 평형 도면 CAD · 신생아 특례대출(LTV 70%) · 금리 & 정책 통합 허브
+            </p>
           </div>
 
-          <div className="text-center sm:text-right text-[11px] text-slate-400">
-            ※ 본 시뮬레이션은 국토교통부 실거래가, KB국민은행 시세 및 주택도시기금 지침을 토대로 작성되었습니다.
-            <br />
-            실제 대출 취급 및 심사는 은행 창구 및 기금e든든 심사 결과에 따라 달라질 수 있습니다.
+          <div className="text-center md:text-right text-[11px] text-slate-400 break-keep leading-relaxed">
+            <p>※ 본 시뮬레이션은 국토교통부 실거래가, KB국민은행 시세 및 주택도시기금 지침을 토대로 작성되었습니다.</p>
+            <p className="mt-0.5 text-slate-400/90">실제 대출 취급 및 심사는 은행 창구 및 기금e든든 심사 결과에 따라 달라질 수 있습니다.</p>
           </div>
         </div>
       </footer>
 
-      {/* 📱 Mobile Fixed Bottom Navigation Bar (모바일 화면 전용 네이티브 앱 스타일 탭바) */}
-      <nav className="fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200/90 py-1.5 px-3 flex items-center justify-around md:hidden shadow-lg shadow-slate-900/10">
+      {/* 📱 Mobile Fixed Bottom Navigation Bar (화면 하단 여백 보강 & 넉넉한 터치 영역 확보) */}
+      <nav className="fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200/90 pt-2 pb-6 px-3 flex items-center justify-around md:hidden shadow-xl shadow-slate-900/10">
         <button
           type="button"
           onClick={() => {
             setActiveTab('properties');
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
-          className={`flex flex-col items-center justify-center py-1 px-3 rounded-xl transition-all cursor-pointer ${
-            activeTab === 'properties' ? 'text-blue-600 font-black' : 'text-slate-400 font-semibold hover:text-slate-600'
+          className={`flex flex-col items-center justify-center py-1.5 px-3 rounded-2xl min-w-[64px] min-h-[48px] transition-all cursor-pointer active:scale-95 ${
+            activeTab === 'properties' ? 'text-blue-600 font-black bg-blue-50/80 shadow-xs' : 'text-slate-400 font-semibold hover:text-slate-600'
           }`}
         >
           <Building2 className={`w-5 h-5 mb-0.5 ${activeTab === 'properties' ? 'text-blue-600 stroke-[2.5]' : 'text-slate-400'}`} />
-          <span className="text-[10px]">매물 & 대출</span>
+          <span className="text-[10px] whitespace-nowrap">매물 & 대출</span>
         </button>
 
         <button
@@ -210,12 +212,12 @@ export default function App() {
             setActiveTab('rates');
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
-          className={`flex flex-col items-center justify-center py-1 px-3 rounded-xl transition-all cursor-pointer ${
-            activeTab === 'rates' ? 'text-blue-600 font-black' : 'text-slate-400 font-semibold hover:text-slate-600'
+          className={`flex flex-col items-center justify-center py-1.5 px-3 rounded-2xl min-w-[64px] min-h-[48px] transition-all cursor-pointer active:scale-95 ${
+            activeTab === 'rates' ? 'text-blue-600 font-black bg-blue-50/80 shadow-xs' : 'text-slate-400 font-semibold hover:text-slate-600'
           }`}
         >
           <Percent className={`w-5 h-5 mb-0.5 ${activeTab === 'rates' ? 'text-blue-600 stroke-[2.5]' : 'text-slate-400'}`} />
-          <span className="text-[10px]">금리 & 뉴스</span>
+          <span className="text-[10px] whitespace-nowrap">금리 & 뉴스</span>
         </button>
 
         <button
@@ -224,21 +226,21 @@ export default function App() {
             setActiveTab('policies');
             window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
-          className={`flex flex-col items-center justify-center py-1 px-3 rounded-xl transition-all cursor-pointer ${
-            activeTab === 'policies' ? 'text-blue-600 font-black' : 'text-slate-400 font-semibold hover:text-slate-600'
+          className={`flex flex-col items-center justify-center py-1.5 px-3 rounded-2xl min-w-[64px] min-h-[48px] transition-all cursor-pointer active:scale-95 ${
+            activeTab === 'policies' ? 'text-blue-600 font-black bg-blue-50/80 shadow-xs' : 'text-slate-400 font-semibold hover:text-slate-600'
           }`}
         >
           <BookOpen className={`w-5 h-5 mb-0.5 ${activeTab === 'policies' ? 'text-blue-600 stroke-[2.5]' : 'text-slate-400'}`} />
-          <span className="text-[10px]">정책 & 용어</span>
+          <span className="text-[10px] whitespace-nowrap">정책 & 용어</span>
         </button>
 
         <button
           type="button"
           onClick={() => setIsGuideOpen(true)}
-          className="flex flex-col items-center justify-center py-1 px-3 rounded-xl transition-all cursor-pointer text-amber-600 hover:text-amber-700 font-black"
+          className="flex flex-col items-center justify-center py-1.5 px-3 rounded-2xl min-w-[64px] min-h-[48px] transition-all cursor-pointer text-amber-600 hover:text-amber-700 font-black active:scale-95"
         >
           <Sparkles className="w-5 h-5 mb-0.5 text-amber-500 fill-amber-400/30 animate-pulse" />
-          <span className="text-[10px]">3분 가이드</span>
+          <span className="text-[10px] whitespace-nowrap">3분 가이드</span>
         </button>
       </nav>
     </div>
