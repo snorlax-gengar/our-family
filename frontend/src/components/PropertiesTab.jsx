@@ -78,7 +78,9 @@ export default function PropertiesTab({
         const matchDong = item.dong.toLowerCase().includes(term);
         const matchSubway = item.subwayStation.toLowerCase().includes(term);
         const matchBay = item.floorPlan?.bay?.toLowerCase().includes(term);
-        if (!matchName && !matchDong && !matchSubway && !matchBay) return false;
+        const matchAddress = item.address?.toLowerCase().includes(term);
+        const matchHighlights = item.highlights?.some(h => h.toLowerCase().includes(term));
+        if (!matchName && !matchDong && !matchSubway && !matchBay && !matchAddress && !matchHighlights) return false;
       }
       return true;
     }).sort((a, b) => {
