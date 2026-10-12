@@ -1,0 +1,26 @@
+{
+  "name": "우리가 (우리家) - 우리 가족 보금자리 플래너",
+  "short_name": "우리가",
+  "description": "우리 가족을 위한 서울·경기 5~6억 아파트 매물, 평형 도면, 신생아 특례대출(LTV 70% 안전 기준), 실시간 금리 및 정책 통합 플랫폼",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff4757",
+  "icons": [
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
