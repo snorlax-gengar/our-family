@@ -57,23 +57,23 @@ export default function Header({ activeTab, setActiveTab, ratesData, onOpenGuide
             </div>
             <div>
               <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
-                <h1 className="text-lg sm:text-2xl font-black text-slate-900 tracking-tight">
+                <h1 className="text-lg sm:text-2xl font-black text-slate-900 tracking-tight whitespace-nowrap">
                   우리가 <span className="text-blue-600">(우리家)</span>
                 </h1>
-                <span className="bg-blue-100 text-blue-800 text-[10px] sm:text-[11px] font-extrabold px-1.5 sm:px-2 py-0.5 rounded-md">
+                <span className="bg-blue-100 text-blue-800 text-[10px] sm:text-[11px] font-extrabold px-1.5 sm:px-2 py-0.5 rounded-md whitespace-nowrap">
                   가족 보금자리 플래너
                 </span>
                 {/* 🐣 왕초보 3분 가이드 버튼 (모바일에서도 원클릭 접근 가능) */}
                 <button
                   type="button"
                   onClick={onOpenGuide}
-                  className="bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 text-[11px] sm:text-xs font-black px-2 sm:px-2.5 py-0.5 rounded-full transition-all flex items-center gap-1 cursor-pointer animate-pulse"
+                  className="bg-amber-100 hover:bg-amber-200 text-amber-900 border border-amber-300 text-[10px] sm:text-xs font-black px-2 sm:px-2.5 py-0.5 rounded-full transition-all flex items-center gap-1 cursor-pointer animate-pulse whitespace-nowrap"
                 >
                   <span>🐣 부린이 3분 가이드</span>
                   <span className="text-[9px] sm:text-[10px] bg-amber-500 text-white rounded-full px-1">Q&A</span>
                 </button>
               </div>
-              <div className="text-xs text-slate-500 font-medium mt-0.5">
+              <div className="text-xs text-slate-500 font-medium mt-0.5 break-keep">
                 <p className="text-slate-700 font-bold text-[11px] sm:text-xs leading-tight">"우리가 함께 짓는, 우리 가족의 첫 보금자리"</p>
                 <p className="text-[10px] sm:text-[11px] text-slate-400 mt-0.5 leading-tight">서울·경기 5~6억 아파트 & 신생아 특례대출(LTV 70%) 통합 허브</p>
               </div>

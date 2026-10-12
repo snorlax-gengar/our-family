@@ -107,56 +107,57 @@ export default function PropertiesTab({
   return (
     <div className="space-y-6">
       {/* 1. 신생아 특례대출 실시간 조건 설정 패널 (Interactive Simulator Controller) */}
-      <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 rounded-2xl p-5 sm:p-6 text-white shadow-xl">
-        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-5 border-b border-white/10 pb-4">
+      <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 rounded-2xl p-4 sm:p-6 text-white shadow-xl">
+        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 mb-4 sm:mb-5 border-b border-white/10 pb-3 sm:pb-4">
           <div>
-            <div className="flex items-center gap-2">
-              <span className="bg-blue-500/30 text-blue-300 border border-blue-400/40 text-[11px] font-bold px-2.5 py-0.5 rounded-full">
+            <div className="flex items-center gap-2 flex-wrap mb-1">
+              <span className="bg-blue-500/30 text-blue-300 border border-blue-400/40 text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded-full whitespace-nowrap">
                 실시간 연동 시뮬레이터
               </span>
-              <h2 className="text-lg sm:text-xl font-bold tracking-tight">
-                나만의 신생아 특례대출 조건 설정
-              </h2>
+              <span className="bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[10px] sm:text-[11px] font-semibold px-2 py-0.5 rounded-full flex items-center gap-1 whitespace-nowrap">
+                <ShieldCheck className="w-3 h-3" />
+                <span>DSR 규제 미적용</span>
+              </span>
             </div>
-            <p className="text-xs text-slate-300 mt-1">
-              소득과 조건을 변경하면 모든 5~6억 아파트 매물의 대출가능액, 필요 현금, 월 납입액이 실시간으로 재계산됩니다.
+            <h2 className="text-base sm:text-xl font-bold tracking-tight text-white break-keep">
+              나만의 신생아 특례대출 조건 설정
+            </h2>
+            <p className="text-[11px] sm:text-xs text-slate-300 mt-1 break-keep leading-tight">
+              소득과 조건을 변경하면 모든 아파트의 대출가능액과 필요 현금이 실시간 재계산됩니다.
             </p>
           </div>
 
-          <div className="flex items-center gap-2 text-xs flex-wrap">
-            <span className="bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 px-2.5 py-1 rounded-md font-semibold flex items-center gap-1">
-              <ShieldCheck className="w-3.5 h-3.5" />
-              <span>DSR 스트레스 규제 미적용</span>
-            </span>
-            {onOpenGuide && (
+          {/* 데스크톱 전용 가이드 버튼 (모바일 화면에서는 상단 헤더 및 하단 탭바에 이미 있으므로 중복 제거) */}
+          {onOpenGuide && (
+            <div className="hidden sm:flex items-center gap-2 text-xs">
               <button
                 type="button"
                 onClick={onOpenGuide}
-                className="bg-amber-400 hover:bg-amber-300 text-slate-900 px-3 py-1 rounded-md font-black transition-colors flex items-center gap-1 cursor-pointer shadow-xs"
+                className="bg-amber-400 hover:bg-amber-300 text-slate-900 px-3 py-1.5 rounded-lg font-black transition-colors flex items-center gap-1 cursor-pointer shadow-xs whitespace-nowrap"
               >
                 <span>🐣 왕초보 3분 Q&A 가이드</span>
               </button>
-            )}
-          </div>
+            </div>
+          )}
         </div>
 
         {/* 📱 Mobile Quick Condition Summary & Toggle Pill (모바일 화면 전용 빠른 조건 확인 및 접기/펼치기) */}
-        <div className="sm:hidden mb-4">
-          <div className="bg-slate-950/60 rounded-xl p-3 border border-white/15 flex items-center justify-between gap-2 shadow-inner">
+        <div className="sm:hidden mb-2">
+          <div className="bg-slate-950/70 rounded-xl p-3 border border-white/15 flex items-center justify-between gap-2 shadow-inner">
             <div className="text-[11px] leading-tight">
               <div className="text-amber-300 font-black flex items-center gap-1">
                 <DollarSign className="w-3.5 h-3.5" />
                 <span>{(Math.round(userCriteria.annualIncome / 10000)).toLocaleString()}만 원</span>
-                <span className="text-[10px] text-emerald-400 font-extrabold bg-emerald-500/20 px-1 rounded ml-1">LTV 70%</span>
+                <span className="text-[10px] text-emerald-400 font-extrabold bg-emerald-500/20 px-1.5 py-0.2 rounded ml-1 whitespace-nowrap">LTV 70%</span>
               </div>
-              <div className="text-slate-300 text-[10px] mt-0.5">
-                {userCriteria.isFirstHome ? '생애최초(취득세 감면)' : '일반 무주택'} · {userCriteria.loanTenureYears}년 만기 {userCriteria.useMcg && '· MCG'}
+              <div className="text-slate-300 text-[10px] mt-1 whitespace-nowrap">
+                {userCriteria.isFirstHome ? '생애최초(취득세 감면)' : '일반 무주택'} · {userCriteria.loanTenureYears}년 {userCriteria.useMcg && '· MCG'}
               </div>
             </div>
             <button
               type="button"
               onClick={() => setIsMobileSimulatorOpen(!isMobileSimulatorOpen)}
-              className="bg-blue-600 hover:bg-blue-500 text-white text-[11px] font-bold px-3 py-1.5 rounded-lg shrink-0 flex items-center gap-1 transition-all cursor-pointer shadow-sm active:scale-95"
+              className="bg-blue-600 hover:bg-blue-500 text-white text-[11px] font-bold px-3 py-1.5 rounded-lg shrink-0 flex items-center gap-1 transition-all cursor-pointer shadow-sm active:scale-95 whitespace-nowrap"
             >
               <span>{isMobileSimulatorOpen ? '조건 접기 ▴' : '조건 변경 ▾'}</span>
             </button>
@@ -440,7 +441,7 @@ export default function PropertiesTab({
       </div>
 
       {/* 2. 필터 및 정렬 컨트롤 (가격별 정렬 & 가격대 밴드 & 도면 안내) */}
-      <div className="bg-white rounded-xl p-4 sm:p-5 border border-slate-200 shadow-xs space-y-4">
+      <div className="bg-white rounded-xl p-3.5 sm:p-5 border border-slate-200 shadow-xs space-y-3 sm:space-y-4">
         {/* 상단 검색 & 지역 대분류 */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
           {/* 지역 대분류 탭 */}
@@ -477,8 +478,8 @@ export default function PropertiesTab({
         </div>
 
         {/* 🌟 가격별 정렬 바로가기 버튼 바 (요청사항 반영: 가격별 정렬, 모바일 가로 스크롤 최적화) */}
-        <div className="bg-slate-50 p-2.5 sm:p-3 rounded-xl border border-slate-200/90 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
-          <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-nowrap pb-1 sm:pb-0">
+        <div className="bg-slate-50 p-2 sm:p-3 rounded-xl border border-slate-200/90 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-nowrap pb-0.5 sm:pb-0">
             <span className="text-xs font-bold text-slate-700 mr-1 flex items-center gap-1 shrink-0">
               <ArrowUpDown className="w-3.5 h-3.5 text-blue-600" />
               <span>정렬:</span>
@@ -487,7 +488,7 @@ export default function PropertiesTab({
             <button
               type="button"
               onClick={() => setSortOption('priceLow')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap flex items-center gap-1 shrink-0 ${
+              className={`px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap flex items-center gap-1 shrink-0 ${
                 sortOption === 'priceLow'
                   ? 'bg-blue-600 text-white shadow-xs'
                   : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-100'
@@ -500,7 +501,7 @@ export default function PropertiesTab({
             <button
               type="button"
               onClick={() => setSortOption('priceHigh')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap flex items-center gap-1 shrink-0 ${
+              className={`px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap flex items-center gap-1 shrink-0 ${
                 sortOption === 'priceHigh'
                   ? 'bg-blue-600 text-white shadow-xs'
                   : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-100'
@@ -513,7 +514,7 @@ export default function PropertiesTab({
             <button
               type="button"
               onClick={() => setSortOption('jeonseHigh')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
+              className={`px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                 sortOption === 'jeonseHigh'
                   ? 'bg-blue-600 text-white shadow-xs'
                   : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-100'
@@ -525,7 +526,7 @@ export default function PropertiesTab({
             <button
               type="button"
               onClick={() => setSortOption('yearNew')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
+              className={`px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                 sortOption === 'yearNew'
                   ? 'bg-blue-600 text-white shadow-xs'
                   : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-100'
@@ -537,7 +538,7 @@ export default function PropertiesTab({
             <button
               type="button"
               onClick={() => setSortOption('unitsHigh')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
+              className={`px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
                 sortOption === 'unitsHigh'
                   ? 'bg-blue-600 text-white shadow-xs'
                   : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-100'
@@ -547,7 +548,7 @@ export default function PropertiesTab({
             </button>
           </div>
 
-          <div className="text-[11px] sm:text-xs text-slate-500 shrink-0">
+          <div className="hidden sm:block text-xs text-slate-500 shrink-0">
             현재 정렬: <strong className="text-blue-600 font-extrabold">{sortOption === 'priceLow' ? '가격 낮은순' : sortOption === 'priceHigh' ? '가격 높은순' : sortOption === 'jeonseHigh' ? '전세가율순' : '추천순'}</strong>
           </div>
         </div>
@@ -634,137 +635,110 @@ export default function PropertiesTab({
               <div
                 key={property.id}
                 onClick={() => handleOpenDetail(property)}
-                className="bg-white rounded-2xl border border-slate-200 hover:border-blue-400 hover:shadow-xl transition-all duration-200 flex flex-col justify-between overflow-hidden cursor-pointer group active:scale-[0.99]"
+                className="bg-white rounded-2xl border border-slate-200 hover:border-blue-400 hover:shadow-lg transition-all duration-200 flex flex-col justify-between overflow-hidden cursor-pointer group active:scale-[0.99]"
               >
                 <div>
-                  {/* Card Header */}
-                  <div className="p-4 sm:p-5 pb-3 border-b border-slate-100">
-                    <div className="flex items-center justify-between gap-2 mb-2">
-                      <div className="flex items-center gap-1.5">
-                        <span className="bg-slate-100 text-slate-700 text-[11px] font-bold px-2 py-0.5 rounded">
-                          {property.region} {property.district}
+                  {/* 1. Card Header: 지역, 단지명, 평형, 역세권 & 도면 버튼을 콤팩트하게 통합 */}
+                  <div className="p-3.5 sm:p-4 pb-2 border-b border-slate-100">
+                    <div className="flex items-center justify-between gap-1 mb-1.5">
+                      <div className="flex items-center gap-1.5 flex-wrap">
+                        <span className="bg-slate-100 text-slate-700 text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded">
+                          {property.region} {property.district} {property.dong}
                         </span>
-                        <span className="text-slate-400 text-xs">{property.dong}</span>
+                        <span className="text-[11px] text-slate-400">
+                          {property.buildYear}년 · {property.totalUnits?.toLocaleString()}세대
+                        </span>
                       </div>
-                      <span className="text-xs font-semibold text-slate-500">
-                        {property.buildYear}년 · {property.totalUnits?.toLocaleString()}세대
-                      </span>
+
+                      {/* 도면 원클릭 보기 버튼 (헤더 우측에 콤팩트하게 배치) */}
+                      <button
+                        type="button"
+                        onClick={(e) => handleOpenFloorPlan(e, property)}
+                        className="bg-slate-50 hover:bg-blue-600 text-slate-600 hover:text-white px-2 py-0.5 rounded-md text-[10px] sm:text-[11px] font-bold transition-colors flex items-center gap-1 shrink-0 border border-slate-200 cursor-pointer"
+                        title="평형 도면 열기"
+                      >
+                        <Eye className="w-3 h-3 text-blue-600 group-hover:text-white" />
+                        <span>{fp.bay || '3-Bay'} 도면</span>
+                      </button>
                     </div>
 
-                    <div className="flex items-baseline justify-between">
-                      <h3 className="text-base sm:text-lg font-black text-slate-900 group-hover:text-blue-600 transition-colors">
+                    <div className="flex items-baseline justify-between gap-2">
+                      <h3 className="text-base sm:text-lg font-black text-slate-900 group-hover:text-blue-600 transition-colors tracking-tight truncate">
                         {property.name}
                       </h3>
-                      <span className="text-sm font-bold text-slate-600">
-                        {property.pyeong}평 <span className="text-xs font-normal text-slate-400">({property.areaSqMeter}㎡)</span>
+                      <span className="text-xs sm:text-sm font-bold text-slate-700 shrink-0">
+                        {property.pyeong}평 <span className="text-[11px] font-normal text-slate-400">({property.areaSqMeter}㎡)</span>
                       </span>
                     </div>
 
-                    <div className="flex items-center gap-1.5 text-xs text-slate-500 mt-1">
-                      <Train className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                      <span>{property.subwayStation} {property.subwayDistance}</span>
+                    <div className="flex items-center justify-between text-[11px] text-slate-500 mt-1">
+                      <div className="flex items-center gap-1 truncate">
+                        <Train className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                        <span className="truncate">{property.subwayStation} {property.subwayDistance}</span>
+                      </div>
+                      <span className="text-slate-400 text-[10px] sm:text-[11px] shrink-0 ml-1">
+                        {fp.roomsCount ? `${fp.roomsCount}룸 ${fp.bathroomsCount}욕` : property.rooms} · {fp.structure || '판상형'}
+                      </span>
                     </div>
                   </div>
 
-                  {/* 🌟 평형 도면 스펙 바 & 도면 바로보기 버튼 */}
-                  <div className="px-4 sm:px-5 py-2 sm:py-2.5 bg-slate-900 text-white flex items-center justify-between text-xs">
-                    <div className="flex items-center gap-2">
-                      <span className="bg-blue-600 font-extrabold text-[10px] px-2 py-0.5 rounded">
-                        {fp.bay || '3-Bay'}
-                      </span>
-                      <span className="text-slate-300 font-medium text-[11px] sm:text-xs">
-                        {fp.roomsCount ? `${fp.roomsCount}룸 ${fp.bathroomsCount}욕실` : property.rooms}
-                      </span>
-                      <span className="text-slate-400 text-[11px] hidden sm:inline">
-                        · {fp.structure || '판상형'}
-                      </span>
-                    </div>
-
-                    {/* 도면 원클릭 보기 버튼 */}
-                    <button
-                      type="button"
-                      onClick={(e) => handleOpenFloorPlan(e, property)}
-                      className="bg-slate-800 hover:bg-blue-600 text-blue-300 hover:text-white px-2.5 py-1 rounded-md text-[11px] font-bold transition-colors flex items-center gap-1 border border-slate-700 cursor-pointer"
-                    >
-                      <Eye className="w-3 h-3" />
-                      <span>도면 보기</span>
-                    </button>
-                  </div>
-
-                  {/* Price & KB Price Block */}
-                  <div className="p-4 sm:p-5 py-3 sm:py-3.5 bg-slate-50/70 border-b border-slate-100">
-                    <div className="flex justify-between items-baseline mb-2">
-                      <span className="text-xs font-medium text-slate-500">매매 기준가</span>
-                      <span className="text-xl sm:text-2xl font-black text-blue-700 tracking-tight">
-                        {property.priceDisplay}원
-                      </span>
-                    </div>
-
-                    <div className="grid grid-cols-2 gap-2 text-xs pt-2 border-t border-slate-200/60">
+                  {/* 2. Unified Financial Block (매매가, 대출가능액, 필요현금, 월상환액 통합 콤팩트 대시보드) */}
+                  <div className="mx-3.5 sm:mx-4 my-2.5 p-3 bg-gradient-to-br from-slate-50 to-blue-50/50 rounded-xl border border-slate-200/80 space-y-2">
+                    {/* 상단: 매매 기준가 vs 신생아 특례대출 한도 */}
+                    <div className="flex items-baseline justify-between gap-2">
                       <div>
-                        <span className="text-[11px] text-slate-400 block">KB 일반평균가</span>
-                        <span className="font-extrabold text-slate-800">
-                          {sim.propertyPrice ? (kb.generalAvg / 100000000).toFixed(2) + '억' : '-'}
+                        <span className="text-[10px] text-slate-400 font-medium block">매매 기준가</span>
+                        <span className="text-lg sm:text-xl font-black text-blue-700 tracking-tight">
+                          {property.priceDisplay}원
+                        </span>
+                        <span className="text-[10px] text-slate-400 block mt-0.5">
+                          KB {(kb.generalAvg / 100000000).toFixed(2)}억 · 전세 {(kb.jeonseAvg / 100000000).toFixed(1)}억 ({kb.jeonseRate}%)
                         </span>
                       </div>
+
                       <div className="text-right">
-                        <span className="text-[11px] text-slate-400 block">전세평균 (전세가율)</span>
-                        <span className="font-bold text-slate-700">
-                          {(kb.jeonseAvg / 100000000).toFixed(1)}억 <span className="text-emerald-600 font-extrabold">({kb.jeonseRate}%)</span>
+                        <span className="text-[10px] text-slate-400 font-medium block flex items-center justify-end gap-1">
+                          <ShieldCheck className="w-3 h-3 text-blue-600" />
+                          <span>신생아 특례대출</span>
+                        </span>
+                        <span className="text-lg sm:text-xl font-black text-blue-900 tracking-tight">
+                          {sim.maxLoanFormatted}
+                        </span>
+                        <span className="text-[10px] text-emerald-600 font-bold block mt-0.5">
+                          LTV {sim.ltvRatio}% (DSR 제외)
                         </span>
                       </div>
                     </div>
-                  </div>
 
-                  {/* 신생아 특례대출 계산 결과 하이라이트 */}
-                  <div className="p-4 sm:p-5 py-3 sm:py-3.5 bg-gradient-to-br from-blue-50/50 to-indigo-50/50 space-y-2">
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="font-bold text-blue-900 flex items-center gap-1">
-                        <ShieldCheck className="w-4 h-4 text-blue-600" />
-                        <span>신생아 특례 대출 가능액</span>
-                      </span>
-                      <span className="bg-emerald-100 text-emerald-800 text-[10px] font-bold px-1.5 py-0.2 rounded">
-                        DSR 규제 제외
-                      </span>
-                    </div>
-
-                    <div className="flex items-baseline justify-between">
-                      <span className="text-xl sm:text-2xl font-black text-blue-800">
-                        {sim.maxLoanFormatted}
-                      </span>
-                      <span className="text-xs text-slate-500">
-                        LTV {sim.ltvRatio}% {sim.useMcg && '(MCG적용)'}
-                      </span>
-                    </div>
-
-                    <div className="pt-2 border-t border-blue-100/80 grid grid-cols-2 gap-2 text-xs">
+                    {/* 하단: 최소 필요 현금 vs 월 원리금 */}
+                    <div className="pt-2 border-t border-slate-200/70 grid grid-cols-2 gap-2 text-xs">
                       <div>
-                        <span className="text-[11px] text-slate-500 block">최소 필요 현금</span>
-                        <span className="font-bold text-rose-600 text-sm">
+                        <span className="text-[10px] text-slate-500 block">최소 필요 현금</span>
+                        <span className="font-extrabold text-rose-600 text-sm">
                           {sim.requiredCashFormatted}
                         </span>
                       </div>
                       <div className="text-right">
-                        <span className="text-[11px] text-slate-500 block">월 상환액 (원리금)</span>
-                        <span className="font-bold text-slate-900 text-sm">
+                        <span className="text-[10px] text-slate-500 block">월 원리금 ({sim.loanTenureYears}년)</span>
+                        <span className="font-extrabold text-slate-900 text-sm">
                           약 {sim.monthlyPayment?.toLocaleString()}원
                         </span>
-                        <span className="text-[10px] text-emerald-600 block">
-                          연 {sim.finalInterestRate}% ({sim.loanTenureYears}년)
+                        <span className="text-[10px] text-emerald-600 font-semibold block">
+                          연 {sim.finalInterestRate}%
                         </span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Card Footer */}
-                <div className="p-3.5 sm:p-4 pt-2.5 sm:pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-                  <span className="text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded font-semibold text-[11px]">
+                {/* 3. Card Footer: 절약액 배지 & 상세 견적 버튼 */}
+                <div className="px-3.5 sm:px-4 py-2 border-t border-slate-100 flex items-center justify-between text-xs bg-slate-50/40">
+                  <span className="text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded font-semibold text-[10px] sm:text-[11px] truncate max-w-[200px] sm:max-w-none">
                     일반대출 대비 월 {sim.comparison?.monthlySavings?.toLocaleString()}원 절약
                   </span>
-                  <div className="flex items-center gap-1 text-blue-600 font-bold group-hover:translate-x-0.5 transition-transform">
-                    <span>상세 견적 & 도면</span>
-                    <ChevronRight className="w-4 h-4" />
+                  <div className="flex items-center gap-1 text-blue-600 font-bold text-xs shrink-0 group-hover:translate-x-0.5 transition-transform">
+                    <span>상세 견적</span>
+                    <ChevronRight className="w-3.5 h-3.5" />
                   </div>
                 </div>
               </div>
