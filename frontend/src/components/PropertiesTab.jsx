@@ -896,18 +896,18 @@ export default function PropertiesTab({
                     </div>
                   </div>
 
-                  {/* 📐 평형 도면 CAD 바로보기 배너 (모바일 친화적 원클릭 오픈) */}
+                  {/* 📐 평형 고화질 입체 평면도 바로보기 배너 (모바일 친화적 원클릭 오픈) */}
                   <div className="px-3.5 sm:px-4 pt-2.5">
                     <button
                       type="button"
                       onClick={(e) => handleOpenFloorPlan(e, property)}
                       className="w-full py-2 px-3 bg-gradient-to-r from-indigo-50/90 via-blue-50/70 to-indigo-50/90 hover:from-indigo-100 hover:to-blue-100 active:scale-[0.98] text-indigo-950 border border-indigo-200/90 rounded-xl text-xs font-bold transition-all flex items-center justify-between group/fp cursor-pointer shadow-2xs"
-                      title="클릭하여 2D CAD 평면도 및 방별 치수 확인"
+                      title="클릭하여 고화질 입체 평면도 및 방별 치수 확인"
                     >
                       <div className="flex items-center gap-1.5 truncate">
                         <span className="text-sm">📐</span>
                         <span className="font-extrabold text-indigo-950 truncate">
-                          {fp.bay || '3-Bay'} {fp.structure || '판상형'} 도면 CAD
+                          {fp.bay || '3-Bay'} {fp.structure || '판상형'} 입체 평면도
                         </span>
                         <span className="text-[10px] bg-indigo-200/60 text-indigo-800 px-1.5 py-0.2 rounded font-semibold whitespace-nowrap">
                           {fp.roomsCount ? `${fp.roomsCount}룸 ${fp.bathroomsCount}욕` : '치수/확장형'}
@@ -969,14 +969,29 @@ export default function PropertiesTab({
                   </div>
                 </div>
 
-                {/* 3. Card Footer: 절약액 배지 & 상세 견적 버튼 */}
-                <div className="px-3.5 sm:px-4 py-2 border-t border-slate-100 flex items-center justify-between text-xs bg-slate-50/40">
+                {/* 3. Card Footer: 절약액 배지 & 네이버부동산 단지 바로가기 & 상세 견적 버튼 */}
+                <div className="px-3.5 sm:px-4 py-2 border-t border-slate-100 flex items-center justify-between gap-1.5 text-xs bg-slate-50/40">
                   <span className="text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded font-semibold text-[10px] sm:text-[11px] whitespace-nowrap truncate">
-                    일반대출 대비 월 {sim.comparison?.monthlySavings?.toLocaleString()}원 절약
+                    월 {sim.comparison?.monthlySavings?.toLocaleString()}원 절약
                   </span>
-                  <div className="flex items-center gap-1 text-blue-600 font-bold text-xs shrink-0 whitespace-nowrap group-hover:translate-x-0.5 transition-transform">
-                    <span>상세 견적</span>
-                    <ChevronRight className="w-3.5 h-3.5" />
+                  <div className="flex items-center gap-2 shrink-0">
+                    {(property.naverMobileUrl || property.naverLandUrl) && (
+                      <a
+                        href={property.naverMobileUrl || property.naverLandUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        title={`${property.name} 네이버부동산 단지 정보 및 실시간 매물 바로가기`}
+                        className="px-2 py-0.5 rounded bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[10px] sm:text-[11px] flex items-center gap-0.5 transition-colors whitespace-nowrap shadow-2xs"
+                      >
+                        <span>N 네이버부동산</span>
+                        <ExternalLink className="w-2.5 h-2.5" />
+                      </a>
+                    )}
+                    <div className="flex items-center gap-0.5 text-blue-600 font-bold text-xs shrink-0 whitespace-nowrap group-hover:translate-x-0.5 transition-transform">
+                      <span>상세 견적</span>
+                      <ChevronRight className="w-3.5 h-3.5" />
+                    </div>
                   </div>
                 </div>
               </div>

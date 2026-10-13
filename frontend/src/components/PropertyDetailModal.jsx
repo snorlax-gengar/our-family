@@ -174,6 +174,9 @@ export default function PropertyDetailModal({
                 propertyName={property.name}
                 areaSqMeter={property.areaSqMeter}
                 pyeong={property.pyeong}
+                naverLandUrl={property.naverLandUrl}
+                naverMobileUrl={property.naverMobileUrl}
+                naverComplexNo={property.naverComplexNo}
               />
             </div>
           )}
@@ -396,12 +399,12 @@ export default function PropertyDetailModal({
           </div>
           <div className="flex items-center gap-2">
             <a
-              href={property.naverLandUrl}
+              href={property.naverMobileUrl || property.naverLandUrl}
               target="_blank"
               rel="noreferrer"
-              className="px-4 py-2 bg-white text-slate-700 border border-slate-300 rounded-lg text-xs font-bold hover:bg-slate-100 transition-colors flex items-center gap-1.5"
+              className="px-4 py-2 bg-emerald-600 text-white border border-emerald-700 rounded-lg text-xs font-bold hover:bg-emerald-700 transition-colors flex items-center gap-1.5 shadow-xs"
             >
-              <span>네이버부동산 매물</span>
+              <span>N {property.name} 네이버부동산 매물·정보</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
             <button

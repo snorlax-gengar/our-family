@@ -53,7 +53,7 @@
       "북한산 쾌적한 숲세권",
       "우이신설선 단지 정문 위치"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3098",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "84_3bay",
@@ -73,8 +73,11 @@
         "전면 3Bay 채광",
         "안방 파우더 공간",
         "3,830세대 랜드마크 스펙"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "3098",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3098"
   },
   {
     "id": "seoul-guro-gaebong-hyundai",
@@ -130,7 +133,7 @@
       "1호선 개봉역 급행 정차",
       "안양천 산책로 인접"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3349",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "84_3bay",
@@ -150,8 +153,11 @@
         "개봉역 1호선 급행 생활권",
         "안양천 산책로 인접",
         "목동 학원가 셔틀 정차"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "3349",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3349"
   },
   {
     "id": "seoul-geumcheon-siheung-byucksan",
@@ -202,7 +208,7 @@
       "신안산선 개통 수혜지",
       "강남순환고속도로 접근성"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3359",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "84_3bay",
@@ -222,8 +228,11 @@
         "전용 84㎡ 서울 최저가 수준(5.2억)",
         "신안산선 여의도 15분대 호재",
         "2,810세대 대단지"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "3359",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3359"
   },
   {
     "id": "seoul-eunpyeong-nokbeon-jr",
@@ -274,7 +283,7 @@
       "단지내 응암초 연결",
       "쾌적한 조경 및 커뮤니티"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/27501",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "59_3bay",
@@ -294,8 +303,11 @@
         "힐스테이트 1군 브랜드 마감",
         "확장형 넓은 거실",
         "단지내 초등학교 연결"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "27501",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/27501"
   },
   {
     "id": "seoul-jungnang-sinnae-dongsung",
@@ -346,7 +358,7 @@
       "신내IC 북부간선도로 편리",
       "국평 32평형 5억 중반"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1248",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "84_3bay",
@@ -366,8 +378,11 @@
         "봉화산 둘레길 공세권",
         "방 3개 욕실 2개 계단식 구조",
         "5억 중반 가성비 국평"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "1248",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1248"
   },
   {
     "id": "gyeonggi-goyang-deokyang-muwon-6",
@@ -418,7 +433,7 @@
       "서울 서북권 출퇴근 최적",
       "평지 대단지"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1529",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "84_3bay",
@@ -438,8 +453,11 @@
         "KTX 고속철도 편리",
         "방 3개 욕실 2개 계단식 구조",
         "5.3억 가성비 최고"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "1529",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1529"
   },
   {
     "id": "gyeonggi-suwon-maetan-weve",
@@ -490,7 +508,7 @@
       "우수한 학군 및 편의시설",
       "인동선 개통 호재"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/22911",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "59_3bay",
@@ -510,8 +528,11 @@
         "삼성전자 수원사업장 직주근접",
         "3,391세대 영통구 랜드마크",
         "인동선 환승 호재"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "22911",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/22911"
   },
   {
     "id": "gyeonggi-anyang-dongan-bisan-raemian",
@@ -562,7 +583,7 @@
       "비산초 초품아 단지",
       "평촌 학원가 이용 편리"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3079",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "59_3bay",
@@ -582,8 +603,11 @@
         "방 3개 욕실 2개 계단식",
         "월판선 판교 10분대 교통호재",
         "평촌 명문 학원가 셔틀권"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "3079",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3079"
   },
   {
     "id": "gyeonggi-yongin-giheung-newmillennium-5",
@@ -634,7 +658,7 @@
       "분당선 기흥역 및 GTX-A 구성역 연계",
       "수원신갈IC 인접"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3689",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "84_3bay",
@@ -654,8 +678,11 @@
         "용인 플랫폼시티 개발 수혜",
         "GTX-A 구성역/기흥역 연계",
         "수원신갈IC 경부고속도로 인접"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "3689",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3689"
   },
   {
     "id": "gyeonggi-siheung-baegot-halla-1",
@@ -706,7 +733,7 @@
       "오션뷰 및 서해 바다 산책로",
       "배곧 생명공원 슬세권"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/109216",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "84_4bay",
@@ -726,8 +753,11 @@
         "대형 드레스룸 & 파우더룸 & 주방 팬트리",
         "서울대 시흥캠퍼스·병원 호재",
         "2017년식 준신축 대단지"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_84_4bay.jpg"
+    },
+    "naverComplexNo": "109216",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/109216"
   },
   {
     "id": "gyeonggi-gimpo-pungmu-prugio",
@@ -778,7 +808,7 @@
       "이마트 트레이더스 도보권",
       "커뮤니티 수영장 보유"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/111120",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "59_3bay",
@@ -798,8 +828,11 @@
         "방 3개 욕실 2개 안방 드레스룸",
         "풍무역 도보 5분 김포공항 10분대",
         "단지내 수영장 등 고급 커뮤니티"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "111120",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/111120"
   },
   {
     "id": "gyeonggi-hwaseong-dongtan-solbit-seohae",
@@ -850,7 +883,7 @@
       "반석산 에코벨트 숲세권",
       "동탄 메타폴리스 인프라"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/23762",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "84_3bay",
@@ -870,8 +903,11 @@
         "인동선 반송역 역세권 호재",
         "안방 대형 드레스룸 및 부부욕실",
         "반석산 숲세권 조망"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "23762",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/23762"
   },
   {
     "id": "gyeonggi-namyangju-dasan-nature-epyeonhan",
@@ -922,7 +958,7 @@
       "다산가람초 초품아",
       "현대프리미엄아울렛 생활권"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/194757",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "59_3bay",
@@ -942,8 +978,11 @@
         "2018년식 1,615세대 준신축",
         "방 3개 욕실 2개 최적 구조",
         "다산가람초 초품아 단지"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "194757",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/194757"
   },
   {
     "id": "seoul-dobong-banghak-shindonga-2",
@@ -999,7 +1038,7 @@
       "전세가율 68.5%로 탄탄한 실거주 수요",
       "우이신설선 연장선 개통 직접 수혜"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/275",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "84_3bay",
@@ -1019,8 +1058,11 @@
         "초당초등학교 바로 옆 안심 통학",
         "조용하고 쾌적한 중대형 위주 단지",
         "신생아 특례대출 활용 시 실투자금 1.6억대"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "275",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/275"
   },
   {
     "id": "seoul-dobong-banghak-shindonga-3",
@@ -1071,7 +1113,7 @@
       "전세가율 70.7%의 알짜 실속형 단지",
       "초당초·방학중 도보 통학권"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/277",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "84_3bay",
@@ -1091,8 +1133,11 @@
         "방 3개 + 욕실 2개 계단식 판상형",
         "신동아 1·2단지 생활권 공유",
         "신생아 특례 시 필요 현금 1.4억대"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "277",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/277"
   },
   {
     "id": "seoul-dobong-banghak-woosung-1",
@@ -1148,7 +1193,7 @@
       "초당초·신방학중 도보 학세권",
       "우이신설선 연장선 개통 직접 수혜"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/279",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "84_3bay",
@@ -1168,8 +1213,11 @@
         "방학신동아·우성·청구 주거타운 형성",
         "발바닥공원·쌍문근린공원 산책로 인접",
         "전세가율 66.7% 안정적 갭"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "279",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/279"
   },
   {
     "id": "seoul-dobong-banghak-woosung-2",
@@ -1225,7 +1273,7 @@
       "우이신설 연장선 신설역 예정지 인접",
       "발바닥공원 및 초당초 인접"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/280",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "84_3bay",
@@ -1245,8 +1293,11 @@
         "계단식 3-Bay 방3·욕실2 정석 구조",
         "우이신설선 연장선 개통 시 역세권 격상",
         "초당초·방학중 학세권"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "280",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/280"
   },
   {
     "id": "seoul-dobong-banghak-cheonggu",
@@ -1302,7 +1353,7 @@
       "방학동 학원가·도깨비시장·홈플러스 인접",
       "전용 84㎡ 3-Bay 계단식 구조"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/281",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "84_3bay",
@@ -1322,8 +1373,11 @@
         "우이신설 연장선 개통 시 초역세권 기대",
         "쌍문근린공원 바로 앞 공세권",
         "신혼·출산 가구 선호도 높은 평지 단지"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "281",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/281"
   },
   {
     "id": "seoul-dobong-banghak-byucksan-1",
@@ -1374,7 +1428,7 @@
       "신학초·신방학중 도보 통학권",
       "북한산 둘레길 쾌적한 숲세권"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/270",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "59_3bay",
@@ -1394,8 +1448,11 @@
         "전용 72㎡로 24평형보다 넉넉한 거실과 방3",
         "계단식 구조로 우수한 프라이버시",
         "4억 후반대 낮은 진입장벽"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "270",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/270"
   },
   {
     "id": "seoul-dobong-banghak-geoseong",
@@ -1446,7 +1503,7 @@
       "홈플러스 방학점·도봉구청 생활권",
       "전용 84㎡ 3-Bay 방3·욕실2"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/268",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "84_3bay",
@@ -1466,8 +1523,11 @@
         "홈플러스·구청 등 핵심 인프라 도보 이용",
         "방 3개 욕실 2개 계단식 국민평형",
         "우이신설선 방학역 환승역 개통 수혜"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "268",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/268"
   },
   {
     "id": "seoul-dobong-ssangmun-hanyang-6",
@@ -1518,7 +1578,7 @@
       "우이신설선 연장선 개통 직접 수혜",
       "전용 83㎡ 계단식 방3·욕실2"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/305",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "84_3bay",
@@ -1538,8 +1598,11 @@
         "방 3개 욕실 2개 계단식 구조",
         "쌍문근린공원 산책 및 운동 최적",
         "4호선 쌍문역 및 우이신설 연장선 더블 생활권"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "305",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/305"
   },
   {
     "id": "seoul-dobong-ssangmun-hyundai-1-26",
@@ -1590,7 +1653,7 @@
       "5억 원 정점 가성비 방 3개(전용 70㎡) 실속형",
       "우이신설선 연장선 개통 직접 수혜"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/307",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "59_3bay",
@@ -1610,8 +1673,11 @@
         "전용 70㎡로 24평보다 훨씬 넓은 거실과 방 3개",
         "쌍문근린공원 바로 앞 쾌적한 환경",
         "우이신설 연장선 신설역 도보권 호재"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "307",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/307"
   },
   {
     "id": "seoul-dobong-ssangmun-hyundai-1-30",
@@ -1662,7 +1728,7 @@
       "쌍문근린공원·발바닥공원 숲세권",
       "우이신설선 연장선 개통 수혜"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/307",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "84_3bay",
@@ -1682,8 +1748,11 @@
         "방 3개 + 욕실 2개 계단식 구조",
         "방학동 신동아·우성·청구 생활권 완벽 공유",
         "초당초·숭미초·신방학중 학세권"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "307",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/307"
   },
   {
     "id": "seoul-dobong-ssangmun-hyundai-2",
@@ -1734,7 +1803,7 @@
       "5억 초반대에 매수 가능한 서울 30평형(방3·욕실2)",
       "쌍문근린공원 인접 공세권"
     ],
-    "naverLandUrl": "https://land.naver.com/",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/297",
     "kbLandUrl": "https://kbland.kr/",
     "floorPlan": {
       "type": "84_3bay",
@@ -1754,7 +1823,10 @@
         "전 세대 중형(84㎡) 단일 평형으로 조용한 단지",
         "신생아 특례대출 활용 시 자기자본 1.6억대 진입",
         "쌍문역 4호선 및 방학동 상권 동시 이용"
-      ]
-    }
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "297",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/297"
   }
 ]
