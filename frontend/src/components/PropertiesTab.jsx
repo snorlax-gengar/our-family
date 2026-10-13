@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { 
   Building2, Search, SlidersHorizontal, Train, ArrowUpDown, 
   ChevronRight, Sparkles, ShieldCheck, DollarSign, ExternalLink,
@@ -22,7 +22,7 @@ export default function PropertiesTab({
   const [searchTerm, setSearchTerm] = useState('');
   const [myCash, setMyCash] = useState(0); // 0: 미설정, 예: 150000000 (1.5억)
   
-  // ❤️ 즐겨찾기 (관심 단지 찜하기 - localStorage 영구 저장)
+  // ❤️ 즐겨찾기 (브라우저 localStorage + 백엔드 서버 파일 이중 영구 저장 & 부부 기기 간 공유)
   const [favorites, setFavorites] = useState(() => {
     try {
       const saved = localStorage.getItem('wooriga_favorites');
@@ -33,8 +33,27 @@ export default function PropertiesTab({
   });
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
 
-  const toggleFavorite = (e, propId) => {
+  // 초기 접속 시 서버에 저장된 즐겨찾기 목록과 동기화
+  useEffect(() => {
+    fetch('/api/favorites')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (data && Array.isArray(data.favorites)) {
+          setFavorites((localFavs) => {
+            const merged = Array.from(new Set([...data.favorites, ...localFavs]));
+            try {
+              localStorage.setItem('wooriga_favorites', JSON.stringify(merged));
+            } catch {}
+            return merged;
+          });
+        }
+      })
+      .catch(() => {});
+  }, []);
+
+  const toggleFavorite = async (e, propId) => {
     if (e) e.stopPropagation();
+    // 1. UI & localStorage 즉시 반영
     setFavorites((prev) => {
       const next = prev.includes(propId)
         ? prev.filter((id) => id !== propId)
@@ -46,6 +65,22 @@ export default function PropertiesTab({
       }
       return next;
     });
+
+    // 2. 백엔드 서버(favorites.json)에도 영구 저장하여 기기 간 동기화
+    try {
+      const res = await fetch('/api/favorites/toggle', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ propertyId: propId }),
+      });
+      if (res.ok) {
+        const data = await res.json();
+        if (Array.isArray(data.favorites)) {
+          setFavorites(data.favorites);
+          localStorage.setItem('wooriga_favorites', JSON.stringify(data.favorites));
+        }
+      }
+    } catch {}
   };
 
   // Modal state

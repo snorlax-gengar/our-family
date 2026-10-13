@@ -193,6 +193,46 @@ app.post('/api/policies/refresh', async (req, res) => {
   }
 });
 
+// ❤️ 4. 관심 단지 즐겨찾기 영구 저장 API (서버 파일 DB + 기기 간 공유 동기화)
+const favoritesFilePath = path.join(__dirname, 'data', 'favorites.json');
+function loadFavorites() {
+  try {
+    if (!fs.existsSync(favoritesFilePath)) {
+      fs.writeFileSync(favoritesFilePath, JSON.stringify([], null, 2), 'utf8');
+      return [];
+    }
+    return JSON.parse(fs.readFileSync(favoritesFilePath, 'utf8'));
+  } catch (err) {
+    console.error("Failed to read favorites.json:", err.message);
+    return [];
+  }
+}
+
+function saveFavorites(list) {
+  try {
+    fs.writeFileSync(favoritesFilePath, JSON.stringify(list, null, 2), 'utf8');
+  } catch (err) {
+    console.error("Failed to write favorites.json:", err.message);
+  }
+}
+
+app.get('/api/favorites', (req, res) => {
+  res.json({ favorites: loadFavorites() });
+});
+
+app.post('/api/favorites/toggle', (req, res) => {
+  const { propertyId } = req.body;
+  if (!propertyId) {
+    return res.status(400).json({ error: "propertyId is required" });
+  }
+  const current = loadFavorites();
+  const next = current.includes(propertyId)
+    ? current.filter(id => id !== propertyId)
+    : [...current, propertyId];
+  saveFavorites(next);
+  res.json({ favorites: next });
+});
+
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({ status: "ok", timestamp: new Date().toISOString() });
