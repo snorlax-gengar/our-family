@@ -233,6 +233,51 @@ app.post('/api/favorites/toggle', (req, res) => {
   res.json({ favorites: next });
 });
 
+// 🚫 5. 필요 없는 단지 숨기기(제외) 영구 저장 API (서버 파일 DB + 기기 간 동기화)
+const hiddenFilePath = path.join(__dirname, 'data', 'hidden.json');
+function loadHidden() {
+  try {
+    if (!fs.existsSync(hiddenFilePath)) {
+      fs.writeFileSync(hiddenFilePath, JSON.stringify([], null, 2), 'utf8');
+      return [];
+    }
+    return JSON.parse(fs.readFileSync(hiddenFilePath, 'utf8'));
+  } catch (err) {
+    console.error("Failed to read hidden.json:", err.message);
+    return [];
+  }
+}
+
+function saveHidden(list) {
+  try {
+    fs.writeFileSync(hiddenFilePath, JSON.stringify(list, null, 2), 'utf8');
+  } catch (err) {
+    console.error("Failed to write hidden.json:", err.message);
+  }
+}
+
+app.get('/api/hidden', (req, res) => {
+  res.json({ hidden: loadHidden() });
+});
+
+app.post('/api/hidden/toggle', (req, res) => {
+  const { propertyId } = req.body;
+  if (!propertyId) {
+    return res.status(400).json({ error: "propertyId is required" });
+  }
+  const current = loadHidden();
+  const next = current.includes(propertyId)
+    ? current.filter(id => id !== propertyId)
+    : [...current, propertyId];
+  saveHidden(next);
+  res.json({ hidden: next });
+});
+
+app.post('/api/hidden/reset', (req, res) => {
+  saveHidden([]);
+  res.json({ hidden: [] });
+});
+
 // Health check
 app.get('/api/health', (req, res) => {
   res.json({ status: "ok", timestamp: new Date().toISOString() });

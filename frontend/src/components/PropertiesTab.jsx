@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { 
   Building2, Search, SlidersHorizontal, Train, ArrowUpDown, 
   ChevronRight, Sparkles, ShieldCheck, DollarSign, ExternalLink,
-  Info, Check, RefreshCw, LayoutGrid, Eye, ArrowDownAZ, ArrowUpZA, Maximize2, Calendar, Heart
+  Info, Check, RefreshCw, LayoutGrid, Eye, EyeOff, ArrowDownAZ, ArrowUpZA, Maximize2, Calendar, Heart
 } from 'lucide-react';
 import PropertyDetailModal from './PropertyDetailModal';
 
@@ -33,7 +33,17 @@ export default function PropertiesTab({
   });
   const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
 
-  // 초기 접속 시 서버에 저장된 즐겨찾기 목록과 동기화
+  // 🚫 관심없는 단지 숨기기/제외 (localStorage + 백엔드 서버 동기화)
+  const [hiddenIds, setHiddenIds] = useState(() => {
+    try {
+      const saved = localStorage.getItem('wooriga_hidden');
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  });
+
+  // 초기 접속 시 서버에 저장된 즐겨찾기 & 숨긴 단지 목록과 동기화
   useEffect(() => {
     fetch('/api/favorites')
       .then((res) => (res.ok ? res.json() : null))
@@ -43,6 +53,21 @@ export default function PropertiesTab({
             const merged = Array.from(new Set([...data.favorites, ...localFavs]));
             try {
               localStorage.setItem('wooriga_favorites', JSON.stringify(merged));
+            } catch {}
+            return merged;
+          });
+        }
+      })
+      .catch(() => {});
+
+    fetch('/api/hidden')
+      .then((res) => (res.ok ? res.json() : null))
+      .then((data) => {
+        if (data && Array.isArray(data.hidden)) {
+          setHiddenIds((localHidden) => {
+            const merged = Array.from(new Set([...data.hidden, ...localHidden]));
+            try {
+              localStorage.setItem('wooriga_hidden', JSON.stringify(merged));
             } catch {}
             return merged;
           });
@@ -83,6 +108,42 @@ export default function PropertiesTab({
     } catch {}
   };
 
+  const toggleHideProperty = async (e, propId) => {
+    if (e) e.stopPropagation();
+    setHiddenIds((prev) => {
+      const next = prev.includes(propId)
+        ? prev.filter((id) => id !== propId)
+        : [...prev, propId];
+      try {
+        localStorage.setItem('wooriga_hidden', JSON.stringify(next));
+      } catch {}
+      return next;
+    });
+
+    try {
+      const res = await fetch('/api/hidden/toggle', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ propertyId: propId }),
+      });
+      if (res.ok) {
+        const data = await res.json();
+        if (Array.isArray(data.hidden)) {
+          setHiddenIds(data.hidden);
+          localStorage.setItem('wooriga_hidden', JSON.stringify(data.hidden));
+        }
+      }
+    } catch {}
+  };
+
+  const resetHiddenProperties = async () => {
+    setHiddenIds([]);
+    try {
+      localStorage.setItem('wooriga_hidden', JSON.stringify([]));
+      await fetch('/api/hidden/reset', { method: 'POST' });
+    } catch {}
+  };
+
   // Modal state
   const [selectedProperty, setSelectedProperty] = useState(null);
   const [modalInitialTab, setModalInitialTab] = useState('all');
@@ -94,29 +155,34 @@ export default function PropertiesTab({
   const [isEditingIncome, setIsEditingIncome] = useState(false);
   const [rawIncomeInput, setRawIncomeInput] = useState('');
 
+  // 숨기지 않은 활성 단지 목록
+  const visibleProperties = useMemo(() => {
+    return properties.filter(p => !hiddenIds.includes(p.id));
+  }, [properties, hiddenIds]);
+
   // 구/시 목록 동적 추출
   const districts = useMemo(() => {
-    const list = properties
+    const list = visibleProperties
       .filter(p => selectedRegion === '전체' || p.region === selectedRegion)
       .map(p => p.district);
     return ['전체', ...Array.from(new Set(list))];
-  }, [properties, selectedRegion]);
+  }, [visibleProperties, selectedRegion]);
 
   // 가격대별 카운트 계산
   const priceBandCounts = useMemo(() => {
-    const counts = { all: properties.length, '400M': 0, '500M_low': 0, '500M_high': 0, '600M': 0 };
-    properties.forEach(p => {
+    const counts = { all: visibleProperties.length, '400M': 0, '500M_low': 0, '500M_high': 0, '600M': 0 };
+    visibleProperties.forEach(p => {
       if (p.priceKrw < 500000000) counts['400M']++;
       else if (p.priceKrw < 550000000) counts['500M_low']++;
       else if (p.priceKrw < 600000000) counts['500M_high']++;
       else counts['600M']++;
     });
     return counts;
-  }, [properties]);
+  }, [visibleProperties]);
 
   // 필터링 및 정렬
   const filteredProperties = useMemo(() => {
-    return properties.filter(item => {
+    return visibleProperties.filter(item => {
       // 즐겨찾기 모아보기 필터
       if (showFavoritesOnly && !favorites.includes(item.id)) return false;
       // 지역 필터
@@ -154,7 +220,7 @@ export default function PropertiesTab({
       if (sortOption === 'unitsHigh') return (b.totalUnits || 0) - (a.totalUnits || 0);
       return a.priceKrw - b.priceKrw; // default: 가격 낮은순
     });
-  }, [properties, showFavoritesOnly, favorites, selectedRegion, selectedDistrict, priceBand, sizeFilter, sortOption, searchTerm]);
+  }, [visibleProperties, showFavoritesOnly, favorites, selectedRegion, selectedDistrict, priceBand, sizeFilter, sortOption, searchTerm]);
 
   // 도면 모달 바로 열기 핸들러
   const handleOpenFloorPlan = (e, prop) => {
@@ -549,6 +615,19 @@ export default function PropertiesTab({
                 {favorites.length}
               </span>
             </button>
+
+            {/* 🚫 숨긴 단지 복구 버튼 (숨긴 단지가 있을 때만 표시) */}
+            {hiddenIds.length > 0 && (
+              <button
+                type="button"
+                onClick={resetHiddenProperties}
+                title="숨긴 단지를 모두 다시 표시합니다"
+                className="px-3 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex items-center gap-1 shrink-0 whitespace-nowrap border bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200"
+              >
+                <RefreshCw className="w-3 h-3" />
+                <span>숨긴 단지 복구 ({hiddenIds.length})</span>
+              </button>
+            )}
           </div>
 
           {/* 검색창 */}
@@ -745,7 +824,7 @@ export default function PropertiesTab({
                 }`}
               >
                 <div>
-                  {/* 1. Card Header: 지역, 단지명, 평형, 역세권 & 도면/즐겨찾기 버튼을 콤팩트하게 통합 */}
+                  {/* 1. Card Header: 지역, 단지명, 평형, 역세권 & 도면/즐겨찾기/숨기기 버튼을 콤팩트하게 통합 */}
                   <div className="p-3.5 sm:p-4 pb-2 border-b border-slate-100">
                     <div className="flex items-center justify-between gap-1 mb-1.5">
                       <div className="flex items-center gap-1.5 flex-wrap">
@@ -782,6 +861,17 @@ export default function PropertiesTab({
                           }`}
                         >
                           <Heart className={`w-3.5 h-3.5 ${isFav ? 'fill-rose-500 text-rose-500' : ''}`} />
+                        </button>
+
+                        {/* 🚫 관심없는 단지 숨기기(제외) 버튼 */}
+                        <button
+                          type="button"
+                          onClick={(e) => toggleHideProperty(e, property.id)}
+                          aria-label="이 단지 숨기기"
+                          title="필요 없는 단지 목록에서 제외(숨김)"
+                          className="p-1 rounded-md border bg-slate-50 border-slate-200 text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-all cursor-pointer active:scale-90"
+                        >
+                          <EyeOff className="w-3.5 h-3.5" />
                         </button>
                       </div>
                     </div>
