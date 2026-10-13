@@ -1,12 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { 
   X, Building2, MapPin, Train, Calendar, TrendingUp, DollarSign, 
-  ShieldCheck, Calculator, Sparkles, ExternalLink, CheckCircle2, ArrowRight
+  ShieldCheck, Calculator, Sparkles, ExternalLink, CheckCircle2, ArrowRight, Heart
 } from 'lucide-react';
 
 import FloorPlanViewer from './FloorPlanViewer';
 
-export default function PropertyDetailModal({ property, onClose, userCriteria, initialTab = 'all' }) {
+export default function PropertyDetailModal({ 
+  property, 
+  onClose, 
+  userCriteria, 
+  initialTab = 'all',
+  isFavorite = false,
+  onToggleFavorite
+}) {
   const [modalTab, setModalTab] = useState(initialTab); // 'all', 'floorPlan', 'financial'
 
   useEffect(() => {
@@ -51,24 +58,40 @@ export default function PropertyDetailModal({ property, onClose, userCriteria, i
         <div className="w-12 h-1.5 bg-slate-300 rounded-full mx-auto mt-2.5 mb-1 sm:hidden" />
 
         {/* Modal Header */}
-        <div className="sticky top-0 bg-white/95 backdrop-blur-xs px-4 sm:px-6 py-3 sm:py-4 border-b border-slate-100 flex items-center justify-between z-10">
-          <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
-            <span className="bg-blue-600 text-white text-[10px] sm:text-xs font-bold px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md">
+        <div className="sticky top-0 bg-white/95 backdrop-blur-xs px-4 sm:px-6 py-3 sm:py-4 border-b border-slate-100 flex items-center justify-between gap-2 z-10">
+          <div className="flex items-center gap-2 sm:gap-3 flex-wrap min-w-0">
+            <span className="bg-blue-600 text-white text-[10px] sm:text-xs font-bold px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md shrink-0">
               {property.region} {property.district}
             </span>
-            <h2 className="text-lg sm:text-2xl font-black text-slate-900 tracking-tight">
+            <h2 className="text-lg sm:text-2xl font-black text-slate-900 tracking-tight truncate">
               {property.name}
             </h2>
-            <span className="text-xs sm:text-sm font-semibold text-slate-500">
+            <span className="text-xs sm:text-sm font-semibold text-slate-500 shrink-0">
               {property.pyeong}평 ({property.areaSqMeter}㎡)
             </span>
           </div>
-          <button
-            onClick={onClose}
-            className="p-1.5 sm:p-2 text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-full transition-colors cursor-pointer shrink-0"
-          >
-            <X className="w-5 h-5" />
-          </button>
+          <div className="flex items-center gap-1.5 shrink-0">
+            {onToggleFavorite && (
+              <button
+                type="button"
+                onClick={onToggleFavorite}
+                className={`px-2.5 py-1.5 rounded-xl text-xs font-bold border transition-all flex items-center gap-1 cursor-pointer active:scale-95 ${
+                  isFavorite
+                    ? 'bg-rose-50 border-rose-200 text-rose-600'
+                    : 'bg-slate-50 border-slate-200 text-slate-500 hover:text-rose-500 hover:border-rose-200'
+                }`}
+              >
+                <Heart className={`w-4 h-4 ${isFavorite ? 'fill-rose-500 text-rose-500' : ''}`} />
+                <span className="hidden sm:inline">{isFavorite ? '찜됨' : '찜하기'}</span>
+              </button>
+            )}
+            <button
+              onClick={onClose}
+              className="p-1.5 sm:p-2 text-slate-400 hover:text-slate-700 hover:bg-slate-100 rounded-full transition-colors cursor-pointer shrink-0"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
         </div>
 
         <div className="p-4 sm:p-6 space-y-4 sm:space-y-6">

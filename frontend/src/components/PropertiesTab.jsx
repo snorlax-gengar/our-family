@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { 
   Building2, Search, SlidersHorizontal, Train, ArrowUpDown, 
   ChevronRight, Sparkles, ShieldCheck, DollarSign, ExternalLink,
-  Info, Check, RefreshCw, LayoutGrid, Eye, ArrowDownAZ, ArrowUpZA, Maximize2, Calendar
+  Info, Check, RefreshCw, LayoutGrid, Eye, ArrowDownAZ, ArrowUpZA, Maximize2, Calendar, Heart
 } from 'lucide-react';
 import PropertyDetailModal from './PropertyDetailModal';
 
@@ -22,6 +22,32 @@ export default function PropertiesTab({
   const [searchTerm, setSearchTerm] = useState('');
   const [myCash, setMyCash] = useState(0); // 0: 미설정, 예: 150000000 (1.5억)
   
+  // ❤️ 즐겨찾기 (관심 단지 찜하기 - localStorage 영구 저장)
+  const [favorites, setFavorites] = useState(() => {
+    try {
+      const saved = localStorage.getItem('wooriga_favorites');
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  });
+  const [showFavoritesOnly, setShowFavoritesOnly] = useState(false);
+
+  const toggleFavorite = (e, propId) => {
+    if (e) e.stopPropagation();
+    setFavorites((prev) => {
+      const next = prev.includes(propId)
+        ? prev.filter((id) => id !== propId)
+        : [...prev, propId];
+      try {
+        localStorage.setItem('wooriga_favorites', JSON.stringify(next));
+      } catch (err) {
+        console.error('Failed to save favorites:', err);
+      }
+      return next;
+    });
+  };
+
   // Modal state
   const [selectedProperty, setSelectedProperty] = useState(null);
   const [modalInitialTab, setModalInitialTab] = useState('all');
@@ -56,6 +82,8 @@ export default function PropertiesTab({
   // 필터링 및 정렬
   const filteredProperties = useMemo(() => {
     return properties.filter(item => {
+      // 즐겨찾기 모아보기 필터
+      if (showFavoritesOnly && !favorites.includes(item.id)) return false;
       // 지역 필터
       if (selectedRegion !== '전체' && item.region !== selectedRegion) return false;
       // 구/시 필터
@@ -91,7 +119,7 @@ export default function PropertiesTab({
       if (sortOption === 'unitsHigh') return (b.totalUnits || 0) - (a.totalUnits || 0);
       return a.priceKrw - b.priceKrw; // default: 가격 낮은순
     });
-  }, [properties, selectedRegion, selectedDistrict, priceBand, sizeFilter, sortOption, searchTerm]);
+  }, [properties, showFavoritesOnly, favorites, selectedRegion, selectedDistrict, priceBand, sizeFilter, sortOption, searchTerm]);
 
   // 도면 모달 바로 열기 핸들러
   const handleOpenFloorPlan = (e, prop) => {
@@ -444,26 +472,48 @@ export default function PropertiesTab({
 
       {/* 2. 필터 및 정렬 컨트롤 (가격별 정렬 & 가격대 밴드 & 도면 안내) */}
       <div className="bg-white rounded-xl p-3.5 sm:p-5 border border-slate-200 shadow-xs space-y-3 sm:space-y-4">
-        {/* 상단 검색 & 지역 대분류 */}
+        {/* 상단 검색 & 지역 대분류 + 즐겨찾기 모아보기 */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
-          {/* 지역 대분류 탭 */}
-          <div className="flex items-center gap-1.5 bg-slate-100 p-1 rounded-xl">
-            {['전체', '서울', '경기'].map((reg) => (
-              <button
-                key={reg}
-                onClick={() => {
-                  setSelectedRegion(reg);
-                  setSelectedDistrict('전체');
-                }}
-                className={`px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all cursor-pointer ${
-                  selectedRegion === reg
-                    ? 'bg-white text-blue-700 shadow-xs'
-                    : 'text-slate-600 hover:text-slate-900'
-                }`}
-              >
-                {reg}
-              </button>
-            ))}
+          <div className="flex items-center gap-2 overflow-x-auto no-scrollbar">
+            {/* 지역 대분류 탭 */}
+            <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-xl shrink-0">
+              {['전체', '서울', '경기'].map((reg) => (
+                <button
+                  key={reg}
+                  type="button"
+                  onClick={() => {
+                    setSelectedRegion(reg);
+                    setSelectedDistrict('전체');
+                  }}
+                  className={`px-3.5 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all cursor-pointer whitespace-nowrap ${
+                    selectedRegion === reg
+                      ? 'bg-white text-blue-700 shadow-xs'
+                      : 'text-slate-600 hover:text-slate-900'
+                  }`}
+                >
+                  {reg}
+                </button>
+              ))}
+            </div>
+
+            {/* ❤️ 즐겨찾기 모아보기 토글 버튼 */}
+            <button
+              type="button"
+              onClick={() => setShowFavoritesOnly(!showFavoritesOnly)}
+              className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-1.5 shrink-0 whitespace-nowrap border ${
+                showFavoritesOnly
+                  ? 'bg-rose-500 text-white border-rose-500 shadow-sm'
+                  : 'bg-rose-50/70 text-rose-600 border-rose-200 hover:bg-rose-100/80'
+              }`}
+            >
+              <Heart className={`w-3.5 h-3.5 ${showFavoritesOnly || favorites.length > 0 ? 'fill-current' : ''}`} />
+              <span>즐겨찾기</span>
+              <span className={`text-[11px] px-1.5 py-0.2 rounded-full font-extrabold ${
+                showFavoritesOnly ? 'bg-white/25 text-white' : 'bg-rose-200/70 text-rose-700'
+              }`}>
+                {favorites.length}
+              </span>
+            </button>
           </div>
 
           {/* 검색창 */}
@@ -471,7 +521,7 @@ export default function PropertiesTab({
             <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
             <input
               type="text"
-              placeholder="아파트명, 동(상계동 등), 역세권, 평면구조(3-Bay) 검색..."
+              placeholder="아파트명, 동(방학동 등), 역세권, 평면구조(3-Bay) 검색..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -621,10 +671,27 @@ export default function PropertiesTab({
 
       {/* 3. 매물 카드 리스트 그리드 */}
       {filteredProperties.length === 0 ? (
-        <div className="bg-white rounded-2xl p-12 text-center border border-slate-200">
-          <Building2 className="w-12 h-12 text-slate-300 mx-auto mb-3" />
-          <h3 className="text-base font-bold text-slate-700">검색 조건에 맞는 매물이 없습니다</h3>
-          <p className="text-xs text-slate-400 mt-1">가격대나 지역 필터를 재설정해 보세요.</p>
+        <div className="bg-white rounded-2xl p-10 sm:p-12 text-center border border-slate-200 space-y-3">
+          {showFavoritesOnly ? (
+            <>
+              <Heart className="w-12 h-12 text-rose-300 mx-auto" />
+              <h3 className="text-base font-bold text-slate-700">아직 즐겨찾기(찜)한 단지가 없습니다</h3>
+              <p className="text-xs text-slate-400">마음에 드는 아파트 카드 우측 상단의 ♥ 하트 버튼을 눌러 관심 단지를 모아보세요!</p>
+              <button
+                type="button"
+                onClick={() => setShowFavoritesOnly(false)}
+                className="mt-2 bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-4 py-2 rounded-xl transition-colors cursor-pointer"
+              >
+                전체 단지 목록 보기
+              </button>
+            </>
+          ) : (
+            <>
+              <Building2 className="w-12 h-12 text-slate-300 mx-auto" />
+              <h3 className="text-base font-bold text-slate-700">검색 조건에 맞는 매물이 없습니다</h3>
+              <p className="text-xs text-slate-400">가격대나 지역 필터를 재설정해 보세요.</p>
+            </>
+          )}
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -632,15 +699,18 @@ export default function PropertiesTab({
             const sim = property.loanSimulation || {};
             const kb = property.kbPrice || {};
             const fp = property.floorPlan || {};
+            const isFav = favorites.includes(property.id);
 
             return (
               <div
                 key={property.id}
                 onClick={() => handleOpenDetail(property)}
-                className="bg-white rounded-2xl border border-slate-200 hover:border-blue-400 hover:shadow-lg transition-all duration-200 flex flex-col justify-between overflow-hidden cursor-pointer group active:scale-[0.99]"
+                className={`bg-white rounded-2xl border hover:border-blue-400 hover:shadow-lg transition-all duration-200 flex flex-col justify-between overflow-hidden cursor-pointer group active:scale-[0.99] ${
+                  isFav ? 'border-rose-300 ring-1 ring-rose-100' : 'border-slate-200'
+                }`}
               >
                 <div>
-                  {/* 1. Card Header: 지역, 단지명, 평형, 역세권 & 도면 버튼을 콤팩트하게 통합 */}
+                  {/* 1. Card Header: 지역, 단지명, 평형, 역세권 & 도면/즐겨찾기 버튼을 콤팩트하게 통합 */}
                   <div className="p-3.5 sm:p-4 pb-2 border-b border-slate-100">
                     <div className="flex items-center justify-between gap-1 mb-1.5">
                       <div className="flex items-center gap-1.5 flex-wrap">
@@ -652,16 +722,33 @@ export default function PropertiesTab({
                         </span>
                       </div>
 
-                      {/* 도면 원클릭 보기 버튼 (헤더 우측에 콤팩트하게 배치) */}
-                      <button
-                        type="button"
-                        onClick={(e) => handleOpenFloorPlan(e, property)}
-                        className="bg-indigo-50 hover:bg-indigo-600 text-indigo-700 hover:text-white px-2 py-0.5 rounded-md text-[10px] sm:text-[11px] font-extrabold transition-colors flex items-center gap-1 shrink-0 border border-indigo-200 cursor-pointer shadow-2xs"
-                        title="평형 도면 열기"
-                      >
-                        <Eye className="w-3 h-3 text-indigo-600 group-hover:text-white" />
-                        <span>{fp.bay || '3-Bay'} 도면</span>
-                      </button>
+                      <div className="flex items-center gap-1 shrink-0">
+                        {/* 도면 원클릭 보기 버튼 */}
+                        <button
+                          type="button"
+                          onClick={(e) => handleOpenFloorPlan(e, property)}
+                          className="bg-indigo-50 hover:bg-indigo-600 text-indigo-700 hover:text-white px-2 py-0.5 rounded-md text-[10px] sm:text-[11px] font-extrabold transition-colors flex items-center gap-1 shrink-0 border border-indigo-200 cursor-pointer shadow-2xs"
+                          title="평형 도면 열기"
+                        >
+                          <Eye className="w-3 h-3 text-indigo-600 group-hover:text-white" />
+                          <span>{fp.bay || '3-Bay'} 도면</span>
+                        </button>
+
+                        {/* ❤️ 즐겨찾기(찜) 버튼 */}
+                        <button
+                          type="button"
+                          onClick={(e) => toggleFavorite(e, property.id)}
+                          aria-label={isFav ? '즐겨찾기 해제' : '즐겨찾기 추가'}
+                          title={isFav ? '즐겨찾기 해제' : '즐겨찾기 추가'}
+                          className={`p-1 rounded-md border transition-all cursor-pointer active:scale-90 ${
+                            isFav
+                              ? 'bg-rose-50 border-rose-200 text-rose-500 shadow-2xs'
+                              : 'bg-slate-50 border-slate-200 text-slate-400 hover:text-rose-500 hover:border-rose-200'
+                          }`}
+                        >
+                          <Heart className={`w-3.5 h-3.5 ${isFav ? 'fill-rose-500 text-rose-500' : ''}`} />
+                        </button>
+                      </div>
                     </div>
 
                     <div className="flex items-baseline justify-between gap-2">
@@ -779,6 +866,8 @@ export default function PropertiesTab({
           property={selectedProperty}
           userCriteria={userCriteria}
           initialTab={modalInitialTab}
+          isFavorite={favorites.includes(selectedProperty.id)}
+          onToggleFavorite={(e) => toggleFavorite(e, selectedProperty.id)}
           onClose={() => setSelectedProperty(null)}
         />
       )}
