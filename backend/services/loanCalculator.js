@@ -86,6 +86,8 @@ export function calculateNewbornLoan({
   if (!useMcg) {
     if (region.includes('서울')) {
       deductionAmount = DEDUCTION_BY_REGION['서울'];
+    } else if (region.includes('인천')) {
+      deductionAmount = 48000000; // 인천광역시 과밀억제권역 최우선변제 방공제액
     } else {
       const isOvercrowded = OVERCROWDED_GYEONGGI.some(city => district.includes(city));
       deductionAmount = isOvercrowded ? DEDUCTION_BY_REGION['경기_과밀'] : DEDUCTION_BY_REGION['경기_기타'];

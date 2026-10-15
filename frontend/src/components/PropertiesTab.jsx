@@ -693,7 +693,7 @@ export default function PropertiesTab({
           <div className="flex items-center gap-2 overflow-x-auto no-scrollbar">
             {/* 지역 대분류 탭 */}
             <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-xl shrink-0">
-              {['전체', '서울', '경기'].map((reg) => (
+              {['전체', '서울', '경기', '인천'].map((reg) => (
                 <button
                   key={reg}
                   type="button"

@@ -1828,5 +1828,1647 @@
     },
     "naverComplexNo": "297",
     "naverMobileUrl": "https://m.land.naver.com/complex/info/297"
+  },
+  {
+    "id": "gyeonggi-bucheon-boram-ajou-23",
+    "name": "보람마을 아주",
+    "region": "경기",
+    "district": "부천시 원미구",
+    "dong": "중동",
+    "address": "경기도 부천시 원미구 조마루로 134",
+    "buildYear": 1995,
+    "totalUnits": 1398,
+    "totalFloors": 25,
+    "subwayStation": "부천시청역 (7호선) / 상동역 (7호선)",
+    "subwayDistance": "도보 8분 (역세권)",
+    "areaSqMeter": 59.94,
+    "pyeong": 23,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 495000000,
+    "priceDisplay": "4억 9,500만",
+    "priceRange": "4.8억 ~ 5.2억",
+    "kbPrice": {
+      "generalAvg": 500000000,
+      "highAvg": 520000000,
+      "lowAvg": 475000000,
+      "jeonseAvg": 330000000,
+      "jeonseRate": 66,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 14,
+        "price": 500000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 8,
+        "price": 492000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 19,
+        "price": 490000000
+      }
+    ],
+    "highlights": [
+      "7호선 부천시청역·상동역 더블역세권 1,398세대 대단지",
+      "신도초 품은 초품아 안심 통학로",
+      "부천 중앙공원·현대백화점·순천향대병원 도보 5분",
+      "4억대 7호선 초역세권 신혼부부 최고 인기"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%B3%B4%EB%9E%8C%EB%A7%88%EC%9D%84%20%EC%95%84%EC%A3%BC%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%B3%B4%EB%9E%8C%EB%A7%88%EC%9D%84%20%EC%95%84%EC%A3%BC%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B3%B4%EB%9E%8C%EB%A7%88%EC%9D%84%20%EC%95%84%EC%A3%BC%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 59.94㎡ (공급 23평형) 3-Bay 실속 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "ㄱ자형 주방 + 다용도실",
+      "ventilation": "주방-거실 일직선 맞통풍 구조",
+      "balconyStatus": "전면 광폭 통발코니",
+      "livingRoomWidth": "4.0m",
+      "masterBedroomWidth": "3.6m",
+      "features": [
+        "7호선 부천시청역 도보권",
+        "신도초 초품아 단지",
+        "순천향대 부천병원 인접",
+        "1,398세대 랜드마크"
+      ]
+    }
+  },
+  {
+    "id": "gyeonggi-bucheon-boram-ajou-31",
+    "name": "보람마을 아주",
+    "region": "경기",
+    "district": "부천시 원미구",
+    "dong": "중동",
+    "address": "경기도 부천시 원미구 조마루로 134",
+    "buildYear": 1995,
+    "totalUnits": 1398,
+    "totalFloors": 25,
+    "subwayStation": "부천시청역 (7호선) / 상동역 (7호선)",
+    "subwayDistance": "도보 8분 (역세권)",
+    "areaSqMeter": 84.86,
+    "pyeong": 31,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 685000000,
+    "priceDisplay": "6억 8,500만",
+    "priceRange": "6.6억 ~ 7.2억",
+    "kbPrice": {
+      "generalAvg": 695000000,
+      "highAvg": 745000000,
+      "lowAvg": 640000000,
+      "jeonseAvg": 450000000,
+      "jeonseRate": 64.7,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 18,
+        "price": 700000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 11,
+        "price": 685000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 6,
+        "price": 670000000
+      }
+    ],
+    "highlights": [
+      "31평형 국평(전용84) 방3·욕실2 랜드마크",
+      "1기 신도시 재건축 선도지구 추진 기대감",
+      "부천 최고 중심지 프리미엄 인프라",
+      "순천향대병원·백화점 도보 5분"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%B3%B4%EB%9E%8C%EB%A7%88%EC%9D%84%20%EC%95%84%EC%A3%BC%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%B3%B4%EB%9E%8C%EB%A7%88%EC%9D%84%20%EC%95%84%EC%A3%BC%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B3%B4%EB%9E%8C%EB%A7%88%EC%9D%84%20%EC%95%84%EC%A3%BC%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.86㎡ (공급 31평형) 3-Bay 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "대면형 ㄷ자 주방 + 보조주방",
+      "ventilation": "주방-거실 일직선 맞통풍 구조",
+      "balconyStatus": "남향 광폭 발코니 (안방·거실·침실2)",
+      "livingRoomWidth": "4.5m",
+      "masterBedroomWidth": "3.9m",
+      "features": [
+        "안방 부부욕실 구비",
+        "재건축 선도 추진 단지",
+        "중앙공원 영구 생활권",
+        "부천시청역 역세권"
+      ]
+    }
+  },
+  {
+    "id": "gyeonggi-bucheon-hanareum-samwhan-24",
+    "name": "한아름마을 삼환",
+    "region": "경기",
+    "district": "부천시 원미구",
+    "dong": "상동",
+    "address": "경기도 부천시 원미구 석천로 47",
+    "buildYear": 1994,
+    "totalUnits": 1236,
+    "totalFloors": 25,
+    "subwayStation": "상동역 (7호선) / 송내역 (1호선 급행)",
+    "subwayDistance": "도보 10분 / 버스 5분",
+    "areaSqMeter": 59.88,
+    "pyeong": 24,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 420000000,
+    "priceDisplay": "4억 2,000만",
+    "priceRange": "4.0억 ~ 4.4억",
+    "kbPrice": {
+      "generalAvg": 425000000,
+      "highAvg": 440000000,
+      "lowAvg": 400000000,
+      "jeonseAvg": 295000000,
+      "jeonseRate": 69.4,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 12,
+        "price": 425000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 7,
+        "price": 418000000
+      }
+    ],
+    "highlights": [
+      "7호선 상동역 및 1호선 송내역 더블생활권",
+      "상미초·상동중 도보 3분 안심학군",
+      "상동호수공원·웅진플레이도시 인접",
+      "4억 초반대 상동 대단지 최고 가성비"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%ED%95%9C%EC%95%84%EB%A6%84%EB%A7%88%EC%9D%84%20%EC%82%BC%ED%99%98",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%ED%95%9C%EC%95%84%EB%A6%84%EB%A7%88%EC%9D%84%20%EC%82%BC%ED%99%98",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%ED%95%9C%EC%95%84%EB%A6%84%EB%A7%88%EC%9D%84%20%EC%82%BC%ED%99%98",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 59.88㎡ (공급 24평형) 3-Bay 실속 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "ㄱ자형 주방",
+      "ventilation": "주방-거실 맞통풍 우수",
+      "balconyStatus": "전면 통발코니",
+      "livingRoomWidth": "4.0m",
+      "masterBedroomWidth": "3.6m",
+      "features": [
+        "상동역 상권 인접",
+        "송내역 급행 이용 수월",
+        "상미초 도보 3분",
+        "1,236세대 대단지"
+      ]
+    }
+  },
+  {
+    "id": "gyeonggi-bucheon-hanareum-samwhan-31",
+    "name": "한아름마을 삼환",
+    "region": "경기",
+    "district": "부천시 원미구",
+    "dong": "상동",
+    "address": "경기도 부천시 원미구 석천로 47",
+    "buildYear": 1994,
+    "totalUnits": 1236,
+    "totalFloors": 25,
+    "subwayStation": "상동역 (7호선) / 송내역 (1호선 급행)",
+    "subwayDistance": "도보 10분 / 버스 5분",
+    "areaSqMeter": 84.92,
+    "pyeong": 31,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 550000000,
+    "priceDisplay": "5억 5,000만",
+    "priceRange": "5.3억 ~ 5.8억",
+    "kbPrice": {
+      "generalAvg": 555000000,
+      "highAvg": 585000000,
+      "lowAvg": 520000000,
+      "jeonseAvg": 395000000,
+      "jeonseRate": 71.1,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 16,
+        "price": 555000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 9,
+        "price": 545000000
+      }
+    ],
+    "highlights": [
+      "국민평형 84㎡(방3·욕실2) 5억 중반 가성비",
+      "전세가율 71% 안전 갭투자·실거주 단지",
+      "송내IC 외곽순환도로 진출입 최적",
+      "상동 학원가 도보 이용 가능"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%ED%95%9C%EC%95%84%EB%A6%84%EB%A7%88%EC%9D%84%20%EC%82%BC%ED%99%98",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%ED%95%9C%EC%95%84%EB%A6%84%EB%A7%88%EC%9D%84%20%EC%82%BC%ED%99%98",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%ED%95%9C%EC%95%84%EB%A6%84%EB%A7%88%EC%9D%84%20%EC%82%BC%ED%99%98",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.92㎡ (공급 31평형) 3-Bay 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "ㄷ자형 주방",
+      "ventilation": "주방-거실 일직선 맞통풍",
+      "balconyStatus": "남향 3Bay 통발코니",
+      "livingRoomWidth": "4.4m",
+      "masterBedroomWidth": "3.8m",
+      "features": [
+        "안방 부부욕실 구비",
+        "전세가율 71% 고안정성",
+        "외곽순환도로 진입 용이",
+        "상동역 상권 도보권"
+      ]
+    }
+  },
+  {
+    "id": "gyeonggi-bucheon-mirinae-eunhasu-24",
+    "name": "미리내마을 은하수타운",
+    "region": "경기",
+    "district": "부천시 원미구",
+    "dong": "중동",
+    "address": "경기도 부천시 원미구 신흥로 275",
+    "buildYear": 1993,
+    "totalUnits": 1180,
+    "totalFloors": 20,
+    "subwayStation": "신중동역 (7호선)",
+    "subwayDistance": "도보 6분 (역세권)",
+    "areaSqMeter": 59.98,
+    "pyeong": 24,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 440000000,
+    "priceDisplay": "4억 4,000만",
+    "priceRange": "4.2억 ~ 4.6억",
+    "kbPrice": {
+      "generalAvg": 445000000,
+      "highAvg": 465000000,
+      "lowAvg": 420000000,
+      "jeonseAvg": 310000000,
+      "jeonseRate": 69.6,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 11,
+        "price": 445000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 5,
+        "price": 435000000
+      }
+    ],
+    "highlights": [
+      "7호선 신중동역 롯데백화점 도보 6분 초역세권",
+      "미리내공원 품은 쾌적한 숲세권",
+      "계남초·중·고 명문 학군 밀집",
+      "가산디지털단지·강남 출퇴근 최적"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%AF%B8%EB%A6%AC%EB%82%B4%EB%A7%88%EC%9D%84%20%EC%9D%80%ED%95%98%EC%88%98%ED%83%80%EC%9A%B4",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%AF%B8%EB%A6%AC%EB%82%B4%EB%A7%88%EC%9D%84%20%EC%9D%80%ED%95%98%EC%88%98%ED%83%80%EC%9A%B4",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%AF%B8%EB%A6%AC%EB%82%B4%EB%A7%88%EC%9D%84%20%EC%9D%80%ED%95%98%EC%88%98%ED%83%80%EC%9A%B4",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 59.98㎡ (공급 24평형) 3-Bay 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "ㄱ자형 주방",
+      "ventilation": "주방-거실 맞통풍",
+      "balconyStatus": "전면 광폭 통발코니",
+      "livingRoomWidth": "4.0m",
+      "masterBedroomWidth": "3.6m",
+      "features": [
+        "신중동역 도보 6분",
+        "롯데백화점 도보권",
+        "계남학군 밀집",
+        "미리내공원 인접"
+      ]
+    }
+  },
+  {
+    "id": "gyeonggi-bucheon-mirinae-eunhasu-32",
+    "name": "미리내마을 은하수타운",
+    "region": "경기",
+    "district": "부천시 원미구",
+    "dong": "중동",
+    "address": "경기도 부천시 원미구 신흥로 275",
+    "buildYear": 1993,
+    "totalUnits": 1180,
+    "totalFloors": 20,
+    "subwayStation": "신중동역 (7호선)",
+    "subwayDistance": "도보 6분 (역세권)",
+    "areaSqMeter": 84.89,
+    "pyeong": 32,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 575000000,
+    "priceDisplay": "5억 7,500만",
+    "priceRange": "5.5억 ~ 6.0억",
+    "kbPrice": {
+      "generalAvg": 580000000,
+      "highAvg": 610000000,
+      "lowAvg": 550000000,
+      "jeonseAvg": 410000000,
+      "jeonseRate": 70.6,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 14,
+        "price": 580000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 8,
+        "price": 570000000
+      }
+    ],
+    "highlights": [
+      "국평 84㎡ 방3·욕실2 판상형 선호 평면",
+      "7호선 급행 버스 연계 우수",
+      "부천 최고 학원가 도보 통학",
+      "단지 내 조경 및 보차분리 쾌적"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%AF%B8%EB%A6%AC%EB%82%B4%EB%A7%88%EC%9D%84%20%EC%9D%80%ED%95%98%EC%88%98%ED%83%80%EC%9A%B4",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%AF%B8%EB%A6%AC%EB%82%B4%EB%A7%88%EC%9D%84%20%EC%9D%80%ED%95%98%EC%88%98%ED%83%80%EC%9A%B4",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%AF%B8%EB%A6%AC%EB%82%B4%EB%A7%88%EC%9D%84%20%EC%9D%80%ED%95%98%EC%88%98%ED%83%80%EC%9A%B4",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.89㎡ (공급 32평형) 3-Bay 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "ㄷ자형 대면형 주방",
+      "ventilation": "주방-거실 일직선 맞통풍",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.4m",
+      "masterBedroomWidth": "3.8m",
+      "features": [
+        "안방 부부욕실 구비",
+        "신중동역 초역세권",
+        "계남초·중·고 인접",
+        "전세가율 70% 탄탄"
+      ]
+    }
+  },
+  {
+    "id": "gyeonggi-bucheon-yeonhwa-ssangyong-26",
+    "name": "연화마을 쌍용",
+    "region": "경기",
+    "district": "부천시 원미구",
+    "dong": "중동",
+    "address": "경기도 부천시 원미구 계남로 163",
+    "buildYear": 1994,
+    "totalUnits": 1056,
+    "totalFloors": 22,
+    "subwayStation": "신중동역 (7호선) / 부천시청역 (7호선)",
+    "subwayDistance": "도보 7분 (중앙공원 바로 앞)",
+    "areaSqMeter": 69.96,
+    "pyeong": 26,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 485000000,
+    "priceDisplay": "4억 8,500만",
+    "priceRange": "4.7억 ~ 5.1억",
+    "kbPrice": {
+      "generalAvg": 490000000,
+      "highAvg": 515000000,
+      "lowAvg": 460000000,
+      "jeonseAvg": 340000000,
+      "jeonseRate": 69.3,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 15,
+        "price": 490000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 7,
+        "price": 480000000
+      }
+    ],
+    "highlights": [
+      "부천 중앙공원 영구 파크뷰 조망권",
+      "중앙도서관·부천아트센터 문화 인프라",
+      "중흥초·중 도보 통학 안심 단지",
+      "7호선 역세권 1천 세대 명품 주거지"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%97%B0%ED%99%94%EB%A7%88%EC%9D%84%20%EC%8C%8D%EC%9A%A9",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%97%B0%ED%99%94%EB%A7%88%EC%9D%84%20%EC%8C%8D%EC%9A%A9",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%97%B0%ED%99%94%EB%A7%88%EC%9D%84%20%EC%8C%8D%EC%9A%A9",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 69.96㎡ (공급 26평형) 3-Bay 실속 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "ㄱ자형 주방",
+      "ventilation": "주방-거실 일직선 맞통풍",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.1m",
+      "masterBedroomWidth": "3.7m",
+      "features": [
+        "부천 중앙공원 조망",
+        "중흥초 도보 3분",
+        "부천아트센터 인접",
+        "7호선 더블역세권"
+      ]
+    }
+  },
+  {
+    "id": "gyeonggi-bucheon-yeonhwa-ssangyong-32",
+    "name": "연화마을 쌍용",
+    "region": "경기",
+    "district": "부천시 원미구",
+    "dong": "중동",
+    "address": "경기도 부천시 원미구 계남로 163",
+    "buildYear": 1994,
+    "totalUnits": 1056,
+    "totalFloors": 22,
+    "subwayStation": "신중동역 (7호선) / 부천시청역 (7호선)",
+    "subwayDistance": "도보 7분 (중앙공원 바로 앞)",
+    "areaSqMeter": 84.95,
+    "pyeong": 32,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 595000000,
+    "priceDisplay": "5억 9,500만",
+    "priceRange": "5.7억 ~ 6.2억",
+    "kbPrice": {
+      "generalAvg": 600000000,
+      "highAvg": 630000000,
+      "lowAvg": 570000000,
+      "jeonseAvg": 420000000,
+      "jeonseRate": 70,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 18,
+        "price": 600000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 10,
+        "price": 590000000
+      }
+    ],
+    "highlights": [
+      "국민평형 84㎡ 방3·욕실2 판상형",
+      "중앙공원 영구 프리미엄 뷰",
+      "재건축 선도 추진 중동 핵심 입지",
+      "전세가율 70% 탄탄한 실거주 만족도"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%97%B0%ED%99%94%EB%A7%88%EC%9D%84%20%EC%8C%8D%EC%9A%A9",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%97%B0%ED%99%94%EB%A7%88%EC%9D%84%20%EC%8C%8D%EC%9A%A9",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%97%B0%ED%99%94%EB%A7%88%EC%9D%84%20%EC%8C%8D%EC%9A%A9",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.95㎡ (공급 32평형) 3-Bay 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "ㄷ자형 주방",
+      "ventilation": "주방-거실 일직선 맞통풍",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.5m",
+      "masterBedroomWidth": "3.9m",
+      "features": [
+        "안방 부부욕실 완비",
+        "중앙공원 영구 조망",
+        "명문 중흥학군",
+        "1,056세대 대단지"
+      ]
+    }
+  },
+  {
+    "id": "gyeonggi-bucheon-songnae-newseoul-26",
+    "name": "송내뉴서울아파트",
+    "region": "경기",
+    "district": "부천시 소사구",
+    "dong": "송내동",
+    "address": "경기도 부천시 소사구 중동로 71",
+    "buildYear": 1991,
+    "totalUnits": 1040,
+    "totalFloors": 15,
+    "subwayStation": "중동역 (1호선)",
+    "subwayDistance": "도보 3분 (초역세권)",
+    "areaSqMeter": 69.45,
+    "pyeong": 26,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 415000000,
+    "priceDisplay": "4억 1,500만",
+    "priceRange": "4.0억 ~ 4.3억",
+    "kbPrice": {
+      "generalAvg": 420000000,
+      "highAvg": 440000000,
+      "lowAvg": 395000000,
+      "jeonseAvg": 290000000,
+      "jeonseRate": 69,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 10,
+        "price": 420000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 4,
+        "price": 410000000
+      }
+    ],
+    "highlights": [
+      "1호선 중동역 도보 3분 초역세권",
+      "서울 용산·종로 직통 통근 편리",
+      "송내초 도보 2분 안전 통학",
+      "4억대 초반 1천세대 가성비 최강"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%86%A1%EB%82%B4%EB%89%B4%EC%84%9C%EC%9A%B8%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%86%A1%EB%82%B4%EB%89%B4%EC%84%9C%EC%9A%B8%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%86%A1%EB%82%B4%EB%89%B4%EC%84%9C%EC%9A%B8%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 69.45㎡ (공급 26평형) 3-Bay 실속 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "ㄱ자형 주방",
+      "ventilation": "주방-거실 맞통풍",
+      "balconyStatus": "남향 통발코니",
+      "livingRoomWidth": "4.1m",
+      "masterBedroomWidth": "3.6m",
+      "features": [
+        "중동역 도보 3분",
+        "송내초 초품아",
+        "1,040세대 대단지",
+        "서울 직통 1호선"
+      ]
+    }
+  },
+  {
+    "id": "gyeonggi-bucheon-songnae-newseoul-31",
+    "name": "송내뉴서울아파트",
+    "region": "경기",
+    "district": "부천시 소사구",
+    "dong": "송내동",
+    "address": "경기도 부천시 소사구 중동로 71",
+    "buildYear": 1991,
+    "totalUnits": 1040,
+    "totalFloors": 15,
+    "subwayStation": "중동역 (1호선)",
+    "subwayDistance": "도보 3분 (초역세권)",
+    "areaSqMeter": 84.93,
+    "pyeong": 31,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 510000000,
+    "priceDisplay": "5억 1,000만",
+    "priceRange": "4.9억 ~ 5.3억",
+    "kbPrice": {
+      "generalAvg": 515000000,
+      "highAvg": 540000000,
+      "lowAvg": 485000000,
+      "jeonseAvg": 360000000,
+      "jeonseRate": 69.9,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 12,
+        "price": 515000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 6,
+        "price": 505000000
+      }
+    ],
+    "highlights": [
+      "국평 84㎡ 방3·욕실2 5억 초반대 최고 가성비",
+      "중동역 초역세권 대단지 프리미엄",
+      "부천여고·송내고 인접 학군",
+      "서울 접근성 탁월한 1호선 라인"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%86%A1%EB%82%B4%EB%89%B4%EC%84%9C%EC%9A%B8%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%86%A1%EB%82%B4%EB%89%B4%EC%84%9C%EC%9A%B8%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%86%A1%EB%82%B4%EB%89%B4%EC%84%9C%EC%9A%B8%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.93㎡ (공급 31평형) 3-Bay 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "ㄷ자형 주방",
+      "ventilation": "주방-거실 일직선 맞통풍",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.4m",
+      "masterBedroomWidth": "3.8m",
+      "features": [
+        "안방 부부욕실 구비",
+        "중동역 도보 3분",
+        "5억 초반 국평",
+        "1호선 급행 인접"
+      ]
+    }
+  },
+  {
+    "id": "gyeonggi-bucheon-sosa-jugong2-24",
+    "name": "소사주공 2단지",
+    "region": "경기",
+    "district": "부천시 소사구",
+    "dong": "소사본동",
+    "address": "경기도 부천시 소사구 소사로 194",
+    "buildYear": 1995,
+    "totalUnits": 1104,
+    "totalFloors": 20,
+    "subwayStation": "소사역 (1호선 · 서해선 더블환승)",
+    "subwayDistance": "도보 7분 (역세권)",
+    "areaSqMeter": 59.85,
+    "pyeong": 24,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 395000000,
+    "priceDisplay": "3억 9,500만",
+    "priceRange": "3.8억 ~ 4.1억",
+    "kbPrice": {
+      "generalAvg": 400000000,
+      "highAvg": 420000000,
+      "lowAvg": 380000000,
+      "jeonseAvg": 280000000,
+      "jeonseRate": 70,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 14,
+        "price": 400000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 9,
+        "price": 395000000
+      }
+    ],
+    "highlights": [
+      "1호선·서해선 소사역 더블역세권(김포공항 10분대)",
+      "3억대 진입 가능한 수도권 대단지",
+      "소사초·부원초 더블 학군 통학로",
+      "성주산 쾌적한 숲세권 힐링 단지"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%86%8C%EC%82%AC%EC%A3%BC%EA%B3%B52%EB%8B%A8%EC%A7%80",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%86%8C%EC%82%AC%EC%A3%BC%EA%B3%B52%EB%8B%A8%EC%A7%80",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%86%8C%EC%82%AC%EC%A3%BC%EA%B3%B52%EB%8B%A8%EC%A7%80",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 59.85㎡ (공급 24평형) 3-Bay 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "ㄱ자형 주방",
+      "ventilation": "주방-거실 맞통풍",
+      "balconyStatus": "남향 통발코니",
+      "livingRoomWidth": "4.0m",
+      "masterBedroomWidth": "3.6m",
+      "features": [
+        "소사역 더블역세권",
+        "서해선 김포공항 직결",
+        "3억대 가성비",
+        "성주산 숲세권"
+      ]
+    }
+  },
+  {
+    "id": "gyeonggi-bucheon-sosa-jugong2-32",
+    "name": "소사주공 2단지",
+    "region": "경기",
+    "district": "부천시 소사구",
+    "dong": "소사본동",
+    "address": "경기도 부천시 소사구 소사로 194",
+    "buildYear": 1995,
+    "totalUnits": 1104,
+    "totalFloors": 20,
+    "subwayStation": "소사역 (1호선 · 서해선 더블환승)",
+    "subwayDistance": "도보 7분 (역세권)",
+    "areaSqMeter": 84.9,
+    "pyeong": 32,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 515000000,
+    "priceDisplay": "5억 1,500만",
+    "priceRange": "5.0억 ~ 5.4억",
+    "kbPrice": {
+      "generalAvg": 520000000,
+      "highAvg": 545000000,
+      "lowAvg": 490000000,
+      "jeonseAvg": 370000000,
+      "jeonseRate": 71.2,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 16,
+        "price": 520000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 8,
+        "price": 510000000
+      }
+    ],
+    "highlights": [
+      "국평 84㎡ 방3·욕실2 5억 초반대",
+      "서해선 타고 일산·김포공항 바로 이동",
+      "1,104세대 대단지 관리비 절감",
+      "소사종합시장 등 생활 편의시설 인접"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%86%8C%EC%82%AC%EC%A3%BC%EA%B3%B52%EB%8B%A8%EC%A7%80",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%86%8C%EC%82%AC%EC%A3%BC%EA%B3%B52%EB%8B%A8%EC%A7%80",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%86%8C%EC%82%AC%EC%A3%BC%EA%B3%B52%EB%8B%A8%EC%A7%80",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.90㎡ (공급 32평형) 3-Bay 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "ㄷ자형 주방",
+      "ventilation": "주방-거실 일직선 맞통풍",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.4m",
+      "masterBedroomWidth": "3.8m",
+      "features": [
+        "안방 부부욕실 구비",
+        "소사역 1호선·서해선",
+        "전세가율 71% 안전",
+        "소사초 도보 통학"
+      ]
+    }
+  },
+  {
+    "id": "incheon-bupyeong-donga1-28",
+    "name": "부평동아 1단지",
+    "region": "인천",
+    "district": "부평구",
+    "dong": "부평동",
+    "address": "인천광역시 부평구 부평문화로 37",
+    "buildYear": 1986,
+    "totalUnits": 2475,
+    "totalFloors": 15,
+    "subwayStation": "부평역 (1호선 급행 · 인천1호선) / 굴포천역 (7호선)",
+    "subwayDistance": "도보 6분 (역세권)",
+    "areaSqMeter": 76.82,
+    "pyeong": 28,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 480000000,
+    "priceDisplay": "4억 8,000만",
+    "priceRange": "4.6억 ~ 5.0억",
+    "kbPrice": {
+      "generalAvg": 485000000,
+      "highAvg": 510000000,
+      "lowAvg": 450000000,
+      "jeonseAvg": 270000000,
+      "jeonseRate": 55.7,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 10,
+        "price": 485000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 5,
+        "price": 475000000
+      }
+    ],
+    "highlights": [
+      "2,475세대 메머드급 부평 랜드마크 대단지",
+      "1호선 급행 부평역 서울 30분대 진입",
+      "모다백화점·부평문화의거리·부평공원 슬세권",
+      "GTX-B 부평역 환승센터 미래비전"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%B6%80%ED%8F%89%EB%8F%99%EC%95%841%EB%8B%A8%EC%A7%80",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%B6%80%ED%8F%89%EB%8F%99%EC%95%841%EB%8B%A8%EC%A7%80",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B6%80%ED%8F%89%EB%8F%99%EC%95%841%EB%8B%A8%EC%A7%80",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 76.82㎡ (공급 28평형) 3-Bay 실속 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "ㄱ자형 주방",
+      "ventilation": "주방-거실 일직선 맞통풍",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.2m",
+      "masterBedroomWidth": "3.7m",
+      "features": [
+        "2,475세대 랜드마크",
+        "부평역 1호선·인천1호선",
+        "GTX-B 복합환승 수혜",
+        "부평문화의거리 인접"
+      ]
+    }
+  },
+  {
+    "id": "incheon-bupyeong-donga1-31",
+    "name": "부평동아 1단지",
+    "region": "인천",
+    "district": "부평구",
+    "dong": "부평동",
+    "address": "인천광역시 부평구 부평문화로 37",
+    "buildYear": 1986,
+    "totalUnits": 2475,
+    "totalFloors": 15,
+    "subwayStation": "부평역 (1호선 급행 · 인천1호선) / 굴포천역 (7호선)",
+    "subwayDistance": "도보 6분 (역세권)",
+    "areaSqMeter": 84.87,
+    "pyeong": 31,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 540000000,
+    "priceDisplay": "5억 4,000만",
+    "priceRange": "5.2억 ~ 5.6억",
+    "kbPrice": {
+      "generalAvg": 540000000,
+      "highAvg": 570000000,
+      "lowAvg": 505000000,
+      "jeonseAvg": 310000000,
+      "jeonseRate": 57.4,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 12,
+        "price": 540000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 8,
+        "price": 535000000
+      }
+    ],
+    "highlights": [
+      "국평 84㎡ 방3·욕실2 판상형 대형 평면",
+      "재건축 안전진단 통과 사업성 우수",
+      "부평서초·부원중 도보 통학권",
+      "부평 최고 입지 대단지 프리미엄"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%B6%80%ED%8F%89%EB%8F%99%EC%95%841%EB%8B%A8%EC%A7%80",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%B6%80%ED%8F%89%EB%8F%99%EC%95%841%EB%8B%A8%EC%A7%80",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B6%80%ED%8F%89%EB%8F%99%EC%95%841%EB%8B%A8%EC%A7%80",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.87㎡ (공급 31평형) 3-Bay 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "ㄷ자형 주방",
+      "ventilation": "주방-거실 일직선 맞통풍",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.5m",
+      "masterBedroomWidth": "3.9m",
+      "features": [
+        "안방 부부욕실 구비",
+        "재건축 안전진단 통과",
+        "부평역 더블역세권",
+        "2,475세대 랜드마크"
+      ]
+    }
+  },
+  {
+    "id": "incheon-bupyeong-sangok-hyundai3-26",
+    "name": "산곡현대 3차",
+    "region": "인천",
+    "district": "부평구",
+    "dong": "산곡동",
+    "address": "인천광역시 부평구 화랑로 100",
+    "buildYear": 1993,
+    "totalUnits": 1110,
+    "totalFloors": 15,
+    "subwayStation": "산곡역 (7호선)",
+    "subwayDistance": "도보 5분 (초역세권)",
+    "areaSqMeter": 69.94,
+    "pyeong": 26,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 340000000,
+    "priceDisplay": "3억 4,000만",
+    "priceRange": "3.2억 ~ 3.6억",
+    "kbPrice": {
+      "generalAvg": 345000000,
+      "highAvg": 360000000,
+      "lowAvg": 325000000,
+      "jeonseAvg": 230000000,
+      "jeonseRate": 66.7,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 11,
+        "price": 345000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 4,
+        "price": 335000000
+      }
+    ],
+    "highlights": [
+      "7호선 산곡역 강남 직통 도보 5분 초역세권",
+      "3억 초중반대 7호선 역세권 방3개 최강 가성비",
+      "마장초·산곡남중 도보 3분 안심학군",
+      "원적산 체육공원 힐링 숲세권"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%82%B0%EA%B3%A1%ED%98%84%EB%8C%803%EC%B0%A8",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%82%B0%EA%B3%A1%ED%98%84%EB%8C%803%EC%B0%A8",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%82%B0%EA%B3%A1%ED%98%84%EB%8C%803%EC%B0%A8",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 69.94㎡ (공급 26평형) 3-Bay 실속 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "ㄱ자형 주방",
+      "ventilation": "주방-거실 맞통풍",
+      "balconyStatus": "남향 통발코니",
+      "livingRoomWidth": "4.1m",
+      "masterBedroomWidth": "3.6m",
+      "features": [
+        "7호선 산곡역 도보 5분",
+        "3억대 가성비 끝판왕",
+        "마장초 도보 3분",
+        "원적산 숲세권"
+      ]
+    }
+  },
+  {
+    "id": "incheon-bupyeong-sangok-hyundai3-30",
+    "name": "산곡현대 3차",
+    "region": "인천",
+    "district": "부평구",
+    "dong": "산곡동",
+    "address": "인천광역시 부평구 화랑로 100",
+    "buildYear": 1993,
+    "totalUnits": 1110,
+    "totalFloors": 15,
+    "subwayStation": "산곡역 (7호선)",
+    "subwayDistance": "도보 5분 (초역세권)",
+    "areaSqMeter": 84.91,
+    "pyeong": 30,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 385000000,
+    "priceDisplay": "3억 8,500만",
+    "priceRange": "3.7억 ~ 4.1억",
+    "kbPrice": {
+      "generalAvg": 390000000,
+      "highAvg": 410000000,
+      "lowAvg": 365000000,
+      "jeonseAvg": 260000000,
+      "jeonseRate": 66.7,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 14,
+        "price": 390000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 7,
+        "price": 380000000
+      }
+    ],
+    "highlights": [
+      "서울 7호선 직결 전용 84㎡가 3억 후반대!",
+      "신생아 특례대출 시 필요 현금 1억대 초반",
+      "1,110세대 대단지 안정적 주거환경",
+      "산곡동 재개발 촉진지구 인프라 확장"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%82%B0%EA%B3%A1%ED%98%84%EB%8C%803%EC%B0%A8",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%82%B0%EA%B3%A1%ED%98%84%EB%8C%803%EC%B0%A8",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%82%B0%EA%B3%A1%ED%98%84%EB%8C%803%EC%B0%A8",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.91㎡ (공급 30평형) 3-Bay 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "ㄷ자형 주방",
+      "ventilation": "주방-거실 일직선 맞통풍",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.4m",
+      "masterBedroomWidth": "3.8m",
+      "features": [
+        "7호선 산곡역 역세권",
+        "국평 84㎡ 3억 후반대",
+        "필요현금 1억대 초반",
+        "1,110세대 대단지"
+      ]
+    }
+  },
+  {
+    "id": "incheon-bupyeong-samsantown6-32a",
+    "name": "삼산타운 6단지",
+    "region": "인천",
+    "district": "부평구",
+    "dong": "삼산동",
+    "address": "인천광역시 부평구 충선로 161",
+    "buildYear": 2004,
+    "totalUnits": 1180,
+    "totalFloors": 25,
+    "subwayStation": "굴포천역 (7호선)",
+    "subwayDistance": "도보 6분 (역세권)",
+    "areaSqMeter": 84.93,
+    "pyeong": 32,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 650000000,
+    "priceDisplay": "6억 5,000만",
+    "priceRange": "6.3억 ~ 6.8억",
+    "kbPrice": {
+      "generalAvg": 650000000,
+      "highAvg": 690000000,
+      "lowAvg": 610000000,
+      "jeonseAvg": 445000000,
+      "jeonseRate": 68.5,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 18,
+        "price": 655000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 11,
+        "price": 645000000
+      }
+    ],
+    "highlights": [
+      "7호선 굴포천역 역세권 삼산택지지구 대장 랜드마크",
+      "삼산월드체육관·굴포천 수변공원 바로 앞",
+      "진산중·삼산고 명문 학군 밀집",
+      "2004년식 깔끔한 계단식 판상형 대단지"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%82%BC%EC%82%B0%ED%83%80%EC%9A%B46%EB%8B%A8%EC%A7%80",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%82%BC%EC%82%B0%ED%83%80%EC%9A%B46%EB%8B%A8%EC%A7%80",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%82%BC%EC%82%B0%ED%83%80%EC%9A%B46%EB%8B%A8%EC%A7%80",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.93㎡ (공급 32평형 A) 3-Bay 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "ㄷ자형 대면 주방",
+      "ventilation": "주방-거실 맞통풍",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.5m",
+      "masterBedroomWidth": "3.9m",
+      "features": [
+        "7호선 굴포천역 도보 6분",
+        "부평 최고 선호 택지지구",
+        "안방 드레스룸·욕실",
+        "1,180세대 랜드마크"
+      ]
+    }
+  },
+  {
+    "id": "incheon-bupyeong-samsantown6-32b",
+    "name": "삼산타운 6단지",
+    "region": "인천",
+    "district": "부평구",
+    "dong": "삼산동",
+    "address": "인천광역시 부평구 충선로 161",
+    "buildYear": 2004,
+    "totalUnits": 1180,
+    "totalFloors": 25,
+    "subwayStation": "굴포천역 (7호선)",
+    "subwayDistance": "도보 6분 (역세권)",
+    "areaSqMeter": 84.85,
+    "pyeong": 32,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 630000000,
+    "priceDisplay": "6억 3,000만",
+    "priceRange": "6.1억 ~ 6.5억",
+    "kbPrice": {
+      "generalAvg": 635000000,
+      "highAvg": 670000000,
+      "lowAvg": 595000000,
+      "jeonseAvg": 430000000,
+      "jeonseRate": 67.7,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 15,
+        "price": 635000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 6,
+        "price": 625000000
+      }
+    ],
+    "highlights": [
+      "삼산타운6단지 타워형 실속 B타입",
+      "남동향 파노라마 공원 조망권",
+      "굴포천역 도보 역세권 7호선 이용",
+      "삼산택지 인프라 완성형 주거단지"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%82%BC%EC%82%B0%ED%83%80%EC%9A%B46%EB%8B%A8%EC%A7%80",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%82%BC%EC%82%B0%ED%83%80%EC%9A%B46%EB%8B%A8%EC%A7%80",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%82%BC%EC%82%B0%ED%83%80%EC%9A%B46%EB%8B%A8%EC%A7%80",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.85㎡ (공급 32평형 B) 타워형 평면도",
+      "bay": "타워형",
+      "structure": "타워형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "대면형 오픈 주방",
+      "ventilation": "2면 개방형 조망 환기",
+      "balconyStatus": "광폭 서비스 발코니",
+      "livingRoomWidth": "4.6m",
+      "masterBedroomWidth": "3.8m",
+      "features": [
+        "2면 개방 파노라마 조망",
+        "7호선 굴포천역 역세권",
+        "부평 대장 단지",
+        "신혼부부 선호 구조"
+      ]
+    }
+  },
+  {
+    "id": "incheon-gyeyang-jakjeon-hyundai2-25",
+    "name": "작전현대 2차",
+    "region": "인천",
+    "district": "계양구",
+    "dong": "작전동",
+    "address": "인천광역시 계양구 봉오대로 691",
+    "buildYear": 1992,
+    "totalUnits": 1220,
+    "totalFloors": 15,
+    "subwayStation": "작전역 (인천1호선 · BRT)",
+    "subwayDistance": "도보 4분 (초역세권)",
+    "areaSqMeter": 59.92,
+    "pyeong": 25,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 330000000,
+    "priceDisplay": "3억 3,000만",
+    "priceRange": "3.1억 ~ 3.5억",
+    "kbPrice": {
+      "generalAvg": 335000000,
+      "highAvg": 350000000,
+      "lowAvg": 315000000,
+      "jeonseAvg": 220000000,
+      "jeonseRate": 65.7,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 12,
+        "price": 335000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 5,
+        "price": 325000000
+      }
+    ],
+    "highlights": [
+      "인천1호선 작전역 도보 4분 초역세권",
+      "BRT 간선급행버스 서울 화곡·가양 직통",
+      "작전초 품은 안심 등하굣길",
+      "3억 초반대 실속형 1,220세대 대단지"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%9E%91%EC%A0%84%ED%98%84%EB%8C%802%EC%B0%A8",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%9E%91%EC%A0%84%ED%98%84%EB%8C%802%EC%B0%A8",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%9E%91%EC%A0%84%ED%98%84%EB%8C%802%EC%B0%A8",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 59.92㎡ (공급 25평형) 3-Bay 실속 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "ㄱ자형 주방",
+      "ventilation": "주방-거실 일직선 맞통풍",
+      "balconyStatus": "남향 통발코니",
+      "livingRoomWidth": "4.0m",
+      "masterBedroomWidth": "3.6m",
+      "features": [
+        "작전역 도보 4분",
+        "BRT 서울 직결",
+        "작전초 초품아",
+        "3억 초반 가성비"
+      ]
+    }
+  },
+  {
+    "id": "incheon-gyeyang-jakjeon-hyundai2-31",
+    "name": "작전현대 2차",
+    "region": "인천",
+    "district": "계양구",
+    "dong": "작전동",
+    "address": "인천광역시 계양구 봉오대로 691",
+    "buildYear": 1992,
+    "totalUnits": 1220,
+    "totalFloors": 15,
+    "subwayStation": "작전역 (인천1호선 · BRT)",
+    "subwayDistance": "도보 4분 (초역세권)",
+    "areaSqMeter": 84.9,
+    "pyeong": 31,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 420000000,
+    "priceDisplay": "4억 2,000만",
+    "priceRange": "4.0억 ~ 4.4억",
+    "kbPrice": {
+      "generalAvg": 425000000,
+      "highAvg": 450000000,
+      "lowAvg": 400000000,
+      "jeonseAvg": 290000000,
+      "jeonseRate": 68.2,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 13,
+        "price": 425000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 8,
+        "price": 415000000
+      }
+    ],
+    "highlights": [
+      "국민평형 84㎡ 방3·욕실2 4억 초반대 최고 가성비",
+      "홈플러스 작전점 도보 5분 생활권",
+      "경인고속도로 부평IC 인접 자차 통근 편리",
+      "계양 테크노밸리 배후 수혜단지"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%9E%91%EC%A0%84%ED%98%84%EB%8C%802%EC%B0%A8",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%9E%91%EC%A0%84%ED%98%84%EB%8C%802%EC%B0%A8",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%9E%91%EC%A0%84%ED%98%84%EB%8C%802%EC%B0%A8",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.90㎡ (공급 31평형) 3-Bay 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "ㄷ자형 주방",
+      "ventilation": "주방-거실 일직선 맞통풍",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.4m",
+      "masterBedroomWidth": "3.8m",
+      "features": [
+        "안방 부부욕실 구비",
+        "4억대 초반 국평",
+        "작전역 초역세권",
+        "1,220세대 대단지"
+      ]
+    }
+  },
+  {
+    "id": "incheon-yeonsu-dongchun-hyundai1-26",
+    "name": "동춘현대 1차",
+    "region": "인천",
+    "district": "연수구",
+    "dong": "동춘동",
+    "address": "인천광역시 연수구 앵고개로 260",
+    "buildYear": 1993,
+    "totalUnits": 1040,
+    "totalFloors": 17,
+    "subwayStation": "원인재역 (수인분당선 · 인천1호선 더블환승) / 동춘역 (인천1호선)",
+    "subwayDistance": "도보 5분 (더블역세권)",
+    "areaSqMeter": 69.9,
+    "pyeong": 26,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 380000000,
+    "priceDisplay": "3억 8,000만",
+    "priceRange": "3.6억 ~ 4.0억",
+    "kbPrice": {
+      "generalAvg": 385000000,
+      "highAvg": 405000000,
+      "lowAvg": 360000000,
+      "jeonseAvg": 250000000,
+      "jeonseRate": 64.9,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 14,
+        "price": 385000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 6,
+        "price": 375000000
+      }
+    ],
+    "highlights": [
+      "수인분당선(강남·분당 직결)·인천1호선 원인재역 더블역세권",
+      "송도국제도시 바로 앞 인프라·학원가 공유",
+      "이마트·스퀘어원 대형 복합쇼핑몰 도보 7분",
+      "동춘초·연수여고 도보 안심학군"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%8F%99%EC%B6%98%ED%98%84%EB%8C%801%EC%B0%A8",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%8F%99%EC%B6%98%ED%98%84%EB%8C%801%EC%B0%A8",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8F%99%EC%B6%98%ED%98%84%EB%8C%801%EC%B0%A8",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 69.90㎡ (공급 26평형) 3-Bay 실속 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "ㄱ자형 주방",
+      "ventilation": "주방-거실 일직선 맞통풍",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.1m",
+      "masterBedroomWidth": "3.6m",
+      "features": [
+        "원인재역 수인분당선 더블환승",
+        "송도 생활권 공유",
+        "스퀘어원 쇼핑몰 도보권",
+        "3억대 가성비"
+      ]
+    }
+  },
+  {
+    "id": "incheon-yeonsu-dongchun-hyundai1-32",
+    "name": "동춘현대 1차",
+    "region": "인천",
+    "district": "연수구",
+    "dong": "동춘동",
+    "address": "인천광역시 연수구 앵고개로 260",
+    "buildYear": 1993,
+    "totalUnits": 1040,
+    "totalFloors": 17,
+    "subwayStation": "원인재역 (수인분당선 · 인천1호선 더블환승) / 동춘역 (인천1호선)",
+    "subwayDistance": "도보 5분 (더블역세권)",
+    "areaSqMeter": 84.95,
+    "pyeong": 32,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 485000000,
+    "priceDisplay": "4억 8,500만",
+    "priceRange": "4.6억 ~ 5.1억",
+    "kbPrice": {
+      "generalAvg": 490000000,
+      "highAvg": 520000000,
+      "lowAvg": 460000000,
+      "jeonseAvg": 330000000,
+      "jeonseRate": 67.3,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 15,
+        "price": 490000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 8,
+        "price": 480000000
+      }
+    ],
+    "highlights": [
+      "국평 84㎡ 방3·욕실2 4억 후반대 최고 실거주성",
+      "수인분당선 강남 출퇴근 가능한 더블역세권",
+      "연수지구 노후계획도시 재건축 수혜 기대",
+      "승기천 생태수변산책로 바로 앞"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%8F%99%EC%B6%98%ED%98%84%EB%8C%801%EC%B0%A8",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%8F%99%EC%B6%98%ED%98%84%EB%8C%801%EC%B0%A8",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8F%99%EC%B6%98%ED%98%84%EB%8C%801%EC%B0%A8",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.95㎡ (공급 32평형) 3-Bay 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "ㄷ자형 주방",
+      "ventilation": "주방-거실 일직선 맞통풍",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.5m",
+      "masterBedroomWidth": "3.8m",
+      "features": [
+        "안방 부부욕실 구비",
+        "원인재역 더블역세권",
+        "송도 인프라 도보/차량 5분",
+        "1,040세대 대단지"
+      ]
+    }
+  },
+  {
+    "id": "incheon-seogu-luwon-hoban-29",
+    "name": "루원호반베르디움",
+    "region": "인천",
+    "district": "서구",
+    "dong": "가정동",
+    "address": "인천광역시 서구 봉오재3로 40",
+    "buildYear": 2018,
+    "totalUnits": 980,
+    "totalFloors": 25,
+    "subwayStation": "가정역 (인천2호선 · 7호선 연장선)",
+    "subwayDistance": "도보 8분 (역세권)",
+    "areaSqMeter": 73.9,
+    "pyeong": 29,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 540000000,
+    "priceDisplay": "5억 4,000만",
+    "priceRange": "5.2억 ~ 5.6억",
+    "kbPrice": {
+      "generalAvg": 545000000,
+      "highAvg": 570000000,
+      "lowAvg": 515000000,
+      "jeonseAvg": 360000000,
+      "jeonseRate": 66.1,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 19,
+        "price": 545000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 12,
+        "price": 538000000
+      }
+    ],
+    "highlights": [
+      "2018년 준공 9년차 4-Bay 판상형 준신축 대단지",
+      "인천2호선 가정역 및 7호선 연장선 직결 수혜",
+      "가현초·가현중 도보 3분 안심 통학",
+      "루원시티 복합행정타운 중심 상권 인접"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%A3%A8%EC%9B%90%ED%98%B8%EB%B0%98%EB%B2%A0%EB%A5%B4%EB%94%94%EC%9B%80",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%A3%A8%EC%9B%90%ED%98%B8%EB%B0%98%EB%B2%A0%EB%A5%B4%EB%94%94%EC%9B%80",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%A3%A8%EC%9B%90%ED%98%B8%EB%B0%98%EB%B2%A0%EB%A5%B4%EB%94%94%EC%9B%80",
+    "floorPlan": {
+      "type": "84_4bay",
+      "title": "전용 73.90㎡ (공급 29평형) 4-Bay 최신 판상형 평면도",
+      "bay": "4-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "ㄷ자형 대면 주방 + 펜트리",
+      "ventilation": "주방-거실 맞통풍 우수",
+      "balconyStatus": "발코니 확장형 (실사용 극대화)",
+      "livingRoomWidth": "4.3m",
+      "masterBedroomWidth": "3.7m",
+      "features": [
+        "4-Bay 판상형 최신설계",
+        "2018년 준신축",
+        "가현초 초품아",
+        "7호선 연장선 호재"
+      ]
+    }
+  },
+  {
+    "id": "incheon-seogu-luwon-hoban-34",
+    "name": "루원호반베르디움",
+    "region": "인천",
+    "district": "서구",
+    "dong": "가정동",
+    "address": "인천광역시 서구 봉오재3로 40",
+    "buildYear": 2018,
+    "totalUnits": 980,
+    "totalFloors": 25,
+    "subwayStation": "가정역 (인천2호선 · 7호선 연장선)",
+    "subwayDistance": "도보 8분 (역세권)",
+    "areaSqMeter": 84.97,
+    "pyeong": 34,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 610000000,
+    "priceDisplay": "6억 1,000만",
+    "priceRange": "5.9억 ~ 6.3억",
+    "kbPrice": {
+      "generalAvg": 615000000,
+      "highAvg": 645000000,
+      "lowAvg": 580000000,
+      "jeonseAvg": 410000000,
+      "jeonseRate": 66.7,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 21,
+        "price": 615000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 14,
+        "price": 605000000
+      }
+    ],
+    "highlights": [
+      "34평형 국평 84㎡ 4-Bay 광폭 거실 대형 드레스룸",
+      "지상 공원화 단지 및 대형 커뮤니티 센터",
+      "경인고속도로 서인천IC 진출입 최적",
+      "루원시티 대장 준신축 프리미엄"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%A3%A8%EC%9B%90%ED%98%B8%EB%B0%98%EB%B2%A0%EB%A5%B4%EB%94%94%EC%9B%80",
+    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%A3%A8%EC%9B%90%ED%98%B8%EB%B0%98%EB%B2%A0%EB%A5%B4%EB%94%94%EC%9B%80",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%A3%A8%EC%9B%90%ED%98%B8%EB%B0%98%EB%B2%A0%EB%A5%B4%EB%94%94%EC%9B%80",
+    "floorPlan": {
+      "type": "84_4bay",
+      "title": "전용 84.97㎡ (공급 34평형) 4-Bay 광폭 판상형 평면도",
+      "bay": "4-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "ㄷ자형 대면 주방 + 알파룸",
+      "ventilation": "주방-거실 일직선 맞통풍",
+      "balconyStatus": "발코니 확장형 (실사용 약 33평)",
+      "livingRoomWidth": "4.6m",
+      "masterBedroomWidth": "3.9m",
+      "features": [
+        "4-Bay 광폭 거실",
+        "대형 워크인 드레스룸",
+        "알파룸 수납 공간",
+        "2018년 준신축 랜드마크"
+      ]
+    }
   }
 ]
