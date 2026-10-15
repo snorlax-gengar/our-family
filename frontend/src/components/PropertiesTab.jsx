@@ -155,72 +155,187 @@ export default function PropertiesTab({
   const [isEditingIncome, setIsEditingIncome] = useState(false);
   const [rawIncomeInput, setRawIncomeInput] = useState('');
 
+  // 단지별 선택된 활성 평형 ID 관리 { [complexKey]: variantId }
+  const [selectedVariants, setSelectedVariants] = useState({});
+
+  const handleSelectVariant = (complexKey, variantId) => {
+    setSelectedVariants((prev) => ({
+      ...prev,
+      [complexKey]: variantId,
+    }));
+  };
+
+  // 단지(Complex) 단위 그룹화: 같은 아파트의 다른 평형들을 1개 카드로 통합
+  const groupedComplexes = useMemo(() => {
+    const complexMap = new Map();
+
+    properties.forEach((prop) => {
+      const cleanName = prop.name.replace(/\s*\(\d+평형?\)/g, '');
+      const key = prop.naverComplexNo
+        ? `cx_${prop.naverComplexNo}`
+        : `${prop.region}_${prop.district}_${cleanName}`;
+
+      if (!complexMap.has(key)) {
+        complexMap.set(key, {
+          complexKey: key,
+          name: cleanName,
+          region: prop.region,
+          district: prop.district,
+          dong: prop.dong,
+          address: prop.address,
+          buildYear: prop.buildYear,
+          totalUnits: prop.totalUnits,
+          totalFloors: prop.totalFloors,
+          subwayStation: prop.subwayStation,
+          subwayDistance: prop.subwayDistance,
+          naverComplexNo: prop.naverComplexNo,
+          naverLandUrl: prop.naverLandUrl,
+          naverMobileUrl: prop.naverMobileUrl,
+          kbLandUrl: prop.kbLandUrl,
+          variants: [],
+        });
+      }
+
+      const complex = complexMap.get(key);
+      complex.variants.push(prop);
+    });
+
+    complexMap.forEach((complex) => {
+      complex.variants.sort((a, b) => a.pyeong - b.pyeong);
+      // 각 variant에 siblings 주입 (모달에서 평형 전환에 활용)
+      complex.variants.forEach((v) => {
+        v.variants = complex.variants;
+      });
+    });
+
+    return Array.from(complexMap.values());
+  }, [properties]);
+
   // 숨기지 않은 활성 단지 목록
-  const visibleProperties = useMemo(() => {
-    return properties.filter(p => !hiddenIds.includes(p.id));
-  }, [properties, hiddenIds]);
+  const visibleComplexes = useMemo(() => {
+    return groupedComplexes.filter((complex) => {
+      const allHidden = complex.variants.every((v) => hiddenIds.includes(v.id));
+      return !allHidden;
+    });
+  }, [groupedComplexes, hiddenIds]);
 
   // 구/시 목록 동적 추출
   const districts = useMemo(() => {
-    const list = visibleProperties
-      .filter(p => selectedRegion === '전체' || p.region === selectedRegion)
-      .map(p => p.district);
+    const list = visibleComplexes
+      .filter((c) => selectedRegion === '전체' || c.region === selectedRegion)
+      .map((c) => c.district);
     return ['전체', ...Array.from(new Set(list))];
-  }, [visibleProperties, selectedRegion]);
+  }, [visibleComplexes, selectedRegion]);
 
   // 가격대별 카운트 계산
   const priceBandCounts = useMemo(() => {
-    const counts = { all: visibleProperties.length, '400M': 0, '500M_low': 0, '500M_high': 0, '600M': 0 };
-    visibleProperties.forEach(p => {
-      if (p.priceKrw < 500000000) counts['400M']++;
-      else if (p.priceKrw < 550000000) counts['500M_low']++;
-      else if (p.priceKrw < 600000000) counts['500M_high']++;
-      else counts['600M']++;
+    const counts = { all: visibleComplexes.length, '400M': 0, '500M_low': 0, '500M_high': 0, '600M': 0 };
+    visibleComplexes.forEach((c) => {
+      if (c.variants.some((v) => v.priceKrw < 500000000)) counts['400M']++;
+      if (c.variants.some((v) => v.priceKrw >= 500000000 && v.priceKrw < 550000000)) counts['500M_low']++;
+      if (c.variants.some((v) => v.priceKrw >= 550000000 && v.priceKrw < 600000000)) counts['500M_high']++;
+      if (c.variants.some((v) => v.priceKrw >= 600000000)) counts['600M']++;
     });
     return counts;
-  }, [visibleProperties]);
+  }, [visibleComplexes]);
 
   // 필터링 및 정렬
-  const filteredProperties = useMemo(() => {
-    return visibleProperties.filter(item => {
-      // 즐겨찾기 모아보기 필터
-      if (showFavoritesOnly && !favorites.includes(item.id)) return false;
-      // 지역 필터
-      if (selectedRegion !== '전체' && item.region !== selectedRegion) return false;
-      // 구/시 필터
-      if (selectedDistrict !== '전체' && item.district !== selectedDistrict) return false;
-      
-      // 가격대 밴드 필터
-      if (priceBand === '400M' && item.priceKrw >= 500000000) return false;
-      if (priceBand === '500M_low' && (item.priceKrw < 500000000 || item.priceKrw >= 550000000)) return false;
-      if (priceBand === '500M_high' && (item.priceKrw < 550000000 || item.priceKrw >= 600000000)) return false;
-      if (priceBand === '600M' && item.priceKrw < 600000000) return false;
+  const filteredComplexes = useMemo(() => {
+    return visibleComplexes
+      .map((complex) => {
+        // 단지 내에서 조건에 부합하는 variants 필터링
+        const matchingVariants = complex.variants.filter((item) => {
+          // 가격대 밴드 필터
+          if (priceBand === '400M' && item.priceKrw >= 500000000) return false;
+          if (priceBand === '500M_low' && (item.priceKrw < 500000000 || item.priceKrw >= 550000000)) return false;
+          if (priceBand === '500M_high' && (item.priceKrw < 550000000 || item.priceKrw >= 600000000)) return false;
+          if (priceBand === '600M' && item.priceKrw < 600000000) return false;
 
-      // 평형 필터
-      if (sizeFilter === '20평대' && (item.pyeong < 20 || item.pyeong >= 30)) return false;
-      if (sizeFilter === '30평대' && item.pyeong < 30) return false;
+          // 평형 필터
+          if (sizeFilter === '20평대' && (item.pyeong < 20 || item.pyeong >= 30)) return false;
+          if (sizeFilter === '30평대' && item.pyeong < 30) return false;
 
-      // 검색어 필터
-      if (searchTerm) {
-        const term = searchTerm.toLowerCase();
-        const matchName = item.name.toLowerCase().includes(term);
-        const matchDong = item.dong.toLowerCase().includes(term);
-        const matchSubway = item.subwayStation.toLowerCase().includes(term);
-        const matchBay = item.floorPlan?.bay?.toLowerCase().includes(term);
-        const matchAddress = item.address?.toLowerCase().includes(term);
-        const matchHighlights = item.highlights?.some(h => h.toLowerCase().includes(term));
-        if (!matchName && !matchDong && !matchSubway && !matchBay && !matchAddress && !matchHighlights) return false;
-      }
-      return true;
-    }).sort((a, b) => {
-      if (sortOption === 'priceLow') return a.priceKrw - b.priceKrw; // 가격 낮은순
-      if (sortOption === 'priceHigh') return b.priceKrw - a.priceKrw; // 가격 높은순
-      if (sortOption === 'jeonseHigh') return (b.kbPrice?.jeonseRate || 0) - (a.kbPrice?.jeonseRate || 0);
-      if (sortOption === 'yearNew') return b.buildYear - a.buildYear;
-      if (sortOption === 'unitsHigh') return (b.totalUnits || 0) - (a.totalUnits || 0);
-      return a.priceKrw - b.priceKrw; // default: 가격 낮은순
+          return true;
+        });
+
+        // 매칭되는 variant가 없으면 해당 단지는 목록에서 제외
+        if (matchingVariants.length === 0) return null;
+
+        // 즐겨찾기 필터
+        if (showFavoritesOnly) {
+          const hasFav = matchingVariants.some((v) => favorites.includes(v.id));
+          if (!hasFav) return null;
+        }
+
+        // 지역 필터
+        if (selectedRegion !== '전체' && complex.region !== selectedRegion) return null;
+        // 구/시 필터
+        if (selectedDistrict !== '전체' && complex.district !== selectedDistrict) return null;
+
+        // 검색어 필터
+        if (searchTerm) {
+          const term = searchTerm.toLowerCase();
+          const matchName = complex.name.toLowerCase().includes(term);
+          const matchDong = complex.dong.toLowerCase().includes(term);
+          const matchSubway = complex.subwayStation.toLowerCase().includes(term);
+          const matchAddress = complex.address?.toLowerCase().includes(term);
+          const matchVariants = complex.variants.some((v) =>
+            v.floorPlan?.bay?.toLowerCase().includes(term) ||
+            v.highlights?.some((h) => h.toLowerCase().includes(term))
+          );
+          if (!matchName && !matchDong && !matchSubway && !matchAddress && !matchVariants) return null;
+        }
+
+        // 현재 활성 variant 결정
+        const userSelectedId = selectedVariants[complex.complexKey];
+        const activeVariant =
+          matchingVariants.find((v) => v.id === userSelectedId) || matchingVariants[0];
+
+        return {
+          ...complex,
+          availableVariants: matchingVariants,
+          activeVariant,
+        };
+      })
+      .filter(Boolean)
+      .sort((a, b) => {
+        const vA = a.activeVariant;
+        const vB = b.activeVariant;
+        if (sortOption === 'priceLow') return vA.priceKrw - vB.priceKrw; // 가격 낮은순
+        if (sortOption === 'priceHigh') return vB.priceKrw - vA.priceKrw; // 가격 높은순
+        if (sortOption === 'jeonseHigh') return (vB.kbPrice?.jeonseRate || 0) - (vA.kbPrice?.jeonseRate || 0);
+        if (sortOption === 'yearNew') return b.buildYear - a.buildYear;
+        if (sortOption === 'unitsHigh') return (b.totalUnits || 0) - (a.totalUnits || 0);
+        return vA.priceKrw - vB.priceKrw; // default: 가격 낮은순
+      });
+  }, [visibleComplexes, selectedVariants, showFavoritesOnly, favorites, selectedRegion, selectedDistrict, priceBand, sizeFilter, sortOption, searchTerm]);
+
+  // 단지 전체 숨기기/제외 핸들러
+  const toggleHideComplex = async (e, complex) => {
+    if (e) e.stopPropagation();
+    const idsToToggle = complex.variants.map((v) => v.id);
+    const isAlreadyHidden = idsToToggle.every((id) => hiddenIds.includes(id));
+
+    setHiddenIds((prev) => {
+      const next = isAlreadyHidden
+        ? prev.filter((id) => !idsToToggle.includes(id))
+        : Array.from(new Set([...prev, ...idsToToggle]));
+      try {
+        localStorage.setItem('wooriga_hidden', JSON.stringify(next));
+      } catch {}
+      return next;
     });
-  }, [visibleProperties, showFavoritesOnly, favorites, selectedRegion, selectedDistrict, priceBand, sizeFilter, sortOption, searchTerm]);
+
+    try {
+      for (const id of idsToToggle) {
+        await fetch('/api/hidden/toggle', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ propertyId: id }),
+        });
+      }
+    } catch {}
+  };
 
   // 도면 모달 바로 열기 핸들러
   const handleOpenFloorPlan = (e, prop) => {
@@ -778,13 +893,13 @@ export default function PropertiesTab({
             </button>
           ))}
           <span className="text-slate-400 ml-auto whitespace-nowrap text-[11px]">
-            총 <strong className="text-blue-600">{filteredProperties.length}</strong>개 단지
+            총 <strong className="text-blue-600">{filteredComplexes.length}</strong>개 단지
           </span>
         </div>
       </div>
 
       {/* 3. 매물 카드 리스트 그리드 */}
-      {filteredProperties.length === 0 ? (
+      {filteredComplexes.length === 0 ? (
         <div className="bg-white rounded-2xl p-10 sm:p-12 text-center border border-slate-200 space-y-3">
           {showFavoritesOnly ? (
             <>
@@ -809,17 +924,18 @@ export default function PropertiesTab({
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {filteredProperties.map((property) => {
+          {filteredComplexes.map((complex) => {
+            const property = complex.activeVariant;
             const sim = property.loanSimulation || {};
             const kb = property.kbPrice || {};
             const fp = property.floorPlan || {};
             const isFav = favorites.includes(property.id);
             const currentYear = new Date().getFullYear();
-            const buildingAge = Math.max(1, currentYear - property.buildYear);
+            const buildingAge = Math.max(1, currentYear - complex.buildYear);
 
             return (
               <div
-                key={property.id}
+                key={complex.complexKey}
                 onClick={() => handleOpenDetail(property)}
                 className={`bg-white rounded-2xl border hover:border-blue-400 hover:shadow-lg transition-all duration-200 flex flex-col justify-between overflow-hidden cursor-pointer group active:scale-[0.99] ${
                   isFav ? 'border-rose-300 ring-1 ring-rose-100' : 'border-slate-200'
@@ -833,9 +949,9 @@ export default function PropertiesTab({
                       <div className="flex items-center gap-1.5 min-w-0">
                         <span
                           className="bg-slate-100 text-slate-700 text-[11px] sm:text-xs font-bold px-2 py-0.5 rounded truncate"
-                          title={`${property.region} ${property.district} ${property.dong}`}
+                          title={`${complex.region} ${complex.district} ${complex.dong}`}
                         >
-                          {property.region} {property.district} {property.dong}
+                          {complex.region} {complex.district} {complex.dong}
                         </span>
                       </div>
 
@@ -869,7 +985,7 @@ export default function PropertiesTab({
                         {/* 🚫 관심없는 단지 숨기기(제외) 버튼 */}
                         <button
                           type="button"
-                          onClick={(e) => toggleHideProperty(e, property.id)}
+                          onClick={(e) => toggleHideComplex(e, complex)}
                           aria-label="이 단지 숨기기"
                           title="필요 없는 단지 목록에서 제외(숨김)"
                           className="p-1 rounded-md border bg-slate-50 border-slate-200 text-slate-400 hover:text-slate-700 hover:bg-slate-100 transition-all cursor-pointer active:scale-90"
@@ -883,35 +999,64 @@ export default function PropertiesTab({
                     <div className="flex items-center text-[11px] sm:text-xs text-slate-500 font-medium h-5 mt-1">
                       <div className="flex items-center gap-1.5 truncate">
                         <Building2 className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-                        <span className="text-slate-700 font-semibold">{property.buildYear}년({buildingAge}년차)</span>
+                        <span className="text-slate-700 font-semibold">{complex.buildYear}년({buildingAge}년차)</span>
                         <span className="text-slate-300">-</span>
-                        <span className="text-slate-600 font-medium">{property.totalUnits?.toLocaleString()}세대</span>
-                        {property.totalFloors && (
-                          <span className="text-slate-400 text-[10px] sm:text-[11px]">· 최고 {property.totalFloors}층</span>
+                        <span className="text-slate-600 font-medium">{complex.totalUnits?.toLocaleString()}세대</span>
+                        {complex.totalFloors && (
+                          <span className="text-slate-400 text-[10px] sm:text-[11px]">· 최고 {complex.totalFloors}층</span>
                         )}
                       </div>
                     </div>
 
-                    {/* [3행] 아파트명 평수(공급/전용) */}
+                    {/* [3행] 아파트명 평수(공급/전용) - 평형이 여러 개면 탭 버튼 제공 */}
                     <div className="flex items-baseline justify-between gap-1.5 h-7 mt-1.5">
                       <h3
                         className="text-base sm:text-lg font-black text-slate-900 group-hover:text-blue-600 transition-colors tracking-tight truncate min-w-0"
-                        title={property.name.replace(/\s*\(\d+평형?\)/g, '')}
+                        title={complex.name}
                       >
-                        {property.name.replace(/\s*\(\d+평형?\)/g, '')}
+                        {complex.name}
                       </h3>
-                      <div
-                        className="text-right shrink-0 whitespace-nowrap"
-                        title={`공급 ${property.pyeong}평형 (공급면적 약 ${Math.round(property.pyeong * 3.3058)}㎡ / 전용면적 ${property.areaSqMeter}㎡)`}
-                      >
-                        <span className="text-xs sm:text-sm font-black text-blue-700">
-                          {property.pyeong}평형
-                        </span>
-                        <span className="text-[11px] font-medium text-slate-500 ml-1">
-                          <span className="hidden xl:inline">(공급 {Math.round(property.pyeong * 3.3058)}㎡ / 전용 {property.areaSqMeter}㎡)</span>
-                          <span className="xl:hidden">(전용 {property.areaSqMeter}㎡)</span>
-                        </span>
-                      </div>
+
+                      {complex.variants && complex.variants.length > 1 ? (
+                        <div className="flex items-center gap-1 shrink-0" onClick={(e) => e.stopPropagation()}>
+                          <div className="flex items-center gap-1 bg-slate-100 p-0.5 rounded-lg border border-slate-200">
+                            {complex.variants.map((v) => {
+                              const isSelected = property.id === v.id;
+                              return (
+                                <button
+                                  key={v.id}
+                                  type="button"
+                                  onClick={() => handleSelectVariant(complex.complexKey, v.id)}
+                                  className={`px-2 py-0.5 rounded-md text-[11px] font-black transition-all cursor-pointer whitespace-nowrap ${
+                                    isSelected
+                                      ? 'bg-blue-600 text-white shadow-xs scale-105'
+                                      : 'text-slate-600 hover:text-slate-900 bg-white/60'
+                                  }`}
+                                  title={`클릭하여 ${v.pyeong}평형 (${v.priceDisplay}원)으로 전환`}
+                                >
+                                  {v.pyeong}평
+                                </button>
+                              );
+                            })}
+                          </div>
+                          <span className="text-[11px] font-medium text-slate-500 ml-0.5 whitespace-nowrap">
+                            (전용 {property.areaSqMeter}㎡)
+                          </span>
+                        </div>
+                      ) : (
+                        <div
+                          className="text-right shrink-0 whitespace-nowrap"
+                          title={`공급 ${property.pyeong}평형 (공급면적 약 ${Math.round(property.pyeong * 3.3058)}㎡ / 전용면적 ${property.areaSqMeter}㎡)`}
+                        >
+                          <span className="text-xs sm:text-sm font-black text-blue-700">
+                            {property.pyeong}평형
+                          </span>
+                          <span className="text-[11px] font-medium text-slate-500 ml-1">
+                            <span className="hidden xl:inline">(공급 {Math.round(property.pyeong * 3.3058)}㎡ / 전용 {property.areaSqMeter}㎡)</span>
+                            <span className="xl:hidden">(전용 {property.areaSqMeter}㎡)</span>
+                          </span>
+                        </div>
+                      )}
                     </div>
 
                     {/* [4행] 기타정보 (역세권 교통 + 평면 구조) */}

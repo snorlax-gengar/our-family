@@ -15,25 +15,31 @@ export default function PropertyDetailModal({
   onToggleFavorite
 }) {
   const [modalTab, setModalTab] = useState(initialTab); // 'all', 'floorPlan', 'financial'
+  const [activeProperty, setActiveProperty] = useState(property);
+
+  useEffect(() => {
+    setActiveProperty(property);
+  }, [property]);
 
   useEffect(() => {
     if (initialTab) {
       setModalTab(initialTab);
     }
-  }, [initialTab, property]);
+  }, [initialTab]);
 
-  if (!property) return null;
+  if (!activeProperty) return null;
 
-  const sim = property.loanSimulation || {};
-  const kb = property.kbPrice || {};
+  const prop = activeProperty;
+  const sim = prop.loanSimulation || {};
+  const kb = prop.kbPrice || {};
 
   // 부대비용 계산: 취득세 (6억 이하 1.1%), 생애최초 시 최대 200만 원 감면
-  const rawAcquisitionTax = Math.round(property.priceKrw * 0.011);
+  const rawAcquisitionTax = Math.round(prop.priceKrw * 0.011);
   const acquisitionDiscount = sim.isFirstHome ? Math.min(2000000, rawAcquisitionTax) : 0;
   const finalAcquisitionTax = rawAcquisitionTax - acquisitionDiscount;
 
   // 부동산 중개보수 (매매 2억~9억 이하 상한요율 0.4%)
-  const maxBrokerFee = Math.round(property.priceKrw * 0.004);
+  const maxBrokerFee = Math.round(prop.priceKrw * 0.004);
 
   // 총 필요 현금 = 매수 자기자본 + 취득세 + 중개수수료
   const totalCashNeeded = (sim.requiredCash || 0) + finalAcquisitionTax + maxBrokerFee;
@@ -61,14 +67,33 @@ export default function PropertyDetailModal({
         <div className="sticky top-0 bg-white/95 backdrop-blur-xs px-4 sm:px-6 py-3 sm:py-4 border-b border-slate-100 flex items-center justify-between gap-2 z-10">
           <div className="flex items-center gap-2 sm:gap-3 flex-wrap min-w-0">
             <span className="bg-blue-600 text-white text-[10px] sm:text-xs font-bold px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-md shrink-0">
-              {property.region} {property.district}
+              {prop.region} {prop.district}
             </span>
             <h2 className="text-lg sm:text-2xl font-black text-slate-900 tracking-tight truncate">
-              {property.name.replace(/\s*\(\d+평형?\)/g, '')}
+              {prop.name.replace(/\s*\(\d+평형?\)/g, '')}
             </h2>
-            <span className="text-xs sm:text-sm font-semibold text-slate-500 shrink-0">
-              {property.pyeong}평 ({property.areaSqMeter}㎡)
-            </span>
+            {prop.variants && prop.variants.length > 1 ? (
+              <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-xl border border-slate-200">
+                {prop.variants.map((v) => (
+                  <button
+                    key={v.id}
+                    type="button"
+                    onClick={() => setActiveProperty(v)}
+                    className={`px-2.5 py-1 rounded-lg text-xs font-extrabold transition-all cursor-pointer ${
+                      prop.id === v.id
+                        ? 'bg-blue-600 text-white shadow-xs'
+                        : 'text-slate-600 hover:text-slate-900 bg-white/70'
+                    }`}
+                  >
+                    {v.pyeong}평 ({v.areaSqMeter}㎡)
+                  </button>
+                ))}
+              </div>
+            ) : (
+              <span className="text-xs sm:text-sm font-semibold text-slate-500 shrink-0">
+                {prop.pyeong}평 ({prop.areaSqMeter}㎡)
+              </span>
+            )}
           </div>
           <div className="flex items-center gap-1.5 shrink-0">
             {onToggleFavorite && (
@@ -99,30 +124,30 @@ export default function PropertyDetailModal({
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-slate-50 p-4 rounded-xl border border-slate-200/80 text-xs sm:text-sm">
             <div>
               <span className="text-slate-400 block mb-1">매매 호가 / 기준가</span>
-              <span className="text-lg font-black text-blue-700">{property.priceDisplay}원</span>
+              <span className="text-lg font-black text-blue-700">{prop.priceDisplay}원</span>
             </div>
             <div>
               <span className="text-slate-400 block mb-1">인근 지하철역</span>
               <span className="font-bold text-slate-800 flex items-center gap-1">
                 <Train className="w-4 h-4 text-emerald-600 shrink-0" />
-                {property.subwayStation}
+                {prop.subwayStation}
               </span>
             </div>
             <div>
               <span className="text-slate-400 block mb-1">준공년도 / 총세대수</span>
               <span className="font-bold text-slate-800">
-                {property.buildYear}년 ({property.totalUnits?.toLocaleString()}세대)
+                {prop.buildYear}년 ({prop.totalUnits?.toLocaleString()}세대)
               </span>
             </div>
             <div>
               <span className="text-slate-400 block mb-1">구조 / 방수</span>
-              <span className="font-bold text-slate-800">{property.rooms}</span>
+              <span className="font-bold text-slate-800">{prop.rooms}</span>
             </div>
           </div>
 
           {/* Highlights */}
           <div className="flex flex-wrap gap-2">
-            {property.highlights?.map((h, idx) => (
+            {prop.highlights?.map((h, idx) => (
               <span key={idx} className="bg-indigo-50 text-indigo-700 border border-indigo-200 text-xs px-3 py-1 rounded-full font-medium">
                 ★ {h}
               </span>
@@ -151,7 +176,7 @@ export default function PropertyDetailModal({
             >
               <span>📐 평형 도면 & 구조 분석</span>
               <span className="bg-indigo-100 text-indigo-700 text-[10px] px-1.5 py-0.2 rounded font-bold">
-                {property.floorPlan?.bay || '3-Bay'}
+                {prop.floorPlan?.bay || '3-Bay'}
               </span>
             </button>
             <button
@@ -167,16 +192,16 @@ export default function PropertyDetailModal({
           </div>
 
           {/* Section: 평형 도면 (Floor Plan CAD Blueprint) */}
-          {(modalTab === 'all' || modalTab === 'floorPlan') && property.floorPlan && (
+          {(modalTab === 'all' || modalTab === 'floorPlan') && prop.floorPlan && (
             <div className="space-y-3">
               <FloorPlanViewer
-                floorPlan={property.floorPlan}
-                propertyName={property.name}
-                areaSqMeter={property.areaSqMeter}
-                pyeong={property.pyeong}
-                naverLandUrl={property.naverLandUrl}
-                naverMobileUrl={property.naverMobileUrl}
-                naverComplexNo={property.naverComplexNo}
+                floorPlan={prop.floorPlan}
+                propertyName={prop.name}
+                areaSqMeter={prop.areaSqMeter}
+                pyeong={prop.pyeong}
+                naverLandUrl={prop.naverLandUrl}
+                naverMobileUrl={prop.naverMobileUrl}
+                naverComplexNo={prop.naverComplexNo}
               />
             </div>
           )}
@@ -196,7 +221,7 @@ export default function PropertyDetailModal({
                 </div>
               </div>
               <a
-                href={property.kbLandUrl}
+                href={prop.kbLandUrl}
                 target="_blank"
                 rel="noreferrer"
                 className="text-xs font-semibold text-amber-700 hover:text-amber-800 flex items-center gap-1 hover:underline"
@@ -245,7 +270,7 @@ export default function PropertyDetailModal({
                     </span>
                   </h3>
                   <p className="text-xs text-slate-500">
-                    담보평가 기준: Min(매매가 {property.priceDisplay}, KB시세 {formatMoney(kb.generalAvg)}) → <strong className="text-blue-700 font-bold">{sim.appraisalPriceFormatted || property.priceDisplay}</strong> ({sim.valuationBasis === 'KB시세' ? 'KB시세' : '실매매가'} LTV {sim.ltvRatio}%)
+                    담보평가 기준: Min(매매가 {prop.priceDisplay}, KB시세 {formatMoney(kb.generalAvg)}) → <strong className="text-blue-700 font-bold">{sim.appraisalPriceFormatted || prop.priceDisplay}</strong> ({sim.valuationBasis === 'KB시세' ? 'KB시세' : '실매매가'} LTV {sim.ltvRatio}%)
                   </p>
                 </div>
               </div>
@@ -269,7 +294,7 @@ export default function PropertyDetailModal({
                   {sim.requiredCashFormatted}
                 </div>
                 <div className="text-xs text-slate-500 mt-1">
-                  실매매가 {property.priceDisplay} - 대출금
+                  실매매가 {prop.priceDisplay} - 대출금
                 </div>
               </div>
 
@@ -353,7 +378,7 @@ export default function PropertyDetailModal({
           </div>
 
           {/* Section 4: 최근 실거래가 내역 */}
-          {property.recentTrades && property.recentTrades.length > 0 && (
+          {prop.recentTrades && prop.recentTrades.length > 0 && (
             <div>
               <h3 className="font-bold text-slate-900 text-sm mb-3 flex items-center gap-2">
                 <TrendingUp className="w-4 h-4 text-emerald-600" />
@@ -370,8 +395,8 @@ export default function PropertyDetailModal({
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-100 text-slate-700">
-                    {property.recentTrades.map((trade, idx) => {
-                      const diff = property.priceKrw - trade.price;
+                    {prop.recentTrades.map((trade, idx) => {
+                      const diff = prop.priceKrw - trade.price;
                       return (
                         <tr key={idx} className="hover:bg-slate-50/80">
                           <td className="py-2.5 px-3 font-medium">{trade.date}</td>
@@ -395,16 +420,16 @@ export default function PropertyDetailModal({
         {/* Modal Footer */}
         <div className="sticky bottom-0 bg-slate-50 px-6 py-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
           <div className="text-xs text-slate-500">
-            주소: {property.address}
+            주소: {prop.address}
           </div>
           <div className="flex items-center gap-2">
             <a
-              href={property.naverMobileUrl || property.naverLandUrl}
+              href={prop.naverMobileUrl || prop.naverLandUrl}
               target="_blank"
               rel="noreferrer"
               className="px-4 py-2 bg-emerald-600 text-white border border-emerald-700 rounded-lg text-xs font-bold hover:bg-emerald-700 transition-colors flex items-center gap-1.5 shadow-xs"
             >
-              <span>N {property.name} 네이버부동산 매물·정보</span>
+              <span>N {prop.name.replace(/\s*\(\d+평형?\)/g, '')} 네이버부동산 매물·정보</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
             <button
