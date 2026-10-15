@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Maximize2, Eye, Compass, LayoutGrid, CheckCircle2, 
-  Sparkles, Layers, ShieldCheck, ArrowRight, Info, ExternalLink, Image as ImageIcon, Tag
+  Sparkles, Layers, ShieldCheck, ArrowRight, Info, ExternalLink, Image as ImageIcon, Tag, Loader2
 } from 'lucide-react';
 
 export default function FloorPlanViewer({ 
@@ -18,6 +18,8 @@ export default function FloorPlanViewer({
   const [isExpandedMode, setIsExpandedMode] = useState(true); // 확장형 vs 기본형 (CAD 모드용)
   const [hoveredRoom, setHoveredRoom] = useState(null);
   const [isZoomOpen, setIsZoomOpen] = useState(false);
+  const [isImageLoading, setIsImageLoading] = useState(true);
+  const [isZoomLoading, setIsZoomLoading] = useState(true);
 
   if (!floorPlan) return null;
 
@@ -31,6 +33,17 @@ export default function FloorPlanViewer({
   );
 
   const directNaverUrl = naverMobileUrl || naverLandUrl || (naverComplexNo ? `https://m.land.naver.com/complex/info/${naverComplexNo}` : null);
+
+  // 도면 이미지 URL 또는 확대창 오픈 시 로딩 상태 리셋
+  useEffect(() => {
+    setIsImageLoading(true);
+  }, [imageSrc]);
+
+  useEffect(() => {
+    if (isZoomOpen) {
+      setIsZoomLoading(true);
+    }
+  }, [isZoomOpen, imageSrc]);
 
   // 각 평면도 이미지별 인터랙티브 방 라벨 좌표 (퍼센트 기준)
   const getRoomHotspots = () => {
@@ -314,16 +327,44 @@ export default function FloorPlanViewer({
 
           {/* Floor Plan Image or CAD View */}
           {viewMode === 'realImage' ? (
-            <div className="relative w-full max-w-[560px] mx-auto select-none">
+            <div className="relative w-full max-w-[560px] mx-auto select-none min-h-[300px] flex items-center justify-center">
+              {/* 고화질 도면 다운로드 중 로딩 표시 및 스켈레톤 인디케이터 */}
+              {isImageLoading && (
+                <div className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-slate-50/95 backdrop-blur-xs rounded-xl border border-slate-200/80 p-6 text-center space-y-3 shadow-inner">
+                  <div className="relative flex items-center justify-center">
+                    <div className="w-12 h-12 rounded-full border-4 border-blue-200 border-t-blue-600 animate-spin" />
+                    <ImageIcon className="w-5 h-5 text-blue-600 absolute" />
+                  </div>
+                  <div>
+                    <h4 className="text-xs sm:text-sm font-black text-slate-800 flex items-center justify-center gap-1.5">
+                      <span>고화질 3D 입체 평면도 불러오는 중</span>
+                      <span className="inline-block animate-pulse">...</span>
+                    </h4>
+                    <p className="text-[11px] text-slate-500 mt-1">
+                      공간별 실측 치수 및 세부 도면을 최적화하고 있습니다.
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-1.5 text-[10px] text-blue-700 bg-blue-50 px-3 py-1 rounded-full font-bold border border-blue-200/60 shadow-2xs">
+                    <Sparkles className="w-3 h-3 text-blue-500" />
+                    <span>{floorPlan.bay || '3-Bay'} {floorPlan.structure || '판상형'} 평면도</span>
+                  </div>
+                </div>
+              )}
+
+              {/* 고화질 평면도 이미지 (로딩 완료 시 부드럽게 페이드인) */}
               <img
                 src={imageSrc}
                 alt={`${propertyName} ${pyeong}평형 입체 평면도`}
+                onLoad={() => setIsImageLoading(false)}
+                onError={() => setIsImageLoading(false)}
                 onClick={() => setIsZoomOpen(true)}
-                className="w-full h-auto rounded-lg object-contain cursor-zoom-in"
+                className={`w-full h-auto rounded-lg object-contain cursor-zoom-in transition-opacity duration-300 ${
+                  isImageLoading ? 'opacity-0' : 'opacity-100'
+                }`}
               />
 
-              {/* Interactive Room Dimension Badges Overlaid on Image */}
-              {showOverlayLabels &&
+              {/* Interactive Room Dimension Badges Overlaid on Image (이미지 로딩 완료 시 함께 노출) */}
+              {!isImageLoading && showOverlayLabels &&
                 hotspots.map((spot) => {
                   const isSelected = hoveredRoom?.id === spot.id;
                   return (
@@ -500,11 +541,23 @@ export default function FloorPlanViewer({
                 닫기 ✕
               </button>
             </div>
-            <img
-              src={imageSrc}
-              alt={`${propertyName} 확대 평면도`}
-              className="w-full max-h-[75vh] object-contain mx-auto rounded-lg"
-            />
+            <div className="relative min-h-[350px] flex items-center justify-center">
+              {isZoomLoading && (
+                <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-slate-50/90 rounded-xl space-y-2.5">
+                  <Loader2 className="w-8 h-8 text-blue-600 animate-spin" />
+                  <span className="text-xs font-bold text-slate-700">고화질 원본 도면 확대 중...</span>
+                </div>
+              )}
+              <img
+                src={imageSrc}
+                alt={`${propertyName} 확대 평면도`}
+                onLoad={() => setIsZoomLoading(false)}
+                onError={() => setIsZoomLoading(false)}
+                className={`w-full max-h-[75vh] object-contain mx-auto rounded-lg transition-opacity duration-300 ${
+                  isZoomLoading ? 'opacity-0' : 'opacity-100'
+                }`}
+              />
+            </div>
           </div>
         </div>
       )}
