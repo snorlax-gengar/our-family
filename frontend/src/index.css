@@ -11,6 +11,8 @@ body {
   padding: 0;
   background-color: #f8fafc;
   color: #0f172a;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 * {
