@@ -170,13 +170,13 @@ export default function PropertyDetailModal({
               onClick={() => setModalTab('floorPlan')}
               className={`pb-2 border-b-2 transition-all cursor-pointer flex items-center gap-1.5 whitespace-nowrap ${
                 modalTab === 'floorPlan'
-                  ? 'border-blue-600 text-blue-600'
+                  ? 'border-emerald-600 text-emerald-700 font-extrabold'
                   : 'border-transparent text-slate-400 hover:text-slate-700'
               }`}
             >
-              <span>📐 평형 도면 & 구조 분석</span>
-              <span className="bg-indigo-100 text-indigo-700 text-[10px] px-1.5 py-0.2 rounded font-bold">
-                {prop.floorPlan?.bay || '3-Bay'}
+              <span>🏛️ 공식 실물 도면 & 구조 안내</span>
+              <span className="bg-emerald-100 text-emerald-800 text-[10px] px-1.5 py-0.2 rounded font-bold">
+                네이버 연동
               </span>
             </button>
             <button
@@ -191,17 +191,18 @@ export default function PropertyDetailModal({
             </button>
           </div>
 
-          {/* Section: 평형 도면 (Floor Plan CAD Blueprint) */}
+          {/* Section: 공식 실물 평면도 안내 센터 */}
           {(modalTab === 'all' || modalTab === 'floorPlan') && prop.floorPlan && (
             <div className="space-y-3">
               <FloorPlanViewer
                 floorPlan={prop.floorPlan}
-                propertyName={prop.name}
+                propertyName={prop.name.replace(/\s*\(\d+평형?\)/g, '')}
                 areaSqMeter={prop.areaSqMeter}
                 pyeong={prop.pyeong}
                 naverLandUrl={prop.naverLandUrl}
                 naverMobileUrl={prop.naverMobileUrl}
                 naverComplexNo={prop.naverComplexNo}
+                kbLandUrl={prop.kbLandUrl}
               />
             </div>
           )}

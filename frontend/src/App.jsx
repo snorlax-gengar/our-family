@@ -83,17 +83,6 @@ export default function App() {
   useEffect(() => {
     fetchRates();
     fetchPolicies();
-
-    // 고화질 도면 이미지 백그라운드 프리로드 (도면 열람 시 0초 즉시 표시)
-    const floorplanImages = [
-      '/floorplans/floorplan_84_3bay.jpg',
-      '/floorplans/floorplan_84_4bay.jpg',
-      '/floorplans/floorplan_59_3bay.jpg'
-    ];
-    floorplanImages.forEach((src) => {
-      const img = new Image();
-      img.src = src;
-    });
   }, []);
 
   // 뉴스 실시간 새로고침 핸들러
