@@ -943,7 +943,7 @@ export default function PropertiesTab({
                           {sim.maxLoanFormatted}
                         </span>
                         <span className="text-[10px] text-emerald-600 font-bold block mt-0.5 whitespace-nowrap">
-                          LTV {sim.ltvRatio}% (DSR 제외)
+                          LTV {sim.ltvRatio}% ({sim.valuationBasis === 'KB시세' ? `KB시세 ${sim.appraisalPriceFormatted}` : '실매매가 기준'})
                         </span>
                       </div>
                     </div>

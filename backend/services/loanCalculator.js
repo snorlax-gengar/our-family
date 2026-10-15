@@ -29,7 +29,8 @@ const OVERCROWDED_GYEONGGI = [
 /**
  * 신생아 특례대출 계산 함수
  * @param {Object} params
- * @param {number} params.propertyPrice - 주택 매매가 (원)
+ * @param {number} params.propertyPrice - 주택 실매매가액 (원)
+ * @param {number} [params.kbPrice] - KB부동산 일반평균 시세 (원). 은행 및 기금 담보평가 시 Min(매매가, KB시세) 적용
  * @param {number} params.areaSqMeter - 전용면적 (㎡)
  * @param {string} params.region - 지역 ('서울' 또는 '경기')
  * @param {string} params.district - 구/시 명칭 (예: '노원구', '수원시 영통구')
@@ -41,6 +42,7 @@ const OVERCROWDED_GYEONGGI = [
  */
 export function calculateNewbornLoan({
   propertyPrice,
+  kbPrice,
   areaSqMeter,
   region,
   district = '',
@@ -54,14 +56,24 @@ export function calculateNewbornLoan({
   const MAX_PROPERTY_PRICE = 900000000; // 주택가격 9억 원 이하
   const MAX_AREA = 85.0; // 전용면적 85㎡ 이하
 
-  // 1. 적격 요건 심사
-  const meetsPrice = propertyPrice <= MAX_PROPERTY_PRICE;
+  // 담보평가 기준가(appraisalPrice): 금융기관 및 주택도시기금 공식 규정
+  // 주택담보가치 = Min(실제 매매가액, KB부동산 일반평균가)
+  const validKbPrice = (typeof kbPrice === 'number' && kbPrice > 0)
+    ? kbPrice
+    : (kbPrice && typeof kbPrice.generalAvg === 'number' ? kbPrice.generalAvg : null);
+  
+  const appraisalPrice = validKbPrice ? Math.min(propertyPrice, validKbPrice) : propertyPrice;
+  const isKbLower = Boolean(validKbPrice && validKbPrice < propertyPrice);
+  const valuationBasis = isKbLower ? 'KB시세' : '매매가';
+
+  // 1. 적격 요건 심사 (주택가격은 담보평가액 기준 9억 원 이하)
+  const meetsPrice = appraisalPrice <= MAX_PROPERTY_PRICE;
   const meetsArea = areaSqMeter <= MAX_AREA;
   const meetsIncome = annualIncome <= 200000000; // 최대 2억 원 완화 기준까지 지원
   const isEligible = meetsPrice && meetsArea && meetsIncome;
 
   const ineligibilityReasons = [];
-  if (!meetsPrice) ineligibilityReasons.push('주택가격 9억 원 초과');
+  if (!meetsPrice) ineligibilityReasons.push('주택가격(담보평가액) 9억 원 초과');
   if (!meetsArea) ineligibilityReasons.push('전용면적 85㎡ 초과');
   if (!meetsIncome) ineligibilityReasons.push('부부합산 연소득 2억 원 초과');
 
@@ -80,14 +92,14 @@ export function calculateNewbornLoan({
     }
   }
 
-  // 4. 대출 가능 금액 산출: Min(매매가 * LTV - 방공제, 최대 한도 5억)
-  let maxLoan = Math.floor(propertyPrice * ltvRatio) - deductionAmount;
+  // 4. 대출 가능 금액 산출: Min(담보평가액[Min(매매가, KB시세)] * LTV - 방공제, 최대 한도 5억)
+  let maxLoan = Math.floor(appraisalPrice * ltvRatio) - deductionAmount;
   if (maxLoan > MAX_LOAN_LIMIT) {
     maxLoan = MAX_LOAN_LIMIT;
   }
   if (maxLoan < 0) maxLoan = 0;
 
-  // 5. 필요 자기자본 (현금)
+  // 5. 필요 자기자본 (실제 매도인에게 치러야 하는 매매가에서 대출금을 뺀 잔여 현금)
   const requiredCash = Math.max(0, propertyPrice - maxLoan);
 
   // 6. 금리 계산 (소득 및 만기 기준)
@@ -130,6 +142,11 @@ export function calculateNewbornLoan({
     isEligible,
     ineligibilityReasons,
     propertyPrice,
+    kbPrice: validKbPrice,
+    appraisalPrice,
+    appraisalPriceFormatted: formatKrw(appraisalPrice),
+    valuationBasis,
+    isKbLower,
     maxLoanAmount: maxLoan,
     maxLoanFormatted: formatKrw(maxLoan),
     requiredCash,
@@ -158,6 +175,11 @@ export function calculateNewbornLoan({
     },
     benefits: [
       "DSR(총부채원리금상환비율) 스트레스 2단계 미적용!",
+      isKbLower
+        ? `담보평가 기준: 실매매가(${formatKrw(propertyPrice)})보다 낮은 KB시세(${formatKrw(validKbPrice)})를 기준으로 LTV 70%가 정확히 산출되었습니다.`
+        : (validKbPrice && validKbPrice > propertyPrice
+          ? `담보평가 기준: KB시세(${formatKrw(validKbPrice)})보다 낮은 실매매가(${formatKrw(propertyPrice)})를 기준으로 LTV 70%가 안전하게 산출되었습니다.`
+          : `담보평가 기준: Min(실매매가, KB시세) LTV 70% 적용`),
       `일반 시중은행 대비 매월 약 ${formatKrw(monthlySavings)} 이자 절감`,
       useMcg ? "MCG 보증 가입으로 방공제 없이 LTV 70% 한도 100% 수령 가능" : `방공제 ${formatKrw(deductionAmount)} 차감 적용됨 (MCG 가입 권장)`,
       isFirstHome ? "생애최초 주택구입 취득세 200만 원 감면 혜택 대상 (대출은 정부 정책 기준 안전 LTV 70% 준수)" : "정부 가계부채 관리 정책 기준 안전 LTV 70% 적용"

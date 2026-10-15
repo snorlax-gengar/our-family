@@ -67,6 +67,7 @@ app.get('/api/properties', (req, res) => {
   const results = filtered.map(item => {
     const loanCalc = calculateNewbornLoan({
       propertyPrice: item.priceKrw,
+      kbPrice: item.kbPrice?.generalAvg,
       areaSqMeter: item.areaSqMeter,
       region: item.region,
       district: item.district,
@@ -102,9 +103,10 @@ app.get('/api/properties/:id', (req, res) => {
     return res.status(404).json({ error: "매물을 찾을 수 없습니다." });
   }
 
-  // 기본 시뮬레이션 첨부
+  // 기본 시뮬레이션 첨부 (Min[매매가, KB시세] 반영)
   const loanCalc = calculateNewbornLoan({
     propertyPrice: property.priceKrw,
+    kbPrice: property.kbPrice?.generalAvg,
     areaSqMeter: property.areaSqMeter,
     region: property.region,
     district: property.district
@@ -122,6 +124,7 @@ app.get('/api/properties/:id', (req, res) => {
 app.post('/api/properties/calculate', (req, res) => {
   const {
     propertyPrice,
+    kbPrice,
     areaSqMeter = 84,
     region = '서울',
     district = '노원구',
@@ -138,6 +141,7 @@ app.post('/api/properties/calculate', (req, res) => {
 
   const result = calculateNewbornLoan({
     propertyPrice: Number(propertyPrice),
+    kbPrice: kbPrice ? Number(kbPrice) : undefined,
     areaSqMeter: Number(areaSqMeter),
     region,
     district,

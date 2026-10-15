@@ -245,7 +245,7 @@ export default function PropertyDetailModal({
                     </span>
                   </h3>
                   <p className="text-xs text-slate-500">
-                    적용 조건: 소득 {formatMoney(userCriteria.annualIncome)} · 만기 {sim.loanTenureYears}년 · 정부 기준 안전 LTV 70% {sim.isFirstHome ? '(생애최초 취득세 200만 감면 적용)' : '(일반 무주택)'}
+                    담보평가 기준: Min(매매가 {property.priceDisplay}, KB시세 {formatMoney(kb.generalAvg)}) → <strong className="text-blue-700 font-bold">{sim.appraisalPriceFormatted || property.priceDisplay}</strong> ({sim.valuationBasis === 'KB시세' ? 'KB시세' : '실매매가'} LTV {sim.ltvRatio}%)
                   </p>
                 </div>
               </div>
@@ -257,8 +257,8 @@ export default function PropertyDetailModal({
                 <div className="text-2xl font-black text-blue-700 mt-1">
                   {sim.maxLoanFormatted}
                 </div>
-                <div className="text-xs text-slate-500 mt-1 flex items-center gap-1">
-                  <span>LTV {sim.ltvRatio}% 적용</span>
+                <div className="text-xs text-slate-500 mt-1 flex items-center gap-1 flex-wrap">
+                  <span>LTV {sim.ltvRatio}% ({sim.valuationBasis === 'KB시세' ? 'KB시세' : '매매가'} {sim.appraisalPriceFormatted})</span>
                   {sim.useMcg && <span className="text-blue-600 font-semibold">(MCG 방공제면제)</span>}
                 </div>
               </div>
@@ -269,7 +269,7 @@ export default function PropertyDetailModal({
                   {sim.requiredCashFormatted}
                 </div>
                 <div className="text-xs text-slate-500 mt-1">
-                  매매가 {property.priceDisplay} - 대출금
+                  실매매가 {property.priceDisplay} - 대출금
                 </div>
               </div>
 
