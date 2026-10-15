@@ -814,6 +814,8 @@ export default function PropertiesTab({
             const kb = property.kbPrice || {};
             const fp = property.floorPlan || {};
             const isFav = favorites.includes(property.id);
+            const currentYear = new Date().getFullYear();
+            const buildingAge = Math.max(1, currentYear - property.buildYear);
 
             return (
               <div
@@ -824,15 +826,16 @@ export default function PropertiesTab({
                 }`}
               >
                 <div>
-                  {/* 1. Card Header: 지역, 단지명, 평형, 역세권 & 도면/즐겨찾기/숨기기 버튼을 콤팩트하게 통합 */}
-                  <div className="p-3.5 sm:p-4 pb-2 border-b border-slate-100">
-                    <div className="flex items-center justify-between gap-1 mb-1.5">
-                      <div className="flex items-center gap-1.5 flex-wrap">
-                        <span className="bg-slate-100 text-slate-700 text-[10px] sm:text-[11px] font-bold px-2 py-0.5 rounded">
+                  {/* 1. Card Header: 4줄 고정 높이 그리드 정렬 (주소 / 년도(년차)-세대수 / 아파트명 평수(공급/전용) / 기타정보) */}
+                  <div className="p-3.5 sm:p-4 pb-2.5 border-b border-slate-100">
+                    {/* [1행] 주소 */}
+                    <div className="flex items-center justify-between gap-1.5 h-7">
+                      <div className="flex items-center gap-1.5 min-w-0">
+                        <span
+                          className="bg-slate-100 text-slate-700 text-[11px] sm:text-xs font-bold px-2 py-0.5 rounded truncate"
+                          title={`${property.region} ${property.district} ${property.dong}`}
+                        >
                           {property.region} {property.district} {property.dong}
-                        </span>
-                        <span className="text-[11px] text-slate-400">
-                          {property.buildYear}년 · {property.totalUnits?.toLocaleString()}세대
                         </span>
                       </div>
 
@@ -876,21 +879,50 @@ export default function PropertiesTab({
                       </div>
                     </div>
 
-                    <div className="flex items-baseline justify-between gap-2">
-                      <h3 className="text-base sm:text-lg font-black text-slate-900 group-hover:text-blue-600 transition-colors tracking-tight truncate">
-                        {property.name}
-                      </h3>
-                      <span className="text-xs sm:text-sm font-bold text-slate-700 shrink-0">
-                        {property.pyeong}평 <span className="text-[11px] font-normal text-slate-400">({property.areaSqMeter}㎡)</span>
-                      </span>
+                    {/* [2행] 년도(년차) - 세대수 */}
+                    <div className="flex items-center text-[11px] sm:text-xs text-slate-500 font-medium h-5 mt-1">
+                      <div className="flex items-center gap-1.5 truncate">
+                        <Building2 className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                        <span className="text-slate-700 font-semibold">{property.buildYear}년({buildingAge}년차)</span>
+                        <span className="text-slate-300">-</span>
+                        <span className="text-slate-600 font-medium">{property.totalUnits?.toLocaleString()}세대</span>
+                        {property.totalFloors && (
+                          <span className="text-slate-400 text-[10px] sm:text-[11px]">· 최고 {property.totalFloors}층</span>
+                        )}
+                      </div>
                     </div>
 
-                    <div className="flex items-center justify-between text-[11px] text-slate-500 mt-1">
-                      <div className="flex items-center gap-1 truncate">
-                        <Train className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span className="truncate">{property.subwayStation} {property.subwayDistance}</span>
+                    {/* [3행] 아파트명 평수(공급/전용) */}
+                    <div className="flex items-baseline justify-between gap-1.5 h-7 mt-1.5">
+                      <h3
+                        className="text-base sm:text-lg font-black text-slate-900 group-hover:text-blue-600 transition-colors tracking-tight truncate min-w-0"
+                        title={property.name}
+                      >
+                        {property.name}
+                      </h3>
+                      <div
+                        className="text-right shrink-0 whitespace-nowrap"
+                        title={`공급 ${property.pyeong}평형 (공급면적 약 ${Math.round(property.pyeong * 3.3058)}㎡ / 전용면적 ${property.areaSqMeter}㎡)`}
+                      >
+                        <span className="text-xs sm:text-sm font-black text-blue-700">
+                          {property.pyeong}평형
+                        </span>
+                        <span className="text-[11px] font-medium text-slate-500 ml-1">
+                          <span className="hidden xl:inline">(공급 {Math.round(property.pyeong * 3.3058)}㎡ / 전용 {property.areaSqMeter}㎡)</span>
+                          <span className="xl:hidden">(전용 {property.areaSqMeter}㎡)</span>
+                        </span>
                       </div>
-                      <span className="text-slate-400 text-[10px] sm:text-[11px] shrink-0 ml-1">
+                    </div>
+
+                    {/* [4행] 기타정보 (역세권 교통 + 평면 구조) */}
+                    <div className="flex items-center justify-between text-[11px] text-slate-500 h-5 mt-1">
+                      <div className="flex items-center gap-1 truncate min-w-0">
+                        <Train className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                        <span className="truncate" title={`${property.subwayStation} ${property.subwayDistance}`}>
+                          {property.subwayStation} {property.subwayDistance}
+                        </span>
+                      </div>
+                      <span className="text-slate-400 text-[10px] sm:text-[11px] shrink-0 ml-1 whitespace-nowrap">
                         {fp.roomsCount ? `${fp.roomsCount}룸 ${fp.bathroomsCount}욕` : property.rooms} · {fp.structure || '판상형'}
                       </span>
                     </div>
