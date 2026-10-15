@@ -2,6 +2,9 @@
 > **"우리가 함께 짓는, 우리 가족의 첫 보금자리"**  
 > 서울·경기 5~6억 원대 아파트 발굴 · 평형별 인터랙티브 도면(CAD) · 신생아 특례대출(LTV 70% 안전 한도) · 대한민국 금리 모니터링 & 뉴스 · 부동산 용어사전 & 실시간 정부 정책 알리미
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-our--family.onrender.com-brightgreen?style=for-the-badge&logo=render)](https://our-family.onrender.com/)  
+🌐 **실제 서비스 바로가기 (Live Demo)**: [https://our-family.onrender.com/](https://our-family.onrender.com/)
+
 ---
 
 ## 🌟 프로젝트 개요 & 핵심 철학
@@ -65,6 +68,9 @@
 
 ## 🌐 24시간 평생 무료 배포 가이드 (Render.com + GitHub)
 
+> 🚀 **현재 실서비스 운영 중**: **[https://our-family.onrender.com/](https://our-family.onrender.com/)**  
+> 모바일(스마트폰), 태블릿, PC 브라우저 어디서나 바로 접속하여 사용하실 수 있습니다.
+
 이 프로젝트는 **풀스택 Node.js + React 통합 구조**로 설계되어 있어, 무료 클라우드 플랫폼인 **Render.com**에 올리면 **비용 0원(100% 무료)**으로 24시간 전 세계 어디서나 모바일/PC로 접속할 수 있습니다.
 
 ### [1단계] 내 GitHub에 코드 올리기
@@ -80,9 +86,9 @@ git add .
 git commit -m "feat: Release 우리가 (우리家) v1.0.0"
 
 # 2. 본인의 GitHub에 새 Repository 생성 후 연결
-# (GitHub 웹사이트에서 'wooriga' 라는 이름으로 새 Public/Private 저장소 생성)
+# (GitHub 웹사이트에서 'our-family' 또는 'wooriga' 라는 이름으로 새 저장소 생성)
 git branch -M main
-git remote add origin https://github.com/<본인아이디>/wooriga.git
+git remote add origin https://github.com/snorlax-gengar/our-family.git
 git push -u origin main
 ```
 
@@ -92,16 +98,16 @@ git push -u origin main
 
 1. [Render.com](https://render.com) 에 접속하여 무료 회원가입 (GitHub 계정으로 간편 로그인 추천).
 2. 대시보드 우측 상단의 **[New +]** 버튼을 누르고 **[Web Service]** 를 선택합니다.
-3. 방금 올린 GitHub 저장소(`wooriga`)를 선택하고 **[Connect]** 클릭.
+3. 방금 올린 GitHub 저장소(`our-family`)를 선택하고 **[Connect]** 클릭.
 4. 아래 설정값 5가지만 입력합니다:
-   - **Name**: `wooriga` (원하는 주소 이름, 예: `wooriga-app`)
+   - **Name**: `our-family` (원하는 주소 이름)
    - **Language / Runtime**: `Node`
    - **Root Directory**: `.` (기본값)
    - **Build Command**: `npm run build`
    - **Start Command**: `npm start`
    - **Instance Type**: **Free (무료 $0/month)** 선택!
-5. 화면 맨 아래 **[Create Web Service]** 버튼을 클릭하면 약 2~3분 후 배포가 완료되며, 다음과 같은 고유 주소가 생성됩니다:
-   👉 **`https://wooriga.onrender.com`** (모바일, 태블릿, PC 언제든 가족들과 함께 접속 가능!)
+5. 화면 맨 아래 **[Create Web Service]** 버튼을 클릭하면 약 2~3분 후 배포가 완료되며, 다음과 같이 접속할 수 있습니다:
+   👉 **실제 배포 주소**: **[https://our-family.onrender.com/](https://our-family.onrender.com/)** (모바일, 태블릿, PC 언제든 가족들과 함께 접속 가능!)
 
 ---
 
