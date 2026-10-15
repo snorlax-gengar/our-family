@@ -1606,7 +1606,7 @@
   },
   {
     "id": "seoul-dobong-ssangmun-hyundai-1-26",
-    "name": "방학·쌍문 현대1차 (26평형)",
+    "name": "방학·쌍문 현대1차",
     "region": "서울",
     "district": "도봉구",
     "dong": "쌍문동 (방학경계)",
@@ -1681,7 +1681,7 @@
   },
   {
     "id": "seoul-dobong-ssangmun-hyundai-1-30",
-    "name": "방학·쌍문 현대1차 (30평형)",
+    "name": "방학·쌍문 현대1차",
     "region": "서울",
     "district": "도봉구",
     "dong": "쌍문동 (방학경계)",
@@ -1756,7 +1756,7 @@
   },
   {
     "id": "seoul-dobong-ssangmun-hyundai-2",
-    "name": "방학·쌍문 현대2차 (30평형)",
+    "name": "방학·쌍문 현대2차",
     "region": "서울",
     "district": "도봉구",
     "dong": "쌍문동 (방학경계)",

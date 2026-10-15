@@ -896,9 +896,9 @@ export default function PropertiesTab({
                     <div className="flex items-baseline justify-between gap-1.5 h-7 mt-1.5">
                       <h3
                         className="text-base sm:text-lg font-black text-slate-900 group-hover:text-blue-600 transition-colors tracking-tight truncate min-w-0"
-                        title={property.name}
+                        title={property.name.replace(/\s*\(\d+평형?\)/g, '')}
                       >
-                        {property.name}
+                        {property.name.replace(/\s*\(\d+평형?\)/g, '')}
                       </h3>
                       <div
                         className="text-right shrink-0 whitespace-nowrap"

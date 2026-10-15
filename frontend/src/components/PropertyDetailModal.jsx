@@ -64,7 +64,7 @@ export default function PropertyDetailModal({
               {property.region} {property.district}
             </span>
             <h2 className="text-lg sm:text-2xl font-black text-slate-900 tracking-tight truncate">
-              {property.name}
+              {property.name.replace(/\s*\(\d+평형?\)/g, '')}
             </h2>
             <span className="text-xs sm:text-sm font-semibold text-slate-500 shrink-0">
               {property.pyeong}평 ({property.areaSqMeter}㎡)
