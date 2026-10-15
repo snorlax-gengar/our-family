@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { 
   Building2, Search, SlidersHorizontal, Train, ArrowUpDown, 
   ChevronRight, Sparkles, ShieldCheck, DollarSign, ExternalLink,
-  Info, Check, RefreshCw, LayoutGrid, Eye, EyeOff, ArrowDownAZ, ArrowUpZA, Maximize2, Calendar, Heart
+  Info, Check, RefreshCw, LayoutGrid, Eye, EyeOff, ArrowDownAZ, ArrowUpZA, Maximize2, Calendar, Heart, AlertTriangle
 } from 'lucide-react';
 import PropertyDetailModal from './PropertyDetailModal';
 
@@ -350,10 +350,63 @@ export default function PropertiesTab({
     setSelectedProperty(prop);
   };
 
+  // 선택된 대출 상품 메타데이터
+  const currentLoanType = userCriteria.loanType || 'newborn';
+  const loanProductInfo = useMemo(() => {
+    switch (currentLoanType) {
+      case 'bogeumjari':
+        return {
+          id: 'bogeumjari',
+          name: 'HF 보금자리론 (한국주택금융공사)',
+          shortName: 'HF 보금자리론',
+          badge: '6억 이하 · 최대 3.6억(생초 4.2억)',
+          rate: '고정 연 3.65% ~ 3.95%',
+          desc: '100% 장기 고정금리로 향후 금리 인상 위험이 전혀 없는 한국주택금융공사 대표 안심 대출',
+          incomeTag: userCriteria.annualIncome <= 70000000 ? '기본 소득 적격 (~7천만)' :
+                     userCriteria.annualIncome <= 85000000 ? '신혼/1자녀 적격 (~8.5천만)' :
+                     userCriteria.annualIncome <= 100000000 ? '다자녀 적격 (~1억)' : '소득 초과 유의',
+          tenures: [10, 20, 30, 40],
+          firstHomeLimit: 'LTV 80% 확대 및 최대 4.2억 원 지원',
+        };
+      case 'didimdol':
+        return {
+          id: 'didimdol',
+          name: '내집마련 디딤돌 대출 (생애최초 특례)',
+          shortName: '생애최초 디딤돌',
+          badge: '5~6억 이하 · 최대 3.0억(신혼 4.0억)',
+          rate: '연 2.65% ~ 3.65%',
+          desc: '생애 첫 주택 구매 무주택 서민을 위한 주택도시기금 초저리 기금 대출 (생애최초 0.2%p 우대)',
+          incomeTag: userCriteria.annualIncome <= 20000000 ? '연 2.45% (생초 우대)' :
+                     userCriteria.annualIncome <= 40000000 ? '연 2.80% (생초 우대)' :
+                     userCriteria.annualIncome <= 70000000 ? '연 3.15% (생초 우대)' :
+                     userCriteria.annualIncome <= 85000000 ? '연 3.45% (신혼 생초)' : '소득 초과 유의',
+          tenures: [10, 15, 20, 30],
+          firstHomeLimit: 'LTV 80% 확대 및 최대 3.0억(신혼 4.0억) 지원',
+        };
+      default:
+        return {
+          id: 'newborn',
+          name: '신생아 특례 디딤돌 대출',
+          shortName: '신생아 특례대출',
+          badge: '9억 이하 · 최대 5.0억',
+          rate: '연 1.60% ~ 3.30%',
+          desc: '2년 내 출산(입양) 무주택 가구 전용 파격적인 최저 1%대 초저금리 정책 대출',
+          incomeTag: userCriteria.annualIncome <= 20000000 ? '연 1.6% 최저' :
+                     userCriteria.annualIncome <= 40000000 ? '연 2.1%대 구간' :
+                     userCriteria.annualIncome <= 60000000 ? '연 2.5%대 구간' :
+                     userCriteria.annualIncome <= 85000000 ? '연 2.7%대 (기본)' :
+                     userCriteria.annualIncome <= 130000000 ? '연 3.1%대 (신혼)' : '연 3.3%대 (2억)',
+          tenures: [10, 20, 30, 40],
+          firstHomeLimit: '취득세 200만 감면 (대출은 안전 LTV 70% 준수)',
+        };
+    }
+  }, [currentLoanType, userCriteria.annualIncome]);
+
   return (
     <div className="space-y-6">
-      {/* 1. 신생아 특례대출 실시간 조건 설정 패널 (Interactive Simulator Controller) */}
+      {/* 1. 정책 대출 실시간 조건 설정 패널 (Interactive Simulator Controller) */}
       <div className="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 rounded-2xl p-4 sm:p-6 text-white shadow-xl">
+        {/* 상단 타이틀 & 3대 대출 상품 선택 탭 */}
         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3 mb-4 sm:mb-5 border-b border-white/10 pb-3 sm:pb-4">
           <div>
             <div className="flex items-center gap-2 flex-wrap mb-1">
@@ -366,14 +419,14 @@ export default function PropertiesTab({
               </span>
             </div>
             <h2 className="text-base sm:text-xl font-bold tracking-tight text-white whitespace-nowrap">
-              나만의 신생아 특례대출 조건 설정
+              나만의 {loanProductInfo.name} 조건 설정
             </h2>
             <p className="text-[11px] sm:text-xs text-slate-300 mt-1 break-keep leading-tight">
-              소득·조건 변경 시 대출가능액과 필요 현금이 실시간 자동 계산됩니다.
+              {loanProductInfo.desc}
             </p>
           </div>
 
-          {/* 데스크톱 전용 가이드 버튼 (모바일 화면에서는 상단 헤더 및 하단 탭바에 이미 있으므로 중복 제거) */}
+          {/* 데스크톱 전용 가이드 버튼 */}
           {onOpenGuide && (
             <div className="hidden sm:flex items-center gap-2 text-xs">
               <button
@@ -387,6 +440,76 @@ export default function PropertiesTab({
           )}
         </div>
 
+        {/* 🌟 3대 정책대출 원클릭 선택 버튼 바 (신생아대출 / HF 보금자리론 / 생애최초 디딤돌) */}
+        <div className="mb-4">
+          <div className="text-[11px] font-bold text-slate-300 mb-2 flex items-center gap-1.5 flex-wrap">
+            <span className="text-amber-400">⚡ 정책 대출 상품 선택:</span>
+            <span className="text-[11px] text-slate-300">클릭 즉시 모든 매물의 대출한도와 월 상환액이 자동 계산됩니다.</span>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+            {[
+              {
+                id: 'newborn',
+                icon: '🐣',
+                name: '신생아 특례대출',
+                tag: '9억 이하 · 한도 5.0억',
+                rate: '연 1.60% ~ 3.30%',
+                highlight: 'DSR 미적용 · 최저 1%대'
+              },
+              {
+                id: 'bogeumjari',
+                icon: '🏠',
+                name: 'HF 보금자리론',
+                tag: '6억 이하 · 한도 3.6~4.2억',
+                rate: '고정 연 3.65% ~ 3.95%',
+                highlight: '100% 고정금리 · 면적제한 없음'
+              },
+              {
+                id: 'didimdol',
+                icon: '🌱',
+                name: '생애최초 디딤돌',
+                tag: '5~6억 이하 · 한도 3~4억',
+                rate: '연 2.65% ~ 3.65%',
+                highlight: '기금 저리 · 생초 -0.2%p 우대'
+              }
+            ].map((prod) => {
+              const isSelected = currentLoanType === prod.id;
+              return (
+                <button
+                  key={prod.id}
+                  type="button"
+                  onClick={() => setUserCriteria(prev => ({ ...prev, loanType: prod.id }))}
+                  className={`p-3 rounded-xl border text-left transition-all cursor-pointer flex flex-col justify-between ${
+                    isSelected
+                      ? 'bg-white text-slate-900 border-amber-400 shadow-lg ring-2 ring-amber-400/60 scale-[1.01]'
+                      : 'bg-white/10 hover:bg-white/15 text-white border-white/15'
+                  }`}
+                >
+                  <div className="flex items-center justify-between gap-1 mb-1">
+                    <span className="font-black text-xs sm:text-sm flex items-center gap-1.5 whitespace-nowrap">
+                      <span>{prod.icon}</span>
+                      <span>{prod.name}</span>
+                    </span>
+                    <span className={`text-[10px] font-extrabold px-1.5 py-0.2 rounded-full whitespace-nowrap ${
+                      isSelected ? 'bg-blue-100 text-blue-800' : 'bg-white/20 text-slate-200'
+                    }`}>
+                      {prod.highlight}
+                    </span>
+                  </div>
+                  <div className="flex items-center justify-between text-[11px] pt-1.5 border-t border-black/10 mt-1">
+                    <span className={`font-semibold ${isSelected ? 'text-slate-600' : 'text-slate-300'}`}>
+                      {prod.tag}
+                    </span>
+                    <span className={`font-black ${isSelected ? 'text-blue-700' : 'text-amber-300'}`}>
+                      {prod.rate}
+                    </span>
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
         {/* 📱 Mobile Quick Condition Summary & Toggle Pill (모바일 화면 전용 빠른 조건 확인 및 접기/펼치기) */}
         <div className="sm:hidden mb-2">
           <div className="bg-slate-950/70 rounded-xl p-3 border border-white/15 flex items-center justify-between gap-2 shadow-inner">
@@ -394,10 +517,12 @@ export default function PropertiesTab({
               <div className="text-amber-300 font-black flex items-center gap-1">
                 <DollarSign className="w-3.5 h-3.5" />
                 <span>{(Math.round(userCriteria.annualIncome / 10000)).toLocaleString()}만 원</span>
-                <span className="text-[10px] text-emerald-400 font-extrabold bg-emerald-500/20 px-1.5 py-0.2 rounded ml-1 whitespace-nowrap">LTV 70%</span>
+                <span className="text-[10px] text-emerald-400 font-extrabold bg-emerald-500/20 px-1.5 py-0.2 rounded ml-1 whitespace-nowrap">
+                  {loanProductInfo.shortName}
+                </span>
               </div>
               <div className="text-slate-300 text-[10px] mt-1 whitespace-nowrap">
-                {userCriteria.isFirstHome ? '생애최초(취득세 감면)' : '일반 무주택'} · {userCriteria.loanTenureYears}년 {userCriteria.useMcg && '· MCG'}
+                {userCriteria.isFirstHome ? '생애최초' : '일반 무주택'} · {userCriteria.loanTenureYears}년 {userCriteria.useMcg && '· MCG'}
               </div>
             </div>
             <button
@@ -422,11 +547,7 @@ export default function PropertiesTab({
                   <span>부부합산 연소득</span>
                 </label>
                 <span className="text-[10px] text-amber-300 font-extrabold bg-amber-400/15 px-2 py-0.5 rounded-full border border-amber-400/30">
-                  {userCriteria.annualIncome <= 20000000 ? '연 1.6% 최저' :
-                   userCriteria.annualIncome <= 40000000 ? '연 2.1%대 구간' :
-                   userCriteria.annualIncome <= 60000000 ? '연 2.5%대 구간' :
-                   userCriteria.annualIncome <= 85000000 ? '연 2.7%대 (기본)' :
-                   userCriteria.annualIncome <= 130000000 ? '연 3.1%대 (신혼)' : '연 3.3%대 (2억)'}
+                  {loanProductInfo.incomeTag}
                 </span>
               </div>
 
@@ -573,15 +694,15 @@ export default function PropertiesTab({
             <div className="bg-black/25 p-2.5 rounded-xl border border-white/10 space-y-1 mt-2">
               <div className="flex items-center gap-1 text-[11px] font-bold text-emerald-300">
                 <Sparkles className="w-3 h-3 shrink-0" />
-                <span className="whitespace-nowrap">{userCriteria.isFirstHome ? '취득세 최대 200만 원 즉시 비과세' : '일반 취득세율 1.1% 정상 적용'}</span>
+                <span className="whitespace-nowrap">{userCriteria.isFirstHome ? '취득세 최대 200만 감면 + 생초 특례' : '일반 취득세율 1.1% 정상 적용'}</span>
               </div>
               <p className="text-[10px] text-slate-300 leading-tight break-keep">
                 {userCriteria.isFirstHome 
-                  ? '첫 주택 매수 시 취득세 최대 200만 원 감면 혜택' 
-                  : '정부 가계대출 관리 기준 안전 LTV 70% 동일 적용'}
+                  ? loanProductInfo.firstHomeLimit
+                  : '정부 가계대출 관리 기준 기본 LTV 70% 동일 적용'}
               </p>
               <div className="text-[9px] text-amber-300/80 pt-0.5 border-t border-white/5 whitespace-nowrap">
-                ※ 대출 한도는 안전 LTV 70% 상한 준수
+                {currentLoanType === 'bogeumjari' ? '보금자리론 생초 최대 4.2억 (LTV 80%)' : currentLoanType === 'didimdol' ? '디딤돌 생초 0.2%p 우대금리 (LTV 80%)' : '신생아 특례 최대 5.0억 한도 지원'}
               </div>
             </div>
           </div>
@@ -602,7 +723,7 @@ export default function PropertiesTab({
 
               {/* 4-way Tenure Buttons */}
               <div className="grid grid-cols-4 gap-1.5 my-2">
-                {[10, 20, 30, 40].map((yr) => (
+                {loanProductInfo.tenures.map((yr) => (
                   <button
                     key={yr}
                     type="button"
@@ -1097,9 +1218,9 @@ export default function PropertiesTab({
                     </button>
                   </div>
 
-                  {/* 2. Unified Financial Block (매매가, 대출가능액, 필요현금, 월상환액 통합 콤팩트 대시보드) */}
+                  {/* 2. Unified Financial Block (선택 대출 상품별 실시간 한도 및 적격 심사 결과) */}
                   <div className="mx-3.5 sm:mx-4 my-2.5 p-3 bg-gradient-to-br from-slate-50 to-blue-50/50 rounded-xl border border-slate-200/80 space-y-2">
-                    {/* 상단: 매매 기준가 vs 신생아 특례대출 한도 */}
+                    {/* 상단: 매매 기준가 vs 선택 정책 대출 한도 */}
                     <div className="flex items-baseline justify-between gap-2">
                       <div>
                         <span className="text-[10px] text-slate-400 font-medium block">매매 기준가</span>
@@ -1113,45 +1234,91 @@ export default function PropertiesTab({
 
                       <div className="text-right">
                         <span className="text-[10px] text-slate-400 font-medium block flex items-center justify-end gap-1 whitespace-nowrap">
-                          <ShieldCheck className="w-3 h-3 text-blue-600" />
-                          <span>신생아 특례대출</span>
+                          <ShieldCheck className={`w-3 h-3 ${sim.isEligible ? 'text-blue-600' : 'text-slate-400'}`} />
+                          <span className={sim.isEligible ? 'text-slate-700 font-bold' : 'text-rose-500 font-bold'}>
+                            {sim.loanName || loanProductInfo.shortName}
+                          </span>
                         </span>
-                        <span className="text-lg sm:text-xl font-black text-blue-900 tracking-tight whitespace-nowrap">
-                          {sim.maxLoanFormatted}
-                        </span>
-                        <span className="text-[10px] text-emerald-600 font-bold block mt-0.5 whitespace-nowrap">
-                          LTV {sim.ltvRatio}% ({sim.valuationBasis === 'KB시세' ? `KB시세 ${sim.appraisalPriceFormatted}` : '실매매가 기준'})
-                        </span>
+                        {sim.isEligible ? (
+                          <>
+                            <span className="text-lg sm:text-xl font-black text-blue-900 tracking-tight whitespace-nowrap">
+                              {sim.maxLoanFormatted}
+                            </span>
+                            <span className="text-[10px] text-emerald-600 font-bold block mt-0.5 whitespace-nowrap">
+                              LTV {sim.ltvRatio}% ({sim.valuationBasis === 'KB시세' ? `KB시세 ${sim.appraisalPriceFormatted}` : '실매매가 기준'})
+                            </span>
+                          </>
+                        ) : (
+                          <>
+                            <span className="text-base sm:text-lg font-black text-rose-600 tracking-tight whitespace-nowrap">
+                              대출 대상 제외
+                            </span>
+                            <span className="text-[10px] text-rose-500 block mt-0.5 whitespace-nowrap truncate max-w-[170px]" title={sim.ineligibilityReasons?.[0]}>
+                              {sim.ineligibilityReasons?.[0] || '기준 요건 초과'}
+                            </span>
+                          </>
+                        )}
                       </div>
                     </div>
 
-                    {/* 하단: 최소 필요 현금 vs 월 원리금 */}
-                    <div className="pt-2 border-t border-slate-200/70 grid grid-cols-2 gap-2 text-xs">
-                      <div>
-                        <span className="text-[10px] text-slate-500 block whitespace-nowrap">최소 필요 현금</span>
-                        <span className="font-extrabold text-rose-600 text-sm whitespace-nowrap">
-                          {sim.requiredCashFormatted}
-                        </span>
+                    {/* 하단: 최소 필요 현금 vs 월 원리금 (또는 대안 대출 안내) */}
+                    {sim.isEligible ? (
+                      <div className="pt-2 border-t border-slate-200/70 grid grid-cols-2 gap-2 text-xs">
+                        <div>
+                          <span className="text-[10px] text-slate-500 block whitespace-nowrap">최소 필요 현금</span>
+                          <span className="font-extrabold text-rose-600 text-sm whitespace-nowrap">
+                            {sim.requiredCashFormatted}
+                          </span>
+                        </div>
+                        <div className="text-right">
+                          <span className="text-[10px] text-slate-500 block whitespace-nowrap">월 원리금 ({sim.loanTenureYears}년)</span>
+                          <span className="font-extrabold text-slate-900 text-sm whitespace-nowrap">
+                            약 {sim.monthlyPayment?.toLocaleString()}원
+                          </span>
+                          <span className="text-[10px] text-emerald-600 font-semibold block whitespace-nowrap">
+                            연 {sim.finalInterestRate}%
+                          </span>
+                        </div>
                       </div>
-                      <div className="text-right">
-                        <span className="text-[10px] text-slate-500 block whitespace-nowrap">월 원리금 ({sim.loanTenureYears}년)</span>
-                        <span className="font-extrabold text-slate-900 text-sm whitespace-nowrap">
-                          약 {sim.monthlyPayment?.toLocaleString()}원
+                    ) : (
+                      <div className="pt-2 border-t border-rose-100 flex items-center justify-between text-xs bg-rose-50/60 p-2 rounded-lg">
+                        <span className="text-[11px] text-rose-700 font-bold">
+                          💡 {property.allLoans?.newborn?.isEligible ? '신생아 특례 대출 가능' : '타 정책 대출 확인 필요'}
                         </span>
-                        <span className="text-[10px] text-emerald-600 font-semibold block whitespace-nowrap">
-                          연 {sim.finalInterestRate}%
-                        </span>
+                        {property.allLoans?.newborn?.isEligible && (
+                          <span className="text-[11px] font-black text-blue-700 whitespace-nowrap">
+                            최대 {property.allLoans.newborn.maxLoanFormatted} (연 {property.allLoans.newborn.finalInterestRate}%)
+                          </span>
+                        )}
                       </div>
-                    </div>
+                    )}
                   </div>
                 </div>
 
-                {/* 3. Card Footer: 절약액 배지 & 네이버부동산 단지 바로가기 & 상세 견적 버튼 */}
+                {/* 3. Card Footer: 절약액 배지 & 3종 대출 비교 & 네이버 바로가기 & 상세 견적 버튼 */}
                 <div className="px-3.5 sm:px-4 py-2 border-t border-slate-100 flex items-center justify-between gap-1.5 text-xs bg-slate-50/40">
-                  <span className="text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded font-semibold text-[10px] sm:text-[11px] whitespace-nowrap truncate">
-                    월 {sim.comparison?.monthlySavings?.toLocaleString()}원 절약
-                  </span>
-                  <div className="flex items-center gap-2 shrink-0">
+                  <div className="flex items-center gap-1.5">
+                    {sim.isEligible && sim.comparison?.monthlySavings > 0 ? (
+                      <span className="text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded font-semibold text-[10px] sm:text-[11px] whitespace-nowrap truncate">
+                        월 {sim.comparison?.monthlySavings?.toLocaleString()}원 절약
+                      </span>
+                    ) : (
+                      <span className="text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded font-bold text-[10px] sm:text-[11px] whitespace-nowrap truncate">
+                        3대 대출 비교 가능
+                      </span>
+                    )}
+                  </div>
+                  <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleOpenDetail(property);
+                      }}
+                      className="px-2 py-0.5 rounded bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 font-bold text-[10px] sm:text-[11px] flex items-center gap-0.5 transition-colors whitespace-nowrap cursor-pointer shadow-2xs"
+                    >
+                      <span>⚖️ 3종 대출 비교</span>
+                    </button>
                     {(property.naverMobileUrl || property.naverLandUrl) && (
                       <a
                         href={property.naverMobileUrl || property.naverLandUrl}
@@ -1161,12 +1328,12 @@ export default function PropertiesTab({
                         title={`${property.name} 네이버부동산 단지 정보 및 실시간 매물 바로가기`}
                         className="px-2 py-0.5 rounded bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-[10px] sm:text-[11px] flex items-center gap-0.5 transition-colors whitespace-nowrap shadow-2xs"
                       >
-                        <span>N 네이버부동산</span>
+                        <span>N 네이버</span>
                         <ExternalLink className="w-2.5 h-2.5" />
                       </a>
                     )}
                     <div className="flex items-center gap-0.5 text-blue-600 font-bold text-xs shrink-0 whitespace-nowrap group-hover:translate-x-0.5 transition-transform">
-                      <span>상세 견적</span>
+                      <span>상세</span>
                       <ChevronRight className="w-3.5 h-3.5" />
                     </div>
                   </div>

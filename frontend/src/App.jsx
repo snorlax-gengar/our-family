@@ -10,13 +10,14 @@ export default function App() {
   const [activeTab, setActiveTab] = useState('properties');
   const [isGuideOpen, setIsGuideOpen] = useState(false);
   
-  // 사용자 맞춤형 대출 조건 기본값
+  // 사용자 맞춤형 대출 조건 기본값 (신생아 특례 / HF 보금자리론 / 생애최초 디딤돌)
   const [userCriteria, setUserCriteria] = useState({
     annualIncome: 80000000, // 8,000만 원 (신생아 특례 기본 범위)
     isFirstHome: false,     // 생애최초 여부 (취득세 200만 원 감면 혜택, 대출은 정부 규제 LTV 70% 준수)
     loanTenureYears: 30,    // 30년 만기
     useMcg: true,           // MCG 모기지신용보증 가입 (방공제 면제)
     preferentialDiscount: 0.2, // 우대금리 (청약통장 + 전자계약 등 0.2%p)
+    loanType: 'newborn',    // 'newborn' | 'bogeumjari' | 'didimdol'
   });
 
   const [properties, setProperties] = useState([]);
@@ -27,7 +28,7 @@ export default function App() {
   const [newsRefreshing, setNewsRefreshing] = useState(false);
   const [policyRefreshing, setPolicyRefreshing] = useState(false);
 
-  // 1. 매물 데이터 로드 (사용자 조건 변경 시 자동 재계산)
+  // 1. 매물 데이터 로드 (사용자 조건 및 선택 대출상품 변경 시 자동 재계산)
   const fetchProperties = useCallback(async () => {
     try {
       setLoadingProperties(true);
@@ -37,6 +38,7 @@ export default function App() {
         loanTenureYears: userCriteria.loanTenureYears.toString(),
         useMcg: userCriteria.useMcg.toString(),
         preferentialDiscount: userCriteria.preferentialDiscount.toString(),
+        loanType: userCriteria.loanType || 'newborn',
       });
       const res = await fetch(`/api/properties?${params.toString()}`);
       if (res.ok) {

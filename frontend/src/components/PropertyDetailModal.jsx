@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { 
   X, Building2, MapPin, Train, Calendar, TrendingUp, DollarSign, 
   ShieldCheck, Calculator, Sparkles, ExternalLink, CheckCircle2, ArrowRight, Heart,
-  RotateCcw, SlidersHorizontal, Search
+  RotateCcw, SlidersHorizontal, Search, AlertTriangle
 } from 'lucide-react';
 
 import FloorPlanViewer from './FloorPlanViewer';
@@ -17,6 +17,7 @@ export default function PropertyDetailModal({
 }) {
   const [modalTab, setModalTab] = useState(initialTab); // 'all', 'floorPlan', 'financial'
   const [activeProperty, setActiveProperty] = useState(property);
+  const [selectedLoanType, setSelectedLoanType] = useState(userCriteria?.loanType || 'newborn');
 
   // 사용자 직접 수정 가격 상태 (매매가, KB시세)
   const [customPrice, setCustomPrice] = useState(null);
@@ -27,6 +28,12 @@ export default function PropertyDetailModal({
     setCustomPrice(null);
     setCustomKbPrice(null);
   }, [property]);
+
+  useEffect(() => {
+    if (userCriteria?.loanType) {
+      setSelectedLoanType(userCriteria.loanType);
+    }
+  }, [userCriteria?.loanType]);
 
   useEffect(() => {
     if (initialTab) {
@@ -52,39 +59,11 @@ export default function PropertyDetailModal({
   const isKbLower = activeKbPrice < activePrice;
   const valuationBasis = isKbLower ? 'KB시세' : '실매매가';
 
-  // LTV 70% 대출 가능 금액 (MCG 방공제면제 기본, 최대 5억 원 한도)
-  const ltvRatio = 0.70;
-  const maxLoan = Math.min(500000000, Math.max(0, Math.floor(appraisalPrice * ltvRatio)));
-  const requiredCash = Math.max(0, activePrice - maxLoan);
-
-  // 금리 및 월상환액 실시간 계산 (원리금균등)
-  const finalInterestRate = sim.finalInterestRate || 3.10;
-  const monthlyRate = (finalInterestRate / 100) / 12;
-  const totalMonths = (userCriteria?.loanTenureYears || 30) * 12;
-  const monthlyPayment = (maxLoan > 0 && monthlyRate > 0)
-    ? Math.round((maxLoan * monthlyRate * Math.pow(1 + monthlyRate, totalMonths)) / (Math.pow(1 + monthlyRate, totalMonths) - 1))
-    : 0;
-
-  // 일반 시중은행 비교 (4.30% 기준)
-  const marketRate = 4.30;
-  const marketMonthlyRate = (marketRate / 100) / 12;
-  const marketMonthlyPayment = (maxLoan > 0 && marketMonthlyRate > 0)
-    ? Math.round((maxLoan * marketMonthlyRate * Math.pow(1 + marketMonthlyRate, totalMonths)) / (Math.pow(1 + marketMonthlyRate, totalMonths) - 1))
-    : 0;
-  const monthlySavings = Math.max(0, marketMonthlyPayment - monthlyPayment);
-  const totalSavings = monthlySavings * totalMonths;
-
-  // 부대비용 계산: 취득세 (6억 이하 1.1%), 생애최초 시 최대 200만 원 감면
-  const rawAcquisitionTax = Math.round(activePrice * 0.011);
-  const isFirstHome = userCriteria?.isFirstHome || sim.isFirstHome;
-  const acquisitionDiscount = isFirstHome ? Math.min(2000000, rawAcquisitionTax) : 0;
-  const finalAcquisitionTax = rawAcquisitionTax - acquisitionDiscount;
-
-  // 부동산 중개보수 (매매 2억~9억 이하 상한요율 0.4%)
-  const maxBrokerFee = Math.round(activePrice * 0.004);
-
-  // 총 필요 현금 = 매수 잔금 + 취득세 + 중개수수료
-  const totalCashNeeded = requiredCash + finalAcquisitionTax + maxBrokerFee;
+  const tenure = userCriteria?.loanTenureYears || 30;
+  const isFirstHome = userCriteria?.isFirstHome || false;
+  const income = userCriteria?.annualIncome || 80000000;
+  const discount = userCriteria?.preferentialDiscount || 0.2;
+  const totalMonths = tenure * 12;
 
   const formatMoney = (val) => {
     if (!val || val === 0) return '0원';
@@ -95,6 +74,123 @@ export default function PropertyDetailModal({
     }
     return `${man.toLocaleString()}만원`;
   };
+
+  // 3대 정책대출 실시간 산출 함수 (사용자 직접 수정 가격 반영)
+  const calcLoanDetails = (type) => {
+    let meetsPrice = true;
+    let meetsIncome = true;
+    let limit = 500000000;
+    let ltv = 0.70;
+    let rate = 3.10;
+    let name = '';
+    let shortName = '';
+    let reasons = [];
+
+    if (type === 'newborn') {
+      name = '신생아 특례 디딤돌 대출';
+      shortName = '신생아 특례';
+      meetsPrice = appraisalPrice <= 900000000;
+      meetsIncome = income <= 200000000;
+      limit = 500000000;
+      ltv = 0.70;
+      rate = income <= 20000000 ? 1.95 :
+             income <= 40000000 ? 2.45 :
+             income <= 60000000 ? 2.85 :
+             income <= 85000000 ? 3.05 :
+             income <= 130000000 ? 3.30 : 3.50;
+      rate = Math.max(1.20, +(rate - discount).toFixed(2));
+      if (!meetsPrice) reasons.push(`주택가격(${formatMoney(appraisalPrice)})이 9억 원을 초과합니다.`);
+      if (!meetsIncome) reasons.push('부부합산 연소득 2억 원 초과');
+    } else if (type === 'bogeumjari') {
+      name = 'HF 한국주택금융공사 보금자리론';
+      shortName = 'HF 보금자리론';
+      meetsPrice = appraisalPrice <= 600000000;
+      meetsIncome = income <= 85000000;
+      limit = isFirstHome ? 420000000 : 400000000;
+      ltv = isFirstHome ? 0.80 : 0.70;
+      const fixedRates = { 10: 3.65, 15: 3.75, 20: 3.80, 30: 3.85, 40: 3.90, 50: 3.95 };
+      const baseR = fixedRates[tenure] || 3.85;
+      rate = Math.max(2.65, +(baseR - (isFirstHome ? 0.2 : 0) - 0.1).toFixed(2));
+      if (!meetsPrice) reasons.push(`주택가격(${formatMoney(appraisalPrice)})이 보금자리론 상한인 6억 원을 초과합니다.`);
+      if (!meetsIncome) reasons.push('소득 상한 8,500만 원 초과');
+    } else {
+      name = isFirstHome ? '내집마련 디딤돌 대출 (생애최초 특례)' : '내집마련 디딤돌 대출';
+      shortName = '생애최초 디딤돌';
+      meetsPrice = appraisalPrice <= 600000000;
+      meetsIncome = income <= 85000000;
+      limit = isFirstHome ? 300000000 : 250000000;
+      ltv = isFirstHome ? 0.80 : 0.70;
+      const baseRates = { 10: 3.65, 15: 3.75, 20: 3.85, 30: 3.95 };
+      const baseR = baseRates[tenure] || 3.85;
+      rate = Math.max(1.50, +(baseR - (isFirstHome ? 0.2 : 0) - discount).toFixed(2));
+      if (!meetsPrice) reasons.push(`주택가격(${formatMoney(appraisalPrice)})이 디딤돌 상한(6억)을 초과합니다.`);
+      if (!meetsIncome) reasons.push('소득 상한 8,500만 원 초과');
+    }
+
+    const isEligible = meetsPrice && meetsIncome;
+    let maxL = isEligible ? Math.round(appraisalPrice * ltv) : 0;
+    if (maxL > limit) maxL = limit;
+    if (maxL < 0) maxL = 0;
+
+    const reqCash = Math.max(0, activePrice - maxL);
+    const mRate = (rate / 100) / 12;
+    const mPay = (maxL > 0 && mRate > 0)
+      ? Math.round((maxL * mRate * Math.pow(1 + mRate, totalMonths)) / (Math.pow(1 + mRate, totalMonths) - 1))
+      : 0;
+
+    const mktRate = 4.30;
+    const mktMonthlyRate = (mktRate / 100) / 12;
+    const mktMonthlyPay = (maxL > 0)
+      ? Math.round((maxL * mktMonthlyRate * Math.pow(1 + mktMonthlyRate, totalMonths)) / (Math.pow(1 + mktMonthlyRate, totalMonths) - 1))
+      : 0;
+    const mSavings = Math.max(0, mktMonthlyPay - mPay);
+    const totSavings = mSavings * totalMonths;
+
+    return {
+      type,
+      name,
+      shortName,
+      isEligible,
+      reasons,
+      maxLoan: maxL,
+      requiredCash: reqCash,
+      rate,
+      monthlyPayment: mPay,
+      ltvRatio: Math.round(ltv * 100),
+      limit,
+      marketRate: mktRate,
+      marketMonthlyPayment: mktMonthlyPay,
+      monthlySavings: mSavings,
+      totalSavings: totSavings
+    };
+  };
+
+  const newbornLoan = calcLoanDetails('newborn');
+  const bogeumjariLoan = calcLoanDetails('bogeumjari');
+  const didimdolLoan = calcLoanDetails('didimdol');
+
+  // 활성 선택 대출
+  const activeLoan = selectedLoanType === 'bogeumjari' ? bogeumjariLoan : (selectedLoanType === 'didimdol' ? didimdolLoan : newbornLoan);
+
+  const maxLoan = activeLoan.maxLoan;
+  const requiredCash = activeLoan.requiredCash;
+  const finalInterestRate = activeLoan.rate;
+  const monthlyPayment = activeLoan.monthlyPayment;
+  const marketRate = activeLoan.marketRate;
+  const marketMonthlyPayment = activeLoan.marketMonthlyPayment;
+  const monthlySavings = activeLoan.monthlySavings;
+  const totalSavings = activeLoan.totalSavings;
+
+  // 부대비용 계산: 취득세 (6억 이하 1.1%), 생애최초 시 최대 200만 원 감면
+  const rawAcquisitionTax = Math.round(activePrice * 0.011);
+  const acquisitionDiscount = isFirstHome ? Math.min(2000000, rawAcquisitionTax) : 0;
+  const finalAcquisitionTax = rawAcquisitionTax - acquisitionDiscount;
+
+  // 부동산 중개보수 (매매 2억~9억 이하 상한요율 0.4%)
+  const maxBrokerFee = Math.round(activePrice * 0.004);
+
+  // 총 필요 현금 = 매수 잔금 + 취득세 + 중개수수료
+  const totalCashNeeded = requiredCash + finalAcquisitionTax + maxBrokerFee;
 
   const handleResetCustomPrices = () => {
     setCustomPrice(null);
@@ -239,11 +335,11 @@ export default function PropertyDetailModal({
               onClick={() => setModalTab('financial')}
               className={`pb-2 border-b-2 transition-all cursor-pointer whitespace-nowrap ${
                 modalTab === 'financial'
-                  ? 'border-blue-600 text-blue-600'
+                  ? 'border-blue-600 text-blue-600 font-extrabold'
                   : 'border-transparent text-slate-400 hover:text-slate-700'
               }`}
             >
-              💰 KB시세 & 신생아 특례 자금 견적서
+              💰 KB시세 & 3대 정책대출 견적서
             </button>
           </div>
 
@@ -495,85 +591,321 @@ export default function PropertyDetailModal({
                 </div>
               </div>
 
-              {/* Section 2: 신생아 특례대출 정밀 시뮬레이션 */}
-              <div className="bg-gradient-to-br from-blue-50/80 to-indigo-50/80 rounded-xl p-5 border border-blue-200">
-                <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
-                  <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-bold text-xs">
-                      <ShieldCheck className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-slate-900 text-base flex items-center gap-2 flex-wrap">
-                        <span>신생아 특례 디딤돌 대출 맞춤 시뮬레이션</span>
-                        <span className="bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded-full font-bold whitespace-nowrap">
-                          DSR 미적용
-                        </span>
-                      </h3>
-                      <p className="text-xs text-slate-500">
-                        담보평가 기준: Min(매매가 {formatMoney(activePrice)}, KB시세 {formatMoney(activeKbPrice)}) → <strong className="text-blue-700 font-bold">{formatMoney(appraisalPrice)}</strong> ({valuationBasis} LTV 70%)
-                      </p>
-                    </div>
+              {/* Section 2: 3대 정책대출 맞춤 시뮬레이터 & 종합 비교표 */}
+              <div className="bg-gradient-to-br from-blue-50/80 to-indigo-50/80 rounded-xl p-4 sm:p-5 border border-blue-200 space-y-4">
+                {/* 3대 대출 선택 탭 바 */}
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-blue-200/80 pb-3">
+                  <div>
+                    <h3 className="font-extrabold text-slate-900 text-base flex items-center gap-2 flex-wrap">
+                      <ShieldCheck className="w-5 h-5 text-blue-600 shrink-0" />
+                      <span>정부 3대 정책대출 맞춤 견적</span>
+                      <span className="bg-emerald-100 text-emerald-800 text-xs px-2 py-0.5 rounded-full font-bold whitespace-nowrap">
+                        DSR 규제 미적용
+                      </span>
+                    </h3>
+                    <p className="text-xs text-slate-500 mt-0.5">
+                      담보평가 기준: Min(매매가 {formatMoney(activePrice)}, KB시세 {formatMoney(activeKbPrice)}) → <strong className="text-blue-700 font-bold">{formatMoney(appraisalPrice)}</strong> ({valuationBasis})
+                    </p>
+                  </div>
+
+                  {/* 4-way Loan Selector Switcher */}
+                  <div className="flex items-center gap-1 bg-white p-1 rounded-xl border border-blue-200 shrink-0 overflow-x-auto no-scrollbar">
+                    {[
+                      { id: 'newborn', label: '🐣 신생아 특례' },
+                      { id: 'bogeumjari', label: '🏠 HF 보금자리론' },
+                      { id: 'didimdol', label: '🌱 생애최초 디딤돌' },
+                      { id: 'compare', label: '⚖️ 3종 종합 비교' },
+                    ].map((tab) => (
+                      <button
+                        key={tab.id}
+                        type="button"
+                        onClick={() => setSelectedLoanType(tab.id)}
+                        className={`px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap ${
+                          selectedLoanType === tab.id
+                            ? 'bg-blue-600 text-white shadow-xs'
+                            : 'text-slate-600 hover:text-slate-900 bg-transparent'
+                        }`}
+                      >
+                        {tab.label}
+                      </button>
+                    ))}
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
-                  <div className="bg-white p-4 rounded-xl border border-blue-200 shadow-xs">
-                    <span className="text-xs font-medium text-slate-500 whitespace-nowrap">최대 대출 가능 금액</span>
-                    <div className="text-2xl font-black text-blue-700 mt-1 whitespace-nowrap">
-                      {formatMoney(maxLoan)}
+                {/* MODE A: 3종 대출 종합 비교표 */}
+                {selectedLoanType === 'compare' ? (
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between text-xs text-slate-600 bg-blue-100/60 p-2.5 rounded-lg">
+                      <span className="font-bold flex items-center gap-1">
+                        <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+                        <span>우리 가족 조건(소득 {formatMoney(income)} · {isFirstHome ? '생애최초' : '무주택'}) 기준 3대 정책대출 비교</span>
+                      </span>
+                      <span className="text-[11px] text-blue-700 font-extrabold whitespace-nowrap">
+                        {appraisalPrice <= 600000000 ? '⭐ 3대 대출 모두 심사 가능 단지' : '💡 신생아 특례대출 최적 적합 단지'}
+                      </span>
                     </div>
-                    <div className="text-xs text-slate-500 mt-1 flex items-center gap-1 flex-wrap">
-                      <span>LTV 70% ({valuationBasis} {formatMoney(appraisalPrice)})</span>
-                      <span className="text-blue-600 font-semibold">(MCG 방공제면제)</span>
-                    </div>
-                  </div>
 
-                  <div className="bg-white p-4 rounded-xl border border-blue-200 shadow-xs">
-                    <span className="text-xs font-medium text-slate-500 whitespace-nowrap">필요 자기자본 (순수 매수금)</span>
-                    <div className="text-2xl font-black text-rose-600 mt-1 whitespace-nowrap">
-                      {formatMoney(requiredCash)}
-                    </div>
-                    <div className="text-xs text-slate-500 mt-1 whitespace-nowrap">
-                      실매매가 {formatMoney(activePrice)} - 대출금
-                    </div>
-                  </div>
+                    <div className="overflow-x-auto -webkit-overflow-scrolling-touch bg-white rounded-xl border border-blue-200">
+                      <table className="w-full text-left text-xs border-collapse min-w-[560px]">
+                        <thead>
+                          <tr className="bg-slate-100 text-slate-700 font-bold border-b border-slate-200 whitespace-nowrap">
+                            <th className="py-2.5 px-3">비교 항목</th>
+                            <th className={`py-2.5 px-3 ${newbornLoan.isEligible ? 'bg-blue-50 text-blue-900' : ''}`}>
+                              🐣 신생아 특례대출
+                            </th>
+                            <th className={`py-2.5 px-3 ${bogeumjariLoan.isEligible ? 'bg-indigo-50 text-indigo-900' : ''}`}>
+                              🏠 HF 보금자리론
+                            </th>
+                            <th className={`py-2.5 px-3 ${didimdolLoan.isEligible ? 'bg-emerald-50 text-emerald-900' : ''}`}>
+                              🌱 생애최초 디딤돌
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-slate-100 text-slate-700">
+                          {/* 1. 심사 결과 */}
+                          <tr>
+                            <td className="py-2.5 px-3 font-bold bg-slate-50 whitespace-nowrap">대출 적격 여부</td>
+                            <td className="py-2.5 px-3 whitespace-nowrap">
+                              {newbornLoan.isEligible ? (
+                                <span className="bg-emerald-100 text-emerald-800 font-extrabold px-2 py-0.5 rounded text-[11px]">
+                                  ✅ 대출 적격 (추천)
+                                </span>
+                              ) : (
+                                <span className="text-rose-600 font-bold text-[11px]">❌ 부적격</span>
+                              )}
+                            </td>
+                            <td className="py-2.5 px-3 whitespace-nowrap">
+                              {bogeumjariLoan.isEligible ? (
+                                <span className="bg-emerald-100 text-emerald-800 font-extrabold px-2 py-0.5 rounded text-[11px]">
+                                  ✅ 대출 적격 (고정금리)
+                                </span>
+                              ) : (
+                                <span className="text-rose-600 font-bold text-[11px]">❌ 6억 초과 부적격</span>
+                              )}
+                            </td>
+                            <td className="py-2.5 px-3 whitespace-nowrap">
+                              {didimdolLoan.isEligible ? (
+                                <span className="bg-emerald-100 text-emerald-800 font-extrabold px-2 py-0.5 rounded text-[11px]">
+                                  ✅ 대출 적격 (초저리)
+                                </span>
+                              ) : (
+                                <span className="text-rose-600 font-bold text-[11px]">❌ 6억 초과 부적격</span>
+                              )}
+                            </td>
+                          </tr>
 
-                  <div className="bg-white p-4 rounded-xl border border-blue-200 shadow-xs">
-                    <span className="text-xs font-medium text-slate-500 whitespace-nowrap">월 예상 상환액 (원리금균등)</span>
-                    <div className="text-2xl font-black text-slate-900 mt-1 whitespace-nowrap">
-                      약 {monthlyPayment.toLocaleString()}원
-                    </div>
-                    <div className="text-xs text-emerald-600 font-bold mt-1 whitespace-nowrap">
-                      적용 금리: 연 {finalInterestRate}% (우대 -{sim.preferentialDiscount || 0.2}%p)
-                    </div>
-                  </div>
-                </div>
+                          {/* 2. 주택 상한 & 대상 */}
+                          <tr>
+                            <td className="py-2.5 px-3 font-bold bg-slate-50 whitespace-nowrap">주택 가격 상한</td>
+                            <td className="py-2.5 px-3 whitespace-nowrap">9억 원 이하 (85㎡ 이하)</td>
+                            <td className="py-2.5 px-3 whitespace-nowrap">6억 원 이하 (면적제한 없음)</td>
+                            <td className="py-2.5 px-3 whitespace-nowrap">5~6억 원 이하 (85㎡ 이하)</td>
+                          </tr>
 
-                {/* 일반 은행 대출과의 비교표 */}
-                <div className="bg-white rounded-lg p-4 border border-blue-100 text-xs space-y-2">
-                  <div className="font-bold text-slate-800 flex items-center gap-1.5 text-sm">
-                    <Sparkles className="w-4 h-4 text-amber-500" />
-                    <span>일반 시중은행 주담대 대비 혜택 비교</span>
+                          {/* 3. 최대 대출 한도 규정 */}
+                          <tr>
+                            <td className="py-2.5 px-3 font-bold bg-slate-50 whitespace-nowrap">제도 최대 한도</td>
+                            <td className="py-2.5 px-3 whitespace-nowrap">최대 5.0억 원</td>
+                            <td className="py-2.5 px-3 whitespace-nowrap">최대 3.6억 (생애최초 4.2억)</td>
+                            <td className="py-2.5 px-3 whitespace-nowrap">최대 3.0억 (신혼 4.0억)</td>
+                          </tr>
+
+                          {/* 4. 이 매물 실제 대출 가능액 */}
+                          <tr className="bg-amber-50/40">
+                            <td className="py-2.5 px-3 font-black text-slate-900 bg-amber-100/60 whitespace-nowrap">
+                              이 단지 대출가능액
+                            </td>
+                            <td className="py-2.5 px-3 font-black text-blue-700 whitespace-nowrap text-sm">
+                              {newbornLoan.isEligible ? formatMoney(newbornLoan.maxLoan) : '0원 (불가)'}
+                            </td>
+                            <td className="py-2.5 px-3 font-black text-indigo-700 whitespace-nowrap text-sm">
+                              {bogeumjariLoan.isEligible ? formatMoney(bogeumjariLoan.maxLoan) : '0원 (불가)'}
+                            </td>
+                            <td className="py-2.5 px-3 font-black text-emerald-700 whitespace-nowrap text-sm">
+                              {didimdolLoan.isEligible ? formatMoney(didimdolLoan.maxLoan) : '0원 (불가)'}
+                            </td>
+                          </tr>
+
+                          {/* 5. 적용 금리 */}
+                          <tr>
+                            <td className="py-2.5 px-3 font-bold bg-slate-50 whitespace-nowrap">적용 금리</td>
+                            <td className="py-2.5 px-3 font-extrabold text-blue-600 whitespace-nowrap">
+                              연 {newbornLoan.rate}%
+                            </td>
+                            <td className="py-2.5 px-3 font-extrabold text-indigo-600 whitespace-nowrap">
+                              고정 연 {bogeumjariLoan.rate}%
+                            </td>
+                            <td className="py-2.5 px-3 font-extrabold text-emerald-600 whitespace-nowrap">
+                              연 {didimdolLoan.rate}%
+                            </td>
+                          </tr>
+
+                          {/* 6. 월 예상 원리금 */}
+                          <tr>
+                            <td className="py-2.5 px-3 font-bold bg-slate-50 whitespace-nowrap">월 원리금 ({tenure}년)</td>
+                            <td className="py-2.5 px-3 font-bold text-slate-900 whitespace-nowrap">
+                              {newbornLoan.isEligible ? `약 ${newbornLoan.monthlyPayment.toLocaleString()}원` : '-'}
+                            </td>
+                            <td className="py-2.5 px-3 font-bold text-slate-900 whitespace-nowrap">
+                              {bogeumjariLoan.isEligible ? `약 ${bogeumjariLoan.monthlyPayment.toLocaleString()}원` : '-'}
+                            </td>
+                            <td className="py-2.5 px-3 font-bold text-slate-900 whitespace-nowrap">
+                              {didimdolLoan.isEligible ? `약 ${didimdolLoan.monthlyPayment.toLocaleString()}원` : '-'}
+                            </td>
+                          </tr>
+
+                          {/* 7. 최소 필요 현금 */}
+                          <tr>
+                            <td className="py-2.5 px-3 font-bold bg-slate-50 whitespace-nowrap">최소 필요 현금</td>
+                            <td className="py-2.5 px-3 font-extrabold text-rose-600 whitespace-nowrap">
+                              {newbornLoan.isEligible ? formatMoney(newbornLoan.requiredCash) : formatMoney(activePrice)}
+                            </td>
+                            <td className="py-2.5 px-3 font-extrabold text-rose-600 whitespace-nowrap">
+                              {bogeumjariLoan.isEligible ? formatMoney(bogeumjariLoan.requiredCash) : formatMoney(activePrice)}
+                            </td>
+                            <td className="py-2.5 px-3 font-extrabold text-rose-600 whitespace-nowrap">
+                              {didimdolLoan.isEligible ? formatMoney(didimdolLoan.requiredCash) : formatMoney(activePrice)}
+                            </td>
+                          </tr>
+
+                          {/* 8. DSR 규제 */}
+                          <tr>
+                            <td className="py-2.5 px-3 font-bold bg-slate-50 whitespace-nowrap">DSR 규제 적용</td>
+                            <td className="py-2.5 px-3 text-emerald-600 font-bold whitespace-nowrap">미적용 (DTI 60%)</td>
+                            <td className="py-2.5 px-3 text-emerald-600 font-bold whitespace-nowrap">미적용 (DTI 60%)</td>
+                            <td className="py-2.5 px-3 text-emerald-600 font-bold whitespace-nowrap">미적용 (DTI 60%)</td>
+                          </tr>
+
+                          {/* 9. 바로가기 버튼 */}
+                          <tr>
+                            <td className="py-2.5 px-3 font-bold bg-slate-50 whitespace-nowrap">견적서 보기</td>
+                            <td className="py-2.5 px-3">
+                              <button
+                                type="button"
+                                onClick={() => setSelectedLoanType('newborn')}
+                                className="px-2.5 py-1 rounded bg-blue-600 text-white font-bold text-xs hover:bg-blue-700 cursor-pointer whitespace-nowrap shadow-2xs"
+                              >
+                                신생아 견적
+                              </button>
+                            </td>
+                            <td className="py-2.5 px-3">
+                              <button
+                                type="button"
+                                onClick={() => setSelectedLoanType('bogeumjari')}
+                                className="px-2.5 py-1 rounded bg-indigo-600 text-white font-bold text-xs hover:bg-indigo-700 cursor-pointer whitespace-nowrap shadow-2xs"
+                              >
+                                보금자리 견적
+                              </button>
+                            </td>
+                            <td className="py-2.5 px-3">
+                              <button
+                                type="button"
+                                onClick={() => setSelectedLoanType('didimdol')}
+                                className="px-2.5 py-1 rounded bg-emerald-600 text-white font-bold text-xs hover:bg-emerald-700 cursor-pointer whitespace-nowrap shadow-2xs"
+                              >
+                                디딤돌 견적
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 text-slate-600">
-                    <div>
-                      <span className="text-slate-400 block whitespace-nowrap">시중은행 예상 금리</span>
-                      <span className="font-bold text-slate-800 whitespace-nowrap">연 4.30% 수준</span>
+                ) : (
+                  /* MODE B: 개별 대출 상세 시뮬레이션 카드 */
+                  <div className="space-y-4">
+                    {/* 부적격 경고 배너 */}
+                    {!activeLoan.isEligible && (
+                      <div className="bg-rose-50 border border-rose-200 rounded-xl p-3.5 space-y-2">
+                        <div className="flex items-center gap-2 text-rose-800 font-extrabold text-sm">
+                          <AlertTriangle className="w-4 h-4 text-rose-600 shrink-0" />
+                          <span>{activeLoan.name} 대상에서 제외되는 매물입니다.</span>
+                        </div>
+                        <ul className="text-xs text-rose-700 list-disc list-inside space-y-0.5">
+                          {activeLoan.reasons.map((r, i) => (
+                            <li key={i}>{r}</li>
+                          ))}
+                        </ul>
+                        {newbornLoan.isEligible && (
+                          <div className="pt-2 border-t border-rose-200 flex items-center justify-between gap-2 flex-wrap text-xs">
+                            <span className="text-blue-900 font-bold">
+                              💡 신생아 특례대출(9억 이하)로는 최대 {formatMoney(newbornLoan.maxLoan)}까지 대출 가능합니다!
+                            </span>
+                            <button
+                              type="button"
+                              onClick={() => setSelectedLoanType('newborn')}
+                              className="px-3 py-1 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 cursor-pointer whitespace-nowrap"
+                            >
+                              신생아 특례 견적으로 전환
+                            </button>
+                          </div>
+                        )}
+                      </div>
+                    )}
+
+                    {/* 3대 핵심 지표 카드 */}
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 sm:gap-4">
+                      <div className="bg-white p-4 rounded-xl border border-blue-200 shadow-xs">
+                        <span className="text-xs font-medium text-slate-500 whitespace-nowrap">최대 대출 가능 금액</span>
+                        <div className={`text-2xl font-black mt-1 whitespace-nowrap ${activeLoan.isEligible ? 'text-blue-700' : 'text-slate-400'}`}>
+                          {activeLoan.isEligible ? formatMoney(maxLoan) : '대출 불가'}
+                        </div>
+                        <div className="text-xs text-slate-500 mt-1 flex items-center gap-1 flex-wrap">
+                          <span>LTV {activeLoan.ltvRatio}% ({valuationBasis} {formatMoney(appraisalPrice)})</span>
+                          <span className="text-blue-600 font-semibold">(MCG 방공제면제)</span>
+                        </div>
+                      </div>
+
+                      <div className="bg-white p-4 rounded-xl border border-blue-200 shadow-xs">
+                        <span className="text-xs font-medium text-slate-500 whitespace-nowrap">필요 자기자본 (순수 매수금)</span>
+                        <div className="text-2xl font-black text-rose-600 mt-1 whitespace-nowrap">
+                          {formatMoney(requiredCash)}
+                        </div>
+                        <div className="text-xs text-slate-500 mt-1 whitespace-nowrap">
+                          실매매가 {formatMoney(activePrice)} - 대출금
+                        </div>
+                      </div>
+
+                      <div className="bg-white p-4 rounded-xl border border-blue-200 shadow-xs">
+                        <span className="text-xs font-medium text-slate-500 whitespace-nowrap">월 예상 상환액 (원리금균등)</span>
+                        <div className="text-2xl font-black text-slate-900 mt-1 whitespace-nowrap">
+                          {activeLoan.isEligible ? `약 ${monthlyPayment.toLocaleString()}원` : '-'}
+                        </div>
+                        <div className="text-xs text-emerald-600 font-bold mt-1 whitespace-nowrap">
+                          적용 금리: {selectedLoanType === 'bogeumjari' ? '고정 ' : ''}연 {finalInterestRate}%
+                        </div>
+                      </div>
                     </div>
-                    <div>
-                      <span className="text-slate-400 block whitespace-nowrap">시중은행 월 상환액</span>
-                      <span className="font-bold text-slate-800 whitespace-nowrap">월 {marketMonthlyPayment.toLocaleString()}원</span>
-                    </div>
-                    <div>
-                      <span className="text-slate-400 block whitespace-nowrap">매월 이자 절약액</span>
-                      <span className="font-extrabold text-blue-600 whitespace-nowrap">매월 +{monthlySavings.toLocaleString()}원 절약!</span>
-                    </div>
-                    <div>
-                      <span className="text-slate-400 block whitespace-nowrap">30년 총 절감액</span>
-                      <span className="font-extrabold text-emerald-600 whitespace-nowrap">총 {formatMoney(totalSavings)} 절약!</span>
-                    </div>
+
+                    {/* 일반 은행 대출과의 비교표 */}
+                    {activeLoan.isEligible && (
+                      <div className="bg-white rounded-lg p-4 border border-blue-100 text-xs space-y-2">
+                        <div className="font-bold text-slate-800 flex items-center gap-1.5 text-sm">
+                          <Sparkles className="w-4 h-4 text-amber-500" />
+                          <span>일반 시중은행 주담대 대비 혜택 비교</span>
+                        </div>
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-2 text-slate-600">
+                          <div>
+                            <span className="text-slate-400 block whitespace-nowrap">시중은행 예상 금리</span>
+                            <span className="font-bold text-slate-800 whitespace-nowrap">연 4.30% 수준</span>
+                          </div>
+                          <div>
+                            <span className="text-slate-400 block whitespace-nowrap">시중은행 월 상환액</span>
+                            <span className="font-bold text-slate-800 whitespace-nowrap">월 {marketMonthlyPayment.toLocaleString()}원</span>
+                          </div>
+                          <div>
+                            <span className="text-slate-400 block whitespace-nowrap">매월 이자 절약액</span>
+                            <span className="font-extrabold text-blue-600 whitespace-nowrap">매월 +{monthlySavings.toLocaleString()}원 절약!</span>
+                          </div>
+                          <div>
+                            <span className="text-slate-400 block whitespace-nowrap">{tenure}년 총 절감액</span>
+                            <span className="font-extrabold text-emerald-600 whitespace-nowrap">총 {formatMoney(totalSavings)} 절약!</span>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
-                </div>
+                )}
               </div>
 
               {/* Section 3: 최종 매수 필요 현금 & 부대비용 견적서 */}

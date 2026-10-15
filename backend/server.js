@@ -4,7 +4,13 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-import { calculateNewbornLoan } from './services/loanCalculator.js';
+import { 
+  calculateNewbornLoan, 
+  calculateBogeumjariLoan, 
+  calculateDidimdolLoan, 
+  calculateAllLoans, 
+  calculateLoan 
+} from './services/loanCalculator.js';
 import { KOREA_INTEREST_RATES, getInterestRateData, scrapeInterestRateNews } from './services/interestRates.js';
 import { getPolicyData, scrapeGovernmentPolicies } from './services/policyService.js';
 
@@ -30,22 +36,23 @@ function loadPropertiesData() {
 let propertiesData = loadPropertiesData();
 
 /**
- * 1. 부동산 매물 API (서울 / 경기 신생아 특례 대상 4~8억 원대)
- * 사용자 맞춤형 소득, 만기, 생애최초 여부, MCG 가입 여부 파라미터에 따라
- * 각 매물별로 신생아 특례대출 가능액과 필요 자금을 실시간 자동 계산하여 반환
+ * 1. 부동산 매물 API (신생아 특례, HF 보금자리론, 생애최초 디딤돌 지원)
+ * 사용자 맞춤형 소득, 만기, 생애최초 여부, MCG 가입 여부, 대출 상품(loanType)에 따라
+ * 각 매물별로 대출 가능액과 필요 자금 및 3대 대출 비교를 실시간 자동 계산하여 반환
  */
 app.get('/api/properties', (req, res) => {
   propertiesData = loadPropertiesData();
   const {
-    region, // '서울' or '경기' or '전체'
-    district, // '노원구', '도봉구', '수원시' etc.
+    region, // '서울' or '경기' or '인천' or '전체'
+    district, // '노원구', '도봉구', '부천시' etc.
     minPrice = 300000000,
     maxPrice = 900000000,
     annualIncome = 80000000,
     isFirstHome = 'false',
     loanTenureYears = 30,
     useMcg = 'true',
-    preferentialDiscount = 0.2
+    preferentialDiscount = 0.2,
+    loanType = 'newborn'
   } = req.query;
 
   const parsedMinPrice = parseInt(minPrice, 10);
@@ -63,9 +70,9 @@ app.get('/api/properties', (req, res) => {
     return true;
   });
 
-  // 각 아파트별 신생아 특례대출 실시간 계산 부착
+  // 각 아파트별 대출 실시간 계산 및 3종 정책대출 비교 데이터 부착
   const results = filtered.map(item => {
-    const loanCalc = calculateNewbornLoan({
+    const loanParams = {
       propertyPrice: item.priceKrw,
       kbPrice: item.kbPrice?.generalAvg,
       areaSqMeter: item.areaSqMeter,
@@ -76,11 +83,15 @@ app.get('/api/properties', (req, res) => {
       loanTenureYears: parsedTenure,
       useMcg: parsedUseMcg,
       preferentialDiscount: parsedDiscount
-    });
+    };
+
+    const loanCalc = calculateLoan({ loanType, ...loanParams });
+    const allLoans = calculateAllLoans(loanParams);
 
     return {
       ...item,
-      loanSimulation: loanCalc
+      loanSimulation: loanCalc,
+      allLoans
     };
   });
 
@@ -91,7 +102,8 @@ app.get('/api/properties', (req, res) => {
       annualIncome: parsedIncome,
       isFirstHome: parsedIsFirstHome,
       loanTenureYears: parsedTenure,
-      useMcg: parsedUseMcg
+      useMcg: parsedUseMcg,
+      loanType
     },
     properties: results
   });
@@ -103,18 +115,34 @@ app.get('/api/properties/:id', (req, res) => {
     return res.status(404).json({ error: "매물을 찾을 수 없습니다." });
   }
 
-  // 기본 시뮬레이션 첨부 (Min[매매가, KB시세] 반영)
-  const loanCalc = calculateNewbornLoan({
+  const {
+    loanType = 'newborn',
+    annualIncome = 80000000,
+    isFirstHome = 'false',
+    loanTenureYears = 30,
+    useMcg = 'true'
+  } = req.query;
+
+  const loanParams = {
     propertyPrice: property.priceKrw,
     kbPrice: property.kbPrice?.generalAvg,
     areaSqMeter: property.areaSqMeter,
     region: property.region,
-    district: property.district
-  });
+    district: property.district,
+    annualIncome: parseInt(annualIncome, 10),
+    isFirstHome: isFirstHome === 'true',
+    loanTenureYears: parseInt(loanTenureYears, 10),
+    useMcg: useMcg === 'true',
+    preferentialDiscount: 0.2
+  };
+
+  const loanCalc = calculateLoan({ loanType, ...loanParams });
+  const allLoans = calculateAllLoans(loanParams);
 
   res.json({
     property,
-    loanSimulation: loanCalc
+    loanSimulation: loanCalc,
+    allLoans
   });
 });
 
@@ -132,14 +160,15 @@ app.post('/api/properties/calculate', (req, res) => {
     isFirstHome = false,
     loanTenureYears = 30,
     useMcg = true,
-    preferentialDiscount = 0.2
+    preferentialDiscount = 0.2,
+    loanType = 'newborn'
   } = req.body;
 
   if (!propertyPrice) {
     return res.status(400).json({ error: "propertyPrice is required" });
   }
 
-  const result = calculateNewbornLoan({
+  const loanParams = {
     propertyPrice: Number(propertyPrice),
     kbPrice: kbPrice ? Number(kbPrice) : undefined,
     areaSqMeter: Number(areaSqMeter),
@@ -150,9 +179,15 @@ app.post('/api/properties/calculate', (req, res) => {
     loanTenureYears: Number(loanTenureYears),
     useMcg: Boolean(useMcg),
     preferentialDiscount: Number(preferentialDiscount)
-  });
+  };
 
-  res.json(result);
+  const result = calculateLoan({ loanType, ...loanParams });
+  const allLoans = calculateAllLoans(loanParams);
+
+  res.json({
+    ...result,
+    allLoans
+  });
 });
 
 /**
