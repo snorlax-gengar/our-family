@@ -14,44 +14,38 @@
     "areaSqMeter": 84.76,
     "pyeong": 33,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 610000000,
-    "priceDisplay": "6억 1,000만",
-    "priceRange": "5.9억 ~ 6.3억",
+    "priceKrw": 850000000,
+    "priceDisplay": "8억 5,000만",
+    "priceRange": "8.2억 ~ 8.9억",
     "kbPrice": {
-      "generalAvg": 605000000,
-      "highAvg": 630000000,
-      "lowAvg": 580000000,
-      "jeonseAvg": 380000000,
-      "jeonseRate": 62.8,
+      "generalAvg": 850000000,
+      "highAvg": 890000000,
+      "lowAvg": 800000000,
+      "jeonseAvg": 480000000,
+      "jeonseRate": 56.5,
       "updatedAt": "2026.10"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 17,
-        "price": 615000000
+        "floor": 18,
+        "price": 865000000
       },
       {
         "date": "2026.08",
-        "floor": 8,
-        "price": 605000000
+        "floor": 11,
+        "price": 845000000
       },
       {
         "date": "2026.07",
-        "floor": 21,
-        "price": 600000000
-      },
-      {
-        "date": "2026.06",
         "floor": 5,
-        "price": 595000000
+        "price": 830000000
       }
     ],
     "highlights": [
-      "33평형 국평(전용84) 6억 초반",
-      "3,830세대 랜드마크",
-      "북한산 쾌적한 숲세권",
-      "우이신설선 단지 정문 위치"
+      "33평형 국평(전용84) 실거래 8억 중반 형성",
+      "3,830세대 랜드마크 대단지",
+      "북한산 쾌적한 숲세권 및 솔샘역 단지 정문 위치"
     ],
     "naverLandUrl": "https://fin.land.naver.com/complexes/3098",
     "kbLandUrl": "https://kbland.kr/search?keyword=SK%EB%B6%81%ED%95%9C%EC%82%B0%EC%8B%9C%ED%8B%B0",
@@ -5853,45 +5847,45 @@
     "dong": "미아동",
     "address": "서울특별시 강북구 솔샘로 174",
     "buildYear": 2004,
-    "totalUnits": 5327,
+    "totalUnits": 3830,
     "totalFloors": 25,
     "subwayStation": "솔샘역 (우이신설선)",
     "subwayDistance": "도보 3분 (초역세권)",
     "areaSqMeter": 59.98,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 535000000,
-    "priceDisplay": "5억 3,500만",
-    "priceRange": "5.1억 ~ 5.6억",
+    "priceKrw": 680000000,
+    "priceDisplay": "6억 8,000만",
+    "priceRange": "6.5억 ~ 7.2억",
     "kbPrice": {
-      "generalAvg": 540000000,
-      "highAvg": 565000000,
-      "lowAvg": 515000000,
-      "jeonseAvg": 360000000,
-      "jeonseRate": 66.7,
+      "generalAvg": 680000000,
+      "highAvg": 715000000,
+      "lowAvg": 645000000,
+      "jeonseAvg": 385000000,
+      "jeonseRate": 56.6,
       "updatedAt": "2026.10"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 540000000
+        "floor": 12,
+        "price": 695000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 535000000
+        "floor": 15,
+        "price": 680000000
       },
       {
         "date": "2026.06",
-        "floor": 5,
-        "price": 528000000
+        "floor": 7,
+        "price": 665000000
       }
     ],
     "highlights": [
-      "5,327세대 메가톤급 대단지 24평형 계단식 3-Bay",
+      "3,830세대 메가톤급 대단지 24평형 계단식 3-Bay",
       "솔샘역 도보 3분 초역세권 및 미아초·미양중고 학세권",
-      "보금자리론 6억 이하 & 생애최초 디딤돌(신혼 6억) 완벽 충족!"
+      "실거래 6억 후반 형성 (6억 초과 토글 시 확인 가능)"
     ],
     "naverLandUrl": "https://fin.land.naver.com/complexes/3098",
     "naverMobileUrl": "https://m.land.naver.com/complex/info/3098",
@@ -5910,9 +5904,9 @@
       "livingRoomWidth": "3.8m",
       "masterBedroomWidth": "3.5m",
       "features": [
-        "5,327세대 메가톤급 대단지 24평형 계단식 3-Bay",
+        "3,830세대 메가톤급 대단지 24평형 계단식 3-Bay",
         "솔샘역 도보 3분 초역세권 및 미아초·미양중고 학세권",
-        "보금자리론 6억 이하 & 생애최초 디딤돌(신혼 6억) 완벽 충족!"
+        "실거래 6억 후반 형성 (6억 초과 토글 시 확인 가능)"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
     },
