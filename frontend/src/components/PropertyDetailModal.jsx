@@ -46,8 +46,11 @@ export default function PropertyDetailModal({
   const prop = activeProperty;
   const sim = prop.loanSimulation || {};
   const kb = prop.kbPrice || {};
-  const cleanPropertyName = (prop.name || '').replace(/\s*\(\d+평형?\)/g, '');
-  const kbSearchUrl = prop.kbLandUrl || `https://kbland.kr/search?keyword=${encodeURIComponent(cleanPropertyName)}`;
+  const cleanPropertyName = (prop.name || '')
+    .replace(/\s*\(\d+평형?\).*$/, '')
+    .replace(/\s*\d+평형?.*$/, '')
+    .trim();
+  const kbSearchUrl = `https://kbland.kr/search?keyword=${encodeURIComponent(cleanPropertyName)}`;
 
   // 사용자 직접 입력 가격 vs 기본 데이터베이스 가격
   const activePrice = customPrice !== null ? customPrice : prop.priceKrw;

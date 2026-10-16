@@ -1,7 +1,7 @@
 [
   {
     "id": "seoul-gangbuk-mia-sk",
-    "name": "SK북한산시티",
+    "name": "SK북한산시티 (33평)",
     "region": "서울",
     "district": "강북구",
     "dong": "미아동",
@@ -81,7 +81,7 @@
   },
   {
     "id": "seoul-guro-gaebong-hyundai",
-    "name": "개봉현대아파트",
+    "name": "개봉현대아파트 (33평)",
     "region": "서울",
     "district": "구로구",
     "dong": "개봉동",
@@ -161,7 +161,7 @@
   },
   {
     "id": "seoul-geumcheon-siheung-byucksan",
-    "name": "관악산벽산타운5단지",
+    "name": "관악산벽산타운5단지 (32평)",
     "region": "서울",
     "district": "금천구",
     "dong": "시흥동",
@@ -236,7 +236,7 @@
   },
   {
     "id": "seoul-eunpyeong-nokbeon-jr",
-    "name": "백련산힐스테이트 1차",
+    "name": "백련산힐스테이트1차 (25평)",
     "region": "서울",
     "district": "은평구",
     "dong": "응암동",
@@ -284,7 +284,7 @@
       "쾌적한 조경 및 커뮤니티"
     ],
     "naverLandUrl": "https://fin.land.naver.com/complexes/27501",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B0%B1%EB%A0%A8%EC%82%B0%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8%201%EC%B0%A8",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B0%B1%EB%A0%A8%EC%82%B0%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B81%EC%B0%A8",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.88㎡ (공급 25평형) 3-Bay 준신축 혁신 평면도",
@@ -311,7 +311,7 @@
   },
   {
     "id": "seoul-jungnang-sinnae-dongsung",
-    "name": "신내동성아파트",
+    "name": "신내동성아파트 (32평)",
     "region": "서울",
     "district": "중랑구",
     "dong": "신내동",
@@ -386,7 +386,7 @@
   },
   {
     "id": "gyeonggi-goyang-deokyang-muwon-6",
-    "name": "무원마을 6단지 두산",
+    "name": "무원마을6단지 두산 (32평)",
     "region": "경기",
     "district": "고양시 덕양구",
     "dong": "행신동",
@@ -434,7 +434,7 @@
       "평지 대단지"
     ],
     "naverLandUrl": "https://fin.land.naver.com/complexes/1529",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%AC%B4%EC%9B%90%EB%A7%88%EC%9D%84%206%EB%8B%A8%EC%A7%80%20%EB%91%90%EC%82%B0",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%AC%B4%EC%9B%90%EB%A7%88%EC%9D%846%EB%8B%A8%EC%A7%80%20%EB%91%90%EC%82%B0",
     "floorPlan": {
       "type": "84_3bay",
       "title": "전용 84.78㎡ (공급 32평형) 3-Bay 판상형 평면도",
@@ -461,7 +461,7 @@
   },
   {
     "id": "gyeonggi-suwon-maetan-weve",
-    "name": "매탄위브하늘채",
+    "name": "매탄위브하늘채 (25평)",
     "region": "경기",
     "district": "수원시 영통구",
     "dong": "매탄동",
@@ -536,7 +536,7 @@
   },
   {
     "id": "gyeonggi-anyang-dongan-bisan-raemian",
-    "name": "비산삼성래미안",
+    "name": "비산삼성래미안 (24평)",
     "region": "경기",
     "district": "안양시 동안구",
     "dong": "비산동",
@@ -611,7 +611,7 @@
   },
   {
     "id": "gyeonggi-yongin-giheung-newmillennium-5",
-    "name": "새천년그린빌 5단지",
+    "name": "새천년그린빌5단지 (32평)",
     "region": "경기",
     "district": "용인시 기흥구",
     "dong": "신갈동",
@@ -659,7 +659,7 @@
       "수원신갈IC 인접"
     ],
     "naverLandUrl": "https://fin.land.naver.com/complexes/3689",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%83%88%EC%B2%9C%EB%85%84%EA%B7%B8%EB%A6%B0%EB%B9%8C%205%EB%8B%A8%EC%A7%80",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%83%88%EC%B2%9C%EB%85%84%EA%B7%B8%EB%A6%B0%EB%B9%8C5%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "84_3bay",
       "title": "전용 84.81㎡ (공급 32평형) 3-Bay 가성비 판상형 평면도",
@@ -686,7 +686,7 @@
   },
   {
     "id": "gyeonggi-siheung-baegot-halla-1",
-    "name": "시흥배곧한라비발디 1차",
+    "name": "시흥배곧한라비발디1차 (35평)",
     "region": "경기",
     "district": "시흥시",
     "dong": "배곧동",
@@ -734,7 +734,7 @@
       "배곧 생명공원 슬세권"
     ],
     "naverLandUrl": "https://fin.land.naver.com/complexes/109216",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8B%9C%ED%9D%A5%EB%B0%B0%EA%B3%A7%ED%95%9C%EB%9D%BC%EB%B9%84%EB%B0%9C%EB%94%94%201%EC%B0%A8",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8B%9C%ED%9D%A5%EB%B0%B0%EA%B3%A7%ED%95%9C%EB%9D%BC%EB%B9%84%EB%B0%9C%EB%94%941%EC%B0%A8",
     "floorPlan": {
       "type": "84_4bay",
       "title": "전용 84.88㎡ (공급 35평형) 4-Bay 최신 혁신 맞통풍 평면도",
@@ -761,7 +761,7 @@
   },
   {
     "id": "gyeonggi-gimpo-pungmu-prugio",
-    "name": "풍무센트럴푸르지오",
+    "name": "풍무센트럴푸르지오 (25평)",
     "region": "경기",
     "district": "김포시",
     "dong": "풍무동",
@@ -836,7 +836,7 @@
   },
   {
     "id": "gyeonggi-hwaseong-dongtan-solbit-seohae",
-    "name": "동탄솔빛마을 서해그랑블",
+    "name": "동탄솔빛마을 서해그랑블 (33평)",
     "region": "경기",
     "district": "화성시",
     "dong": "반송동",
@@ -911,7 +911,7 @@
   },
   {
     "id": "gyeonggi-namyangju-dasan-nature-epyeonhan",
-    "name": "다산자연앤e편한세상",
+    "name": "다산자연앤e편한세상 (25평)",
     "region": "경기",
     "district": "남양주시",
     "dong": "다산동",
@@ -986,7 +986,7 @@
   },
   {
     "id": "seoul-dobong-banghak-shindonga-2",
-    "name": "방학신동아2단지",
+    "name": "방학신동아2단지 (31평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "방학동",
@@ -1066,7 +1066,7 @@
   },
   {
     "id": "seoul-dobong-banghak-shindonga-3",
-    "name": "방학신동아3단지",
+    "name": "방학신동아3단지 (29평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "방학동",
@@ -1141,7 +1141,7 @@
   },
   {
     "id": "seoul-dobong-banghak-woosung-1",
-    "name": "방학우성1차아파트",
+    "name": "방학우성1차아파트 (31평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "방학동",
@@ -1221,7 +1221,7 @@
   },
   {
     "id": "seoul-dobong-banghak-woosung-2",
-    "name": "방학우성2차아파트",
+    "name": "방학우성2차아파트 (32평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "방학동",
@@ -1301,7 +1301,7 @@
   },
   {
     "id": "seoul-dobong-banghak-cheonggu",
-    "name": "방학청구아파트",
+    "name": "방학청구아파트 (31평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "방학동",
@@ -1381,7 +1381,7 @@
   },
   {
     "id": "seoul-dobong-banghak-byucksan-1",
-    "name": "방학벽산1단지",
+    "name": "방학벽산1단지 (26평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "방학동",
@@ -1456,7 +1456,7 @@
   },
   {
     "id": "seoul-dobong-banghak-geoseong",
-    "name": "방학거성학마을",
+    "name": "방학거성학마을 (32평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "방학동",
@@ -1531,7 +1531,7 @@
   },
   {
     "id": "seoul-dobong-ssangmun-hanyang-6",
-    "name": "쌍문한양6차아파트",
+    "name": "쌍문한양6차아파트 (29평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "쌍문동",
@@ -1606,7 +1606,7 @@
   },
   {
     "id": "seoul-dobong-ssangmun-hyundai-1-26",
-    "name": "방학·쌍문 현대1차",
+    "name": "방학·쌍문 현대1차 (26평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "쌍문동 (방학경계)",
@@ -1681,7 +1681,7 @@
   },
   {
     "id": "seoul-dobong-ssangmun-hyundai-1-30",
-    "name": "방학·쌍문 현대1차",
+    "name": "방학·쌍문 현대1차 (30평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "쌍문동 (방학경계)",
@@ -1756,7 +1756,7 @@
   },
   {
     "id": "seoul-dobong-ssangmun-hyundai-2",
-    "name": "방학·쌍문 현대2차",
+    "name": "방학·쌍문 현대2차 (30평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "쌍문동 (방학경계)",
@@ -1831,7 +1831,7 @@
   },
   {
     "id": "gyeonggi-bucheon-boram-ajou-23",
-    "name": "보람마을 아주",
+    "name": "보람마을 아주 (23평)",
     "region": "경기",
     "district": "부천시 원미구",
     "dong": "중동",
@@ -1878,9 +1878,9 @@
       "부천 중앙공원·현대백화점·순천향대병원 도보 5분",
       "4억대 7호선 초역세권 신혼부부 최고 인기"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%B3%B4%EB%9E%8C%EB%A7%88%EC%9D%84%20%EC%95%84%EC%A3%BC%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%B3%B4%EB%9E%8C%EB%A7%88%EC%9D%84%20%EC%95%84%EC%A3%BC%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B3%B4%EB%9E%8C%EB%A7%88%EC%9D%84%20%EC%95%84%EC%A3%BC%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1425",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1425",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B3%B4%EB%9E%8C%EB%A7%88%EC%9D%84%20%EC%95%84%EC%A3%BC",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.94㎡ (공급 23평형) 3-Bay 실속 판상형 평면도",
@@ -1900,11 +1900,12 @@
         "순천향대 부천병원 인접",
         "1,398세대 랜드마크"
       ]
-    }
+    },
+    "naverComplexNo": "1425"
   },
   {
     "id": "gyeonggi-bucheon-boram-ajou-31",
-    "name": "보람마을 아주",
+    "name": "보람마을 아주 (31평)",
     "region": "경기",
     "district": "부천시 원미구",
     "dong": "중동",
@@ -1951,9 +1952,9 @@
       "부천 최고 중심지 프리미엄 인프라",
       "순천향대병원·백화점 도보 5분"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%B3%B4%EB%9E%8C%EB%A7%88%EC%9D%84%20%EC%95%84%EC%A3%BC%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%B3%B4%EB%9E%8C%EB%A7%88%EC%9D%84%20%EC%95%84%EC%A3%BC%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B3%B4%EB%9E%8C%EB%A7%88%EC%9D%84%20%EC%95%84%EC%A3%BC%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1425",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1425",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B3%B4%EB%9E%8C%EB%A7%88%EC%9D%84%20%EC%95%84%EC%A3%BC",
     "floorPlan": {
       "type": "84_3bay",
       "title": "전용 84.86㎡ (공급 31평형) 3-Bay 판상형 평면도",
@@ -1973,11 +1974,12 @@
         "중앙공원 영구 생활권",
         "부천시청역 역세권"
       ]
-    }
+    },
+    "naverComplexNo": "1425"
   },
   {
     "id": "gyeonggi-bucheon-hanareum-samwhan-24",
-    "name": "한아름마을 삼환",
+    "name": "한아름마을 삼환 (24평)",
     "region": "경기",
     "district": "부천시 원미구",
     "dong": "상동",
@@ -2019,8 +2021,8 @@
       "상동호수공원·웅진플레이도시 인접",
       "4억 초반대 상동 대단지 최고 가성비"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%ED%95%9C%EC%95%84%EB%A6%84%EB%A7%88%EC%9D%84%20%EC%82%BC%ED%99%98",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%ED%95%9C%EC%95%84%EB%A6%84%EB%A7%88%EC%9D%84%20%EC%82%BC%ED%99%98",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1404",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1404",
     "kbLandUrl": "https://kbland.kr/search?keyword=%ED%95%9C%EC%95%84%EB%A6%84%EB%A7%88%EC%9D%84%20%EC%82%BC%ED%99%98",
     "floorPlan": {
       "type": "59_3bay",
@@ -2041,11 +2043,12 @@
         "상미초 도보 3분",
         "1,236세대 대단지"
       ]
-    }
+    },
+    "naverComplexNo": "1404"
   },
   {
     "id": "gyeonggi-bucheon-hanareum-samwhan-31",
-    "name": "한아름마을 삼환",
+    "name": "한아름마을 삼환 (31평)",
     "region": "경기",
     "district": "부천시 원미구",
     "dong": "상동",
@@ -2087,8 +2090,8 @@
       "송내IC 외곽순환도로 진출입 최적",
       "상동 학원가 도보 이용 가능"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%ED%95%9C%EC%95%84%EB%A6%84%EB%A7%88%EC%9D%84%20%EC%82%BC%ED%99%98",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%ED%95%9C%EC%95%84%EB%A6%84%EB%A7%88%EC%9D%84%20%EC%82%BC%ED%99%98",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1404",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1404",
     "kbLandUrl": "https://kbland.kr/search?keyword=%ED%95%9C%EC%95%84%EB%A6%84%EB%A7%88%EC%9D%84%20%EC%82%BC%ED%99%98",
     "floorPlan": {
       "type": "84_3bay",
@@ -2109,11 +2112,12 @@
         "외곽순환도로 진입 용이",
         "상동역 상권 도보권"
       ]
-    }
+    },
+    "naverComplexNo": "1404"
   },
   {
     "id": "gyeonggi-bucheon-mirinae-eunhasu-24",
-    "name": "미리내마을 은하수타운",
+    "name": "미리내마을 은하수타운 (24평)",
     "region": "경기",
     "district": "부천시 원미구",
     "dong": "중동",
@@ -2155,8 +2159,8 @@
       "계남초·중·고 명문 학군 밀집",
       "가산디지털단지·강남 출퇴근 최적"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%AF%B8%EB%A6%AC%EB%82%B4%EB%A7%88%EC%9D%84%20%EC%9D%80%ED%95%98%EC%88%98%ED%83%80%EC%9A%B4",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%AF%B8%EB%A6%AC%EB%82%B4%EB%A7%88%EC%9D%84%20%EC%9D%80%ED%95%98%EC%88%98%ED%83%80%EC%9A%B4",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/8283",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/8283",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%AF%B8%EB%A6%AC%EB%82%B4%EB%A7%88%EC%9D%84%20%EC%9D%80%ED%95%98%EC%88%98%ED%83%80%EC%9A%B4",
     "floorPlan": {
       "type": "59_3bay",
@@ -2177,11 +2181,12 @@
         "계남학군 밀집",
         "미리내공원 인접"
       ]
-    }
+    },
+    "naverComplexNo": "8283"
   },
   {
     "id": "gyeonggi-bucheon-mirinae-eunhasu-32",
-    "name": "미리내마을 은하수타운",
+    "name": "미리내마을 은하수타운 (32평)",
     "region": "경기",
     "district": "부천시 원미구",
     "dong": "중동",
@@ -2223,8 +2228,8 @@
       "부천 최고 학원가 도보 통학",
       "단지 내 조경 및 보차분리 쾌적"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%AF%B8%EB%A6%AC%EB%82%B4%EB%A7%88%EC%9D%84%20%EC%9D%80%ED%95%98%EC%88%98%ED%83%80%EC%9A%B4",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%AF%B8%EB%A6%AC%EB%82%B4%EB%A7%88%EC%9D%84%20%EC%9D%80%ED%95%98%EC%88%98%ED%83%80%EC%9A%B4",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/8283",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/8283",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%AF%B8%EB%A6%AC%EB%82%B4%EB%A7%88%EC%9D%84%20%EC%9D%80%ED%95%98%EC%88%98%ED%83%80%EC%9A%B4",
     "floorPlan": {
       "type": "84_3bay",
@@ -2245,11 +2250,12 @@
         "계남초·중·고 인접",
         "전세가율 70% 탄탄"
       ]
-    }
+    },
+    "naverComplexNo": "8283"
   },
   {
     "id": "gyeonggi-bucheon-yeonhwa-ssangyong-26",
-    "name": "연화마을 쌍용",
+    "name": "연화마을 쌍용 (26평)",
     "region": "경기",
     "district": "부천시 원미구",
     "dong": "중동",
@@ -2291,8 +2297,8 @@
       "중흥초·중 도보 통학 안심 단지",
       "7호선 역세권 1천 세대 명품 주거지"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%97%B0%ED%99%94%EB%A7%88%EC%9D%84%20%EC%8C%8D%EC%9A%A9",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%97%B0%ED%99%94%EB%A7%88%EC%9D%84%20%EC%8C%8D%EC%9A%A9",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1430",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1430",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%97%B0%ED%99%94%EB%A7%88%EC%9D%84%20%EC%8C%8D%EC%9A%A9",
     "floorPlan": {
       "type": "59_3bay",
@@ -2313,11 +2319,12 @@
         "부천아트센터 인접",
         "7호선 더블역세권"
       ]
-    }
+    },
+    "naverComplexNo": "1430"
   },
   {
     "id": "gyeonggi-bucheon-yeonhwa-ssangyong-32",
-    "name": "연화마을 쌍용",
+    "name": "연화마을 쌍용 (32평)",
     "region": "경기",
     "district": "부천시 원미구",
     "dong": "중동",
@@ -2359,8 +2366,8 @@
       "재건축 선도 추진 중동 핵심 입지",
       "전세가율 70% 탄탄한 실거주 만족도"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%97%B0%ED%99%94%EB%A7%88%EC%9D%84%20%EC%8C%8D%EC%9A%A9",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%97%B0%ED%99%94%EB%A7%88%EC%9D%84%20%EC%8C%8D%EC%9A%A9",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1430",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1430",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%97%B0%ED%99%94%EB%A7%88%EC%9D%84%20%EC%8C%8D%EC%9A%A9",
     "floorPlan": {
       "type": "84_3bay",
@@ -2381,11 +2388,12 @@
         "명문 중흥학군",
         "1,056세대 대단지"
       ]
-    }
+    },
+    "naverComplexNo": "1430"
   },
   {
     "id": "gyeonggi-bucheon-songnae-newseoul-26",
-    "name": "송내뉴서울아파트",
+    "name": "송내뉴서울아파트 (26평)",
     "region": "경기",
     "district": "부천시 소사구",
     "dong": "송내동",
@@ -2427,8 +2435,8 @@
       "송내초 도보 2분 안전 통학",
       "4억대 초반 1천세대 가성비 최강"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%86%A1%EB%82%B4%EB%89%B4%EC%84%9C%EC%9A%B8%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%86%A1%EB%82%B4%EB%89%B4%EC%84%9C%EC%9A%B8%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1704",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1704",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%86%A1%EB%82%B4%EB%89%B4%EC%84%9C%EC%9A%B8%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
@@ -2449,11 +2457,12 @@
         "1,040세대 대단지",
         "서울 직통 1호선"
       ]
-    }
+    },
+    "naverComplexNo": "1704"
   },
   {
     "id": "gyeonggi-bucheon-songnae-newseoul-31",
-    "name": "송내뉴서울아파트",
+    "name": "송내뉴서울아파트 (31평)",
     "region": "경기",
     "district": "부천시 소사구",
     "dong": "송내동",
@@ -2495,8 +2504,8 @@
       "부천여고·송내고 인접 학군",
       "서울 접근성 탁월한 1호선 라인"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%86%A1%EB%82%B4%EB%89%B4%EC%84%9C%EC%9A%B8%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%86%A1%EB%82%B4%EB%89%B4%EC%84%9C%EC%9A%B8%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1704",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1704",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%86%A1%EB%82%B4%EB%89%B4%EC%84%9C%EC%9A%B8%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "84_3bay",
@@ -2517,11 +2526,12 @@
         "5억 초반 국평",
         "1호선 급행 인접"
       ]
-    }
+    },
+    "naverComplexNo": "1704"
   },
   {
     "id": "gyeonggi-bucheon-sosa-jugong2-24",
-    "name": "소사주공 2단지",
+    "name": "소사주공1단지 (24평)",
     "region": "경기",
     "district": "부천시 소사구",
     "dong": "소사본동",
@@ -2563,9 +2573,9 @@
       "소사초·부원초 더블 학군 통학로",
       "성주산 쾌적한 숲세권 힐링 단지"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%86%8C%EC%82%AC%EC%A3%BC%EA%B3%B52%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%86%8C%EC%82%AC%EC%A3%BC%EA%B3%B52%EB%8B%A8%EC%A7%80",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%86%8C%EC%82%AC%EC%A3%BC%EA%B3%B52%EB%8B%A8%EC%A7%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3960",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3960",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%86%8C%EC%82%AC%EC%A3%BC%EA%B3%B51%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.85㎡ (공급 24평형) 3-Bay 판상형 평면도",
@@ -2585,11 +2595,12 @@
         "3억대 가성비",
         "성주산 숲세권"
       ]
-    }
+    },
+    "naverComplexNo": "3960"
   },
   {
     "id": "gyeonggi-bucheon-sosa-jugong2-32",
-    "name": "소사주공 2단지",
+    "name": "소사주공1단지 (32평)",
     "region": "경기",
     "district": "부천시 소사구",
     "dong": "소사본동",
@@ -2631,9 +2642,9 @@
       "1,104세대 대단지 관리비 절감",
       "소사종합시장 등 생활 편의시설 인접"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%86%8C%EC%82%AC%EC%A3%BC%EA%B3%B52%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%86%8C%EC%82%AC%EC%A3%BC%EA%B3%B52%EB%8B%A8%EC%A7%80",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%86%8C%EC%82%AC%EC%A3%BC%EA%B3%B52%EB%8B%A8%EC%A7%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3960",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3960",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%86%8C%EC%82%AC%EC%A3%BC%EA%B3%B51%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "84_3bay",
       "title": "전용 84.90㎡ (공급 32평형) 3-Bay 판상형 평면도",
@@ -2653,11 +2664,12 @@
         "전세가율 71% 안전",
         "소사초 도보 통학"
       ]
-    }
+    },
+    "naverComplexNo": "3960"
   },
   {
     "id": "incheon-bupyeong-donga1-28",
-    "name": "부평동아 1단지",
+    "name": "부평동아1단지 (28평)",
     "region": "인천",
     "district": "부평구",
     "dong": "부평동",
@@ -2699,8 +2711,8 @@
       "모다백화점·부평문화의거리·부평공원 슬세권",
       "GTX-B 부평역 환승센터 미래비전"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%B6%80%ED%8F%89%EB%8F%99%EC%95%841%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%B6%80%ED%8F%89%EB%8F%99%EC%95%841%EB%8B%A8%EC%A7%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/2330",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/2330",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B6%80%ED%8F%89%EB%8F%99%EC%95%841%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
@@ -2721,11 +2733,12 @@
         "GTX-B 복합환승 수혜",
         "부평문화의거리 인접"
       ]
-    }
+    },
+    "naverComplexNo": "2330"
   },
   {
     "id": "incheon-bupyeong-donga1-31",
-    "name": "부평동아 1단지",
+    "name": "부평동아1단지 (31평)",
     "region": "인천",
     "district": "부평구",
     "dong": "부평동",
@@ -2767,8 +2780,8 @@
       "부평서초·부원중 도보 통학권",
       "부평 최고 입지 대단지 프리미엄"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%B6%80%ED%8F%89%EB%8F%99%EC%95%841%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%B6%80%ED%8F%89%EB%8F%99%EC%95%841%EB%8B%A8%EC%A7%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/2330",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/2330",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B6%80%ED%8F%89%EB%8F%99%EC%95%841%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "84_3bay",
@@ -2789,11 +2802,12 @@
         "부평역 더블역세권",
         "2,475세대 랜드마크"
       ]
-    }
+    },
+    "naverComplexNo": "2330"
   },
   {
     "id": "incheon-bupyeong-sangok-hyundai3-26",
-    "name": "산곡현대 3차",
+    "name": "산곡현대3차 (26평)",
     "region": "인천",
     "district": "부평구",
     "dong": "산곡동",
@@ -2835,8 +2849,8 @@
       "마장초·산곡남중 도보 3분 안심학군",
       "원적산 체육공원 힐링 숲세권"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%82%B0%EA%B3%A1%ED%98%84%EB%8C%803%EC%B0%A8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%82%B0%EA%B3%A1%ED%98%84%EB%8C%803%EC%B0%A8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/2349",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/2349",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%82%B0%EA%B3%A1%ED%98%84%EB%8C%803%EC%B0%A8",
     "floorPlan": {
       "type": "59_3bay",
@@ -2857,11 +2871,12 @@
         "마장초 도보 3분",
         "원적산 숲세권"
       ]
-    }
+    },
+    "naverComplexNo": "2349"
   },
   {
     "id": "incheon-bupyeong-sangok-hyundai3-30",
-    "name": "산곡현대 3차",
+    "name": "산곡현대3차 (30평)",
     "region": "인천",
     "district": "부평구",
     "dong": "산곡동",
@@ -2903,8 +2918,8 @@
       "1,110세대 대단지 안정적 주거환경",
       "산곡동 재개발 촉진지구 인프라 확장"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%82%B0%EA%B3%A1%ED%98%84%EB%8C%803%EC%B0%A8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%82%B0%EA%B3%A1%ED%98%84%EB%8C%803%EC%B0%A8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/2349",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/2349",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%82%B0%EA%B3%A1%ED%98%84%EB%8C%803%EC%B0%A8",
     "floorPlan": {
       "type": "84_3bay",
@@ -2925,11 +2940,12 @@
         "필요현금 1억대 초반",
         "1,110세대 대단지"
       ]
-    }
+    },
+    "naverComplexNo": "2349"
   },
   {
     "id": "incheon-bupyeong-samsantown6-32a",
-    "name": "삼산타운 6단지",
+    "name": "삼산타운6단지 (32평)",
     "region": "인천",
     "district": "부평구",
     "dong": "삼산동",
@@ -2971,8 +2987,8 @@
       "진산중·삼산고 명문 학군 밀집",
       "2004년식 깔끔한 계단식 판상형 대단지"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%82%BC%EC%82%B0%ED%83%80%EC%9A%B46%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%82%BC%EC%82%B0%ED%83%80%EC%9A%B46%EB%8B%A8%EC%A7%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/10414",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/10414",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%82%BC%EC%82%B0%ED%83%80%EC%9A%B46%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "84_3bay",
@@ -2993,79 +3009,12 @@
         "안방 드레스룸·욕실",
         "1,180세대 랜드마크"
       ]
-    }
-  },
-  {
-    "id": "incheon-bupyeong-samsantown6-32b",
-    "name": "삼산타운 6단지",
-    "region": "인천",
-    "district": "부평구",
-    "dong": "삼산동",
-    "address": "인천광역시 부평구 충선로 161",
-    "buildYear": 2004,
-    "totalUnits": 1180,
-    "totalFloors": 25,
-    "subwayStation": "굴포천역 (7호선)",
-    "subwayDistance": "도보 6분 (역세권)",
-    "areaSqMeter": 84.85,
-    "pyeong": 32,
-    "rooms": "방 3 / 욕실 2",
-    "priceKrw": 630000000,
-    "priceDisplay": "6억 3,000만",
-    "priceRange": "6.1억 ~ 6.5억",
-    "kbPrice": {
-      "generalAvg": 635000000,
-      "highAvg": 670000000,
-      "lowAvg": 595000000,
-      "jeonseAvg": 430000000,
-      "jeonseRate": 67.7,
-      "updatedAt": "2026.10"
     },
-    "recentTrades": [
-      {
-        "date": "2026.09",
-        "floor": 15,
-        "price": 635000000
-      },
-      {
-        "date": "2026.07",
-        "floor": 6,
-        "price": 625000000
-      }
-    ],
-    "highlights": [
-      "삼산타운6단지 타워형 실속 B타입",
-      "남동향 파노라마 공원 조망권",
-      "굴포천역 도보 역세권 7호선 이용",
-      "삼산택지 인프라 완성형 주거단지"
-    ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%82%BC%EC%82%B0%ED%83%80%EC%9A%B46%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%82%BC%EC%82%B0%ED%83%80%EC%9A%B46%EB%8B%A8%EC%A7%80",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%82%BC%EC%82%B0%ED%83%80%EC%9A%B46%EB%8B%A8%EC%A7%80",
-    "floorPlan": {
-      "type": "84_3bay",
-      "title": "전용 84.85㎡ (공급 32평형 B) 타워형 평면도",
-      "bay": "타워형",
-      "structure": "타워형 계단식",
-      "entrance": "계단식",
-      "roomsCount": 3,
-      "bathroomsCount": 2,
-      "kitchenType": "대면형 오픈 주방",
-      "ventilation": "2면 개방형 조망 환기",
-      "balconyStatus": "광폭 서비스 발코니",
-      "livingRoomWidth": "4.6m",
-      "masterBedroomWidth": "3.8m",
-      "features": [
-        "2면 개방 파노라마 조망",
-        "7호선 굴포천역 역세권",
-        "부평 대장 단지",
-        "신혼부부 선호 구조"
-      ]
-    }
+    "naverComplexNo": "10414"
   },
   {
     "id": "incheon-gyeyang-jakjeon-hyundai2-25",
-    "name": "작전현대 2차",
+    "name": "작전현대2차 (25평)",
     "region": "인천",
     "district": "계양구",
     "dong": "작전동",
@@ -3107,8 +3056,8 @@
       "작전초 품은 안심 등하굣길",
       "3억 초반대 실속형 1,220세대 대단지"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%9E%91%EC%A0%84%ED%98%84%EB%8C%802%EC%B0%A8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%9E%91%EC%A0%84%ED%98%84%EB%8C%802%EC%B0%A8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/2441",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/2441",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%9E%91%EC%A0%84%ED%98%84%EB%8C%802%EC%B0%A8",
     "floorPlan": {
       "type": "59_3bay",
@@ -3129,11 +3078,12 @@
         "작전초 초품아",
         "3억 초반 가성비"
       ]
-    }
+    },
+    "naverComplexNo": "2441"
   },
   {
     "id": "incheon-gyeyang-jakjeon-hyundai2-31",
-    "name": "작전현대 2차",
+    "name": "작전현대2차 (31평)",
     "region": "인천",
     "district": "계양구",
     "dong": "작전동",
@@ -3175,8 +3125,8 @@
       "경인고속도로 부평IC 인접 자차 통근 편리",
       "계양 테크노밸리 배후 수혜단지"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EC%9E%91%EC%A0%84%ED%98%84%EB%8C%802%EC%B0%A8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%9E%91%EC%A0%84%ED%98%84%EB%8C%802%EC%B0%A8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/2441",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/2441",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%9E%91%EC%A0%84%ED%98%84%EB%8C%802%EC%B0%A8",
     "floorPlan": {
       "type": "84_3bay",
@@ -3197,11 +3147,12 @@
         "작전역 초역세권",
         "1,220세대 대단지"
       ]
-    }
+    },
+    "naverComplexNo": "2441"
   },
   {
     "id": "incheon-yeonsu-dongchun-hyundai1-26",
-    "name": "동춘현대 1차",
+    "name": "동춘현대1차 (26평)",
     "region": "인천",
     "district": "연수구",
     "dong": "동춘동",
@@ -3243,8 +3194,8 @@
       "이마트·스퀘어원 대형 복합쇼핑몰 도보 7분",
       "동춘초·연수여고 도보 안심학군"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%8F%99%EC%B6%98%ED%98%84%EB%8C%801%EC%B0%A8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%8F%99%EC%B6%98%ED%98%84%EB%8C%801%EC%B0%A8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/2295",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/2295",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8F%99%EC%B6%98%ED%98%84%EB%8C%801%EC%B0%A8",
     "floorPlan": {
       "type": "59_3bay",
@@ -3265,11 +3216,12 @@
         "스퀘어원 쇼핑몰 도보권",
         "3억대 가성비"
       ]
-    }
+    },
+    "naverComplexNo": "2295"
   },
   {
     "id": "incheon-yeonsu-dongchun-hyundai1-32",
-    "name": "동춘현대 1차",
+    "name": "동춘현대1차 (32평)",
     "region": "인천",
     "district": "연수구",
     "dong": "동춘동",
@@ -3311,8 +3263,8 @@
       "연수지구 노후계획도시 재건축 수혜 기대",
       "승기천 생태수변산책로 바로 앞"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%8F%99%EC%B6%98%ED%98%84%EB%8C%801%EC%B0%A8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%8F%99%EC%B6%98%ED%98%84%EB%8C%801%EC%B0%A8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/2295",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/2295",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8F%99%EC%B6%98%ED%98%84%EB%8C%801%EC%B0%A8",
     "floorPlan": {
       "type": "84_3bay",
@@ -3333,11 +3285,12 @@
         "송도 인프라 도보/차량 5분",
         "1,040세대 대단지"
       ]
-    }
+    },
+    "naverComplexNo": "2295"
   },
   {
     "id": "incheon-seogu-luwon-hoban-29",
-    "name": "루원호반베르디움",
+    "name": "루원호반베르디움더센트럴 (29평)",
     "region": "인천",
     "district": "서구",
     "dong": "가정동",
@@ -3379,9 +3332,9 @@
       "가현초·가현중 도보 3분 안심 통학",
       "루원시티 복합행정타운 중심 상권 인접"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%A3%A8%EC%9B%90%ED%98%B8%EB%B0%98%EB%B2%A0%EB%A5%B4%EB%94%94%EC%9B%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%A3%A8%EC%9B%90%ED%98%B8%EB%B0%98%EB%B2%A0%EB%A5%B4%EB%94%94%EC%9B%80",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%A3%A8%EC%9B%90%ED%98%B8%EB%B0%98%EB%B2%A0%EB%A5%B4%EB%94%94%EC%9B%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/111215",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/111215",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%A3%A8%EC%9B%90%ED%98%B8%EB%B0%98%EB%B2%A0%EB%A5%B4%EB%94%94%EC%9B%80%EB%8D%94%EC%84%BC%ED%8A%B8%EB%9F%B4",
     "floorPlan": {
       "type": "84_4bay",
       "title": "전용 73.90㎡ (공급 29평형) 4-Bay 최신 판상형 평면도",
@@ -3401,11 +3354,12 @@
         "가현초 초품아",
         "7호선 연장선 호재"
       ]
-    }
+    },
+    "naverComplexNo": "111215"
   },
   {
     "id": "incheon-seogu-luwon-hoban-34",
-    "name": "루원호반베르디움",
+    "name": "루원호반베르디움더센트럴 (34평)",
     "region": "인천",
     "district": "서구",
     "dong": "가정동",
@@ -3447,9 +3401,9 @@
       "경인고속도로 서인천IC 진출입 최적",
       "루원시티 대장 준신축 프리미엄"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/search?keyword=%EB%A3%A8%EC%9B%90%ED%98%B8%EB%B0%98%EB%B2%A0%EB%A5%B4%EB%94%94%EC%9B%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%A3%A8%EC%9B%90%ED%98%B8%EB%B0%98%EB%B2%A0%EB%A5%B4%EB%94%94%EC%9B%80",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%A3%A8%EC%9B%90%ED%98%B8%EB%B0%98%EB%B2%A0%EB%A5%B4%EB%94%94%EC%9B%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/111215",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/111215",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%A3%A8%EC%9B%90%ED%98%B8%EB%B0%98%EB%B2%A0%EB%A5%B4%EB%94%94%EC%9B%80%EB%8D%94%EC%84%BC%ED%8A%B8%EB%9F%B4",
     "floorPlan": {
       "type": "84_4bay",
       "title": "전용 84.97㎡ (공급 34평형) 4-Bay 광폭 판상형 평면도",
@@ -3469,11 +3423,12 @@
         "알파룸 수납 공간",
         "2018년 준신축 랜드마크"
       ]
-    }
+    },
+    "naverComplexNo": "111215"
   },
   {
     "id": "seoul-dobong-banghak-shindonga-1-21",
-    "name": "방학신동아1단지",
+    "name": "방학신동아1단지 (21평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "방학동",
@@ -3548,7 +3503,7 @@
   },
   {
     "id": "seoul-dobong-banghak-shindonga-1-26",
-    "name": "방학신동아1단지",
+    "name": "방학신동아1단지 (26평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "방학동",
@@ -3623,7 +3578,7 @@
   },
   {
     "id": "seoul-dobong-banghak-shindonga-1-31",
-    "name": "방학신동아1단지",
+    "name": "방학신동아1단지 (31평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "방학동",
@@ -3698,7 +3653,7 @@
   },
   {
     "id": "seoul-dobong-banghak-daesang-hyundai-25",
-    "name": "대상타운현대",
+    "name": "대상타운현대 (25평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "방학동",
@@ -3773,7 +3728,7 @@
   },
   {
     "id": "seoul-dobong-banghak-daesang-hyundai-33",
-    "name": "대상타운현대",
+    "name": "대상타운현대 (33평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "방학동",
@@ -3848,7 +3803,7 @@
   },
   {
     "id": "seoul-dobong-banghak-byucksan-2-26",
-    "name": "방학벽산2차아파트",
+    "name": "방학벽산2차아파트 (26평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "방학동",
@@ -3892,7 +3847,7 @@
     ],
     "naverLandUrl": "https://fin.land.naver.com/complexes/3261",
     "naverMobileUrl": "https://m.land.naver.com/complex/info/3261",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B0%A9%ED%95%99%EB%8F%99%20%EB%B2%BD%EC%82%B02%EC%B0%A8",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B0%A9%ED%95%99%EB%B2%BD%EC%82%B02%EC%B0%A8%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.94㎡ (공급 26평형) 복도식 방3 평면도",
@@ -3917,7 +3872,7 @@
   },
   {
     "id": "seoul-dobong-banghak-byucksan-2-31",
-    "name": "방학벽산2차아파트",
+    "name": "방학벽산2차아파트 (31평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "방학동",
@@ -3961,7 +3916,7 @@
     ],
     "naverLandUrl": "https://fin.land.naver.com/complexes/3261",
     "naverMobileUrl": "https://m.land.naver.com/complex/info/3261",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B0%A9%ED%95%99%EB%8F%99%20%EB%B2%BD%EC%82%B02%EC%B0%A8",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B0%A9%ED%95%99%EB%B2%BD%EC%82%B02%EC%B0%A8%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "84_3bay",
       "title": "전용 84.87㎡ (공급 31평형) 3-Bay 계단식 판상형 평면도",
@@ -3986,7 +3941,7 @@
   },
   {
     "id": "seoul-dobong-changdong-jugong-19-25",
-    "name": "창동주공19단지",
+    "name": "창동주공19단지 (25평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "창동",
@@ -4055,7 +4010,7 @@
   },
   {
     "id": "seoul-dobong-changdong-jugong-19-29",
-    "name": "창동주공19단지",
+    "name": "창동주공19단지 (29평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "창동",
@@ -4124,7 +4079,7 @@
   },
   {
     "id": "seoul-dobong-changdong-jugong-17-18",
-    "name": "창동주공17단지",
+    "name": "창동주공17단지 (18평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "창동",
@@ -4193,7 +4148,7 @@
   },
   {
     "id": "seoul-dobong-changdong-jugong-17-21",
-    "name": "창동주공17단지",
+    "name": "창동주공17단지 (21평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "창동",
@@ -4262,7 +4217,7 @@
   },
   {
     "id": "seoul-dobong-changdong-jugong-3-24",
-    "name": "창동주공3단지",
+    "name": "창동주공3단지 (24평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "창동",
@@ -4331,7 +4286,7 @@
   },
   {
     "id": "seoul-dobong-changdong-donga-cheongsol-24",
-    "name": "창동동아청솔",
+    "name": "창동동아청솔 (24평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "창동",
@@ -4400,7 +4355,7 @@
   },
   {
     "id": "seoul-dobong-changdong-donga-cheongsol-33",
-    "name": "창동동아청솔",
+    "name": "창동동아청솔 (33평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "창동",
@@ -4469,7 +4424,7 @@
   },
   {
     "id": "seoul-dobong-changdong-ipark-33",
-    "name": "북한산아이파크",
+    "name": "북한산아이파크 (33평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "창동",
@@ -4538,7 +4493,7 @@
   },
   {
     "id": "seoul-dobong-changdong-hyundai-1-24",
-    "name": "창동현대1차아파트",
+    "name": "창동현대1차아파트 (24평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "창동",
@@ -4582,7 +4537,7 @@
     ],
     "naverLandUrl": "https://fin.land.naver.com/complexes/8601",
     "naverMobileUrl": "https://m.land.naver.com/complex/info/8601",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%B0%BD%EB%8F%99%ED%98%84%EB%8C%801%EC%B0%A8",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%B0%BD%EB%8F%99%ED%98%84%EB%8C%801%EC%B0%A8%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.94㎡ (공급 24평형) 계단식 판상형 평면도",
@@ -4607,7 +4562,7 @@
   },
   {
     "id": "seoul-dobong-dobong-hanshin-26",
-    "name": "도봉한신아파트",
+    "name": "도봉한신아파트 (26평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "도봉동",
@@ -4651,7 +4606,7 @@
     ],
     "naverLandUrl": "https://fin.land.naver.com/complexes/267",
     "naverMobileUrl": "https://m.land.naver.com/complex/info/267",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8F%84%EB%B4%89%ED%95%9C%EC%8B%A0",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8F%84%EB%B4%89%ED%95%9C%EC%8B%A0%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 68.4㎡ (공급 26평형) 복도식 방3 평면도",
@@ -4676,7 +4631,7 @@
   },
   {
     "id": "seoul-dobong-dobong-hanshin-31",
-    "name": "도봉한신아파트",
+    "name": "도봉한신아파트 (31평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "도봉동",
@@ -4720,7 +4675,7 @@
     ],
     "naverLandUrl": "https://fin.land.naver.com/complexes/267",
     "naverMobileUrl": "https://m.land.naver.com/complex/info/267",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8F%84%EB%B4%89%ED%95%9C%EC%8B%A0",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8F%84%EB%B4%89%ED%95%9C%EC%8B%A0%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "84_3bay",
       "title": "전용 84.94㎡ (공급 31평형) 3-Bay 계단식 판상형 평면도",
@@ -4745,7 +4700,7 @@
   },
   {
     "id": "seoul-dobong-dobong-seowon-24",
-    "name": "도봉서원아파트",
+    "name": "도봉서원아파트 (24평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "도봉동",
@@ -4789,7 +4744,7 @@
     ],
     "naverLandUrl": "https://fin.land.naver.com/complexes/1120",
     "naverMobileUrl": "https://m.land.naver.com/complex/info/1120",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8F%84%EB%B4%89%EC%84%9C%EC%9B%90%EC%95%84%ED%8C%8C%ED%81%AC",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8F%84%EB%B4%89%EC%84%9C%EC%9B%90%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.4㎡ (공급 24평형) 복도식 방3 평면도",
@@ -4814,7 +4769,7 @@
   },
   {
     "id": "seoul-dobong-ssangmun-hanyang-1-21",
-    "name": "쌍문한양1차아파트",
+    "name": "쌍문한양1차아파트 (21평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "쌍문동",
@@ -4858,7 +4813,7 @@
     ],
     "naverLandUrl": "https://fin.land.naver.com/complexes/299",
     "naverMobileUrl": "https://m.land.naver.com/complex/info/299",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8C%8D%EB%AC%B8%ED%95%9C%EC%96%911%EC%B0%A8",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8C%8D%EB%AC%B8%ED%95%9C%EC%96%911%EC%B0%A8%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 50.84㎡ (공급 21평형) 복도식 판상형 평면도",
@@ -4883,7 +4838,7 @@
   },
   {
     "id": "seoul-dobong-ssangmun-hanyang-1-27",
-    "name": "쌍문한양1차아파트",
+    "name": "쌍문한양1차아파트 (27평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "쌍문동",
@@ -4927,7 +4882,7 @@
     ],
     "naverLandUrl": "https://fin.land.naver.com/complexes/299",
     "naverMobileUrl": "https://m.land.naver.com/complex/info/299",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8C%8D%EB%AC%B8%ED%95%9C%EC%96%911%EC%B0%A8",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8C%8D%EB%AC%B8%ED%95%9C%EC%96%911%EC%B0%A8%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 69.84㎡ (공급 27평형) 방3 판상형 평면도",
@@ -4952,7 +4907,7 @@
   },
   {
     "id": "seoul-dobong-ssangmun-hanyang-1-31",
-    "name": "쌍문한양1차아파트",
+    "name": "쌍문한양1차아파트 (31평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "쌍문동",
@@ -4996,7 +4951,7 @@
     ],
     "naverLandUrl": "https://fin.land.naver.com/complexes/299",
     "naverMobileUrl": "https://m.land.naver.com/complex/info/299",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8C%8D%EB%AC%B8%ED%95%9C%EC%96%911%EC%B0%A8",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8C%8D%EB%AC%B8%ED%95%9C%EC%96%911%EC%B0%A8%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "84_3bay",
       "title": "전용 84.87㎡ (공급 31평형) 3-Bay 계단식 판상형 평면도",
@@ -5021,7 +4976,7 @@
   },
   {
     "id": "seoul-dobong-ssangmun-samik-26",
-    "name": "쌍문삼익아파트",
+    "name": "쌍문삼익아파트 (26평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "쌍문동",
@@ -5065,7 +5020,7 @@
     ],
     "naverLandUrl": "https://fin.land.naver.com/complexes/292",
     "naverMobileUrl": "https://m.land.naver.com/complex/info/292",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8C%8D%EB%AC%B8%EC%82%BC%EC%9D%B5%EC%95%84%ED%8C%8C%ED%81%AC",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8C%8D%EB%AC%B8%EC%82%BC%EC%9D%B5%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 68.85㎡ (공급 26평형) 복도식 방3 평면도",
@@ -5090,7 +5045,7 @@
   },
   {
     "id": "seoul-dobong-ssangmun-kukdong-31",
-    "name": "쌍문극동아파트",
+    "name": "쌍문극동아파트 (31평)",
     "region": "서울",
     "district": "도봉구",
     "dong": "쌍문동",
@@ -5134,7 +5089,7 @@
     ],
     "naverLandUrl": "https://fin.land.naver.com/complexes/284",
     "naverMobileUrl": "https://m.land.naver.com/complex/info/284",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8C%8D%EB%AC%B8%EA%B7%B9%EB%8F%99%EC%95%84%ED%8C%8C%ED%81%AC",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8C%8D%EB%AC%B8%EA%B7%B9%EB%8F%99%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "84_3bay",
       "title": "전용 84.75㎡ (공급 31평형) 3-Bay 계단식 판상형 평면도",
@@ -5159,7 +5114,7 @@
   },
   {
     "id": "seoul-nowon-sanggye-jugong-6-17",
-    "name": "상계주공6단지",
+    "name": "상계주공6단지 (17평)",
     "region": "서울",
     "district": "노원구",
     "dong": "상계동",
@@ -5206,8 +5161,8 @@
       "정밀안전진단 통과 완료, 상계주공 핵심 재건축 단지",
       "5억 이하로 생애최초 디딤돌·보금자리론·신생아 모두 적격"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/complexes/502",
-    "naverMobileUrl": "https://m.land.naver.com/complex/info/502",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/920",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/920",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%83%81%EA%B3%84%EC%A3%BC%EA%B3%B56%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
@@ -5229,11 +5184,11 @@
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
     },
-    "naverComplexNo": "502"
+    "naverComplexNo": "920"
   },
   {
     "id": "seoul-nowon-sanggye-jugong-6-24",
-    "name": "상계주공6단지",
+    "name": "상계주공6단지 (24평)",
     "region": "서울",
     "district": "노원구",
     "dong": "상계동",
@@ -5279,8 +5234,8 @@
       "노원역 더블역세권 + 창동 차량기지 바이오메디컬 개발 수혜",
       "신생아 특례대출(9억 이하) 활용 시 최저 금리 매수 가능"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/complexes/502",
-    "naverMobileUrl": "https://m.land.naver.com/complex/info/502",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/920",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/920",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%83%81%EA%B3%84%EC%A3%BC%EA%B3%B56%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
@@ -5302,11 +5257,11 @@
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
     },
-    "naverComplexNo": "502"
+    "naverComplexNo": "920"
   },
   {
     "id": "seoul-nowon-sanggye-jugong-3-17",
-    "name": "상계주공3단지",
+    "name": "상계주공3단지 (17평)",
     "region": "서울",
     "district": "노원구",
     "dong": "상계동",
@@ -5352,8 +5307,8 @@
       "롯데백화점, 노원역 로데오 상권 슬세권 최중심",
       "보금자리론 및 신생아 특례대출 최적 대상"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/complexes/498",
-    "naverMobileUrl": "https://m.land.naver.com/complex/info/498",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/192",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/192",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%83%81%EA%B3%84%EC%A3%BC%EA%B3%B53%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
@@ -5375,11 +5330,11 @@
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
     },
-    "naverComplexNo": "498"
+    "naverComplexNo": "192"
   },
   {
     "id": "seoul-nowon-junggye-green-1-17",
-    "name": "중계그린1단지",
+    "name": "중계그린1단지 (17평)",
     "region": "서울",
     "district": "노원구",
     "dong": "중계동",
@@ -5426,8 +5381,8 @@
       "4억 중반대로 3대 정책대출(신생아/보금자리/디딤돌) 모두 적격",
       "당현천 수변 산책로 및 어린이천문대 공원 인접"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/complexes/542",
-    "naverMobileUrl": "https://m.land.naver.com/complex/info/542",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/240",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/240",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%A4%91%EA%B3%84%EA%B7%B8%EB%A6%B01%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
@@ -5449,11 +5404,11 @@
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
     },
-    "naverComplexNo": "542"
+    "naverComplexNo": "240"
   },
   {
     "id": "seoul-nowon-junggye-green-1-21",
-    "name": "중계그린1단지",
+    "name": "중계그린1단지 (21평)",
     "region": "서울",
     "district": "노원구",
     "dong": "중계동",
@@ -5499,8 +5454,8 @@
       "중계역 초역세권 + 중계근린공원·홈플러스 슬세권",
       "보금자리론 6억 이하 기준 완벽 충족"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/complexes/542",
-    "naverMobileUrl": "https://m.land.naver.com/complex/info/542",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/240",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/240",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%A4%91%EA%B3%84%EA%B7%B8%EB%A6%B01%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
@@ -5522,11 +5477,11 @@
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
     },
-    "naverComplexNo": "542"
+    "naverComplexNo": "240"
   },
   {
     "id": "seoul-nowon-junggye-mujigae-21",
-    "name": "중계무지개아파트",
+    "name": "중계무지개아파트 (21평)",
     "region": "서울",
     "district": "노원구",
     "dong": "중계동",
@@ -5572,8 +5527,8 @@
       "홈플러스, CGV, 2001아울렛 바로 앞 최고의 상권 인프라",
       "보금자리론 및 신생아 특례대출 최적 매물"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/complexes/546",
-    "naverMobileUrl": "https://m.land.naver.com/complex/info/546",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/925",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/925",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%A4%91%EA%B3%84%EB%AC%B4%EC%A7%80%EA%B0%9C%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
@@ -5595,11 +5550,11 @@
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
     },
-    "naverComplexNo": "546"
+    "naverComplexNo": "925"
   },
   {
     "id": "seoul-nowon-wolgye-grandville-25",
-    "name": "월계한진한화그랑빌",
+    "name": "월계한진한화그랑빌 (25평)",
     "region": "서울",
     "district": "노원구",
     "dong": "월계동",
@@ -5673,7 +5628,7 @@
   },
   {
     "id": "seoul-nowon-wolgye-grandville-33",
-    "name": "월계한진한화그랑빌",
+    "name": "월계한진한화그랑빌 (33평)",
     "region": "서울",
     "district": "노원구",
     "dong": "월계동",
@@ -5746,7 +5701,7 @@
   },
   {
     "id": "seoul-nowon-hagye-jangmi-21",
-    "name": "하계장미아파트",
+    "name": "하계장미아파트 (21평)",
     "region": "서울",
     "district": "노원구",
     "dong": "하계동",
@@ -5792,8 +5747,8 @@
       "을지대병원, 중계근린공원, 홈플러스 인접",
       "재건축 안전진단 통과 완료"
     ],
-    "naverLandUrl": "https://fin.land.naver.com/complexes/558",
-    "naverMobileUrl": "https://m.land.naver.com/complex/info/558",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/262",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/262",
     "kbLandUrl": "https://kbland.kr/search?keyword=%ED%95%98%EA%B3%84%EC%9E%A5%EB%AF%B8%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
@@ -5815,11 +5770,11 @@
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
     },
-    "naverComplexNo": "558"
+    "naverComplexNo": "262"
   },
   {
     "id": "seoul-nowon-gongneung-punglim-24",
-    "name": "공릉풍림아파트",
+    "name": "공릉풍림아파트 (24평)",
     "region": "서울",
     "district": "노원구",
     "dong": "공릉동",
@@ -5865,8 +5820,8 @@
       "중랑천 수변공원 및 경춘선숲길 산책로 인접",
       "보금자리론 6억 이하 상한 충족 알짜 단지"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EA%B3%B5%EB%A6%89%ED%92%8D%EB%A6%BC%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EA%B3%B5%EB%A6%89%ED%92%8D%EB%A6%BC%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3363",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3363",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B3%B5%EB%A6%89%ED%92%8D%EB%A6%BC%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
@@ -5887,11 +5842,12 @@
         "보금자리론 6억 이하 상한 충족 알짜 단지"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "3363"
   },
   {
     "id": "seoul-gangbuk-mia-sk-24",
-    "name": "SK북한산시티",
+    "name": "SK북한산시티 (24평)",
     "region": "서울",
     "district": "강북구",
     "dong": "미아동",
@@ -5964,7 +5920,7 @@
   },
   {
     "id": "seoul-gangbuk-mia-trivera-1-25",
-    "name": "래미안트리베라1차",
+    "name": "래미안트리베라1차 (25평)",
     "region": "서울",
     "district": "강북구",
     "dong": "미아동",
@@ -6011,8 +5967,8 @@
       "2010년식 쾌적한 지상에 차 없는 공원형 단지",
       "신생아 특례대출(9억 이하) 최적 브랜드 아파트"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%9E%98%EB%AF%B8%EC%95%88%ED%8A%B8%EB%A6%AC%EB%B2%A0%EB%9D%BC1%EC%B0%A8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%9E%98%EB%AF%B8%EC%95%88%ED%8A%B8%EB%A6%AC%EB%B2%A0%EB%9D%BC1%EC%B0%A8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/25971",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/25971",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%9E%98%EB%AF%B8%EC%95%88%ED%8A%B8%EB%A6%AC%EB%B2%A0%EB%9D%BC1%EC%B0%A8",
     "floorPlan": {
       "type": "59_3bay",
@@ -6033,11 +5989,12 @@
         "2010년식 쾌적한 지상에 차 없는 공원형 단지"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "25971"
   },
   {
     "id": "seoul-gangbuk-mia-trivera-1-33",
-    "name": "래미안트리베라1차",
+    "name": "래미안트리베라1차 (33평)",
     "region": "서울",
     "district": "강북구",
     "dong": "미아동",
@@ -6083,8 +6040,8 @@
       "동북선 경전철(왕십리 직결) 개통 예정 수혜",
       "신생아 특례 5억 한도 전액 활용 가능"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%9E%98%EB%AF%B8%EC%95%88%ED%8A%B8%EB%A6%AC%EB%B2%A0%EB%9D%BC1%EC%B0%A8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%9E%98%EB%AF%B8%EC%95%88%ED%8A%B8%EB%A6%AC%EB%B2%A0%EB%9D%BC1%EC%B0%A8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/25971",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/25971",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%9E%98%EB%AF%B8%EC%95%88%ED%8A%B8%EB%A6%AC%EB%B2%A0%EB%9D%BC1%EC%B0%A8",
     "floorPlan": {
       "type": "84_3bay",
@@ -6105,11 +6062,12 @@
         "신생아 특례 5억 한도 전액 활용 가능"
       ],
       "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "25971"
   },
   {
     "id": "seoul-gangbuk-mia-doosan-weave-25",
-    "name": "두산위브트레지움",
+    "name": "두산위브트레지움 (25평)",
     "region": "서울",
     "district": "강북구",
     "dong": "미아동",
@@ -6155,8 +6113,8 @@
       "삼각산초·삼각산중·삼각산고 품은 완벽한 초중고 학세권",
       "25평형 욕실 2개 3-Bay 판상형 인기 구조"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%91%90%EC%82%B0%EC%9C%84%EB%B8%8C%ED%8A%B8%EB%A0%88%EC%A7%80%EC%9B%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%91%90%EC%82%B0%EC%9C%84%EB%B8%8C%ED%8A%B8%EB%A0%88%EC%A7%80%EC%9B%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/27413",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/27413",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%91%90%EC%82%B0%EC%9C%84%EB%B8%8C%ED%8A%B8%EB%A0%88%EC%A7%80%EC%9B%80",
     "floorPlan": {
       "type": "59_3bay",
@@ -6177,11 +6135,12 @@
         "25평형 욕실 2개 3-Bay 판상형 인기 구조"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "27413"
   },
   {
     "id": "seoul-gangbuk-mia-byucksan-24",
-    "name": "벽산라이브파크",
+    "name": "벽산라이브파크 (24평)",
     "region": "서울",
     "district": "강북구",
     "dong": "미아동",
@@ -6227,8 +6186,8 @@
       "보금자리론 6억 이하 및 디딤돌(신혼) 적격 단지",
       "북한산 생태공원과 인접한 쾌적한 숲세권"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%B2%BD%EC%82%B0%EB%9D%BC%EC%9D%B4%EB%B8%8C%ED%8C%8C%ED%81%AC",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%B2%BD%EC%82%B0%EB%9D%BC%EC%9D%B4%EB%B8%8C%ED%8C%8C%ED%81%AC",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3099",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3099",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B2%BD%EC%82%B0%EB%9D%BC%EC%9D%B4%EB%B8%8C%ED%8C%8C%ED%81%AC",
     "floorPlan": {
       "type": "59_3bay",
@@ -6249,11 +6208,12 @@
         "북한산 생태공원과 인접한 쾌적한 숲세권"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "3099"
   },
   {
     "id": "seoul-gangbuk-beondong-jugong-1-18",
-    "name": "번동주공1단지",
+    "name": "번동주공1단지 (18평)",
     "region": "서울",
     "district": "강북구",
     "dong": "번동",
@@ -6299,8 +6259,8 @@
       "동북선 경전철 북서울꿈의숲역 개통 직접 수혜지",
       "4억 초반대로 3대 정책대출 모두 최저 금리 이용 가능"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%B2%88%EB%8F%99%EC%A3%BC%EA%B3%B51%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%B2%88%EB%8F%99%EC%A3%BC%EA%B3%B51%EB%8B%A8%EC%A7%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1337",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1337",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B2%88%EB%8F%99%EC%A3%BC%EA%B3%B51%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
@@ -6321,11 +6281,12 @@
         "4억 초반대로 3대 정책대출 모두 최저 금리 이용 가능"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "1337"
   },
   {
     "id": "seoul-seongbuk-donam-hanshin-24",
-    "name": "돈암한신한진아파트",
+    "name": "돈암한신한진아파트 (24평)",
     "region": "서울",
     "district": "성북구",
     "dong": "돈암동",
@@ -6371,8 +6332,8 @@
       "4호선 한성대입구·성신여대입구 도심(종로·명동·광화문) 15분 출퇴근",
       "보금자리론 6억 이하 기준 완벽 충족하는 성북구 대표 가성비"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%8F%88%EC%95%94%ED%95%9C%EC%8B%A0%ED%95%9C%EC%A7%84%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%8F%88%EC%95%94%ED%95%9C%EC%8B%A0%ED%95%9C%EC%A7%84%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/582",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/582",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8F%88%EC%95%94%ED%95%9C%EC%8B%A0%ED%95%9C%EC%A7%84%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
@@ -6393,11 +6354,12 @@
         "보금자리론 6억 이하 기준 완벽 충족하는 성북구 대표 가성비"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "582"
   },
   {
     "id": "seoul-seongbuk-donam-hanshin-31",
-    "name": "돈암한신한진아파트",
+    "name": "돈암한신한진아파트 (31평)",
     "region": "서울",
     "district": "성북구",
     "dong": "돈암동",
@@ -6443,8 +6405,8 @@
       "우촌초(사립)·홍대부중고 등 성북 명문 학군",
       "신생아 특례대출(9억 이하) 활용 시 최적 조건"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%8F%88%EC%95%94%ED%95%9C%EC%8B%A0%ED%95%9C%EC%A7%84%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%8F%88%EC%95%94%ED%95%9C%EC%8B%A0%ED%95%9C%EC%A7%84%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/582",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/582",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8F%88%EC%95%94%ED%95%9C%EC%8B%A0%ED%95%9C%EC%A7%84%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "84_3bay",
@@ -6465,11 +6427,12 @@
         "신생아 특례대출(9억 이하) 활용 시 최적 조건"
       ],
       "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "582"
   },
   {
     "id": "seoul-seongbuk-gireum-prugio-2-24",
-    "name": "길음뉴타운2단지푸르지오",
+    "name": "길음뉴타운2단지푸르지오 (24평)",
     "region": "서울",
     "district": "성북구",
     "dong": "길음동",
@@ -6515,8 +6478,8 @@
       "영훈국제중·영훈초·계성고 등 강북 최고 명문 학군지",
       "24평형 방 3개 / 욕실 2개 3-Bay 판상형 구조"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EA%B8%B8%EC%9D%8C%EB%89%B4%ED%83%80%EC%9A%B42%EB%8B%A8%EC%A7%80%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EA%B8%B8%EC%9D%8C%EB%89%B4%ED%83%80%EC%9A%B42%EB%8B%A8%EC%A7%80%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/8082",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/8082",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B8%B8%EC%9D%8C%EB%89%B4%ED%83%80%EC%9A%B42%EB%8B%A8%EC%A7%80%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4",
     "floorPlan": {
       "type": "59_3bay",
@@ -6537,11 +6500,12 @@
         "24평형 방 3개 / 욕실 2개 3-Bay 판상형 구조"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "8082"
   },
   {
     "id": "seoul-seongbuk-gireum-prugio-2-33",
-    "name": "길음뉴타운2단지푸르지오",
+    "name": "길음뉴타운2단지푸르지오 (33평)",
     "region": "서울",
     "district": "성북구",
     "dong": "길음동",
@@ -6587,8 +6551,8 @@
       "현대백화점·이마트 미아점 상권 공유",
       "신생아 특례대출 최대 5억 원 한도 수혜"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EA%B8%B8%EC%9D%8C%EB%89%B4%ED%83%80%EC%9A%B42%EB%8B%A8%EC%A7%80%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EA%B8%B8%EC%9D%8C%EB%89%B4%ED%83%80%EC%9A%B42%EB%8B%A8%EC%A7%80%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/8082",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/8082",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B8%B8%EC%9D%8C%EB%89%B4%ED%83%80%EC%9A%B42%EB%8B%A8%EC%A7%80%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4",
     "floorPlan": {
       "type": "84_3bay",
@@ -6609,11 +6573,12 @@
         "신생아 특례대출 최대 5억 원 한도 수혜"
       ],
       "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "8082"
   },
   {
     "id": "seoul-seongbuk-seokgwan-doosan-25",
-    "name": "석관두산아파트",
+    "name": "석관두산아파트 (25평)",
     "region": "서울",
     "district": "성북구",
     "dong": "석관동",
@@ -6659,8 +6624,8 @@
       "이문·휘경뉴타운과 마주보는 인프라 공유 입지",
       "신생아 특례대출 적격 초역세권 인기 단지"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%84%9D%EA%B4%80%EB%91%90%EC%82%B0%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%84%9D%EA%B4%80%EB%91%90%EC%82%B0%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1183",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1183",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%84%9D%EA%B4%80%EB%91%90%EC%82%B0%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
@@ -6681,11 +6646,12 @@
         "신생아 특례대출 적격 초역세권 인기 단지"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "1183"
   },
   {
     "id": "seoul-seongbuk-jeongneung-punglim-24",
-    "name": "정릉풍림아이원",
+    "name": "정릉풍림아이원 (24평)",
     "region": "서울",
     "district": "성북구",
     "dong": "정릉동",
@@ -6731,8 +6697,8 @@
       "5억 초반대로 보금자리론(6억 이하) 및 신생아특례 모두 최적",
       "정릉천 및 북한산 숲세권 힐링 대단지"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%A0%95%EB%A6%89%ED%92%8D%EB%A6%BC%EC%95%84%EC%9D%B4%EC%9B%90",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%A0%95%EB%A6%89%ED%92%8D%EB%A6%BC%EC%95%84%EC%9D%B4%EC%9B%90",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3426",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3426",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%A0%95%EB%A6%89%ED%92%8D%EB%A6%BC%EC%95%84%EC%9D%B4%EC%9B%90",
     "floorPlan": {
       "type": "59_3bay",
@@ -6753,11 +6719,12 @@
         "정릉천 및 북한산 숲세권 힐링 대단지"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "3426"
   },
   {
     "id": "seoul-jungnang-sinnae-6-20",
-    "name": "신내6단지대주",
+    "name": "신내6단지시영 (20평)",
     "region": "서울",
     "district": "중랑구",
     "dong": "신내동",
@@ -6803,9 +6770,9 @@
       "홈플러스 신내점, 서울의료원, 중랑구청 슬세권",
       "5억 이하로 디딤돌·보금자리론·신생아 3종 대출 모두 적격!"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%8B%A0%EB%82%B46%EB%8B%A8%EC%A7%80%EB%8C%80%EC%A3%BC",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%8B%A0%EB%82%B46%EB%8B%A8%EC%A7%80%EB%8C%80%EC%A3%BC",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8B%A0%EB%82%B46%EB%8B%A8%EC%A7%80%EB%8C%80%EC%A3%BC",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/820",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/820",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8B%A0%EB%82%B46%EB%8B%A8%EC%A7%80%EC%8B%9C%EC%98%81",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 49.77㎡ (공급 20평형) 2-Bay 복도식 판상형 평면도",
@@ -6825,11 +6792,12 @@
         "5억 이하로 디딤돌·보금자리론·신생아 3종 대출 모두 적격!"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "820"
   },
   {
     "id": "seoul-jungnang-sinnae-desian-25",
-    "name": "신내데시앙",
+    "name": "신내데시앙 (25평)",
     "region": "서울",
     "district": "중랑구",
     "dong": "신내동",
@@ -6875,8 +6843,8 @@
       "중랑캠핑숲 및 서울의료원 인접 쾌적한 주거 환경",
       "신생아 특례대출 활용 시 실투자금 1.9억대"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%8B%A0%EB%82%B4%EB%8D%B0%EC%8B%9C%EC%95%99",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%8B%A0%EB%82%B4%EB%8D%B0%EC%8B%9C%EC%95%99",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/100653",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/100653",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8B%A0%EB%82%B4%EB%8D%B0%EC%8B%9C%EC%95%99",
     "floorPlan": {
       "type": "59_3bay",
@@ -6897,11 +6865,12 @@
         "신생아 특례대출 활용 시 실투자금 1.9억대"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "100653"
   },
   {
     "id": "seoul-jungnang-myeonmok-hanshin-25",
-    "name": "면목한신아파트",
+    "name": "면목한신아파트 (25평)",
     "region": "서울",
     "district": "중랑구",
     "dong": "면목동",
@@ -6947,8 +6916,8 @@
       "7호선 면목역 및 경의중앙선 중랑역 더블 생활권",
       "보금자리론 6억 이하 기준 완벽 적격"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%A9%B4%EB%AA%A9%ED%95%9C%EC%8B%A0%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%A9%B4%EB%AA%A9%ED%95%9C%EC%8B%A0%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/802",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/802",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%A9%B4%EB%AA%A9%ED%95%9C%EC%8B%A0%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
@@ -6969,11 +6938,12 @@
         "보금자리론 6억 이하 기준 완벽 적격"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "802"
   },
   {
     "id": "seoul-jungnang-yongmasan-haneulchae-25",
-    "name": "용마산하늘채",
+    "name": "용마산하늘채 (25평)",
     "region": "서울",
     "district": "중랑구",
     "dong": "면목동",
@@ -7019,8 +6989,8 @@
       "7호선 강남 직통(청담·논현 15분대) 출퇴근 최강 입지",
       "신생아 특례대출(9억 이하) 최적 인기 단지"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%9A%A9%EB%A7%88%EC%82%B0%ED%95%98%EB%8A%98%EC%B1%84",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%9A%A9%EB%A7%88%EC%82%B0%ED%95%98%EB%8A%98%EC%B1%84",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/107072",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/107072",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%9A%A9%EB%A7%88%EC%82%B0%ED%95%98%EB%8A%98%EC%B1%84",
     "floorPlan": {
       "type": "59_3bay",
@@ -7041,11 +7011,12 @@
         "신생아 특례대출(9억 이하) 최적 인기 단지"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "107072"
   },
   {
     "id": "seoul-dongdaemun-jangan-hyundai-1-24",
-    "name": "장안현대홈타운1차",
+    "name": "장안현대홈타운1차 (24평)",
     "region": "서울",
     "district": "동대문구",
     "dong": "장안동",
@@ -7092,8 +7063,8 @@
       "중랑천 수변 산책로 및 장평초·동대문중 학세권",
       "신생아 특례대출 5억 한도 풀활용 가능"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%9E%A5%EC%95%88%ED%98%84%EB%8C%80%ED%99%88%ED%83%80%EC%9A%B41%EC%B0%A8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%9E%A5%EC%95%88%ED%98%84%EB%8C%80%ED%99%88%ED%83%80%EC%9A%B41%EC%B0%A8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3376",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3376",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%9E%A5%EC%95%88%ED%98%84%EB%8C%80%ED%99%88%ED%83%80%EC%9A%B41%EC%B0%A8",
     "floorPlan": {
       "type": "59_3bay",
@@ -7114,11 +7085,12 @@
         "중랑천 수변 산책로 및 장평초·동대문중 학세권"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "3376"
   },
   {
     "id": "seoul-dongdaemun-jangan-hyundai-1-33",
-    "name": "장안현대홈타운1차",
+    "name": "장안현대홈타운1차 (33평)",
     "region": "서울",
     "district": "동대문구",
     "dong": "장안동",
@@ -7164,8 +7136,8 @@
       "신생아 특례대출(9억 이하) 적용 가능한 동대문구 핵심 33평",
       "지하주차장 완비 및 풍부한 장안동 상권 인프라"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%9E%A5%EC%95%88%ED%98%84%EB%8C%80%ED%99%88%ED%83%80%EC%9A%B41%EC%B0%A8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%9E%A5%EC%95%88%ED%98%84%EB%8C%80%ED%99%88%ED%83%80%EC%9A%B41%EC%B0%A8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3376",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3376",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%9E%A5%EC%95%88%ED%98%84%EB%8C%80%ED%99%88%ED%83%80%EC%9A%B41%EC%B0%A8",
     "floorPlan": {
       "type": "84_3bay",
@@ -7186,11 +7158,12 @@
         "지하주차장 완비 및 풍부한 장안동 상권 인프라"
       ],
       "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "3376"
   },
   {
     "id": "seoul-dongdaemun-imun-daelim-25",
-    "name": "이문대림e편한세상",
+    "name": "이문대림e편한세상 (25평)",
     "region": "서울",
     "district": "동대문구",
     "dong": "이문동",
@@ -7236,8 +7209,8 @@
       "청량리역(GTX-B·C 환승) 2정거장 생활권 공유",
       "신생아 특례대출 활용 시 가성비 최고 동대문 입성"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%9D%B4%EB%AC%B8%EB%8C%80%EB%A6%BCe%ED%8E%B8%ED%95%9C%EC%84%B8%EC%83%81",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%9D%B4%EB%AC%B8%EB%8C%80%EB%A6%BCe%ED%8E%B8%ED%95%9C%EC%84%B8%EC%83%81",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/8199",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/8199",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%9D%B4%EB%AC%B8%EB%8C%80%EB%A6%BCe%ED%8E%B8%ED%95%9C%EC%84%B8%EC%83%81",
     "floorPlan": {
       "type": "59_3bay",
@@ -7258,11 +7231,12 @@
         "신생아 특례대출 활용 시 가성비 최고 동대문 입성"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "8199"
   },
   {
     "id": "seoul-dongdaemun-jegi-hanshin-25",
-    "name": "제기한신아파트",
+    "name": "제기한신아파트 (25평)",
     "region": "서울",
     "district": "동대문구",
     "dong": "제기동",
@@ -7308,8 +7282,8 @@
       "청량리 롯데백화점·경동시장 도보권 중심 입지",
       "재건축 추진 기대감 높은 1,340세대 대단지"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%A0%9C%EA%B8%B0%ED%95%9C%EC%8B%A0%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%A0%9C%EA%B8%B0%ED%95%9C%EC%8B%A0%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3277",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3277",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%A0%9C%EA%B8%B0%ED%95%9C%EC%8B%A0%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
@@ -7330,11 +7304,12 @@
         "재건축 추진 기대감 높은 1,340세대 대단지"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "3277"
   },
   {
     "id": "seoul-eunpyeong-bulgwang-hillstate-3-24",
-    "name": "불광북한산힐스테이트3차",
+    "name": "불광북한산힐스테이트3차 (24평)",
     "region": "서울",
     "district": "은평구",
     "dong": "불광동",
@@ -7381,8 +7356,8 @@
       "광화문·종로·상암DMC 출퇴근 최강 입지",
       "신생아 특례대출(9억 이하) 최적 적격"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%B6%88%EA%B4%91%EB%B6%81%ED%95%9C%EC%82%B0%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B83%EC%B0%A8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%B6%88%EA%B4%91%EB%B6%81%ED%95%9C%EC%82%B0%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B83%EC%B0%A8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/26191",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/26191",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B6%88%EA%B4%91%EB%B6%81%ED%95%9C%EC%82%B0%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B83%EC%B0%A8",
     "floorPlan": {
       "type": "59_3bay",
@@ -7403,11 +7378,12 @@
         "광화문·종로·상암DMC 출퇴근 최강 입지"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "26191"
   },
   {
     "id": "seoul-eunpyeong-bulgwang-hillstate-3-33",
-    "name": "불광북한산힐스테이트3차",
+    "name": "불광북한산힐스테이트3차 (33평)",
     "region": "서울",
     "district": "은평구",
     "dong": "불광동",
@@ -7453,8 +7429,8 @@
       "NC백화점 불광점, 북한산 둘레길 숲세권",
       "신생아 특례 9억 상한 이내 은평구 대표 로열 단지"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%B6%88%EA%B4%91%EB%B6%81%ED%95%9C%EC%82%B0%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B83%EC%B0%A8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%B6%88%EA%B4%91%EB%B6%81%ED%95%9C%EC%82%B0%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B83%EC%B0%A8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/26191",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/26191",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B6%88%EA%B4%91%EB%B6%81%ED%95%9C%EC%82%B0%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B83%EC%B0%A8",
     "floorPlan": {
       "type": "84_3bay",
@@ -7475,11 +7451,12 @@
         "신생아 특례 9억 상한 이내 은평구 대표 로열 단지"
       ],
       "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "26191"
   },
   {
     "id": "seoul-eunpyeong-eungam-hillstate-1-33",
-    "name": "백련산힐스테이트1차",
+    "name": "백련산힐스테이트1차 (33평)",
     "region": "서울",
     "district": "은평구",
     "dong": "응암동",
@@ -7552,7 +7529,7 @@
   },
   {
     "id": "seoul-eunpyeong-newtown-sangrim-33",
-    "name": "은평뉴타운상림마을",
+    "name": "은평뉴타운상림마을 (33평)",
     "region": "서울",
     "district": "은평구",
     "dong": "진관동",
@@ -7598,8 +7575,8 @@
       "롯데몰 은평점, 은평성모병원 등 최상급 생활·의료 인프라",
       "GTX-A 연신내역 개통으로 강남 접근성 대폭 향상"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%9D%80%ED%8F%89%EB%89%B4%ED%83%80%EC%9A%B4%EC%83%81%EB%A6%BC%EB%A7%88%EC%9D%84",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%9D%80%ED%8F%89%EB%89%B4%ED%83%80%EC%9A%B4%EC%83%81%EB%A6%BC%EB%A7%88%EC%9D%84",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/26292",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/26292",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%9D%80%ED%8F%89%EB%89%B4%ED%83%80%EC%9A%B4%EC%83%81%EB%A6%BC%EB%A7%88%EC%9D%84",
     "floorPlan": {
       "type": "84_3bay",
@@ -7620,11 +7597,12 @@
         "GTX-A 연신내역 개통으로 강남 접근성 대폭 향상"
       ],
       "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "26292"
   },
   {
     "id": "seoul-seodaemun-hongeun-byucksan-25",
-    "name": "홍은벽산아파트",
+    "name": "홍은벽산아파트 (25평)",
     "region": "서울",
     "district": "서대문구",
     "dong": "홍은동",
@@ -7670,8 +7648,8 @@
       "홍제천 인공폭포 수변 카페거리 및 백련산 산책로 바로 앞",
       "보금자리론 6억 이하 기준 충족하는 서대문구 귀한 5억대 대단지"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%ED%99%8D%EC%9D%80%EB%B2%BD%EC%82%B0%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%ED%99%8D%EC%9D%80%EB%B2%BD%EC%82%B0%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/432",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/432",
     "kbLandUrl": "https://kbland.kr/search?keyword=%ED%99%8D%EC%9D%80%EB%B2%BD%EC%82%B0%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
@@ -7692,11 +7670,12 @@
         "보금자리론 6억 이하 기준 충족하는 서대문구 귀한 5억대 대단지"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "432"
   },
   {
     "id": "seoul-seodaemun-muak-cheonggu-24",
-    "name": "무악청구아파트",
+    "name": "무악청구아파트 (24평)",
     "region": "서울",
     "district": "서대문구",
     "dong": "홍제동",
@@ -7742,8 +7721,8 @@
       "도심 직주근접 최강 입지 + 안산 자락길 숲세권",
       "신생아 특례대출 활용 시 광화문 직장인 최고 가성비"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%AC%B4%EC%95%85%EC%B2%AD%EA%B5%AC%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%AC%B4%EC%95%85%EC%B2%AD%EA%B5%AC%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/8048",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/8048",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%AC%B4%EC%95%85%EC%B2%AD%EA%B5%AC%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
@@ -7764,11 +7743,12 @@
         "신생아 특례대출 활용 시 광화문 직장인 최고 가성비"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "8048"
   },
   {
     "id": "seoul-seodaemun-namgajwa-hyundai-25",
-    "name": "남가좌현대아파트",
+    "name": "남가좌현대아파트 (25평)",
     "region": "서울",
     "district": "서대문구",
     "dong": "남가좌동",
@@ -7814,8 +7794,8 @@
       "상암DMC·홍대입구·서울역 출퇴근 10분대",
       "신생아 특례대출(9억 이하) 적격 가성비 아파트"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%82%A8%EA%B0%80%EC%A2%8C%ED%98%84%EB%8C%80%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%82%A8%EA%B0%80%EC%A2%8C%ED%98%84%EB%8C%80%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/848",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/848",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%82%A8%EA%B0%80%EC%A2%8C%ED%98%84%EB%8C%80%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
@@ -7836,11 +7816,12 @@
         "신생아 특례대출(9억 이하) 적격 가성비 아파트"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "848"
   },
   {
     "id": "seoul-guro-gaebong-hyundai-24",
-    "name": "개봉현대아파트",
+    "name": "개봉현대아파트 (24평)",
     "region": "서울",
     "district": "구로구",
     "dong": "개봉동",
@@ -7913,7 +7894,7 @@
   },
   {
     "id": "seoul-guro-gaebong-hanjin-24",
-    "name": "개봉한진타운",
+    "name": "개봉한진타운 (24평)",
     "region": "서울",
     "district": "구로구",
     "dong": "개봉동",
@@ -7959,8 +7940,8 @@
       "코스트코 고척점·아이파크몰 고척 슬세권 인프라",
       "보금자리론 6억 이하 기준 완벽 충족"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EA%B0%9C%EB%B4%89%ED%95%9C%EC%A7%84%ED%83%80%EC%9A%B4",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EA%B0%9C%EB%B4%89%ED%95%9C%EC%A7%84%ED%83%80%EC%9A%B4",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1062",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1062",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B0%9C%EB%B4%89%ED%95%9C%EC%A7%84%ED%83%80%EC%9A%B4",
     "floorPlan": {
       "type": "59_3bay",
@@ -7981,11 +7962,12 @@
         "보금자리론 6억 이하 기준 완벽 충족"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "1062"
   },
   {
     "id": "seoul-guro-gaebong-prugio-25",
-    "name": "개봉푸르지오",
+    "name": "개봉푸르지오 (25평)",
     "region": "서울",
     "district": "구로구",
     "dong": "개봉동",
@@ -8031,8 +8013,8 @@
       "25평형 3-Bay 판상형 방 3개 / 욕실 2개 구조",
       "신생아 특례대출(9억 이하) 최적 준신축"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EA%B0%9C%EB%B4%89%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EA%B0%9C%EB%B4%89%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/104934",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/104934",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B0%9C%EB%B4%89%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4",
     "floorPlan": {
       "type": "59_3bay",
@@ -8053,11 +8035,12 @@
         "신생아 특례대출(9억 이하) 최적 준신축"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "104934"
   },
   {
     "id": "seoul-guro-guro-doosan-27",
-    "name": "구로두산아파트",
+    "name": "구로두산아파트 (27평)",
     "region": "서울",
     "district": "구로구",
     "dong": "구로동",
@@ -8103,8 +8086,8 @@
       "강남(고속터미널·논현) 및 여의도 출퇴근 20분대",
       "보금자리론 6억 이하 기준 적격"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EA%B5%AC%EB%A1%9C%EB%91%90%EC%82%B0%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EA%B5%AC%EB%A1%9C%EB%91%90%EC%82%B0%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/912",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/912",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B5%AC%EB%A1%9C%EB%91%90%EC%82%B0%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
@@ -8125,11 +8108,12 @@
         "보금자리론 6억 이하 기준 적격"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "912"
   },
   {
     "id": "seoul-geumcheon-siheung-byucksan-1-24",
-    "name": "관악산벽산타운1단지",
+    "name": "관악산벽산타운1단지 (24평)",
     "region": "서울",
     "district": "금천구",
     "dong": "시흥동",
@@ -8175,8 +8159,8 @@
       "신안산선(여의도 직결) 개통 수혜 권역",
       "3대 정책대출(신생아/보금자리론/생애최초 디딤돌) 100% 적격"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EA%B4%80%EC%95%85%EC%82%B0%EB%B2%BD%EC%82%B0%ED%83%80%EC%9A%B41%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EA%B4%80%EC%95%85%EC%82%B0%EB%B2%BD%EC%82%B0%ED%83%80%EC%9A%B41%EB%8B%A8%EC%A7%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/169",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/169",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B4%80%EC%95%85%EC%82%B0%EB%B2%BD%EC%82%B0%ED%83%80%EC%9A%B41%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
@@ -8197,11 +8181,12 @@
         "3대 정책대출(신생아/보금자리론/생애최초 디딤돌) 100% 적격"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "169"
   },
   {
     "id": "seoul-geumcheon-siheung-byucksan-1-31",
-    "name": "관악산벽산타운1단지",
+    "name": "관악산벽산타운1단지 (31평)",
     "region": "서울",
     "district": "금천구",
     "dong": "시흥동",
@@ -8246,8 +8231,8 @@
       "5억 초반대 서울 전용 84㎡ 방3·욕실2 계단식 판상형",
       "보금자리론 6억 이하 및 신혼 디딤돌(6억 이하) 완벽 충족"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EA%B4%80%EC%95%85%EC%82%B0%EB%B2%BD%EC%82%B0%ED%83%80%EC%9A%B41%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EA%B4%80%EC%95%85%EC%82%B0%EB%B2%BD%EC%82%B0%ED%83%80%EC%9A%B41%EB%8B%A8%EC%A7%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/169",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/169",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B4%80%EC%95%85%EC%82%B0%EB%B2%BD%EC%82%B0%ED%83%80%EC%9A%B41%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "84_3bay",
@@ -8267,11 +8252,12 @@
         "보금자리론 6억 이하 및 신혼 디딤돌(6억 이하) 완벽 충족"
       ],
       "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "169"
   },
   {
     "id": "seoul-geumcheon-siheung-hillstate-24",
-    "name": "남서울힐스테이트아이원",
+    "name": "남서울힐스테이트 (24평)",
     "region": "서울",
     "district": "금천구",
     "dong": "시흥동",
@@ -8317,9 +8303,9 @@
       "홈플러스 시흥점 바로 앞, 금천구청·대형종합병원 건립 호재",
       "보금자리론 6억 이하 상한 내 추천 단지"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%82%A8%EC%84%9C%EC%9A%B8%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8%EC%95%84%EC%9D%B4%EC%9B%90",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%82%A8%EC%84%9C%EC%9A%B8%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8%EC%95%84%EC%9D%B4%EC%9B%90",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%82%A8%EC%84%9C%EC%9A%B8%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8%EC%95%84%EC%9D%B4%EC%9B%90",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/104347",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/104347",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%82%A8%EC%84%9C%EC%9A%B8%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.98㎡ (공급 24평형) 3-Bay 계단식 판상형 평면도",
@@ -8339,11 +8325,12 @@
         "보금자리론 6억 이하 상한 내 추천 단지"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "104347"
   },
   {
     "id": "seoul-gwanak-bongcheon-dreamtown-24",
-    "name": "관악드림타운",
+    "name": "관악드림타운 (24평)",
     "region": "서울",
     "district": "관악구",
     "dong": "봉천동",
@@ -8390,8 +8377,8 @@
       "계단식 방 3개 구조로 신혼부부 실거주 만족도 최상",
       "신생아 특례대출(9억 이하) 활용 시 강남권 직주근접 1티어"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EA%B4%80%EC%95%85%EB%93%9C%EB%A6%BC%ED%83%80%EC%9A%B4",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EA%B4%80%EC%95%85%EB%93%9C%EB%A6%BC%ED%83%80%EC%9A%B4",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/2987",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/2987",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B4%80%EC%95%85%EB%93%9C%EB%A6%BC%ED%83%80%EC%9A%B4",
     "floorPlan": {
       "type": "59_3bay",
@@ -8412,11 +8399,12 @@
         "계단식 방 3개 구조로 신혼부부 실거주 만족도 최상"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "2987"
   },
   {
     "id": "seoul-gwanak-bongcheon-dreamtown-32",
-    "name": "관악드림타운",
+    "name": "관악드림타운 (32평)",
     "region": "서울",
     "district": "관악구",
     "dong": "봉천동",
@@ -8462,8 +8450,8 @@
       "구암초·구암중·구암고 단지 바로 옆 초품아 학세권",
       "신생아 특례대출 최대 5억 한도 전액 수혜"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EA%B4%80%EC%95%85%EB%93%9C%EB%A6%BC%ED%83%80%EC%9A%B4",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EA%B4%80%EC%95%85%EB%93%9C%EB%A6%BC%ED%83%80%EC%9A%B4",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/2987",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/2987",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B4%80%EC%95%85%EB%93%9C%EB%A6%BC%ED%83%80%EC%9A%B4",
     "floorPlan": {
       "type": "84_3bay",
@@ -8484,11 +8472,12 @@
         "신생아 특례대출 최대 5억 한도 전액 수혜"
       ],
       "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "2987"
   },
   {
     "id": "seoul-gwanak-bongcheon-prugio-24",
-    "name": "관악푸르지오",
+    "name": "관악푸르지오 (24평)",
     "region": "서울",
     "district": "관악구",
     "dong": "봉천동",
@@ -8534,8 +8523,8 @@
       "봉원초·봉원중 인접 및 관악산 숲세권",
       "신생아 특례대출 적격 강남 출퇴근 알짜 단지"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EA%B4%80%EC%95%85%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EA%B4%80%EC%95%85%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/2988",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/2988",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B4%80%EC%95%85%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4",
     "floorPlan": {
       "type": "59_3bay",
@@ -8556,11 +8545,12 @@
         "신생아 특례대출 적격 강남 출퇴근 알짜 단지"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "2988"
   },
   {
     "id": "seoul-gwanak-sillim-hyundai-23",
-    "name": "신림현대아파트",
+    "name": "신림현대아파트 (23평)",
     "region": "서울",
     "district": "관악구",
     "dong": "신림동",
@@ -8606,8 +8596,8 @@
       "여의도(샛강역) 15분, 강남(2호선 환승) 20분 직결!",
       "보금자리론 6억 이하 기준 완벽 적격"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%8B%A0%EB%A6%BC%ED%98%84%EB%8C%80%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%8B%A0%EB%A6%BC%ED%98%84%EB%8C%80%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/58",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/58",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8B%A0%EB%A6%BC%ED%98%84%EB%8C%80%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
@@ -8628,11 +8618,12 @@
         "보금자리론 6억 이하 기준 완벽 적격"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "58"
   },
   {
     "id": "seoul-gangseo-deungchon-jugong-3-21",
-    "name": "등촌주공3단지",
+    "name": "등촌주공3단지 (21평)",
     "region": "서울",
     "district": "강서구",
     "dong": "등촌동",
@@ -8678,8 +8669,8 @@
       "마곡지구 대기업 업무단지 및 홈플러스 강서점 도보 3분",
       "리모델링·재건축 호재와 탄탄한 실거주 수요"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%93%B1%EC%B4%8C%EC%A3%BC%EA%B3%B53%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%93%B1%EC%B4%8C%EC%A3%BC%EA%B3%B53%EB%8B%A8%EC%A7%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/12",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/12",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%93%B1%EC%B4%8C%EC%A3%BC%EA%B3%B53%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
@@ -8700,11 +8691,12 @@
         "리모델링·재건축 호재와 탄탄한 실거주 수요"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "12"
   },
   {
     "id": "seoul-gangseo-deungchon-ipark-24",
-    "name": "등촌아이파크",
+    "name": "등촌아이파크 (24평)",
     "region": "서울",
     "district": "강서구",
     "dong": "등촌동",
@@ -8750,8 +8742,8 @@
       "계단식 방 3개 구조 + 지하주차장 완비",
       "여의도·마곡·강남 출퇴근 부부 신생아 특례 1순위 추천"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%93%B1%EC%B4%8C%EC%95%84%EC%9D%B4%ED%8C%8C%ED%81%AC",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%93%B1%EC%B4%8C%EC%95%84%EC%9D%B4%ED%8C%8C%ED%81%AC",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/13859",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/13859",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%93%B1%EC%B4%8C%EC%95%84%EC%9D%B4%ED%8C%8C%ED%81%AC",
     "floorPlan": {
       "type": "59_3bay",
@@ -8772,11 +8764,12 @@
         "여의도·마곡·강남 출퇴근 부부 신생아 특례 1순위 추천"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "13859"
   },
   {
     "id": "seoul-gangseo-banghwa-5-21",
-    "name": "방화5단지",
+    "name": "방화5단지 (21평)",
     "region": "서울",
     "district": "강서구",
     "dong": "방화동",
@@ -8821,8 +8814,8 @@
       "5호선 방화역 도보 3분 1,372세대 대단지 (마곡·여의도·광화문 직결)",
       "보금자리론 6억 이하 기준 완벽 충족하는 강서구 알짜 단지"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%B0%A9%ED%99%945%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%B0%A9%ED%99%945%EB%8B%A8%EC%A7%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/24",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/24",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B0%A9%ED%99%945%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
@@ -8842,11 +8835,12 @@
         "보금자리론 6억 이하 기준 완벽 충족하는 강서구 알짜 단지"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "24"
   },
   {
     "id": "seoul-yangcheon-sinwol-siyeong-21",
-    "name": "신월시영아파트",
+    "name": "신월시영아파트 (21평)",
     "region": "서울",
     "district": "양천구",
     "dong": "신월동",
@@ -8892,8 +8886,8 @@
       "3,100세대 신축 대단지로 탈바꿈 예정인 양천구 핵심 투자·실거주처",
       "보금자리론 6억 이하 기준 적격"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%8B%A0%EC%9B%94%EC%8B%9C%EC%98%81%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%8B%A0%EC%9B%94%EC%8B%9C%EC%98%81%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/858",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/858",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8B%A0%EC%9B%94%EC%8B%9C%EC%98%81%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
@@ -8914,11 +8908,12 @@
         "보금자리론 6억 이하 기준 적격"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "858"
   },
   {
     "id": "seoul-yangcheon-sinjeong-ipark-24",
-    "name": "신정아이파크",
+    "name": "신정아이파크 (24평)",
     "region": "서울",
     "district": "양천구",
     "dong": "신정동",
@@ -8963,8 +8958,8 @@
       "양천구 목동 학원가 라이딩이 가능한 1,164세대 아이파크 대단지",
       "계단식 방 3개 구조 + 신생아 특례대출(9억 이하) 최적 단지"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%8B%A0%EC%A0%95%EC%95%84%EC%9D%B4%ED%8C%8C%ED%81%AC",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%8B%A0%EC%A0%95%EC%95%84%EC%9D%B4%ED%8C%8C%ED%81%AC",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3447",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3447",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8B%A0%EC%A0%95%EC%95%84%EC%9D%B4%ED%8C%8C%ED%81%AC",
     "floorPlan": {
       "type": "59_3bay",
@@ -8984,11 +8979,12 @@
         "계단식 방 3개 구조 + 신생아 특례대출(9억 이하) 최적 단지"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "3447"
   },
   {
     "id": "seoul-yeongdeungpo-daerim-hyundai-3-24",
-    "name": "대림현대3차",
+    "name": "대림현대3차 (24평)",
     "region": "서울",
     "district": "영등포구",
     "dong": "대림동",
@@ -9034,8 +9030,8 @@
       "여의도·강남 모두 15분대에 주파하는 황금 교통망",
       "신생아 특례대출로 영등포구 입성 가능한 귀한 대단지"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%8C%80%EB%A6%BC%ED%98%84%EB%8C%803%EC%B0%A8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%8C%80%EB%A6%BC%ED%98%84%EB%8C%803%EC%B0%A8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/698",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/698",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8C%80%EB%A6%BC%ED%98%84%EB%8C%803%EC%B0%A8",
     "floorPlan": {
       "type": "59_3bay",
@@ -9056,11 +9052,12 @@
         "신생아 특례대출로 영등포구 입성 가능한 귀한 대단지"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "698"
   },
   {
     "id": "seoul-gangdong-amsa-hyundai-24",
-    "name": "암사현대홈타운",
+    "name": "암사선사현대 (24평)",
     "region": "서울",
     "district": "강동구",
     "dong": "암사동",
@@ -9106,9 +9103,9 @@
       "잠실역 10분대 직결로 송파·강남 출퇴근 최강 가성비",
       "한강 광나루공원 도보 산책권 및 신생아 특례 9억 이하 적격!"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%95%94%EC%82%AC%ED%98%84%EB%8C%80%ED%99%88%ED%83%80%EC%9A%B4",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%95%94%EC%82%AC%ED%98%84%EB%8C%80%ED%99%88%ED%83%80%EC%9A%B4",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%95%94%EC%82%AC%ED%98%84%EB%8C%80%ED%99%88%ED%83%80%EC%9A%B4",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3118",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3118",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%95%94%EC%82%AC%EC%84%A0%EC%82%AC%ED%98%84%EB%8C%80",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.98㎡ (공급 24평형) 2-Bay 계단식 판상형 평면도",
@@ -9128,11 +9125,12 @@
         "한강 광나루공원 도보 산책권 및 신생아 특례 9억 이하 적격!"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "3118"
   },
   {
     "id": "gyeonggi-goyang-haengsin-haetbit-21-24",
-    "name": "햇빛마을21단지",
+    "name": "햇빛마을21단지 (24평)",
     "region": "경기",
     "district": "고양시 덕양구",
     "dong": "행신동",
@@ -9177,8 +9175,8 @@
       "행신역 역세권 1,452세대 평지 대단지 (상암DMC 12분·홍대 20분)",
       "4억 중반대 계단식 방 3개 구조로 디딤돌·보금자리론 모두 최적"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%ED%96%87%EB%B9%9B%EB%A7%88%EC%9D%8421%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%ED%96%87%EB%B9%9B%EB%A7%88%EC%9D%8421%EB%8B%A8%EC%A7%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1528",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1528",
     "kbLandUrl": "https://kbland.kr/search?keyword=%ED%96%87%EB%B9%9B%EB%A7%88%EC%9D%8421%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
@@ -9198,11 +9196,12 @@
         "4억 중반대 계단식 방 3개 구조로 디딤돌·보금자리론 모두 최적"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "1528"
   },
   {
     "id": "gyeonggi-goyang-ilsan-gangseon-14-31",
-    "name": "강선마을14단지두산",
+    "name": "강선마을14단지두산 (31평)",
     "region": "경기",
     "district": "고양시 일산서구",
     "dong": "주엽동",
@@ -9248,8 +9247,8 @@
       "일산 호수공원 도보권 및 한수초·한수중 명문 학군",
       "보금자리론 6억 이하 기준 적격 전용 84㎡ 국민평형"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EA%B0%95%EC%84%A0%EB%A7%88%EC%9D%8414%EB%8B%A8%EC%A7%80%EB%91%90%EC%82%B0",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EA%B0%95%EC%84%A0%EB%A7%88%EC%9D%8414%EB%8B%A8%EC%A7%80%EB%91%90%EC%82%B0",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1365",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1365",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B0%95%EC%84%A0%EB%A7%88%EC%9D%8414%EB%8B%A8%EC%A7%80%EB%91%90%EC%82%B0",
     "floorPlan": {
       "type": "84_3bay",
@@ -9270,11 +9269,12 @@
         "보금자리론 6억 이하 기준 적격 전용 84㎡ 국민평형"
       ],
       "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "1365"
   },
   {
     "id": "gyeonggi-goyang-ilsan-baekma-1-32",
-    "name": "백마마을1단지삼성",
+    "name": "백마마을1단지삼성 (32평)",
     "region": "경기",
     "district": "고양시 일산동구",
     "dong": "마두동",
@@ -9320,8 +9320,8 @@
       "서해선(김포공항·여의도 환승) 및 경의중앙선 백마역 역세권",
       "신생아 특례대출 최적 학세권 대단지"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%B0%B1%EB%A7%88%EB%A7%88%EC%9D%841%EB%8B%A8%EC%A7%80%EC%82%BC%EC%84%B1",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%B0%B1%EB%A7%88%EB%A7%88%EC%9D%841%EB%8B%A8%EC%A7%80%EC%82%BC%EC%84%B1",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/2926",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/2926",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B0%B1%EB%A7%88%EB%A7%88%EC%9D%841%EB%8B%A8%EC%A7%80%EC%82%BC%EC%84%B1",
     "floorPlan": {
       "type": "84_3bay",
@@ -9342,11 +9342,12 @@
         "신생아 특례대출 최적 학세권 대단지"
       ],
       "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "2926"
   },
   {
     "id": "gyeonggi-gwangmyeong-haan-jugong-5-19",
-    "name": "하안주공5단지",
+    "name": "하안주공5단지 (19평)",
     "region": "경기",
     "district": "광명시",
     "dong": "하안동",
@@ -9392,8 +9393,8 @@
       "7호선 철산역·가산디지털단지·강남 직결 생활권",
       "보금자리론 및 신생아 특례대출 모두 적격"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%ED%95%98%EC%95%88%EC%A3%BC%EA%B3%B55%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%ED%95%98%EC%95%88%EC%A3%BC%EA%B3%B55%EB%8B%A8%EC%A7%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1630",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1630",
     "kbLandUrl": "https://kbland.kr/search?keyword=%ED%95%98%EC%95%88%EC%A3%BC%EA%B3%B55%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
@@ -9414,11 +9415,12 @@
         "보금자리론 및 신생아 특례대출 모두 적격"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "1630"
   },
   {
     "id": "gyeonggi-gwangmyeong-haan-jugong-7-22",
-    "name": "하안주공7단지",
+    "name": "하안주공7단지 (22평)",
     "region": "경기",
     "district": "광명시",
     "dong": "하안동",
@@ -9463,8 +9465,8 @@
       "하안동 사거리 중심 상권·학원가 바로 앞 핵심 재건축 단지",
       "보금자리론 6억 이하 기준 완벽 충족"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%ED%95%98%EC%95%88%EC%A3%BC%EA%B3%B57%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%ED%95%98%EC%95%88%EC%A3%BC%EA%B3%B57%EB%8B%A8%EC%A7%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1632",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1632",
     "kbLandUrl": "https://kbland.kr/search?keyword=%ED%95%98%EC%95%88%EC%A3%BC%EA%B3%B57%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
@@ -9484,11 +9486,12 @@
         "보금자리론 6억 이하 기준 완벽 충족"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "1632"
   },
   {
     "id": "gyeonggi-anyang-pyeongchon-gongjak-20",
-    "name": "공작부영아파트",
+    "name": "공작부영아파트 (20평)",
     "region": "경기",
     "district": "안양시 동안구",
     "dong": "평촌동",
@@ -9534,8 +9537,8 @@
       "한림대성심병원, 평촌중앙공원, 이마트 바로 앞 최상급 인프라",
       "보금자리론·신혼 디딤돌·신생아특례 모두 가능!"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EA%B3%B5%EC%9E%91%EB%B6%80%EC%98%81%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EA%B3%B5%EC%9E%91%EB%B6%80%EC%98%81%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1463",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1463",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B3%B5%EC%9E%91%EB%B6%80%EC%98%81%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
@@ -9556,11 +9559,12 @@
         "보금자리론·신혼 디딤돌·신생아특례 모두 가능!"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "1463"
   },
   {
     "id": "gyeonggi-gunpo-sanbon-sejong-6-24",
-    "name": "세종주공6단지",
+    "name": "세종주공6단지 (24평)",
     "region": "경기",
     "district": "군포시",
     "dong": "산본동",
@@ -9606,8 +9610,8 @@
       "방 3개 구조 + 이마트 산본점·원광대병원 슬세권",
       "보금자리론 6억 이하 및 신생아 특례 최적 단지"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%84%B8%EC%A2%85%EC%A3%BC%EA%B3%B56%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%84%B8%EC%A2%85%EC%A3%BC%EA%B3%B56%EB%8B%A8%EC%A7%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3864",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3864",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%84%B8%EC%A2%85%EC%A3%BC%EA%B3%B56%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
@@ -9628,11 +9632,12 @@
         "보금자리론 6억 이하 및 신생아 특례 최적 단지"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "3864"
   },
   {
     "id": "gyeonggi-suwon-yeongtong-hwanggol-1-24",
-    "name": "황골마을1단지주공",
+    "name": "황골마을1단지 영통포레스트 (24평)",
     "region": "경기",
     "district": "수원시 영통구",
     "dong": "영통동",
@@ -9678,9 +9683,9 @@
       "계단식 방 3개 구조 + 삼성전자 수원사업장 직주근접",
       "4억 중후반대로 3대 정책대출 모두 최저 금리 이용 가능!"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%ED%99%A9%EA%B3%A8%EB%A7%88%EC%9D%841%EB%8B%A8%EC%A7%80%EC%A3%BC%EA%B3%B5",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%ED%99%A9%EA%B3%A8%EB%A7%88%EC%9D%841%EB%8B%A8%EC%A7%80%EC%A3%BC%EA%B3%B5",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%ED%99%A9%EA%B3%A8%EB%A7%88%EC%9D%841%EB%8B%A8%EC%A7%80%EC%A3%BC%EA%B3%B5",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1812",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1812",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%ED%99%A9%EA%B3%A8%EB%A7%88%EC%9D%841%EB%8B%A8%EC%A7%80%20%EC%98%81%ED%86%B5%ED%8F%AC%EB%A0%88%EC%8A%A4%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.99㎡ (공급 24평형) 2-Bay 계단식 판상형 평면도",
@@ -9700,11 +9705,12 @@
         "4억 중후반대로 3대 정책대출 모두 최저 금리 이용 가능!"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "1812"
   },
   {
     "id": "gyeonggi-yongin-suji-pungdeokcheon-24",
-    "name": "풍덕천한국아파트",
+    "name": "풍덕천한국아파트 (24평)",
     "region": "경기",
     "district": "용인시 수지구",
     "dong": "풍덕천동",
@@ -9750,8 +9756,8 @@
       "수지 명문 학원가 및 신월초 초품아, 리모델링 호재",
       "신생아 특례대출(9억 이하) 활용 시 판교·강남 출퇴근 최강"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%ED%92%8D%EB%8D%95%EC%B2%9C%ED%95%9C%EA%B5%AD%EC%95%84%ED%8C%8C%ED%8A%B8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%ED%92%8D%EB%8D%95%EC%B2%9C%ED%95%9C%EA%B5%AD%EC%95%84%ED%8C%8C%ED%8A%B8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3741",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3741",
     "kbLandUrl": "https://kbland.kr/search?keyword=%ED%92%8D%EB%8D%95%EC%B2%9C%ED%95%9C%EA%B5%AD%EC%95%84%ED%8C%8C%ED%8A%B8",
     "floorPlan": {
       "type": "59_3bay",
@@ -9772,11 +9778,12 @@
         "신생아 특례대출(9억 이하) 활용 시 판교·강남 출퇴근 최강"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "3741"
   },
   {
     "id": "gyeonggi-guri-inchang-jugong-1-24",
-    "name": "인창주공1단지",
+    "name": "인창주공1단지 (24평)",
     "region": "경기",
     "district": "구리시",
     "dong": "인창동",
@@ -9822,8 +9829,8 @@
       "롯데백화점 구리점, 인창중앙공원 바로 앞 1,286세대 대단지",
       "보금자리론 6억 이하 완벽 적격"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%9D%B8%EC%B0%BD%EC%A3%BC%EA%B3%B51%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%9D%B8%EC%B0%BD%EC%A3%BC%EA%B3%B51%EB%8B%A8%EC%A7%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1659",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1659",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%9D%B8%EC%B0%BD%EC%A3%BC%EA%B3%B51%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
@@ -9844,11 +9851,12 @@
         "보금자리론 6억 이하 완벽 적격"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "1659"
   },
   {
     "id": "gyeonggi-uijeongbu-lottecastle-25",
-    "name": "의정부롯데캐슬골드파크1단지",
+    "name": "의정부롯데캐슬골드파크1단지 (25평)",
     "region": "경기",
     "district": "의정부시",
     "dong": "호원동",
@@ -9894,8 +9902,8 @@
       "직동근린공원 숲세권 + 4-Bay 판상형 신축 평면",
       "보금자리론·디딤돌(신혼)·신생아 모두 적격인 신축 아파트"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%9D%98%EC%A0%95%EB%B6%80%EB%A1%AF%EB%8D%B0%EC%BA%90%EC%8A%AC%EA%B3%A8%EB%93%9C%ED%8C%8C%ED%81%AC1%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%9D%98%EC%A0%95%EB%B6%80%EB%A1%AF%EB%8D%B0%EC%BA%90%EC%8A%AC%EA%B3%A8%EB%93%9C%ED%8C%8C%ED%81%AC1%EB%8B%A8%EC%A7%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/113537",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/113537",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%9D%98%EC%A0%95%EB%B6%80%EB%A1%AF%EB%8D%B0%EC%BA%90%EC%8A%AC%EA%B3%A8%EB%93%9C%ED%8C%8C%ED%81%AC1%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
@@ -9916,11 +9924,12 @@
         "보금자리론·디딤돌(신혼)·신생아 모두 적격인 신축 아파트"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "113537"
   },
   {
     "id": "gyeonggi-kimpo-hangang-xi-1-34",
-    "name": "한강센트럴자이1단지",
+    "name": "한강센트럴자이1단지 (34평)",
     "region": "경기",
     "district": "김포시",
     "dong": "장기동",
@@ -9966,8 +9975,8 @@
       "초품아(가현초) + 캠핑장·맘스스테이션·대형 커뮤니티 완비",
       "5억 중반에 누리는 34평 4-Bay (보금자리론 6억 이하 적격!)"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%ED%95%9C%EA%B0%95%EC%84%BC%ED%8A%B8%EB%9F%B4%EC%9E%90%EC%9D%B41%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%ED%95%9C%EA%B0%95%EC%84%BC%ED%8A%B8%EB%9F%B4%EC%9E%90%EC%9D%B41%EB%8B%A8%EC%A7%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/108487",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/108487",
     "kbLandUrl": "https://kbland.kr/search?keyword=%ED%95%9C%EA%B0%95%EC%84%BC%ED%8A%B8%EB%9F%B4%EC%9E%90%EC%9D%B41%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "84_3bay",
@@ -9988,11 +9997,12 @@
         "5억 중반에 누리는 34평 4-Bay (보금자리론 6억 이하 적격!)"
       ],
       "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "108487"
   },
   {
     "id": "incheon-namdong-guwol-hillstate-1-25",
-    "name": "구월힐스테이트롯데캐슬골드1단지",
+    "name": "구월힐스테이트롯데캐슬골드1단지 (25평)",
     "region": "인천",
     "district": "남동구",
     "dong": "구월동",
@@ -10038,8 +10048,8 @@
       "인천시청역(GTX-B 서울역·여의도 20분대 직결!) 도보 5분 초역세권",
       "4억 중반대로 3대 정책대출(신생아/보금자리/디딤돌) 모두 최적 적격"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EA%B5%AC%EC%9B%94%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8%EB%A1%AF%EB%8D%B0%EC%BA%90%EC%8A%AC%EA%B3%A8%EB%93%9C1%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EA%B5%AC%EC%9B%94%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8%EB%A1%AF%EB%8D%B0%EC%BA%90%EC%8A%AC%EA%B3%A8%EB%93%9C1%EB%8B%A8%EC%A7%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/18892",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/18892",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B5%AC%EC%9B%94%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8%EB%A1%AF%EB%8D%B0%EC%BA%90%EC%8A%AC%EA%B3%A8%EB%93%9C1%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
@@ -10060,11 +10070,12 @@
         "4억 중반대로 3대 정책대출(신생아/보금자리/디딤돌) 모두 최적 적격"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "18892"
   },
   {
     "id": "incheon-namdong-guwol-hillstate-1-34",
-    "name": "구월힐스테이트롯데캐슬골드1단지",
+    "name": "구월힐스테이트롯데캐슬골드1단지 (34평)",
     "region": "인천",
     "district": "남동구",
     "dong": "구월동",
@@ -10110,8 +10121,8 @@
       "롯데백화점 인천점, 뉴코아아울렛, 길병원 최중심 인프라",
       "보금자리론 6억 이하 및 신생아 특례 최적 조건"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EA%B5%AC%EC%9B%94%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8%EB%A1%AF%EB%8D%B0%EC%BA%90%EC%8A%AC%EA%B3%A8%EB%93%9C1%EB%8B%A8%EC%A7%80",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EA%B5%AC%EC%9B%94%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8%EB%A1%AF%EB%8D%B0%EC%BA%90%EC%8A%AC%EA%B3%A8%EB%93%9C1%EB%8B%A8%EC%A7%80",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/18892",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/18892",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B5%AC%EC%9B%94%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8%EB%A1%AF%EB%8D%B0%EC%BA%90%EC%8A%AC%EA%B3%A8%EB%93%9C1%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "84_3bay",
@@ -10132,11 +10143,12 @@
         "보금자리론 6억 이하 및 신생아 특례 최적 조건"
       ],
       "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "18892"
   },
   {
     "id": "incheon-seo-geomdan-kumho-34",
-    "name": "검단금호어울림센트럴",
+    "name": "검단금호어울림센트럴 (34평)",
     "region": "인천",
     "district": "서구",
     "dong": "원당동",
@@ -10182,8 +10194,8 @@
       "초·중·고 모두 품은 학세권 + 중심상업지구 바로 앞",
       "신생아 특례대출(9억 이하)로 매수 가능한 4-Bay 신축 34평"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EA%B2%80%EB%8B%A8%EA%B8%88%ED%98%B8%EC%96%B4%EC%9A%B8%EB%A6%BC%EC%84%BC%ED%8A%B8%EB%9F%B4",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EA%B2%80%EB%8B%A8%EA%B8%88%ED%98%B8%EC%96%B4%EC%9A%B8%EB%A6%BC%EC%84%BC%ED%8A%B8%EB%9F%B4",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/124846",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/124846",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B2%80%EB%8B%A8%EA%B8%88%ED%98%B8%EC%96%B4%EC%9A%B8%EB%A6%BC%EC%84%BC%ED%8A%B8%EB%9F%B4",
     "floorPlan": {
       "type": "84_3bay",
@@ -10204,11 +10216,12 @@
         "신생아 특례대출(9억 이하)로 매수 가능한 4-Bay 신축 34평"
       ],
       "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "124846"
   },
   {
     "id": "incheon-yeonsu-woosung-1-31",
-    "name": "연수우성1차",
+    "name": "연수우성1차 (31평)",
     "region": "인천",
     "district": "연수구",
     "dong": "연수동",
@@ -10254,8 +10267,8 @@
       "원인재역 더블역세권 + 4억 중반 전용 84㎡ 계단식 방3·욕실2",
       "3대 정책대출(신생아/보금자리/디딤돌) 모두 최저 금리 이용 가능"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%97%B0%EC%88%98%EC%9A%B0%EC%84%B11%EC%B0%A8",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%97%B0%EC%88%98%EC%9A%B0%EC%84%B11%EC%B0%A8",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/2374",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/2374",
     "kbLandUrl": "https://kbland.kr/search?keyword=%EC%97%B0%EC%88%98%EC%9A%B0%EC%84%B11%EC%B0%A8",
     "floorPlan": {
       "type": "84_3bay",
@@ -10276,11 +10289,12 @@
         "3대 정책대출(신생아/보금자리/디딤돌) 모두 최저 금리 이용 가능"
       ],
       "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "2374"
   },
   {
     "id": "seoul-yeongdeungpo-singil-woosung-3-23",
-    "name": "신길우성3차 23평형",
+    "name": "신길우성3차 (23평)",
     "region": "서울",
     "district": "영등포구",
     "dong": "신길동",
@@ -10326,9 +10340,9 @@
       "여의도 출퇴근 10분대 입지",
       "재건축 정비구역 기대감 및 신생아 특례 가능"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%8B%A0%EA%B8%B8%EC%9A%B0%EC%84%B13%EC%B0%A8%2023%ED%8F%89%ED%98%95",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%8B%A0%EA%B8%B8%EC%9A%B0%EC%84%B13%EC%B0%A8%2023%ED%8F%89%ED%98%95",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8B%A0%EA%B8%B8%EC%9A%B0%EC%84%B13%EC%B0%A8%2023%ED%8F%89%ED%98%95",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/722",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/722",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8B%A0%EA%B8%B8%EC%9A%B0%EC%84%B13%EC%B0%A8",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.94㎡ (공급 23평형) 2-Bay 복도식 판상형 평면도",
@@ -10348,11 +10362,12 @@
         "재건축 정비구역 기대감 및 신생아 특례 가능"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "722"
   },
   {
     "id": "seoul-gangdong-gil-dong-samik-park-23",
-    "name": "길동삼익파크맨션 23평형",
+    "name": "길동삼익파크맨션 (23평)",
     "region": "서울",
     "district": "강동구",
     "dong": "길동",
@@ -10398,9 +10413,9 @@
       "5호선 굽은다리역 도보 7분 역세권",
       "신생아 특례대출(9억 이하) 가능"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EA%B8%B8%EB%8F%99%EC%82%BC%EC%9D%B5%ED%8C%8C%ED%81%AC%EB%A7%A8%EC%85%98%2023%ED%8F%89%ED%98%95",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EA%B8%B8%EB%8F%99%EC%82%BC%EC%9D%B5%ED%8C%8C%ED%81%AC%EB%A7%A8%EC%85%98%2023%ED%8F%89%ED%98%95",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B8%B8%EB%8F%99%EC%82%BC%EC%9D%B5%ED%8C%8C%ED%81%AC%EB%A7%A8%EC%85%98%2023%ED%8F%89%ED%98%95",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1283",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1283",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B8%B8%EB%8F%99%EC%82%BC%EC%9D%B5%ED%8C%8C%ED%81%AC%EB%A7%A8%EC%85%98",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.5㎡ (공급 23평형) 2-Bay 계단식 판상형 평면도",
@@ -10420,11 +10435,12 @@
         "신생아 특례대출(9억 이하) 가능"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "1283"
   },
   {
     "id": "seoul-dongjak-sadang-daerim-24",
-    "name": "사당대림 24평형",
+    "name": "사당대림 (24평)",
     "region": "서울",
     "district": "동작구",
     "dong": "사당동",
@@ -10470,9 +10486,9 @@
       "강남(반포·논현) 지하철 10분 직주근접",
       "신생아 특례대출(9억 이하) 가능 동작구 단지"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%82%AC%EB%8B%B9%EB%8C%80%EB%A6%BC%2024%ED%8F%89%ED%98%95",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%82%AC%EB%8B%B9%EB%8C%80%EB%A6%BC%2024%ED%8F%89%ED%98%95",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%82%AC%EB%8B%B9%EB%8C%80%EB%A6%BC%2024%ED%8F%89%ED%98%95",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/375",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/375",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%82%AC%EB%8B%B9%EB%8C%80%EB%A6%BC",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.94㎡ (공급 24평형) 2-Bay 복도식 판상형 평면도",
@@ -10492,11 +10508,12 @@
         "신생아 특례대출(9억 이하) 가능 동작구 단지"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "375"
   },
   {
     "id": "seoul-dongjak-sangdo-hyundai-24",
-    "name": "상도더샵1차 24평형",
+    "name": "상도더샵1차 (24평)",
     "region": "서울",
     "district": "동작구",
     "dong": "상도동",
@@ -10542,9 +10559,9 @@
       "24평형 방3·화2 3-Bay 계단식 구조",
       "KB시세 9억 이하 신생아 특례대출 마지노선 입지"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%83%81%EB%8F%84%EB%8D%94%EC%83%B51%EC%B0%A8%2024%ED%8F%89%ED%98%95",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%83%81%EB%8F%84%EB%8D%94%EC%83%B51%EC%B0%A8%2024%ED%8F%89%ED%98%95",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%83%81%EB%8F%84%EB%8D%94%EC%83%B51%EC%B0%A8%2024%ED%8F%89%ED%98%95",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/22789",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/22789",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%83%81%EB%8F%84%EB%8D%94%EC%83%B51%EC%B0%A8",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.98㎡ (공급 24평형) 3-Bay 계단식 판상형 평면도",
@@ -10564,11 +10581,12 @@
         "KB시세 9억 이하 신생아 특례대출 마지노선 입지"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "22789"
   },
   {
     "id": "gyeonggi-goyang-ilsanseo-juyeop-kangseon-19-24",
-    "name": "강선마을19단지우성 24평형",
+    "name": "강선마을19단지우성 (24평)",
     "region": "경기",
     "district": "고양시 일산서구",
     "dong": "주엽동",
@@ -10614,9 +10632,9 @@
       "1기 신도시 노후계획도시 정비 특별법 수혜",
       "3대 정책대출 전 상품 가능"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EA%B0%95%EC%84%A0%EB%A7%88%EC%9D%8419%EB%8B%A8%EC%A7%80%EC%9A%B0%EC%84%B1%2024%ED%8F%89%ED%98%95",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EA%B0%95%EC%84%A0%EB%A7%88%EC%9D%8419%EB%8B%A8%EC%A7%80%EC%9A%B0%EC%84%B1%2024%ED%8F%89%ED%98%95",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B0%95%EC%84%A0%EB%A7%88%EC%9D%8419%EB%8B%A8%EC%A7%80%EC%9A%B0%EC%84%B1%2024%ED%8F%89%ED%98%95",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1370",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1370",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B0%95%EC%84%A0%EB%A7%88%EC%9D%8419%EB%8B%A8%EC%A7%80%EC%9A%B0%EC%84%B1",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.9㎡ (공급 24평형) 2-Bay 복도식 판상형 평면도",
@@ -10636,11 +10654,12 @@
         "3대 정책대출 전 상품 가능"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "1370"
   },
   {
     "id": "gyeonggi-goyang-ilsandong-baekseok-baeksong-24",
-    "name": "백송마을5단지삼호풍림 23평형",
+    "name": "백송마을5단지 풍림삼호 (23평)",
     "region": "경기",
     "district": "고양시 일산동구",
     "dong": "백석동",
@@ -10686,9 +10705,9 @@
       "3억대 후반 3대 정책대출 전 상품 가능",
       "서울 진입성이 가장 빠른 일산동구 단지"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%B0%B1%EC%86%A1%EB%A7%88%EC%9D%845%EB%8B%A8%EC%A7%80%EC%82%BC%ED%98%B8%ED%92%8D%EB%A6%BC%2023%ED%8F%89%ED%98%95",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%B0%B1%EC%86%A1%EB%A7%88%EC%9D%845%EB%8B%A8%EC%A7%80%EC%82%BC%ED%98%B8%ED%92%8D%EB%A6%BC%2023%ED%8F%89%ED%98%95",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B0%B1%EC%86%A1%EB%A7%88%EC%9D%845%EB%8B%A8%EC%A7%80%EC%82%BC%ED%98%B8%ED%92%8D%EB%A6%BC%2023%ED%8F%89%ED%98%95",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/2945",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/2945",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B0%B1%EC%86%A1%EB%A7%88%EC%9D%845%EB%8B%A8%EC%A7%80%20%ED%92%8D%EB%A6%BC%EC%82%BC%ED%98%B8",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 56.5㎡ (공급 23평형) 2-Bay 복도식 판상형 평면도",
@@ -10708,11 +10727,12 @@
         "서울 진입성이 가장 빠른 일산동구 단지"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "2945"
   },
   {
     "id": "gyeonggi-gwangmyeong-haaan-jugong-5-24",
-    "name": "하안주공5단지 24평형",
+    "name": "하안주공5단지 (24평)",
     "region": "경기",
     "district": "광명시",
     "dong": "하안동",
@@ -10758,9 +10778,9 @@
       "5억대 중반 보금자리론·신생아 특례 가능",
       "하안동 중심상권 및 도덕산 쾌적한 환경"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%ED%95%98%EC%95%88%EC%A3%BC%EA%B3%B55%EB%8B%A8%EC%A7%80%2024%ED%8F%89%ED%98%95",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%ED%95%98%EC%95%88%EC%A3%BC%EA%B3%B55%EB%8B%A8%EC%A7%80%2024%ED%8F%89%ED%98%95",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%ED%95%98%EC%95%88%EC%A3%BC%EA%B3%B55%EB%8B%A8%EC%A7%80%2024%ED%8F%89%ED%98%95",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1630",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1630",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%ED%95%98%EC%95%88%EC%A3%BC%EA%B3%B55%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 58.6㎡ (공급 24평형) 2-Bay 계단식 판상형 평면도",
@@ -10780,11 +10800,12 @@
         "하안동 중심상권 및 도덕산 쾌적한 환경"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "1630"
   },
   {
     "id": "gyeonggi-anyang-dongan-pyeongchon-chowlwon-7-24",
-    "name": "초원7단지부영 23평형",
+    "name": "초원7단지부영 (23평)",
     "region": "경기",
     "district": "안양시 동안구",
     "dong": "부림동",
@@ -10830,9 +10851,9 @@
       "평촌 학원가 및 중앙공원 접근성 우수",
       "보금자리론·신생아 특례 가능"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%B4%88%EC%9B%907%EB%8B%A8%EC%A7%80%EB%B6%80%EC%98%81%2023%ED%8F%89%ED%98%95",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%B4%88%EC%9B%907%EB%8B%A8%EC%A7%80%EB%B6%80%EC%98%81%2023%ED%8F%89%ED%98%95",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%B4%88%EC%9B%907%EB%8B%A8%EC%A7%80%EB%B6%80%EC%98%81%2023%ED%8F%89%ED%98%95",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/2595",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/2595",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%B4%88%EC%9B%907%EB%8B%A8%EC%A7%80%EB%B6%80%EC%98%81",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 54.5㎡ (공급 23평형) 2-Bay 복도식 판상형 평면도",
@@ -10852,11 +10873,12 @@
         "보금자리론·신생아 특례 가능"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "2595"
   },
   {
     "id": "gyeonggi-gunpo-sanbon-maehwa-14-24",
-    "name": "매화주공14단지 23평형",
+    "name": "매화주공14단지 (23평)",
     "region": "경기",
     "district": "군포시",
     "dong": "산본동",
@@ -10902,9 +10924,9 @@
       "4억대 초반 3대 정책대출 전 상품 가능",
       "산본 1기 신도시 리모델링·재건축 추진"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%A7%A4%ED%99%94%EC%A3%BC%EA%B3%B514%EB%8B%A8%EC%A7%80%2023%ED%8F%89%ED%98%95",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%A7%A4%ED%99%94%EC%A3%BC%EA%B3%B514%EB%8B%A8%EC%A7%80%2023%ED%8F%89%ED%98%95",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%A7%A4%ED%99%94%EC%A3%BC%EA%B3%B514%EB%8B%A8%EC%A7%80%2023%ED%8F%89%ED%98%95",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/2628",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/2628",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%A7%A4%ED%99%94%EC%A3%BC%EA%B3%B514%EB%8B%A8%EC%A7%80",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 58.4㎡ (공급 23평형) 2-Bay 복도식 판상형 평면도",
@@ -10924,11 +10946,12 @@
         "산본 1기 신도시 리모델링·재건축 추진"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "2628"
   },
   {
     "id": "gyeonggi-suwon-yeongtong-byeokjeokgol-9-24",
-    "name": "벽적골9단지롯데 24평형",
+    "name": "벽적골9단지롯데 (24평)",
     "region": "경기",
     "district": "수원시 영통구",
     "dong": "영통동",
@@ -10974,9 +10997,9 @@
       "5억 이하로 생애최초 디딤돌·보금자리론·신생아 특례 모두 가능",
       "영통 학원가 도보 이용 가능"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%B2%BD%EC%A0%81%EA%B3%A89%EB%8B%A8%EC%A7%80%EB%A1%AF%EB%8D%B0%2024%ED%8F%89%ED%98%95",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%B2%BD%EC%A0%81%EA%B3%A89%EB%8B%A8%EC%A7%80%EB%A1%AF%EB%8D%B0%2024%ED%8F%89%ED%98%95",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B2%BD%EC%A0%81%EA%B3%A89%EB%8B%A8%EC%A7%80%EB%A1%AF%EB%8D%B0%2024%ED%8F%89%ED%98%95",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3638",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3638",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B2%BD%EC%A0%81%EA%B3%A89%EB%8B%A8%EC%A7%80%EB%A1%AF%EB%8D%B0",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.98㎡ (공급 24평형) 2-Bay 계단식 판상형 평면도",
@@ -10996,11 +11019,12 @@
         "영통 학원가 도보 이용 가능"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "3638"
   },
   {
     "id": "gyeonggi-yongin-suji-pungdeokcheon-samik-24",
-    "name": "수지삼익풍림동아 24평형",
+    "name": "수지삼익풍림동아 (24평)",
     "region": "경기",
     "district": "용인시 수지구",
     "dong": "풍덕천동",
@@ -11046,9 +11070,9 @@
       "KB시세 6억으로 HF 보금자리론 및 신생아 특례 가능",
       "풍덕천동 명문 학원가 인접"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%88%98%EC%A7%80%EC%82%BC%EC%9D%B5%ED%92%8D%EB%A6%BC%EB%8F%99%EC%95%84%2024%ED%8F%89%ED%98%95",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%88%98%EC%A7%80%EC%82%BC%EC%9D%B5%ED%92%8D%EB%A6%BC%EB%8F%99%EC%95%84%2024%ED%8F%89%ED%98%95",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%88%98%EC%A7%80%EC%82%BC%EC%9D%B5%ED%92%8D%EB%A6%BC%EB%8F%99%EC%95%84%2024%ED%8F%89%ED%98%95",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/11098",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/11098",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%88%98%EC%A7%80%EC%82%BC%EC%9D%B5%ED%92%8D%EB%A6%BC%EB%8F%99%EC%95%84",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.9㎡ (공급 24평형) 2-Bay 복도식 판상형 평면도",
@@ -11068,11 +11092,12 @@
         "풍덕천동 명문 학원가 인접"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "11098"
   },
   {
     "id": "gyeonggi-guri-galmae-purgio-24",
-    "name": "구리갈매푸르지오 25평형",
+    "name": "구리갈매푸르지오 (25평)",
     "region": "경기",
     "district": "구리시",
     "dong": "갈매동",
@@ -11118,9 +11143,9 @@
       "25평형 4-Bay 판상형 방3·화2 구조",
       "6억 이하 보금자리론·신생아 특례 가능"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EA%B5%AC%EB%A6%AC%EA%B0%88%EB%A7%A4%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%2025%ED%8F%89%ED%98%95",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EA%B5%AC%EB%A6%AC%EA%B0%88%EB%A7%A4%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%2025%ED%8F%89%ED%98%95",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B5%AC%EB%A6%AC%EA%B0%88%EB%A7%A4%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4%2025%ED%8F%89%ED%98%95",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/110747",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/110747",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EA%B5%AC%EB%A6%AC%EA%B0%88%EB%A7%A4%ED%91%B8%EB%A5%B4%EC%A7%80%EC%98%A4",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.99㎡ (공급 25평형) 4-Bay 계단식 판상형 평면도",
@@ -11140,11 +11165,12 @@
         "6억 이하 보금자리론·신생아 특례 가능"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "110747"
   },
   {
     "id": "gyeonggi-uijeongbu-minrak-e-pyeonhansesang-25",
-    "name": "e편한세상민락 25평형",
+    "name": "민락e-편한세상 (25평)",
     "region": "경기",
     "district": "의정부시",
     "dong": "민락동",
@@ -11190,9 +11216,9 @@
       "3억대 중반 가성비 방3·화2 계단식 구조",
       "3대 정책대출 모두 가능"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=e%ED%8E%B8%ED%95%9C%EC%84%B8%EC%83%81%EB%AF%BC%EB%9D%BD%2025%ED%8F%89%ED%98%95",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/e%ED%8E%B8%ED%95%9C%EC%84%B8%EC%83%81%EB%AF%BC%EB%9D%BD%2025%ED%8F%89%ED%98%95",
-    "kbLandUrl": "https://kbland.kr/search?keyword=e%ED%8E%B8%ED%95%9C%EC%84%B8%EC%83%81%EB%AF%BC%EB%9D%BD%2025%ED%8F%89%ED%98%95",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/19121",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/19121",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%AF%BC%EB%9D%BDe-%ED%8E%B8%ED%95%9C%EC%84%B8%EC%83%81",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.98㎡ (공급 25평형) 3-Bay 계단식 판상형 평면도",
@@ -11212,11 +11238,12 @@
         "3대 정책대출 모두 가능"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "19121"
   },
   {
     "id": "gyeonggi-namyangju-dasan-jayun-lottercastle-33",
-    "name": "다산자연앤롯데캐슬 33평형",
+    "name": "다산자연앤롯데캐슬 (33평)",
     "region": "경기",
     "district": "남양주시",
     "dong": "다산동",
@@ -11262,9 +11289,9 @@
       "잠실역 직통 20분대 강남 접근성 대폭 향상",
       "신생아 특례대출(9억 이하) 가능 33평 4-Bay"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EB%8B%A4%EC%82%B0%EC%9E%90%EC%97%B0%EC%95%A4%EB%A1%AF%EB%8D%B0%EC%BA%90%EC%8A%AC%2033%ED%8F%89%ED%98%95",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EB%8B%A4%EC%82%B0%EC%9E%90%EC%97%B0%EC%95%A4%EB%A1%AF%EB%8D%B0%EC%BA%90%EC%8A%AC%2033%ED%8F%89%ED%98%95",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8B%A4%EC%82%B0%EC%9E%90%EC%97%B0%EC%95%A4%EB%A1%AF%EB%8D%B0%EC%BA%90%EC%8A%AC%2033%ED%8F%89%ED%98%95",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/110298",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/110298",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8B%A4%EC%82%B0%EC%9E%90%EC%97%B0%EC%95%A4%EB%A1%AF%EB%8D%B0%EC%BA%90%EC%8A%AC",
     "floorPlan": {
       "type": "84_3bay",
       "title": "전용 84.98㎡ (공급 33평형) 4-Bay 계단식 판상형 평면도",
@@ -11284,11 +11311,12 @@
         "신생아 특례대출(9억 이하) 가능 33평 4-Bay"
       ],
       "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "110298"
   },
   {
     "id": "incheon-namdong-nonhyeon-hillstate-25",
-    "name": "인천논현힐스테이트 33평형",
+    "name": "인천논현힐스테이트 (33평)",
     "region": "인천",
     "district": "남동구",
     "dong": "논현동",
@@ -11334,9 +11362,9 @@
       "인천 논현동 학원가 및 중심상권 인접",
       "4억대 후반 33평형으로 3대 정책대출 모두 가능"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%9D%B8%EC%B2%9C%EB%85%BC%ED%98%84%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8%2033%ED%8F%89%ED%98%95",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%9D%B8%EC%B2%9C%EB%85%BC%ED%98%84%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8%2033%ED%8F%89%ED%98%95",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%9D%B8%EC%B2%9C%EB%85%BC%ED%98%84%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8%2033%ED%8F%89%ED%98%95",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/26403",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/26403",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%9D%B8%EC%B2%9C%EB%85%BC%ED%98%84%ED%9E%90%EC%8A%A4%ED%85%8C%EC%9D%B4%ED%8A%B8",
     "floorPlan": {
       "type": "84_3bay",
       "title": "전용 84.9㎡ (공급 33평형) 3-Bay 계단식 판상형 평면도",
@@ -11356,11 +11384,12 @@
         "4억대 후반 33평형으로 3대 정책대출 모두 가능"
       ],
       "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "26403"
   },
   {
     "id": "incheon-gyeyang-jakjeon-hyundai-2-24",
-    "name": "작전현대2차 24평형",
+    "name": "작전현대2차 (24평)",
     "region": "인천",
     "district": "계양구",
     "dong": "작전동",
@@ -11406,9 +11435,9 @@
       "BRT로 서울 화곡·여의도 출퇴근 편리",
       "3억대 초반 3대 정책대출 모두 가능"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%9E%91%EC%A0%84%ED%98%84%EB%8C%802%EC%B0%A8%2024%ED%8F%89%ED%98%95",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%9E%91%EC%A0%84%ED%98%84%EB%8C%802%EC%B0%A8%2024%ED%8F%89%ED%98%95",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%9E%91%EC%A0%84%ED%98%84%EB%8C%802%EC%B0%A8%2024%ED%8F%89%ED%98%95",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/2441",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/2441",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%9E%91%EC%A0%84%ED%98%84%EB%8C%802%EC%B0%A8",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.96㎡ (공급 24평형) 2-Bay 복도식 판상형 평면도",
@@ -11428,11 +11457,12 @@
         "3억대 초반 3대 정책대출 모두 가능"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "2441"
   },
   {
     "id": "incheon-michuhol-sk-skyview-25",
-    "name": "인천SK스카이뷰 25평형",
+    "name": "인천SK스카이뷰 (25평)",
     "region": "인천",
     "district": "미추홀구",
     "dong": "용현동",
@@ -11478,9 +11508,9 @@
       "실내수영장·캠핑장 등 최상급 커뮤니티 시설",
       "4억대 후반으로 3대 정책대출 모두 가능"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%9D%B8%EC%B2%9CSK%EC%8A%A4%EC%B9%B4%EC%9D%B4%EB%B7%B0%2025%ED%8F%89%ED%98%95",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%9D%B8%EC%B2%9CSK%EC%8A%A4%EC%B9%B4%EC%9D%B4%EB%B7%B0%2025%ED%8F%89%ED%98%95",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%9D%B8%EC%B2%9CSK%EC%8A%A4%EC%B9%B4%EC%9D%B4%EB%B7%B0%2025%ED%8F%89%ED%98%95",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/107437",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/107437",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%9D%B8%EC%B2%9CSK%EC%8A%A4%EC%B9%B4%EC%9D%B4%EB%B7%B0",
     "floorPlan": {
       "type": "59_3bay",
       "title": "전용 59.98㎡ (공급 25평형) 4-Bay 계단식 판상형 평면도",
@@ -11500,11 +11530,12 @@
         "4억대 후반으로 3대 정책대출 모두 가능"
       ],
       "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "107437"
   },
   {
     "id": "incheon-michuhol-sk-skyview-34",
-    "name": "인천SK스카이뷰 34평형",
+    "name": "인천SK스카이뷰 (34평)",
     "region": "인천",
     "district": "미추홀구",
     "dong": "용현동",
@@ -11550,9 +11581,9 @@
       "KB시세 5.8억으로 HF 보금자리론·신생아 특례 가능",
       "판상형 4-Bay 맞통풍 구조 및 알파룸"
     ],
-    "naverLandUrl": "https://new.land.naver.com/search?sk=%EC%9D%B8%EC%B2%9CSK%EC%8A%A4%EC%B9%B4%EC%9D%B4%EB%B7%B0%2034%ED%8F%89%ED%98%95",
-    "naverMobileUrl": "https://m.land.naver.com/search/result/%EC%9D%B8%EC%B2%9CSK%EC%8A%A4%EC%B9%B4%EC%9D%B4%EB%B7%B0%2034%ED%8F%89%ED%98%95",
-    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%9D%B8%EC%B2%9CSK%EC%8A%A4%EC%B9%B4%EC%9D%B4%EB%B7%B0%2034%ED%8F%89%ED%98%95",
+    "naverLandUrl": "https://fin.land.naver.com/complexes/107437",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/107437",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%9D%B8%EC%B2%9CSK%EC%8A%A4%EC%B9%B4%EC%9D%B4%EB%B7%B0",
     "floorPlan": {
       "type": "84_3bay",
       "title": "전용 84.99㎡ (공급 34평형) 4-Bay 계단식 판상형 평면도",
@@ -11572,6 +11603,7 @@
         "판상형 4-Bay 맞통풍 구조 및 알파룸"
       ],
       "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
-    }
+    },
+    "naverComplexNo": "107437"
   }
 ]

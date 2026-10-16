@@ -16,7 +16,10 @@ export default function FloorPlanViewer({
 }) {
   if (!floorPlan) return null;
 
-  const cleanPropertyName = (propertyName || '').replace(/\s*\(\d+평형?\)/g, '');
+  const cleanPropertyName = (propertyName || '')
+    .replace(/\s*\(\d+평형?\).*$/, '')
+    .replace(/\s*\d+평형?.*$/, '')
+    .trim();
 
   // 네이버부동산 모바일 단지 평형정보 직결 URL
   const directNaverUrl = naverMobileUrl || (naverComplexNo ? `https://m.land.naver.com/complex/info/${naverComplexNo}` : naverLandUrl);
