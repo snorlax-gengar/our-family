@@ -182,11 +182,11 @@ export default function App() {
               <div className="flex items-center gap-2.5">
                 <img
                   src="/favicon.svg"
-                  alt="우리가 (우리家) 로고"
+                  alt="우리家 로고"
                   className="w-7 h-7 rounded-lg shadow-sm shadow-rose-500/20 shrink-0 object-contain"
                 />
                 <div>
-                  <span className="font-bold text-white text-sm tracking-tight">우리가 (우리家)</span>
+                  <span className="font-bold text-white text-base tracking-tight">우리家</span>
                   <span className="text-slate-400 text-xs ml-1.5 font-medium">우리 가족 보금자리 플래너</span>
                 </div>
               </div>
@@ -253,7 +253,7 @@ export default function App() {
           {/* 하단: Copyright, 개발자, GitHub 링크 및 버전 정보 */}
           <div className="pt-4 border-t border-slate-800/70 flex flex-col md:flex-row items-center justify-between gap-3 text-[11px] text-slate-400">
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-x-2 gap-y-1">
-              <span>© 2026 우리가 (우리家) · Developed by <strong className="font-semibold text-slate-200">gengarileo</strong>. All rights reserved.</span>
+              <span>© 2026 우리家 · Developed by <strong className="font-semibold text-slate-200">gengarileo</strong>. All rights reserved.</span>
             </div>
 
             <div className="flex flex-wrap items-center justify-center gap-3">

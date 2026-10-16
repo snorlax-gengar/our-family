@@ -32,7 +32,7 @@ export default function BeginnerGuideModal({ onClose }) {
     },
     {
       q: "'방공제'라는 무서운 단어가 나오는데, 방을 뺀다는 뜻인가요?",
-      a: "방을 뺀다는 뜻이 아닙니다! 은행이 대출을 해줄 때 '만약 이 집에 세입자가 살아서 보증금을 먼저 챙겨가면 어쩌지?' 하고 미리 대출금에서 5,500만 원(서울 기준)을 깎고 주는 것을 '방공제'라고 합니다.\n하지만 걱정 마세요! 'MCG(모기지신용보증)'라는 보증보험(비용 몇만 원)을 가입하면 방공제 없이 정부 기준 LTV 70% 한도 100%를 고스란히 다 대출받을 수 있습니다. ('우리가' 계산기는 MCG 가입을 기본으로 안전하게 계산해 드립니다!)",
+      a: "방을 뺀다는 뜻이 아닙니다! 은행이 대출을 해줄 때 '만약 이 집에 세입자가 살아서 보증금을 먼저 챙겨가면 어쩌지?' 하고 미리 대출금에서 5,500만 원(서울 기준)을 깎고 주는 것을 '방공제'라고 합니다.\n하지만 걱정 마세요! 'MCG(모기지신용보증)'라는 보증보험(비용 몇만 원)을 가입하면 방공제 없이 정부 기준 LTV 70% 한도 100%를 고스란히 다 대출받을 수 있습니다. ('우리家' 계산기는 MCG 가입을 기본으로 안전하게 계산해 드립니다!)",
       tag: "대출용어",
       highlight: "MCG 보증 가입만 체크하면 5,500만 원 깎이지 않고 LTV 70% 전액 대출 가능!"
     },
@@ -132,7 +132,7 @@ export default function BeginnerGuideModal({ onClose }) {
           <div className="bg-slate-900 text-white p-4 sm:p-5 rounded-2xl space-y-3">
             <h4 className="font-extrabold text-sm text-amber-300 flex items-center gap-1.5 break-keep">
               <Sparkles className="w-4 h-4 text-amber-400 shrink-0" />
-              <span>부린이를 위한 '우리가 (우리家)' 활용 3단계</span>
+              <span>부린이를 위한 '우리家' 활용 3단계</span>
             </h4>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-slate-300">
               <div className="bg-white/10 p-3 rounded-xl border border-white/10">

@@ -14,11 +14,11 @@ export default function PropertiesTab({
   onRefresh,
   onOpenGuide
 }) {
-  const [selectedRegion, setSelectedRegion] = useState('전체');
+  const [selectedRegion, setSelectedRegion] = useState('서울');
   const [selectedDistrict, setSelectedDistrict] = useState('전체');
   const [priceBand, setPriceBand] = useState('all'); // 'all', '400M', '500M_low', '500M_high', '600M'
   const [sizeFilter, setSizeFilter] = useState('전체');
-  const [sortOption, setSortOption] = useState('priceLow'); // Default: 가격 낮은순으로 보기!
+  const [sortOption, setSortOption] = useState('regionPrice'); // Default: 지역 > 금액순 (서울->경기->인천 & 가나다 & 가격순)
   const [searchTerm, setSearchTerm] = useState('');
   const [myCash, setMyCash] = useState(0); // 0: 미설정, 예: 150000000 (1.5억)
   
@@ -219,17 +219,17 @@ export default function PropertiesTab({
     });
   }, [groupedComplexes, hiddenIds]);
 
-  // 시/도 목록 및 단지 수 계산
+  // 시/도 목록 및 단지 수 계산 (서울 -> 경기 -> 인천 -> 수도권 전체)
   const regionsWithCounts = useMemo(() => {
     const counts = { '전체': visibleComplexes.length, '서울': 0, '경기': 0, '인천': 0 };
     visibleComplexes.forEach((c) => {
       if (counts[c.region] !== undefined) counts[c.region]++;
     });
     return [
-      { id: '전체', label: '전체', count: counts['전체'] },
-      { id: '서울', label: '서울', count: counts['서울'] },
-      { id: '경기', label: '경기', count: counts['경기'] },
-      { id: '인천', label: '인천', count: counts['인천'] },
+      { id: '서울', label: '📍 서울', fullName: '서울특별시', count: counts['서울'] },
+      { id: '경기', label: '📍 경기', fullName: '경기도', count: counts['경기'] },
+      { id: '인천', label: '📍 인천', fullName: '인천광역시', count: counts['인천'] },
+      { id: '전체', label: '🌐 전체보기', fullName: '수도권 전체', count: counts['전체'] },
     ];
   }, [visibleComplexes]);
 
@@ -336,6 +336,18 @@ export default function PropertiesTab({
       .sort((a, b) => {
         const vA = a.activeVariant;
         const vB = b.activeVariant;
+        if (sortOption === 'regionPrice') {
+          // 1순위: 지역 (서울 -> 경기 -> 인천)
+          const regionOrder = { '서울': 1, '경기': 2, '인천': 3 };
+          const regA = regionOrder[a.region] || 99;
+          const regB = regionOrder[b.region] || 99;
+          if (regA !== regB) return regA - regB;
+          // 2순위: 시/군/구 (가나다순)
+          const distCompare = (a.district || '').localeCompare(b.district || '', 'ko');
+          if (distCompare !== 0) return distCompare;
+          // 3순위: 금액 (가격 낮은순)
+          return vA.priceKrw - vB.priceKrw;
+        }
         if (sortOption === 'priceLow') return vA.priceKrw - vB.priceKrw; // 가격 낮은순
         if (sortOption === 'priceHigh') return vB.priceKrw - vA.priceKrw; // 가격 높은순
         if (sortOption === 'jeonseHigh') return (vB.kbPrice?.jeonseRate || 0) - (vA.kbPrice?.jeonseRate || 0);
@@ -1044,6 +1056,18 @@ export default function PropertiesTab({
 
             <button
               type="button"
+              onClick={() => setSortOption('regionPrice')}
+              className={`px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap flex items-center gap-1 shrink-0 ${
+                sortOption === 'regionPrice'
+                  ? 'bg-blue-600 text-white shadow-xs'
+                  : 'bg-white text-slate-700 border border-slate-200 hover:bg-slate-100'
+              }`}
+            >
+              <span>📍 지역 &gt; 금액순 (추천)</span>
+            </button>
+
+            <button
+              type="button"
               onClick={() => setSortOption('priceLow')}
               className={`px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap flex items-center gap-1 shrink-0 ${
                 sortOption === 'priceLow'
@@ -1106,7 +1130,7 @@ export default function PropertiesTab({
           </div>
 
           <div className="hidden sm:block text-xs text-slate-500 shrink-0">
-            현재 정렬: <strong className="text-blue-600 font-extrabold">{sortOption === 'priceLow' ? '가격 낮은순' : sortOption === 'priceHigh' ? '가격 높은순' : sortOption === 'jeonseHigh' ? '전세가율순' : '추천순'}</strong>
+            현재 정렬: <strong className="text-blue-600 font-extrabold">{sortOption === 'regionPrice' ? '지역 > 금액순' : sortOption === 'priceLow' ? '가격 낮은순' : sortOption === 'priceHigh' ? '가격 높은순' : sortOption === 'jeonseHigh' ? '전세가율순' : sortOption === 'yearNew' ? '신축순' : '대단지순'}</strong>
           </div>
         </div>
 
@@ -1230,7 +1254,7 @@ export default function PropertiesTab({
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {filteredComplexes.map((complex) => {
+          {filteredComplexes.map((complex, index) => {
             const property = complex.activeVariant;
             const sim = property.loanSimulation || {};
             const kb = property.kbPrice || {};
@@ -1239,14 +1263,39 @@ export default function PropertiesTab({
             const currentYear = new Date().getFullYear();
             const buildingAge = Math.max(1, currentYear - complex.buildYear);
 
+            // 📍 지역별 섹션 헤더 (정렬이 regionPrice이고 이전 단지와 구/시가 변경될 때 구분 배너 출력)
+            const prev = index > 0 ? filteredComplexes[index - 1] : null;
+            const isNewDistrict = !prev || prev.region !== complex.region || prev.district !== complex.district;
+            const showSectionDivider = sortOption === 'regionPrice' && isNewDistrict && (selectedRegion === '전체' || selectedDistrict === '전체');
+            const regionFullLabel = complex.region === '서울' ? '서울특별시' : complex.region === '경기' ? '경기도' : '인천광역시';
+            const districtCount = showSectionDivider
+              ? filteredComplexes.filter((c) => c.region === complex.region && c.district === complex.district).length
+              : 0;
+
             return (
-              <div
-                key={complex.complexKey}
-                onClick={() => handleOpenDetail(property)}
-                className={`bg-white rounded-2xl border hover:border-blue-400 hover:shadow-lg transition-all duration-200 flex flex-col justify-between overflow-hidden cursor-pointer group active:scale-[0.99] ${
-                  isFav ? 'border-rose-300 ring-1 ring-rose-100' : 'border-slate-200'
-                }`}
-              >
+              <React.Fragment key={complex.complexKey}>
+                {showSectionDivider && (
+                  <div className="col-span-full pt-4 pb-1">
+                    <div className="flex items-center justify-between bg-gradient-to-r from-blue-50/90 via-indigo-50/40 to-transparent border-l-4 border-blue-600 px-3.5 py-2.5 rounded-r-xl shadow-2xs">
+                      <div className="flex items-center gap-2">
+                        <MapPin className="w-4 h-4 text-blue-600 shrink-0" />
+                        <h3 className="font-black text-slate-800 text-sm sm:text-base tracking-tight">
+                          {regionFullLabel} {complex.district}
+                        </h3>
+                      </div>
+                      <span className="text-[11px] text-blue-700 bg-blue-100 font-extrabold px-2.5 py-0.5 rounded-full border border-blue-200">
+                        {districtCount}개 단지
+                      </span>
+                    </div>
+                  </div>
+                )}
+
+                <div
+                  onClick={() => handleOpenDetail(property)}
+                  className={`bg-white rounded-2xl border hover:border-blue-400 hover:shadow-lg transition-all duration-200 flex flex-col justify-between overflow-hidden cursor-pointer group active:scale-[0.99] ${
+                    isFav ? 'border-rose-300 ring-1 ring-rose-100' : 'border-slate-200'
+                  }`}
+                >
                 <div>
                   {/* 1. Card Header: 4줄 고정 높이 그리드 정렬 (주소 / 년도(년차)-세대수 / 아파트명 평수(공급/전용) / 기타정보) */}
                   <div className="p-3.5 sm:p-4 pb-2.5 border-b border-slate-100">
@@ -1523,7 +1572,8 @@ export default function PropertiesTab({
                     </div>
                   </div>
                 </div>
-              </div>
+                </div>
+              </React.Fragment>
             );
           })}
         </div>

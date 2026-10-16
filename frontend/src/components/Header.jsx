@@ -54,13 +54,13 @@ export default function Header({ activeTab, setActiveTab, ratesData, onOpenGuide
           <div className="flex items-center gap-2.5 sm:gap-3">
             <img
               src="/favicon.svg"
-              alt="우리가 (우리家) 로고"
+              alt="우리家 로고"
               className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl shadow-md shadow-rose-500/15 shrink-0 object-contain hover:scale-105 transition-transform"
             />
             <div>
               <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
-                <h1 className="text-lg sm:text-2xl font-black text-slate-900 tracking-tight whitespace-nowrap">
-                  우리가 <span className="text-blue-600">(우리家)</span>
+                <h1 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight whitespace-nowrap">
+                  우리家
                 </h1>
                 <span className="bg-blue-100 text-blue-800 text-[10px] sm:text-[11px] font-extrabold px-1.5 sm:px-2 py-0.5 rounded-md whitespace-nowrap">
                   가족 보금자리 플래너
@@ -76,8 +76,8 @@ export default function Header({ activeTab, setActiveTab, ratesData, onOpenGuide
                 </button>
               </div>
               <div className="text-xs text-slate-500 font-medium mt-0.5">
-                <p className="text-slate-700 font-bold text-[11px] sm:text-xs leading-tight whitespace-nowrap">"우리가 함께 짓는, 우리 가족의 첫 보금자리"</p>
-                <p className="text-[10px] sm:text-[11px] text-slate-400 mt-0.5 leading-tight whitespace-nowrap overflow-hidden text-ellipsis sm:whitespace-normal">서울·경기 5~6억 아파트 · 신생아 특례대출(LTV 70%) 통합 허브</p>
+                <p className="text-slate-700 font-bold text-[11px] sm:text-xs leading-tight whitespace-nowrap">"우리 가족의 따뜻한 첫 보금자리"</p>
+                <p className="text-[10px] sm:text-[11px] text-slate-400 mt-0.5 leading-tight whitespace-nowrap overflow-hidden text-ellipsis sm:whitespace-normal">서울·경기·인천 5~6억 아파트 · 신생아 특례대출(LTV 70%) 통합 허브</p>
               </div>
             </div>
           </div>
