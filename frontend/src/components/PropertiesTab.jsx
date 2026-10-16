@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { 
   Building2, Search, SlidersHorizontal, Train, ArrowUpDown, 
   ChevronRight, Sparkles, ShieldCheck, DollarSign, ExternalLink,
-  Info, Check, RefreshCw, LayoutGrid, Eye, EyeOff, ArrowDownAZ, ArrowUpZA, Maximize2, Calendar, Heart, AlertTriangle
+  Info, Check, RefreshCw, LayoutGrid, Eye, EyeOff, ArrowDownAZ, ArrowUpZA, Maximize2, Calendar, Heart, AlertTriangle, MapPin
 } from 'lucide-react';
 import PropertyDetailModal from './PropertyDetailModal';
 
@@ -219,12 +219,47 @@ export default function PropertiesTab({
     });
   }, [groupedComplexes, hiddenIds]);
 
-  // 구/시 목록 동적 추출
-  const districts = useMemo(() => {
-    const list = visibleComplexes
-      .filter((c) => selectedRegion === '전체' || c.region === selectedRegion)
-      .map((c) => c.district);
-    return ['전체', ...Array.from(new Set(list))];
+  // 시/도 목록 및 단지 수 계산
+  const regionsWithCounts = useMemo(() => {
+    const counts = { '전체': visibleComplexes.length, '서울': 0, '경기': 0, '인천': 0 };
+    visibleComplexes.forEach((c) => {
+      if (counts[c.region] !== undefined) counts[c.region]++;
+    });
+    return [
+      { id: '전체', label: '전체', count: counts['전체'] },
+      { id: '서울', label: '서울', count: counts['서울'] },
+      { id: '경기', label: '경기', count: counts['경기'] },
+      { id: '인천', label: '인천', count: counts['인천'] },
+    ];
+  }, [visibleComplexes]);
+
+  // 시/군/구 목록 및 단지 수 동적 집계 (선택된 시/도에 따라 정렬 및 필터링)
+  const districtsWithCounts = useMemo(() => {
+    const inRegion = visibleComplexes.filter(
+      (c) => selectedRegion === '전체' || c.region === selectedRegion
+    );
+
+    const countMap = {};
+    const regionMap = {};
+    inRegion.forEach((c) => {
+      countMap[c.district] = (countMap[c.district] || 0) + 1;
+      regionMap[c.district] = c.region;
+    });
+
+    const sortedDistricts = Object.keys(countMap).sort((a, b) => {
+      if (countMap[b] !== countMap[a]) return countMap[b] - countMap[a];
+      return a.localeCompare(b);
+    });
+
+    return [
+      { id: '전체', label: '전체', count: inRegion.length },
+      ...sortedDistricts.map((d) => ({
+        id: d,
+        label: d,
+        region: regionMap[d],
+        count: countMap[d],
+      })),
+    ];
   }, [visibleComplexes, selectedRegion]);
 
   // 가격대별 카운트 계산
@@ -809,30 +844,9 @@ export default function PropertiesTab({
 
       {/* 2. 필터 및 정렬 컨트롤 (가격별 정렬 & 가격대 밴드 & 도면 안내) */}
       <div className="bg-white rounded-xl p-3.5 sm:p-5 border border-slate-200 shadow-xs space-y-3 sm:space-y-4">
-        {/* 상단 검색 & 지역 대분류 + 즐겨찾기 모아보기 */}
+        {/* 상단: 검색창 & 즐겨찾기 & 숨긴 단지 복구 */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
           <div className="flex items-center gap-2 overflow-x-auto no-scrollbar">
-            {/* 지역 대분류 탭 */}
-            <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-xl shrink-0">
-              {['전체', '서울', '경기', '인천'].map((reg) => (
-                <button
-                  key={reg}
-                  type="button"
-                  onClick={() => {
-                    setSelectedRegion(reg);
-                    setSelectedDistrict('전체');
-                  }}
-                  className={`px-3.5 sm:px-4 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all cursor-pointer whitespace-nowrap ${
-                    selectedRegion === reg
-                      ? 'bg-white text-blue-700 shadow-xs'
-                      : 'text-slate-600 hover:text-slate-900'
-                  }`}
-                >
-                  {reg}
-                </button>
-              ))}
-            </div>
-
             {/* ❤️ 즐겨찾기 모아보기 토글 버튼 */}
             <button
               type="button"
@@ -871,11 +885,152 @@ export default function PropertiesTab({
             <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
             <input
               type="text"
-              placeholder="아파트명, 동(방학동 등), 역세권, 평면구조(3-Bay) 검색..."
+              placeholder="아파트명, 동(방학동, 창동 등), 역세권, 3-Bay 검색..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="w-full pl-9 pr-4 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
+          </div>
+        </div>
+
+        {/* 🌟 📍 시/도 | 시/군/구 통합 계층형 지역 선택 컨트롤 */}
+        <div className="bg-gradient-to-r from-slate-50 via-blue-50/30 to-indigo-50/20 rounded-xl p-2.5 sm:p-3 border border-slate-200/90 space-y-2">
+          {/* 상단: 현재 선택된 위치 Breadcrumb 안내 & 모바일 드롭다운 셀렉터 */}
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 text-xs">
+            <div className="flex items-center gap-1.5 font-bold text-slate-700">
+              <MapPin className="w-3.5 h-3.5 text-blue-600 shrink-0" />
+              <span>지역 탐색:</span>
+              <div className="flex items-center gap-1 text-slate-600 bg-white px-2 py-0.5 rounded-md border border-slate-200/80 shadow-2xs font-semibold">
+                <span className={selectedRegion !== '전체' ? 'text-blue-700 font-bold' : ''}>
+                  {selectedRegion === '전체' ? '수도권 전체' : selectedRegion}
+                </span>
+                <span className="text-slate-300">/</span>
+                <span className={selectedDistrict !== '전체' ? 'text-indigo-700 font-bold' : 'text-slate-500'}>
+                  {selectedDistrict === '전체' ? '모든 구·시' : selectedDistrict}
+                </span>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2 self-end sm:self-auto">
+              {/* 모바일 콤팩트 드롭다운 (좁은 화면에서도 원터치 선택) */}
+              <div className="flex sm:hidden items-center gap-1 bg-white p-1 rounded-lg border border-slate-200">
+                <select
+                  value={selectedRegion}
+                  onChange={(e) => {
+                    setSelectedRegion(e.target.value);
+                    setSelectedDistrict('전체');
+                  }}
+                  className="bg-transparent text-[11px] font-bold text-slate-700 focus:outline-none cursor-pointer"
+                  title="시/도 선택"
+                >
+                  {regionsWithCounts.map((r) => (
+                    <option key={r.id} value={r.id}>{r.label} ({r.count})</option>
+                  ))}
+                </select>
+                <span className="text-slate-300 font-light">|</span>
+                <select
+                  value={selectedDistrict}
+                  onChange={(e) => setSelectedDistrict(e.target.value)}
+                  className="bg-transparent text-[11px] font-bold text-slate-700 focus:outline-none cursor-pointer max-w-[110px]"
+                  title="시/군/구 선택"
+                >
+                  {districtsWithCounts.map((d) => (
+                    <option key={d.id} value={d.id}>{d.label} ({d.count})</option>
+                  ))}
+                </select>
+              </div>
+
+              {(selectedRegion !== '전체' || selectedDistrict !== '전체') && (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setSelectedRegion('전체');
+                    setSelectedDistrict('전체');
+                  }}
+                  className="text-[11px] text-slate-500 hover:text-blue-600 font-bold cursor-pointer flex items-center gap-1 transition-colors px-1.5 py-0.5 rounded hover:bg-slate-200/50"
+                  title="전체 지역으로 초기화"
+                >
+                  <RefreshCw className="w-2.5 h-2.5" />
+                  <span>전체 보기</span>
+                </button>
+              )}
+            </div>
+          </div>
+
+          {/* 🌟 시/도 | 시/군/구 2단 분할 버튼 패널 */}
+          <div className="flex flex-col lg:flex-row items-stretch lg:items-center gap-2 bg-white p-2 rounded-xl border border-slate-200/80 shadow-2xs">
+            {/* [1단계] 시/도 (광역자치단체) 선택 탭 */}
+            <div className="flex items-center gap-1.5 shrink-0">
+              <span className="text-[11px] font-black text-blue-700 px-2 py-1 bg-blue-50 border border-blue-100 rounded-md whitespace-nowrap shrink-0">
+                시/도
+              </span>
+              <div className="flex items-center gap-1 bg-slate-100/90 p-0.5 rounded-lg shrink-0">
+                {regionsWithCounts.map((reg) => {
+                  const isSelected = selectedRegion === reg.id;
+                  return (
+                    <button
+                      key={reg.id}
+                      type="button"
+                      onClick={() => {
+                        setSelectedRegion(reg.id);
+                        setSelectedDistrict('전체');
+                      }}
+                      className={`px-3 py-1 rounded-md text-xs font-bold transition-all cursor-pointer whitespace-nowrap flex items-center gap-1 ${
+                        isSelected
+                          ? 'bg-blue-600 text-white shadow-2xs scale-102'
+                          : 'text-slate-600 hover:text-slate-900 hover:bg-white/80'
+                      }`}
+                    >
+                      <span>{reg.label}</span>
+                      <span className={`text-[10px] ${isSelected ? 'text-blue-100 font-extrabold' : 'text-slate-400'}`}>
+                        {reg.count}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* 시각적 명확한 분할 구분선 | (Desktop) / 가로 구분선 (Mobile) */}
+            <div className="hidden lg:flex items-center justify-center text-slate-300 font-semibold select-none px-1 text-base">
+              |
+            </div>
+            <div className="block lg:hidden h-px bg-slate-100 w-full" />
+
+            {/* [2단계] 시/군/구 (기초자치단체) 선택 칩 리스트 */}
+            <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar flex-1 min-w-0">
+              <span className="text-[11px] font-black text-indigo-700 px-2 py-1 bg-indigo-50 border border-indigo-100 rounded-md whitespace-nowrap shrink-0">
+                시/군/구
+              </span>
+              <div className="flex items-center gap-1 overflow-x-auto no-scrollbar flex-nowrap py-0.5">
+                {districtsWithCounts.map((dist) => {
+                  const isSelected = selectedDistrict === dist.id;
+                  return (
+                    <button
+                      key={dist.id}
+                      type="button"
+                      onClick={() => {
+                        setSelectedDistrict(dist.id);
+                        if (selectedRegion === '전체' && dist.region) {
+                          setSelectedRegion(dist.region);
+                        }
+                      }}
+                      className={`px-2.5 py-1 rounded-lg text-xs transition-all cursor-pointer whitespace-nowrap flex items-center gap-1 shrink-0 ${
+                        isSelected
+                          ? 'bg-indigo-600 text-white font-black shadow-2xs scale-102'
+                          : 'bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 font-semibold'
+                      }`}
+                      title={`${dist.label} (${dist.count}개 단지)`}
+                    >
+                      <span>{dist.label}</span>
+                      <span className={`text-[10px] ${isSelected ? 'text-indigo-200 font-extrabold' : 'text-slate-400 font-medium'}`}>
+                        {dist.count}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
 
@@ -979,23 +1134,6 @@ export default function PropertiesTab({
           ))}
         </div>
 
-        {/* 구 / 시 세부 필터 버튼 바 */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs no-scrollbar">
-          <span className="text-slate-400 font-semibold shrink-0 mr-1">세부지역:</span>
-          {districts.map((dist) => (
-            <button
-              key={dist}
-              onClick={() => setSelectedDistrict(dist)}
-              className={`px-3 py-1 rounded-full whitespace-nowrap cursor-pointer transition-colors ${
-                selectedDistrict === dist
-                  ? 'bg-blue-600 text-white font-bold'
-                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200 font-medium'
-              }`}
-            >
-              {dist}
-            </button>
-          ))}
-        </div>
 
         {/* 평형 필터 버튼 */}
         <div className="flex items-center gap-2 text-xs pt-1 border-t border-slate-100 flex-wrap sm:flex-nowrap">
