@@ -4,7 +4,7 @@ import PropertiesTab from './components/PropertiesTab';
 import RatesTab from './components/RatesTab';
 import PoliciesTab from './components/PoliciesTab';
 import BeginnerGuideModal from './components/BeginnerGuideModal';
-import { Home, Heart, ShieldAlert, Sparkles, Building2, Percent, BookOpen, ExternalLink } from 'lucide-react';
+import { Heart, ShieldAlert, Sparkles, Building2, Percent, BookOpen, ExternalLink } from 'lucide-react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('properties');
@@ -180,9 +180,11 @@ export default function App() {
             {/* 좌측 7열: 서비스 설명 */}
             <div className="md:col-span-7 space-y-3">
               <div className="flex items-center gap-2.5">
-                <div className="w-7 h-7 rounded-lg bg-blue-600 text-white flex items-center justify-center font-black text-sm shadow-md shadow-blue-500/20">
-                  <Home className="w-4 h-4" />
-                </div>
+                <img
+                  src="/favicon.svg"
+                  alt="우리가 (우리家) 로고"
+                  className="w-7 h-7 rounded-lg shadow-sm shadow-rose-500/20 shrink-0 object-contain"
+                />
                 <div>
                   <span className="font-bold text-white text-sm tracking-tight">우리가 (우리家)</span>
                   <span className="text-slate-400 text-xs ml-1.5 font-medium">우리 가족 보금자리 플래너</span>

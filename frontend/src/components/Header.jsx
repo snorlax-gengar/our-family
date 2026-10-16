@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Percent, BookOpen, TrendingDown, ShieldCheck, Sparkles, Building2 } from 'lucide-react';
+import { Percent, BookOpen, TrendingDown, ShieldCheck, Sparkles, Building2 } from 'lucide-react';
 
 export default function Header({ activeTab, setActiveTab, ratesData, onOpenGuide }) {
   const baseRate = ratesData?.rates?.baseRate?.current || 3.00;
@@ -52,9 +52,11 @@ export default function Header({ activeTab, setActiveTab, ratesData, onOpenGuide
       <div className="max-w-7xl mx-auto px-3.5 sm:px-6 py-2.5 sm:py-3.5">
         <div className="flex items-center justify-between gap-3">
           <div className="flex items-center gap-2.5 sm:gap-3">
-            <div className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-blue-500/20 shrink-0">
-              <Home className="w-5 h-5 sm:w-6 sm:h-6" />
-            </div>
+            <img
+              src="/favicon.svg"
+              alt="우리가 (우리家) 로고"
+              className="w-9 h-9 sm:w-11 sm:h-11 rounded-xl shadow-md shadow-rose-500/15 shrink-0 object-contain hover:scale-105 transition-transform"
+            />
             <div>
               <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
                 <h1 className="text-lg sm:text-2xl font-black text-slate-900 tracking-tight whitespace-nowrap">
