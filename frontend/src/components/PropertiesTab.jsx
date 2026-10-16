@@ -21,6 +21,8 @@ export default function PropertiesTab({
   const [sortOption, setSortOption] = useState('regionPrice'); // Default: 지역 > 금액순 (서울->경기->인천 & 가나다 & 가격순)
   const [searchTerm, setSearchTerm] = useState('');
   const [myCash, setMyCash] = useState(0); // 0: 미설정, 예: 150000000 (1.5억)
+  // 🌟 6억 초과 매물 포함 토글 (기본값: false - 6억 초과 아파트는 숨김 상태이며 토글 클릭 시 표시)
+  const [includeOver600M, setIncludeOver600M] = useState(false);
   
   // ❤️ 즐겨찾기 (브라우저 localStorage + 백엔드 서버 파일 이중 영구 저장 & 부부 기기 간 공유)
   const [favorites, setFavorites] = useState(() => {
@@ -211,12 +213,27 @@ export default function PropertiesTab({
     return Array.from(complexMap.values());
   }, [properties]);
 
-  // 숨기지 않은 활성 단지 목록
+  // 숨기지 않은 활성 단지 목록 (6억 초과 숨김 모드 연동)
   const visibleComplexes = useMemo(() => {
     return groupedComplexes.filter((complex) => {
       const allHidden = complex.variants.every((v) => hiddenIds.includes(v.id));
-      return !allHidden;
+      if (allHidden) return false;
+      // 6억 초과 숨김 모드(includeOver600M === false)일 때: 단지 내 6억 이하(<= 6억) 유효 평형이 1개라도 있어야 노출
+      if (!includeOver600M) {
+        const hasUnder600M = complex.variants.some(
+          (v) => v.priceKrw <= 600000000 && !hiddenIds.includes(v.id)
+        );
+        if (!hasUnder600M) return false;
+      }
+      return true;
     });
+  }, [groupedComplexes, hiddenIds, includeOver600M]);
+
+  // 전체 단지 중 6억 초과 평형을 보유한 단지 수 집계
+  const over600MComplexCount = useMemo(() => {
+    return groupedComplexes.filter((c) =>
+      c.variants.some((v) => v.priceKrw > 600000000 && !hiddenIds.includes(v.id))
+    ).length;
   }, [groupedComplexes, hiddenIds]);
 
   // 시/도 목록 및 단지 수 계산 (서울 -> 경기 -> 인천 -> 수도권 전체)
@@ -280,6 +297,9 @@ export default function PropertiesTab({
       .map((complex) => {
         // 단지 내에서 조건에 부합하는 variants 필터링
         const matchingVariants = complex.variants.filter((item) => {
+          // 🌟 6억 초과 숨김 모드: 토글이 꺼져있는 경우 6억 초과(> 6억) 매물 숨김
+          if (!includeOver600M && item.priceKrw > 600000000) return false;
+
           // 가격대 밴드 필터
           if (priceBand === '400M' && item.priceKrw >= 500000000) return false;
           if (priceBand === '500M_low' && (item.priceKrw < 500000000 || item.priceKrw >= 550000000)) return false;
@@ -355,7 +375,7 @@ export default function PropertiesTab({
         if (sortOption === 'unitsHigh') return (b.totalUnits || 0) - (a.totalUnits || 0);
         return vA.priceKrw - vB.priceKrw; // default: 가격 낮은순
       });
-  }, [visibleComplexes, selectedVariants, showFavoritesOnly, favorites, selectedRegion, selectedDistrict, priceBand, sizeFilter, sortOption, searchTerm]);
+  }, [visibleComplexes, selectedVariants, showFavoritesOnly, favorites, selectedRegion, selectedDistrict, priceBand, sizeFilter, sortOption, searchTerm, includeOver600M]);
 
   // 단지 전체 숨기기/제외 핸들러
   const toggleHideComplex = async (e, complex) => {
@@ -1134,30 +1154,65 @@ export default function PropertiesTab({
           </div>
         </div>
 
-        {/* 🌟 가격대별 구간 빠른 필터 (4억대, 5억초반, 5억후반, 6억대) */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs no-scrollbar">
-          <span className="text-slate-400 font-semibold shrink-0 mr-1">가격대 구간:</span>
-          {[
-            { id: 'all', label: '전체 가격대', count: priceBandCounts.all },
-            { id: '400M', label: '4억 원대 (실속)', count: priceBandCounts['400M'] },
-            { id: '500M_low', label: '5억 초반 (5.0~5.4억)', count: priceBandCounts['500M_low'] },
-            { id: '500M_high', label: '5억 후반 (5.5~5.9억)', count: priceBandCounts['500M_high'] },
-            { id: '600M', label: '6억 원대 이상 (6.0억~)', count: priceBandCounts['600M'] },
-          ].map((band) => (
-            <button
-              key={band.id}
-              onClick={() => setPriceBand(band.id)}
-              className={`px-3 py-1 rounded-full whitespace-nowrap cursor-pointer transition-colors ${
-                priceBand === band.id
-                  ? 'bg-slate-900 text-white font-bold'
-                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200 font-medium'
-              }`}
-            >
-              {band.label} <span className="opacity-70 text-[10px]">({band.count})</span>
-            </button>
-          ))}
-        </div>
+        {/* 🌟 가격대별 구간 빠른 필터 (4억대, 5억초반, 5억후반, 6억대) + 6억 초과 아파트 토글 */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 pt-1">
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs no-scrollbar flex-1 min-w-0">
+            <span className="text-slate-400 font-semibold shrink-0 mr-1">가격대:</span>
+            {[
+              { id: 'all', label: includeOver600M ? '전체 가격대' : '6억 이하 전체', count: priceBandCounts.all },
+              { id: '400M', label: '4억 원대 (실속)', count: priceBandCounts['400M'] },
+              { id: '500M_low', label: '5억 초반 (5.0~5.4억)', count: priceBandCounts['500M_low'] },
+              { id: '500M_high', label: '5억 후반 (5.5~5.9억)', count: priceBandCounts['500M_high'] },
+              ...(includeOver600M ? [{ id: '600M', label: '6억 원대 이상 (6.0억~)', count: priceBandCounts['600M'] }] : [])
+            ].map((band) => (
+              <button
+                key={band.id}
+                onClick={() => setPriceBand(band.id)}
+                className={`px-3 py-1 rounded-full whitespace-nowrap cursor-pointer transition-colors ${
+                  priceBand === band.id
+                    ? 'bg-slate-900 text-white font-bold'
+                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200 font-medium'
+                }`}
+              >
+                {band.label} <span className="opacity-70 text-[10px]">({band.count})</span>
+              </button>
+            ))}
+          </div>
 
+          {/* 🌟 6억 초과 아파트 숨김 / 표시 토글 스위치 버튼 */}
+          <div className="flex items-center gap-2 shrink-0 self-end sm:self-auto">
+            <button
+              type="button"
+              onClick={() => {
+                const next = !includeOver600M;
+                setIncludeOver600M(next);
+                if (!next && priceBand === '600M') {
+                  setPriceBand('all');
+                }
+              }}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-2 cursor-pointer border shadow-2xs active:scale-95 ${
+                includeOver600M
+                  ? 'bg-amber-50 text-amber-900 border-amber-300 ring-2 ring-amber-400/30'
+                  : 'bg-white text-slate-600 border-slate-300 hover:bg-slate-50 hover:text-slate-900 hover:border-slate-400'
+              }`}
+              title="6억 초과 아파트 표시 여부를 토글합니다."
+            >
+              <div className="flex items-center gap-1.5">
+                <span className={`w-3.5 h-3.5 rounded flex items-center justify-center text-[10px] ${
+                  includeOver600M ? 'bg-amber-500 text-white font-black' : 'border border-slate-300 bg-white'
+                }`}>
+                  {includeOver600M && '✓'}
+                </span>
+                <span>{includeOver600M ? '6억 초과 매물 표시 중' : '6억 초과 매물 보기'}</span>
+              </div>
+              <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-extrabold ${
+                includeOver600M ? 'bg-amber-200 text-amber-900' : 'bg-slate-100 text-slate-500'
+              }`}>
+                +{over600MComplexCount}개 단지
+              </span>
+            </button>
+          </div>
+        </div>
 
         {/* 평형 필터 버튼 */}
         <div className="flex items-center gap-2 text-xs pt-1 border-t border-slate-100 flex-wrap sm:flex-nowrap">
@@ -1175,9 +1230,16 @@ export default function PropertiesTab({
               {size === '20평대' ? '20평대 (59㎡)' : size === '30평대' ? '30평대 (84㎡)' : '전체'}
             </button>
           ))}
-          <span className="text-slate-400 ml-auto whitespace-nowrap text-[11px]">
-            총 <strong className="text-blue-600">{filteredComplexes.length}</strong>개 단지
-          </span>
+          <div className="ml-auto flex items-center gap-2 whitespace-nowrap text-[11px]">
+            {!includeOver600M && (
+              <span className="text-amber-700 bg-amber-50 px-2 py-0.5 rounded border border-amber-200/80 font-bold hidden sm:inline-block">
+                6억 이하 매물만 표시 중
+              </span>
+            )}
+            <span className="text-slate-500">
+              총 <strong className="text-blue-600 font-extrabold">{filteredComplexes.length}</strong>개 단지
+            </span>
+          </div>
         </div>
       </div>
 
