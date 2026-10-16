@@ -45,8 +45,8 @@ app.get('/api/properties', (req, res) => {
   const {
     region, // '서울' or '경기' or '인천' or '전체'
     district, // '노원구', '도봉구', '부천시' etc.
-    minPrice = 300000000,
-    maxPrice = 900000000,
+    minPrice = 0,
+    maxPrice = 3000000000,
     annualIncome = 80000000,
     isFirstHome = 'false',
     loanTenureYears = 30,
