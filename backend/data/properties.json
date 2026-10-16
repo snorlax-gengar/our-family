@@ -1073,15 +1073,15 @@
     "areaSqMeter": 84.87,
     "pyeong": 29,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 495000000,
-    "priceDisplay": "4억 9,500만",
-    "priceRange": "4.8억 ~ 5.2억",
+    "priceKrw": 500000000,
+    "priceDisplay": "5억",
+    "priceRange": "4.9억 ~ 5.3억",
     "kbPrice": {
-      "generalAvg": 520000000,
-      "highAvg": 530000000,
-      "lowAvg": 455000000,
-      "jeonseAvg": 365000000,
-      "jeonseRate": 70.2,
+      "generalAvg": 500000000,
+      "highAvg": 525000000,
+      "lowAvg": 475000000,
+      "jeonseAvg": 350000000,
+      "jeonseRate": 70,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
@@ -1102,7 +1102,7 @@
       }
     ],
     "highlights": [
-      "서울 전용 84㎡(방3·욕실2) 4억 후반대 최고 가성비",
+      "서울 전용 84㎡(방3·욕실2) KB시세 5억 원 알짜 가성비 단지",
       "신동아 1·2단지 대단지 상권·인프라 공유",
       "전세가율 70.7%의 알짜 실속형 단지",
       "초당초·방학중 도보 통학권"
@@ -1123,7 +1123,7 @@
       "livingRoomWidth": "4.4m",
       "masterBedroomWidth": "3.8m",
       "features": [
-        "4억 후반대에 누리는 서울 전용 84㎡",
+        "KB시세 5억 원에 누리는 서울 전용 84㎡",
         "방 3개 + 욕실 2개 계단식 판상형",
         "신동아 1·2단지 생활권 공유",
         "신생아 특례 시 필요 현금 1.4억대"
@@ -1614,7 +1614,7 @@
     "pyeong": 26,
     "rooms": "방 3 / 욕실 1",
     "priceKrw": 500000000,
-    "priceDisplay": "5억 0,000만",
+    "priceDisplay": "5억",
     "priceRange": "4.8억 ~ 5.2억",
     "kbPrice": {
       "generalAvg": 495000000,
