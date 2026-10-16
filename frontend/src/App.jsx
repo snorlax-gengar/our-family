@@ -96,7 +96,9 @@ export default function App() {
         const result = await res.json();
         setRatesData(prev => ({
           ...prev,
-          news: result.news || prev.news
+          rates: result.rates || prev?.rates,
+          news: result.news || prev?.news,
+          lastUpdated: result.refreshedAt || prev?.lastUpdated
         }));
       }
     } catch (err) {

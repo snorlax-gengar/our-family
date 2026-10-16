@@ -11,7 +11,7 @@ import {
   calculateAllLoans, 
   calculateLoan 
 } from './services/loanCalculator.js';
-import { KOREA_INTEREST_RATES, getInterestRateData, scrapeInterestRateNews } from './services/interestRates.js';
+import { KOREA_INTEREST_RATES, getInterestRateData, scrapeInterestRateNews, ensureFreshRatesAndNews } from './services/interestRates.js';
 import { getPolicyData, scrapeGovernmentPolicies } from './services/policyService.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -191,20 +191,25 @@ app.post('/api/properties/calculate', (req, res) => {
 });
 
 /**
- * 2. 금리 데이터 & 데일리 금리 뉴스 API
+ * 2. 금리 데이터 & 데일리 금리 뉴스 API (1시간 주기 및 일자 변경 시 자동 최신화)
  */
-app.get('/api/rates', (req, res) => {
-  const data = getInterestRateData();
-  res.json(data);
+app.get('/api/rates', async (req, res) => {
+  try {
+    const data = await ensureFreshRatesAndNews(false);
+    res.json(data);
+  } catch (err) {
+    res.json(getInterestRateData());
+  }
 });
 
 app.post('/api/rates/news/refresh', async (req, res) => {
   try {
-    const updatedNews = await scrapeInterestRateNews();
+    const data = await ensureFreshRatesAndNews(true);
     res.json({
       success: true,
-      news: updatedNews,
-      refreshedAt: new Date().toISOString()
+      rates: data.rates,
+      news: data.news,
+      refreshedAt: data.lastUpdated
     });
   } catch (err) {
     res.status(500).json({ error: "뉴스 수집 실패", details: err.message });
@@ -334,5 +339,11 @@ if (fs.existsSync(distPath)) {
 
 app.listen(PORT, () => {
   console.log(`[Backend] Real Estate Hub server listening on http://localhost:${PORT}`);
+  // 서버 시작 시 실시간 한국은행 기준금리·국고채·데일리 금리 뉴스 초기 수집
+  ensureFreshRatesAndNews(true).catch(() => {});
+  // 6시간 주기로 백그라운드 자동 갱신
+  setInterval(() => {
+    ensureFreshRatesAndNews(true).catch(() => {});
+  }, 6 * 60 * 60 * 1000);
 });
 

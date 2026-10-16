@@ -28,17 +28,21 @@ export default function RatesTab({ ratesData, onRefreshNews, newsRefreshing }) {
       <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 rounded-2xl p-4 sm:p-6 text-white shadow-xl">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
-            <div className="flex items-center gap-2 mb-2">
+            <div className="flex items-center gap-2 mb-2 flex-wrap">
               <span className="bg-blue-500/20 text-blue-300 border border-blue-400/30 text-xs font-bold px-2.5 py-0.5 rounded-full inline-flex items-center gap-1 whitespace-nowrap">
                 <Percent className="w-3.5 h-3.5" />
                 <span>종합 금리 모니터링</span>
+              </span>
+              <span className="bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-[11px] font-bold px-2.5 py-0.5 rounded-full inline-flex items-center gap-1 whitespace-nowrap">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                <span>매일 자동 갱신 (네이버 증권 · Google RSS 연동)</span>
               </span>
             </div>
             <h2 className="text-xl sm:text-2xl font-black tracking-tight break-keep">
               대한민국 핵심 금리 종합 취합
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 mt-1.5 max-w-2xl break-keep leading-relaxed">
-              한국은행 기준금리부터 코픽스, 5대 시중은행 주담대 및 신생아 특례대출까지,<br className="hidden sm:inline" /> 매일 최신 금리 동향과 뉴스를 실시간 취합합니다.
+              한국은행 기준금리부터 국고채 실시간 수익률, 코픽스, 5대 시중은행 주담대 및 3대 정책대출까지,<br className="hidden sm:inline" /> 매일 최신 금리 동향과 데일리 뉴스를 자동으로 실시간 취합합니다.
             </p>
           </div>
 
@@ -49,7 +53,7 @@ export default function RatesTab({ ratesData, onRefreshNews, newsRefreshing }) {
               className="w-full sm:w-auto justify-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-2 cursor-pointer shadow-md disabled:opacity-50 whitespace-nowrap"
             >
               <RefreshCw className={`w-4 h-4 ${newsRefreshing ? 'animate-spin' : ''}`} />
-              <span>{newsRefreshing ? '뉴스 수집 중...' : '최신 뉴스 새로고침'}</span>
+              <span>{newsRefreshing ? '금리·뉴스 동기화 중...' : '금리·뉴스 즉시 새로고침'}</span>
             </button>
           </div>
         </div>
@@ -66,14 +70,18 @@ export default function RatesTab({ ratesData, onRefreshNews, newsRefreshing }) {
             </span>
           </div>
           <div className="flex items-baseline gap-2">
-            <span className="text-3xl font-black text-slate-900">{baseRate.current}%</span>
-            <span className="text-xs font-bold text-emerald-600 flex items-center whitespace-nowrap">
-              <TrendingDown className="w-3.5 h-3.5 mr-0.5 shrink-0" />
-              -0.25%p 인하
+            <span className="text-3xl font-black text-slate-900">{Number(baseRate.current || 3.0).toFixed(2)}%</span>
+            <span className={`text-xs font-bold flex items-center whitespace-nowrap ${(baseRate.change || 0) <= 0 ? 'text-emerald-600' : 'text-rose-600'}`}>
+              {(baseRate.change || 0) <= 0 ? (
+                <TrendingDown className="w-3.5 h-3.5 mr-0.5 shrink-0" />
+              ) : (
+                <TrendingUp className="w-3.5 h-3.5 mr-0.5 shrink-0" />
+              )}
+              {(baseRate.change || 0) > 0 ? `+${baseRate.change}%p` : `${baseRate.change || 0}%p`}
             </span>
           </div>
           <p className="text-xs text-slate-400 mt-2 whitespace-nowrap">
-            최근 의결: {baseRate.decisionDate} · 인하 기조
+            의결: {baseRate.decisionDate} ({baseRate.nextMeetingDate || '차기 금통위 예정'})
           </p>
         </div>
 
@@ -89,7 +97,7 @@ export default function RatesTab({ ratesData, onRefreshNews, newsRefreshing }) {
             <span className="text-3xl font-black text-slate-900">{cofix[0]?.rate}%</span>
             <span className="text-xs font-bold text-emerald-600 flex items-center whitespace-nowrap">
               <TrendingDown className="w-3.5 h-3.5 mr-0.5 shrink-0" />
-              -0.09%p 하락
+              {cofix[0]?.change > 0 ? `+${cofix[0]?.change}` : cofix[0]?.change}%p
             </span>
           </div>
           <p className="text-xs text-slate-400 mt-2 whitespace-nowrap">
@@ -97,23 +105,27 @@ export default function RatesTab({ ratesData, onRefreshNews, newsRefreshing }) {
           </p>
         </div>
 
-        {/* 금융채 5년물 AAA */}
+        {/* 국고채 3년물 (실시간 시장금리) */}
         <div className="bg-white p-4 sm:p-5 rounded-2xl border border-slate-200 shadow-xs">
           <div className="flex justify-between items-start mb-2">
-            <span className="text-xs font-bold text-slate-500 whitespace-nowrap">금융채 5년물 (AAA)</span>
+            <span className="text-xs font-bold text-slate-500 whitespace-nowrap">{bonds[0]?.name || '국고채 3년물'}</span>
             <span className="bg-indigo-100 text-indigo-800 text-[10px] font-extrabold px-2 py-0.5 rounded whitespace-nowrap">
-              주기형 고정 기준
+              실시간 채권금리
             </span>
           </div>
           <div className="flex items-baseline gap-2">
-            <span className="text-3xl font-black text-slate-900">3.19%</span>
-            <span className="text-xs font-bold text-emerald-600 flex items-center whitespace-nowrap">
-              <TrendingDown className="w-3.5 h-3.5 mr-0.5 shrink-0" />
-              -0.04%p 안정
+            <span className="text-3xl font-black text-slate-900">{bonds[0]?.rate || 3.88}%</span>
+            <span className={`text-xs font-bold flex items-center whitespace-nowrap ${(bonds[0]?.change || 0) <= 0 ? 'text-emerald-600' : 'text-rose-600'}`}>
+              {(bonds[0]?.change || 0) <= 0 ? (
+                <TrendingDown className="w-3.5 h-3.5 mr-0.5 shrink-0" />
+              ) : (
+                <TrendingUp className="w-3.5 h-3.5 mr-0.5 shrink-0" />
+              )}
+              {(bonds[0]?.change || 0) > 0 ? `+${bonds[0]?.change}` : bonds[0]?.change || 0}%p
             </span>
           </div>
           <p className="text-xs text-slate-400 mt-2 whitespace-nowrap">
-            5년 주기형 혼합형 준거지표
+            시중 고정형 주담대 선행지표
           </p>
         </div>
 
