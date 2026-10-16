@@ -1176,8 +1176,55 @@ export default function PropertiesTab({
           ) : (
             <>
               <Building2 className="w-12 h-12 text-slate-300 mx-auto" />
-              <h3 className="text-base font-bold text-slate-700">검색 조건에 맞는 매물이 없습니다</h3>
-              <p className="text-xs text-slate-400">가격대나 지역 필터를 재설정해 보세요.</p>
+              <h3 className="text-base font-bold text-slate-700 break-keep">
+                {searchTerm.trim()
+                  ? `'${searchTerm.trim()}' 단지가 현재 선택된 조건(또는 추천 DB)에 없습니다`
+                  : '검색 조건에 맞는 매물이 없습니다'}
+              </h3>
+              <p className="text-xs text-slate-500 break-keep max-w-md mx-auto">
+                {searchTerm.trim()
+                  ? '다른 지역 필터가 선택되어 있다면 전체 지역으로 초기화하거나, 아래 버튼으로 전국 모든 단지의 실시간 매물·KB시세를 바로 조회하실 수 있습니다.'
+                  : '가격대나 지역 필터를 재설정해 보세요.'}
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-2 pt-2">
+                {(selectedRegion !== '전체' || selectedDistrict !== '전체' || priceBand !== 'ALL' || sizeFilter !== '전체') && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSelectedRegion('전체');
+                      setSelectedDistrict('전체');
+                      setPriceBand('ALL');
+                      setSizeFilter('전체');
+                    }}
+                    className="bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition-colors cursor-pointer whitespace-nowrap flex items-center gap-1.5"
+                  >
+                    <RefreshCw className="w-3.5 h-3.5" />
+                    <span>전체 지역·가격에서 다시 찾기</span>
+                  </button>
+                )}
+                {searchTerm.trim() && (
+                  <>
+                    <a
+                      href={`https://m.land.naver.com/search/result/${encodeURIComponent(searchTerm.trim())}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition-colors whitespace-nowrap flex items-center gap-1.5 shadow-xs"
+                    >
+                      <span>N 네이버부동산 '{searchTerm.trim()}' 바로가기</span>
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                    <a
+                      href={`https://kbland.kr/search?keyword=${encodeURIComponent(searchTerm.trim())}`}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="bg-amber-500 hover:bg-amber-600 text-white text-xs font-bold px-3.5 py-2 rounded-xl transition-colors whitespace-nowrap flex items-center gap-1.5 shadow-xs"
+                    >
+                      <span>KB부동산 '{searchTerm.trim()}' 시세 조회</span>
+                      <ExternalLink className="w-3.5 h-3.5" />
+                    </a>
+                  </>
+                )}
+              </div>
             </>
           )}
         </div>
