@@ -1,0 +1,42 @@
+name: Daily Korea Rates, News & Policy JSON Auto-Sync
+
+on:
+  schedule:
+    # 매일 오전 08:00 KST (23:00 UTC) 및 오후 18:00 KST (09:00 UTC) 자동 실행
+    - cron: '0 23 * * *'
+    - cron: '0 9 * * *'
+  workflow_dispatch: # GitHub Actions 탭에서 수동 즉시 실행도 가능
+
+permissions:
+  contents: write
+
+jobs:
+  sync-daily-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install backend dependencies
+        working-directory: ./backend
+        run: npm ci || npm install
+
+      - name: Scrape live Korea rates, news & policies into JSON files
+        run: node backend/scripts/syncDailyData.js
+
+      - name: Commit and push updated JSON cache files
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add backend/data/rates_cache.json backend/data/policies_cache.json
+          if git diff --staged --quiet; then
+            echo "변경된 금리/뉴스/정책 데이터가 없습니다."
+          else
+            git commit -m "chore(data): auto-sync daily Korea interest rates, news & policies JSON"
+            git push origin HEAD:main
+          fi

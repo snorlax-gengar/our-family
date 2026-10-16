@@ -12,7 +12,7 @@ import {
   calculateLoan 
 } from './services/loanCalculator.js';
 import { KOREA_INTEREST_RATES, getInterestRateData, scrapeInterestRateNews, ensureFreshRatesAndNews } from './services/interestRates.js';
-import { getPolicyData, scrapeGovernmentPolicies } from './services/policyService.js';
+import { getPolicyData, scrapeGovernmentPolicies, ensureFreshPolicies } from './services/policyService.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -217,20 +217,24 @@ app.post('/api/rates/news/refresh', async (req, res) => {
 });
 
 /**
- * 3. 부동산 용어집 & 정책 요약집 & 정책 스크래퍼 API
+ * 3. 부동산 용어집 & 정책 요약집 & 정책 스크래퍼 API (1시간 주기 자동 갱신 및 JSON 저장)
  */
-app.get('/api/policies', (req, res) => {
-  const data = getPolicyData();
-  res.json(data);
+app.get('/api/policies', async (req, res) => {
+  try {
+    const data = await ensureFreshPolicies(false);
+    res.json(data);
+  } catch (err) {
+    res.json(getPolicyData());
+  }
 });
 
 app.post('/api/policies/refresh', async (req, res) => {
   try {
-    const updatedPolicies = await scrapeGovernmentPolicies();
+    const data = await ensureFreshPolicies(true);
     res.json({
       success: true,
-      scrapedPolicies: updatedPolicies,
-      refreshedAt: new Date().toISOString()
+      scrapedPolicies: data.scrapedPolicies,
+      refreshedAt: data.lastUpdated
     });
   } catch (err) {
     res.status(500).json({ error: "정책 스크래핑 실패", details: err.message });
@@ -339,11 +343,14 @@ if (fs.existsSync(distPath)) {
 
 app.listen(PORT, () => {
   console.log(`[Backend] Real Estate Hub server listening on http://localhost:${PORT}`);
-  // 서버 시작 시 실시간 한국은행 기준금리·국고채·데일리 금리 뉴스 초기 수집
+  // 서버 시작 시 실시간 한국은행 기준금리·국고채·데일리 금리 뉴스 및 정부 정책 초기 수집 후 JSON 파일 저장
   ensureFreshRatesAndNews(true).catch(() => {});
-  // 6시간 주기로 백그라운드 자동 갱신
+  ensureFreshPolicies(true).catch(() => {});
+  // 6시간 주기로 백그라운드 자동 갱신 및 JSON 파일 저장
   setInterval(() => {
     ensureFreshRatesAndNews(true).catch(() => {});
+    ensureFreshPolicies(true).catch(() => {});
   }, 6 * 60 * 60 * 1000);
 });
+
 

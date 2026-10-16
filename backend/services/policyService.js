@@ -1,6 +1,13 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import Parser from 'rss-parser';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const policiesCachePath = path.join(__dirname, '..', 'data', 'policies_cache.json');
 
 const parser = new Parser();
 
@@ -320,9 +327,43 @@ let livePolicyNewsCache = [
   }
 ];
 
+let lastPolicySyncedAt = 0;
+let isPolicySyncing = false;
+const POLICY_SYNC_TTL_MS = 60 * 60 * 1000; // 1시간마다 자동 갱신
+
+function loadPoliciesCacheFromDisk() {
+  try {
+    if (fs.existsSync(policiesCachePath)) {
+      const parsed = JSON.parse(fs.readFileSync(policiesCachePath, 'utf8'));
+      if (Array.isArray(parsed.scrapedPolicies) && parsed.scrapedPolicies.length > 0) {
+        livePolicyNewsCache = parsed.scrapedPolicies;
+      }
+      if (parsed.lastUpdated) {
+        lastPolicySyncedAt = new Date(parsed.lastUpdated).getTime() || 0;
+      }
+    }
+  } catch (err) {
+    console.warn('[PoliciesCache] Failed to load policies_cache.json:', err.message);
+  }
+}
+
+function savePoliciesCacheToDisk() {
+  try {
+    const payload = {
+      lastUpdated: new Date(lastPolicySyncedAt || Date.now()).toISOString(),
+      scrapedPolicies: livePolicyNewsCache
+    };
+    fs.writeFileSync(policiesCachePath, JSON.stringify(payload, null, 2), 'utf8');
+  } catch (err) {
+    console.warn('[PoliciesCache] Failed to write policies_cache.json:', err.message);
+  }
+}
+
+loadPoliciesCacheFromDisk();
+
 /**
  * 3. 정부 정책 및 보도자료 실시간 웹 스크래퍼
- * 대한민국 정책브리핑(korea.kr) 및 구글 뉴스 정부 정책 피드를 실시간 크롤링합니다.
+ * 대한민국 정책브리핑(korea.kr) 및 구글 뉴스 정부 정책 피드를 실시간 크롤링하여 policies_cache.json에 저장합니다.
  */
 export async function scrapeGovernmentPolicies() {
   const scraped = [];
@@ -345,11 +386,13 @@ export async function scrapeGovernmentPolicies() {
             else if (cleanTitle.includes('금융위') || cleanTitle.includes('금융위원회')) ministry = "금융위원회";
             else if (cleanTitle.includes('기재부') || cleanTitle.includes('기획재정부')) ministry = "기획재정부";
 
+            const pubTimestamp = item.pubDate ? new Date(item.pubDate).getTime() : Date.now();
             scraped.push({
-              id: `gov-${Date.now()}-${Math.random().toString(36).substr(2, 6)}`,
+              id: `gov-${pubTimestamp}-${Math.random().toString(36).slice(2, 7)}`,
               ministry,
               title: cleanTitle,
               date: item.pubDate ? new Date(item.pubDate).toLocaleDateString('ko-KR') : new Date().toLocaleDateString('ko-KR'),
+              pubTimestamp,
               category: "최신 부동산 정책 발표",
               summary: (item.contentSnippet || cleanTitle).slice(0, 160) + '...',
               link: item.link,
@@ -366,6 +409,7 @@ export async function scrapeGovernmentPolicies() {
   }
 
   if (scraped.length > 0) {
+    scraped.sort((a, b) => (b.pubTimestamp || 0) - (a.pubTimestamp || 0));
     const combined = [...scraped, ...livePolicyNewsCache];
     const unique = [];
     const seen = new Set();
@@ -379,7 +423,26 @@ export async function scrapeGovernmentPolicies() {
     livePolicyNewsCache = unique.slice(0, 15);
   }
 
+  lastPolicySyncedAt = Date.now();
+  savePoliciesCacheToDisk();
   return livePolicyNewsCache;
+}
+
+export async function ensureFreshPolicies(force = false) {
+  const now = Date.now();
+  const isStale = force || !lastPolicySyncedAt || (now - lastPolicySyncedAt > POLICY_SYNC_TTL_MS);
+  if (!isStale || isPolicySyncing) {
+    return getPolicyData();
+  }
+
+  isPolicySyncing = true;
+  try {
+    await scrapeGovernmentPolicies();
+  } finally {
+    isPolicySyncing = false;
+  }
+
+  return getPolicyData();
 }
 
 export function getPolicyData() {
@@ -387,6 +450,6 @@ export function getPolicyData() {
     terms: REAL_ESTATE_TERMS,
     currentPolicies: CURRENT_REAL_ESTATE_POLICIES,
     scrapedPolicies: livePolicyNewsCache,
-    lastUpdated: new Date().toISOString()
+    lastUpdated: lastPolicySyncedAt ? new Date(lastPolicySyncedAt).toISOString() : new Date().toISOString()
   };
 }

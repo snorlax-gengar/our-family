@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "dev": "node --watch server.js"
+    "dev": "node --watch server.js",
+    "sync-daily": "node scripts/syncDailyData.js"
   },
   "dependencies": {
     "axios": "^1.7.9",

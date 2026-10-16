@@ -1,5 +1,12 @@
 import axios from 'axios';
 import Parser from 'rss-parser';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const ratesCachePath = path.join(__dirname, '..', 'data', 'rates_cache.json');
 
 const parser = new Parser({
   customFields: {
@@ -10,7 +17,7 @@ const parser = new Parser({
 /**
  * 대한민국 주요 금리 데이터 (한국은행 기준금리, 코픽스, 국고채, 시중은행 주담대)
  * - 서버 기동 시 및 매일(1시간 주기 캐시 만료 시) 네이버 증권 MarketIndex 공식 API와
- *   실시간 뉴스 RSS를 통해 자동으로 최신화됩니다.
+ *   실시간 뉴스 RSS를 통해 자동으로 최신화되며, backend/data/rates_cache.json 파일에 영구 저장됩니다.
  */
 export const KOREA_INTEREST_RATES = {
   baseRate: {
@@ -124,7 +131,6 @@ export const KOREA_INTEREST_RATES = {
   ]
 };
 
-// 기본 초기 뉴스 (RSS 실시간 수집과 병합됨)
 let cachedNews = [
   {
     id: "news-1",
@@ -159,6 +165,46 @@ let lastSyncedAt = 0;
 let isSyncing = false;
 const SYNC_TTL_MS = 60 * 60 * 1000; // 1시간마다 자동 갱신
 
+// 디스크(rates_cache.json)에서 기존 저장된 금리·뉴스 로드
+function loadRatesCacheFromDisk() {
+  try {
+    if (fs.existsSync(ratesCachePath)) {
+      const parsed = JSON.parse(fs.readFileSync(ratesCachePath, 'utf8'));
+      if (parsed.rates?.baseRate) {
+        Object.assign(KOREA_INTEREST_RATES.baseRate, parsed.rates.baseRate);
+      }
+      if (Array.isArray(parsed.rates?.marketBonds)) {
+        KOREA_INTEREST_RATES.marketBonds = parsed.rates.marketBonds;
+      }
+      if (Array.isArray(parsed.news) && parsed.news.length > 0) {
+        cachedNews = parsed.news;
+      }
+      if (parsed.lastUpdated) {
+        lastSyncedAt = new Date(parsed.lastUpdated).getTime() || 0;
+      }
+    }
+  } catch (err) {
+    console.warn('[RatesCache] Failed to load rates_cache.json:', err.message);
+  }
+}
+
+// 디스크(rates_cache.json)에 최신 수집된 금리·뉴스 영구 저장
+function saveRatesCacheToDisk() {
+  try {
+    const payload = {
+      lastUpdated: new Date(lastSyncedAt || Date.now()).toISOString(),
+      rates: KOREA_INTEREST_RATES,
+      news: cachedNews
+    };
+    fs.writeFileSync(ratesCachePath, JSON.stringify(payload, null, 2), 'utf8');
+  } catch (err) {
+    console.warn('[RatesCache] Failed to write rates_cache.json:', err.message);
+  }
+}
+
+// 모듈 초기화 시 디스크 캐시 먼저 로드
+loadRatesCacheFromDisk();
+
 function formatYmd(yyyymmdd) {
   if (!yyyymmdd || String(yyyymmdd).length !== 8) return yyyymmdd;
   const s = String(yyyymmdd);
@@ -170,7 +216,6 @@ function formatYmd(yyyymmdd) {
  */
 export async function syncLiveKoreaRates() {
   try {
-    // 1. 한국은행 기준금리 실시간 조회 (Naver MarketIndex API)
     const bokRes = await axios.get(
       'https://m.stock.naver.com/front-api/marketIndex/productDetail?category=standardInterest&reutersCode=KOR',
       { headers: { 'User-Agent': 'Mozilla/5.0' }, timeout: 5000 }
@@ -207,7 +252,6 @@ export async function syncLiveKoreaRates() {
     console.warn('[RatesSync] BOK base rate fetch warning:', err.message);
   }
 
-  // 2. 국고채 3년 / 5년 / 10년 실시간 수익률 조회
   const bondConfigs = [
     { idx: 0, code: 'KR3YT=RR', name: '국고채 3년물', note: '대표 단기·중기 시장 채권 지표' },
     { idx: 1, code: 'KR5YT=RR', name: '국고채 5년물', note: '중장기 시중 금리 선행 지표' },
@@ -245,7 +289,7 @@ export async function syncLiveKoreaRates() {
 
 /**
  * 실시간 금리 뉴스 스크래핑 함수
- * 구글 뉴스 및 주요 경제지 RSS를 실시간 조회하여 최신 금리·정책대출 기사를 수집합니다.
+ * 구글 뉴스 및 주요 경제지 RSS를 실시간 조회하여 최신 금리·정책대출 기사를 수집하고 JSON 파일로 저장합니다.
  */
 export async function scrapeInterestRateNews() {
   const scrapedItems = [];
@@ -294,7 +338,6 @@ export async function scrapeInterestRateNews() {
   }
 
   if (scrapedItems.length > 0) {
-    // 최신순 정렬
     scrapedItems.sort((a, b) => (b.pubTimestamp || 0) - (a.pubTimestamp || 0));
     const combined = [...scrapedItems, ...cachedNews];
     const unique = [];
@@ -310,11 +353,12 @@ export async function scrapeInterestRateNews() {
   }
 
   lastSyncedAt = Date.now();
+  saveRatesCacheToDisk();
   return cachedNews;
 }
 
 /**
- * 금리 지표 + 데일리 뉴스 통합 자동 갱신 (1시간 캐시 TTL 및 일자 변경 시 자동 트리거)
+ * 금리 지표 + 데일리 뉴스 통합 자동 갱신 및 rates_cache.json 파일 저장
  */
 export async function ensureFreshRatesAndNews(force = false) {
   const now = Date.now();
@@ -334,6 +378,7 @@ export async function ensureFreshRatesAndNews(force = false) {
       scrapeInterestRateNews()
     ]);
     lastSyncedAt = Date.now();
+    saveRatesCacheToDisk();
   } finally {
     isSyncing = false;
   }
