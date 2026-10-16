@@ -4,7 +4,7 @@ import PropertiesTab from './components/PropertiesTab';
 import RatesTab from './components/RatesTab';
 import PoliciesTab from './components/PoliciesTab';
 import BeginnerGuideModal from './components/BeginnerGuideModal';
-import { Home, Heart, ShieldAlert, Sparkles, Building2, Percent, BookOpen } from 'lucide-react';
+import { Home, Heart, ShieldAlert, Sparkles, Building2, Percent, BookOpen, ExternalLink } from 'lucide-react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('properties');
@@ -173,23 +173,92 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-slate-200 mt-10 py-8 pb-36 md:pb-10 text-xs text-slate-500">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2.5 text-center sm:text-left">
-            <div className="flex items-center gap-2 shrink-0">
-              <div className="w-6 h-6 rounded-md bg-blue-600 text-white flex items-center justify-center font-bold text-xs">
-                <Home className="w-3.5 h-3.5" />
+      <footer className="bg-slate-900 text-slate-400 border-t border-slate-800 mt-14 pt-10 pb-36 md:pb-12 text-xs">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          {/* 상단: 브랜드 및 서비스 안내 / 관련 공공기관 바로가기 */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-slate-800">
+            {/* 좌측 7열: 서비스 설명 */}
+            <div className="md:col-span-7 space-y-3">
+              <div className="flex items-center gap-2.5">
+                <div className="w-7 h-7 rounded-lg bg-blue-600 text-white flex items-center justify-center font-black text-sm shadow-md shadow-blue-500/20">
+                  <Home className="w-4 h-4" />
+                </div>
+                <div>
+                  <span className="font-bold text-white text-sm tracking-tight">우리가 (우리家)</span>
+                  <span className="text-slate-400 text-xs ml-1.5 font-medium">우리 가족 보금자리 플래너</span>
+                </div>
               </div>
-              <span className="font-bold text-slate-800 whitespace-nowrap">우리가 (우리家) · 우리 가족 보금자리 플래너</span>
+              <p className="text-slate-300 text-xs leading-relaxed break-keep max-w-xl">
+                수도권 5~6억 원대 실수요 아파트 매물 탐색 · 평형별 도면 CAD 구조 분석 · 신생아 특례대출(LTV 70%) & HF 보금자리론 & 생애최초 디딤돌 맞춤형 시뮬레이션 및 실시간 대한민국 금리·정책 통합 분석 서비스입니다.
+              </p>
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 pt-1 text-[11px] text-slate-400">
+                <span>데이터 출처 : 국토교통부 실거래가 · KB국민은행 시세 · 주택도시기금 · 한국주택금융공사(HF) · 한국은행</span>
+              </div>
             </div>
-            <p className="text-slate-400 text-[11px] break-keep leading-tight">
-              수도권 5~6억 원대 매물 · 평형 도면 CAD · 신생아 특례대출(LTV 70%) · 금리 & 정책 통합 허브
-            </p>
+
+            {/* 우측 5열: 공식 포털 바로가기 링크 */}
+            <div className="md:col-span-5 flex flex-col justify-between space-y-3">
+              <div>
+                <span className="text-[11px] font-semibold text-slate-300 uppercase tracking-wider block mb-2">공식 대출 & 시세 포털 바로가기</span>
+                <div className="grid grid-cols-2 gap-2 text-[11px]">
+                  <a
+                    href="https://enhf.molit.go.kr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-between px-2.5 py-1.5 rounded-md bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 hover:text-white transition-colors"
+                  >
+                    <span>주택도시기금 (기금e든든)</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+                  <a
+                    href="https://www.hf.go.kr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-between px-2.5 py-1.5 rounded-md bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 hover:text-white transition-colors"
+                  >
+                    <span>한국주택금융공사 (HF)</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+                  <a
+                    href="https://kbland.kr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-between px-2.5 py-1.5 rounded-md bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 hover:text-white transition-colors"
+                  >
+                    <span>KB부동산 (KB시세)</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+                  <a
+                    href="http://rt.molit.go.kr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-between px-2.5 py-1.5 rounded-md bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 hover:text-white transition-colors"
+                  >
+                    <span>국토부 실거래가 공개시스템</span>
+                    <ExternalLink className="w-3 h-3 text-slate-400" />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className="text-center md:text-right text-[11px] text-slate-400 break-keep leading-relaxed">
-            <p>※ 본 시뮬레이션은 국토교통부 실거래가, KB국민은행 시세 및 주택도시기금 지침을 토대로 작성되었습니다.</p>
-            <p className="mt-0.5 text-slate-400/90">실제 대출 취급 및 심사는 은행 창구 및 기금e든든 심사 결과에 따라 달라질 수 있습니다.</p>
+          {/* 중단: 법적 고지 / 유의사항 */}
+          <div className="py-4 text-[11px] text-slate-400 leading-relaxed break-keep">
+            <p>※ 본 시뮬레이션 결과는 국토교통부 실거래가, KB국민은행 시세 및 주택도시기금/HF 업무처리기준을 바탕으로 산출된 모의 계산 결과이며 법적 효력이 없습니다.</p>
+            <p className="mt-0.5">※ 실제 대출 취급 및 최종 승인 여부, 적용 금리 및 한도는 개인의 신용점수, 세대 합산 주택 보유수, 담보물 감정평가 및 은행 창구/기금e든든 정밀 심사 결과에 따라 달라질 수 있습니다.</p>
+          </div>
+
+          {/* 하단: Copyright 및 버전 정보 */}
+          <div className="pt-4 border-t border-slate-800/70 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-slate-400">
+            <p>© 2026 우리가 (우리家) · Our Family Real Estate Planner. All rights reserved.</p>
+            <div className="flex items-center gap-3">
+              <span className="inline-flex items-center gap-1.5 text-emerald-400">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                Daily Live Sync Active
+              </span>
+              <span className="text-slate-600">|</span>
+              <span>v1.2.0</span>
+            </div>
           </div>
         </div>
       </footer>
