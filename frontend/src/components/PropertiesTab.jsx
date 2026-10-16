@@ -1524,7 +1524,7 @@ export default function PropertiesTab({
                           {property.priceDisplay}원
                         </span>
                         <span className="text-[10px] text-slate-400 block mt-0.5 whitespace-nowrap truncate">
-                          KB {(kb.generalAvg / 100000000).toFixed(2)}억 · 전세 {(kb.jeonseAvg / 100000000).toFixed(1)}억 ({kb.jeonseRate}%)
+                          KB {(kb.generalAvg / 100000000).toFixed(2)}억 · {kb.jeonseAvg ? `전세 ${(kb.jeonseAvg / 100000000).toFixed(1)}억 (${kb.jeonseRate}%)` : '전세시세 미제공'}
                         </span>
                       </div>
 

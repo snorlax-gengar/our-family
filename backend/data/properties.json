@@ -14,32 +14,37 @@
     "areaSqMeter": 84.76,
     "pyeong": 33,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 850000000,
-    "priceDisplay": "8억 5,000만",
-    "priceRange": "8.2억 ~ 8.9억",
+    "priceKrw": 888000000,
+    "priceDisplay": "8억 8,800만",
+    "priceRange": "8.9억 ~ 10억",
     "kbPrice": {
-      "generalAvg": 850000000,
-      "highAvg": 890000000,
-      "lowAvg": 800000000,
-      "jeonseAvg": 480000000,
-      "jeonseRate": 56.5,
+      "generalAvg": 875000000,
+      "highAvg": 915000000,
+      "lowAvg": 840000000,
+      "jeonseAvg": 565000000,
+      "jeonseRate": 64.6,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 18,
-        "price": 865000000
+        "floor": 5,
+        "price": 900000000
       },
       {
         "date": "2026.08",
-        "floor": 11,
-        "price": 845000000
+        "floor": 4,
+        "price": 850000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 8,
+        "price": 923000000
       },
       {
         "date": "2026.07",
-        "floor": 5,
-        "price": 830000000
+        "floor": 7,
+        "price": 848000000
       }
     ],
     "highlights": [
@@ -88,37 +93,27 @@
     "areaSqMeter": 84.95,
     "pyeong": 33,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 580000000,
-    "priceDisplay": "5억 8,000만",
-    "priceRange": "5.6억 ~ 6.0억",
+    "priceKrw": 1095000000,
+    "priceDisplay": "10억 9,500만",
+    "priceRange": "10.6억 ~ 11.65억",
     "kbPrice": {
-      "generalAvg": 575000000,
-      "highAvg": 600000000,
-      "lowAvg": 550000000,
-      "jeonseAvg": 370000000,
-      "jeonseRate": 64.3,
+      "generalAvg": 1095000000,
+      "highAvg": 1165000000,
+      "lowAvg": 1060000000,
+      "jeonseAvg": 585000000,
+      "jeonseRate": 53.4,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 12,
-        "price": 580000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 19,
-        "price": 575000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 4,
-        "price": 568000000
+        "date": "2026.05",
+        "floor": 9,
+        "price": 940000000
       },
       {
         "date": "2026.04",
-        "floor": 15,
-        "price": 560000000
+        "floor": 5,
+        "price": 962000000
       }
     ],
     "highlights": [
@@ -168,32 +163,37 @@
     "areaSqMeter": 84.97,
     "pyeong": 32,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 520000000,
-    "priceDisplay": "5억 2,000만",
-    "priceRange": "5.0억 ~ 5.4억",
+    "priceKrw": 570000000,
+    "priceDisplay": "5억 7,000만",
+    "priceRange": "5.8억 ~ 6.6억",
     "kbPrice": {
-      "generalAvg": 515000000,
-      "highAvg": 540000000,
-      "lowAvg": 490000000,
-      "jeonseAvg": 330000000,
-      "jeonseRate": 64.1,
+      "generalAvg": 580000000,
+      "highAvg": 602500000,
+      "lowAvg": 540000000,
+      "jeonseAvg": 415000000,
+      "jeonseRate": 71.6,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 15,
-        "price": 525000000
+        "floor": 19,
+        "price": 585000000
       },
       {
-        "date": "2026.07",
-        "floor": 8,
-        "price": 518000000
+        "date": "2026.09",
+        "floor": 4,
+        "price": 560000000
       },
       {
-        "date": "2026.05",
-        "floor": 11,
-        "price": 510000000
+        "date": "2026.08",
+        "floor": 3,
+        "price": 544000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 17,
+        "price": 590000000
       }
     ],
     "highlights": [
@@ -243,32 +243,27 @@
     "areaSqMeter": 59.88,
     "pyeong": 25,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 620000000,
-    "priceDisplay": "6억 2,000만",
-    "priceRange": "6.0억 ~ 6.4억",
+    "priceKrw": 889000000,
+    "priceDisplay": "8억 8,900만",
+    "priceRange": "8.6억 ~ 9.35억",
     "kbPrice": {
-      "generalAvg": 615000000,
-      "highAvg": 640000000,
-      "lowAvg": 590000000,
-      "jeonseAvg": 390000000,
-      "jeonseRate": 63.4,
+      "generalAvg": 900000000,
+      "highAvg": 935000000,
+      "lowAvg": 860000000,
+      "jeonseAvg": 540000000,
+      "jeonseRate": 60,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 8,
-        "price": 625000000
-      },
-      {
         "date": "2026.07",
         "floor": 12,
-        "price": 618000000
+        "price": 877000000
       },
       {
-        "date": "2026.05",
-        "floor": 4,
-        "price": 610000000
+        "date": "2026.01",
+        "floor": 14,
+        "price": 765000000
       }
     ],
     "highlights": [
@@ -318,32 +313,27 @@
     "areaSqMeter": 84.88,
     "pyeong": 32,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 560000000,
-    "priceDisplay": "5억 6,000만",
-    "priceRange": "5.4억 ~ 5.8억",
+    "priceKrw": 728000000,
+    "priceDisplay": "7억 2,800만",
+    "priceRange": "7.05억 ~ 7.6억",
     "kbPrice": {
-      "generalAvg": 555000000,
-      "highAvg": 580000000,
-      "lowAvg": 530000000,
-      "jeonseAvg": 360000000,
-      "jeonseRate": 64.9,
+      "generalAvg": 740000000,
+      "highAvg": 760000000,
+      "lowAvg": 705000000,
+      "jeonseAvg": 600000000,
+      "jeonseRate": 81.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 16,
-        "price": 562000000
-      },
-      {
         "date": "2026.08",
-        "floor": 7,
-        "price": 555000000
+        "floor": 2,
+        "price": 740000000
       },
       {
-        "date": "2026.05",
-        "floor": 3,
-        "price": 548000000
+        "date": "2026.07",
+        "floor": 2,
+        "price": 690000000
       }
     ],
     "highlights": [
@@ -393,32 +383,37 @@
     "areaSqMeter": 84.78,
     "pyeong": 32,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 530000000,
-    "priceDisplay": "5억 3,000만",
-    "priceRange": "5.1억 ~ 5.5억",
+    "priceKrw": 555000000,
+    "priceDisplay": "5억 5,500만",
+    "priceRange": "5.1억 ~ 6.3억",
     "kbPrice": {
-      "generalAvg": 525000000,
-      "highAvg": 550000000,
-      "lowAvg": 500000000,
-      "jeonseAvg": 360000000,
-      "jeonseRate": 68.6,
+      "generalAvg": 555000000,
+      "highAvg": 600000000,
+      "lowAvg": 505000000,
+      "jeonseAvg": 390000000,
+      "jeonseRate": 70.3,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 535000000
-      },
-      {
-        "date": "2026.07",
+        "date": "2026.10",
         "floor": 7,
-        "price": 525000000
+        "price": 560000000
       },
       {
-        "date": "2026.05",
-        "floor": 3,
-        "price": 518000000
+        "date": "2026.09",
+        "floor": 5,
+        "price": 555000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 545000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 7,
+        "price": 580000000
       }
     ],
     "highlights": [
@@ -468,32 +463,37 @@
     "areaSqMeter": 59.98,
     "pyeong": 25,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 570000000,
-    "priceDisplay": "5억 7,000만",
-    "priceRange": "5.5억 ~ 5.9억",
+    "priceKrw": 756000000,
+    "priceDisplay": "7억 5,600만",
+    "priceRange": "7.2억 ~ 8.3억",
     "kbPrice": {
-      "generalAvg": 565000000,
-      "highAvg": 590000000,
-      "lowAvg": 540000000,
-      "jeonseAvg": 390000000,
-      "jeonseRate": 69,
+      "generalAvg": 755000000,
+      "highAvg": 785000000,
+      "lowAvg": 685000000,
+      "jeonseAvg": 470000000,
+      "jeonseRate": 62.3,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 18,
-        "price": 575000000
+        "floor": 9,
+        "price": 810000000
       },
       {
-        "date": "2026.08",
-        "floor": 11,
-        "price": 565000000
+        "date": "2026.09",
+        "floor": 23,
+        "price": 757000000
       },
       {
-        "date": "2026.06",
-        "floor": 6,
-        "price": 558000000
+        "date": "2026.09",
+        "floor": 17,
+        "price": 740000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 19,
+        "price": 755000000
       }
     ],
     "highlights": [
@@ -543,32 +543,27 @@
     "areaSqMeter": 59.85,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 590000000,
-    "priceDisplay": "5억 9,000만",
-    "priceRange": "5.7억 ~ 6.1억",
+    "priceKrw": 828000000,
+    "priceDisplay": "8억 2,800만",
+    "priceRange": "7.7억 ~ 8.2억",
     "kbPrice": {
-      "generalAvg": 585000000,
-      "highAvg": 610000000,
-      "lowAvg": 560000000,
-      "jeonseAvg": 380000000,
-      "jeonseRate": 65,
+      "generalAvg": 810000000,
+      "highAvg": 845000000,
+      "lowAvg": 770000000,
+      "jeonseAvg": 435000000,
+      "jeonseRate": 53.7,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 15,
-        "price": 590000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 9,
-        "price": 582000000
+        "floor": 14,
+        "price": 845000000
       },
       {
         "date": "2026.06",
-        "floor": 4,
-        "price": 575000000
+        "floor": 9,
+        "price": 810000000
       }
     ],
     "highlights": [
@@ -693,32 +688,27 @@
     "areaSqMeter": 84.88,
     "pyeong": 35,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 550000000,
-    "priceDisplay": "5억 5,000만",
-    "priceRange": "5.3억 ~ 5.7억",
+    "priceKrw": 555000000,
+    "priceDisplay": "5억 5,500만",
+    "priceRange": "5.25억 ~ 7억",
     "kbPrice": {
-      "generalAvg": 545000000,
-      "highAvg": 570000000,
+      "generalAvg": 555000000,
+      "highAvg": 595000000,
       "lowAvg": 520000000,
       "jeonseAvg": 350000000,
-      "jeonseRate": 64.2,
+      "jeonseRate": 63.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 22,
-        "price": 555000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 15,
-        "price": 548000000
+        "date": "2026.06",
+        "floor": 2,
+        "price": 480000000
       },
       {
         "date": "2026.06",
-        "floor": 9,
-        "price": 540000000
+        "floor": 15,
+        "price": 519000000
       }
     ],
     "highlights": [
@@ -768,32 +758,37 @@
     "areaSqMeter": 59.95,
     "pyeong": 25,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 560000000,
-    "priceDisplay": "5억 6,000만",
-    "priceRange": "5.4억 ~ 5.8억",
+    "priceKrw": 626000000,
+    "priceDisplay": "6억 2,600만",
+    "priceRange": "6.5억 ~ 7억",
     "kbPrice": {
-      "generalAvg": 555000000,
-      "highAvg": 580000000,
-      "lowAvg": 530000000,
-      "jeonseAvg": 370000000,
-      "jeonseRate": 66.7,
+      "generalAvg": 615000000,
+      "highAvg": 640000000,
+      "lowAvg": 580000000,
+      "jeonseAvg": 415000000,
+      "jeonseRate": 67.5,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 20,
-        "price": 565000000
-      },
-      {
         "date": "2026.08",
-        "floor": 12,
-        "price": 558000000
+        "floor": 21,
+        "price": 637000000
       },
       {
-        "date": "2026.06",
-        "floor": 7,
-        "price": 550000000
+        "date": "2026.07",
+        "floor": 14,
+        "price": 625000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 20,
+        "price": 645000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 9,
+        "price": 645000000
       }
     ],
     "highlights": [
@@ -918,32 +913,37 @@
     "areaSqMeter": 59.91,
     "pyeong": 25,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 620000000,
-    "priceDisplay": "6억 2,000만",
-    "priceRange": "6.0억 ~ 6.4억",
+    "priceKrw": 890000000,
+    "priceDisplay": "8억 9,000만",
+    "priceRange": "9억 ~ 9억",
     "kbPrice": {
-      "generalAvg": 615000000,
-      "highAvg": 640000000,
-      "lowAvg": 590000000,
-      "jeonseAvg": 410000000,
-      "jeonseRate": 66.7,
+      "generalAvg": 890000000,
+      "highAvg": 920000000,
+      "lowAvg": 850000000,
+      "jeonseAvg": 530000000,
+      "jeonseRate": 59.6,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 21,
-        "price": 625000000
+        "floor": 17,
+        "price": 920000000
       },
       {
-        "date": "2026.07",
-        "floor": 10,
-        "price": 615000000
+        "date": "2026.09",
+        "floor": 17,
+        "price": 530000000
       },
       {
-        "date": "2026.05",
-        "floor": 15,
-        "price": 610000000
+        "date": "2026.08",
+        "floor": 23,
+        "price": 890000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 19,
+        "price": 930000000
       }
     ],
     "highlights": [
@@ -993,37 +993,27 @@
     "areaSqMeter": 84.91,
     "pyeong": 31,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 540000000,
-    "priceDisplay": "5억 4,000만",
-    "priceRange": "5.2억 ~ 5.6억",
+    "priceKrw": 534000000,
+    "priceDisplay": "5억 3,400만",
+    "priceRange": "5.8억 ~ 6.2억",
     "kbPrice": {
-      "generalAvg": 540000000,
-      "highAvg": 565000000,
-      "lowAvg": 515000000,
-      "jeonseAvg": 370000000,
-      "jeonseRate": 68.5,
+      "generalAvg": 542500000,
+      "highAvg": 557500000,
+      "lowAvg": 510000000,
+      "jeonseAvg": 400000000,
+      "jeonseRate": 73.7,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 545000000
-      },
-      {
         "date": "2026.08",
         "floor": 7,
-        "price": 538000000
-      },
-      {
-        "date": "2026.07",
-        "floor": 13,
-        "price": 532000000
-      },
-      {
-        "date": "2026.05",
-        "floor": 4,
         "price": 525000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 9,
+        "price": 515000000
       }
     ],
     "highlights": [
@@ -1075,30 +1065,30 @@
     "rooms": "방 3 / 욕실 2",
     "priceKrw": 500000000,
     "priceDisplay": "5억",
-    "priceRange": "4.9억 ~ 5.3억",
+    "priceRange": "4.7억 ~ 5.5억",
     "kbPrice": {
       "generalAvg": 500000000,
-      "highAvg": 525000000,
-      "lowAvg": 475000000,
-      "jeonseAvg": 350000000,
-      "jeonseRate": 70,
+      "highAvg": 530000000,
+      "lowAvg": 455000000,
+      "jeonseAvg": 365000000,
+      "jeonseRate": 73,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 10,
-        "price": 500000000
+        "date": "2026.08",
+        "floor": 8,
+        "price": 545000000
       },
       {
         "date": "2026.07",
-        "floor": 8,
-        "price": 492000000
+        "floor": 11,
+        "price": 490000000
       },
       {
-        "date": "2026.05",
-        "floor": 5,
-        "price": 485000000
+        "date": "2026.07",
+        "floor": 4,
+        "price": 455000000
       }
     ],
     "highlights": [
@@ -1150,35 +1140,30 @@
     "rooms": "방 3 / 욕실 2",
     "priceKrw": 515000000,
     "priceDisplay": "5억 1,500만",
-    "priceRange": "4.9억 ~ 5.4억",
+    "priceRange": "4.8억 ~ 5.3억",
     "kbPrice": {
-      "generalAvg": 510000000,
-      "highAvg": 535000000,
-      "lowAvg": 485000000,
-      "jeonseAvg": 340000000,
-      "jeonseRate": 66.7,
+      "generalAvg": 505000000,
+      "highAvg": 530000000,
+      "lowAvg": 480000000,
+      "jeonseAvg": 355000000,
+      "jeonseRate": 70.3,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
+        "date": "2026.08",
+        "floor": 2,
+        "price": 485000000
+      },
+      {
+        "date": "2026.07",
         "floor": 10,
         "price": 525000000
       },
       {
-        "date": "2026.08",
-        "floor": 6,
-        "price": 512000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 12,
-        "price": 505000000
-      },
-      {
-        "date": "2026.04",
-        "floor": 3,
-        "price": 490000000
+        "date": "2026.07",
+        "floor": 9,
+        "price": 540000000
       }
     ],
     "highlights": [
@@ -1228,37 +1213,27 @@
     "areaSqMeter": 84.92,
     "pyeong": 32,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 545000000,
-    "priceDisplay": "5억 4,500만",
-    "priceRange": "5.2억 ~ 5.7억",
+    "priceKrw": 559000000,
+    "priceDisplay": "5억 5,900만",
+    "priceRange": "5.1억 ~ 5.88억",
     "kbPrice": {
-      "generalAvg": 540000000,
-      "highAvg": 570000000,
-      "lowAvg": 515000000,
-      "jeonseAvg": 360000000,
-      "jeonseRate": 66.7,
+      "generalAvg": 555000000,
+      "highAvg": 587500000,
+      "lowAvg": 510000000,
+      "jeonseAvg": 395000000,
+      "jeonseRate": 71.2,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
+        "date": "2026.10",
+        "floor": 2,
+        "price": 547000000
+      },
+      {
         "date": "2026.09",
-        "floor": 13,
-        "price": 555000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 8,
-        "price": 542000000
-      },
-      {
-        "date": "2026.07",
-        "floor": 5,
-        "price": 530000000
-      },
-      {
-        "date": "2026.05",
-        "floor": 11,
-        "price": 548000000
+        "floor": 12,
+        "price": 580000000
       }
     ],
     "highlights": [
@@ -1308,37 +1283,27 @@
     "areaSqMeter": 84.86,
     "pyeong": 31,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 580000000,
-    "priceDisplay": "5억 8,000만",
-    "priceRange": "5.6억 ~ 6.1억",
+    "priceKrw": 585000000,
+    "priceDisplay": "5억 8,500만",
+    "priceRange": "5.25억 ~ 6.3억",
     "kbPrice": {
-      "generalAvg": 575000000,
-      "highAvg": 605000000,
-      "lowAvg": 550000000,
-      "jeonseAvg": 380000000,
-      "jeonseRate": 66.1,
+      "generalAvg": 585000000,
+      "highAvg": 630000000,
+      "lowAvg": 525000000,
+      "jeonseAvg": 430000000,
+      "jeonseRate": 73.5,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 14,
-        "price": 590000000
+        "date": "2025.12",
+        "floor": 13,
+        "price": 580000000
       },
       {
-        "date": "2026.08",
-        "floor": 9,
-        "price": 578000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 11,
-        "price": 575000000
-      },
-      {
-        "date": "2026.04",
-        "floor": 4,
-        "price": 560000000
+        "date": "2025.08",
+        "floor": 2,
+        "price": 500000000
       }
     ],
     "highlights": [
@@ -1388,32 +1353,27 @@
     "areaSqMeter": 72.18,
     "pyeong": 26,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 480000000,
-    "priceDisplay": "4억 8,000만",
-    "priceRange": "4.5억 ~ 5.0억",
+    "priceKrw": 465000000,
+    "priceDisplay": "4억 6,500만",
+    "priceRange": "4.85억 ~ 5.1억",
     "kbPrice": {
-      "generalAvg": 475000000,
+      "generalAvg": 465000000,
       "highAvg": 495000000,
-      "lowAvg": 450000000,
-      "jeonseAvg": 300000000,
-      "jeonseRate": 63.2,
+      "lowAvg": 435000000,
+      "jeonseAvg": 320000000,
+      "jeonseRate": 68.8,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 10,
-        "price": 485000000
-      },
-      {
-        "date": "2026.07",
-        "floor": 7,
-        "price": 478000000
+        "date": "2026.06",
+        "floor": 6,
+        "price": 490000000
       },
       {
         "date": "2026.05",
-        "floor": 4,
-        "price": 460000000
+        "floor": 1,
+        "price": 380000000
       }
     ],
     "highlights": [
@@ -1463,32 +1423,27 @@
     "areaSqMeter": 84.9,
     "pyeong": 32,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 605000000,
-    "priceDisplay": "6억 500만",
-    "priceRange": "5.8억 ~ 6.3억",
+    "priceKrw": 615000000,
+    "priceDisplay": "6억 1,500만",
+    "priceRange": "6억 ~ 6.6억",
     "kbPrice": {
       "generalAvg": 600000000,
       "highAvg": 630000000,
       "lowAvg": 575000000,
-      "jeonseAvg": 380000000,
-      "jeonseRate": 63.3,
+      "jeonseAvg": 365000000,
+      "jeonseRate": 60.8,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 14,
-        "price": 615000000
-      },
-      {
         "date": "2026.08",
-        "floor": 9,
-        "price": 602000000
+        "floor": 15,
+        "price": 630000000
       },
       {
-        "date": "2026.06",
-        "floor": 6,
-        "price": 595000000
+        "date": "2026.03",
+        "floor": 13,
+        "price": 630000000
       }
     ],
     "highlights": [
@@ -1538,32 +1493,32 @@
     "areaSqMeter": 83.16,
     "pyeong": 29,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 585000000,
-    "priceDisplay": "5억 8,500만",
-    "priceRange": "5.6억 ~ 6.1억",
+    "priceKrw": 565000000,
+    "priceDisplay": "5억 6,500만",
+    "priceRange": "5.4억 ~ 7.9억",
     "kbPrice": {
       "generalAvg": 580000000,
-      "highAvg": 610000000,
-      "lowAvg": 550000000,
-      "jeonseAvg": 360000000,
-      "jeonseRate": 62.1,
+      "highAvg": 620000000,
+      "lowAvg": 535000000,
+      "jeonseAvg": 440000000,
+      "jeonseRate": 75.9,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
+        "date": "2026.10",
+        "floor": 12,
+        "price": 647000000
+      },
+      {
         "date": "2026.09",
-        "floor": 11,
-        "price": 592000000
+        "floor": 1,
+        "price": 440000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 580000000
-      },
-      {
-        "date": "2026.06",
+        "date": "2026.07",
         "floor": 4,
-        "price": 565000000
+        "price": 550000000
       }
     ],
     "highlights": [
@@ -1613,32 +1568,32 @@
     "areaSqMeter": 70.3,
     "pyeong": 26,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 500000000,
-    "priceDisplay": "5억",
-    "priceRange": "4.8억 ~ 5.2억",
+    "priceKrw": 502000000,
+    "priceDisplay": "5억 200만",
+    "priceRange": "5억 ~ 5.5억",
     "kbPrice": {
-      "generalAvg": 495000000,
+      "generalAvg": 505000000,
       "highAvg": 515000000,
-      "lowAvg": 475000000,
-      "jeonseAvg": 310000000,
-      "jeonseRate": 62.6,
+      "lowAvg": 490000000,
+      "jeonseAvg": 340000000,
+      "jeonseRate": 67.3,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 9,
-        "price": 508000000
+        "floor": 11,
+        "price": 510000000
       },
       {
-        "date": "2026.08",
-        "floor": 6,
-        "price": 495000000
+        "date": "2026.09",
+        "floor": 5,
+        "price": 498000000
       },
       {
-        "date": "2026.06",
-        "floor": 4,
-        "price": 488000000
+        "date": "2026.07",
+        "floor": 3,
+        "price": 471000000
       }
     ],
     "highlights": [
@@ -1688,32 +1643,37 @@
     "areaSqMeter": 84.66,
     "pyeong": 30,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 555000000,
-    "priceDisplay": "5억 5,500만",
-    "priceRange": "5.4억 ~ 5.7억",
+    "priceKrw": 563000000,
+    "priceDisplay": "5억 6,300만",
+    "priceRange": "5.4억 ~ 6.3억",
     "kbPrice": {
-      "generalAvg": 550000000,
-      "highAvg": 575000000,
-      "lowAvg": 525000000,
-      "jeonseAvg": 350000000,
-      "jeonseRate": 63.6,
+      "generalAvg": 560000000,
+      "highAvg": 580000000,
+      "lowAvg": 530000000,
+      "jeonseAvg": 405000000,
+      "jeonseRate": 72.3,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
+        "floor": 2,
+        "price": 565000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 1,
         "price": 565000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 552000000
+        "floor": 10,
+        "price": 530000000
       },
       {
-        "date": "2026.05",
-        "floor": 5,
-        "price": 540000000
+        "date": "2026.08",
+        "floor": 10,
+        "price": 538000000
       }
     ],
     "highlights": [
@@ -1763,32 +1723,27 @@
     "areaSqMeter": 84.92,
     "pyeong": 30,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 535000000,
-    "priceDisplay": "5억 3,500만",
-    "priceRange": "5.1억 ~ 5.6억",
+    "priceKrw": 528000000,
+    "priceDisplay": "5억 2,800만",
+    "priceRange": "5.5억 ~ 6.5억",
     "kbPrice": {
-      "generalAvg": 530000000,
+      "generalAvg": 540000000,
       "highAvg": 555000000,
       "lowAvg": 500000000,
-      "jeonseAvg": 350000000,
-      "jeonseRate": 66,
+      "jeonseAvg": 400000000,
+      "jeonseRate": 74.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 12,
+        "floor": 11,
         "price": 555000000
       },
       {
         "date": "2026.07",
-        "floor": 8,
-        "price": 530000000
-      },
-      {
-        "date": "2026.05",
-        "floor": 3,
-        "price": 495000000
+        "floor": 1,
+        "price": 475000000
       }
     ],
     "highlights": [
@@ -1838,32 +1793,37 @@
     "areaSqMeter": 59.94,
     "pyeong": 23,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 495000000,
-    "priceDisplay": "4억 9,500만",
-    "priceRange": "4.8억 ~ 5.2억",
+    "priceKrw": 613000000,
+    "priceDisplay": "6억 1,300만",
+    "priceRange": "5.55억 ~ 6.35억",
     "kbPrice": {
-      "generalAvg": 500000000,
-      "highAvg": 520000000,
-      "lowAvg": 475000000,
-      "jeonseAvg": 330000000,
-      "jeonseRate": 66,
+      "generalAvg": 605000000,
+      "highAvg": 635000000,
+      "lowAvg": 555000000,
+      "jeonseAvg": 350000000,
+      "jeonseRate": 57.9,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
+        "date": "2026.10",
+        "floor": 6,
+        "price": 645000000
+      },
+      {
         "date": "2026.09",
-        "floor": 14,
-        "price": 500000000
+        "floor": 2,
+        "price": 585000000
       },
       {
-        "date": "2026.08",
-        "floor": 8,
-        "price": 492000000
+        "date": "2026.09",
+        "floor": 3,
+        "price": 620000000
       },
       {
-        "date": "2026.06",
-        "floor": 19,
-        "price": 490000000
+        "date": "2026.09",
+        "floor": 13,
+        "price": 556500000
       }
     ],
     "highlights": [
@@ -1912,32 +1872,37 @@
     "areaSqMeter": 84.86,
     "pyeong": 31,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 685000000,
-    "priceDisplay": "6억 8,500만",
-    "priceRange": "6.6억 ~ 7.2억",
+    "priceKrw": 700000000,
+    "priceDisplay": "7억",
+    "priceRange": "7.6억 ~ 7.8억",
     "kbPrice": {
-      "generalAvg": 695000000,
-      "highAvg": 745000000,
-      "lowAvg": 640000000,
+      "generalAvg": 700000000,
+      "highAvg": 750000000,
+      "lowAvg": 645000000,
       "jeonseAvg": 450000000,
-      "jeonseRate": 64.7,
+      "jeonseRate": 64.3,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 18,
+        "floor": 2,
+        "price": 680000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 8,
+        "price": 755000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 6,
         "price": 700000000
       },
       {
         "date": "2026.08",
-        "floor": 11,
-        "price": 685000000
-      },
-      {
-        "date": "2026.07",
-        "floor": 6,
-        "price": 670000000
+        "floor": 18,
+        "price": 650000000
       }
     ],
     "highlights": [
@@ -1986,27 +1951,37 @@
     "areaSqMeter": 59.88,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 420000000,
-    "priceDisplay": "4억 2,000만",
-    "priceRange": "4.0억 ~ 4.4억",
+    "priceKrw": 385000000,
+    "priceDisplay": "3억 8,500만",
+    "priceRange": "3.48억 ~ 4.05억",
     "kbPrice": {
-      "generalAvg": 425000000,
-      "highAvg": 440000000,
-      "lowAvg": 400000000,
-      "jeonseAvg": 295000000,
-      "jeonseRate": 69.4,
+      "generalAvg": 380000000,
+      "highAvg": 405000000,
+      "lowAvg": 347500000,
+      "jeonseAvg": 297500000,
+      "jeonseRate": 78.3,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 12,
+        "date": "2026.10",
+        "floor": 15,
         "price": 425000000
       },
       {
-        "date": "2026.07",
-        "floor": 7,
-        "price": 418000000
+        "date": "2026.10",
+        "floor": 4,
+        "price": 380000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 13,
+        "price": 390000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 12,
+        "price": 408000000
       }
     ],
     "highlights": [
@@ -2055,27 +2030,37 @@
     "areaSqMeter": 84.92,
     "pyeong": 31,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 550000000,
-    "priceDisplay": "5억 5,000만",
-    "priceRange": "5.3억 ~ 5.8억",
+    "priceKrw": 558000000,
+    "priceDisplay": "5억 5,800만",
+    "priceRange": "4.9억 ~ 7억",
     "kbPrice": {
       "generalAvg": 555000000,
-      "highAvg": 585000000,
-      "lowAvg": 520000000,
-      "jeonseAvg": 395000000,
-      "jeonseRate": 71.1,
+      "highAvg": 580000000,
+      "lowAvg": 500000000,
+      "jeonseAvg": 390000000,
+      "jeonseRate": 70.3,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 16,
-        "price": 555000000
+        "date": "2026.10",
+        "floor": 4,
+        "price": 570000000
       },
       {
-        "date": "2026.08",
-        "floor": 9,
-        "price": 545000000
+        "date": "2026.10",
+        "floor": 14,
+        "price": 560000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 1,
+        "price": 490000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 1,
+        "price": 500000000
       }
     ],
     "highlights": [
@@ -2331,27 +2316,27 @@
     "areaSqMeter": 84.95,
     "pyeong": 32,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 595000000,
-    "priceDisplay": "5억 9,500만",
-    "priceRange": "5.7억 ~ 6.2억",
+    "priceKrw": 609000000,
+    "priceDisplay": "6억 900만",
+    "priceRange": "5.55억 ~ 6.28억",
     "kbPrice": {
-      "generalAvg": 600000000,
-      "highAvg": 630000000,
-      "lowAvg": 570000000,
-      "jeonseAvg": 420000000,
-      "jeonseRate": 70,
+      "generalAvg": 592500000,
+      "highAvg": 627500000,
+      "lowAvg": 555000000,
+      "jeonseAvg": 410000000,
+      "jeonseRate": 69.2,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 18,
-        "price": 600000000
+        "date": "2026.10",
+        "floor": 20,
+        "price": 625000000
       },
       {
         "date": "2026.07",
-        "floor": 10,
-        "price": 590000000
+        "floor": 6,
+        "price": 625000000
       }
     ],
     "highlights": [
@@ -2469,27 +2454,37 @@
     "areaSqMeter": 84.93,
     "pyeong": 31,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 510000000,
-    "priceDisplay": "5억 1,000만",
-    "priceRange": "4.9억 ~ 5.3억",
+    "priceKrw": 577000000,
+    "priceDisplay": "5억 7,700만",
+    "priceRange": "5.7억 ~ 6.2억",
     "kbPrice": {
-      "generalAvg": 515000000,
-      "highAvg": 540000000,
-      "lowAvg": 485000000,
-      "jeonseAvg": 360000000,
-      "jeonseRate": 69.9,
+      "generalAvg": 575000000,
+      "highAvg": 600000000,
+      "lowAvg": 540000000,
+      "jeonseAvg": 375000000,
+      "jeonseRate": 65.2,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 12,
-        "price": 515000000
+        "date": "2026.10",
+        "floor": 9,
+        "price": 578000000
       },
       {
-        "date": "2026.07",
-        "floor": 6,
-        "price": 505000000
+        "date": "2026.09",
+        "floor": 2,
+        "price": 520000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 7,
+        "price": 630000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 13,
+        "price": 400000000
       }
     ],
     "highlights": [
@@ -2538,27 +2533,37 @@
     "areaSqMeter": 59.85,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 395000000,
-    "priceDisplay": "3억 9,500만",
-    "priceRange": "3.8억 ~ 4.1억",
+    "priceKrw": 310000000,
+    "priceDisplay": "3억 1,000만",
+    "priceRange": "2.9억 ~ 3.5억",
     "kbPrice": {
-      "generalAvg": 400000000,
-      "highAvg": 420000000,
-      "lowAvg": 380000000,
-      "jeonseAvg": 280000000,
-      "jeonseRate": 70,
+      "generalAvg": 320000000,
+      "highAvg": 340000000,
+      "lowAvg": 277500000,
+      "jeonseAvg": 245000000,
+      "jeonseRate": 76.6,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 14,
-        "price": 400000000
+        "date": "2026.10",
+        "floor": 10,
+        "price": 295000000
       },
       {
-        "date": "2026.08",
-        "floor": 9,
-        "price": 395000000
+        "date": "2026.10",
+        "floor": 14,
+        "price": 299000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 6,
+        "price": 333000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 8,
+        "price": 288000000
       }
     ],
     "highlights": [
@@ -2676,27 +2681,27 @@
     "areaSqMeter": 76.82,
     "pyeong": 28,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 480000000,
-    "priceDisplay": "4억 8,000만",
-    "priceRange": "4.6억 ~ 5.0억",
+    "priceKrw": 543000000,
+    "priceDisplay": "5억 4,300만",
+    "priceRange": "4.83억 ~ 5.72억",
     "kbPrice": {
-      "generalAvg": 485000000,
-      "highAvg": 510000000,
-      "lowAvg": 450000000,
+      "generalAvg": 542500000,
+      "highAvg": 572500000,
+      "lowAvg": 482500000,
       "jeonseAvg": 270000000,
-      "jeonseRate": 55.7,
+      "jeonseRate": 49.8,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 10,
-        "price": 485000000
+        "date": "2026.05",
+        "floor": 11,
+        "price": 568000000
       },
       {
-        "date": "2026.08",
-        "floor": 5,
-        "price": 475000000
+        "date": "2026.02",
+        "floor": 13,
+        "price": 553000000
       }
     ],
     "highlights": [
@@ -2745,27 +2750,27 @@
     "areaSqMeter": 84.87,
     "pyeong": 31,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 540000000,
-    "priceDisplay": "5억 4,000만",
-    "priceRange": "5.2억 ~ 5.6억",
+    "priceKrw": 610000000,
+    "priceDisplay": "6억 1,000만",
+    "priceRange": "5.9억 ~ 7.5억",
     "kbPrice": {
-      "generalAvg": 540000000,
-      "highAvg": 570000000,
-      "lowAvg": 505000000,
-      "jeonseAvg": 310000000,
-      "jeonseRate": 57.4,
+      "generalAvg": 610000000,
+      "highAvg": 630000000,
+      "lowAvg": 575000000,
+      "jeonseAvg": 295000000,
+      "jeonseRate": 48.4,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 12,
-        "price": 540000000
+        "date": "2026.05",
+        "floor": 3,
+        "price": 630000000
       },
       {
-        "date": "2026.07",
-        "floor": 8,
-        "price": 535000000
+        "date": "2026.04",
+        "floor": 11,
+        "price": 610000000
       }
     ],
     "highlights": [
@@ -2814,27 +2819,27 @@
     "areaSqMeter": 69.94,
     "pyeong": 26,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 340000000,
-    "priceDisplay": "3억 4,000만",
-    "priceRange": "3.2억 ~ 3.6억",
+    "priceKrw": 306000000,
+    "priceDisplay": "3억 600만",
+    "priceRange": "3억 ~ 3.2억",
     "kbPrice": {
-      "generalAvg": 345000000,
-      "highAvg": 360000000,
-      "lowAvg": 325000000,
-      "jeonseAvg": 230000000,
-      "jeonseRate": 66.7,
+      "generalAvg": 307500000,
+      "highAvg": 317500000,
+      "lowAvg": 285000000,
+      "jeonseAvg": 245000000,
+      "jeonseRate": 79.7,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 345000000
+        "date": "2026.07",
+        "floor": 6,
+        "price": 305000000
       },
       {
-        "date": "2026.08",
-        "floor": 4,
-        "price": 335000000
+        "date": "2026.06",
+        "floor": 12,
+        "price": 315000000
       }
     ],
     "highlights": [
@@ -2883,27 +2888,27 @@
     "areaSqMeter": 84.91,
     "pyeong": 30,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 385000000,
-    "priceDisplay": "3억 8,500만",
-    "priceRange": "3.7억 ~ 4.1억",
+    "priceKrw": 373000000,
+    "priceDisplay": "3억 7,300만",
+    "priceRange": "3.6억 ~ 4.2억",
     "kbPrice": {
-      "generalAvg": 390000000,
-      "highAvg": 410000000,
-      "lowAvg": 365000000,
+      "generalAvg": 372500000,
+      "highAvg": 387500000,
+      "lowAvg": 360000000,
       "jeonseAvg": 260000000,
-      "jeonseRate": 66.7,
+      "jeonseRate": 69.8,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 14,
-        "price": 390000000
+        "floor": 3,
+        "price": 375000000
       },
       {
         "date": "2026.07",
-        "floor": 7,
-        "price": 380000000
+        "floor": 13,
+        "price": 370000000
       }
     ],
     "highlights": [
@@ -2952,9 +2957,9 @@
     "areaSqMeter": 84.93,
     "pyeong": 32,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 650000000,
-    "priceDisplay": "6억 5,000만",
-    "priceRange": "6.3억 ~ 6.8억",
+    "priceKrw": 668000000,
+    "priceDisplay": "6억 6,800만",
+    "priceRange": "7.1억 ~ 7.5억",
     "kbPrice": {
       "generalAvg": 650000000,
       "highAvg": 690000000,
@@ -2966,13 +2971,23 @@
     "recentTrades": [
       {
         "date": "2026.09",
+        "floor": 16,
+        "price": 695000000
+      },
+      {
+        "date": "2026.09",
         "floor": 18,
-        "price": 655000000
+        "price": 665000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 11,
+        "price": 685000000
       },
       {
         "date": "2026.08",
-        "floor": 11,
-        "price": 645000000
+        "floor": 5,
+        "price": 647000000
       }
     ],
     "highlights": [
@@ -3090,27 +3105,27 @@
     "areaSqMeter": 84.9,
     "pyeong": 31,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 420000000,
-    "priceDisplay": "4억 2,000만",
-    "priceRange": "4.0억 ~ 4.4억",
+    "priceKrw": 371000000,
+    "priceDisplay": "3억 7,100만",
+    "priceRange": "4억 ~ 4.5억",
     "kbPrice": {
-      "generalAvg": 425000000,
-      "highAvg": 450000000,
-      "lowAvg": 400000000,
-      "jeonseAvg": 290000000,
-      "jeonseRate": 68.2,
+      "generalAvg": 367500000,
+      "highAvg": 392500000,
+      "lowAvg": 342500000,
+      "jeonseAvg": 267500000,
+      "jeonseRate": 72.8,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 13,
-        "price": 425000000
+        "date": "2026.10",
+        "floor": 19,
+        "price": 374000000
       },
       {
-        "date": "2026.07",
-        "floor": 8,
-        "price": 415000000
+        "date": "2026.06",
+        "floor": 2,
+        "price": 358000000
       }
     ],
     "highlights": [
@@ -3228,27 +3243,37 @@
     "areaSqMeter": 84.95,
     "pyeong": 32,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 485000000,
-    "priceDisplay": "4억 8,500만",
-    "priceRange": "4.6억 ~ 5.1억",
+    "priceKrw": 520000000,
+    "priceDisplay": "5억 2,000만",
+    "priceRange": "5.3억 ~ 6.2억",
     "kbPrice": {
-      "generalAvg": 490000000,
-      "highAvg": 520000000,
-      "lowAvg": 460000000,
-      "jeonseAvg": 330000000,
-      "jeonseRate": 67.3,
+      "generalAvg": 510000000,
+      "highAvg": 540000000,
+      "lowAvg": 490000000,
+      "jeonseAvg": 280000000,
+      "jeonseRate": 54.9,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 15,
-        "price": 490000000
+        "floor": 1,
+        "price": 530000000
       },
       {
-        "date": "2026.07",
+        "date": "2026.09",
+        "floor": 6,
+        "price": 530000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 1,
+        "price": 510000000
+      },
+      {
+        "date": "2026.08",
         "floor": 8,
-        "price": 480000000
+        "price": 505000000
       }
     ],
     "highlights": [
@@ -3297,27 +3322,27 @@
     "areaSqMeter": 73.9,
     "pyeong": 29,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 540000000,
-    "priceDisplay": "5억 4,000만",
-    "priceRange": "5.2억 ~ 5.6억",
+    "priceKrw": 593000000,
+    "priceDisplay": "5억 9,300만",
+    "priceRange": "5.7억 ~ 6.5억",
     "kbPrice": {
-      "generalAvg": 545000000,
-      "highAvg": 570000000,
-      "lowAvg": 515000000,
-      "jeonseAvg": 360000000,
-      "jeonseRate": 66.1,
+      "generalAvg": 585000000,
+      "highAvg": 600000000,
+      "lowAvg": 555000000,
+      "jeonseAvg": 340000000,
+      "jeonseRate": 58.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 19,
-        "price": 545000000
+        "date": "2026.07",
+        "floor": 4,
+        "price": 600000000
       },
       {
-        "date": "2026.08",
-        "floor": 12,
-        "price": 538000000
+        "date": "2026.06",
+        "floor": 24,
+        "price": 593000000
       }
     ],
     "highlights": [
@@ -3366,27 +3391,32 @@
     "areaSqMeter": 84.97,
     "pyeong": 34,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 610000000,
-    "priceDisplay": "6억 1,000만",
-    "priceRange": "5.9억 ~ 6.3억",
+    "priceKrw": 604000000,
+    "priceDisplay": "6억 400만",
+    "priceRange": "5.8억 ~ 7억",
     "kbPrice": {
-      "generalAvg": 615000000,
-      "highAvg": 645000000,
+      "generalAvg": 610000000,
+      "highAvg": 630000000,
       "lowAvg": 580000000,
-      "jeonseAvg": 410000000,
-      "jeonseRate": 66.7,
+      "jeonseAvg": 370000000,
+      "jeonseRate": 60.7,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 21,
-        "price": 615000000
+        "date": "2026.10",
+        "floor": 3,
+        "price": 598000000
       },
       {
-        "date": "2026.07",
-        "floor": 14,
-        "price": 605000000
+        "date": "2026.09",
+        "floor": 4,
+        "price": 600000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 3,
+        "price": 560000000
       }
     ],
     "highlights": [
@@ -3435,32 +3465,37 @@
     "areaSqMeter": 53.82,
     "pyeong": 21,
     "rooms": "방 2 / 욕실 1",
-    "priceKrw": 395000000,
-    "priceDisplay": "3억 9,500만",
-    "priceRange": "3.8억 ~ 4.2억",
+    "priceKrw": 389000000,
+    "priceDisplay": "3억 8,900만",
+    "priceRange": "3.65억 ~ 4.6억",
     "kbPrice": {
-      "generalAvg": 400000000,
-      "highAvg": 420000000,
-      "lowAvg": 380000000,
-      "jeonseAvg": 245000000,
-      "jeonseRate": 61.3,
+      "generalAvg": 387500000,
+      "highAvg": 410000000,
+      "lowAvg": 350000000,
+      "jeonseAvg": 230000000,
+      "jeonseRate": 59.4,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 7,
-        "price": 398000000
+        "floor": 15,
+        "price": 390000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 3,
+        "price": 400000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 1,
+        "price": 310000000
       },
       {
         "date": "2026.08",
-        "floor": 11,
-        "price": 392000000
-      },
-      {
-        "date": "2026.07",
-        "floor": 5,
-        "price": 388000000
+        "floor": 6,
+        "price": 340000000
       }
     ],
     "highlights": [
@@ -3510,32 +3545,37 @@
     "areaSqMeter": 70.83,
     "pyeong": 26,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 475000000,
-    "priceDisplay": "4억 7,500만",
-    "priceRange": "4.6억 ~ 5.0억",
+    "priceKrw": 470000000,
+    "priceDisplay": "4억 7,000만",
+    "priceRange": "4.3억 ~ 6.2억",
     "kbPrice": {
       "generalAvg": 480000000,
       "highAvg": 505000000,
-      "lowAvg": 455000000,
-      "jeonseAvg": 300000000,
-      "jeonseRate": 62.5,
+      "lowAvg": 435000000,
+      "jeonseAvg": 305000000,
+      "jeonseRate": 63.5,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
+        "date": "2026.10",
         "floor": 9,
-        "price": 480000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 12,
-        "price": 475000000
-      },
-      {
-        "date": "2026.07",
-        "floor": 4,
         "price": 465000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 12,
+        "price": 460000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 6,
+        "price": 418000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 5,
+        "price": 445000000
       }
     ],
     "highlights": [
@@ -3585,32 +3625,37 @@
     "areaSqMeter": 84.87,
     "pyeong": 31,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 530000000,
-    "priceDisplay": "5억 3,000만",
-    "priceRange": "5.1억 ~ 5.6억",
+    "priceKrw": 623000000,
+    "priceDisplay": "6억 2,300만",
+    "priceRange": "6.3억 ~ 7억",
     "kbPrice": {
-      "generalAvg": 535000000,
-      "highAvg": 560000000,
-      "lowAvg": 510000000,
+      "generalAvg": 595000000,
+      "highAvg": 640000000,
+      "lowAvg": 540000000,
       "jeonseAvg": 340000000,
-      "jeonseRate": 63.6,
+      "jeonseRate": 57.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 10,
-        "price": 535000000
+        "floor": 2,
+        "price": 600000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 4,
+        "price": 650000000
       },
       {
         "date": "2026.08",
-        "floor": 6,
-        "price": 528000000
+        "floor": 12,
+        "price": 665000000
       },
       {
-        "date": "2026.06",
-        "floor": 14,
-        "price": 520000000
+        "date": "2026.08",
+        "floor": 2,
+        "price": 614000000
       }
     ],
     "highlights": [
@@ -3660,32 +3705,27 @@
     "areaSqMeter": 59.88,
     "pyeong": 25,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 660000000,
-    "priceDisplay": "6억 6,000만",
-    "priceRange": "6.4억 ~ 6.9억",
+    "priceKrw": 730000000,
+    "priceDisplay": "7억 3,000만",
+    "priceRange": "6.75억 ~ 7.35억",
     "kbPrice": {
-      "generalAvg": 665000000,
-      "highAvg": 695000000,
-      "lowAvg": 635000000,
-      "jeonseAvg": 420000000,
-      "jeonseRate": 63.2,
+      "generalAvg": 710000000,
+      "highAvg": 735000000,
+      "lowAvg": 675000000,
+      "jeonseAvg": 435000000,
+      "jeonseRate": 61.3,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 15,
-        "price": 665000000
+        "floor": 8,
+        "price": 750000000
       },
       {
         "date": "2026.08",
-        "floor": 8,
-        "price": 658000000
-      },
-      {
-        "date": "2026.07",
-        "floor": 11,
-        "price": 650000000
+        "floor": 7,
+        "price": 750000000
       }
     ],
     "highlights": [
@@ -3735,32 +3775,37 @@
     "areaSqMeter": 84.96,
     "pyeong": 33,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 780000000,
-    "priceDisplay": "7억 8,000만",
-    "priceRange": "7.5억 ~ 8.2억",
+    "priceKrw": 868000000,
+    "priceDisplay": "8억 6,800만",
+    "priceRange": "8.7억 ~ 10억",
     "kbPrice": {
-      "generalAvg": 780000000,
-      "highAvg": 815000000,
-      "lowAvg": 745000000,
-      "jeonseAvg": 490000000,
-      "jeonseRate": 62.8,
+      "generalAvg": 850000000,
+      "highAvg": 865000000,
+      "lowAvg": 810000000,
+      "jeonseAvg": 570000000,
+      "jeonseRate": 67.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 18,
-        "price": 785000000
+        "floor": 10,
+        "price": 870000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 17,
+        "price": 910000000
       },
       {
         "date": "2026.07",
-        "floor": 12,
-        "price": 775000000
+        "floor": 21,
+        "price": 885000000
       },
       {
-        "date": "2026.05",
-        "floor": 6,
-        "price": 760000000
+        "date": "2026.07",
+        "floor": 15,
+        "price": 858000000
       }
     ],
     "highlights": [
@@ -3810,27 +3855,27 @@
     "areaSqMeter": 59.94,
     "pyeong": 26,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 465000000,
-    "priceDisplay": "4억 6,500만",
-    "priceRange": "4.5억 ~ 4.9억",
+    "priceKrw": 426000000,
+    "priceDisplay": "4억 2,600만",
+    "priceRange": "4억 ~ 4.5억",
     "kbPrice": {
-      "generalAvg": 470000000,
-      "highAvg": 495000000,
-      "lowAvg": 445000000,
-      "jeonseAvg": 295000000,
-      "jeonseRate": 62.8,
+      "generalAvg": 430000000,
+      "highAvg": 450000000,
+      "lowAvg": 400000000,
+      "jeonseAvg": 280000000,
+      "jeonseRate": 65.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 10,
-        "price": 470000000
+        "floor": 1,
+        "price": 410000000
       },
       {
-        "date": "2026.08",
-        "floor": 5,
-        "price": 462000000
+        "date": "2026.09",
+        "floor": 14,
+        "price": 433000000
       }
     ],
     "highlights": [
@@ -3879,27 +3924,37 @@
     "areaSqMeter": 84.87,
     "pyeong": 31,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 540000000,
-    "priceDisplay": "5억 4,000만",
-    "priceRange": "5.2억 ~ 5.7억",
+    "priceKrw": 544000000,
+    "priceDisplay": "5억 4,400만",
+    "priceRange": "5.5억 ~ 6.3억",
     "kbPrice": {
-      "generalAvg": 545000000,
-      "highAvg": 570000000,
-      "lowAvg": 515000000,
-      "jeonseAvg": 350000000,
-      "jeonseRate": 64.2,
+      "generalAvg": 530000000,
+      "highAvg": 555000000,
+      "lowAvg": 500000000,
+      "jeonseAvg": 390000000,
+      "jeonseRate": 73.6,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 13,
-        "price": 545000000
+        "date": "2026.10",
+        "floor": 16,
+        "price": 558800000
       },
       {
-        "date": "2026.07",
-        "floor": 8,
-        "price": 538000000
+        "date": "2026.09",
+        "floor": 7,
+        "price": 570000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 10,
+        "price": 555000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 9,
+        "price": 530000000
       }
     ],
     "highlights": [
@@ -3948,27 +4003,27 @@
     "areaSqMeter": 60.5,
     "pyeong": 25,
     "rooms": "방 2 / 욕실 1",
-    "priceKrw": 710000000,
-    "priceDisplay": "7억 1,000만",
-    "priceRange": "6.8억 ~ 7.5억",
+    "priceKrw": 946000000,
+    "priceDisplay": "9억 4,600만",
+    "priceRange": "9.5억 ~ 10억",
     "kbPrice": {
-      "generalAvg": 710000000,
-      "highAvg": 740000000,
-      "lowAvg": 675000000,
-      "jeonseAvg": 360000000,
-      "jeonseRate": 50.7,
+      "generalAvg": 940000000,
+      "highAvg": 975000000,
+      "lowAvg": 895000000,
+      "jeonseAvg": 350000000,
+      "jeonseRate": 37.2,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 12,
-        "price": 715000000
+        "floor": 9,
+        "price": 1000000000
       },
       {
-        "date": "2026.08",
-        "floor": 5,
-        "price": 700000000
+        "date": "2026.07",
+        "floor": 2,
+        "price": 903000000
       }
     ],
     "highlights": [
@@ -4017,27 +4072,37 @@
     "areaSqMeter": 68.86,
     "pyeong": 29,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 795000000,
-    "priceDisplay": "7억 9,500만",
-    "priceRange": "7.7억 ~ 8.4억",
+    "priceKrw": 1053000000,
+    "priceDisplay": "10억 5,300만",
+    "priceRange": "10.1억 ~ 12.5억",
     "kbPrice": {
-      "generalAvg": 800000000,
-      "highAvg": 835000000,
-      "lowAvg": 760000000,
+      "generalAvg": 1040000000,
+      "highAvg": 1070000000,
+      "lowAvg": 1005000000,
       "jeonseAvg": 420000000,
-      "jeonseRate": 52.5,
+      "jeonseRate": 40.4,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 800000000
+        "floor": 12,
+        "price": 950000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 5,
+        "price": 1070000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 8,
+        "price": 1065000000
       },
       {
         "date": "2026.07",
-        "floor": 7,
-        "price": 790000000
+        "floor": 1,
+        "price": 1000000000
       }
     ],
     "highlights": [
@@ -4086,27 +4151,27 @@
     "areaSqMeter": 41.3,
     "pyeong": 18,
     "rooms": "방 2 / 욕실 1",
-    "priceKrw": 420000000,
-    "priceDisplay": "4억 2,000만",
-    "priceRange": "4.0억 ~ 4.5억",
+    "priceKrw": 458000000,
+    "priceDisplay": "4억 5,800만",
+    "priceRange": "4.7억 ~ 5.2억",
     "kbPrice": {
-      "generalAvg": 425000000,
-      "highAvg": 445000000,
+      "generalAvg": 445000000,
+      "highAvg": 485000000,
       "lowAvg": 405000000,
       "jeonseAvg": 210000000,
-      "jeonseRate": 49.4,
+      "jeonseRate": 47.2,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 8,
-        "price": 425000000
+        "date": "2026.07",
+        "floor": 10,
+        "price": 470000000
       },
       {
-        "date": "2026.07",
-        "floor": 14,
-        "price": 418000000
+        "date": "2026.06",
+        "floor": 11,
+        "price": 420000000
       }
     ],
     "highlights": [
@@ -4155,27 +4220,27 @@
     "areaSqMeter": 49.94,
     "pyeong": 21,
     "rooms": "방 2 / 욕실 1",
-    "priceKrw": 485000000,
-    "priceDisplay": "4억 8,500만",
-    "priceRange": "4.6억 ~ 5.2억",
+    "priceKrw": 580000000,
+    "priceDisplay": "5억 8,000만",
+    "priceRange": "6.2억 ~ 7억",
     "kbPrice": {
-      "generalAvg": 490000000,
-      "highAvg": 515000000,
-      "lowAvg": 465000000,
-      "jeonseAvg": 240000000,
-      "jeonseRate": 49,
+      "generalAvg": 580000000,
+      "highAvg": 605000000,
+      "lowAvg": 550000000,
+      "jeonseAvg": 265000000,
+      "jeonseRate": 45.7,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 10,
-        "price": 490000000
+        "date": "2026.06",
+        "floor": 1,
+        "price": 550000000
       },
       {
-        "date": "2026.08",
-        "floor": 6,
-        "price": 482000000
+        "date": "2026.06",
+        "floor": 1,
+        "price": 575000000
       }
     ],
     "highlights": [
@@ -4224,27 +4289,37 @@
     "areaSqMeter": 58.01,
     "pyeong": 24,
     "rooms": "방 2 / 욕실 1",
-    "priceKrw": 610000000,
-    "priceDisplay": "6억 1,000만",
-    "priceRange": "5.9억 ~ 6.4억",
+    "priceKrw": 810000000,
+    "priceDisplay": "8억 1,000만",
+    "priceRange": "8억 ~ 9.2억",
     "kbPrice": {
-      "generalAvg": 615000000,
-      "highAvg": 640000000,
-      "lowAvg": 585000000,
-      "jeonseAvg": 320000000,
-      "jeonseRate": 52,
+      "generalAvg": 800000000,
+      "highAvg": 840000000,
+      "lowAvg": 745000000,
+      "jeonseAvg": 345000000,
+      "jeonseRate": 43.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 9,
-        "price": 615000000
+        "floor": 6,
+        "price": 820000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 11,
+        "price": 820000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 14,
+        "price": 800000000
       },
       {
         "date": "2026.08",
-        "floor": 13,
-        "price": 608000000
+        "floor": 10,
+        "price": 840000000
       }
     ],
     "highlights": [
@@ -4293,27 +4368,37 @@
     "areaSqMeter": 59.76,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 720000000,
-    "priceDisplay": "7억 2,000만",
-    "priceRange": "6.9억 ~ 7.6억",
+    "priceKrw": 934000000,
+    "priceDisplay": "9억 3,400만",
+    "priceRange": "9.5억 ~ 9.7억",
     "kbPrice": {
-      "generalAvg": 725000000,
-      "highAvg": 755000000,
-      "lowAvg": 690000000,
-      "jeonseAvg": 430000000,
-      "jeonseRate": 59.3,
+      "generalAvg": 930000000,
+      "highAvg": 950000000,
+      "lowAvg": 850000000,
+      "jeonseAvg": 395000000,
+      "jeonseRate": 42.5,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 16,
-        "price": 725000000
+        "date": "2026.10",
+        "floor": 18,
+        "price": 945000000
       },
       {
-        "date": "2026.08",
-        "floor": 10,
-        "price": 718000000
+        "date": "2026.09",
+        "floor": 19,
+        "price": 937500000
+      },
+      {
+        "date": "2026.09",
+        "floor": 8,
+        "price": 927500000
+      },
+      {
+        "date": "2026.09",
+        "floor": 19,
+        "price": 920000000
       }
     ],
     "highlights": [
@@ -4362,27 +4447,32 @@
     "areaSqMeter": 84.97,
     "pyeong": 33,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 840000000,
-    "priceDisplay": "8억 4,000만",
-    "priceRange": "8.1억 ~ 8.9억",
+    "priceKrw": 1103000000,
+    "priceDisplay": "11억 300만",
+    "priceRange": "11.8억 ~ 13.7억",
     "kbPrice": {
-      "generalAvg": 845000000,
-      "highAvg": 880000000,
-      "lowAvg": 810000000,
-      "jeonseAvg": 510000000,
-      "jeonseRate": 60.4,
+      "generalAvg": 1165000000,
+      "highAvg": 1215000000,
+      "lowAvg": 1045000000,
+      "jeonseAvg": 550000000,
+      "jeonseRate": 47.2,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 20,
-        "price": 850000000
+        "date": "2026.10",
+        "floor": 18,
+        "price": 1240000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 1,
+        "price": 1040000000
       },
       {
         "date": "2026.07",
-        "floor": 11,
-        "price": 835000000
+        "floor": 17,
+        "price": 800000000
       }
     ],
     "highlights": [
@@ -4431,27 +4521,37 @@
     "areaSqMeter": 84.93,
     "pyeong": 33,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 860000000,
-    "priceDisplay": "8억 6,000만",
-    "priceRange": "8.3억 ~ 9.0억",
+    "priceKrw": 1007000000,
+    "priceDisplay": "10억 700만",
+    "priceRange": "10.5억 ~ 12억",
     "kbPrice": {
-      "generalAvg": 865000000,
-      "highAvg": 900000000,
-      "lowAvg": 825000000,
-      "jeonseAvg": 520000000,
-      "jeonseRate": 60.1,
+      "generalAvg": 970000000,
+      "highAvg": 1055000000,
+      "lowAvg": 925000000,
+      "jeonseAvg": 590000000,
+      "jeonseRate": 60.8,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 18,
-        "price": 870000000
+        "floor": 15,
+        "price": 1043000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 22,
+        "price": 1080000000
       },
       {
         "date": "2026.08",
-        "floor": 9,
-        "price": 855000000
+        "floor": 20,
+        "price": 1012000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 6,
+        "price": 1030000000
       }
     ],
     "highlights": [
@@ -4500,27 +4600,37 @@
     "areaSqMeter": 59.94,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 540000000,
-    "priceDisplay": "5억 4,000만",
-    "priceRange": "5.2억 ~ 5.7억",
+    "priceKrw": 586000000,
+    "priceDisplay": "5억 8,600만",
+    "priceRange": "5.45억 ~ 6억",
     "kbPrice": {
-      "generalAvg": 545000000,
-      "highAvg": 570000000,
-      "lowAvg": 515000000,
-      "jeonseAvg": 340000000,
-      "jeonseRate": 62.4,
+      "generalAvg": 582500000,
+      "highAvg": 600000000,
+      "lowAvg": 545000000,
+      "jeonseAvg": 360000000,
+      "jeonseRate": 61.8,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 545000000
+        "date": "2026.10",
+        "floor": 1,
+        "price": 540000000
       },
       {
-        "date": "2026.07",
-        "floor": 6,
-        "price": 535000000
+        "date": "2026.10",
+        "floor": 2,
+        "price": 590000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 8,
+        "price": 600000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 8,
+        "price": 600000000
       }
     ],
     "highlights": [
@@ -4638,27 +4748,37 @@
     "areaSqMeter": 84.94,
     "pyeong": 31,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 540000000,
-    "priceDisplay": "5억 4,000만",
-    "priceRange": "5.2억 ~ 5.7억",
+    "priceKrw": 675000000,
+    "priceDisplay": "6억 7,500만",
+    "priceRange": "6억 ~ 8억",
     "kbPrice": {
-      "generalAvg": 545000000,
-      "highAvg": 570000000,
-      "lowAvg": 520000000,
-      "jeonseAvg": 350000000,
-      "jeonseRate": 64.2,
+      "generalAvg": 655000000,
+      "highAvg": 680000000,
+      "lowAvg": 585000000,
+      "jeonseAvg": 455000000,
+      "jeonseRate": 69.5,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 14,
-        "price": 545000000
+        "date": "2026.10",
+        "floor": 1,
+        "price": 645000000
       },
       {
-        "date": "2026.08",
+        "date": "2026.10",
         "floor": 11,
-        "price": 538000000
+        "price": 695000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 10,
+        "price": 705000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 2,
+        "price": 650000000
       }
     ],
     "highlights": [
@@ -4707,27 +4827,27 @@
     "areaSqMeter": 59.4,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 435000000,
-    "priceDisplay": "4억 3,500만",
-    "priceRange": "4.2억 ~ 4.6억",
+    "priceKrw": 482000000,
+    "priceDisplay": "4억 8,200만",
+    "priceRange": "4.47억 ~ 4.97억",
     "kbPrice": {
-      "generalAvg": 440000000,
-      "highAvg": 465000000,
-      "lowAvg": 415000000,
-      "jeonseAvg": 270000000,
-      "jeonseRate": 61.4,
+      "generalAvg": 477500000,
+      "highAvg": 497500000,
+      "lowAvg": 447500000,
+      "jeonseAvg": 255000000,
+      "jeonseRate": 53.4,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 10,
-        "price": 440000000
+        "date": "2026.07",
+        "floor": 14,
+        "price": 487000000
       },
       {
-        "date": "2026.07",
-        "floor": 6,
-        "price": 430000000
+        "date": "2026.06",
+        "floor": 16,
+        "price": 483000000
       }
     ],
     "highlights": [
@@ -4776,27 +4896,27 @@
     "areaSqMeter": 50.84,
     "pyeong": 21,
     "rooms": "방 2 / 욕실 1",
-    "priceKrw": 390000000,
-    "priceDisplay": "3억 9,000만",
-    "priceRange": "3.7억 ~ 4.2억",
+    "priceKrw": 575000000,
+    "priceDisplay": "5억 7,500만",
+    "priceRange": "5.55억 ~ 5.9억",
     "kbPrice": {
-      "generalAvg": 395000000,
-      "highAvg": 415000000,
-      "lowAvg": 375000000,
-      "jeonseAvg": 220000000,
-      "jeonseRate": 55.7,
+      "generalAvg": 575000000,
+      "highAvg": 590000000,
+      "lowAvg": 555000000,
+      "jeonseAvg": 260000000,
+      "jeonseRate": 45.2,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 7,
-        "price": 395000000
+        "date": "2026.06",
+        "floor": 8,
+        "price": 593000000
       },
       {
-        "date": "2026.08",
-        "floor": 12,
-        "price": 388000000
+        "date": "2026.03",
+        "floor": 6,
+        "price": 590000000
       }
     ],
     "highlights": [
@@ -4845,27 +4965,27 @@
     "areaSqMeter": 69.84,
     "pyeong": 27,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 490000000,
-    "priceDisplay": "4억 9,000만",
-    "priceRange": "4.7억 ~ 5.2억",
+    "priceKrw": 683000000,
+    "priceDisplay": "6억 8,300만",
+    "priceRange": "6.9억 ~ 7.5억",
     "kbPrice": {
-      "generalAvg": 495000000,
-      "highAvg": 520000000,
-      "lowAvg": 465000000,
-      "jeonseAvg": 290000000,
-      "jeonseRate": 58.6,
+      "generalAvg": 670000000,
+      "highAvg": 690000000,
+      "lowAvg": 640000000,
+      "jeonseAvg": 315000000,
+      "jeonseRate": 47,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 10,
-        "price": 495000000
+        "floor": 7,
+        "price": 686000000
       },
       {
-        "date": "2026.07",
-        "floor": 5,
-        "price": 485000000
+        "date": "2026.08",
+        "floor": 12,
+        "price": 705000000
       }
     ],
     "highlights": [
@@ -5054,25 +5174,25 @@
     "rooms": "방 3 / 욕실 2",
     "priceKrw": 510000000,
     "priceDisplay": "5억 1,000만",
-    "priceRange": "4.9억 ~ 5.4억",
+    "priceRange": "4.88억 ~ 5.4억",
     "kbPrice": {
-      "generalAvg": 515000000,
+      "generalAvg": 510000000,
       "highAvg": 540000000,
-      "lowAvg": 490000000,
-      "jeonseAvg": 330000000,
-      "jeonseRate": 64.1,
+      "lowAvg": 487500000,
+      "jeonseAvg": 365000000,
+      "jeonseRate": 71.6,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 9,
-        "price": 515000000
+        "date": "2021.05",
+        "floor": 7,
+        "price": 500000000
       },
       {
-        "date": "2026.07",
-        "floor": 13,
-        "price": 508000000
+        "date": "2020.04",
+        "floor": 5,
+        "price": 400000000
       }
     ],
     "highlights": [
@@ -5121,32 +5241,37 @@
     "areaSqMeter": 41.3,
     "pyeong": 17,
     "rooms": "방 2 / 욕실 1",
-    "priceKrw": 495000000,
-    "priceDisplay": "4억 9,500만",
-    "priceRange": "4.8억 ~ 5.2억",
+    "priceKrw": 665000000,
+    "priceDisplay": "6억 6,500만",
+    "priceRange": "6.3억 ~ 7억",
     "kbPrice": {
-      "generalAvg": 500000000,
-      "highAvg": 520000000,
-      "lowAvg": 475000000,
-      "jeonseAvg": 230000000,
-      "jeonseRate": 46,
+      "generalAvg": 655000000,
+      "highAvg": 680000000,
+      "lowAvg": 635000000,
+      "jeonseAvg": 235000000,
+      "jeonseRate": 35.9,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 500000000
+        "floor": 10,
+        "price": 700000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 7,
+        "price": 675000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 495000000
+        "floor": 13,
+        "price": 670000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 488000000
+        "date": "2026.08",
+        "floor": 3,
+        "price": 625000000
       }
     ],
     "highlights": [
@@ -5195,32 +5320,37 @@
     "areaSqMeter": 58.01,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 630000000,
-    "priceDisplay": "6억 3,000만",
-    "priceRange": "6.1억 ~ 6.6억",
+    "priceKrw": 810000000,
+    "priceDisplay": "8억 1,000만",
+    "priceRange": "7.9억 ~ 9억",
     "kbPrice": {
-      "generalAvg": 635000000,
-      "highAvg": 665000000,
-      "lowAvg": 605000000,
-      "jeonseAvg": 310000000,
-      "jeonseRate": 48.8,
+      "generalAvg": 820000000,
+      "highAvg": 852500000,
+      "lowAvg": 785000000,
+      "jeonseAvg": 350000000,
+      "jeonseRate": 42.7,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 635000000
+        "floor": 8,
+        "price": 845000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 630000000
+        "date": "2026.09",
+        "floor": 1,
+        "price": 800000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 623000000
+        "date": "2026.09",
+        "floor": 12,
+        "price": 780000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 15,
+        "price": 765000000
       }
     ],
     "highlights": [
@@ -5268,32 +5398,27 @@
     "areaSqMeter": 41.3,
     "pyeong": 17,
     "rooms": "방 2 / 욕실 1",
-    "priceKrw": 515000000,
-    "priceDisplay": "5억 1,500만",
-    "priceRange": "4.9억 ~ 5.4억",
+    "priceKrw": 638000000,
+    "priceDisplay": "6억 3,800만",
+    "priceRange": "6.8억 ~ 7.3억",
     "kbPrice": {
-      "generalAvg": 520000000,
-      "highAvg": 545000000,
-      "lowAvg": 495000000,
-      "jeonseAvg": 240000000,
-      "jeonseRate": 46.2,
+      "generalAvg": 625000000,
+      "highAvg": 650000000,
+      "lowAvg": 600000000,
+      "jeonseAvg": 220000000,
+      "jeonseRate": 35.2,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 520000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 515000000
+        "date": "2026.07",
+        "floor": 15,
+        "price": 650000000
       },
       {
         "date": "2026.06",
-        "floor": 5,
-        "price": 508000000
+        "floor": 6,
+        "price": 650000000
       }
     ],
     "highlights": [
@@ -5341,32 +5466,37 @@
     "areaSqMeter": 39.69,
     "pyeong": 17,
     "rooms": "방 2 / 욕실 1",
-    "priceKrw": 445000000,
-    "priceDisplay": "4억 4,500만",
-    "priceRange": "4.3억 ~ 4.7억",
+    "priceKrw": 565000000,
+    "priceDisplay": "5억 6,500만",
+    "priceRange": "6억 ~ 7억",
     "kbPrice": {
-      "generalAvg": 450000000,
-      "highAvg": 470000000,
-      "lowAvg": 430000000,
-      "jeonseAvg": 220000000,
-      "jeonseRate": 48.9,
+      "generalAvg": 570000000,
+      "highAvg": 600000000,
+      "lowAvg": 520000000,
+      "jeonseAvg": 260000000,
+      "jeonseRate": 45.6,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 450000000
+        "date": "2026.08",
+        "floor": 3,
+        "price": 560000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 445000000
+        "floor": 12,
+        "price": 540000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 438000000
+        "date": "2026.08",
+        "floor": 3,
+        "price": 580000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 3,
+        "price": 550000000
       }
     ],
     "highlights": [
@@ -5415,32 +5545,37 @@
     "areaSqMeter": 49.5,
     "pyeong": 21,
     "rooms": "방 2 / 욕실 1",
-    "priceKrw": 525000000,
-    "priceDisplay": "5억 2,500만",
-    "priceRange": "5.0억 ~ 5.5억",
+    "priceKrw": 693000000,
+    "priceDisplay": "6억 9,300만",
+    "priceRange": "6.5억 ~ 7.8억",
     "kbPrice": {
-      "generalAvg": 530000000,
-      "highAvg": 555000000,
-      "lowAvg": 505000000,
-      "jeonseAvg": 270000000,
-      "jeonseRate": 50.9,
+      "generalAvg": 685000000,
+      "highAvg": 745000000,
+      "lowAvg": 620000000,
+      "jeonseAvg": 340000000,
+      "jeonseRate": 49.6,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 530000000
+        "floor": 9,
+        "price": 715000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 525000000
+        "date": "2026.09",
+        "floor": 2,
+        "price": 650000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 518000000
+        "date": "2026.09",
+        "floor": 8,
+        "price": 700000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 6,
+        "price": 725000000
       }
     ],
     "highlights": [
@@ -5488,32 +5623,37 @@
     "areaSqMeter": 49.5,
     "pyeong": 21,
     "rooms": "방 2 / 욕실 1",
-    "priceKrw": 535000000,
-    "priceDisplay": "5억 3,500만",
-    "priceRange": "5.1억 ~ 5.6억",
+    "priceKrw": 693000000,
+    "priceDisplay": "6억 9,300만",
+    "priceRange": "6.7억 ~ 7.5억",
     "kbPrice": {
-      "generalAvg": 540000000,
-      "highAvg": 565000000,
-      "lowAvg": 515000000,
-      "jeonseAvg": 280000000,
-      "jeonseRate": 51.9,
+      "generalAvg": 685000000,
+      "highAvg": 710000000,
+      "lowAvg": 645000000,
+      "jeonseAvg": 345000000,
+      "jeonseRate": 50.4,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
         "floor": 11,
-        "price": 540000000
+        "price": 710000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 535000000
+        "date": "2026.07",
+        "floor": 2,
+        "price": 640000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 528000000
+        "date": "2026.07",
+        "floor": 9,
+        "price": 700000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 2,
+        "price": 670000000
       }
     ],
     "highlights": [
@@ -5561,32 +5701,37 @@
     "areaSqMeter": 59.98,
     "pyeong": 25,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 710000000,
-    "priceDisplay": "7억 1,000만",
-    "priceRange": "6.8억 ~ 7.5억",
+    "priceKrw": 1103000000,
+    "priceDisplay": "11억 300만",
+    "priceRange": "10.9억 ~ 12.5억",
     "kbPrice": {
-      "generalAvg": 715000000,
-      "highAvg": 745000000,
-      "lowAvg": 680000000,
-      "jeonseAvg": 430000000,
-      "jeonseRate": 60.1,
+      "generalAvg": 1066670000,
+      "highAvg": 1116670000,
+      "lowAvg": 963330000,
+      "jeonseAvg": 523330000,
+      "jeonseRate": 49.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 715000000
+        "floor": 27,
+        "price": 1150000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 710000000
+        "floor": 17,
+        "price": 1140000000
       },
       {
-        "date": "2026.06",
+        "date": "2026.08",
         "floor": 5,
-        "price": 703000000
+        "price": 1030000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 5,
+        "price": 1090000000
       }
     ],
     "highlights": [
@@ -5635,32 +5780,37 @@
     "areaSqMeter": 84.97,
     "pyeong": 33,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 840000000,
-    "priceDisplay": "8억 4,000만",
-    "priceRange": "8.1억 ~ 8.8억",
+    "priceKrw": 1169000000,
+    "priceDisplay": "11억 6,900만",
+    "priceRange": "11.2억 ~ 13.5억",
     "kbPrice": {
-      "generalAvg": 845000000,
-      "highAvg": 885000000,
-      "lowAvg": 805000000,
-      "jeonseAvg": 510000000,
-      "jeonseRate": 60.4,
+      "generalAvg": 1150000000,
+      "highAvg": 1240000000,
+      "lowAvg": 1063330000,
+      "jeonseAvg": 620000000,
+      "jeonseRate": 53.9,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 845000000
+        "date": "2026.08",
+        "floor": 1,
+        "price": 1090000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 840000000
+        "floor": 14,
+        "price": 1250000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 833000000
+        "date": "2026.07",
+        "floor": 23,
+        "price": 1187500000
+      },
+      {
+        "date": "2026.07",
+        "floor": 3,
+        "price": 1195000000
       }
     ],
     "highlights": [
@@ -5708,32 +5858,37 @@
     "areaSqMeter": 49.5,
     "pyeong": 21,
     "rooms": "방 2 / 욕실 1",
-    "priceKrw": 520000000,
-    "priceDisplay": "5억 2,000만",
-    "priceRange": "4.9억 ~ 5.5억",
+    "priceKrw": 744000000,
+    "priceDisplay": "7억 4,400만",
+    "priceRange": "7.8억 ~ 8.2억",
     "kbPrice": {
-      "generalAvg": 525000000,
-      "highAvg": 550000000,
-      "lowAvg": 500000000,
-      "jeonseAvg": 270000000,
-      "jeonseRate": 51.4,
+      "generalAvg": 735000000,
+      "highAvg": 770000000,
+      "lowAvg": 685000000,
+      "jeonseAvg": 330000000,
+      "jeonseRate": 44.9,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 525000000
+        "floor": 9,
+        "price": 790000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 6,
+        "price": 753000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 520000000
+        "floor": 10,
+        "price": 600000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 513000000
+        "date": "2026.08",
+        "floor": 4,
+        "price": 775000000
       }
     ],
     "highlights": [
@@ -5781,32 +5936,37 @@
     "areaSqMeter": 59.94,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 590000000,
-    "priceDisplay": "5억 9,000만",
-    "priceRange": "5.7억 ~ 6.2억",
+    "priceKrw": 848000000,
+    "priceDisplay": "8억 4,800만",
+    "priceRange": "8.45억 ~ 9억",
     "kbPrice": {
-      "generalAvg": 595000000,
-      "highAvg": 620000000,
-      "lowAvg": 565000000,
-      "jeonseAvg": 370000000,
-      "jeonseRate": 62.2,
+      "generalAvg": 845000000,
+      "highAvg": 870000000,
+      "lowAvg": 805000000,
+      "jeonseAvg": 415000000,
+      "jeonseRate": 49.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 595000000
+        "floor": 16,
+        "price": 820000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 590000000
+        "floor": 8,
+        "price": 880000000
       },
       {
-        "date": "2026.06",
+        "date": "2026.08",
         "floor": 5,
-        "price": 583000000
+        "price": 850000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 13,
+        "price": 813000000
       }
     ],
     "highlights": [
@@ -5854,32 +6014,37 @@
     "areaSqMeter": 59.98,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 680000000,
-    "priceDisplay": "6억 8,000만",
-    "priceRange": "6.5억 ~ 7.2억",
+    "priceKrw": 813000000,
+    "priceDisplay": "8억 1,300만",
+    "priceRange": "7.9억 ~ 8.5억",
     "kbPrice": {
-      "generalAvg": 680000000,
-      "highAvg": 715000000,
-      "lowAvg": 645000000,
-      "jeonseAvg": 385000000,
-      "jeonseRate": 56.6,
+      "generalAvg": 805000000,
+      "highAvg": 835000000,
+      "lowAvg": 775000000,
+      "jeonseAvg": 515000000,
+      "jeonseRate": 64,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
+        "date": "2026.10",
+        "floor": 6,
+        "price": 800000000
+      },
+      {
         "date": "2026.09",
         "floor": 12,
-        "price": 695000000
+        "price": 840000000
       },
       {
-        "date": "2026.08",
-        "floor": 15,
-        "price": 680000000
+        "date": "2026.09",
+        "floor": 25,
+        "price": 820000000
       },
       {
-        "date": "2026.06",
-        "floor": 7,
-        "price": 665000000
+        "date": "2026.09",
+        "floor": 12,
+        "price": 797000000
       }
     ],
     "highlights": [
@@ -5927,32 +6092,27 @@
     "areaSqMeter": 59.95,
     "pyeong": 25,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 695000000,
-    "priceDisplay": "6억 9,500만",
-    "priceRange": "6.7억 ~ 7.3억",
+    "priceKrw": 1014000000,
+    "priceDisplay": "10억 1,400만",
+    "priceRange": "10억 ~ 11.2억",
     "kbPrice": {
-      "generalAvg": 700000000,
-      "highAvg": 730000000,
-      "lowAvg": 665000000,
-      "jeonseAvg": 460000000,
-      "jeonseRate": 65.7,
+      "generalAvg": 995000000,
+      "highAvg": 1050000000,
+      "lowAvg": 965000000,
+      "jeonseAvg": 555000000,
+      "jeonseRate": 55.8,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 700000000
+        "floor": 4,
+        "price": 985000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 695000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 688000000
+        "date": "2026.09",
+        "floor": 14,
+        "price": 1080000000
       }
     ],
     "highlights": [
@@ -6001,32 +6161,37 @@
     "areaSqMeter": 84.88,
     "pyeong": 33,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 810000000,
-    "priceDisplay": "8억 1,000만",
-    "priceRange": "7.8억 ~ 8.5억",
+    "priceKrw": 1125000000,
+    "priceDisplay": "11억 2,500만",
+    "priceRange": "10.85억 ~ 11.4억",
     "kbPrice": {
-      "generalAvg": 815000000,
-      "highAvg": 850000000,
-      "lowAvg": 775000000,
-      "jeonseAvg": 520000000,
-      "jeonseRate": 63.8,
+      "generalAvg": 1110000000,
+      "highAvg": 1140000000,
+      "lowAvg": 1085000000,
+      "jeonseAvg": 665000000,
+      "jeonseRate": 59.9,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
+        "date": "2026.10",
+        "floor": 5,
+        "price": 1198000000
+      },
+      {
         "date": "2026.09",
-        "floor": 11,
-        "price": 815000000
+        "floor": 4,
+        "price": 1072500000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 810000000
+        "floor": 6,
+        "price": 1140000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 803000000
+        "date": "2026.07",
+        "floor": 11,
+        "price": 1100000000
       }
     ],
     "highlights": [
@@ -6074,32 +6239,27 @@
     "areaSqMeter": 59.92,
     "pyeong": 25,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 660000000,
-    "priceDisplay": "6억 6,000만",
-    "priceRange": "6.4억 ~ 6.9억",
+    "priceKrw": 916000000,
+    "priceDisplay": "9억 1,600만",
+    "priceRange": "9.3억 ~ 9.5억",
     "kbPrice": {
-      "generalAvg": 665000000,
-      "highAvg": 695000000,
-      "lowAvg": 630000000,
-      "jeonseAvg": 440000000,
-      "jeonseRate": 66.2,
+      "generalAvg": 900000000,
+      "highAvg": 950000000,
+      "lowAvg": 865000000,
+      "jeonseAvg": 510000000,
+      "jeonseRate": 56.7,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 665000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 660000000
+        "floor": 17,
+        "price": 932500000
       },
       {
         "date": "2026.06",
-        "floor": 5,
-        "price": 653000000
+        "floor": 13,
+        "price": 860000000
       }
     ],
     "highlights": [
@@ -6147,32 +6307,27 @@
     "areaSqMeter": 59.98,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 540000000,
-    "priceDisplay": "5억 4,000만",
-    "priceRange": "5.2억 ~ 5.7억",
+    "priceKrw": 690000000,
+    "priceDisplay": "6억 9,000만",
+    "priceRange": "6.95억 ~ 7.8억",
     "kbPrice": {
-      "generalAvg": 545000000,
-      "highAvg": 570000000,
-      "lowAvg": 520000000,
-      "jeonseAvg": 350000000,
-      "jeonseRate": 64.2,
+      "generalAvg": 690000000,
+      "highAvg": 715000000,
+      "lowAvg": 655000000,
+      "jeonseAvg": 460000000,
+      "jeonseRate": 66.7,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 545000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 540000000
-      },
-      {
-        "date": "2026.06",
+        "date": "2026.07",
         "floor": 5,
-        "price": 533000000
+        "price": 710000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 4,
+        "price": 670000000
       }
     ],
     "highlights": [
@@ -6220,32 +6375,37 @@
     "areaSqMeter": 41.3,
     "pyeong": 18,
     "rooms": "방 2 / 욕실 1",
-    "priceKrw": 420000000,
-    "priceDisplay": "4억 2,000만",
-    "priceRange": "4.0억 ~ 4.4억",
+    "priceKrw": 584000000,
+    "priceDisplay": "5억 8,400만",
+    "priceRange": "5.7억 ~ 6.15억",
     "kbPrice": {
-      "generalAvg": 425000000,
-      "highAvg": 445000000,
-      "lowAvg": 405000000,
+      "generalAvg": 590000000,
+      "highAvg": 615000000,
+      "lowAvg": 570000000,
       "jeonseAvg": 210000000,
-      "jeonseRate": 49.4,
+      "jeonseRate": 35.6,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
+        "date": "2026.10",
+        "floor": 1,
+        "price": 305400000
+      },
+      {
         "date": "2026.09",
-        "floor": 11,
-        "price": 425000000
+        "floor": 2,
+        "price": 577000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 420000000
+        "floor": 8,
+        "price": 615000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 413000000
+        "date": "2026.08",
+        "floor": 12,
+        "price": 600000000
       }
     ],
     "highlights": [
@@ -6293,32 +6453,37 @@
     "areaSqMeter": 59.94,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 585000000,
-    "priceDisplay": "5억 8,500만",
-    "priceRange": "5.6억 ~ 6.1억",
+    "priceKrw": 895000000,
+    "priceDisplay": "8억 9,500만",
+    "priceRange": "9억 ~ 10.5억",
     "kbPrice": {
-      "generalAvg": 590000000,
-      "highAvg": 615000000,
-      "lowAvg": 560000000,
-      "jeonseAvg": 380000000,
-      "jeonseRate": 64.4,
+      "generalAvg": 890000000,
+      "highAvg": 930000000,
+      "lowAvg": 865000000,
+      "jeonseAvg": 475000000,
+      "jeonseRate": 53.4,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 590000000
+        "floor": 16,
+        "price": 870000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 6,
+        "price": 940000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 19,
+        "price": 900000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 585000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 578000000
+        "floor": 11,
+        "price": 875000000
       }
     ],
     "highlights": [
@@ -6366,32 +6531,37 @@
     "areaSqMeter": 84.87,
     "pyeong": 31,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 690000000,
-    "priceDisplay": "6억 9,000만",
-    "priceRange": "6.6억 ~ 7.2억",
+    "priceKrw": 1005000000,
+    "priceDisplay": "10억 500만",
+    "priceRange": "9.6억 ~ 10.75억",
     "kbPrice": {
-      "generalAvg": 695000000,
-      "highAvg": 725000000,
-      "lowAvg": 660000000,
-      "jeonseAvg": 450000000,
-      "jeonseRate": 64.7,
+      "generalAvg": 1000000000,
+      "highAvg": 1075000000,
+      "lowAvg": 960000000,
+      "jeonseAvg": 680000000,
+      "jeonseRate": 68,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 695000000
+        "floor": 2,
+        "price": 1010000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 690000000
+        "date": "2026.09",
+        "floor": 9,
+        "price": 1050000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 683000000
+        "date": "2026.09",
+        "floor": 1,
+        "price": 965000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 1000000000
       }
     ],
     "highlights": [
@@ -6439,32 +6609,27 @@
     "areaSqMeter": 59.99,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 680000000,
-    "priceDisplay": "6억 8,000만",
-    "priceRange": "6.5억 ~ 7.1억",
+    "priceKrw": 973000000,
+    "priceDisplay": "9억 7,300만",
+    "priceRange": "9.5억 ~ 10.3억",
     "kbPrice": {
-      "generalAvg": 685000000,
-      "highAvg": 715000000,
-      "lowAvg": 650000000,
-      "jeonseAvg": 440000000,
-      "jeonseRate": 64.2,
+      "generalAvg": 995000000,
+      "highAvg": 1030000000,
+      "lowAvg": 950000000,
+      "jeonseAvg": 530000000,
+      "jeonseRate": 53.3,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 685000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 680000000
+        "date": "2026.07",
+        "floor": 2,
+        "price": 950000000
       },
       {
         "date": "2026.06",
         "floor": 5,
-        "price": 673000000
+        "price": 1030000000
       }
     ],
     "highlights": [
@@ -6512,32 +6677,37 @@
     "areaSqMeter": 84.96,
     "pyeong": 33,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 790000000,
-    "priceDisplay": "7억 9,000만",
-    "priceRange": "7.6억 ~ 8.3억",
+    "priceKrw": 1165000000,
+    "priceDisplay": "11억 6,500만",
+    "priceRange": "11.5억 ~ 13억",
     "kbPrice": {
-      "generalAvg": 795000000,
-      "highAvg": 830000000,
-      "lowAvg": 755000000,
-      "jeonseAvg": 510000000,
-      "jeonseRate": 64.2,
+      "generalAvg": 1160000000,
+      "highAvg": 1180000000,
+      "lowAvg": 1110000000,
+      "jeonseAvg": 725000000,
+      "jeonseRate": 62.5,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 795000000
-      },
-      {
         "date": "2026.08",
-        "floor": 7,
-        "price": 790000000
+        "floor": 11,
+        "price": 750000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 783000000
+        "date": "2026.07",
+        "floor": 18,
+        "price": 1170000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 14,
+        "price": 1180000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 6,
+        "price": 1180000000
       }
     ],
     "highlights": [
@@ -6585,32 +6755,37 @@
     "areaSqMeter": 59.94,
     "pyeong": 25,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 635000000,
-    "priceDisplay": "6억 3,500만",
-    "priceRange": "6.1억 ~ 6.6억",
+    "priceKrw": 1025000000,
+    "priceDisplay": "10억 2,500만",
+    "priceRange": "10.4억 ~ 11억",
     "kbPrice": {
-      "generalAvg": 640000000,
-      "highAvg": 670000000,
-      "lowAvg": 610000000,
-      "jeonseAvg": 400000000,
-      "jeonseRate": 62.5,
+      "generalAvg": 1030000000,
+      "highAvg": 1040000000,
+      "lowAvg": 950000000,
+      "jeonseAvg": 520000000,
+      "jeonseRate": 50.5,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
+        "floor": 7,
+        "price": 1092000000
+      },
+      {
+        "date": "2026.09",
         "floor": 11,
-        "price": 640000000
+        "price": 726000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 635000000
+        "floor": 5,
+        "price": 1020000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 628000000
+        "date": "2026.07",
+        "floor": 14,
+        "price": 1000000000
       }
     ],
     "highlights": [
@@ -6658,32 +6833,37 @@
     "areaSqMeter": 59.98,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 530000000,
-    "priceDisplay": "5억 3,000만",
-    "priceRange": "5.1억 ~ 5.6억",
+    "priceKrw": 674000000,
+    "priceDisplay": "6억 7,400만",
+    "priceRange": "7.2억 ~ 7.8억",
     "kbPrice": {
-      "generalAvg": 535000000,
-      "highAvg": 560000000,
-      "lowAvg": 510000000,
-      "jeonseAvg": 360000000,
-      "jeonseRate": 67.3,
+      "generalAvg": 677500000,
+      "highAvg": 700000000,
+      "lowAvg": 650000000,
+      "jeonseAvg": 380000000,
+      "jeonseRate": 56.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 535000000
-      },
-      {
         "date": "2026.08",
-        "floor": 7,
-        "price": 530000000
+        "floor": 19,
+        "price": 670000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 523000000
+        "date": "2026.07",
+        "floor": 20,
+        "price": 660000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 15,
+        "price": 700000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 8,
+        "price": 675000000
       }
     ],
     "highlights": [
@@ -6731,32 +6911,37 @@
     "areaSqMeter": 49.77,
     "pyeong": 20,
     "rooms": "방 2 / 욕실 1",
-    "priceKrw": 490000000,
-    "priceDisplay": "4억 9,000만",
-    "priceRange": "4.7억 ~ 5.2억",
+    "priceKrw": 685000000,
+    "priceDisplay": "6억 8,500만",
+    "priceRange": "6.5억 ~ 7.5억",
     "kbPrice": {
-      "generalAvg": 495000000,
-      "highAvg": 515000000,
-      "lowAvg": 470000000,
-      "jeonseAvg": 290000000,
-      "jeonseRate": 58.6,
+      "generalAvg": 690000000,
+      "highAvg": 720000000,
+      "lowAvg": 640000000,
+      "jeonseAvg": 380000000,
+      "jeonseRate": 55.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
+        "date": "2026.10",
+        "floor": 12,
+        "price": 680000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 8,
+        "price": 680000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 6,
+        "price": 725000000
+      },
+      {
         "date": "2026.09",
         "floor": 11,
-        "price": 495000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 490000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 483000000
+        "price": 710000000
       }
     ],
     "highlights": [
@@ -6804,32 +6989,27 @@
     "areaSqMeter": 59.96,
     "pyeong": 25,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 645000000,
-    "priceDisplay": "6억 4,500만",
-    "priceRange": "6.2억 ~ 6.8억",
+    "priceKrw": 745000000,
+    "priceDisplay": "7억 4,500만",
+    "priceRange": "7.25억 ~ 7.6억",
     "kbPrice": {
-      "generalAvg": 650000000,
-      "highAvg": 680000000,
-      "lowAvg": 620000000,
-      "jeonseAvg": 420000000,
-      "jeonseRate": 64.6,
+      "generalAvg": 745000000,
+      "highAvg": 760000000,
+      "lowAvg": 725000000,
+      "jeonseAvg": 425000000,
+      "jeonseRate": 57,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 650000000
+        "date": "2026.05",
+        "floor": 2,
+        "price": 707500000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 645000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 638000000
+        "date": "2026.04",
+        "floor": 4,
+        "price": 715000000
       }
     ],
     "highlights": [
@@ -6877,32 +7057,27 @@
     "areaSqMeter": 59.88,
     "pyeong": 25,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 555000000,
-    "priceDisplay": "5억 5,500만",
-    "priceRange": "5.3억 ~ 5.8억",
+    "priceKrw": 680000000,
+    "priceDisplay": "6억 8,000만",
+    "priceRange": "6.2억 ~ 7억",
     "kbPrice": {
-      "generalAvg": 560000000,
-      "highAvg": 585000000,
-      "lowAvg": 530000000,
-      "jeonseAvg": 350000000,
-      "jeonseRate": 62.5,
+      "generalAvg": 660000000,
+      "highAvg": 700000000,
+      "lowAvg": 620000000,
+      "jeonseAvg": 335000000,
+      "jeonseRate": 50.8,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 560000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 555000000
+        "date": "2026.10",
+        "floor": 10,
+        "price": 700000000
       },
       {
         "date": "2026.06",
-        "floor": 5,
-        "price": 548000000
+        "floor": 10,
+        "price": 660000000
       }
     ],
     "highlights": [
@@ -6950,32 +7125,27 @@
     "areaSqMeter": 59.98,
     "pyeong": 25,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 750000000,
-    "priceDisplay": "7억 5,000만",
-    "priceRange": "7.2억 ~ 7.8억",
+    "priceKrw": 880000000,
+    "priceDisplay": "8억 8,000만",
+    "priceRange": "8.35억 ~ 9.07억",
     "kbPrice": {
-      "generalAvg": 755000000,
-      "highAvg": 790000000,
-      "lowAvg": 715000000,
-      "jeonseAvg": 480000000,
-      "jeonseRate": 63.6,
+      "generalAvg": 880000000,
+      "highAvg": 907500000,
+      "lowAvg": 835000000,
+      "jeonseAvg": 550000000,
+      "jeonseRate": 62.5,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 755000000
+        "date": "2026.03",
+        "floor": 9,
+        "price": 905000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 750000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 743000000
+        "date": "2026.02",
+        "floor": 3,
+        "price": 885000000
       }
     ],
     "highlights": [
@@ -7023,32 +7193,27 @@
     "areaSqMeter": 59.98,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 720000000,
-    "priceDisplay": "7억 2,000만",
-    "priceRange": "6.9억 ~ 7.5억",
+    "priceKrw": 1045000000,
+    "priceDisplay": "10억 4,500만",
+    "priceRange": "9.75억 ~ 10.75억",
     "kbPrice": {
-      "generalAvg": 725000000,
-      "highAvg": 760000000,
-      "lowAvg": 690000000,
-      "jeonseAvg": 460000000,
-      "jeonseRate": 63.4,
+      "generalAvg": 1045000000,
+      "highAvg": 1075000000,
+      "lowAvg": 975000000,
+      "jeonseAvg": 590000000,
+      "jeonseRate": 56.5,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 725000000
+        "date": "2026.03",
+        "floor": 3,
+        "price": 1000000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 720000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 713000000
+        "date": "2026.02",
+        "floor": 2,
+        "price": 895000000
       }
     ],
     "highlights": [
@@ -7097,32 +7262,32 @@
     "areaSqMeter": 84.91,
     "pyeong": 33,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 850000000,
-    "priceDisplay": "8억 5,000만",
-    "priceRange": "8.2억 ~ 8.9억",
+    "priceKrw": 1236000000,
+    "priceDisplay": "12억 3,600만",
+    "priceRange": "13억 ~ 13.9억",
     "kbPrice": {
-      "generalAvg": 855000000,
-      "highAvg": 895000000,
-      "lowAvg": 810000000,
-      "jeonseAvg": 530000000,
-      "jeonseRate": 62,
+      "generalAvg": 1235000000,
+      "highAvg": 1290000000,
+      "lowAvg": 1165000000,
+      "jeonseAvg": 665000000,
+      "jeonseRate": 53.8,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 855000000
+        "date": "2026.07",
+        "floor": 4,
+        "price": 1240000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 850000000
+        "date": "2026.07",
+        "floor": 3,
+        "price": 1237500000
       },
       {
-        "date": "2026.06",
+        "date": "2026.07",
         "floor": 5,
-        "price": 843000000
+        "price": 1230000000
       }
     ],
     "highlights": [
@@ -7170,32 +7335,32 @@
     "areaSqMeter": 59.98,
     "pyeong": 25,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 690000000,
-    "priceDisplay": "6억 9,000만",
-    "priceRange": "6.6억 ~ 7.2억",
+    "priceKrw": 1153000000,
+    "priceDisplay": "11억 5,300만",
+    "priceRange": "11.1억 ~ 13억",
     "kbPrice": {
-      "generalAvg": 695000000,
-      "highAvg": 725000000,
-      "lowAvg": 660000000,
-      "jeonseAvg": 430000000,
-      "jeonseRate": 61.9,
+      "generalAvg": 1110000000,
+      "highAvg": 1135000000,
+      "lowAvg": 1065000000,
+      "jeonseAvg": 510000000,
+      "jeonseRate": 45.9,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
+        "date": "2026.10",
         "floor": 11,
-        "price": 695000000
+        "price": 1195000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 690000000
+        "date": "2026.09",
+        "floor": 18,
+        "price": 1220000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 683000000
+        "date": "2026.07",
+        "floor": 2,
+        "price": 1035000000
       }
     ],
     "highlights": [
@@ -7243,32 +7408,37 @@
     "areaSqMeter": 58.41,
     "pyeong": 25,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 645000000,
-    "priceDisplay": "6억 4,500만",
-    "priceRange": "6.2억 ~ 6.7억",
+    "priceKrw": 1080000000,
+    "priceDisplay": "10억 8,000만",
+    "priceRange": "11억 ~ 12억",
     "kbPrice": {
-      "generalAvg": 650000000,
-      "highAvg": 680000000,
-      "lowAvg": 620000000,
-      "jeonseAvg": 380000000,
-      "jeonseRate": 58.5,
+      "generalAvg": 1050000000,
+      "highAvg": 1120000000,
+      "lowAvg": 975000000,
+      "jeonseAvg": 500000000,
+      "jeonseRate": 47.6,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 650000000
+        "floor": 24,
+        "price": 1110000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 3,
+        "price": 1040000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 645000000
+        "floor": 20,
+        "price": 1117000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 638000000
+        "date": "2026.08",
+        "floor": 2,
+        "price": 1035000000
       }
     ],
     "highlights": [
@@ -7316,32 +7486,37 @@
     "areaSqMeter": 59.98,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 735000000,
-    "priceDisplay": "7억 3,500만",
-    "priceRange": "7.1억 ~ 7.7억",
+    "priceKrw": 955000000,
+    "priceDisplay": "9억 5,500만",
+    "priceRange": "8.95억 ~ 9.75억",
     "kbPrice": {
-      "generalAvg": 740000000,
-      "highAvg": 775000000,
-      "lowAvg": 705000000,
-      "jeonseAvg": 480000000,
-      "jeonseRate": 64.9,
+      "generalAvg": 945000000,
+      "highAvg": 975000000,
+      "lowAvg": 895000000,
+      "jeonseAvg": 510000000,
+      "jeonseRate": 54,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
+        "date": "2026.10",
+        "floor": 1,
+        "price": 950000000
+      },
+      {
         "date": "2026.09",
-        "floor": 11,
-        "price": 740000000
+        "floor": 5,
+        "price": 967000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 5,
+        "price": 965000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 735000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 728000000
+        "floor": 1,
+        "price": 895000000
       }
     ],
     "highlights": [
@@ -7390,32 +7565,37 @@
     "areaSqMeter": 84.99,
     "pyeong": 33,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 850000000,
-    "priceDisplay": "8억 5,000만",
-    "priceRange": "8.2억 ~ 8.9억",
+    "priceKrw": 1063000000,
+    "priceDisplay": "10억 6,300만",
+    "priceRange": "10.8억 ~ 11.5억",
     "kbPrice": {
-      "generalAvg": 855000000,
-      "highAvg": 895000000,
-      "lowAvg": 810000000,
-      "jeonseAvg": 540000000,
-      "jeonseRate": 63.2,
+      "generalAvg": 1035000000,
+      "highAvg": 1090000000,
+      "lowAvg": 970000000,
+      "jeonseAvg": 615000000,
+      "jeonseRate": 59.4,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 855000000
+        "floor": 9,
+        "price": 1050000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 850000000
+        "floor": 15,
+        "price": 1090000000
       },
       {
-        "date": "2026.06",
+        "date": "2026.07",
+        "floor": 15,
+        "price": 1125000000
+      },
+      {
+        "date": "2026.07",
         "floor": 5,
-        "price": 843000000
+        "price": 990000000
       }
     ],
     "highlights": [
@@ -7463,32 +7643,27 @@
     "areaSqMeter": 84.9,
     "pyeong": 33,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 775000000,
-    "priceDisplay": "7억 7,500만",
-    "priceRange": "7.5억 ~ 8.1억",
+    "priceKrw": 962000000,
+    "priceDisplay": "9억 6,200만",
+    "priceRange": "9.8억 ~ 10.7억",
     "kbPrice": {
-      "generalAvg": 780000000,
-      "highAvg": 815000000,
-      "lowAvg": 740000000,
-      "jeonseAvg": 500000000,
-      "jeonseRate": 64.1,
+      "generalAvg": 985000000,
+      "highAvg": 1010000000,
+      "lowAvg": 955000000,
+      "jeonseAvg": 600000000,
+      "jeonseRate": 60.9,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 780000000
-      },
-      {
         "date": "2026.08",
-        "floor": 7,
-        "price": 775000000
+        "floor": 3,
+        "price": 937000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 768000000
+        "date": "2026.07",
+        "floor": 7,
+        "price": 940000000
       }
     ],
     "highlights": [
@@ -7536,32 +7711,27 @@
     "areaSqMeter": 84.92,
     "pyeong": 33,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 760000000,
-    "priceDisplay": "7억 6,000만",
-    "priceRange": "7.3억 ~ 7.9억",
+    "priceKrw": 810000000,
+    "priceDisplay": "8억 1,000만",
+    "priceRange": "7.7억 ~ 8.3억",
     "kbPrice": {
-      "generalAvg": 765000000,
-      "highAvg": 800000000,
-      "lowAvg": 725000000,
-      "jeonseAvg": 480000000,
-      "jeonseRate": 62.7,
+      "generalAvg": 810000000,
+      "highAvg": 830000000,
+      "lowAvg": 770000000,
+      "jeonseAvg": 530000000,
+      "jeonseRate": 65.4,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 765000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 760000000
-      },
-      {
         "date": "2026.06",
-        "floor": 5,
-        "price": 753000000
+        "floor": 1,
+        "price": 790000000
+      },
+      {
+        "date": "2025.12",
+        "floor": 8,
+        "price": 790000000
       }
     ],
     "highlights": [
@@ -7609,32 +7779,27 @@
     "areaSqMeter": 59.94,
     "pyeong": 25,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 580000000,
-    "priceDisplay": "5억 8,000만",
-    "priceRange": "5.5억 ~ 6.0억",
+    "priceKrw": 770000000,
+    "priceDisplay": "7억 7,000만",
+    "priceRange": "7억 ~ 8.1억",
     "kbPrice": {
-      "generalAvg": 585000000,
-      "highAvg": 610000000,
-      "lowAvg": 555000000,
-      "jeonseAvg": 370000000,
-      "jeonseRate": 63.2,
+      "generalAvg": 760000000,
+      "highAvg": 810000000,
+      "lowAvg": 700000000,
+      "jeonseAvg": 380000000,
+      "jeonseRate": 50,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 585000000
-      },
-      {
-        "date": "2026.08",
+        "date": "2026.10",
         "floor": 7,
-        "price": 580000000
+        "price": 860000000
       },
       {
-        "date": "2026.06",
+        "date": "2026.07",
         "floor": 5,
-        "price": 573000000
+        "price": 700000000
       }
     ],
     "highlights": [
@@ -7682,32 +7847,27 @@
     "areaSqMeter": 59.88,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 675000000,
-    "priceDisplay": "6억 7,500만",
-    "priceRange": "6.5억 ~ 7.0억",
+    "priceKrw": 930000000,
+    "priceDisplay": "9억 3,000만",
+    "priceRange": "9억 ~ 9.45억",
     "kbPrice": {
-      "generalAvg": 680000000,
-      "highAvg": 710000000,
-      "lowAvg": 645000000,
-      "jeonseAvg": 420000000,
-      "jeonseRate": 61.8,
+      "generalAvg": 920000000,
+      "highAvg": 945000000,
+      "lowAvg": 900000000,
+      "jeonseAvg": 465000000,
+      "jeonseRate": 50.5,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 680000000
+        "date": "2026.07",
+        "floor": 2,
+        "price": 940000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 675000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 668000000
+        "date": "2026.04",
+        "floor": 15,
+        "price": 880000000
       }
     ],
     "highlights": [
@@ -7755,32 +7915,37 @@
     "areaSqMeter": 59.96,
     "pyeong": 25,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 680000000,
-    "priceDisplay": "6억 8,000만",
-    "priceRange": "6.5억 ~ 7.1억",
+    "priceKrw": 1023000000,
+    "priceDisplay": "10억 2,300만",
+    "priceRange": "10억 ~ 11.2억",
     "kbPrice": {
-      "generalAvg": 685000000,
-      "highAvg": 715000000,
-      "lowAvg": 650000000,
-      "jeonseAvg": 430000000,
-      "jeonseRate": 62.8,
+      "generalAvg": 995000000,
+      "highAvg": 1055000000,
+      "lowAvg": 945000000,
+      "jeonseAvg": 510000000,
+      "jeonseRate": 51.3,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 685000000
+        "floor": 4,
+        "price": 1090000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 1045000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 15,
+        "price": 1050000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 680000000
-      },
-      {
-        "date": "2026.06",
         "floor": 5,
-        "price": 673000000
+        "price": 1060000000
       }
     ],
     "highlights": [
@@ -7828,32 +7993,37 @@
     "areaSqMeter": 59.94,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 510000000,
-    "priceDisplay": "5억 1,000만",
-    "priceRange": "4.9억 ~ 5.3억",
+    "priceKrw": 978000000,
+    "priceDisplay": "9억 7,800만",
+    "priceRange": "10억 ~ 11.5억",
     "kbPrice": {
-      "generalAvg": 515000000,
-      "highAvg": 540000000,
-      "lowAvg": 490000000,
-      "jeonseAvg": 350000000,
-      "jeonseRate": 68,
+      "generalAvg": 985000000,
+      "highAvg": 1015000000,
+      "lowAvg": 930000000,
+      "jeonseAvg": 525000000,
+      "jeonseRate": 53.3,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 515000000
+        "floor": 12,
+        "price": 950000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 510000000
+        "date": "2026.09",
+        "floor": 17,
+        "price": 970000000
       },
       {
-        "date": "2026.06",
+        "date": "2026.07",
         "floor": 5,
-        "price": 503000000
+        "price": 980000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 23,
+        "price": 800000000
       }
     ],
     "highlights": [
@@ -7901,32 +8071,37 @@
     "areaSqMeter": 59.96,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 545000000,
-    "priceDisplay": "5억 4,500만",
-    "priceRange": "5.2억 ~ 5.7억",
+    "priceKrw": 703000000,
+    "priceDisplay": "7억 300만",
+    "priceRange": "7.2억 ~ 7.7억",
     "kbPrice": {
-      "generalAvg": 550000000,
-      "highAvg": 575000000,
-      "lowAvg": 525000000,
-      "jeonseAvg": 360000000,
-      "jeonseRate": 65.5,
+      "generalAvg": 690000000,
+      "highAvg": 730000000,
+      "lowAvg": 650000000,
+      "jeonseAvg": 410000000,
+      "jeonseRate": 59.4,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
+        "date": "2026.10",
+        "floor": 6,
+        "price": 710000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 10,
+        "price": 715000000
+      },
+      {
         "date": "2026.09",
-        "floor": 11,
-        "price": 550000000
+        "floor": 8,
+        "price": 737000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 545000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 538000000
+        "date": "2026.09",
+        "floor": 18,
+        "price": 687000000
       }
     ],
     "highlights": [
@@ -7974,32 +8149,27 @@
     "areaSqMeter": 59.98,
     "pyeong": 25,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 670000000,
-    "priceDisplay": "6억 7,000만",
-    "priceRange": "6.5억 ~ 7.0억",
+    "priceKrw": 835000000,
+    "priceDisplay": "8억 3,500만",
+    "priceRange": "8.2억 ~ 8.5억",
     "kbPrice": {
-      "generalAvg": 675000000,
-      "highAvg": 705000000,
-      "lowAvg": 640000000,
-      "jeonseAvg": 440000000,
-      "jeonseRate": 65.2,
+      "generalAvg": 835000000,
+      "highAvg": 850000000,
+      "lowAvg": 820000000,
+      "jeonseAvg": 460000000,
+      "jeonseRate": 55.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 675000000
+        "date": "2025.08",
+        "floor": 21,
+        "price": 780000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 670000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 663000000
+        "date": "2025.02",
+        "floor": 9,
+        "price": 740000000
       }
     ],
     "highlights": [
@@ -8047,32 +8217,27 @@
     "areaSqMeter": 64.8,
     "pyeong": 27,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 585000000,
-    "priceDisplay": "5억 8,500만",
-    "priceRange": "5.6억 ~ 6.1억",
+    "priceKrw": 840000000,
+    "priceDisplay": "8억 4,000만",
+    "priceRange": "7.65억 ~ 8.4억",
     "kbPrice": {
-      "generalAvg": 590000000,
-      "highAvg": 615000000,
-      "lowAvg": 560000000,
-      "jeonseAvg": 370000000,
-      "jeonseRate": 62.7,
+      "generalAvg": 820000000,
+      "highAvg": 840000000,
+      "lowAvg": 765000000,
+      "jeonseAvg": 405000000,
+      "jeonseRate": 49.4,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 590000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 585000000
+        "floor": 12,
+        "price": 860000000
       },
       {
         "date": "2026.06",
-        "floor": 5,
-        "price": 578000000
+        "floor": 4,
+        "price": 770000000
       }
     ],
     "highlights": [
@@ -8120,32 +8285,37 @@
     "areaSqMeter": 59.94,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 440000000,
-    "priceDisplay": "4억 4,000만",
-    "priceRange": "4.2억 ~ 4.6억",
+    "priceKrw": 400000000,
+    "priceDisplay": "4억",
+    "priceRange": "4.3억 ~ 4.7억",
     "kbPrice": {
-      "generalAvg": 445000000,
-      "highAvg": 465000000,
-      "lowAvg": 425000000,
-      "jeonseAvg": 290000000,
-      "jeonseRate": 65.2,
+      "generalAvg": 400000000,
+      "highAvg": 420000000,
+      "lowAvg": 370000000,
+      "jeonseAvg": 305000000,
+      "jeonseRate": 76.2,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 445000000
+        "floor": 18,
+        "price": 400000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 405000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 400000000
       },
       {
         "date": "2026.08",
         "floor": 7,
-        "price": 440000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 433000000
+        "price": 378000000
       }
     ],
     "highlights": [
@@ -8193,32 +8363,37 @@
     "areaSqMeter": 84.97,
     "pyeong": 31,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 530000000,
-    "priceDisplay": "5억 3,000만",
-    "priceRange": "5.1억 ~ 5.5억",
+    "priceKrw": 550000000,
+    "priceDisplay": "5억 5,000만",
+    "priceRange": "5.15억 ~ 6.3억",
     "kbPrice": {
-      "generalAvg": 535000000,
-      "highAvg": 560000000,
-      "lowAvg": 510000000,
-      "jeonseAvg": 350000000,
-      "jeonseRate": 65.4,
+      "generalAvg": 545000000,
+      "highAvg": 570000000,
+      "lowAvg": 490000000,
+      "jeonseAvg": 390000000,
+      "jeonseRate": 71.6,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 535000000
+        "date": "2026.08",
+        "floor": 16,
+        "price": 554000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 530000000
+        "floor": 2,
+        "price": 593000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 523000000
+        "date": "2026.08",
+        "floor": 13,
+        "price": 525000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 2,
+        "price": 550000000
       }
     ],
     "highlights": [
@@ -8264,32 +8439,27 @@
     "areaSqMeter": 59.98,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 585000000,
-    "priceDisplay": "5억 8,500만",
-    "priceRange": "5.6억 ~ 6.1억",
+    "priceKrw": 880000000,
+    "priceDisplay": "8억 8,000만",
+    "priceRange": "8.15억 ~ 9억",
     "kbPrice": {
-      "generalAvg": 590000000,
-      "highAvg": 615000000,
-      "lowAvg": 560000000,
-      "jeonseAvg": 380000000,
-      "jeonseRate": 64.4,
+      "generalAvg": 860000000,
+      "highAvg": 900000000,
+      "lowAvg": 815000000,
+      "jeonseAvg": 580000000,
+      "jeonseRate": 67.4,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 590000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 585000000
+        "floor": 4,
+        "price": 900000000
       },
       {
         "date": "2026.06",
-        "floor": 5,
-        "price": 578000000
+        "floor": 11,
+        "price": 842000000
       }
     ],
     "highlights": [
@@ -8337,32 +8507,37 @@
     "areaSqMeter": 59.94,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 695000000,
-    "priceDisplay": "6억 9,500만",
-    "priceRange": "6.7억 ~ 7.3억",
+    "priceKrw": 1205000000,
+    "priceDisplay": "12억 500만",
+    "priceRange": "11.75억 ~ 12.3억",
     "kbPrice": {
-      "generalAvg": 700000000,
-      "highAvg": 730000000,
-      "lowAvg": 665000000,
-      "jeonseAvg": 450000000,
-      "jeonseRate": 64.3,
+      "generalAvg": 1210000000,
+      "highAvg": 1230000000,
+      "lowAvg": 1175000000,
+      "jeonseAvg": 557500000,
+      "jeonseRate": 46.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 700000000
+        "date": "2026.08",
+        "floor": 12,
+        "price": 1245000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 695000000
+        "floor": 6,
+        "price": 1200000000
       },
       {
-        "date": "2026.06",
+        "date": "2026.07",
+        "floor": 3,
+        "price": 1175000000
+      },
+      {
+        "date": "2026.07",
         "floor": 5,
-        "price": 688000000
+        "price": 1155000000
       }
     ],
     "highlights": [
@@ -8411,32 +8586,37 @@
     "areaSqMeter": 84.96,
     "pyeong": 32,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 815000000,
-    "priceDisplay": "8억 1,500만",
-    "priceRange": "7.9억 ~ 8.5억",
+    "priceKrw": 1270000000,
+    "priceDisplay": "12억 7,000만",
+    "priceRange": "12.5억 ~ 13.2억",
     "kbPrice": {
-      "generalAvg": 820000000,
-      "highAvg": 855000000,
-      "lowAvg": 780000000,
-      "jeonseAvg": 520000000,
-      "jeonseRate": 63.4,
+      "generalAvg": 1290000000,
+      "highAvg": 1320000000,
+      "lowAvg": 1250000000,
+      "jeonseAvg": 667500000,
+      "jeonseRate": 51.7,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
+        "floor": 2,
+        "price": 1238000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 1,
+        "price": 1249000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 6,
+        "price": 1250000000
+      },
+      {
+        "date": "2026.09",
         "floor": 11,
-        "price": 820000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 815000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 808000000
+        "price": 1295000000
       }
     ],
     "highlights": [
@@ -8484,32 +8664,37 @@
     "areaSqMeter": 59.58,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 675000000,
-    "priceDisplay": "6억 7,500만",
-    "priceRange": "6.5억 ~ 7.0억",
+    "priceKrw": 1208000000,
+    "priceDisplay": "12억 800만",
+    "priceRange": "11.3억 ~ 13.6억",
     "kbPrice": {
-      "generalAvg": 680000000,
-      "highAvg": 710000000,
-      "lowAvg": 645000000,
-      "jeonseAvg": 440000000,
-      "jeonseRate": 64.7,
+      "generalAvg": 1215000000,
+      "highAvg": 1260000000,
+      "lowAvg": 1150000000,
+      "jeonseAvg": 550000000,
+      "jeonseRate": 45.3,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 680000000
+        "floor": 12,
+        "price": 1210000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 675000000
+        "date": "2026.09",
+        "floor": 18,
+        "price": 1200000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 668000000
+        "date": "2026.09",
+        "floor": 10,
+        "price": 1200000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 1200000000
       }
     ],
     "highlights": [
@@ -8557,32 +8742,32 @@
     "areaSqMeter": 55.35,
     "pyeong": 23,
     "rooms": "방 2 / 욕실 1",
-    "priceKrw": 550000000,
-    "priceDisplay": "5억 5,000만",
-    "priceRange": "5.3억 ~ 5.8억",
+    "priceKrw": 761000000,
+    "priceDisplay": "7억 6,100만",
+    "priceRange": "7.5억 ~ 8.3억",
     "kbPrice": {
-      "generalAvg": 555000000,
-      "highAvg": 580000000,
-      "lowAvg": 525000000,
-      "jeonseAvg": 340000000,
-      "jeonseRate": 61.3,
+      "generalAvg": 762500000,
+      "highAvg": 777500000,
+      "lowAvg": 730000000,
+      "jeonseAvg": 440000000,
+      "jeonseRate": 57.7,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
         "floor": 11,
-        "price": 555000000
+        "price": 760000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 550000000
+        "floor": 8,
+        "price": 760000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 543000000
+        "date": "2026.08",
+        "floor": 3,
+        "price": 745000000
       }
     ],
     "highlights": [
@@ -8776,32 +8961,32 @@
     "areaSqMeter": 49.5,
     "pyeong": 21,
     "rooms": "방 2 / 욕실 1",
-    "priceKrw": 520000000,
-    "priceDisplay": "5억 2,000만",
-    "priceRange": "5.0억 ~ 5.5억",
+    "priceKrw": 770000000,
+    "priceDisplay": "7억 7,000만",
+    "priceRange": "8억 ~ 9억",
     "kbPrice": {
-      "generalAvg": 525000000,
-      "highAvg": 550000000,
-      "lowAvg": 500000000,
-      "jeonseAvg": 280000000,
-      "jeonseRate": 53.3,
+      "generalAvg": 770000000,
+      "highAvg": 850000000,
+      "lowAvg": 680000000,
+      "jeonseAvg": 400000000,
+      "jeonseRate": 51.9,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 525000000
+        "floor": 8,
+        "price": 770000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 520000000
+        "date": "2026.07",
+        "floor": 1,
+        "price": 650000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 513000000
+        "date": "2026.07",
+        "floor": 8,
+        "price": 845000000
       }
     ],
     "highlights": [
@@ -8847,32 +9032,37 @@
     "areaSqMeter": 50.67,
     "pyeong": 21,
     "rooms": "방 2 / 욕실 1",
-    "priceKrw": 580000000,
-    "priceDisplay": "5억 8,000만",
-    "priceRange": "5.6억 ~ 6.1억",
+    "priceKrw": 795000000,
+    "priceDisplay": "7억 9,500만",
+    "priceRange": "8.2억 ~ 8.7억",
     "kbPrice": {
-      "generalAvg": 585000000,
-      "highAvg": 610000000,
-      "lowAvg": 555000000,
-      "jeonseAvg": 240000000,
-      "jeonseRate": 41,
+      "generalAvg": 770000000,
+      "highAvg": 795000000,
+      "lowAvg": 745000000,
+      "jeonseAvg": 225000000,
+      "jeonseRate": 29.2,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 10,
-        "price": 585000000
+        "floor": 9,
+        "price": 820000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 6,
+        "price": 820000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 580000000
+        "floor": 11,
+        "price": 755000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 573000000
+        "date": "2026.08",
+        "floor": 6,
+        "price": 770000000
       }
     ],
     "highlights": [
@@ -8920,32 +9110,27 @@
     "areaSqMeter": 59.98,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 690000000,
-    "priceDisplay": "6억 9,000만",
-    "priceRange": "6.6억 ~ 7.2억",
+    "priceKrw": 1650000000,
+    "priceDisplay": "16억 5,000만",
+    "priceRange": "18억 ~ 18.5억",
     "kbPrice": {
-      "generalAvg": 695000000,
-      "highAvg": 725000000,
-      "lowAvg": 660000000,
-      "jeonseAvg": 430000000,
-      "jeonseRate": 61.9,
+      "generalAvg": 1600000000,
+      "highAvg": 1700000000,
+      "lowAvg": 1525000000,
+      "jeonseAvg": 775000000,
+      "jeonseRate": 48.4,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 695000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 690000000
+        "date": "2026.07",
+        "floor": 10,
+        "price": 1700000000
       },
       {
         "date": "2026.06",
-        "floor": 5,
-        "price": 683000000
+        "floor": 3,
+        "price": 1620000000
       }
     ],
     "highlights": [
@@ -8991,32 +9176,27 @@
     "areaSqMeter": 59.85,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 655000000,
-    "priceDisplay": "6억 5,500만",
-    "priceRange": "6.3억 ~ 6.8억",
+    "priceKrw": 1230000000,
+    "priceDisplay": "12억 3,000만",
+    "priceRange": "12.4억 ~ 13.7억",
     "kbPrice": {
-      "generalAvg": 660000000,
-      "highAvg": 690000000,
-      "lowAvg": 625000000,
-      "jeonseAvg": 410000000,
-      "jeonseRate": 62.1,
+      "generalAvg": 1230000000,
+      "highAvg": 1250000000,
+      "lowAvg": 1190000000,
+      "jeonseAvg": 545000000,
+      "jeonseRate": 44.3,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 660000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 655000000
+        "date": "2026.07",
+        "floor": 2,
+        "price": 1230000000
       },
       {
         "date": "2026.06",
-        "floor": 5,
-        "price": 648000000
+        "floor": 23,
+        "price": 1235000000
       }
     ],
     "highlights": [
@@ -9064,32 +9244,37 @@
     "areaSqMeter": 59.98,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 770000000,
-    "priceDisplay": "7억 7,000만",
-    "priceRange": "7.4억 ~ 8.0억",
+    "priceKrw": 1534000000,
+    "priceDisplay": "15억 3,400만",
+    "priceRange": "14.7억 ~ 16.8억",
     "kbPrice": {
-      "generalAvg": 775000000,
-      "highAvg": 810000000,
-      "lowAvg": 735000000,
-      "jeonseAvg": 480000000,
-      "jeonseRate": 61.9,
+      "generalAvg": 1530000000,
+      "highAvg": 1575000000,
+      "lowAvg": 1465000000,
+      "jeonseAvg": 630000000,
+      "jeonseRate": 41.2,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 775000000
+        "floor": 22,
+        "price": 1575000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 770000000
-      },
-      {
-        "date": "2026.06",
+        "date": "2026.07",
         "floor": 5,
-        "price": 763000000
+        "price": 1538000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 21,
+        "price": 1500000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 23,
+        "price": 1610000000
       }
     ],
     "highlights": [
@@ -9208,32 +9393,32 @@
     "areaSqMeter": 84.9,
     "pyeong": 31,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 575000000,
-    "priceDisplay": "5억 7,500만",
-    "priceRange": "5.5억 ~ 6.0억",
+    "priceKrw": 640000000,
+    "priceDisplay": "6억 4,000만",
+    "priceRange": "6.48억 ~ 7.3억",
     "kbPrice": {
-      "generalAvg": 580000000,
-      "highAvg": 605000000,
-      "lowAvg": 550000000,
-      "jeonseAvg": 380000000,
-      "jeonseRate": 65.5,
+      "generalAvg": 670000000,
+      "highAvg": 695000000,
+      "lowAvg": 625000000,
+      "jeonseAvg": 420000000,
+      "jeonseRate": 62.7,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 580000000
+        "floor": 9,
+        "price": 610000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 575000000
+        "floor": 15,
+        "price": 640000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 568000000
+        "date": "2026.07",
+        "floor": 6,
+        "price": 605000000
       }
     ],
     "highlights": [
@@ -9354,32 +9539,27 @@
     "areaSqMeter": 45.72,
     "pyeong": 19,
     "rooms": "방 2 / 욕실 1",
-    "priceKrw": 510000000,
-    "priceDisplay": "5억 1,000만",
-    "priceRange": "4.9억 ~ 5.4억",
+    "priceKrw": 548000000,
+    "priceDisplay": "5억 4,800만",
+    "priceRange": "6억 ~ 6.5억",
     "kbPrice": {
-      "generalAvg": 515000000,
-      "highAvg": 540000000,
-      "lowAvg": 490000000,
-      "jeonseAvg": 230000000,
-      "jeonseRate": 44.7,
+      "generalAvg": 575000000,
+      "highAvg": 595000000,
+      "lowAvg": 550000000,
+      "jeonseAvg": 210000000,
+      "jeonseRate": 36.5,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 515000000
-      },
-      {
         "date": "2026.08",
         "floor": 7,
-        "price": 510000000
+        "price": 520000000
       },
       {
-        "date": "2026.06",
+        "date": "2026.01",
         "floor": 5,
-        "price": 503000000
+        "price": 417000000
       }
     ],
     "highlights": [
@@ -9498,32 +9678,37 @@
     "areaSqMeter": 49.5,
     "pyeong": 20,
     "rooms": "방 2 / 욕실 1",
-    "priceKrw": 515000000,
-    "priceDisplay": "5억 1,500만",
-    "priceRange": "4.9억 ~ 5.4억",
+    "priceKrw": 832000000,
+    "priceDisplay": "8억 3,200만",
+    "priceRange": "8억 ~ 9.3억",
     "kbPrice": {
-      "generalAvg": 520000000,
-      "highAvg": 545000000,
-      "lowAvg": 495000000,
-      "jeonseAvg": 310000000,
-      "jeonseRate": 59.6,
+      "generalAvg": 815000000,
+      "highAvg": 850000000,
+      "lowAvg": 735000000,
+      "jeonseAvg": 315000000,
+      "jeonseRate": 38.7,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
         "floor": 11,
-        "price": 520000000
+        "price": 800000000
       },
       {
-        "date": "2026.08",
+        "date": "2026.09",
+        "floor": 15,
+        "price": 849000000
+      },
+      {
+        "date": "2026.09",
         "floor": 7,
-        "price": 515000000
+        "price": 860000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 508000000
+        "date": "2026.09",
+        "floor": 10,
+        "price": 870000000
       }
     ],
     "highlights": [
@@ -9571,32 +9756,37 @@
     "areaSqMeter": 58.46,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 520000000,
-    "priceDisplay": "5억 2,000만",
-    "priceRange": "5.0억 ~ 5.5억",
+    "priceKrw": 640000000,
+    "priceDisplay": "6억 4,000만",
+    "priceRange": "5.9억 ~ 7.2억",
     "kbPrice": {
-      "generalAvg": 525000000,
-      "highAvg": 550000000,
-      "lowAvg": 500000000,
-      "jeonseAvg": 320000000,
-      "jeonseRate": 61,
+      "generalAvg": 640000000,
+      "highAvg": 655000000,
+      "lowAvg": 590000000,
+      "jeonseAvg": 340000000,
+      "jeonseRate": 53.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
+        "date": "2026.10",
+        "floor": 2,
+        "price": 640000000
+      },
+      {
         "date": "2026.09",
-        "floor": 11,
-        "price": 525000000
+        "floor": 14,
+        "price": 655000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 520000000
+        "date": "2026.09",
+        "floor": 8,
+        "price": 640000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 513000000
+        "date": "2026.09",
+        "floor": 15,
+        "price": 595000000
       }
     ],
     "highlights": [
@@ -9644,32 +9834,37 @@
     "areaSqMeter": 59.99,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 470000000,
-    "priceDisplay": "4억 7,000만",
-    "priceRange": "4.5억 ~ 4.9억",
+    "priceKrw": 514000000,
+    "priceDisplay": "5억 1,400만",
+    "priceRange": "5.6억 ~ 6억",
     "kbPrice": {
-      "generalAvg": 475000000,
-      "highAvg": 495000000,
-      "lowAvg": 450000000,
-      "jeonseAvg": 310000000,
-      "jeonseRate": 65.3,
+      "generalAvg": 510000000,
+      "highAvg": 545000000,
+      "lowAvg": 440000000,
+      "jeonseAvg": 330000000,
+      "jeonseRate": 64.7,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
+        "date": "2026.10",
+        "floor": 10,
+        "price": 518000000
+      },
+      {
         "date": "2026.09",
-        "floor": 11,
-        "price": 475000000
+        "floor": 6,
+        "price": 550000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 470000000
+        "floor": 8,
+        "price": 390000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 463000000
+        "date": "2026.07",
+        "floor": 4,
+        "price": 448000000
       }
     ],
     "highlights": [
@@ -9717,32 +9912,27 @@
     "areaSqMeter": 59.98,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 615000000,
-    "priceDisplay": "6억 1,500만",
-    "priceRange": "5.9억 ~ 6.4억",
+    "priceKrw": 1020000000,
+    "priceDisplay": "10억 2,000만",
+    "priceRange": "10.5억 ~ 15억",
     "kbPrice": {
-      "generalAvg": 620000000,
-      "highAvg": 650000000,
-      "lowAvg": 590000000,
-      "jeonseAvg": 390000000,
-      "jeonseRate": 62.9,
+      "generalAvg": 1020000000,
+      "highAvg": 1080000000,
+      "lowAvg": 960000000,
+      "jeonseAvg": 430000000,
+      "jeonseRate": 42.2,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 620000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 615000000
-      },
-      {
         "date": "2026.06",
-        "floor": 5,
-        "price": 608000000
+        "floor": 15,
+        "price": 1045000000
+      },
+      {
+        "date": "2026.04",
+        "floor": 1,
+        "price": 830000000
       }
     ],
     "highlights": [
@@ -9790,32 +9980,27 @@
     "areaSqMeter": 59.88,
     "pyeong": 24,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 555000000,
-    "priceDisplay": "5억 5,500만",
-    "priceRange": "5.3억 ~ 5.8억",
+    "priceKrw": 740000000,
+    "priceDisplay": "7억 4,000만",
+    "priceRange": "7.55억 ~ 7.83억",
     "kbPrice": {
-      "generalAvg": 560000000,
-      "highAvg": 585000000,
-      "lowAvg": 530000000,
-      "jeonseAvg": 350000000,
-      "jeonseRate": 62.5,
+      "generalAvg": 740000000,
+      "highAvg": 765000000,
+      "lowAvg": 645000000,
+      "jeonseAvg": 400000000,
+      "jeonseRate": 54.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 560000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 555000000
+        "date": "2026.06",
+        "floor": 4,
+        "price": 700000000
       },
       {
         "date": "2026.06",
-        "floor": 5,
-        "price": 548000000
+        "floor": 16,
+        "price": 718000000
       }
     ],
     "highlights": [
@@ -9863,32 +10048,37 @@
     "areaSqMeter": 59.98,
     "pyeong": 25,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 520000000,
-    "priceDisplay": "5억 2,000만",
-    "priceRange": "5.0억 ~ 5.5억",
+    "priceKrw": 493000000,
+    "priceDisplay": "4억 9,300만",
+    "priceRange": "4.4억 ~ 5.2억",
     "kbPrice": {
-      "generalAvg": 525000000,
-      "highAvg": 550000000,
-      "lowAvg": 500000000,
-      "jeonseAvg": 350000000,
-      "jeonseRate": 66.7,
+      "generalAvg": 485000000,
+      "highAvg": 502500000,
+      "lowAvg": 450000000,
+      "jeonseAvg": 325000000,
+      "jeonseRate": 67,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 525000000
+        "date": "2026.08",
+        "floor": 6,
+        "price": 490000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 520000000
+        "floor": 19,
+        "price": 500000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 513000000
+        "date": "2026.07",
+        "floor": 8,
+        "price": 506000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 7,
+        "price": 498000000
       }
     ],
     "highlights": [
@@ -9936,32 +10126,37 @@
     "areaSqMeter": 84.97,
     "pyeong": 34,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 545000000,
-    "priceDisplay": "5억 4,500만",
-    "priceRange": "5.2억 ~ 5.7억",
+    "priceKrw": 487000000,
+    "priceDisplay": "4억 8,700만",
+    "priceRange": "4.3억 ~ 7.2억",
     "kbPrice": {
-      "generalAvg": 550000000,
-      "highAvg": 575000000,
-      "lowAvg": 525000000,
-      "jeonseAvg": 360000000,
-      "jeonseRate": 65.5,
+      "generalAvg": 490000000,
+      "highAvg": 500000000,
+      "lowAvg": 477500000,
+      "jeonseAvg": 355000000,
+      "jeonseRate": 72.4,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
+        "date": "2026.10",
+        "floor": 10,
+        "price": 483000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 10,
+        "price": 480000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 6,
+        "price": 500000000
+      },
+      {
         "date": "2026.09",
-        "floor": 11,
-        "price": 550000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 545000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 538000000
+        "floor": 6,
+        "price": 483000000
       }
     ],
     "highlights": [
@@ -10009,32 +10204,37 @@
     "areaSqMeter": 59.98,
     "pyeong": 25,
     "rooms": "방 3 / 욕실 1",
-    "priceKrw": 465000000,
-    "priceDisplay": "4억 6,500만",
-    "priceRange": "4.4억 ~ 4.9억",
+    "priceKrw": 458000000,
+    "priceDisplay": "4억 5,800만",
+    "priceRange": "4.5억 ~ 4.85억",
     "kbPrice": {
-      "generalAvg": 470000000,
-      "highAvg": 490000000,
-      "lowAvg": 445000000,
-      "jeonseAvg": 300000000,
-      "jeonseRate": 63.8,
+      "generalAvg": 455000000,
+      "highAvg": 470000000,
+      "lowAvg": 430000000,
+      "jeonseAvg": 310000000,
+      "jeonseRate": 68.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 470000000
+        "date": "2026.08",
+        "floor": 10,
+        "price": 440000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 465000000
+        "floor": 19,
+        "price": 460000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 458000000
+        "date": "2026.08",
+        "floor": 12,
+        "price": 477000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 12,
+        "price": 460000000
       }
     ],
     "highlights": [
@@ -10082,32 +10282,37 @@
     "areaSqMeter": 84.92,
     "pyeong": 34,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 565000000,
-    "priceDisplay": "5억 6,500만",
-    "priceRange": "5.4억 ~ 5.9억",
+    "priceKrw": 513000000,
+    "priceDisplay": "5억 1,300만",
+    "priceRange": "4.7억 ~ 6억",
     "kbPrice": {
-      "generalAvg": 570000000,
-      "highAvg": 595000000,
-      "lowAvg": 540000000,
-      "jeonseAvg": 360000000,
-      "jeonseRate": 63.2,
+      "generalAvg": 525000000,
+      "highAvg": 547500000,
+      "lowAvg": 490000000,
+      "jeonseAvg": 350000000,
+      "jeonseRate": 66.7,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
+        "date": "2026.10",
+        "floor": 2,
+        "price": 480000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 2,
+        "price": 500000000
+      },
+      {
         "date": "2026.09",
-        "floor": 11,
-        "price": 570000000
+        "floor": 21,
+        "price": 558000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 565000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 558000000
+        "floor": 3,
+        "price": 450000000
       }
     ],
     "highlights": [
@@ -10155,32 +10360,37 @@
     "areaSqMeter": 84.96,
     "pyeong": 34,
     "rooms": "방 3 / 욕실 2",
-    "priceKrw": 690000000,
-    "priceDisplay": "6억 9,000만",
-    "priceRange": "6.6억 ~ 7.3억",
+    "priceKrw": 750000000,
+    "priceDisplay": "7억 5,000만",
+    "priceRange": "7.1억 ~ 9억",
     "kbPrice": {
-      "generalAvg": 695000000,
-      "highAvg": 725000000,
-      "lowAvg": 660000000,
-      "jeonseAvg": 420000000,
-      "jeonseRate": 60.4,
+      "generalAvg": 770000000,
+      "highAvg": 787500000,
+      "lowAvg": 710000000,
+      "jeonseAvg": 435000000,
+      "jeonseRate": 56.5,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 695000000
+        "floor": 4,
+        "price": 730000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 690000000
+        "date": "2026.09",
+        "floor": 9,
+        "price": 747000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 683000000
+        "date": "2026.09",
+        "floor": 2,
+        "price": 665000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 26,
+        "price": 790000000
       }
     ],
     "highlights": [
@@ -10374,32 +10584,27 @@
     "areaSqMeter": 59.5,
     "pyeong": 23,
     "rooms": "방 2개 / 욕실 1개",
-    "priceKrw": 820000000,
-    "priceDisplay": "8억 2,000만",
-    "priceRange": "8.0억 ~ 8.5억",
+    "priceKrw": 1200000000,
+    "priceDisplay": "12억",
+    "priceRange": "11.5억 ~ 12.75억",
     "kbPrice": {
-      "generalAvg": 810000000,
-      "highAvg": 845000000,
-      "lowAvg": 770000000,
-      "jeonseAvg": 380000000,
-      "jeonseRate": 46.9,
+      "generalAvg": 1200000000,
+      "highAvg": 1275000000,
+      "lowAvg": 1150000000,
+      "jeonseAvg": null,
+      "jeonseRate": null,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
+        "date": "2026.02",
+        "floor": 9,
+        "price": 1200000000
+      },
+      {
+        "date": "2026.02",
         "floor": 10,
-        "price": 825000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 820000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 813000000
+        "price": 1255000000
       }
     ],
     "highlights": [
@@ -10447,32 +10652,27 @@
     "areaSqMeter": 59.94,
     "pyeong": 24,
     "rooms": "방 2개 / 욕실 1개",
-    "priceKrw": 870000000,
-    "priceDisplay": "8억 7,000만",
-    "priceRange": "8.5억 ~ 8.9억",
+    "priceKrw": 1475000000,
+    "priceDisplay": "14억 7,500만",
+    "priceRange": "15억 ~ 16억",
     "kbPrice": {
-      "generalAvg": 865000000,
-      "highAvg": 905000000,
-      "lowAvg": 820000000,
-      "jeonseAvg": 460000000,
-      "jeonseRate": 53.2,
+      "generalAvg": 1400000000,
+      "highAvg": 1500000000,
+      "lowAvg": 1300000000,
+      "jeonseAvg": 485000000,
+      "jeonseRate": 34.6,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 875000000
+        "date": "2026.07",
+        "floor": 12,
+        "price": 1549000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 870000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 863000000
+        "date": "2026.05",
+        "floor": 4,
+        "price": 1524000000
       }
     ],
     "highlights": [
@@ -10520,32 +10720,27 @@
     "areaSqMeter": 59.98,
     "pyeong": 24,
     "rooms": "방 3개 / 욕실 2개",
-    "priceKrw": 890000000,
-    "priceDisplay": "8억 9,000만",
-    "priceRange": "8.7억 ~ 9.0억",
+    "priceKrw": 1700000000,
+    "priceDisplay": "17억",
+    "priceRange": "18억 ~ 18.3억",
     "kbPrice": {
-      "generalAvg": 885000000,
-      "highAvg": 925000000,
-      "lowAvg": 840000000,
-      "jeonseAvg": 540000000,
-      "jeonseRate": 61,
+      "generalAvg": 1700000000,
+      "highAvg": 1750000000,
+      "lowAvg": 1625000000,
+      "jeonseAvg": 715000000,
+      "jeonseRate": 42.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 895000000
+        "date": "2025.06",
+        "floor": 12,
+        "price": 1392000000
       },
       {
-        "date": "2026.08",
+        "date": "2025.05",
         "floor": 7,
-        "price": 890000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 883000000
+        "price": 780000000
       }
     ],
     "highlights": [
@@ -10666,32 +10861,27 @@
     "areaSqMeter": 56.5,
     "pyeong": 23,
     "rooms": "방 2개 / 욕실 1개",
-    "priceKrw": 380000000,
-    "priceDisplay": "3억 8,000만",
-    "priceRange": "3.6억 ~ 4.0억",
+    "priceKrw": 388000000,
+    "priceDisplay": "3억 8,800만",
+    "priceRange": "3.65억 ~ 4.5억",
     "kbPrice": {
-      "generalAvg": 375000000,
-      "highAvg": 390000000,
-      "lowAvg": 355000000,
-      "jeonseAvg": 250000000,
-      "jeonseRate": 66.7,
+      "generalAvg": 380000000,
+      "highAvg": 400000000,
+      "lowAvg": 360000000,
+      "jeonseAvg": 275000000,
+      "jeonseRate": 72.4,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 385000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 380000000
+        "floor": 6,
+        "price": 395000000
       },
       {
         "date": "2026.06",
-        "floor": 5,
-        "price": 373000000
+        "floor": 6,
+        "price": 390000000
       }
     ],
     "highlights": [
@@ -10739,32 +10929,27 @@
     "areaSqMeter": 58.6,
     "pyeong": 24,
     "rooms": "방 2개 / 욕실 1개",
-    "priceKrw": 550000000,
-    "priceDisplay": "5억 5,000만",
-    "priceRange": "5.3억 ~ 5.8억",
+    "priceKrw": 711000000,
+    "priceDisplay": "7억 1,100만",
+    "priceRange": "6.9억 ~ 7.38억",
     "kbPrice": {
-      "generalAvg": 545000000,
-      "highAvg": 570000000,
-      "lowAvg": 520000000,
-      "jeonseAvg": 280000000,
-      "jeonseRate": 51.4,
+      "generalAvg": 725000000,
+      "highAvg": 737500000,
+      "lowAvg": 690000000,
+      "jeonseAvg": 285000000,
+      "jeonseRate": 39.3,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 555000000
+        "floor": 2,
+        "price": 705000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 550000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 543000000
+        "floor": 2,
+        "price": 688000000
       }
     ],
     "highlights": [
@@ -10958,32 +11143,37 @@
     "areaSqMeter": 59.98,
     "pyeong": 24,
     "rooms": "방 3개 / 욕실 1개",
-    "priceKrw": 495000000,
-    "priceDisplay": "4억 9,500만",
-    "priceRange": "4.8억 ~ 5.1억",
+    "priceKrw": 693000000,
+    "priceDisplay": "6억 9,300만",
+    "priceRange": "6.25억 ~ 7.35억",
     "kbPrice": {
-      "generalAvg": 490000000,
-      "highAvg": 510000000,
-      "lowAvg": 465000000,
-      "jeonseAvg": 320000000,
-      "jeonseRate": 65.3,
+      "generalAvg": 695000000,
+      "highAvg": 735000000,
+      "lowAvg": 625000000,
+      "jeonseAvg": 370000000,
+      "jeonseRate": 53.2,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
+        "date": "2026.10",
+        "floor": 13,
+        "price": 690000000
+      },
+      {
         "date": "2026.09",
-        "floor": 11,
-        "price": 500000000
+        "floor": 12,
+        "price": 750000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 495000000
+        "date": "2026.07",
+        "floor": 1,
+        "price": 620000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 488000000
+        "date": "2026.07",
+        "floor": 1,
+        "price": 600000000
       }
     ],
     "highlights": [
@@ -11031,32 +11221,37 @@
     "areaSqMeter": 59.9,
     "pyeong": 24,
     "rooms": "방 2개 / 욕실 1개",
-    "priceKrw": 610000000,
-    "priceDisplay": "6억 1,000만",
-    "priceRange": "5.9억 ~ 6.4억",
+    "priceKrw": 798000000,
+    "priceDisplay": "7억 9,800만",
+    "priceRange": "7.7억 ~ 9.5억",
     "kbPrice": {
-      "generalAvg": 600000000,
-      "highAvg": 625000000,
-      "lowAvg": 570000000,
-      "jeonseAvg": 380000000,
-      "jeonseRate": 63.3,
+      "generalAvg": 800000000,
+      "highAvg": 850000000,
+      "lowAvg": 750000000,
+      "jeonseAvg": null,
+      "jeonseRate": null,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
+        "date": "2026.10",
+        "floor": 4,
+        "price": 600000000
+      },
+      {
         "date": "2026.09",
-        "floor": 11,
-        "price": 615000000
+        "floor": 10,
+        "price": 796000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
+        "date": "2026.09",
+        "floor": 14,
+        "price": 820000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 1,
         "price": 610000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 603000000
       }
     ],
     "highlights": [
@@ -11177,32 +11372,27 @@
     "areaSqMeter": 59.98,
     "pyeong": 25,
     "rooms": "방 3개 / 욕실 2개",
-    "priceKrw": 350000000,
-    "priceDisplay": "3억 5,000만",
-    "priceRange": "3.3억 ~ 3.7억",
+    "priceKrw": 326000000,
+    "priceDisplay": "3억 2,600만",
+    "priceRange": "3.15억 ~ 3.5억",
     "kbPrice": {
-      "generalAvg": 345000000,
-      "highAvg": 360000000,
-      "lowAvg": 330000000,
-      "jeonseAvg": 240000000,
-      "jeonseRate": 69.6,
+      "generalAvg": 337500000,
+      "highAvg": 350000000,
+      "lowAvg": 315000000,
+      "jeonseAvg": 222500000,
+      "jeonseRate": 65.9,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 355000000
+        "date": "2026.07",
+        "floor": 3,
+        "price": 310000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 350000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 343000000
+        "date": "2026.07",
+        "floor": 12,
+        "price": 320000000
       }
     ],
     "highlights": [
@@ -11250,32 +11440,37 @@
     "areaSqMeter": 84.98,
     "pyeong": 33,
     "rooms": "방 3개 / 욕실 2개",
-    "priceKrw": 820000000,
-    "priceDisplay": "8억 2,000만",
-    "priceRange": "8.0억 ~ 8.5억",
+    "priceKrw": 1148000000,
+    "priceDisplay": "11억 4,800만",
+    "priceRange": "11.6억 ~ 13.5억",
     "kbPrice": {
-      "generalAvg": 810000000,
-      "highAvg": 845000000,
-      "lowAvg": 770000000,
-      "jeonseAvg": 520000000,
-      "jeonseRate": 64.2,
+      "generalAvg": 1150000000,
+      "highAvg": 1200000000,
+      "lowAvg": 1100000000,
+      "jeonseAvg": 650000000,
+      "jeonseRate": 56.5,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 825000000
+        "floor": 24,
+        "price": 1145000000
       },
       {
         "date": "2026.08",
-        "floor": 7,
-        "price": 820000000
+        "floor": 23,
+        "price": 1195000000
       },
       {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 813000000
+        "date": "2026.07",
+        "floor": 20,
+        "price": 1060000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 13,
+        "price": 1095000000
       }
     ],
     "highlights": [
@@ -11323,32 +11518,27 @@
     "areaSqMeter": 84.9,
     "pyeong": 33,
     "rooms": "방 3개 / 욕실 2개",
-    "priceKrw": 480000000,
-    "priceDisplay": "4억 8,000만",
-    "priceRange": "4.6억 ~ 5.0억",
+    "priceKrw": 575000000,
+    "priceDisplay": "5억 7,500만",
+    "priceRange": "5.5억 ~ 5.9억",
     "kbPrice": {
-      "generalAvg": 475000000,
-      "highAvg": 495000000,
-      "lowAvg": 450000000,
-      "jeonseAvg": 330000000,
-      "jeonseRate": 69.5,
+      "generalAvg": 575000000,
+      "highAvg": 605000000,
+      "lowAvg": 555000000,
+      "jeonseAvg": 380000000,
+      "jeonseRate": 66.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
-        "date": "2026.09",
-        "floor": 11,
-        "price": 485000000
+        "date": "2026.05",
+        "floor": 31,
+        "price": 584000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 480000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 473000000
+        "date": "2026.05",
+        "floor": 22,
+        "price": 543000000
       }
     ],
     "highlights": [
@@ -11469,32 +11659,27 @@
     "areaSqMeter": 59.98,
     "pyeong": 25,
     "rooms": "방 3개 / 욕실 2개",
-    "priceKrw": 495000000,
-    "priceDisplay": "4억 9,500만",
-    "priceRange": "4.8억 ~ 5.1억",
+    "priceKrw": 491000000,
+    "priceDisplay": "4억 9,100만",
+    "priceRange": "5억 ~ 5.3억",
     "kbPrice": {
-      "generalAvg": 490000000,
-      "highAvg": 510000000,
-      "lowAvg": 465000000,
-      "jeonseAvg": 350000000,
-      "jeonseRate": 71.4,
+      "generalAvg": 485000000,
+      "highAvg": 495000000,
+      "lowAvg": 455000000,
+      "jeonseAvg": 340000000,
+      "jeonseRate": 70.1,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
+        "date": "2026.10",
+        "floor": 10,
+        "price": 493000000
+      },
+      {
         "date": "2026.09",
-        "floor": 11,
-        "price": 500000000
-      },
-      {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 495000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 488000000
+        "floor": 20,
+        "price": 499000000
       }
     ],
     "highlights": [
@@ -11542,32 +11727,27 @@
     "areaSqMeter": 84.99,
     "pyeong": 34,
     "rooms": "방 3개 / 욕실 2개",
-    "priceKrw": 585000000,
-    "priceDisplay": "5억 8,500만",
-    "priceRange": "5.7억 ~ 6.1억",
+    "priceKrw": 559000000,
+    "priceDisplay": "5억 5,900만",
+    "priceRange": "5.5억 ~ 6.1억",
     "kbPrice": {
-      "generalAvg": 580000000,
-      "highAvg": 605000000,
-      "lowAvg": 550000000,
-      "jeonseAvg": 410000000,
-      "jeonseRate": 70.7,
+      "generalAvg": 550000000,
+      "highAvg": 560000000,
+      "lowAvg": 530000000,
+      "jeonseAvg": 400000000,
+      "jeonseRate": 72.7,
       "updatedAt": "2026.10.16"
     },
     "recentTrades": [
       {
         "date": "2026.09",
-        "floor": 11,
-        "price": 590000000
+        "floor": 15,
+        "price": 550000000
       },
       {
-        "date": "2026.08",
-        "floor": 7,
-        "price": 585000000
-      },
-      {
-        "date": "2026.06",
-        "floor": 5,
-        "price": 578000000
+        "date": "2026.07",
+        "floor": 34,
+        "price": 584000000
       }
     ],
     "highlights": [

@@ -588,8 +588,12 @@ export default function PropertyDetailModal({
                   </div>
                   <div className="bg-white p-3 rounded-lg border border-amber-200/60 shadow-xs">
                     <span className="text-xs text-slate-400 block whitespace-nowrap">전세평균가 / 전세가율</span>
-                    <span className="text-base font-extrabold text-blue-600 block whitespace-nowrap">{formatMoney(kb.jeonseAvg)}</span>
-                    <span className="text-xs font-bold text-emerald-600 block mt-0.5 whitespace-nowrap">전세가율 {kb.jeonseRate}%</span>
+                    <span className="text-base font-extrabold text-blue-600 block whitespace-nowrap">
+                      {kb.jeonseAvg ? formatMoney(kb.jeonseAvg) : '시세 미제공'}
+                    </span>
+                    <span className="text-xs font-bold text-emerald-600 block mt-0.5 whitespace-nowrap">
+                      {kb.jeonseRate ? `전세가율 ${kb.jeonseRate}%` : '전세가율 산정불가'}
+                    </span>
                   </div>
                 </div>
               </div>
