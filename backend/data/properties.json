@@ -3470,5 +3470,1691 @@
         "2018년 준신축 랜드마크"
       ]
     }
+  },
+  {
+    "id": "seoul-dobong-banghak-shindonga-1-21",
+    "name": "방학신동아1단지",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "방학동",
+    "address": "서울특별시 도봉구 방학로 193",
+    "buildYear": 1986,
+    "totalUnits": 3169,
+    "totalFloors": 15,
+    "subwayStation": "솔밭공원역 (우이신설선) / 방학역 (1호선)",
+    "subwayDistance": "도보 10분 / 마을버스 5분 (우이신설 연장선 수혜)",
+    "areaSqMeter": 53.82,
+    "pyeong": 21,
+    "rooms": "방 2 / 욕실 1",
+    "priceKrw": 395000000,
+    "priceDisplay": "3억 9,500만",
+    "priceRange": "3.8억 ~ 4.2억",
+    "kbPrice": {
+      "generalAvg": 400000000,
+      "highAvg": 420000000,
+      "lowAvg": 380000000,
+      "jeonseAvg": 245000000,
+      "jeonseRate": 61.3,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 7,
+        "price": 398000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 11,
+        "price": 392000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 5,
+        "price": 388000000
+      }
+    ],
+    "highlights": [
+      "3,169세대 서울 방학동 상징적 매머드 대단지",
+      "3억대 서울 실거주 가성비 1티어 단지",
+      "발바닥공원 및 북한산 숲세권 힐링 인프라",
+      "신통기획 정비구역 지정, 4,000세대 신축 재건축 추진"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/274",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/274",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B0%A9%ED%95%99%EC%8B%A0%EB%8F%99%EC%95%841%EB%8B%A8%EC%A7%80",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 53.82㎡ (공급 21평형) 실속 복도식 평면도",
+      "bay": "2-Bay",
+      "structure": "복도식 판상형",
+      "entrance": "복도식",
+      "roomsCount": 2,
+      "bathroomsCount": 1,
+      "kitchenType": "일자형 주방 + 다용도 발코니",
+      "ventilation": "전면 발코니 채광 양호",
+      "balconyStatus": "남향 광폭 발코니 완비",
+      "livingRoomWidth": "3.6m",
+      "masterBedroomWidth": "3.5m",
+      "features": [
+        "3억 후반대에 진입 가능한 서울 3천세대 대단지",
+        "방 2개 + 쾌적한 거실 겸 침실 분리 구조",
+        "디딤돌 및 보금자리론 활용 시 실투자금 1.1억대",
+        "재건축 사업 정비구역 지정 고시 완료"
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "274"
+  },
+  {
+    "id": "seoul-dobong-banghak-shindonga-1-26",
+    "name": "방학신동아1단지",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "방학동",
+    "address": "서울특별시 도봉구 방학로 193",
+    "buildYear": 1986,
+    "totalUnits": 3169,
+    "totalFloors": 15,
+    "subwayStation": "솔밭공원역 (우이신설선) / 방학역 (1호선)",
+    "subwayDistance": "도보 10분 / 마을버스 5분 (우이신설 연장선 수혜)",
+    "areaSqMeter": 70.83,
+    "pyeong": 26,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 475000000,
+    "priceDisplay": "4억 7,500만",
+    "priceRange": "4.6억 ~ 5.0억",
+    "kbPrice": {
+      "generalAvg": 480000000,
+      "highAvg": 505000000,
+      "lowAvg": 455000000,
+      "jeonseAvg": 300000000,
+      "jeonseRate": 62.5,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 480000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 12,
+        "price": 475000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 4,
+        "price": 465000000
+      }
+    ],
+    "highlights": [
+      "방 3개 구성의 4억 중반 서울 실속 중형 아파트",
+      "3,169세대 대단지 관리비 절감 및 풍부한 커뮤니티",
+      "신학초등학교·신학중학교 안심 도보 통학",
+      "우이신설선 연장선 방학역 환승 호재 중심"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/274",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/274",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B0%A9%ED%95%99%EC%8B%A0%EB%8F%99%EC%95%841%EB%8B%A8%EC%A7%80",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 70.83㎡ (공급 26평형) 방3개 판상형 평면도",
+      "bay": "2-Bay",
+      "structure": "복도식 판상형",
+      "entrance": "복도식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "ㄱ자형 독립 주방",
+      "ventilation": "주방-거실 통풍 우수",
+      "balconyStatus": "남향 통발코니",
+      "livingRoomWidth": "3.9m",
+      "masterBedroomWidth": "3.6m",
+      "features": [
+        "4억 중반대 방 3개 완비로 3~4인 가구 안성맞춤",
+        "신탁방식 신통기획 4,000세대 재건축 기대",
+        "신생아 특례 및 디딤돌 대출 100% 적격",
+        "도보 3분 발바닥공원 및 북한산 숲세권"
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "274"
+  },
+  {
+    "id": "seoul-dobong-banghak-shindonga-1-31",
+    "name": "방학신동아1단지",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "방학동",
+    "address": "서울특별시 도봉구 방학로 193",
+    "buildYear": 1986,
+    "totalUnits": 3169,
+    "totalFloors": 15,
+    "subwayStation": "솔밭공원역 (우이신설선) / 방학역 (1호선)",
+    "subwayDistance": "도보 10분 / 마을버스 5분 (우이신설 연장선 수혜)",
+    "areaSqMeter": 84.87,
+    "pyeong": 31,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 530000000,
+    "priceDisplay": "5억 3,000만",
+    "priceRange": "5.1억 ~ 5.6억",
+    "kbPrice": {
+      "generalAvg": 535000000,
+      "highAvg": 560000000,
+      "lowAvg": 510000000,
+      "jeonseAvg": 340000000,
+      "jeonseRate": 63.6,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 10,
+        "price": 535000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 6,
+        "price": 528000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 14,
+        "price": 520000000
+      }
+    ],
+    "highlights": [
+      "3,169세대 대단지 대표 전용 84㎡ 국민평형",
+      "5억 초반대 서울 방3개 30평대 최상의 가성비",
+      "신동아 1·2·3단지 중 가장 큰 대지면적과 재건축 지분",
+      "신생아 특례대출 적용 시 필요 현금 1.6억 내외"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/274",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/274",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B0%A9%ED%95%99%EC%8B%A0%EB%8F%99%EC%95%841%EB%8B%A8%EC%A7%80",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.87㎡ (공급 31평형) 계단식 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "계단식 판상형",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "ㄷ자형 주방 + 다용도실",
+      "ventilation": "거실-주방 맞통풍 구조",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.3m",
+      "masterBedroomWidth": "3.8m",
+      "features": [
+        "넓은 거실과 쾌적한 침실 3개 계단식 배치",
+        "3천세대 대단지의 여유로운 동간 간격과 지상 주차",
+        "보금자리론 6억 이하 기준 완벽 충족",
+        "향후 재건축 시 대형 평형 분양 우위"
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "274"
+  },
+  {
+    "id": "seoul-dobong-banghak-daesang-hyundai-25",
+    "name": "대상타운현대",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "방학동",
+    "address": "서울특별시 도봉구 마들로 616",
+    "buildYear": 2001,
+    "totalUnits": 1278,
+    "totalFloors": 23,
+    "subwayStation": "방학역 (1호선)",
+    "subwayDistance": "도보 3분 (초역세권)",
+    "areaSqMeter": 59.88,
+    "pyeong": 25,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 660000000,
+    "priceDisplay": "6억 6,000만",
+    "priceRange": "6.4억 ~ 6.9억",
+    "kbPrice": {
+      "generalAvg": 665000000,
+      "highAvg": 695000000,
+      "lowAvg": 635000000,
+      "jeonseAvg": 420000000,
+      "jeonseRate": 63.2,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 15,
+        "price": 665000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 8,
+        "price": 658000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 11,
+        "price": 650000000
+      }
+    ],
+    "highlights": [
+      "1호선 방학역 도보 3분 평지 초역세권 현대 랜드마크",
+      "1,278세대 대단지 + 2001년식 준신축급 쾌적함",
+      "단지 바로 앞 홈플러스, 도봉구청, 중랑천 수변 산책로",
+      "25평형 방 3개 / 욕실 2개 계단식 최선호 구조"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/2980",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/2980",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8C%80%EC%83%81%ED%83%80%EC%9A%B4%ED%98%84%EB%8C%80",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 59.88㎡ (공급 25평형) 계단식 방3·욕2 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "ㄱ자형 주방 + 보조 발코니",
+      "ventilation": "거실-주방 맞통풍 원활",
+      "balconyStatus": "남향 광폭 발코니 (안방+거실+침실)",
+      "livingRoomWidth": "3.8m",
+      "masterBedroomWidth": "3.5m",
+      "features": [
+        "25평형임에도 부부욕실 포함 욕실 2개 완비",
+        "방학역 도보 3분 역세권 출퇴근 최강자",
+        "신생아 특례 9억 이하 기준 완벽 적격 (한도 5억 전액 활용)",
+        "홈플러스 및 CGV 영화관 슬세권 인프라"
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "2980"
+  },
+  {
+    "id": "seoul-dobong-banghak-daesang-hyundai-33",
+    "name": "대상타운현대",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "방학동",
+    "address": "서울특별시 도봉구 마들로 616",
+    "buildYear": 2001,
+    "totalUnits": 1278,
+    "totalFloors": 23,
+    "subwayStation": "방학역 (1호선)",
+    "subwayDistance": "도보 3분 (초역세권)",
+    "areaSqMeter": 84.96,
+    "pyeong": 33,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 780000000,
+    "priceDisplay": "7억 8,000만",
+    "priceRange": "7.5억 ~ 8.2억",
+    "kbPrice": {
+      "generalAvg": 780000000,
+      "highAvg": 815000000,
+      "lowAvg": 745000000,
+      "jeonseAvg": 490000000,
+      "jeonseRate": 62.8,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 18,
+        "price": 785000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 12,
+        "price": 775000000
+      },
+      {
+        "date": "2026.05",
+        "floor": 6,
+        "price": 760000000
+      }
+    ],
+    "highlights": [
+      "도봉구 방학동 명실상부 1등 대장 아파트 33평",
+      "방학역 도보 3분 초역세권 + 최고 23층 탁 트인 조망",
+      "홈플러스, 도봉구청, 보건소 완벽 행정·생활 인프라",
+      "신생아 특례대출(9억 이하) 최대 5억 원 대출 최적 단지"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/2980",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/2980",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8C%80%EC%83%81%ED%83%80%EC%9A%B4%ED%98%84%EB%8C%80",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.96㎡ (공급 33평형) 3-Bay 판상형 계단식 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "ㄷ자형 대면형 주방 + 세탁실",
+      "ventilation": "전면 3베이 우수한 채광과 맞통풍",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.5m",
+      "masterBedroomWidth": "3.9m",
+      "features": [
+        "1,278세대 대단지 메인 로열 평형",
+        "넓은 거실과 안방 드레스룸/파우더룸 공간",
+        "지하주차장 엘리베이터 연결 편의성",
+        "도봉구 내 가장 탄탄한 실거주 만족도와 환금성"
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "2980"
+  },
+  {
+    "id": "seoul-dobong-banghak-byucksan-2-26",
+    "name": "방학벽산2차아파트",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "방학동",
+    "address": "서울특별시 도봉구 방학로 210",
+    "buildYear": 1993,
+    "totalUnits": 944,
+    "totalFloors": 15,
+    "subwayStation": "솔밭공원역 (우이신설선) / 방학역 (1호선)",
+    "subwayDistance": "도보 11분 / 마을버스 5분",
+    "areaSqMeter": 59.94,
+    "pyeong": 26,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 465000000,
+    "priceDisplay": "4억 6,500만",
+    "priceRange": "4.5억 ~ 4.9억",
+    "kbPrice": {
+      "generalAvg": 470000000,
+      "highAvg": 495000000,
+      "lowAvg": 445000000,
+      "jeonseAvg": 295000000,
+      "jeonseRate": 62.8,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 10,
+        "price": 470000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 5,
+        "price": 462000000
+      }
+    ],
+    "highlights": [
+      "944세대 대단지 방학벽산 대표 알짜 26평",
+      "4억 중반대 방 3개 서울 구축 가성비 아파트",
+      "단지 뒤 북한산 둘레길 및 발바닥공원 인접",
+      "초당초등학교 도보 5분 안심 통학권"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3261",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3261",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B0%A9%ED%95%99%EB%8F%99%20%EB%B2%BD%EC%82%B02%EC%B0%A8",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 59.94㎡ (공급 26평형) 복도식 방3 평면도",
+      "bay": "2-Bay",
+      "structure": "복도식 판상형",
+      "entrance": "복도식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "일자형 주방 + 다용도실",
+      "ventilation": "거실 맞통풍",
+      "balconyStatus": "남향 통발코니",
+      "livingRoomWidth": "3.7m",
+      "masterBedroomWidth": "3.4m",
+      "features": [
+        "4억 중반대 가격으로 부담 없는 내집마련",
+        "디딤돌 및 보금자리론 최적 금리 적용",
+        "조용하고 쾌적한 주거 환경"
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "3261"
+  },
+  {
+    "id": "seoul-dobong-banghak-byucksan-2-31",
+    "name": "방학벽산2차아파트",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "방학동",
+    "address": "서울특별시 도봉구 방학로 210",
+    "buildYear": 1993,
+    "totalUnits": 944,
+    "totalFloors": 15,
+    "subwayStation": "솔밭공원역 (우이신설선) / 방학역 (1호선)",
+    "subwayDistance": "도보 11분 / 마을버스 5분",
+    "areaSqMeter": 84.87,
+    "pyeong": 31,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 540000000,
+    "priceDisplay": "5억 4,000만",
+    "priceRange": "5.2억 ~ 5.7억",
+    "kbPrice": {
+      "generalAvg": 545000000,
+      "highAvg": 570000000,
+      "lowAvg": 515000000,
+      "jeonseAvg": 350000000,
+      "jeonseRate": 64.2,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 13,
+        "price": 545000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 8,
+        "price": 538000000
+      }
+    ],
+    "highlights": [
+      "944세대 대단지 전용 84㎡ 방3·욕실2 계단식 완비",
+      "5억 초중반대 서울 30평대 국민평형 알짜 매물",
+      "전세가율 64.2%로 탄탄한 실수요 기반",
+      "보금자리론 6억 이하 기준 완벽 부합 (필요현금 1.6억대)"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/3261",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/3261",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B0%A9%ED%95%99%EB%8F%99%20%EB%B2%BD%EC%82%B02%EC%B0%A8",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.87㎡ (공급 31평형) 3-Bay 계단식 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "계단식 판상형",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "ㄱ자형 주방 + 세탁실",
+      "ventilation": "거실-주방 맞통풍 구조",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.3m",
+      "masterBedroomWidth": "3.7m",
+      "features": [
+        "욕실 2개 계단식 판상형 구조로 실거주 편리",
+        "벽산 1단지 대비 세대수 많고 관리 우수",
+        "쾌적한 녹지 환경과 북한산 조망"
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "3261"
+  },
+  {
+    "id": "seoul-dobong-changdong-jugong-19-25",
+    "name": "창동주공19단지",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "창동",
+    "address": "서울특별시 도봉구 노해로70길 54",
+    "buildYear": 1988,
+    "totalUnits": 1764,
+    "totalFloors": 15,
+    "subwayStation": "창동역 (1·4호선 환승, GTX-C)",
+    "subwayDistance": "도보 4분 (초역세권)",
+    "areaSqMeter": 60.5,
+    "pyeong": 25,
+    "rooms": "방 2 / 욕실 1",
+    "priceKrw": 710000000,
+    "priceDisplay": "7억 1,000만",
+    "priceRange": "6.8억 ~ 7.5억",
+    "kbPrice": {
+      "generalAvg": 710000000,
+      "highAvg": 740000000,
+      "lowAvg": 675000000,
+      "jeonseAvg": 360000000,
+      "jeonseRate": 50.7,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 12,
+        "price": 715000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 5,
+        "price": 700000000
+      }
+    ],
+    "highlights": [
+      "창동역 1·4호선 + GTX-C 환승역 도보 4분 초역세권",
+      "1,764세대 대단지 재건축 정비사업 조합설립 추진위 승인",
+      "서울아레나, 복합환승센터, 바이오메디컬 클러스터 호재",
+      "신생아 특례대출(9억 이하) 활용 최상급 미래가치"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/317",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/317",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%B0%BD%EB%8F%99%EC%A3%BC%EA%B3%B519%EB%8B%A8%EC%A7%80",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 60.5㎡ (공급 25평형) 복도식 평면도",
+      "bay": "2-Bay",
+      "structure": "복도식 판상형",
+      "entrance": "복도식",
+      "roomsCount": 2,
+      "bathroomsCount": 1,
+      "kitchenType": "독립형 주방 + 발코니",
+      "ventilation": "채광 우수",
+      "balconyStatus": "남향 발코니",
+      "livingRoomWidth": "4.0m",
+      "masterBedroomWidth": "3.6m",
+      "features": [
+        "창동역세권 개발 및 GTX-C 최대 수혜지",
+        "재건축 사업 가시화로 높은 미래 자산가치",
+        "이마트 창동점, 노원역 롯데백화점 인프라 공유"
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "317"
+  },
+  {
+    "id": "seoul-dobong-changdong-jugong-19-29",
+    "name": "창동주공19단지",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "창동",
+    "address": "서울특별시 도봉구 노해로70길 54",
+    "buildYear": 1988,
+    "totalUnits": 1764,
+    "totalFloors": 15,
+    "subwayStation": "창동역 (1·4호선 환승, GTX-C)",
+    "subwayDistance": "도보 4분 (초역세권)",
+    "areaSqMeter": 68.86,
+    "pyeong": 29,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 795000000,
+    "priceDisplay": "7억 9,500만",
+    "priceRange": "7.7억 ~ 8.4억",
+    "kbPrice": {
+      "generalAvg": 800000000,
+      "highAvg": 835000000,
+      "lowAvg": 760000000,
+      "jeonseAvg": 420000000,
+      "jeonseRate": 52.5,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 11,
+        "price": 800000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 7,
+        "price": 790000000
+      }
+    ],
+    "highlights": [
+      "창동주공19단지 내 귀한 전용 68㎡ 방 3개 중형 평형",
+      "창동역 초역세권 + 중랑천 조망 프리미엄",
+      "GTX-C 개통 시 강남 삼성역 10분대 진입",
+      "신생아 특례대출 5억 한도 전액 수혜 단지"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/317",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/317",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%B0%BD%EB%8F%99%EC%A3%BC%EA%B3%B519%EB%8B%A8%EC%A7%80",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 68.86㎡ (공급 29평형) 방3개 판상형 평면도",
+      "bay": "2-Bay",
+      "structure": "복도식 판상형",
+      "entrance": "복도식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "ㄱ자형 주방",
+      "ventilation": "남향 채광 및 맞통풍",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.1m",
+      "masterBedroomWidth": "3.7m",
+      "features": [
+        "방 3개 구조로 아이 키우며 재건축 대기 가능",
+        "창동역세권 개발 사업의 핵심 랜드마크 입지",
+        "단지 내 초등학교 인접 안심 학군"
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "317"
+  },
+  {
+    "id": "seoul-dobong-changdong-jugong-17-18",
+    "name": "창동주공17단지",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "창동",
+    "address": "서울특별시 도봉구 우이천로4길 24",
+    "buildYear": 1989,
+    "totalUnits": 1980,
+    "totalFloors": 15,
+    "subwayStation": "녹천역 (1호선)",
+    "subwayDistance": "도보 3분 (초역세권)",
+    "areaSqMeter": 41.3,
+    "pyeong": 18,
+    "rooms": "방 2 / 욕실 1",
+    "priceKrw": 420000000,
+    "priceDisplay": "4억 2,000만",
+    "priceRange": "4.0억 ~ 4.5억",
+    "kbPrice": {
+      "generalAvg": 425000000,
+      "highAvg": 445000000,
+      "lowAvg": 405000000,
+      "jeonseAvg": 210000000,
+      "jeonseRate": 49.4,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 8,
+        "price": 425000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 14,
+        "price": 418000000
+      }
+    ],
+    "highlights": [
+      "1,980세대 대단지 1호선 녹천역 도보 3분 초역세권",
+      "4억 초반 서울 아파트 가성비 끝판왕",
+      "중랑천 수변 산책로 및 초등학교 품은 초품아",
+      "생애최초 디딤돌 및 보금자리론 최적 적격"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/314",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/314",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%B0%BD%EB%8F%99%EC%A3%BC%EA%B3%B517%EB%8B%A8%EC%A7%80",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 41.3㎡ (공급 18평형) 실속 2룸 평면도",
+      "bay": "2-Bay",
+      "structure": "복도식 판상형",
+      "entrance": "복도식",
+      "roomsCount": 2,
+      "bathroomsCount": 1,
+      "kitchenType": "일자형 주방",
+      "ventilation": "채광 양호",
+      "balconyStatus": "남향 발코니",
+      "livingRoomWidth": "3.5m",
+      "masterBedroomWidth": "3.3m",
+      "features": [
+        "1~2인 신혼부부에게 딱 맞는 알짜 구조",
+        "초역세권으로 종로/시청 출퇴근 30분대",
+        "필요 현금 1.1억대로 서울 입성 가능"
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "314"
+  },
+  {
+    "id": "seoul-dobong-changdong-jugong-17-21",
+    "name": "창동주공17단지",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "창동",
+    "address": "서울특별시 도봉구 우이천로4길 24",
+    "buildYear": 1989,
+    "totalUnits": 1980,
+    "totalFloors": 15,
+    "subwayStation": "녹천역 (1호선)",
+    "subwayDistance": "도보 3분 (초역세권)",
+    "areaSqMeter": 49.94,
+    "pyeong": 21,
+    "rooms": "방 2 / 욕실 1",
+    "priceKrw": 485000000,
+    "priceDisplay": "4억 8,500만",
+    "priceRange": "4.6억 ~ 5.2억",
+    "kbPrice": {
+      "generalAvg": 490000000,
+      "highAvg": 515000000,
+      "lowAvg": 465000000,
+      "jeonseAvg": 240000000,
+      "jeonseRate": 49,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 10,
+        "price": 490000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 6,
+        "price": 482000000
+      }
+    ],
+    "highlights": [
+      "1,980세대 대단지 21평형 실거주 여유 공간",
+      "녹천역 초역세권 + 창동역 1정거장 생활권 공유",
+      "4억 후반대 합리적 매매가와 안전한 KB시세",
+      "재건축 정밀안전진단 통과 단지"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/314",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/314",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%B0%BD%EB%8F%99%EC%A3%BC%EA%B3%B517%EB%8B%A8%EC%A7%80",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 49.94㎡ (공급 21평형) 방2·거실 분리형 평면도",
+      "bay": "2-Bay",
+      "structure": "복도식 판상형",
+      "entrance": "복도식",
+      "roomsCount": 2,
+      "bathroomsCount": 1,
+      "kitchenType": "독립 주방 + 다용도실",
+      "ventilation": "맞통풍 우수",
+      "balconyStatus": "남향 발코니",
+      "livingRoomWidth": "3.7m",
+      "masterBedroomWidth": "3.5m",
+      "features": [
+        "신혼부부 거실 및 침실 분리 생활 최적화",
+        "보금자리론 6억 이하 100% 적격",
+        "중랑천 생태공원 슬세권 힐링"
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "314"
+  },
+  {
+    "id": "seoul-dobong-changdong-jugong-3-24",
+    "name": "창동주공3단지",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "창동",
+    "address": "서울특별시 도봉구 덕릉로57길 34",
+    "buildYear": 1990,
+    "totalUnits": 2856,
+    "totalFloors": 15,
+    "subwayStation": "쌍문역 (4호선) / 창동역 (1·4호선)",
+    "subwayDistance": "도보 8분 (쌍문역 역세권)",
+    "areaSqMeter": 58.01,
+    "pyeong": 24,
+    "rooms": "방 2 / 욕실 1",
+    "priceKrw": 610000000,
+    "priceDisplay": "6억 1,000만",
+    "priceRange": "5.9억 ~ 6.4억",
+    "kbPrice": {
+      "generalAvg": 615000000,
+      "highAvg": 640000000,
+      "lowAvg": 585000000,
+      "jeonseAvg": 320000000,
+      "jeonseRate": 52,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 615000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 13,
+        "price": 608000000
+      }
+    ],
+    "highlights": [
+      "2,856세대 도봉구 대표 초대형 매머드 대단지",
+      "4호선 쌍문역 도보 8분 역세권 및 상권 풍부",
+      "한신초(사립)·창일초·창일중 도봉구 최고 명문 학군",
+      "재건축 안전진단 통과 완료, 높은 미래 가치"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/326",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/326",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%B0%BD%EB%8F%99%EC%A3%BC%EA%B3%B53%EB%8B%A8%EC%A7%80",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 58.01㎡ (공급 24평형) 복도식 판상형 평면도",
+      "bay": "2-Bay",
+      "structure": "복도식 판상형",
+      "entrance": "복도식",
+      "roomsCount": 2,
+      "bathroomsCount": 1,
+      "kitchenType": "독립형 주방 + 보조 발코니",
+      "ventilation": "맞통풍 우수",
+      "balconyStatus": "남향 통발코니",
+      "livingRoomWidth": "3.8m",
+      "masterBedroomWidth": "3.5m",
+      "features": [
+        "넓은 안방과 반듯한 거실 공간",
+        "신생아 특례대출(9억 이하) 최대 5억 원 지원 적격",
+        "대단지 내 초·중학교 위치한 학세권 입지"
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "326"
+  },
+  {
+    "id": "seoul-dobong-changdong-donga-cheongsol-24",
+    "name": "창동동아청솔",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "창동",
+    "address": "서울특별시 도봉구 노해로69길 103",
+    "buildYear": 1997,
+    "totalUnits": 1981,
+    "totalFloors": 24,
+    "subwayStation": "창동역 (1·4호선 환승, GTX-C)",
+    "subwayDistance": "도보 3분 (초역세권)",
+    "areaSqMeter": 59.76,
+    "pyeong": 24,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 720000000,
+    "priceDisplay": "7억 2,000만",
+    "priceRange": "6.9억 ~ 7.6억",
+    "kbPrice": {
+      "generalAvg": 725000000,
+      "highAvg": 755000000,
+      "lowAvg": 690000000,
+      "jeonseAvg": 430000000,
+      "jeonseRate": 59.3,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 16,
+        "price": 725000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 10,
+        "price": 718000000
+      }
+    ],
+    "highlights": [
+      "창동역 1·4호선 + GTX-C 도보 3분 최고 입지 대단지",
+      "1,981세대 1997년식 계단식 방 3개 구조",
+      "이마트 창동점 바로 앞, 서울아레나 직접 수혜",
+      "신생아 특례대출로 매수 가능한 창동역 1티어 아파트"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/312",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/312",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%B0%BD%EB%8F%99%EB%8F%99%EC%95%84%EC%B2%AD%EC%86%94",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 59.76㎡ (공급 24평형) 계단식 방3 평면도",
+      "bay": "2-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "ㄱ자형 주방 + 세탁실",
+      "ventilation": "거실-주방 맞통풍",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "3.8m",
+      "masterBedroomWidth": "3.5m",
+      "features": [
+        "24평형 계단식 구조로 사생활 보호 우수",
+        "방 3개 배치로 3인 가구 최적 거주성",
+        "창동역 GTX-C 개발 가치 최대 수혜 단지"
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "312"
+  },
+  {
+    "id": "seoul-dobong-changdong-donga-cheongsol-33",
+    "name": "창동동아청솔",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "창동",
+    "address": "서울특별시 도봉구 노해로69길 103",
+    "buildYear": 1997,
+    "totalUnits": 1981,
+    "totalFloors": 24,
+    "subwayStation": "창동역 (1·4호선 환승, GTX-C)",
+    "subwayDistance": "도보 3분 (초역세권)",
+    "areaSqMeter": 84.97,
+    "pyeong": 33,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 840000000,
+    "priceDisplay": "8억 4,000만",
+    "priceRange": "8.1억 ~ 8.9억",
+    "kbPrice": {
+      "generalAvg": 845000000,
+      "highAvg": 880000000,
+      "lowAvg": 810000000,
+      "jeonseAvg": 510000000,
+      "jeonseRate": 60.4,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 20,
+        "price": 850000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 11,
+        "price": 835000000
+      }
+    ],
+    "highlights": [
+      "창동역세권 랜드마크 대단지 33평형 국민평형",
+      "방 3개 / 욕실 2개 3-Bay 계단식 판상형 선호 구조",
+      "GTX-C 개통 및 창동 복합개발 최대 수혜 단지",
+      "신생아 특례대출(9억 이하) 대상 아파트 중 최정상급 입지"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/312",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/312",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%B0%BD%EB%8F%99%EB%8F%99%EC%95%84%EC%B2%AD%EC%86%94",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.97㎡ (공급 33평형) 3-Bay 계단식 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "ㄷ자형 주방 + 다용도실",
+      "ventilation": "전면 3베이 뛰어난 채광과 통풍",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.5m",
+      "masterBedroomWidth": "3.9m",
+      "features": [
+        "1,981세대 대표 로열 대장 평형",
+        "지하주차장 완비 및 지상 공원화",
+        "도봉구 내 최고 수준의 매매 회전율과 환금성"
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "312"
+  },
+  {
+    "id": "seoul-dobong-changdong-ipark-33",
+    "name": "북한산아이파크",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "창동",
+    "address": "서울특별시 도봉구 노해로66길 21",
+    "buildYear": 2004,
+    "totalUnits": 2061,
+    "totalFloors": 24,
+    "subwayStation": "창동역 (1·4호선) / 쌍문역 (4호선)",
+    "subwayDistance": "도보 8분 (더블역세권)",
+    "areaSqMeter": 84.93,
+    "pyeong": 33,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 860000000,
+    "priceDisplay": "8억 6,000만",
+    "priceRange": "8.3억 ~ 9.0억",
+    "kbPrice": {
+      "generalAvg": 865000000,
+      "highAvg": 900000000,
+      "lowAvg": 825000000,
+      "jeonseAvg": 520000000,
+      "jeonseRate": 60.1,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 18,
+        "price": 870000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 9,
+        "price": 855000000
+      }
+    ],
+    "highlights": [
+      "창동 대표 2,061세대 1군 브랜드 현대산업개발 아이파크",
+      "2004년식 지하주차장 엘리베이터 직결 단지",
+      "가인초등학교를 품은 초품아 및 명문 학세권",
+      "신생아 특례대출(9억 이하) 마지노선 로열 아파트"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/9106",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/9106",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%B6%81%ED%95%9C%EC%82%B0%EC%95%84%EC%9D%B4%ED%8C%8C%ED%81%AC",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.93㎡ (공급 33평형) 3-Bay 계단식 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "ㄷ자형 주방 + 다용도실",
+      "ventilation": "거실-주방 맞통풍 우수",
+      "balconyStatus": "남향 통발코니",
+      "livingRoomWidth": "4.5m",
+      "masterBedroomWidth": "3.9m",
+      "features": [
+        "지하 2층 주차장 엘리베이터 직결의 뛰어난 주거 편의성",
+        "단지 내 조경 및 피트니스 등 커뮤니티 우수",
+        "초품아 안심 통학으로 아이 키우기 최적 단지"
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "9106"
+  },
+  {
+    "id": "seoul-dobong-changdong-hyundai-1-24",
+    "name": "창동현대1차아파트",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "창동",
+    "address": "서울특별시 도봉구 도봉로136길 111",
+    "buildYear": 1996,
+    "totalUnits": 705,
+    "totalFloors": 18,
+    "subwayStation": "방학역 (1호선) / 쌍문역 (4호선)",
+    "subwayDistance": "도보 12분 / 마을버스 5분",
+    "areaSqMeter": 59.94,
+    "pyeong": 24,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 540000000,
+    "priceDisplay": "5억 4,000만",
+    "priceRange": "5.2억 ~ 5.7억",
+    "kbPrice": {
+      "generalAvg": 545000000,
+      "highAvg": 570000000,
+      "lowAvg": 515000000,
+      "jeonseAvg": 340000000,
+      "jeonseRate": 62.4,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 11,
+        "price": 545000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 6,
+        "price": 535000000
+      }
+    ],
+    "highlights": [
+      "창동 705세대 실속 현대건설 브랜드 아파트",
+      "5억 초중반대 방 3개 서울 역세권 가성비 단지",
+      "도봉보건소 및 창동 상권 인접 편의성",
+      "보금자리론 6억 이하 최적 기준 적격"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/8601",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/8601",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%B0%BD%EB%8F%99%ED%98%84%EB%8C%801%EC%B0%A8",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 59.94㎡ (공급 24평형) 계단식 판상형 평면도",
+      "bay": "2-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "일자형 주방 + 다용도실",
+      "ventilation": "통풍 원활",
+      "balconyStatus": "남향 발코니",
+      "livingRoomWidth": "3.8m",
+      "masterBedroomWidth": "3.5m",
+      "features": [
+        "계단식 구조의 방 3개 실속 주거 공간",
+        "보금자리론 고정금리 3.65%로 안심 상환 가능",
+        "주변 학교 및 학원가 인프라 완비"
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "8601"
+  },
+  {
+    "id": "seoul-dobong-dobong-hanshin-26",
+    "name": "도봉한신아파트",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "도봉동",
+    "address": "서울특별시 도봉구 도봉로180나길 41",
+    "buildYear": 1995,
+    "totalUnits": 2678,
+    "totalFloors": 17,
+    "subwayStation": "도봉산역 (1·7호선 환승) / 도봉역 (1호선)",
+    "subwayDistance": "도보 5~6분 (더블역세권)",
+    "areaSqMeter": 68.4,
+    "pyeong": 26,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 455000000,
+    "priceDisplay": "4억 5,500만",
+    "priceRange": "4.4억 ~ 4.8억",
+    "kbPrice": {
+      "generalAvg": 460000000,
+      "highAvg": 485000000,
+      "lowAvg": 435000000,
+      "jeonseAvg": 290000000,
+      "jeonseRate": 63,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 12,
+        "price": 460000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 5,
+        "price": 450000000
+      }
+    ],
+    "highlights": [
+      "2,678세대 초대형 대단지 1·7호선 도봉산역 더블역세권",
+      "7호선 탑승 시 강남구청/논현/고속터미널 환승 없이 직결",
+      "4억 중반대 방 3개 서울 대단지 파격적 가성비",
+      "도봉산 파노라마 뷰와 중랑천 수변 산책로 숲세권"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/267",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/267",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8F%84%EB%B4%89%ED%95%9C%EC%8B%A0",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 68.4㎡ (공급 26평형) 복도식 방3 평면도",
+      "bay": "2-Bay",
+      "structure": "복도식 판상형",
+      "entrance": "복도식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "독립 주방 + 세탁실",
+      "ventilation": "채광 우수",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "3.9m",
+      "masterBedroomWidth": "3.6m",
+      "features": [
+        "7호선 강남 출퇴근 직장인 가성비 1순위 단지",
+        "디딤돌 및 보금자리론 최저 금리 적용 가능",
+        "대단지 상가 및 병원, 마트 등 자체 인프라 완비"
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "267"
+  },
+  {
+    "id": "seoul-dobong-dobong-hanshin-31",
+    "name": "도봉한신아파트",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "도봉동",
+    "address": "서울특별시 도봉구 도봉로180나길 41",
+    "buildYear": 1995,
+    "totalUnits": 2678,
+    "totalFloors": 17,
+    "subwayStation": "도봉산역 (1·7호선 환승) / 도봉역 (1호선)",
+    "subwayDistance": "도보 5~6분 (더블역세권)",
+    "areaSqMeter": 84.94,
+    "pyeong": 31,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 540000000,
+    "priceDisplay": "5억 4,000만",
+    "priceRange": "5.2억 ~ 5.7억",
+    "kbPrice": {
+      "generalAvg": 545000000,
+      "highAvg": 570000000,
+      "lowAvg": 520000000,
+      "jeonseAvg": 350000000,
+      "jeonseRate": 64.2,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 14,
+        "price": 545000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 11,
+        "price": 538000000
+      }
+    ],
+    "highlights": [
+      "2,678세대 랜드마크 전용 84㎡ 방3·욕실2 계단식 국민평형",
+      "7호선 더블역세권 5억 초중반대 서울 최고의 가성비",
+      "전세가율 64.2%로 탄탄한 갭과 안정적 실수요",
+      "도봉산 국립공원 앞 사계절 쾌적한 숲세권 라이프"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/267",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/267",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8F%84%EB%B4%89%ED%95%9C%EC%8B%A0",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.94㎡ (공급 31평형) 3-Bay 계단식 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "판상형 계단식",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "ㄷ자형 주방 + 다용도실",
+      "ventilation": "거실-주방 맞통풍 탁월",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.4m",
+      "masterBedroomWidth": "3.8m",
+      "features": [
+        "욕실 2개 계단식 판상형의 완벽한 가족 주거 공간",
+        "보금자리론 6억 이하 최적 매물 (필요 현금 1.6억대)",
+        "더블역세권 평지 대단지"
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "267"
+  },
+  {
+    "id": "seoul-dobong-dobong-seowon-24",
+    "name": "도봉서원아파트",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "도봉동",
+    "address": "서울특별시 도봉구 도봉로170길 18",
+    "buildYear": 1996,
+    "totalUnits": 2450,
+    "totalFloors": 18,
+    "subwayStation": "도봉역 (1호선)",
+    "subwayDistance": "도보 4분 (초역세권)",
+    "areaSqMeter": 59.4,
+    "pyeong": 24,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 435000000,
+    "priceDisplay": "4억 3,500만",
+    "priceRange": "4.2억 ~ 4.6억",
+    "kbPrice": {
+      "generalAvg": 440000000,
+      "highAvg": 465000000,
+      "lowAvg": 415000000,
+      "jeonseAvg": 270000000,
+      "jeonseRate": 61.4,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 10,
+        "price": 440000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 6,
+        "price": 430000000
+      }
+    ],
+    "highlights": [
+      "2,450세대 대단지 1호선 도봉역 도보 4분 평지 초역세권",
+      "4억 초중반대 서울 역세권 아파트 실속 내집마련",
+      "중랑천 수변 산책로 및 북한산 힐링 녹지",
+      "생애최초 디딤돌 및 보금자리론 최적 금리 지원"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/1120",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/1120",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EB%8F%84%EB%B4%89%EC%84%9C%EC%9B%90%EC%95%84%ED%8C%8C%ED%81%AC",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 59.4㎡ (공급 24평형) 복도식 방3 평면도",
+      "bay": "2-Bay",
+      "structure": "복도식 판상형",
+      "entrance": "복도식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "일자형 주방 + 다용도실",
+      "ventilation": "맞통풍 우수",
+      "balconyStatus": "남향 발코니",
+      "livingRoomWidth": "3.7m",
+      "masterBedroomWidth": "3.4m",
+      "features": [
+        "4억 초반대로 부담 없는 서울 역세권 진입",
+        "방 3개 구조로 쾌적한 공간 활용",
+        "필요 현금 1.2억대로 매수 가능"
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "1120"
+  },
+  {
+    "id": "seoul-dobong-ssangmun-hanyang-1-21",
+    "name": "쌍문한양1차아파트",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "쌍문동",
+    "address": "서울특별시 도봉구 도봉로109길 30",
+    "buildYear": 1986,
+    "totalUnits": 824,
+    "totalFloors": 14,
+    "subwayStation": "쌍문역 (4호선)",
+    "subwayDistance": "도보 10분 / 마을버스 3분",
+    "areaSqMeter": 50.84,
+    "pyeong": 21,
+    "rooms": "방 2 / 욕실 1",
+    "priceKrw": 390000000,
+    "priceDisplay": "3억 9,000만",
+    "priceRange": "3.7억 ~ 4.2억",
+    "kbPrice": {
+      "generalAvg": 395000000,
+      "highAvg": 415000000,
+      "lowAvg": 375000000,
+      "jeonseAvg": 220000000,
+      "jeonseRate": 55.7,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 7,
+        "price": 395000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 12,
+        "price": 388000000
+      }
+    ],
+    "highlights": [
+      "4호선 쌍문역 생활권 3억대 서울 실속 아파트",
+      "우이천 벚꽃 산책로 및 쌍문초등학교 인접 학세권",
+      "재건축 정밀안전진단 통과 사업 속도화",
+      "디딤돌 및 보금자리론 최적 대출 조건"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/299",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/299",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8C%8D%EB%AC%B8%ED%95%9C%EC%96%911%EC%B0%A8",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 50.84㎡ (공급 21평형) 복도식 판상형 평면도",
+      "bay": "2-Bay",
+      "structure": "복도식 판상형",
+      "entrance": "복도식",
+      "roomsCount": 2,
+      "bathroomsCount": 1,
+      "kitchenType": "일자형 주방",
+      "ventilation": "남향 채광",
+      "balconyStatus": "남향 발코니",
+      "livingRoomWidth": "3.6m",
+      "masterBedroomWidth": "3.4m",
+      "features": [
+        "3억 후반대로 부담 없는 서울 진입",
+        "4호선 동대문/명동/서울역 직결 통근",
+        "우이천 수변 라이프"
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "299"
+  },
+  {
+    "id": "seoul-dobong-ssangmun-hanyang-1-27",
+    "name": "쌍문한양1차아파트",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "쌍문동",
+    "address": "서울특별시 도봉구 도봉로109길 30",
+    "buildYear": 1986,
+    "totalUnits": 824,
+    "totalFloors": 14,
+    "subwayStation": "쌍문역 (4호선)",
+    "subwayDistance": "도보 10분 / 마을버스 3분",
+    "areaSqMeter": 69.84,
+    "pyeong": 27,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 490000000,
+    "priceDisplay": "4억 9,000만",
+    "priceRange": "4.7억 ~ 5.2억",
+    "kbPrice": {
+      "generalAvg": 495000000,
+      "highAvg": 520000000,
+      "lowAvg": 465000000,
+      "jeonseAvg": 290000000,
+      "jeonseRate": 58.6,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 10,
+        "price": 495000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 5,
+        "price": 485000000
+      }
+    ],
+    "highlights": [
+      "방 3개 구성의 4억 후반대 쌍문동 전통 대단지",
+      "쌍문역 역세권 상권과 맛집 거리 슬세권",
+      "쌍문초등학교 바로 앞 안심 도보 통학",
+      "보금자리론 6억 이하 최적 적격"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/299",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/299",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8C%8D%EB%AC%B8%ED%95%9C%EC%96%911%EC%B0%A8",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 69.84㎡ (공급 27평형) 방3 판상형 평면도",
+      "bay": "2-Bay",
+      "structure": "복도식 판상형",
+      "entrance": "복도식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "독립 주방 + 다용도실",
+      "ventilation": "거실-주방 맞통풍",
+      "balconyStatus": "남향 발코니",
+      "livingRoomWidth": "3.9m",
+      "masterBedroomWidth": "3.6m",
+      "features": [
+        "4억대 방 3개 완비로 3~4인 가족 최적",
+        "재건축 안전진단 통과로 미래 가치 확보",
+        "우이천 산책로 바로 앞"
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "299"
+  },
+  {
+    "id": "seoul-dobong-ssangmun-hanyang-1-31",
+    "name": "쌍문한양1차아파트",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "쌍문동",
+    "address": "서울특별시 도봉구 도봉로109길 30",
+    "buildYear": 1986,
+    "totalUnits": 824,
+    "totalFloors": 14,
+    "subwayStation": "쌍문역 (4호선)",
+    "subwayDistance": "도보 10분 / 마을버스 3분",
+    "areaSqMeter": 84.87,
+    "pyeong": 31,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 565000000,
+    "priceDisplay": "5억 6,500만",
+    "priceRange": "5.4억 ~ 6.0억",
+    "kbPrice": {
+      "generalAvg": 570000000,
+      "highAvg": 595000000,
+      "lowAvg": 540000000,
+      "jeonseAvg": 340000000,
+      "jeonseRate": 59.6,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 11,
+        "price": 570000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 6,
+        "price": 560000000
+      }
+    ],
+    "highlights": [
+      "쌍문한양1차 대표 전용 84㎡ 방3·욕2 국민평형",
+      "5억 중후반대 서울 30평대 국민평형 가성비 우수",
+      "4호선 쌍문역 도보 10분 역세권 입지",
+      "신생아 특례대출 및 보금자리론(6억 이하) 완벽 부합"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/299",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/299",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8C%8D%EB%AC%B8%ED%95%9C%EC%96%911%EC%B0%A8",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.87㎡ (공급 31평형) 3-Bay 계단식 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "계단식 판상형",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "ㄱ자형 주방 + 보조 발코니",
+      "ventilation": "전면 3베이 우수한 채광과 통풍",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.3m",
+      "masterBedroomWidth": "3.8m",
+      "features": [
+        "욕실 2개 계단식 판상형 구조로 실거주 편리",
+        "보금자리론 6억 이하 최적 매물 (필요 현금 1.7억대)",
+        "단지 바로 앞 쌍문초등학교 안심 통학"
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "299"
+  },
+  {
+    "id": "seoul-dobong-ssangmun-samik-26",
+    "name": "쌍문삼익아파트",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "쌍문동",
+    "address": "서울특별시 도봉구 시루봉로6길 81",
+    "buildYear": 1987,
+    "totalUnits": 1014,
+    "totalFloors": 15,
+    "subwayStation": "쌍문역 (4호선) / 솔밭공원역 (우이신설선)",
+    "subwayDistance": "도보 12분 / 마을버스 5분",
+    "areaSqMeter": 68.85,
+    "pyeong": 26,
+    "rooms": "방 3 / 욕실 1",
+    "priceKrw": 480000000,
+    "priceDisplay": "4억 8,000만",
+    "priceRange": "4.6억 ~ 5.1억",
+    "kbPrice": {
+      "generalAvg": 485000000,
+      "highAvg": 510000000,
+      "lowAvg": 460000000,
+      "jeonseAvg": 295000000,
+      "jeonseRate": 60.8,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 8,
+        "price": 485000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 12,
+        "price": 478000000
+      }
+    ],
+    "highlights": [
+      "1,014세대 대단지 4억 후반대 실속 26평 방3개",
+      "정의여중·정의여고 등 도봉구 전통 명문 학군",
+      "우이천 수변 산책로와 쌍문동 맛집 거리 인접",
+      "보금자리론 6억 이하 최적 금리 지원"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/292",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/292",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8C%8D%EB%AC%B8%EC%82%BC%EC%9D%B5%EC%95%84%ED%8C%8C%ED%81%AC",
+    "floorPlan": {
+      "type": "59_3bay",
+      "title": "전용 68.85㎡ (공급 26평형) 복도식 방3 평면도",
+      "bay": "2-Bay",
+      "structure": "복도식 판상형",
+      "entrance": "복도식",
+      "roomsCount": 3,
+      "bathroomsCount": 1,
+      "kitchenType": "일자형 주방 + 다용도실",
+      "ventilation": "거실 맞통풍",
+      "balconyStatus": "남향 발코니",
+      "livingRoomWidth": "3.8m",
+      "masterBedroomWidth": "3.5m",
+      "features": [
+        "1,000세대 넘는 대단지 관리비 절감 효과",
+        "디딤돌 및 보금자리론 100% 적격",
+        "조용하고 쾌적한 주거 환경"
+      ],
+      "imageUrl": "/floorplans/floorplan_59_3bay.jpg"
+    },
+    "naverComplexNo": "292"
+  },
+  {
+    "id": "seoul-dobong-ssangmun-kukdong-31",
+    "name": "쌍문극동아파트",
+    "region": "서울",
+    "district": "도봉구",
+    "dong": "쌍문동",
+    "address": "서울특별시 도봉구 해등로16길 26",
+    "buildYear": 1992,
+    "totalUnits": 486,
+    "totalFloors": 15,
+    "subwayStation": "쌍문역 (4호선)",
+    "subwayDistance": "도보 11분",
+    "areaSqMeter": 84.75,
+    "pyeong": 31,
+    "rooms": "방 3 / 욕실 2",
+    "priceKrw": 510000000,
+    "priceDisplay": "5억 1,000만",
+    "priceRange": "4.9억 ~ 5.4억",
+    "kbPrice": {
+      "generalAvg": 515000000,
+      "highAvg": 540000000,
+      "lowAvg": 490000000,
+      "jeonseAvg": 330000000,
+      "jeonseRate": 64.1,
+      "updatedAt": "2026.10"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 515000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 13,
+        "price": 508000000
+      }
+    ],
+    "highlights": [
+      "쌍문역 도보 11분 30평대 전용 84㎡ 방3·욕실2 계단식 판상형",
+      "5억 초반대 서울 30평대 국민평형 파격 가성비",
+      "전세가율 64.1%의 알짜 실속형 아파트",
+      "보금자리론 6억 이하 최적 매물 (필요 현금 1.5억대)"
+    ],
+    "naverLandUrl": "https://fin.land.naver.com/complexes/284",
+    "naverMobileUrl": "https://m.land.naver.com/complex/info/284",
+    "kbLandUrl": "https://kbland.kr/search?keyword=%EC%8C%8D%EB%AC%B8%EA%B7%B9%EB%8F%99%EC%95%84%ED%8C%8C%ED%81%AC",
+    "floorPlan": {
+      "type": "84_3bay",
+      "title": "전용 84.75㎡ (공급 31평형) 3-Bay 계단식 판상형 평면도",
+      "bay": "3-Bay",
+      "structure": "계단식 판상형",
+      "entrance": "계단식",
+      "roomsCount": 3,
+      "bathroomsCount": 2,
+      "kitchenType": "ㄱ자형 주방 + 다용도실",
+      "ventilation": "거실-주방 맞통풍 구조",
+      "balconyStatus": "남향 광폭 발코니",
+      "livingRoomWidth": "4.3m",
+      "masterBedroomWidth": "3.7m",
+      "features": [
+        "욕실 2개 계단식 판상형으로 가족 실거주 만족도 우수",
+        "쌍문역 도보 생활권과 초·중학교 인접",
+        "보금자리론 및 디딤돌 활용 시 현금 부담 최소화"
+      ],
+      "imageUrl": "/floorplans/floorplan_84_3bay.jpg"
+    },
+    "naverComplexNo": "284"
   }
 ]
