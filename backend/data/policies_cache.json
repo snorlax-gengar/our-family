@@ -1,19 +1,8 @@
 {
-  "lastUpdated": "2026-10-16T13:39:36.994Z",
+  "lastUpdated": "2026-10-17T01:12:53.916Z",
   "scrapedPolicies": [
     {
-      "id": "gov-1792049027000-o0dsc",
-      "ministry": "정책당국",
-      "title": "정책 비판 전문가 19명 재산조회 의혹… 부동산원은 국감 후 조사 [2026 국감] - 뉴스로드",
-      "date": "2026. 10. 15.",
-      "pubTimestamp": 1792049027000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "정책 비판 전문가 19명 재산조회 의혹… 부동산원은 국감 후 조사 [2026 국감]  뉴스로드...",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9IS19wd25jSm9zVHMzT0FRSWdGLXM3Y1RVc21OVksxQWhMamgwbjdXajhWT1JkX1ozc2Zydm5ILUJYa0dCQmxJeWRCc0pvSnVDbTdRLWltd3REX1YyT1VvclQ4TkNyUTE5b2c00gFvQVVfeXFMT29VRS1TZGNiQ0JnenJXR2I0UXg1czhxaS1DRWFrbVdYWU55ZDRaTkdDTUhzRUFqb0hMNGJqTHZ3ZWRITDlRSVhHZDRXQ1UtdFJXLWNmR0lhTVk5Sm9pN3JnanhfMnJmYTlBazdxb1Zv?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1791423604000-mqv50",
+      "id": "gov-1791423604000-uih7w",
       "ministry": "금융위원회",
       "title": "[금융위 국감] 가계대출 총량 3%로 넓힌다…주택공급 금융 47.8조원+α - ebn.co.kr",
       "date": "2026. 10. 8.",
@@ -24,7 +13,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1790406000000-diija",
+      "id": "gov-1790406000000-h7q3o",
       "ministry": "국토교통부",
       "title": "[보도자료] 국토부, 외국인 부동산 거래 ‘숫자’보다 ‘자금’을 본다 - 국토교통신문",
       "date": "2026. 9. 26.",
@@ -35,18 +24,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1790146800000-h9wo4",
-      "ministry": "국토교통부",
-      "title": "[성명] 신임 홍지선 국토교통부 장관, 시민들의 주거안정을 위한 근본대책 실시하라! - 경제정의실천시민연합",
-      "date": "2026. 9. 23.",
-      "pubTimestamp": 1790146800000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "[성명] 신임 홍지선 국토교통부 장관, 시민들의 주거안정을 위한 근본대책 실시하라!  경제정의실천시민연합...",
-      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9rZmlrMEJ5Qi1nRXZ5Z2wwdVJjWFZmNE5NQTg0dlcyOWNuQTd4MlN1WHZ2MWYza2JRWHZLZG1ycFBybkVJSEdF?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1786604400000-oh9ti",
+      "id": "gov-1786604400000-dxuhc",
       "ministry": "정책당국",
       "title": "수도권에 23만 호+α 추가 공급…부동산PF 자금지원 늘려 속도전 - 정책브리핑",
       "date": "2026. 8. 13.",
@@ -57,7 +35,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1786604400000-7xmni",
+      "id": "gov-1786604400000-0e9mz",
       "ministry": "정책당국",
       "title": "대출 ‘오픈런’ 숨통 트이나…금융권 가계대출 30조 더 푼다 - 경기일보",
       "date": "2026. 8. 13.",
@@ -68,7 +46,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1786604400000-7ckcl",
+      "id": "gov-1786604400000-bgtgn",
       "ministry": "정책당국",
       "title": "[이슈체크] 은행권 ‘대출 곳간’ 넓어진다…가계대출 총량 2배 상향 - 조세금융신문",
       "date": "2026. 8. 13.",
@@ -79,7 +57,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1786604400000-uwme4",
+      "id": "gov-1786604400000-7n8m7",
       "ministry": "정책당국",
       "title": "가계대출 총량 1.5→3%로 두 배…은행 대출 문턱 낮아질까 - 오피니언뉴스",
       "date": "2026. 8. 13.",
@@ -90,7 +68,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1786604400000-x90sx",
+      "id": "gov-1786604400000-yxlim",
       "ministry": "금융위원회",
       "title": "[8·13 대책] 금융위, \"대출 오픈런 줄어들 것\"…가계대출 60조원 푼다[일문일답] - 더팩트",
       "date": "2026. 8. 13.",
@@ -101,7 +79,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1786604400000-vlyyn",
+      "id": "gov-1786604400000-5i6p1",
       "ministry": "정책당국",
       "title": "\"내일부터 대출 오픈런 그만\"…가계대출 30조 더 풀린다 - 한국경제",
       "date": "2026. 8. 13.",
@@ -112,7 +90,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1785222000000-6ukr0",
+      "id": "gov-1785222000000-3fcfe",
       "ministry": "정책당국",
       "title": "금융당국 대출정책 손질 어떻게…실수요자·주택공급 '투트랙' 초점 - 뉴시스",
       "date": "2026. 7. 28.",
@@ -123,7 +101,18 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1784098800000-etkb7",
+      "id": "gov-1784790000000-ipq6w",
+      "ministry": "국토교통부",
+      "title": "[국토부] \"AI가 국토를 바꾼다면서…정작 국토는 없었다\" - 국토교통신문",
+      "date": "2026. 7. 23.",
+      "pubTimestamp": 1784790000000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "[국토부] \"AI가 국토를 바꾼다면서…정작 국토는 없었다\"  국토교통신문...",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAxU0lOanpHdVN2SjFKeWgxSUJrOG1pc3kzZnE5b253WnJ3cWg3c2JUdmdobXY3OGIzeHdmTTFnTV9kbHRtVmZyNTZkY0JmOVA5WHZuX1lWWkxFc3A0Y2tWeElDcTg1NVk?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1784098800000-h7fk7",
       "ministry": "금융위원회",
       "title": "[금융위 업무보고] 삼전닉스 '억'대 성과급 받은만큼 DSR 한도 못 늘린다 - KB Think",
       "date": "2026. 7. 15.",
@@ -134,7 +123,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1783666800000-gxs2o",
+      "id": "gov-1783666800000-233az",
       "ministry": "국토교통부",
       "title": "재경·금융·국토부, 세제·금융·공급 분야 부동산 국민 의견 듣는다 - 브릿지경제",
       "date": "2026. 7. 10.",
@@ -145,7 +134,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1782802800000-obpmy",
+      "id": "gov-1782802800000-h65rj",
       "ministry": "정책당국",
       "title": "'동탄·기흥·구리' 3곳 투기과열지구·조정대상지역 지정 - 정책브리핑",
       "date": "2026. 6. 30.",
@@ -156,7 +145,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1780556400000-4hv5k",
+      "id": "gov-1780556400000-86su6",
       "ministry": "정책당국",
       "title": "[보도자료] 제12차 부동산 불법행위 대응 협의회 - 이즈보험",
       "date": "2026. 6. 4.",
@@ -164,6 +153,17 @@
       "category": "최신 부동산 정책 발표",
       "summary": "[보도자료] 제12차 부동산 불법행위 대응 협의회  이즈보험...",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE90OV9rRkZ4dk5XOVFDZldVM0swRkJTWmpYZFpIQWhkVTBnSGVSWE9lZlpJSzYyQWxMaFFCVGdZRm1OY2ZYWHdJWHNOcWs5NHQ5QUxsY2ZYWlFmcEIxN0VtYVI4T2dWRzgyYmc?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1780297200000-jsz64",
+      "ministry": "국토교통부",
+      "title": "[인사] 국토교통부 - 이투뉴스",
+      "date": "2026. 6. 1.",
+      "pubTimestamp": 1780297200000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "[인사] 국토교통부  이투뉴스...",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE15QmNPUWpBLUhCMUZCWUJDVzNNQUMwdWpER19nR1VzcU9OdDA2WVJRcXVSV2JjV2RrYjR4SEhJZy1vejdyd0EwMzdsWXFrd0YxdzFDYlhnMW4yY3FmZGxsdy0xYk5iSEHSAWtBVV95cUxOU1pHOUZBVmRia2Z2elN1R2ZSUWJFQ0QtYWx5VFB0MERiS19wZEt1LUFodHZyTmd4aTRmTXQtRHczTVc4djFWeU95SWxBVXBqamRmRGFvTjhhOVlWYlVwaU9JSklsM1FSUFZPaw?oc=5",
       "status": "실시간 수집"
     }
   ]
