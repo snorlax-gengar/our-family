@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { 
-  Percent, TrendingDown, TrendingUp, RefreshCw, Newspaper, 
+  Percent, TrendingDown, TrendingUp, Newspaper, 
   Building2, ShieldCheck, ExternalLink, Calendar, Info, Sparkles, Filter
 } from 'lucide-react';
+import DataFreshness from './DataFreshness';
 
 export default function RatesTab({ ratesData, onRefreshNews, newsRefreshing }) {
   const [selectedTag, setSelectedTag] = useState('전체');
@@ -35,27 +36,20 @@ export default function RatesTab({ ratesData, onRefreshNews, newsRefreshing }) {
               </span>
               <span className="bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-[11px] font-bold px-2.5 py-0.5 rounded-full inline-flex items-center gap-1 whitespace-nowrap">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                <span>매일 자동 갱신 (네이버 증권 · Google RSS 연동)</span>
+                <span>30분마다 자동 갱신 (네이버 증권 · Google RSS 연동)</span>
               </span>
             </div>
             <h2 className="text-xl sm:text-2xl font-black tracking-tight break-keep">
               대한민국 핵심 금리 종합 취합
             </h2>
             <p className="text-xs sm:text-sm text-slate-300 mt-1.5 max-w-2xl break-keep leading-relaxed">
-              한국은행 기준금리부터 국고채 실시간 수익률, 코픽스, 5대 시중은행 주담대 및 3대 정책대출까지,<br className="hidden sm:inline" /> 매일 최신 금리 동향과 데일리 뉴스를 자동으로 실시간 취합합니다.
+              한국은행 기준금리부터 국고채 실시간 수익률, 코픽스, 5대 시중은행 주담대 및 3대 정책대출까지,<br className="hidden sm:inline" /> 최신 금리 동향과 데일리 뉴스를 30분마다 자동으로 취합합니다.
             </p>
           </div>
 
-          <div className="flex items-center gap-3 shrink-0">
-            <button
-              onClick={onRefreshNews}
-              disabled={newsRefreshing}
-              className="w-full sm:w-auto justify-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-2 cursor-pointer shadow-md disabled:opacity-50 whitespace-nowrap"
-            >
-              <RefreshCw className={`w-4 h-4 ${newsRefreshing ? 'animate-spin' : ''}`} />
-              <span>{newsRefreshing ? '불러오는 중...' : '최신 금리·뉴스 불러오기'}</span>
-            </button>
-          </div>
+          <DataFreshness
+            lastUpdated={ratesData?.lastUpdated}
+          />
         </div>
       </div>
 

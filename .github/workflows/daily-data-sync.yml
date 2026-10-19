@@ -1,18 +1,28 @@
-name: Daily Korea Rates, News & Policy JSON Auto-Sync
+name: Korea Rates, News & Policy JSON Auto-Sync (30분 주기)
 
+# 무료 한도 기준 최대 빈도로 설정
+# - GitHub Actions: 공개 저장소는 표준 러너 무료
+# - Cloudflare Workers Builds 무료: 월 3,000 빌드분, 동시 1개
+#   → 30분마다 확인하되 "내용이 바뀐 경우에만" 커밋해 재배포 횟수를 최소화
+#     (최악의 경우 하루 48회 × 약 1분 ≈ 월 1,500분으로 한도 안)
 on:
   schedule:
-    # 매일 오전 08:00 KST (23:00 UTC) 및 오후 18:00 KST (09:00 UTC) 자동 실행
-    - cron: '0 23 * * *'
-    - cron: '0 9 * * *'
+    # 매시 7분·37분 (정각은 GitHub 스케줄이 몰려 지연되기 쉬워 피함)
+    - cron: '7,37 * * * *'
   workflow_dispatch: # GitHub Actions 탭에서 수동 즉시 실행도 가능
 
 permissions:
   contents: write
 
+# 이전 실행이 끝나기 전에 다음 실행이 겹치지 않도록
+concurrency:
+  group: data-sync
+  cancel-in-progress: false
+
 jobs:
-  sync-daily-json:
+  sync-data-json:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
@@ -24,6 +34,8 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: '24'
+          cache: 'npm'
+          cache-dependency-path: backend/package-lock.json
 
       - name: Install backend dependencies
         working-directory: ./backend
@@ -32,15 +44,15 @@ jobs:
       - name: Scrape live Korea rates, news & policies into JSON files
         run: node backend/scripts/syncDailyData.js
 
-      - name: Commit and push updated JSON cache files
+      - name: Commit only when content changed
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add backend/data/rates_cache.json backend/data/policies_cache.json
-          if git diff --staged --quiet; then
-            echo "변경된 금리/뉴스/정책 데이터가 없습니다."
-          else
-            git commit -m "chore(data): auto-sync daily Korea interest rates, news & policies JSON"
+          if node backend/scripts/hasDataChanged.js; then
+            git config --local user.email "github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "github-actions[bot]"
+            git add backend/data/rates_cache.json backend/data/policies_cache.json
+            git commit -m "chore(data): auto-sync Korea interest rates, news & policies JSON"
             git pull --rebase -X theirs origin main
             git push origin HEAD:main
+          else
+            echo "내용 변경이 없어 커밋·재배포하지 않습니다."
           fi

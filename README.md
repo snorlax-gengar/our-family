@@ -70,7 +70,7 @@
 
 이 프로젝트는 **서버 없이 동작하는 정적 사이트**입니다.
 - 단지·금리·정책 데이터는 빌드할 때 JSON(`frontend/public/data/`)으로 내보내고, 대출 계산은 브라우저에서 합니다(`frontend/src/lib/loanCalculator.js`).
-- 금리·뉴스·정책은 GitHub Actions(`.github/workflows/daily-data-sync.yml`)가 매일 08:00·18:00(KST)에 수집해 커밋하고, 커밋이 들어오면 Cloudflare Pages가 자동으로 다시 빌드합니다.
+- 금리·뉴스·정책은 GitHub Actions(`.github/workflows/daily-data-sync.yml`)가 30분마다 수집해 내용이 바뀐 경우에만 커밋하고, 커밋이 들어오면 Cloudflare Pages가 자동으로 다시 빌드합니다.
 - 빌드할 때 단지별 검색용 페이지(`/apt/<단지id>/`), `sitemap.xml`, `robots.txt`가 함께 생성됩니다.
 - 관심 단지·숨긴 단지는 각 사용자의 브라우저(localStorage)에 저장됩니다.
 

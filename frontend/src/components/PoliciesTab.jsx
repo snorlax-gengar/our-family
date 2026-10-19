@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { 
-  BookOpen, Search, ShieldCheck, Sparkles, RefreshCw, 
+  BookOpen, Search, ShieldCheck, Sparkles, 
   ExternalLink, Calendar, CheckCircle2, AlertCircle, FileText,
   ChevronDown, ChevronUp, Layers, HelpCircle
 } from 'lucide-react';
+import DataFreshness from './DataFreshness';
 
 export default function PoliciesTab({ 
   policyData, 
@@ -54,14 +55,9 @@ export default function PoliciesTab({
             </p>
           </div>
 
-          <button
-            onClick={onRefreshPolicies}
-            disabled={policyRefreshing}
-            className="w-full md:w-auto justify-center bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-2 cursor-pointer shadow-md disabled:opacity-50 shrink-0 self-start md:self-center whitespace-nowrap"
-          >
-            <RefreshCw className={`w-4 h-4 ${policyRefreshing ? 'animate-spin' : ''}`} />
-            <span>{policyRefreshing ? '불러오는 중...' : '최신 정책 불러오기'}</span>
-          </button>
+          <DataFreshness
+            lastUpdated={policyData?.lastUpdated}
+          />
         </div>
       </div>
 

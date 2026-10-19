@@ -73,6 +73,25 @@ export default function App() {
     fetchPolicies();
   }, []);
 
+  // 자동 반영: 페이지를 열어 둔 동안 5분마다(그리고 탭으로 돌아왔을 때) 최신 배포본을 확인해,
+  // 금리·뉴스·정책이 새로 올라왔으면 새로고침 없이 화면을 바꾼다. (사이트 안 JSON만 읽으므로 무료)
+  useEffect(() => {
+    const check = async () => {
+      if (document.hidden) return;
+      try {
+        const [r, p] = await Promise.all([getRates({ fresh: true }), getPolicies({ fresh: true })]);
+        setRatesData((prev) => (prev?.lastUpdated === r.lastUpdated ? prev : r));
+        setPolicyData((prev) => (prev?.lastUpdated === p.lastUpdated ? prev : p));
+      } catch {}
+    };
+    const timer = setInterval(check, 5 * 60 * 1000);
+    document.addEventListener('visibilitychange', check);
+    return () => {
+      clearInterval(timer);
+      document.removeEventListener('visibilitychange', check);
+    };
+  }, []);
+
   // 뉴스 새로고침 핸들러: 하루 2회 자동 수집(GitHub Actions)된 최신본을 다시 불러온다
   const handleRefreshNews = async () => {
     try {

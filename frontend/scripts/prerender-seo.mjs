@@ -9,14 +9,14 @@
  * 본문 텍스트는 <div id="root"> 안에 들어가므로 JS가 없는 크롤러도 읽을 수 있고,
  * 브라우저에서는 React가 마운트되면서 앱 화면으로 교체된다(앱이 /apt/:id 를 보고 상세창을 연다).
  *
- * 사이트 주소는 환경변수 SITE_URL 로 바꿀 수 있다 (기본: https://our-family.onrender.com).
+ * 사이트 주소는 환경변수 SITE_URL 로 바꿀 수 있다 (기본: https://our-family.gengarileo.workers.dev, Cloudflare 배포 주소).
  */
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const SITE_URL = (process.env.SITE_URL || 'https://our-family.onrender.com').replace(/\/+$/, '');
+const SITE_URL = (process.env.SITE_URL || 'https://our-family.gengarileo.workers.dev').replace(/\/+$/, '');
 const DIST = path.join(__dirname, '..', 'dist');
 const DATA = path.join(__dirname, '..', '..', 'backend', 'data', 'properties.json');
 const SITE_NAME = '우리家';
@@ -138,7 +138,7 @@ function main() {
   // 홈 index.html 에 하드코딩된 기본 주소를 SITE_URL 로 교체 (도메인 변경 대응)
   const template = fs
     .readFileSync(templatePath, 'utf8')
-    .replaceAll('https://our-family.onrender.com', SITE_URL);
+    .replaceAll('https://our-family.gengarileo.workers.dev', SITE_URL);
   fs.writeFileSync(templatePath, template);
   if (!/<div id="root"><\/div>/i.test(template)) {
     console.error('[prerender-seo] index.html 에서 <div id="root"></div> 를 찾지 못했습니다.');
