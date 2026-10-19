@@ -1,0 +1,13 @@
+// Cloudflare 배포 설정 (서버 없이 정적 파일만 배포)
+// - 대시보드에서 Build command 는 `npm run build`, Deploy command 는 `npx wrangler deploy` (기본값)
+// - "name" 은 Cloudflare 대시보드에서 만든 프로젝트(Worker) 이름과 같아야 합니다.
+{
+  "name": "our-family",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    // 빌드 결과물 폴더 (= Build output directory)
+    "directory": "./frontend/dist",
+    // 없는 주소로 들어오면 index.html 을 보여줌 (앱이 홈으로 안내)
+    "not_found_handling": "single-page-application"
+  }
+}

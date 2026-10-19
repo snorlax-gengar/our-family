@@ -4,6 +4,7 @@ import PropertiesTab from './components/PropertiesTab';
 import RatesTab from './components/RatesTab';
 import PoliciesTab from './components/PoliciesTab';
 import BeginnerGuideModal from './components/BeginnerGuideModal';
+import { getProperties, getRates, getPolicies } from './lib/dataApi';
 import { Heart, ShieldAlert, Sparkles, Building2, Percent, BookOpen, ExternalLink } from 'lucide-react';
 
 export default function App() {
@@ -32,19 +33,12 @@ export default function App() {
   const fetchProperties = useCallback(async () => {
     try {
       setLoadingProperties(true);
-      const params = new URLSearchParams({
-        annualIncome: userCriteria.annualIncome.toString(),
-        isFirstHome: userCriteria.isFirstHome.toString(),
-        loanTenureYears: userCriteria.loanTenureYears.toString(),
-        useMcg: userCriteria.useMcg.toString(),
-        preferentialDiscount: userCriteria.preferentialDiscount.toString(),
+      // 정적 데이터(/data/properties.json) + 브라우저 대출 계산 (서버 불필요)
+      const list = await getProperties({
+        ...userCriteria,
         loanType: userCriteria.loanType || 'newborn',
       });
-      const res = await fetch(`/api/properties?${params.toString()}`);
-      if (res.ok) {
-        const data = await res.json();
-        setProperties(data.properties || []);
-      }
+      setProperties(list);
     } catch (err) {
       console.error('Failed to fetch properties:', err);
     } finally {
@@ -55,11 +49,7 @@ export default function App() {
   // 2. 금리 데이터 로드
   const fetchRates = async () => {
     try {
-      const res = await fetch('/api/rates');
-      if (res.ok) {
-        const data = await res.json();
-        setRatesData(data);
-      }
+      setRatesData(await getRates());
     } catch (err) {
       console.error('Failed to fetch rates:', err);
     }
@@ -68,11 +58,7 @@ export default function App() {
   // 3. 정책 & 용어 데이터 로드
   const fetchPolicies = async () => {
     try {
-      const res = await fetch('/api/policies');
-      if (res.ok) {
-        const data = await res.json();
-        setPolicyData(data);
-      }
+      setPolicyData(await getPolicies());
     } catch (err) {
       console.error('Failed to fetch policies:', err);
     }
@@ -87,20 +73,11 @@ export default function App() {
     fetchPolicies();
   }, []);
 
-  // 뉴스 실시간 새로고침 핸들러
+  // 뉴스 새로고침 핸들러: 하루 2회 자동 수집(GitHub Actions)된 최신본을 다시 불러온다
   const handleRefreshNews = async () => {
     try {
       setNewsRefreshing(true);
-      const res = await fetch('/api/rates/news/refresh', { method: 'POST' });
-      if (res.ok) {
-        const result = await res.json();
-        setRatesData(prev => ({
-          ...prev,
-          rates: result.rates || prev?.rates,
-          news: result.news || prev?.news,
-          lastUpdated: result.refreshedAt || prev?.lastUpdated
-        }));
-      }
+      setRatesData(await getRates({ fresh: true }));
     } catch (err) {
       console.error('News refresh error:', err);
     } finally {
@@ -108,18 +85,11 @@ export default function App() {
     }
   };
 
-  // 정책 실시간 스크래핑 새로고침 핸들러
+  // 정책 새로고침 핸들러: 하루 2회 자동 수집(GitHub Actions)된 최신본을 다시 불러온다
   const handleRefreshPolicies = async () => {
     try {
       setPolicyRefreshing(true);
-      const res = await fetch('/api/policies/refresh', { method: 'POST' });
-      if (res.ok) {
-        const result = await res.json();
-        setPolicyData(prev => ({
-          ...prev,
-          scrapedPolicies: result.scrapedPolicies || prev.scrapedPolicies
-        }));
-      }
+      setPolicyData(await getPolicies({ fresh: true }));
     } catch (err) {
       console.error('Policy refresh error:', err);
     } finally {

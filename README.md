@@ -66,67 +66,49 @@
 
 ---
 
-## 🌐 24시간 평생 무료 배포 가이드 (Render.com + GitHub)
+## 🌐 무료 배포 가이드 (Cloudflare Pages + GitHub, 서버 없음)
 
-> 🚀 **현재 실서비스 운영 중**: **[https://our-family.onrender.com/](https://our-family.onrender.com/)**  
-> 모바일(스마트폰), 태블릿, PC 브라우저 어디서나 바로 접속하여 사용하실 수 있습니다.
+이 프로젝트는 **서버 없이 동작하는 정적 사이트**입니다.
+- 단지·금리·정책 데이터는 빌드할 때 JSON(`frontend/public/data/`)으로 내보내고, 대출 계산은 브라우저에서 합니다(`frontend/src/lib/loanCalculator.js`).
+- 금리·뉴스·정책은 GitHub Actions(`.github/workflows/daily-data-sync.yml`)가 매일 08:00·18:00(KST)에 수집해 커밋하고, 커밋이 들어오면 Cloudflare Pages가 자동으로 다시 빌드합니다.
+- 빌드할 때 단지별 검색용 페이지(`/apt/<단지id>/`), `sitemap.xml`, `robots.txt`가 함께 생성됩니다.
+- 관심 단지·숨긴 단지는 각 사용자의 브라우저(localStorage)에 저장됩니다.
 
-이 프로젝트는 **풀스택 Node.js + React 통합 구조**로 설계되어 있어, 무료 클라우드 플랫폼인 **Render.com**에 올리면 **비용 0원(100% 무료)**으로 24시간 전 세계 어디서나 모바일/PC로 접속할 수 있습니다.
+### [1단계] GitHub에 푸시
+```bash
+git add -A
+git commit -m "feat: 정적 사이트 전환 (Cloudflare Pages)"
+git push origin main
+```
 
-### [1단계] 내 GitHub에 코드 올리기
+### [2단계] Cloudflare Pages 프로젝트 만들기
+1. [Cloudflare 대시보드](https://dash.cloudflare.com) → **Workers & Pages** → **Create** → **Pages** → **Connect to Git** 에서 이 저장소를 선택합니다.
+2. 빌드 설정:
+   - **Framework preset**: None
+   - **Root directory**: `/` (비워 두기)
+   - **Build command**: `npm run build`
+   - **Build output directory**: `frontend/dist`
+   - **Environment variables**: `SITE_URL` = 실제 서비스 주소 (예: `https://wooriga.pages.dev` 또는 연결한 도메인)
+   - Node 버전은 저장소 루트의 `.node-version`(22)을 따릅니다.
+3. **Save and Deploy** 후 몇 분 뒤 `https://<프로젝트명>.pages.dev` 로 접속할 수 있습니다.
 
-컴퓨터 터미널(Git Bash 또는 PowerShell)에서 프로젝트 폴더로 이동 후 아래 명령어를 입력합니다:
+### [3단계] 검색 등록
+- `frontend/index.html` 의 `naver-site-verification` / `google-site-verification` 주석을 풀고 인증 코드를 넣은 뒤 푸시합니다.
+- 네이버 서치어드바이저와 구글 서치콘솔에 `<사이트주소>/sitemap.xml` 을 제출합니다.
+- 도메인을 바꾸면 Cloudflare의 `SITE_URL` 환경변수만 바꾸고 다시 배포하면 canonical·sitemap 주소가 함께 바뀝니다.
+
+---
+
+## 💻 로컬(내 컴퓨터)에서 실행하기
 
 ```bash
 cd d:\my-realestate-app
-
-# 1. 깃 저장소 초기화 및 커밋
-git init
-git add .
-git commit -m "feat: Release 우리가 (우리家) v1.0.0"
-
-# 2. 본인의 GitHub에 새 Repository 생성 후 연결
-# (GitHub 웹사이트에서 'our-family' 또는 'wooriga' 라는 이름으로 새 저장소 생성)
-git branch -M main
-git remote add origin https://github.com/snorlax-gengar/our-family.git
-git push -u origin main
+npm run install:all   # 처음 한 번
+npm run dev           # 데이터 내보내기 후 http://localhost:5173 개발 서버 실행
 ```
 
----
-
-### [2단계] Render.com 무료 웹 서비스 생성 (클릭 5번 완료)
-
-1. [Render.com](https://render.com) 에 접속하여 무료 회원가입 (GitHub 계정으로 간편 로그인 추천).
-2. 대시보드 우측 상단의 **[New +]** 버튼을 누르고 **[Web Service]** 를 선택합니다.
-3. 방금 올린 GitHub 저장소(`our-family`)를 선택하고 **[Connect]** 클릭.
-4. 아래 설정값 5가지만 입력합니다:
-   - **Name**: `our-family` (원하는 주소 이름)
-   - **Language / Runtime**: `Node`
-   - **Root Directory**: `.` (기본값)
-   - **Build Command**: `npm run build`
-   - **Start Command**: `npm start`
-   - **Instance Type**: **Free (무료 $0/month)** 선택!
-5. 화면 맨 아래 **[Create Web Service]** 버튼을 클릭하면 약 2~3분 후 배포가 완료되며, 다음과 같이 접속할 수 있습니다:
-   👉 **실제 배포 주소**: **[https://our-family.onrender.com/](https://our-family.onrender.com/)** (모바일, 태블릿, PC 언제든 가족들과 함께 접속 가능!)
-
----
-
-## 💻 로컬(내 컴퓨터)에서 바로 실행하기
-
-- **웹 앱 접속**: `http://localhost:5173/` (Vite 개발 환경) 또는 `http://localhost:5001/` (통합 프로덕션)
-- **백엔드 REST API**: `http://localhost:5001/api/properties`, `/api/rates`, `/api/policies`
-
-바탕화면의 `start-app.bat`을 더블클릭하거나, 콘솔에서 아래 명령어로 1초 만에 실행할 수 있습니다:
-
-```bash
-# 1. 백엔드 실행
-cd d:\my-realestate-app\backend
-node server.js
-
-# 2. 프론트엔드 개발 서버 실행
-cd d:\my-realestate-app\frontend
-npm run dev
-```
+배포본과 같은 결과물을 확인하려면 `npm run build` 후 `frontend/dist` 를 정적 서버로 열면 됩니다.
+(기존 Express 서버 `npm start` / `start-app.bat` 도 빌드된 화면을 그대로 보여주지만, 화면은 더 이상 `/api` 를 사용하지 않습니다.)
 
 ---
 

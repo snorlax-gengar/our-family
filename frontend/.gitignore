@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# 빌드 때 생성되는 정적 데이터 (backend/scripts/exportStaticData.js)
+public/data/

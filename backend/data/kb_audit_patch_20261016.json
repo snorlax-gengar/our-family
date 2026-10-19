@@ -1,0 +1,4129 @@
+{
+  "seoul-gangbuk-mia-sk": {
+    "priceKrw": 888000000,
+    "priceDisplay": "8억 8,800만",
+    "priceRange": "8.9억 ~ 10억",
+    "kbPrice": {
+      "generalAvg": 875000000,
+      "highAvg": 915000000,
+      "lowAvg": 840000000,
+      "jeonseAvg": 565000000,
+      "jeonseRate": 64.6,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 5,
+        "price": 900000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 4,
+        "price": 850000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 8,
+        "price": 923000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 7,
+        "price": 848000000
+      }
+    ]
+  },
+  "seoul-guro-gaebong-hyundai": {
+    "priceKrw": 1095000000,
+    "priceDisplay": "10억 9,500만",
+    "priceRange": "10.6억 ~ 11.65억",
+    "kbPrice": {
+      "generalAvg": 1095000000,
+      "highAvg": 1165000000,
+      "lowAvg": 1060000000,
+      "jeonseAvg": 585000000,
+      "jeonseRate": 53.4,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.05",
+        "floor": 9,
+        "price": 940000000
+      },
+      {
+        "date": "2026.04",
+        "floor": 5,
+        "price": 962000000
+      }
+    ]
+  },
+  "seoul-geumcheon-siheung-byucksan": {
+    "priceKrw": 570000000,
+    "priceDisplay": "5억 7,000만",
+    "priceRange": "5.8억 ~ 6.6억",
+    "kbPrice": {
+      "generalAvg": 580000000,
+      "highAvg": 602500000,
+      "lowAvg": 540000000,
+      "jeonseAvg": 415000000,
+      "jeonseRate": 71.6,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 19,
+        "price": 585000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 4,
+        "price": 560000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 3,
+        "price": 544000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 17,
+        "price": 590000000
+      }
+    ]
+  },
+  "seoul-eunpyeong-nokbeon-jr": {
+    "priceKrw": 889000000,
+    "priceDisplay": "8억 8,900만",
+    "priceRange": "8.6억 ~ 9.35억",
+    "kbPrice": {
+      "generalAvg": 900000000,
+      "highAvg": 935000000,
+      "lowAvg": 860000000,
+      "jeonseAvg": 540000000,
+      "jeonseRate": 60.0,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.07",
+        "floor": 12,
+        "price": 877000000
+      },
+      {
+        "date": "2026.01",
+        "floor": 14,
+        "price": 765000000
+      }
+    ]
+  },
+  "seoul-jungnang-sinnae-dongsung": {
+    "priceKrw": 728000000,
+    "priceDisplay": "7억 2,800만",
+    "priceRange": "7.05억 ~ 7.6억",
+    "kbPrice": {
+      "generalAvg": 740000000,
+      "highAvg": 760000000,
+      "lowAvg": 705000000,
+      "jeonseAvg": 600000000,
+      "jeonseRate": 81.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.08",
+        "floor": 2,
+        "price": 740000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 2,
+        "price": 690000000
+      }
+    ]
+  },
+  "gyeonggi-goyang-deokyang-muwon-6": {
+    "priceKrw": 555000000,
+    "priceDisplay": "5억 5,500만",
+    "priceRange": "5.1억 ~ 6.3억",
+    "kbPrice": {
+      "generalAvg": 555000000,
+      "highAvg": 600000000,
+      "lowAvg": 505000000,
+      "jeonseAvg": 390000000,
+      "jeonseRate": 70.3,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 7,
+        "price": 560000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 5,
+        "price": 555000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 545000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 7,
+        "price": 580000000
+      }
+    ]
+  },
+  "gyeonggi-suwon-maetan-weve": {
+    "priceKrw": 756000000,
+    "priceDisplay": "7억 5,600만",
+    "priceRange": "7.2억 ~ 8.3억",
+    "kbPrice": {
+      "generalAvg": 755000000,
+      "highAvg": 785000000,
+      "lowAvg": 685000000,
+      "jeonseAvg": 470000000,
+      "jeonseRate": 62.3,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 810000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 23,
+        "price": 757000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 17,
+        "price": 740000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 19,
+        "price": 755000000
+      }
+    ]
+  },
+  "gyeonggi-anyang-dongan-bisan-raemian": {
+    "priceKrw": 828000000,
+    "priceDisplay": "8억 2,800만",
+    "priceRange": "7.7억 ~ 8.2억",
+    "kbPrice": {
+      "generalAvg": 810000000,
+      "highAvg": 845000000,
+      "lowAvg": 770000000,
+      "jeonseAvg": 435000000,
+      "jeonseRate": 53.7,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 14,
+        "price": 845000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 9,
+        "price": 810000000
+      }
+    ]
+  },
+  "gyeonggi-siheung-baegot-halla-1": {
+    "priceKrw": 555000000,
+    "priceDisplay": "5억 5,500만",
+    "priceRange": "5.25억 ~ 7억",
+    "kbPrice": {
+      "generalAvg": 555000000,
+      "highAvg": 595000000,
+      "lowAvg": 520000000,
+      "jeonseAvg": 350000000,
+      "jeonseRate": 63.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.06",
+        "floor": 2,
+        "price": 480000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 15,
+        "price": 519000000
+      }
+    ]
+  },
+  "gyeonggi-gimpo-pungmu-prugio": {
+    "priceKrw": 626000000,
+    "priceDisplay": "6억 2,600만",
+    "priceRange": "6.5억 ~ 7억",
+    "kbPrice": {
+      "generalAvg": 615000000,
+      "highAvg": 640000000,
+      "lowAvg": 580000000,
+      "jeonseAvg": 415000000,
+      "jeonseRate": 67.5,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.08",
+        "floor": 21,
+        "price": 637000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 14,
+        "price": 625000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 20,
+        "price": 645000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 9,
+        "price": 645000000
+      }
+    ]
+  },
+  "gyeonggi-namyangju-dasan-nature-epyeonhan": {
+    "priceKrw": 890000000,
+    "priceDisplay": "8억 9,000만",
+    "priceRange": "9억 ~ 9억",
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 17,
+        "price": 920000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 17,
+        "price": 530000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 23,
+        "price": 890000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 19,
+        "price": 930000000
+      }
+    ]
+  },
+  "seoul-dobong-banghak-shindonga-2": {
+    "priceKrw": 534000000,
+    "priceDisplay": "5억 3,400만",
+    "priceRange": "5.8억 ~ 6.2억",
+    "kbPrice": {
+      "generalAvg": 542500000,
+      "highAvg": 557500000,
+      "lowAvg": 510000000,
+      "jeonseAvg": 400000000,
+      "jeonseRate": 73.7,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.08",
+        "floor": 7,
+        "price": 525000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 9,
+        "price": 515000000
+      }
+    ]
+  },
+  "seoul-dobong-banghak-shindonga-3": {
+    "priceKrw": 495000000,
+    "priceDisplay": "4억 9,500만",
+    "priceRange": "4.7억 ~ 5.5억",
+    "kbPrice": {
+      "generalAvg": 500000000,
+      "highAvg": 530000000,
+      "lowAvg": 455000000,
+      "jeonseAvg": 365000000,
+      "jeonseRate": 73.0,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.08",
+        "floor": 8,
+        "price": 545000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 11,
+        "price": 490000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 4,
+        "price": 455000000
+      }
+    ]
+  },
+  "seoul-dobong-banghak-woosung-1": {
+    "priceKrw": 515000000,
+    "priceDisplay": "5억 1,500만",
+    "priceRange": "4.8억 ~ 5.3억",
+    "kbPrice": {
+      "generalAvg": 505000000,
+      "highAvg": 530000000,
+      "lowAvg": 480000000,
+      "jeonseAvg": 355000000,
+      "jeonseRate": 70.3,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.08",
+        "floor": 2,
+        "price": 485000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 10,
+        "price": 525000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 9,
+        "price": 540000000
+      }
+    ]
+  },
+  "seoul-dobong-banghak-woosung-2": {
+    "priceKrw": 559000000,
+    "priceDisplay": "5억 5,900만",
+    "priceRange": "5.1억 ~ 5.88억",
+    "kbPrice": {
+      "generalAvg": 555000000,
+      "highAvg": 587500000,
+      "lowAvg": 510000000,
+      "jeonseAvg": 395000000,
+      "jeonseRate": 71.2,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 2,
+        "price": 547000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 12,
+        "price": 580000000
+      }
+    ]
+  },
+  "seoul-dobong-banghak-cheonggu": {
+    "priceKrw": 585000000,
+    "priceDisplay": "5억 8,500만",
+    "priceRange": "5.25억 ~ 6.3억",
+    "kbPrice": {
+      "generalAvg": 585000000,
+      "highAvg": 630000000,
+      "lowAvg": 525000000,
+      "jeonseAvg": 430000000,
+      "jeonseRate": 73.5,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2025.12",
+        "floor": 13,
+        "price": 580000000
+      },
+      {
+        "date": "2025.08",
+        "floor": 2,
+        "price": 500000000
+      }
+    ]
+  },
+  "seoul-dobong-banghak-byucksan-1": {
+    "priceKrw": 465000000,
+    "priceDisplay": "4억 6,500만",
+    "priceRange": "4.85억 ~ 5.1억",
+    "kbPrice": {
+      "generalAvg": 465000000,
+      "highAvg": 495000000,
+      "lowAvg": 435000000,
+      "jeonseAvg": 320000000,
+      "jeonseRate": 68.8,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.06",
+        "floor": 6,
+        "price": 490000000
+      },
+      {
+        "date": "2026.05",
+        "floor": 1,
+        "price": 380000000
+      }
+    ]
+  },
+  "seoul-dobong-banghak-geoseong": {
+    "priceKrw": 615000000,
+    "priceDisplay": "6억 1,500만",
+    "priceRange": "6억 ~ 6.6억",
+    "kbPrice": {
+      "generalAvg": 600000000,
+      "highAvg": 630000000,
+      "lowAvg": 575000000,
+      "jeonseAvg": 365000000,
+      "jeonseRate": 60.8,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.08",
+        "floor": 15,
+        "price": 630000000
+      },
+      {
+        "date": "2026.03",
+        "floor": 13,
+        "price": 630000000
+      }
+    ]
+  },
+  "seoul-dobong-ssangmun-hanyang-6": {
+    "priceKrw": 565000000,
+    "priceDisplay": "5억 6,500만",
+    "priceRange": "5.4억 ~ 7.9억",
+    "kbPrice": {
+      "generalAvg": 580000000,
+      "highAvg": 620000000,
+      "lowAvg": 535000000,
+      "jeonseAvg": 440000000,
+      "jeonseRate": 75.9,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 12,
+        "price": 647000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 1,
+        "price": 440000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 4,
+        "price": 550000000
+      }
+    ]
+  },
+  "seoul-dobong-ssangmun-hyundai-1-26": {
+    "priceKrw": 502000000,
+    "priceDisplay": "5억 200만",
+    "priceRange": "5억 ~ 5.5억",
+    "kbPrice": {
+      "generalAvg": 505000000,
+      "highAvg": 515000000,
+      "lowAvg": 490000000,
+      "jeonseAvg": 340000000,
+      "jeonseRate": 67.3,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 11,
+        "price": 510000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 5,
+        "price": 498000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 3,
+        "price": 471000000
+      }
+    ]
+  },
+  "seoul-dobong-ssangmun-hyundai-1-30": {
+    "priceKrw": 563000000,
+    "priceDisplay": "5억 6,300만",
+    "priceRange": "5.4억 ~ 6.3억",
+    "kbPrice": {
+      "generalAvg": 560000000,
+      "highAvg": 580000000,
+      "lowAvg": 530000000,
+      "jeonseAvg": 405000000,
+      "jeonseRate": 72.3,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 2,
+        "price": 565000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 1,
+        "price": 565000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 10,
+        "price": 530000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 10,
+        "price": 538000000
+      }
+    ]
+  },
+  "seoul-dobong-ssangmun-hyundai-2": {
+    "priceKrw": 528000000,
+    "priceDisplay": "5억 2,800만",
+    "priceRange": "5.5억 ~ 6.5억",
+    "kbPrice": {
+      "generalAvg": 540000000,
+      "highAvg": 555000000,
+      "lowAvg": 500000000,
+      "jeonseAvg": 400000000,
+      "jeonseRate": 74.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 11,
+        "price": 555000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 1,
+        "price": 475000000
+      }
+    ]
+  },
+  "gyeonggi-bucheon-boram-ajou-23": {
+    "priceKrw": 613000000,
+    "priceDisplay": "6억 1,300만",
+    "priceRange": "5.55억 ~ 6.35억",
+    "kbPrice": {
+      "generalAvg": 605000000,
+      "highAvg": 635000000,
+      "lowAvg": 555000000,
+      "jeonseAvg": 350000000,
+      "jeonseRate": 57.9,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 6,
+        "price": 645000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 2,
+        "price": 585000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 3,
+        "price": 620000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 13,
+        "price": 556500000
+      }
+    ]
+  },
+  "gyeonggi-bucheon-boram-ajou-31": {
+    "priceKrw": 700000000,
+    "priceDisplay": "7억",
+    "priceRange": "7.6억 ~ 7.8억",
+    "kbPrice": {
+      "generalAvg": 700000000,
+      "highAvg": 750000000,
+      "lowAvg": 645000000,
+      "jeonseAvg": 450000000,
+      "jeonseRate": 64.3,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 2,
+        "price": 680000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 8,
+        "price": 755000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 6,
+        "price": 700000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 18,
+        "price": 650000000
+      }
+    ]
+  },
+  "gyeonggi-bucheon-hanareum-samwhan-24": {
+    "priceKrw": 385000000,
+    "priceDisplay": "3억 8,500만",
+    "priceRange": "3.48억 ~ 4.05억",
+    "kbPrice": {
+      "generalAvg": 380000000,
+      "highAvg": 405000000,
+      "lowAvg": 347500000,
+      "jeonseAvg": 297500000,
+      "jeonseRate": 78.3,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 15,
+        "price": 425000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 4,
+        "price": 380000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 13,
+        "price": 390000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 12,
+        "price": 408000000
+      }
+    ]
+  },
+  "gyeonggi-bucheon-hanareum-samwhan-31": {
+    "priceKrw": 558000000,
+    "priceDisplay": "5억 5,800만",
+    "priceRange": "4.9억 ~ 7억",
+    "kbPrice": {
+      "generalAvg": 555000000,
+      "highAvg": 580000000,
+      "lowAvg": 500000000,
+      "jeonseAvg": 390000000,
+      "jeonseRate": 70.3,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 4,
+        "price": 570000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 14,
+        "price": 560000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 1,
+        "price": 490000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 1,
+        "price": 500000000
+      }
+    ]
+  },
+  "gyeonggi-bucheon-yeonhwa-ssangyong-32": {
+    "priceKrw": 609000000,
+    "priceDisplay": "6억 900만",
+    "priceRange": "5.55억 ~ 6.28억",
+    "kbPrice": {
+      "generalAvg": 592500000,
+      "highAvg": 627500000,
+      "lowAvg": 555000000,
+      "jeonseAvg": 410000000,
+      "jeonseRate": 69.2,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 20,
+        "price": 625000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 6,
+        "price": 625000000
+      }
+    ]
+  },
+  "gyeonggi-bucheon-songnae-newseoul-31": {
+    "priceKrw": 577000000,
+    "priceDisplay": "5억 7,700만",
+    "priceRange": "5.7억 ~ 6.2억",
+    "kbPrice": {
+      "generalAvg": 575000000,
+      "highAvg": 600000000,
+      "lowAvg": 540000000,
+      "jeonseAvg": 375000000,
+      "jeonseRate": 65.2,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 9,
+        "price": 578000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 2,
+        "price": 520000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 7,
+        "price": 630000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 13,
+        "price": 400000000
+      }
+    ]
+  },
+  "gyeonggi-bucheon-sosa-jugong2-24": {
+    "priceKrw": 310000000,
+    "priceDisplay": "3억 1,000만",
+    "priceRange": "2.9억 ~ 3.5억",
+    "kbPrice": {
+      "generalAvg": 320000000,
+      "highAvg": 340000000,
+      "lowAvg": 277500000,
+      "jeonseAvg": 245000000,
+      "jeonseRate": 76.6,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 10,
+        "price": 295000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 14,
+        "price": 299000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 6,
+        "price": 333000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 8,
+        "price": 288000000
+      }
+    ]
+  },
+  "incheon-bupyeong-donga1-28": {
+    "priceKrw": 543000000,
+    "priceDisplay": "5억 4,300만",
+    "priceRange": "4.83억 ~ 5.72억",
+    "kbPrice": {
+      "generalAvg": 542500000,
+      "highAvg": 572500000,
+      "lowAvg": 482500000,
+      "jeonseAvg": 270000000,
+      "jeonseRate": 49.8,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.05",
+        "floor": 11,
+        "price": 568000000
+      },
+      {
+        "date": "2026.02",
+        "floor": 13,
+        "price": 553000000
+      }
+    ]
+  },
+  "incheon-bupyeong-donga1-31": {
+    "priceKrw": 610000000,
+    "priceDisplay": "6억 1,000만",
+    "priceRange": "5.9억 ~ 7.5억",
+    "kbPrice": {
+      "generalAvg": 610000000,
+      "highAvg": 630000000,
+      "lowAvg": 575000000,
+      "jeonseAvg": 295000000,
+      "jeonseRate": 48.4,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.05",
+        "floor": 3,
+        "price": 630000000
+      },
+      {
+        "date": "2026.04",
+        "floor": 11,
+        "price": 610000000
+      }
+    ]
+  },
+  "incheon-bupyeong-sangok-hyundai3-26": {
+    "priceKrw": 306000000,
+    "priceDisplay": "3억 600만",
+    "priceRange": "3억 ~ 3.2억",
+    "kbPrice": {
+      "generalAvg": 307500000,
+      "highAvg": 317500000,
+      "lowAvg": 285000000,
+      "jeonseAvg": 245000000,
+      "jeonseRate": 79.7,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.07",
+        "floor": 6,
+        "price": 305000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 12,
+        "price": 315000000
+      }
+    ]
+  },
+  "incheon-bupyeong-sangok-hyundai3-30": {
+    "priceKrw": 373000000,
+    "priceDisplay": "3억 7,300만",
+    "priceRange": "3.6억 ~ 4.2억",
+    "kbPrice": {
+      "generalAvg": 372500000,
+      "highAvg": 387500000,
+      "lowAvg": 360000000,
+      "jeonseAvg": 260000000,
+      "jeonseRate": 69.8,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 3,
+        "price": 375000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 13,
+        "price": 370000000
+      }
+    ]
+  },
+  "incheon-bupyeong-samsantown6-32a": {
+    "priceKrw": 668000000,
+    "priceDisplay": "6억 6,800만",
+    "priceRange": "7.1억 ~ 7.5억",
+    "kbPrice": {
+      "generalAvg": 650000000,
+      "highAvg": 690000000,
+      "lowAvg": 610000000,
+      "jeonseAvg": 445000000,
+      "jeonseRate": 68.5,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 16,
+        "price": 695000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 18,
+        "price": 665000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 11,
+        "price": 685000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 5,
+        "price": 647000000
+      }
+    ]
+  },
+  "incheon-gyeyang-jakjeon-hyundai2-31": {
+    "priceKrw": 371000000,
+    "priceDisplay": "3억 7,100만",
+    "priceRange": "4억 ~ 4.5억",
+    "kbPrice": {
+      "generalAvg": 367500000,
+      "highAvg": 392500000,
+      "lowAvg": 342500000,
+      "jeonseAvg": 267500000,
+      "jeonseRate": 72.8,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 19,
+        "price": 374000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 2,
+        "price": 358000000
+      }
+    ]
+  },
+  "incheon-yeonsu-dongchun-hyundai1-32": {
+    "priceKrw": 520000000,
+    "priceDisplay": "5억 2,000만",
+    "priceRange": "5.3억 ~ 6.2억",
+    "kbPrice": {
+      "generalAvg": 510000000,
+      "highAvg": 540000000,
+      "lowAvg": 490000000,
+      "jeonseAvg": 280000000,
+      "jeonseRate": 54.9,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 1,
+        "price": 530000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 6,
+        "price": 530000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 1,
+        "price": 510000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 8,
+        "price": 505000000
+      }
+    ]
+  },
+  "incheon-seogu-luwon-hoban-29": {
+    "priceKrw": 593000000,
+    "priceDisplay": "5억 9,300만",
+    "priceRange": "5.7억 ~ 6.5억",
+    "kbPrice": {
+      "generalAvg": 585000000,
+      "highAvg": 600000000,
+      "lowAvg": 555000000,
+      "jeonseAvg": 340000000,
+      "jeonseRate": 58.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.07",
+        "floor": 4,
+        "price": 600000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 24,
+        "price": 593000000
+      }
+    ]
+  },
+  "incheon-seogu-luwon-hoban-34": {
+    "priceKrw": 604000000,
+    "priceDisplay": "6억 400만",
+    "priceRange": "5.8억 ~ 7억",
+    "kbPrice": {
+      "generalAvg": 610000000,
+      "highAvg": 630000000,
+      "lowAvg": 580000000,
+      "jeonseAvg": 370000000,
+      "jeonseRate": 60.7,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 3,
+        "price": 598000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 4,
+        "price": 600000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 3,
+        "price": 560000000
+      }
+    ]
+  },
+  "seoul-dobong-banghak-shindonga-1-21": {
+    "priceKrw": 389000000,
+    "priceDisplay": "3억 8,900만",
+    "priceRange": "3.65억 ~ 4.6억",
+    "kbPrice": {
+      "generalAvg": 387500000,
+      "highAvg": 410000000,
+      "lowAvg": 350000000,
+      "jeonseAvg": 230000000,
+      "jeonseRate": 59.4,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 15,
+        "price": 390000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 3,
+        "price": 400000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 1,
+        "price": 310000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 6,
+        "price": 340000000
+      }
+    ]
+  },
+  "seoul-dobong-banghak-shindonga-1-26": {
+    "priceKrw": 470000000,
+    "priceDisplay": "4억 7,000만",
+    "priceRange": "4.3억 ~ 6.2억",
+    "kbPrice": {
+      "generalAvg": 480000000,
+      "highAvg": 505000000,
+      "lowAvg": 435000000,
+      "jeonseAvg": 305000000,
+      "jeonseRate": 63.5,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 9,
+        "price": 465000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 12,
+        "price": 460000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 6,
+        "price": 418000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 5,
+        "price": 445000000
+      }
+    ]
+  },
+  "seoul-dobong-banghak-shindonga-1-31": {
+    "priceKrw": 623000000,
+    "priceDisplay": "6억 2,300만",
+    "priceRange": "6.3억 ~ 7억",
+    "kbPrice": {
+      "generalAvg": 595000000,
+      "highAvg": 640000000,
+      "lowAvg": 540000000,
+      "jeonseAvg": 340000000,
+      "jeonseRate": 57.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 2,
+        "price": 600000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 4,
+        "price": 650000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 12,
+        "price": 665000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 2,
+        "price": 614000000
+      }
+    ]
+  },
+  "seoul-dobong-banghak-daesang-hyundai-25": {
+    "priceKrw": 730000000,
+    "priceDisplay": "7억 3,000만",
+    "priceRange": "6.75억 ~ 7.35억",
+    "kbPrice": {
+      "generalAvg": 710000000,
+      "highAvg": 735000000,
+      "lowAvg": 675000000,
+      "jeonseAvg": 435000000,
+      "jeonseRate": 61.3,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 8,
+        "price": 750000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 7,
+        "price": 750000000
+      }
+    ]
+  },
+  "seoul-dobong-banghak-daesang-hyundai-33": {
+    "priceKrw": 868000000,
+    "priceDisplay": "8억 6,800만",
+    "priceRange": "8.7억 ~ 10억",
+    "kbPrice": {
+      "generalAvg": 850000000,
+      "highAvg": 865000000,
+      "lowAvg": 810000000,
+      "jeonseAvg": 570000000,
+      "jeonseRate": 67.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 10,
+        "price": 870000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 17,
+        "price": 910000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 21,
+        "price": 885000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 15,
+        "price": 858000000
+      }
+    ]
+  },
+  "seoul-dobong-banghak-byucksan-2-26": {
+    "priceKrw": 426000000,
+    "priceDisplay": "4억 2,600만",
+    "priceRange": "4억 ~ 4.5억",
+    "kbPrice": {
+      "generalAvg": 430000000,
+      "highAvg": 450000000,
+      "lowAvg": 400000000,
+      "jeonseAvg": 280000000,
+      "jeonseRate": 65.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 1,
+        "price": 410000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 14,
+        "price": 433000000
+      }
+    ]
+  },
+  "seoul-dobong-banghak-byucksan-2-31": {
+    "priceKrw": 544000000,
+    "priceDisplay": "5억 4,400만",
+    "priceRange": "5.5억 ~ 6.3억",
+    "kbPrice": {
+      "generalAvg": 530000000,
+      "highAvg": 555000000,
+      "lowAvg": 500000000,
+      "jeonseAvg": 390000000,
+      "jeonseRate": 73.6,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 16,
+        "price": 558800000
+      },
+      {
+        "date": "2026.09",
+        "floor": 7,
+        "price": 570000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 10,
+        "price": 555000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 9,
+        "price": 530000000
+      }
+    ]
+  },
+  "seoul-dobong-changdong-jugong-19-25": {
+    "priceKrw": 946000000,
+    "priceDisplay": "9억 4,600만",
+    "priceRange": "9.5억 ~ 10억",
+    "kbPrice": {
+      "generalAvg": 940000000,
+      "highAvg": 975000000,
+      "lowAvg": 895000000,
+      "jeonseAvg": 350000000,
+      "jeonseRate": 37.2,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 1000000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 2,
+        "price": 903000000
+      }
+    ]
+  },
+  "seoul-dobong-changdong-jugong-19-29": {
+    "priceKrw": 1053000000,
+    "priceDisplay": "10억 5,300만",
+    "priceRange": "10.1억 ~ 12.5억",
+    "kbPrice": {
+      "generalAvg": 1040000000,
+      "highAvg": 1070000000,
+      "lowAvg": 1005000000,
+      "jeonseAvg": 420000000,
+      "jeonseRate": 40.4,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 12,
+        "price": 950000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 5,
+        "price": 1070000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 8,
+        "price": 1065000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 1,
+        "price": 1000000000
+      }
+    ]
+  },
+  "seoul-dobong-changdong-jugong-17-18": {
+    "priceKrw": 458000000,
+    "priceDisplay": "4억 5,800만",
+    "priceRange": "4.7억 ~ 5.2억",
+    "kbPrice": {
+      "generalAvg": 445000000,
+      "highAvg": 485000000,
+      "lowAvg": 405000000,
+      "jeonseAvg": 210000000,
+      "jeonseRate": 47.2,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.07",
+        "floor": 10,
+        "price": 470000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 11,
+        "price": 420000000
+      }
+    ]
+  },
+  "seoul-dobong-changdong-jugong-17-21": {
+    "priceKrw": 580000000,
+    "priceDisplay": "5억 8,000만",
+    "priceRange": "6.2억 ~ 7억",
+    "kbPrice": {
+      "generalAvg": 580000000,
+      "highAvg": 605000000,
+      "lowAvg": 550000000,
+      "jeonseAvg": 265000000,
+      "jeonseRate": 45.7,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.06",
+        "floor": 1,
+        "price": 550000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 1,
+        "price": 575000000
+      }
+    ]
+  },
+  "seoul-dobong-changdong-jugong-3-24": {
+    "priceKrw": 810000000,
+    "priceDisplay": "8억 1,000만",
+    "priceRange": "8억 ~ 9.2억",
+    "kbPrice": {
+      "generalAvg": 800000000,
+      "highAvg": 840000000,
+      "lowAvg": 745000000,
+      "jeonseAvg": 345000000,
+      "jeonseRate": 43.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 6,
+        "price": 820000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 11,
+        "price": 820000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 14,
+        "price": 800000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 10,
+        "price": 840000000
+      }
+    ]
+  },
+  "seoul-dobong-changdong-donga-cheongsol-24": {
+    "priceKrw": 934000000,
+    "priceDisplay": "9억 3,400만",
+    "priceRange": "9.5억 ~ 9.7억",
+    "kbPrice": {
+      "generalAvg": 930000000,
+      "highAvg": 950000000,
+      "lowAvg": 850000000,
+      "jeonseAvg": 395000000,
+      "jeonseRate": 42.5,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 18,
+        "price": 945000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 19,
+        "price": 937500000
+      },
+      {
+        "date": "2026.09",
+        "floor": 8,
+        "price": 927500000
+      },
+      {
+        "date": "2026.09",
+        "floor": 19,
+        "price": 920000000
+      }
+    ]
+  },
+  "seoul-dobong-changdong-donga-cheongsol-33": {
+    "priceKrw": 1103000000,
+    "priceDisplay": "11억 300만",
+    "priceRange": "11.8억 ~ 13.7억",
+    "kbPrice": {
+      "generalAvg": 1165000000,
+      "highAvg": 1215000000,
+      "lowAvg": 1045000000,
+      "jeonseAvg": 550000000,
+      "jeonseRate": 47.2,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 18,
+        "price": 1240000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 1,
+        "price": 1040000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 17,
+        "price": 800000000
+      }
+    ]
+  },
+  "seoul-dobong-changdong-ipark-33": {
+    "priceKrw": 1007000000,
+    "priceDisplay": "10억 700만",
+    "priceRange": "10.5억 ~ 12억",
+    "kbPrice": {
+      "generalAvg": 970000000,
+      "highAvg": 1055000000,
+      "lowAvg": 925000000,
+      "jeonseAvg": 590000000,
+      "jeonseRate": 60.8,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 15,
+        "price": 1043000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 22,
+        "price": 1080000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 20,
+        "price": 1012000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 6,
+        "price": 1030000000
+      }
+    ]
+  },
+  "seoul-dobong-changdong-hyundai-1-24": {
+    "priceKrw": 586000000,
+    "priceDisplay": "5억 8,600만",
+    "priceRange": "5.45억 ~ 6억",
+    "kbPrice": {
+      "generalAvg": 582500000,
+      "highAvg": 600000000,
+      "lowAvg": 545000000,
+      "jeonseAvg": 360000000,
+      "jeonseRate": 61.8,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 1,
+        "price": 540000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 2,
+        "price": 590000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 8,
+        "price": 600000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 8,
+        "price": 600000000
+      }
+    ]
+  },
+  "seoul-dobong-dobong-hanshin-31": {
+    "priceKrw": 675000000,
+    "priceDisplay": "6억 7,500만",
+    "priceRange": "6억 ~ 8억",
+    "kbPrice": {
+      "generalAvg": 655000000,
+      "highAvg": 680000000,
+      "lowAvg": 585000000,
+      "jeonseAvg": 455000000,
+      "jeonseRate": 69.5,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 1,
+        "price": 645000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 11,
+        "price": 695000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 10,
+        "price": 705000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 2,
+        "price": 650000000
+      }
+    ]
+  },
+  "seoul-dobong-dobong-seowon-24": {
+    "priceKrw": 482000000,
+    "priceDisplay": "4억 8,200만",
+    "priceRange": "4.47억 ~ 4.97억",
+    "kbPrice": {
+      "generalAvg": 477500000,
+      "highAvg": 497500000,
+      "lowAvg": 447500000,
+      "jeonseAvg": 255000000,
+      "jeonseRate": 53.4,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.07",
+        "floor": 14,
+        "price": 487000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 16,
+        "price": 483000000
+      }
+    ]
+  },
+  "seoul-dobong-ssangmun-hanyang-1-21": {
+    "priceKrw": 575000000,
+    "priceDisplay": "5억 7,500만",
+    "priceRange": "5.55억 ~ 5.9억",
+    "kbPrice": {
+      "generalAvg": 575000000,
+      "highAvg": 590000000,
+      "lowAvg": 555000000,
+      "jeonseAvg": 260000000,
+      "jeonseRate": 45.2,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.06",
+        "floor": 8,
+        "price": 593000000
+      },
+      {
+        "date": "2026.03",
+        "floor": 6,
+        "price": 590000000
+      }
+    ]
+  },
+  "seoul-dobong-ssangmun-hanyang-1-27": {
+    "priceKrw": 683000000,
+    "priceDisplay": "6억 8,300만",
+    "priceRange": "6.9억 ~ 7.5억",
+    "kbPrice": {
+      "generalAvg": 670000000,
+      "highAvg": 690000000,
+      "lowAvg": 640000000,
+      "jeonseAvg": 315000000,
+      "jeonseRate": 47.0,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 7,
+        "price": 686000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 12,
+        "price": 705000000
+      }
+    ]
+  },
+  "seoul-dobong-ssangmun-kukdong-31": {
+    "priceKrw": 510000000,
+    "priceDisplay": "5억 1,000만",
+    "priceRange": "4.88억 ~ 5.4억",
+    "kbPrice": {
+      "generalAvg": 510000000,
+      "highAvg": 540000000,
+      "lowAvg": 487500000,
+      "jeonseAvg": 365000000,
+      "jeonseRate": 71.6,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2021.05",
+        "floor": 7,
+        "price": 500000000
+      },
+      {
+        "date": "2020.04",
+        "floor": 5,
+        "price": 400000000
+      }
+    ]
+  },
+  "seoul-nowon-sanggye-jugong-6-17": {
+    "priceKrw": 665000000,
+    "priceDisplay": "6억 6,500만",
+    "priceRange": "6.3억 ~ 7억",
+    "kbPrice": {
+      "generalAvg": 655000000,
+      "highAvg": 680000000,
+      "lowAvg": 635000000,
+      "jeonseAvg": 235000000,
+      "jeonseRate": 35.9,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 10,
+        "price": 700000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 7,
+        "price": 675000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 13,
+        "price": 670000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 3,
+        "price": 625000000
+      }
+    ]
+  },
+  "seoul-nowon-sanggye-jugong-6-24": {
+    "priceKrw": 810000000,
+    "priceDisplay": "8억 1,000만",
+    "priceRange": "7.9억 ~ 9억",
+    "kbPrice": {
+      "generalAvg": 820000000,
+      "highAvg": 852500000,
+      "lowAvg": 785000000,
+      "jeonseAvg": 350000000,
+      "jeonseRate": 42.7,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 8,
+        "price": 845000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 1,
+        "price": 800000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 12,
+        "price": 780000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 15,
+        "price": 765000000
+      }
+    ]
+  },
+  "seoul-nowon-sanggye-jugong-3-17": {
+    "priceKrw": 638000000,
+    "priceDisplay": "6억 3,800만",
+    "priceRange": "6.8억 ~ 7.3억",
+    "kbPrice": {
+      "generalAvg": 625000000,
+      "highAvg": 650000000,
+      "lowAvg": 600000000,
+      "jeonseAvg": 220000000,
+      "jeonseRate": 35.2,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.07",
+        "floor": 15,
+        "price": 650000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 6,
+        "price": 650000000
+      }
+    ]
+  },
+  "seoul-nowon-junggye-green-1-17": {
+    "priceKrw": 565000000,
+    "priceDisplay": "5억 6,500만",
+    "priceRange": "6억 ~ 7억",
+    "kbPrice": {
+      "generalAvg": 570000000,
+      "highAvg": 600000000,
+      "lowAvg": 520000000,
+      "jeonseAvg": 260000000,
+      "jeonseRate": 45.6,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.08",
+        "floor": 3,
+        "price": 560000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 12,
+        "price": 540000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 3,
+        "price": 580000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 3,
+        "price": 550000000
+      }
+    ]
+  },
+  "seoul-nowon-junggye-green-1-21": {
+    "priceKrw": 693000000,
+    "priceDisplay": "6억 9,300만",
+    "priceRange": "6.5억 ~ 7.8억",
+    "kbPrice": {
+      "generalAvg": 685000000,
+      "highAvg": 745000000,
+      "lowAvg": 620000000,
+      "jeonseAvg": 340000000,
+      "jeonseRate": 49.6,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 715000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 2,
+        "price": 650000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 8,
+        "price": 700000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 6,
+        "price": 725000000
+      }
+    ]
+  },
+  "seoul-nowon-junggye-mujigae-21": {
+    "priceKrw": 693000000,
+    "priceDisplay": "6억 9,300만",
+    "priceRange": "6.7억 ~ 7.5억",
+    "kbPrice": {
+      "generalAvg": 685000000,
+      "highAvg": 710000000,
+      "lowAvg": 645000000,
+      "jeonseAvg": 345000000,
+      "jeonseRate": 50.4,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 11,
+        "price": 710000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 2,
+        "price": 640000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 9,
+        "price": 700000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 2,
+        "price": 670000000
+      }
+    ]
+  },
+  "seoul-nowon-wolgye-grandville-25": {
+    "priceKrw": 1103000000,
+    "priceDisplay": "11억 300만",
+    "priceRange": "10.9억 ~ 12.5억",
+    "kbPrice": {
+      "generalAvg": 1066670000,
+      "highAvg": 1116670000,
+      "lowAvg": 963330000,
+      "jeonseAvg": 523330000,
+      "jeonseRate": 49.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 27,
+        "price": 1150000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 17,
+        "price": 1140000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 5,
+        "price": 1030000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 5,
+        "price": 1090000000
+      }
+    ]
+  },
+  "seoul-nowon-wolgye-grandville-33": {
+    "priceKrw": 1169000000,
+    "priceDisplay": "11억 6,900만",
+    "priceRange": "11.2억 ~ 13.5억",
+    "kbPrice": {
+      "generalAvg": 1150000000,
+      "highAvg": 1240000000,
+      "lowAvg": 1063330000,
+      "jeonseAvg": 620000000,
+      "jeonseRate": 53.9,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.08",
+        "floor": 1,
+        "price": 1090000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 14,
+        "price": 1250000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 23,
+        "price": 1187500000
+      },
+      {
+        "date": "2026.07",
+        "floor": 3,
+        "price": 1195000000
+      }
+    ]
+  },
+  "seoul-nowon-hagye-jangmi-21": {
+    "priceKrw": 744000000,
+    "priceDisplay": "7억 4,400만",
+    "priceRange": "7.8억 ~ 8.2억",
+    "kbPrice": {
+      "generalAvg": 735000000,
+      "highAvg": 770000000,
+      "lowAvg": 685000000,
+      "jeonseAvg": 330000000,
+      "jeonseRate": 44.9,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 790000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 6,
+        "price": 753000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 10,
+        "price": 600000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 4,
+        "price": 775000000
+      }
+    ]
+  },
+  "seoul-nowon-gongneung-punglim-24": {
+    "priceKrw": 848000000,
+    "priceDisplay": "8억 4,800만",
+    "priceRange": "8.45억 ~ 9억",
+    "kbPrice": {
+      "generalAvg": 845000000,
+      "highAvg": 870000000,
+      "lowAvg": 805000000,
+      "jeonseAvg": 415000000,
+      "jeonseRate": 49.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 16,
+        "price": 820000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 8,
+        "price": 880000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 5,
+        "price": 850000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 13,
+        "price": 813000000
+      }
+    ]
+  },
+  "seoul-gangbuk-mia-sk-24": {
+    "priceKrw": 813000000,
+    "priceDisplay": "8억 1,300만",
+    "priceRange": "7.9억 ~ 8.5억",
+    "kbPrice": {
+      "generalAvg": 805000000,
+      "highAvg": 835000000,
+      "lowAvg": 775000000,
+      "jeonseAvg": 515000000,
+      "jeonseRate": 64.0,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 6,
+        "price": 800000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 12,
+        "price": 840000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 25,
+        "price": 820000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 12,
+        "price": 797000000
+      }
+    ]
+  },
+  "seoul-gangbuk-mia-trivera-1-25": {
+    "priceKrw": 1014000000,
+    "priceDisplay": "10억 1,400만",
+    "priceRange": "10억 ~ 11.2억",
+    "kbPrice": {
+      "generalAvg": 995000000,
+      "highAvg": 1050000000,
+      "lowAvg": 965000000,
+      "jeonseAvg": 555000000,
+      "jeonseRate": 55.8,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 4,
+        "price": 985000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 14,
+        "price": 1080000000
+      }
+    ]
+  },
+  "seoul-gangbuk-mia-trivera-1-33": {
+    "priceKrw": 1125000000,
+    "priceDisplay": "11억 2,500만",
+    "priceRange": "10.85억 ~ 11.4억",
+    "kbPrice": {
+      "generalAvg": 1110000000,
+      "highAvg": 1140000000,
+      "lowAvg": 1085000000,
+      "jeonseAvg": 665000000,
+      "jeonseRate": 59.9,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 5,
+        "price": 1198000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 4,
+        "price": 1072500000
+      },
+      {
+        "date": "2026.08",
+        "floor": 6,
+        "price": 1140000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 11,
+        "price": 1100000000
+      }
+    ]
+  },
+  "seoul-gangbuk-mia-doosan-weave-25": {
+    "priceKrw": 916000000,
+    "priceDisplay": "9억 1,600만",
+    "priceRange": "9.3억 ~ 9.5억",
+    "kbPrice": {
+      "generalAvg": 900000000,
+      "highAvg": 950000000,
+      "lowAvg": 865000000,
+      "jeonseAvg": 510000000,
+      "jeonseRate": 56.7,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 17,
+        "price": 932500000
+      },
+      {
+        "date": "2026.06",
+        "floor": 13,
+        "price": 860000000
+      }
+    ]
+  },
+  "seoul-gangbuk-mia-byucksan-24": {
+    "priceKrw": 690000000,
+    "priceDisplay": "6억 9,000만",
+    "priceRange": "6.95억 ~ 7.8억",
+    "kbPrice": {
+      "generalAvg": 690000000,
+      "highAvg": 715000000,
+      "lowAvg": 655000000,
+      "jeonseAvg": 460000000,
+      "jeonseRate": 66.7,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.07",
+        "floor": 5,
+        "price": 710000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 4,
+        "price": 670000000
+      }
+    ]
+  },
+  "seoul-gangbuk-beondong-jugong-1-18": {
+    "priceKrw": 584000000,
+    "priceDisplay": "5억 8,400만",
+    "priceRange": "5.7억 ~ 6.15억",
+    "kbPrice": {
+      "generalAvg": 590000000,
+      "highAvg": 615000000,
+      "lowAvg": 570000000,
+      "jeonseAvg": 210000000,
+      "jeonseRate": 35.6,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 1,
+        "price": 305400000
+      },
+      {
+        "date": "2026.09",
+        "floor": 2,
+        "price": 577000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 8,
+        "price": 615000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 12,
+        "price": 600000000
+      }
+    ]
+  },
+  "seoul-seongbuk-donam-hanshin-24": {
+    "priceKrw": 895000000,
+    "priceDisplay": "8억 9,500만",
+    "priceRange": "9억 ~ 10.5억",
+    "kbPrice": {
+      "generalAvg": 890000000,
+      "highAvg": 930000000,
+      "lowAvg": 865000000,
+      "jeonseAvg": 475000000,
+      "jeonseRate": 53.4,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 16,
+        "price": 870000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 6,
+        "price": 940000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 19,
+        "price": 900000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 11,
+        "price": 875000000
+      }
+    ]
+  },
+  "seoul-seongbuk-donam-hanshin-31": {
+    "priceKrw": 1005000000,
+    "priceDisplay": "10억 500만",
+    "priceRange": "9.6억 ~ 10.75억",
+    "kbPrice": {
+      "generalAvg": 1000000000,
+      "highAvg": 1075000000,
+      "lowAvg": 960000000,
+      "jeonseAvg": 680000000,
+      "jeonseRate": 68.0,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 2,
+        "price": 1010000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 1050000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 1,
+        "price": 965000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 1000000000
+      }
+    ]
+  },
+  "seoul-seongbuk-gireum-prugio-2-24": {
+    "priceKrw": 973000000,
+    "priceDisplay": "9억 7,300만",
+    "priceRange": "9.5억 ~ 10.3억",
+    "kbPrice": {
+      "generalAvg": 995000000,
+      "highAvg": 1030000000,
+      "lowAvg": 950000000,
+      "jeonseAvg": 530000000,
+      "jeonseRate": 53.3,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.07",
+        "floor": 2,
+        "price": 950000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 5,
+        "price": 1030000000
+      }
+    ]
+  },
+  "seoul-seongbuk-gireum-prugio-2-33": {
+    "priceKrw": 1165000000,
+    "priceDisplay": "11억 6,500만",
+    "priceRange": "11.5억 ~ 13억",
+    "kbPrice": {
+      "generalAvg": 1160000000,
+      "highAvg": 1180000000,
+      "lowAvg": 1110000000,
+      "jeonseAvg": 725000000,
+      "jeonseRate": 62.5,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.08",
+        "floor": 11,
+        "price": 750000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 18,
+        "price": 1170000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 14,
+        "price": 1180000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 6,
+        "price": 1180000000
+      }
+    ]
+  },
+  "seoul-seongbuk-seokgwan-doosan-25": {
+    "priceKrw": 1025000000,
+    "priceDisplay": "10억 2,500만",
+    "priceRange": "10.4억 ~ 11억",
+    "kbPrice": {
+      "generalAvg": 1030000000,
+      "highAvg": 1040000000,
+      "lowAvg": 950000000,
+      "jeonseAvg": 520000000,
+      "jeonseRate": 50.5,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 7,
+        "price": 1092000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 11,
+        "price": 726000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 5,
+        "price": 1020000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 14,
+        "price": 1000000000
+      }
+    ]
+  },
+  "seoul-seongbuk-jeongneung-punglim-24": {
+    "priceKrw": 674000000,
+    "priceDisplay": "6억 7,400만",
+    "priceRange": "7.2억 ~ 7.8억",
+    "kbPrice": {
+      "generalAvg": 677500000,
+      "highAvg": 700000000,
+      "lowAvg": 650000000,
+      "jeonseAvg": 380000000,
+      "jeonseRate": 56.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.08",
+        "floor": 19,
+        "price": 670000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 20,
+        "price": 660000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 15,
+        "price": 700000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 8,
+        "price": 675000000
+      }
+    ]
+  },
+  "seoul-jungnang-sinnae-6-20": {
+    "priceKrw": 685000000,
+    "priceDisplay": "6억 8,500만",
+    "priceRange": "6.5억 ~ 7.5억",
+    "kbPrice": {
+      "generalAvg": 690000000,
+      "highAvg": 720000000,
+      "lowAvg": 640000000,
+      "jeonseAvg": 380000000,
+      "jeonseRate": 55.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 12,
+        "price": 680000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 8,
+        "price": 680000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 6,
+        "price": 725000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 11,
+        "price": 710000000
+      }
+    ]
+  },
+  "seoul-jungnang-sinnae-desian-25": {
+    "priceKrw": 745000000,
+    "priceDisplay": "7억 4,500만",
+    "priceRange": "7.25억 ~ 7.6억",
+    "kbPrice": {
+      "generalAvg": 745000000,
+      "highAvg": 760000000,
+      "lowAvg": 725000000,
+      "jeonseAvg": 425000000,
+      "jeonseRate": 57.0,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.05",
+        "floor": 2,
+        "price": 707500000
+      },
+      {
+        "date": "2026.04",
+        "floor": 4,
+        "price": 715000000
+      }
+    ]
+  },
+  "seoul-jungnang-myeonmok-hanshin-25": {
+    "priceKrw": 680000000,
+    "priceDisplay": "6억 8,000만",
+    "priceRange": "6.2억 ~ 7억",
+    "kbPrice": {
+      "generalAvg": 660000000,
+      "highAvg": 700000000,
+      "lowAvg": 620000000,
+      "jeonseAvg": 335000000,
+      "jeonseRate": 50.8,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 10,
+        "price": 700000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 10,
+        "price": 660000000
+      }
+    ]
+  },
+  "seoul-jungnang-yongmasan-haneulchae-25": {
+    "priceKrw": 880000000,
+    "priceDisplay": "8억 8,000만",
+    "priceRange": "8.35억 ~ 9.07억",
+    "kbPrice": {
+      "generalAvg": 880000000,
+      "highAvg": 907500000,
+      "lowAvg": 835000000,
+      "jeonseAvg": 550000000,
+      "jeonseRate": 62.5,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.03",
+        "floor": 9,
+        "price": 905000000
+      },
+      {
+        "date": "2026.02",
+        "floor": 3,
+        "price": 885000000
+      }
+    ]
+  },
+  "seoul-dongdaemun-jangan-hyundai-1-24": {
+    "priceKrw": 1045000000,
+    "priceDisplay": "10억 4,500만",
+    "priceRange": "9.75억 ~ 10.75억",
+    "kbPrice": {
+      "generalAvg": 1045000000,
+      "highAvg": 1075000000,
+      "lowAvg": 975000000,
+      "jeonseAvg": 590000000,
+      "jeonseRate": 56.5,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.03",
+        "floor": 3,
+        "price": 1000000000
+      },
+      {
+        "date": "2026.02",
+        "floor": 2,
+        "price": 895000000
+      }
+    ]
+  },
+  "seoul-dongdaemun-jangan-hyundai-1-33": {
+    "priceKrw": 1236000000,
+    "priceDisplay": "12억 3,600만",
+    "priceRange": "13억 ~ 13.9억",
+    "kbPrice": {
+      "generalAvg": 1235000000,
+      "highAvg": 1290000000,
+      "lowAvg": 1165000000,
+      "jeonseAvg": 665000000,
+      "jeonseRate": 53.8,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.07",
+        "floor": 4,
+        "price": 1240000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 3,
+        "price": 1237500000
+      },
+      {
+        "date": "2026.07",
+        "floor": 5,
+        "price": 1230000000
+      }
+    ]
+  },
+  "seoul-dongdaemun-imun-daelim-25": {
+    "priceKrw": 1153000000,
+    "priceDisplay": "11억 5,300만",
+    "priceRange": "11.1억 ~ 13억",
+    "kbPrice": {
+      "generalAvg": 1110000000,
+      "highAvg": 1135000000,
+      "lowAvg": 1065000000,
+      "jeonseAvg": 510000000,
+      "jeonseRate": 45.9,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 11,
+        "price": 1195000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 18,
+        "price": 1220000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 2,
+        "price": 1035000000
+      }
+    ]
+  },
+  "seoul-dongdaemun-jegi-hanshin-25": {
+    "priceKrw": 1080000000,
+    "priceDisplay": "10억 8,000만",
+    "priceRange": "11억 ~ 12억",
+    "kbPrice": {
+      "generalAvg": 1050000000,
+      "highAvg": 1120000000,
+      "lowAvg": 975000000,
+      "jeonseAvg": 500000000,
+      "jeonseRate": 47.6,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 24,
+        "price": 1110000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 3,
+        "price": 1040000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 20,
+        "price": 1117000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 2,
+        "price": 1035000000
+      }
+    ]
+  },
+  "seoul-eunpyeong-bulgwang-hillstate-3-24": {
+    "priceKrw": 955000000,
+    "priceDisplay": "9억 5,500만",
+    "priceRange": "8.95억 ~ 9.75억",
+    "kbPrice": {
+      "generalAvg": 945000000,
+      "highAvg": 975000000,
+      "lowAvg": 895000000,
+      "jeonseAvg": 510000000,
+      "jeonseRate": 54.0,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 1,
+        "price": 950000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 5,
+        "price": 967000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 5,
+        "price": 965000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 1,
+        "price": 895000000
+      }
+    ]
+  },
+  "seoul-eunpyeong-bulgwang-hillstate-3-33": {
+    "priceKrw": 1063000000,
+    "priceDisplay": "10억 6,300만",
+    "priceRange": "10.8억 ~ 11.5억",
+    "kbPrice": {
+      "generalAvg": 1035000000,
+      "highAvg": 1090000000,
+      "lowAvg": 970000000,
+      "jeonseAvg": 615000000,
+      "jeonseRate": 59.4,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 1050000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 15,
+        "price": 1090000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 15,
+        "price": 1125000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 5,
+        "price": 990000000
+      }
+    ]
+  },
+  "seoul-eunpyeong-eungam-hillstate-1-33": {
+    "priceKrw": 962000000,
+    "priceDisplay": "9억 6,200만",
+    "priceRange": "9.8억 ~ 10.7억",
+    "kbPrice": {
+      "generalAvg": 985000000,
+      "highAvg": 1010000000,
+      "lowAvg": 955000000,
+      "jeonseAvg": 600000000,
+      "jeonseRate": 60.9,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.08",
+        "floor": 3,
+        "price": 937000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 7,
+        "price": 940000000
+      }
+    ]
+  },
+  "seoul-eunpyeong-newtown-sangrim-33": {
+    "priceKrw": 810000000,
+    "priceDisplay": "8억 1,000만",
+    "priceRange": "7.7억 ~ 8.3억",
+    "kbPrice": {
+      "generalAvg": 810000000,
+      "highAvg": 830000000,
+      "lowAvg": 770000000,
+      "jeonseAvg": 530000000,
+      "jeonseRate": 65.4,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.06",
+        "floor": 1,
+        "price": 790000000
+      },
+      {
+        "date": "2025.12",
+        "floor": 8,
+        "price": 790000000
+      }
+    ]
+  },
+  "seoul-seodaemun-hongeun-byucksan-25": {
+    "priceKrw": 770000000,
+    "priceDisplay": "7억 7,000만",
+    "priceRange": "7억 ~ 8.1억",
+    "kbPrice": {
+      "generalAvg": 760000000,
+      "highAvg": 810000000,
+      "lowAvg": 700000000,
+      "jeonseAvg": 380000000,
+      "jeonseRate": 50.0,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 7,
+        "price": 860000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 5,
+        "price": 700000000
+      }
+    ]
+  },
+  "seoul-seodaemun-muak-cheonggu-24": {
+    "priceKrw": 930000000,
+    "priceDisplay": "9억 3,000만",
+    "priceRange": "9억 ~ 9.45억",
+    "kbPrice": {
+      "generalAvg": 920000000,
+      "highAvg": 945000000,
+      "lowAvg": 900000000,
+      "jeonseAvg": 465000000,
+      "jeonseRate": 50.5,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.07",
+        "floor": 2,
+        "price": 940000000
+      },
+      {
+        "date": "2026.04",
+        "floor": 15,
+        "price": 880000000
+      }
+    ]
+  },
+  "seoul-seodaemun-namgajwa-hyundai-25": {
+    "priceKrw": 1023000000,
+    "priceDisplay": "10억 2,300만",
+    "priceRange": "10억 ~ 11.2억",
+    "kbPrice": {
+      "generalAvg": 995000000,
+      "highAvg": 1055000000,
+      "lowAvg": 945000000,
+      "jeonseAvg": 510000000,
+      "jeonseRate": 51.3,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 4,
+        "price": 1090000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 1045000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 15,
+        "price": 1050000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 5,
+        "price": 1060000000
+      }
+    ]
+  },
+  "seoul-guro-gaebong-hyundai-24": {
+    "priceKrw": 978000000,
+    "priceDisplay": "9억 7,800만",
+    "priceRange": "10억 ~ 11.5억",
+    "kbPrice": {
+      "generalAvg": 985000000,
+      "highAvg": 1015000000,
+      "lowAvg": 930000000,
+      "jeonseAvg": 525000000,
+      "jeonseRate": 53.3,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 12,
+        "price": 950000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 17,
+        "price": 970000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 5,
+        "price": 980000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 23,
+        "price": 800000000
+      }
+    ]
+  },
+  "seoul-guro-gaebong-hanjin-24": {
+    "priceKrw": 703000000,
+    "priceDisplay": "7억 300만",
+    "priceRange": "7.2억 ~ 7.7억",
+    "kbPrice": {
+      "generalAvg": 690000000,
+      "highAvg": 730000000,
+      "lowAvg": 650000000,
+      "jeonseAvg": 410000000,
+      "jeonseRate": 59.4,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 6,
+        "price": 710000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 10,
+        "price": 715000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 8,
+        "price": 737000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 18,
+        "price": 687000000
+      }
+    ]
+  },
+  "seoul-guro-gaebong-prugio-25": {
+    "priceKrw": 835000000,
+    "priceDisplay": "8억 3,500만",
+    "priceRange": "8.2억 ~ 8.5억",
+    "kbPrice": {
+      "generalAvg": 835000000,
+      "highAvg": 850000000,
+      "lowAvg": 820000000,
+      "jeonseAvg": 460000000,
+      "jeonseRate": 55.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2025.08",
+        "floor": 21,
+        "price": 780000000
+      },
+      {
+        "date": "2025.02",
+        "floor": 9,
+        "price": 740000000
+      }
+    ]
+  },
+  "seoul-guro-guro-doosan-27": {
+    "priceKrw": 840000000,
+    "priceDisplay": "8억 4,000만",
+    "priceRange": "7.65억 ~ 8.4억",
+    "kbPrice": {
+      "generalAvg": 820000000,
+      "highAvg": 840000000,
+      "lowAvg": 765000000,
+      "jeonseAvg": 405000000,
+      "jeonseRate": 49.4,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 12,
+        "price": 860000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 4,
+        "price": 770000000
+      }
+    ]
+  },
+  "seoul-geumcheon-siheung-byucksan-1-24": {
+    "priceKrw": 400000000,
+    "priceDisplay": "4억",
+    "priceRange": "4.3억 ~ 4.7억",
+    "kbPrice": {
+      "generalAvg": 400000000,
+      "highAvg": 420000000,
+      "lowAvg": 370000000,
+      "jeonseAvg": 305000000,
+      "jeonseRate": 76.2,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 18,
+        "price": 400000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 405000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 400000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 7,
+        "price": 378000000
+      }
+    ]
+  },
+  "seoul-geumcheon-siheung-byucksan-1-31": {
+    "priceKrw": 550000000,
+    "priceDisplay": "5억 5,000만",
+    "priceRange": "5.15억 ~ 6.3억",
+    "kbPrice": {
+      "generalAvg": 545000000,
+      "highAvg": 570000000,
+      "lowAvg": 490000000,
+      "jeonseAvg": 390000000,
+      "jeonseRate": 71.6,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.08",
+        "floor": 16,
+        "price": 554000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 2,
+        "price": 593000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 13,
+        "price": 525000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 2,
+        "price": 550000000
+      }
+    ]
+  },
+  "seoul-geumcheon-siheung-hillstate-24": {
+    "priceKrw": 880000000,
+    "priceDisplay": "8억 8,000만",
+    "priceRange": "8.15억 ~ 9억",
+    "kbPrice": {
+      "generalAvg": 860000000,
+      "highAvg": 900000000,
+      "lowAvg": 815000000,
+      "jeonseAvg": 580000000,
+      "jeonseRate": 67.4,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 4,
+        "price": 900000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 11,
+        "price": 842000000
+      }
+    ]
+  },
+  "seoul-gwanak-bongcheon-dreamtown-24": {
+    "priceKrw": 1205000000,
+    "priceDisplay": "12억 500만",
+    "priceRange": "11.75억 ~ 12.3억",
+    "kbPrice": {
+      "generalAvg": 1210000000,
+      "highAvg": 1230000000,
+      "lowAvg": 1175000000,
+      "jeonseAvg": 557500000,
+      "jeonseRate": 46.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.08",
+        "floor": 12,
+        "price": 1245000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 6,
+        "price": 1200000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 3,
+        "price": 1175000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 5,
+        "price": 1155000000
+      }
+    ]
+  },
+  "seoul-gwanak-bongcheon-dreamtown-32": {
+    "priceKrw": 1270000000,
+    "priceDisplay": "12억 7,000만",
+    "priceRange": "12.5억 ~ 13.2억",
+    "kbPrice": {
+      "generalAvg": 1290000000,
+      "highAvg": 1320000000,
+      "lowAvg": 1250000000,
+      "jeonseAvg": 667500000,
+      "jeonseRate": 51.7,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 2,
+        "price": 1238000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 1,
+        "price": 1249000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 6,
+        "price": 1250000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 11,
+        "price": 1295000000
+      }
+    ]
+  },
+  "seoul-gwanak-bongcheon-prugio-24": {
+    "priceKrw": 1208000000,
+    "priceDisplay": "12억 800만",
+    "priceRange": "11.3억 ~ 13.6억",
+    "kbPrice": {
+      "generalAvg": 1215000000,
+      "highAvg": 1260000000,
+      "lowAvg": 1150000000,
+      "jeonseAvg": 550000000,
+      "jeonseRate": 45.3,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 12,
+        "price": 1210000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 18,
+        "price": 1200000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 10,
+        "price": 1200000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 1200000000
+      }
+    ]
+  },
+  "seoul-gwanak-sillim-hyundai-23": {
+    "priceKrw": 761000000,
+    "priceDisplay": "7억 6,100만",
+    "priceRange": "7.5억 ~ 8.3억",
+    "kbPrice": {
+      "generalAvg": 762500000,
+      "highAvg": 777500000,
+      "lowAvg": 730000000,
+      "jeonseAvg": 440000000,
+      "jeonseRate": 57.7,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 11,
+        "price": 760000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 8,
+        "price": 760000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 3,
+        "price": 745000000
+      }
+    ]
+  },
+  "seoul-gangseo-banghwa-5-21": {
+    "priceKrw": 770000000,
+    "priceDisplay": "7억 7,000만",
+    "priceRange": "8억 ~ 9억",
+    "kbPrice": {
+      "generalAvg": 770000000,
+      "highAvg": 850000000,
+      "lowAvg": 680000000,
+      "jeonseAvg": 400000000,
+      "jeonseRate": 51.9,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 8,
+        "price": 770000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 1,
+        "price": 650000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 8,
+        "price": 845000000
+      }
+    ]
+  },
+  "seoul-yangcheon-sinwol-siyeong-21": {
+    "priceKrw": 795000000,
+    "priceDisplay": "7억 9,500만",
+    "priceRange": "8.2억 ~ 8.7억",
+    "kbPrice": {
+      "generalAvg": 770000000,
+      "highAvg": 795000000,
+      "lowAvg": 745000000,
+      "jeonseAvg": 225000000,
+      "jeonseRate": 29.2,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 820000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 6,
+        "price": 820000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 11,
+        "price": 755000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 6,
+        "price": 770000000
+      }
+    ]
+  },
+  "seoul-yangcheon-sinjeong-ipark-24": {
+    "priceKrw": 1650000000,
+    "priceDisplay": "16억 5,000만",
+    "priceRange": "18억 ~ 18.5억",
+    "kbPrice": {
+      "generalAvg": 1600000000,
+      "highAvg": 1700000000,
+      "lowAvg": 1525000000,
+      "jeonseAvg": 775000000,
+      "jeonseRate": 48.4,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.07",
+        "floor": 10,
+        "price": 1700000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 3,
+        "price": 1620000000
+      }
+    ]
+  },
+  "seoul-yeongdeungpo-daerim-hyundai-3-24": {
+    "priceKrw": 1230000000,
+    "priceDisplay": "12억 3,000만",
+    "priceRange": "12.4억 ~ 13.7억",
+    "kbPrice": {
+      "generalAvg": 1230000000,
+      "highAvg": 1250000000,
+      "lowAvg": 1190000000,
+      "jeonseAvg": 545000000,
+      "jeonseRate": 44.3,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.07",
+        "floor": 2,
+        "price": 1230000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 23,
+        "price": 1235000000
+      }
+    ]
+  },
+  "seoul-gangdong-amsa-hyundai-24": {
+    "priceKrw": 1534000000,
+    "priceDisplay": "15억 3,400만",
+    "priceRange": "14.7억 ~ 16.8억",
+    "kbPrice": {
+      "generalAvg": 1530000000,
+      "highAvg": 1575000000,
+      "lowAvg": 1465000000,
+      "jeonseAvg": 630000000,
+      "jeonseRate": 41.2,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 22,
+        "price": 1575000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 5,
+        "price": 1538000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 21,
+        "price": 1500000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 23,
+        "price": 1610000000
+      }
+    ]
+  },
+  "gyeonggi-goyang-ilsan-gangseon-14-31": {
+    "priceKrw": 640000000,
+    "priceDisplay": "6억 4,000만",
+    "priceRange": "6.48억 ~ 7.3억",
+    "kbPrice": {
+      "generalAvg": 670000000,
+      "highAvg": 695000000,
+      "lowAvg": 625000000,
+      "jeonseAvg": 420000000,
+      "jeonseRate": 62.7,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 610000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 15,
+        "price": 640000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 6,
+        "price": 605000000
+      }
+    ]
+  },
+  "gyeonggi-gwangmyeong-haan-jugong-5-19": {
+    "priceKrw": 548000000,
+    "priceDisplay": "5억 4,800만",
+    "priceRange": "6억 ~ 6.5억",
+    "kbPrice": {
+      "generalAvg": 575000000,
+      "highAvg": 595000000,
+      "lowAvg": 550000000,
+      "jeonseAvg": 210000000,
+      "jeonseRate": 36.5,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.08",
+        "floor": 7,
+        "price": 520000000
+      },
+      {
+        "date": "2026.01",
+        "floor": 5,
+        "price": 417000000
+      }
+    ]
+  },
+  "gyeonggi-anyang-pyeongchon-gongjak-20": {
+    "priceKrw": 832000000,
+    "priceDisplay": "8억 3,200만",
+    "priceRange": "8억 ~ 9.3억",
+    "kbPrice": {
+      "generalAvg": 815000000,
+      "highAvg": 850000000,
+      "lowAvg": 735000000,
+      "jeonseAvg": 315000000,
+      "jeonseRate": 38.7,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 11,
+        "price": 800000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 15,
+        "price": 849000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 7,
+        "price": 860000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 10,
+        "price": 870000000
+      }
+    ]
+  },
+  "gyeonggi-gunpo-sanbon-sejong-6-24": {
+    "priceKrw": 640000000,
+    "priceDisplay": "6억 4,000만",
+    "priceRange": "5.9억 ~ 7.2억",
+    "kbPrice": {
+      "generalAvg": 640000000,
+      "highAvg": 655000000,
+      "lowAvg": 590000000,
+      "jeonseAvg": 340000000,
+      "jeonseRate": 53.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 2,
+        "price": 640000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 14,
+        "price": 655000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 8,
+        "price": 640000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 15,
+        "price": 595000000
+      }
+    ]
+  },
+  "gyeonggi-suwon-yeongtong-hwanggol-1-24": {
+    "priceKrw": 514000000,
+    "priceDisplay": "5억 1,400만",
+    "priceRange": "5.6억 ~ 6억",
+    "kbPrice": {
+      "generalAvg": 510000000,
+      "highAvg": 545000000,
+      "lowAvg": 440000000,
+      "jeonseAvg": 330000000,
+      "jeonseRate": 64.7,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 10,
+        "price": 518000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 6,
+        "price": 550000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 8,
+        "price": 390000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 4,
+        "price": 448000000
+      }
+    ]
+  },
+  "gyeonggi-yongin-suji-pungdeokcheon-24": {
+    "priceKrw": 1020000000,
+    "priceDisplay": "10억 2,000만",
+    "priceRange": "10.5억 ~ 15억",
+    "kbPrice": {
+      "generalAvg": 1020000000,
+      "highAvg": 1080000000,
+      "lowAvg": 960000000,
+      "jeonseAvg": 430000000,
+      "jeonseRate": 42.2,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.06",
+        "floor": 15,
+        "price": 1045000000
+      },
+      {
+        "date": "2026.04",
+        "floor": 1,
+        "price": 830000000
+      }
+    ]
+  },
+  "gyeonggi-guri-inchang-jugong-1-24": {
+    "priceKrw": 740000000,
+    "priceDisplay": "7억 4,000만",
+    "priceRange": "7.55억 ~ 7.83억",
+    "kbPrice": {
+      "generalAvg": 740000000,
+      "highAvg": 765000000,
+      "lowAvg": 645000000,
+      "jeonseAvg": 400000000,
+      "jeonseRate": 54.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.06",
+        "floor": 4,
+        "price": 700000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 16,
+        "price": 718000000
+      }
+    ]
+  },
+  "gyeonggi-uijeongbu-lottecastle-25": {
+    "priceKrw": 493000000,
+    "priceDisplay": "4억 9,300만",
+    "priceRange": "4.4억 ~ 5.2억",
+    "kbPrice": {
+      "generalAvg": 485000000,
+      "highAvg": 502500000,
+      "lowAvg": 450000000,
+      "jeonseAvg": 325000000,
+      "jeonseRate": 67.0,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.08",
+        "floor": 6,
+        "price": 490000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 19,
+        "price": 500000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 8,
+        "price": 506000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 7,
+        "price": 498000000
+      }
+    ]
+  },
+  "gyeonggi-kimpo-hangang-xi-1-34": {
+    "priceKrw": 487000000,
+    "priceDisplay": "4억 8,700만",
+    "priceRange": "4.3억 ~ 7.2억",
+    "kbPrice": {
+      "generalAvg": 490000000,
+      "highAvg": 500000000,
+      "lowAvg": 477500000,
+      "jeonseAvg": 355000000,
+      "jeonseRate": 72.4,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 14,
+        "price": 483000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 10,
+        "price": 480000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 6,
+        "price": 500000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 6,
+        "price": 483000000
+      }
+    ]
+  },
+  "incheon-namdong-guwol-hillstate-1-25": {
+    "priceKrw": 458000000,
+    "priceDisplay": "4억 5,800만",
+    "priceRange": "4.5억 ~ 4.85억",
+    "kbPrice": {
+      "generalAvg": 455000000,
+      "highAvg": 470000000,
+      "lowAvg": 430000000,
+      "jeonseAvg": 310000000,
+      "jeonseRate": 68.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.08",
+        "floor": 10,
+        "price": 440000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 19,
+        "price": 460000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 12,
+        "price": 477000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 12,
+        "price": 460000000
+      }
+    ]
+  },
+  "incheon-namdong-guwol-hillstate-1-34": {
+    "priceKrw": 513000000,
+    "priceDisplay": "5억 1,300만",
+    "priceRange": "4.7억 ~ 6억",
+    "kbPrice": {
+      "generalAvg": 525000000,
+      "highAvg": 547500000,
+      "lowAvg": 490000000,
+      "jeonseAvg": 350000000,
+      "jeonseRate": 66.7,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 2,
+        "price": 480000000
+      },
+      {
+        "date": "2026.10",
+        "floor": 2,
+        "price": 500000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 21,
+        "price": 558000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 3,
+        "price": 450000000
+      }
+    ]
+  },
+  "incheon-seo-geomdan-kumho-34": {
+    "priceKrw": 750000000,
+    "priceDisplay": "7억 5,000만",
+    "priceRange": "7.1억 ~ 9억",
+    "kbPrice": {
+      "generalAvg": 770000000,
+      "highAvg": 787500000,
+      "lowAvg": 710000000,
+      "jeonseAvg": 435000000,
+      "jeonseRate": 56.5,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 4,
+        "price": 730000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 9,
+        "price": 747000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 2,
+        "price": 665000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 26,
+        "price": 790000000
+      }
+    ]
+  },
+  "seoul-gangdong-gil-dong-samik-park-23": {
+    "priceKrw": 1200000000,
+    "priceDisplay": "12억",
+    "priceRange": "11.5억 ~ 12.75억",
+    "kbPrice": {
+      "generalAvg": 1200000000,
+      "highAvg": 1275000000,
+      "lowAvg": 1150000000,
+      "jeonseAvg": null,
+      "jeonseRate": null,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.02",
+        "floor": 9,
+        "price": 1200000000
+      },
+      {
+        "date": "2026.02",
+        "floor": 10,
+        "price": 1255000000
+      }
+    ]
+  },
+  "seoul-dongjak-sadang-daerim-24": {
+    "priceKrw": 1475000000,
+    "priceDisplay": "14억 7,500만",
+    "priceRange": "15억 ~ 16억",
+    "kbPrice": {
+      "generalAvg": 1400000000,
+      "highAvg": 1500000000,
+      "lowAvg": 1300000000,
+      "jeonseAvg": 485000000,
+      "jeonseRate": 34.6,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.07",
+        "floor": 12,
+        "price": 1549000000
+      },
+      {
+        "date": "2026.05",
+        "floor": 4,
+        "price": 1524000000
+      }
+    ]
+  },
+  "seoul-dongjak-sangdo-hyundai-24": {
+    "priceKrw": 1700000000,
+    "priceDisplay": "17억",
+    "priceRange": "18억 ~ 18.3억",
+    "kbPrice": {
+      "generalAvg": 1700000000,
+      "highAvg": 1750000000,
+      "lowAvg": 1625000000,
+      "jeonseAvg": 715000000,
+      "jeonseRate": 42.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2025.06",
+        "floor": 12,
+        "price": 1392000000
+      },
+      {
+        "date": "2025.05",
+        "floor": 7,
+        "price": 780000000
+      }
+    ]
+  },
+  "gyeonggi-goyang-ilsandong-baekseok-baeksong-24": {
+    "priceKrw": 388000000,
+    "priceDisplay": "3억 8,800만",
+    "priceRange": "3.65억 ~ 4.5억",
+    "kbPrice": {
+      "generalAvg": 380000000,
+      "highAvg": 400000000,
+      "lowAvg": 360000000,
+      "jeonseAvg": 275000000,
+      "jeonseRate": 72.4,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 6,
+        "price": 395000000
+      },
+      {
+        "date": "2026.06",
+        "floor": 6,
+        "price": 390000000
+      }
+    ]
+  },
+  "gyeonggi-gwangmyeong-haaan-jugong-5-24": {
+    "priceKrw": 711000000,
+    "priceDisplay": "7억 1,100만",
+    "priceRange": "6.9억 ~ 7.38억",
+    "kbPrice": {
+      "generalAvg": 725000000,
+      "highAvg": 737500000,
+      "lowAvg": 690000000,
+      "jeonseAvg": 285000000,
+      "jeonseRate": 39.3,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 2,
+        "price": 705000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 2,
+        "price": 688000000
+      }
+    ]
+  },
+  "gyeonggi-suwon-yeongtong-byeokjeokgol-9-24": {
+    "priceKrw": 693000000,
+    "priceDisplay": "6억 9,300만",
+    "priceRange": "6.25억 ~ 7.35억",
+    "kbPrice": {
+      "generalAvg": 695000000,
+      "highAvg": 735000000,
+      "lowAvg": 625000000,
+      "jeonseAvg": 370000000,
+      "jeonseRate": 53.2,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 13,
+        "price": 690000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 12,
+        "price": 750000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 1,
+        "price": 620000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 1,
+        "price": 600000000
+      }
+    ]
+  },
+  "gyeonggi-yongin-suji-pungdeokcheon-samik-24": {
+    "priceKrw": 798000000,
+    "priceDisplay": "7억 9,800만",
+    "priceRange": "7.7억 ~ 9.5억",
+    "kbPrice": {
+      "generalAvg": 800000000,
+      "highAvg": 850000000,
+      "lowAvg": 750000000,
+      "jeonseAvg": null,
+      "jeonseRate": null,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 4,
+        "price": 600000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 10,
+        "price": 796000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 14,
+        "price": 820000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 1,
+        "price": 610000000
+      }
+    ]
+  },
+  "gyeonggi-uijeongbu-minrak-e-pyeonhansesang-25": {
+    "priceKrw": 326000000,
+    "priceDisplay": "3억 2,600만",
+    "priceRange": "3.15억 ~ 3.5억",
+    "kbPrice": {
+      "generalAvg": 337500000,
+      "highAvg": 350000000,
+      "lowAvg": 315000000,
+      "jeonseAvg": 222500000,
+      "jeonseRate": 65.9,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.07",
+        "floor": 3,
+        "price": 310000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 12,
+        "price": 320000000
+      }
+    ]
+  },
+  "gyeonggi-namyangju-dasan-jayun-lottercastle-33": {
+    "priceKrw": 1148000000,
+    "priceDisplay": "11억 4,800만",
+    "priceRange": "11.6억 ~ 13.5억",
+    "kbPrice": {
+      "generalAvg": 1150000000,
+      "highAvg": 1200000000,
+      "lowAvg": 1100000000,
+      "jeonseAvg": 650000000,
+      "jeonseRate": 56.5,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 24,
+        "price": 1145000000
+      },
+      {
+        "date": "2026.08",
+        "floor": 23,
+        "price": 1195000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 20,
+        "price": 1060000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 13,
+        "price": 1095000000
+      }
+    ]
+  },
+  "incheon-namdong-nonhyeon-hillstate-25": {
+    "priceKrw": 575000000,
+    "priceDisplay": "5억 7,500만",
+    "priceRange": "5.5억 ~ 5.9억",
+    "kbPrice": {
+      "generalAvg": 575000000,
+      "highAvg": 605000000,
+      "lowAvg": 555000000,
+      "jeonseAvg": 380000000,
+      "jeonseRate": 66.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.05",
+        "floor": 31,
+        "price": 584000000
+      },
+      {
+        "date": "2026.05",
+        "floor": 22,
+        "price": 543000000
+      }
+    ]
+  },
+  "incheon-michuhol-sk-skyview-25": {
+    "priceKrw": 491000000,
+    "priceDisplay": "4억 9,100만",
+    "priceRange": "5억 ~ 5.3억",
+    "kbPrice": {
+      "generalAvg": 485000000,
+      "highAvg": 495000000,
+      "lowAvg": 455000000,
+      "jeonseAvg": 340000000,
+      "jeonseRate": 70.1,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.10",
+        "floor": 10,
+        "price": 493000000
+      },
+      {
+        "date": "2026.09",
+        "floor": 20,
+        "price": 499000000
+      }
+    ]
+  },
+  "incheon-michuhol-sk-skyview-34": {
+    "priceKrw": 559000000,
+    "priceDisplay": "5억 5,900만",
+    "priceRange": "5.5억 ~ 6.1억",
+    "kbPrice": {
+      "generalAvg": 550000000,
+      "highAvg": 560000000,
+      "lowAvg": 530000000,
+      "jeonseAvg": 400000000,
+      "jeonseRate": 72.7,
+      "updatedAt": "2026.10.16"
+    },
+    "recentTrades": [
+      {
+        "date": "2026.09",
+        "floor": 15,
+        "price": 550000000
+      },
+      {
+        "date": "2026.07",
+        "floor": 34,
+        "price": 584000000
+      }
+    ]
+  }
+}

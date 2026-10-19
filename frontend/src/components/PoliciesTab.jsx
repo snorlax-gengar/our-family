@@ -60,7 +60,7 @@ export default function PoliciesTab({
             className="w-full md:w-auto justify-center bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-2 cursor-pointer shadow-md disabled:opacity-50 shrink-0 self-start md:self-center whitespace-nowrap"
           >
             <RefreshCw className={`w-4 h-4 ${policyRefreshing ? 'animate-spin' : ''}`} />
-            <span>{policyRefreshing ? '정책 스크래핑 중...' : '최신 정책 실시간 새로고침'}</span>
+            <span>{policyRefreshing ? '불러오는 중...' : '최신 정책 불러오기'}</span>
           </button>
         </div>
       </div>

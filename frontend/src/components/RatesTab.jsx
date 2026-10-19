@@ -53,7 +53,7 @@ export default function RatesTab({ ratesData, onRefreshNews, newsRefreshing }) {
               className="w-full sm:w-auto justify-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-2 cursor-pointer shadow-md disabled:opacity-50 whitespace-nowrap"
             >
               <RefreshCw className={`w-4 h-4 ${newsRefreshing ? 'animate-spin' : ''}`} />
-              <span>{newsRefreshing ? '금리·뉴스 동기화 중...' : '금리·뉴스 즉시 새로고침'}</span>
+              <span>{newsRefreshing ? '불러오는 중...' : '최신 금리·뉴스 불러오기'}</span>
             </button>
           </div>
         </div>

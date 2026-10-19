@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "install:all": "npm install --prefix backend && npm install --prefix frontend",
-    "build": "npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix backend",
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run export-data && npm run build --prefix frontend",
+    "export-data": "node backend/scripts/exportStaticData.js",
+    "dev": "npm run export-data && npm run dev --prefix frontend",
     "start": "node backend/server.js"
   },
   "keywords": ["real-estate", "korea", "newborn-loan", "interest-rates"],

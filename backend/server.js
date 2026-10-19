@@ -10,7 +10,7 @@ import {
   calculateDidimdolLoan, 
   calculateAllLoans, 
   calculateLoan 
-} from './services/loanCalculator.js';
+} from '../frontend/src/lib/loanCalculator.js';
 import { KOREA_INTEREST_RATES, getInterestRateData, scrapeInterestRateNews, ensureFreshRatesAndNews } from './services/interestRates.js';
 import { getPolicyData, scrapeGovernmentPolicies, ensureFreshPolicies } from './services/policyService.js';
 

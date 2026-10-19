@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { 
   Building2, Search, SlidersHorizontal, Train, ArrowUpDown, 
   ChevronRight, Sparkles, ShieldCheck, DollarSign, ExternalLink,
@@ -45,39 +45,6 @@ export default function PropertiesTab({
     }
   });
 
-  // 초기 접속 시 서버에 저장된 즐겨찾기 & 숨긴 단지 목록과 동기화
-  useEffect(() => {
-    fetch('/api/favorites')
-      .then((res) => (res.ok ? res.json() : null))
-      .then((data) => {
-        if (data && Array.isArray(data.favorites)) {
-          setFavorites((localFavs) => {
-            const merged = Array.from(new Set([...data.favorites, ...localFavs]));
-            try {
-              localStorage.setItem('wooriga_favorites', JSON.stringify(merged));
-            } catch {}
-            return merged;
-          });
-        }
-      })
-      .catch(() => {});
-
-    fetch('/api/hidden')
-      .then((res) => (res.ok ? res.json() : null))
-      .then((data) => {
-        if (data && Array.isArray(data.hidden)) {
-          setHiddenIds((localHidden) => {
-            const merged = Array.from(new Set([...data.hidden, ...localHidden]));
-            try {
-              localStorage.setItem('wooriga_hidden', JSON.stringify(merged));
-            } catch {}
-            return merged;
-          });
-        }
-      })
-      .catch(() => {});
-  }, []);
-
   const toggleFavorite = async (e, propId) => {
     if (e) e.stopPropagation();
     // 1. UI & localStorage 즉시 반영
@@ -93,21 +60,6 @@ export default function PropertiesTab({
       return next;
     });
 
-    // 2. 백엔드 서버(favorites.json)에도 영구 저장하여 기기 간 동기화
-    try {
-      const res = await fetch('/api/favorites/toggle', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ propertyId: propId }),
-      });
-      if (res.ok) {
-        const data = await res.json();
-        if (Array.isArray(data.favorites)) {
-          setFavorites(data.favorites);
-          localStorage.setItem('wooriga_favorites', JSON.stringify(data.favorites));
-        }
-      }
-    } catch {}
   };
 
   const toggleHideProperty = async (e, propId) => {
@@ -121,28 +73,12 @@ export default function PropertiesTab({
       } catch {}
       return next;
     });
-
-    try {
-      const res = await fetch('/api/hidden/toggle', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ propertyId: propId }),
-      });
-      if (res.ok) {
-        const data = await res.json();
-        if (Array.isArray(data.hidden)) {
-          setHiddenIds(data.hidden);
-          localStorage.setItem('wooriga_hidden', JSON.stringify(data.hidden));
-        }
-      }
-    } catch {}
   };
 
   const resetHiddenProperties = async () => {
     setHiddenIds([]);
     try {
       localStorage.setItem('wooriga_hidden', JSON.stringify([]));
-      await fetch('/api/hidden/reset', { method: 'POST' });
     } catch {}
   };
 
@@ -392,16 +328,6 @@ export default function PropertiesTab({
       } catch {}
       return next;
     });
-
-    try {
-      for (const id of idsToToggle) {
-        await fetch('/api/hidden/toggle', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ propertyId: id }),
-        });
-      }
-    } catch {}
   };
 
   // 도면 모달 바로 열기 핸들러
@@ -416,6 +342,48 @@ export default function PropertiesTab({
     setModalInitialTab('all');
     setSelectedProperty(prop);
   };
+
+  // ── 단지별 고유 URL(/apt/:id/) 연동 ───────────────────────────
+  // 검색엔진에서 /apt/<id>/ 로 들어오면 해당 단지 상세창을 바로 열고,
+  // 상세창을 열고 닫을 때 주소와 문서 제목을 함께 바꿔 공유·뒤로가기를 지원한다.
+  const deepLinkHandled = useRef(false);
+  const findPropertyByPath = (pathname) => {
+    const m = pathname.match(/^\/apt\/([^/]+)\/?$/);
+    if (!m) return null;
+    const id = decodeURIComponent(m[1]);
+    return properties.find((p) => p.id === id) || null;
+  };
+
+  useEffect(() => {
+    if (deepLinkHandled.current || properties.length === 0) return;
+    deepLinkHandled.current = true;
+    const prop = findPropertyByPath(window.location.pathname);
+    if (prop) {
+      setModalInitialTab('all');
+      setSelectedProperty(prop);
+    } else if (window.location.pathname.startsWith('/apt/')) {
+      window.history.replaceState({}, '', '/');
+    }
+  }, [properties]);
+
+  useEffect(() => {
+    if (!deepLinkHandled.current) return;
+    const onAptPath = window.location.pathname.startsWith('/apt/');
+    if (selectedProperty) {
+      const target = `/apt/${encodeURIComponent(selectedProperty.id)}/`;
+      if (window.location.pathname !== target) window.history.pushState({}, '', target);
+      document.title = `${selectedProperty.name} 실거래가·시세 | 우리家`;
+    } else {
+      if (onAptPath) window.history.pushState({}, '', '/');
+      document.title = '우리家 - 우리 가족 보금자리 플래너';
+    }
+  }, [selectedProperty]);
+
+  useEffect(() => {
+    const onPopState = () => setSelectedProperty(findPropertyByPath(window.location.pathname));
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, [properties]);
 
   // 선택된 대출 상품 메타데이터
   const currentLoanType = userCriteria.loanType || 'newborn';
