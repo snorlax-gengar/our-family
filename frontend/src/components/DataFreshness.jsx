@@ -3,10 +3,31 @@ import { Clock } from 'lucide-react';
 
 /**
  * 데이터 갱신 상태 안내
- * 금리·뉴스·정책은 GitHub Actions 가 매시 7분·37분에 확인해, 내용이 바뀌었을 때만 사이트를 다시 배포한다.
+ * - 마지막 변경: 데이터 파일의 lastUpdated (내용이 실제로 바뀌어 반영된 시각)
+ * - 마지막 확인: GitHub Actions 수집 워크플로가 마지막으로 성공한 시각 (공개 API, 비로그인 조회)
+ * - 다음 확인: Cloudflare Cron(wrangler.jsonc triggers.crons)이 수집을 깨우는 예정 시각
  * 페이지를 열어 둔 동안에는 App 이 5분마다 최신 배포본을 확인해 자동으로 화면에 반영한다.
  */
-const CHECK_MINUTES = [7, 37]; // .github/workflows/daily-data-sync.yml 의 cron 과 맞출 것
+const CHECK_MINUTES = [7, 37]; // wrangler.jsonc 의 triggers.crons 와 맞출 것
+const RUNS_API =
+  'https://api.github.com/repos/snorlax-gengar/our-family/actions/workflows/daily-data-sync.yml/runs?status=success&per_page=1';
+
+// 마지막 수집 성공 시각 (탭 간 공유, 3분 캐시 — GitHub 비로그인 한도 시간당 60회 고려)
+let lastCheckCache = { at: 0, value: null, pending: null };
+const fetchLastCheck = async () => {
+  if (Date.now() - lastCheckCache.at < 3 * 60 * 1000) return lastCheckCache.value;
+  if (!lastCheckCache.pending) {
+    lastCheckCache.pending = fetch(RUNS_API, { headers: { Accept: 'application/vnd.github+json' } })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j) => j?.workflow_runs?.[0]?.updated_at || null)
+      .catch(() => null)
+      .then((value) => {
+        lastCheckCache = { at: Date.now(), value: value ?? lastCheckCache.value, pending: null };
+        return lastCheckCache.value;
+      });
+  }
+  return lastCheckCache.pending;
+};
 
 const formatKst = (date, withDay = true) =>
   date.toLocaleString('ko-KR', {
@@ -41,24 +62,39 @@ const nextCheck = (now) => {
 
 export default function DataFreshness({ lastUpdated }) {
   const [now, setNow] = useState(() => Date.now());
+  const [lastCheck, setLastCheck] = useState(lastCheckCache.value);
   useEffect(() => {
-    const timer = setInterval(() => setNow(Date.now()), 30 * 1000);
-    return () => clearInterval(timer);
+    let alive = true;
+    const refreshCheck = () => fetchLastCheck().then((v) => alive && v && setLastCheck(v));
+    refreshCheck();
+    const tick = setInterval(() => setNow(Date.now()), 30 * 1000);
+    const poll = setInterval(refreshCheck, 5 * 60 * 1000);
+    return () => {
+      alive = false;
+      clearInterval(tick);
+      clearInterval(poll);
+    };
   }, []);
 
   const updated = lastUpdated ? new Date(lastUpdated) : null;
   const valid = updated && !Number.isNaN(updated.getTime());
   const next = nextCheck(now);
+  const checked = lastCheck ? new Date(lastCheck) : null;
+  const checkedValid = checked && !Number.isNaN(checked.getTime());
 
   return (
     <div className="bg-white/10 border border-white/15 rounded-xl px-3 py-2 text-left shrink-0 self-start md:self-center">
       <div className="flex items-center gap-1.5 text-[11px] sm:text-xs font-bold text-white whitespace-nowrap">
         <Clock className="w-3.5 h-3.5 text-emerald-300" />
-        <span>마지막 업데이트 {valid ? formatKst(updated) : '-'}</span>
+        <span>마지막 변경 {valid ? formatKst(updated) : '-'}</span>
         {valid && <span className="text-slate-300 font-medium">({relative(updated.getTime(), now)})</span>}
       </div>
       <div className="text-[10px] sm:text-[11px] text-slate-300 mt-0.5 whitespace-nowrap">
-        {next ? `다음 자동 확인 ${formatKst(next, false)} 예정` : '30분마다 자동 확인'} · 바뀌면 화면에 자동 반영
+        {checkedValid && <>마지막 확인 {formatKst(checked, false)} · </>}
+        {next ? `다음 확인 ${formatKst(next, false)} 예정` : '30분마다 자동 확인'}
+      </div>
+      <div className="text-[10px] sm:text-[11px] text-slate-400 whitespace-nowrap">
+        바뀐 내용이 있으면 화면에 자동 반영됩니다
       </div>
     </div>
   );

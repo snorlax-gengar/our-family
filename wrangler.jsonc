@@ -1,13 +1,33 @@
-// Cloudflare 배포 설정 (서버 없이 정적 파일만 배포)
-// - 대시보드에서 Build command 는 `npm run build`, Deploy command 는 `npx wrangler deploy` (기본값)
-// - "name" 은 Cloudflare 대시보드에서 만든 프로젝트(Worker) 이름과 같아야 합니다.
+// Cloudflare 배포 설정
+// - 대시보드: Build command `npm run build`, Deploy command `npx wrangler deploy` (기본값)
+// - "name" 은 Cloudflare 대시보드의 프로젝트(Worker) 이름과 같아야 합니다.
 {
   "name": "our-family",
   "compatibility_date": "2026-10-01",
+
+  // 정적 파일 제공 + 예약 실행을 담당하는 Worker 스크립트
+  "main": "./worker/index.js",
+
   "assets": {
     // 빌드 결과물 폴더 (= Build output directory)
     "directory": "./frontend/dist",
+    "binding": "ASSETS",
     // 없는 주소로 들어오면 index.html 을 보여줌 (앱이 홈으로 안내)
     "not_found_handling": "single-page-application"
+  },
+
+  // 30분마다(매시 7분·37분, UTC 기준이지만 시차가 정시 단위라 한국 시간도 동일) GitHub 데이터 수집 실행
+  // 바꾸면 frontend/src/components/DataFreshness.jsx 의 CHECK_MINUTES 도 같이 맞출 것
+  "triggers": {
+    "crons": ["7,37 * * * *"]
+  },
+
+  "vars": {
+    "GITHUB_REPO": "snorlax-gengar/our-family",
+    "GITHUB_WORKFLOW": "daily-data-sync.yml"
+  },
+
+  "observability": {
+    "enabled": true
   }
 }

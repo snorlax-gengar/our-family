@@ -92,6 +92,17 @@ git push origin main
    - Node 버전은 저장소 루트의 `.node-version`(22)을 따릅니다.
 3. **Save and Deploy** 후 몇 분 뒤 `https://<프로젝트명>.pages.dev` 로 접속할 수 있습니다.
 
+### [2-1단계] 30분 주기 자동 수집 연결 (Cloudflare Cron → GitHub Actions)
+GitHub 자체 예약 실행은 지연·누락이 잦아, Cloudflare Worker의 Cron(`wrangler.jsonc` → `triggers.crons`, 매시 7·37분)이 수집 워크플로를 실행시킵니다(`worker/index.js`).
+1. GitHub → Settings → Developer settings → Personal access tokens → **Fine-grained tokens** → Generate new token
+   - Repository access: **Only select repositories** → `our-family`
+   - Permissions → Repository permissions → **Actions: Read and write** (나머지는 기본값)
+2. Cloudflare → Workers & Pages → `our-family` → **Settings → Variables and Secrets → Add**
+   - Type: **Secret**, Name: `GITHUB_TOKEN`, Value: 위 토큰
+3. 확인: Cloudflare 프로젝트의 **Logs**(또는 Observability)에서 매시 7·37분에 `데이터 수집 워크플로 실행 요청 완료` 로그,
+   GitHub Actions 탭에서 `workflow_dispatch` 실행이 30분마다 보이면 정상입니다.
+   토큰이 만료되면 401 오류가 찍히므로 새 토큰으로 교체하세요. (그동안에도 GitHub 자체 예약이 3시간마다 보조로 실행됩니다.)
+
 ### [3단계] 검색 등록
 - `frontend/index.html` 의 `naver-site-verification` / `google-site-verification` 주석을 풀고 인증 코드를 넣은 뒤 푸시합니다.
 - 네이버 서치어드바이저와 구글 서치콘솔에 `<사이트주소>/sitemap.xml` 을 제출합니다.
