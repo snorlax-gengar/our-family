@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-10-20T08:27:43.412Z",
+  "lastUpdated": "2026-10-20T14:17:27.110Z",
   "scrapedPolicies": [
     {
-      "id": "gov-1791423604000-cqyjo",
+      "id": "gov-1791423604000-y7fqn",
       "ministry": "금융위원회",
       "title": "[금융위 국감] 가계대출 총량 3%로 넓힌다…주택공급 금융 47.8조원+α - ebn.co.kr",
       "date": "2026. 10. 8.",
@@ -13,7 +13,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1791356400000-ded9a",
+      "id": "gov-1791356400000-rlygj",
       "ministry": "국토교통부",
       "title": "김은혜 “문재인 정부 국토부, 부동산 정책 비판한 민간인 불법 사찰” - 경기신문",
       "date": "2026. 10. 7.",
@@ -24,7 +24,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1790821581000-osz81",
+      "id": "gov-1790821581000-1tozc",
       "ministry": "금융위원회",
       "title": "보도자료 - 금융위원회",
       "date": "2026. 10. 1.",
@@ -35,7 +35,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1790406000000-p619u",
+      "id": "gov-1790406000000-hmb78",
       "ministry": "국토교통부",
       "title": "[보도자료] 국토부, 외국인 부동산 거래 ‘숫자’보다 ‘자금’을 본다 - 국토교통신문",
       "date": "2026. 9. 26.",
@@ -46,7 +46,18 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1786690800000-8rukg",
+      "id": "gov-1790146800000-br5dn",
+      "ministry": "국토교통부",
+      "title": "[성명] 신임 홍지선 국토교통부 장관, 시민들의 주거안정을 위한 근본대책 실시하라! - 경제정의실천시민연합",
+      "date": "2026. 9. 23.",
+      "pubTimestamp": 1790146800000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "[성명] 신임 홍지선 국토교통부 장관, 시민들의 주거안정을 위한 근본대책 실시하라!  경제정의실천시민연합...",
+      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9rZmlrMEJ5Qi1nRXZ5Z2wwdVJjWFZmNE5NQTg0dlcyOWNuQTd4MlN1WHZ2MWYza2JRWHZLZG1ycFBybkVJSEdF?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1786690800000-aimbe",
       "ministry": "정책당국",
       "title": "수도권 13만 호 신속 공급! 달라지는 8.13 부동산 대책 - 정책브리핑",
       "date": "2026. 8. 14.",
@@ -57,18 +68,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1786604400000-cpb12",
-      "ministry": "정책당국",
-      "title": "수도권에 23만 호+α 추가 공급…부동산PF 자금지원 늘려 속도전 - 정책브리핑",
-      "date": "2026. 8. 13.",
-      "pubTimestamp": 1786604400000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "수도권에 23만 호+α 추가 공급…부동산PF 자금지원 늘려 속도전  정책브리핑...",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5iUDRQR2JvQ0J2clhhZWduVGsxUEZiLVptdEx0WDF4X3dvdW1LNERyQTViRHhIQ3Nla0JRLUxGaHJHZ2N4bUlHWXVReV9XcENoeWoyT01pclVQUWdOQmVtR1J1SDV0c0VxemIzdQ?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1786604400000-one6t",
+      "id": "gov-1786604400000-rpvx3",
       "ministry": "정책당국",
       "title": "대출 ‘오픈런’ 숨통 트이나…금융권 가계대출 30조 더 푼다 - 경기일보",
       "date": "2026. 8. 13.",
@@ -79,7 +79,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1786604400000-5fm2y",
+      "id": "gov-1786604400000-jrva6",
       "ministry": "정책당국",
       "title": "[이슈체크] 은행권 ‘대출 곳간’ 넓어진다…가계대출 총량 2배 상향 - 조세금융신문",
       "date": "2026. 8. 13.",
@@ -90,7 +90,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1786604400000-bvxop",
+      "id": "gov-1786604400000-usvns",
       "ministry": "정책당국",
       "title": "가계대출 총량 1.5→3%로 두 배…은행 대출 문턱 낮아질까 - 오피니언뉴스",
       "date": "2026. 8. 13.",
@@ -101,18 +101,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1784790000000-wezk3",
-      "ministry": "국토교통부",
-      "title": "[국토부] \"AI가 국토를 바꾼다면서…정작 국토는 없었다\" - 국토교통신문",
-      "date": "2026. 7. 23.",
-      "pubTimestamp": 1784790000000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "[국토부] \"AI가 국토를 바꾼다면서…정작 국토는 없었다\"  국토교통신문...",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAxU0lOanpHdVN2SjFKeWgxSUJrOG1pc3kzZnE5b253WnJ3cWg3c2JUdmdobXY3OGIzeHdmTTFnTV9kbHRtVmZyNTZkY0JmOVA5WHZuX1lWWkxFc3A0Y2tWeElDcTg1NVk?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1784098800000-kp1pc",
+      "id": "gov-1784098800000-dll4k",
       "ministry": "금융위원회",
       "title": "[금융위 업무보고] 삼전닉스 '억'대 성과급 받은만큼 DSR 한도 못 늘린다 - KB Think",
       "date": "2026. 7. 15.",
@@ -123,7 +112,18 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1783666800000-g6kec",
+      "id": "gov-1784012400000-4f4op",
+      "ministry": "정책당국",
+      "title": "부동산정책 수립에 '국민 목소리' 담는다…공개 토론회 개최 - 정책뉴스 | 뉴스 - 대한민국 정책브리핑",
+      "date": "2026. 7. 14.",
+      "pubTimestamp": 1784012400000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "부동산정책 수립에 '국민 목소리' 담는다…공개 토론회 개최 - 정책뉴스 | 뉴스  대한민국 정책브리핑...",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9mRzhJZWJKSnEwS2p5V1JoYk1Vb0lVbGFMSXpRUDh4RlpFWUNJYVB2Z0tRYm1TZkZ6V1U4eFpMckZod1lDZFJaQWRLMVQ4YjV0eG40Y3ZINEkyTmsweXI2Y0ExeEVBeFI3VUpTNw?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1783666800000-vsi8u",
       "ministry": "국토교통부",
       "title": "재경·금융·국토부, 세제·금융·공급 분야 부동산 국민 의견 듣는다 - 브릿지경제",
       "date": "2026. 7. 10.",
@@ -134,7 +134,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1781852400000-35scs",
+      "id": "gov-1781852400000-8fpsu",
       "ministry": "정책당국",
       "title": "지방 건설 경기 부진에...3단계 스트레스 DSR 6개월 더 유예 - 서울경제",
       "date": "2026. 6. 19.",
@@ -145,7 +145,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1780556400000-fgghf",
+      "id": "gov-1780556400000-a264s",
       "ministry": "정책당국",
       "title": "[보도자료] 제12차 부동산 불법행위 대응 협의회 - 이즈보험",
       "date": "2026. 6. 4.",
@@ -156,7 +156,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1780297200000-vyqft",
+      "id": "gov-1780297200000-u5vh0",
       "ministry": "국토교통부",
       "title": "[인사] 국토교통부 - 이투뉴스",
       "date": "2026. 6. 1.",
