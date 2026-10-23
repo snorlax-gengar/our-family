@@ -4,6 +4,7 @@ import {
   Receipt, TrendingUp, ExternalLink, Plus, Trash2, Heart, CheckCircle2, ArrowRight, Wallet
 } from 'lucide-react';
 import { calculateAllInCashReceipt } from '../lib/closingCostCalculator';
+import { calculatePropertyCommute } from '../lib/commuteCalculator';
 
 export default function CompareModal({
   compareProperties = [],
@@ -678,6 +679,44 @@ export default function CompareModal({
                       <span className="text-[11px] text-slate-500 block mt-0.5">{item.subwayDistance}</span>
                     </td>
                   ))}
+                  {enrichedList.length < 3 && <td className="border-l border-slate-100 bg-slate-50/30" />}
+                </tr>
+
+                {/* 🚇 5대 주요 업무지구 통근시간 비교 */}
+                <tr>
+                  <td className="py-3 px-4 font-bold bg-slate-50 whitespace-nowrap">
+                    5대 주요 업무지구 통근<br />
+                    <span className="text-[10px] text-emerald-700 font-semibold">(도보+전철 실소요)</span>
+                  </td>
+                  {enrichedList.map((item) => {
+                    const commute = item.commuteInfo || calculatePropertyCommute(item);
+                    const hubs = [
+                      { id: 'GBD', label: '강남·역삼 (GBD)' },
+                      { id: 'CBD', label: '광화문·종로 (CBD)' },
+                      { id: 'YBD', label: '여의도·공덕 (YBD)' },
+                      { id: 'MAGOK_DMC', label: '마곡·DMC·가산' },
+                      { id: 'PANGYO', label: '판교·분당 (IT)' },
+                    ];
+                    return (
+                      <td key={item.id} className="py-3 px-4 border-l border-slate-100">
+                        <div className="space-y-1 text-[11px]">
+                          {hubs.map((h) => {
+                            const info = commute?.byHub?.[h.id];
+                            if (!info) return null;
+                            const isBestHub = commute.bestHubId === h.id;
+                            return (
+                              <div key={h.id} className="flex items-center justify-between">
+                                <span className="text-slate-600">{h.label}</span>
+                                <span className={`font-extrabold ${isBestHub ? 'text-emerald-700 bg-emerald-50 px-1.5 py-0.2 rounded border border-emerald-200' : 'text-slate-800'}`}>
+                                  약 {info.totalMinutes}분
+                                </span>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </td>
+                    );
+                  })}
                   {enrichedList.length < 3 && <td className="border-l border-slate-100 bg-slate-50/30" />}
                 </tr>
 

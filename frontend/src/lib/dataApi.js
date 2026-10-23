@@ -7,6 +7,7 @@
  */
 import { calculateLoan, calculateAllLoans, formatKrw } from './loanCalculator.js';
 import { calculateAllInCashReceipt } from './closingCostCalculator.js';
+import { calculatePropertyCommute } from './commuteCalculator.js';
 
 const fetchJson = async (url, { fresh = false } = {}) => {
   const res = await fetch(url, { cache: fresh ? 'reload' : 'no-cache' });
@@ -84,8 +85,10 @@ export async function getProperties({
         includeMoving: false,
         interiorLevel: 'none',
       });
+      const commuteInfo = calculatePropertyCommute(item);
       return {
         ...item,
+        commuteInfo,
         loanSimulation: {
           ...loanSimulation,
           allInCash: closingReceipt.totalAllInCash,

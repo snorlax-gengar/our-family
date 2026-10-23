@@ -8,6 +8,7 @@ import {
 import FloorPlanViewer from './FloorPlanViewer';
 import { calculateAllInCashReceipt } from '../lib/closingCostCalculator';
 import { compareAllRepaymentMethods } from '../lib/repaymentCalculator';
+import { WORKPLACE_HUBS, calculatePropertyCommute } from '../lib/commuteCalculator';
 
 export default function PropertyDetailModal({ 
   property, 
@@ -1808,6 +1809,68 @@ export default function PropertyDetailModal({
                   </div>
                 </div>
               </div>
+
+              {/* Section 3.8: 🚇 5대 주요 업무지구(강남·광화문·여의도·마곡·판교) 맞벌이 통근 리포트 */}
+              {(() => {
+                const commute = prop.commuteInfo || calculatePropertyCommute(prop);
+                if (!commute?.byHub) return null;
+                const hubs = WORKPLACE_HUBS.filter((h) => h.id !== 'NONE');
+                return (
+                  <div className="bg-gradient-to-br from-emerald-50/70 via-teal-50/30 to-white rounded-2xl p-4 sm:p-5 border border-emerald-200 shadow-xs space-y-3">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                      <div className="flex items-center gap-2">
+                        <Train className="w-4 h-4 text-emerald-600 shrink-0" />
+                        <h3 className="font-black text-slate-900 text-sm sm:text-base">
+                          🚇 맞벌이 부부 5대 주요 업무지구 통근 리포트
+                        </h3>
+                      </div>
+                      <span className="text-[11px] font-bold text-emerald-800 bg-emerald-100/80 px-2.5 py-0.5 rounded-full border border-emerald-200 w-fit">
+                        인근역: {prop.subwayStation} ({prop.subwayDistance} · 접근 약 {commute.walkMinutes}분 반영)
+                      </span>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-5 gap-2.5">
+                      {hubs.map((hub) => {
+                        const info = commute.byHub[hub.id];
+                        if (!info) return null;
+                        const isBest = commute.bestHubId === hub.id;
+                        return (
+                          <div
+                            key={hub.id}
+                            className={`p-3 rounded-xl border transition-all flex flex-col justify-between ${
+                              isBest
+                                ? 'bg-emerald-900 text-white border-emerald-800 shadow-sm'
+                                : 'bg-white text-slate-800 border-slate-200'
+                            }`}
+                          >
+                            <div>
+                              <div className="flex items-center justify-between gap-1">
+                                <span className={`text-[11px] font-extrabold ${isBest ? 'text-emerald-200' : 'text-slate-600'}`}>
+                                  {hub.shortName}
+                                </span>
+                                {isBest && (
+                                  <span className="text-[9px] font-black bg-amber-400 text-slate-950 px-1.5 py-0.2 rounded">
+                                    최단권역
+                                  </span>
+                                )}
+                              </div>
+                              <div className={`text-lg font-black mt-1 ${isBest ? 'text-white' : 'text-slate-900'}`}>
+                                약 {info.totalMinutes}분
+                              </div>
+                              <div className={`text-[10px] mt-0.5 ${isBest ? 'text-emerald-300' : 'text-emerald-700 font-bold'}`}>
+                                (도보 {info.walkMinutes}분 + 전철 {info.transitMinutes}분)
+                              </div>
+                            </div>
+                            <div className={`text-[10px] mt-2 pt-1.5 border-t leading-snug ${isBest ? 'border-emerald-700 text-emerald-100' : 'border-slate-100 text-slate-500'}`}>
+                              {info.routeSummary}
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                );
+              })()}
 
               {/* Section 4: 최근 실거래가 내역 */}
               {prop.recentTrades && prop.recentTrades.length > 0 && (

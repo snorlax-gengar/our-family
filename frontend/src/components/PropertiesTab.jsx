@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import PropertyDetailModal from './PropertyDetailModal';
 import CompareModal from './CompareModal';
+import { WORKPLACE_HUBS, COMMUTE_LIMIT_OPTIONS, evaluateCoupleCommute } from '../lib/commuteCalculator';
 
 export default function PropertiesTab({ 
   properties, 
@@ -24,6 +25,37 @@ export default function PropertiesTab({
   const [myCash, setMyCash] = useState(0); // 0: 미설정, 예: 150000000 (1.5억)
   // 🌟 6억 초과 매물 포함 토글 (기본값: false - 6억 초과 아파트는 숨김 상태이며 토글 클릭 시 표시)
   const [includeOver600M, setIncludeOver600M] = useState(false);
+
+  // 🚇 맞벌이 부부 직장 업무지구(Hub) & 최대 통근시간 필터 (localStorage 영구 저장)
+  const [myHub, setMyHub] = useState(() => {
+    try {
+      return localStorage.getItem('wooriga_my_hub') || 'NONE';
+    } catch {
+      return 'NONE';
+    }
+  });
+  const [spouseHub, setSpouseHub] = useState(() => {
+    try {
+      return localStorage.getItem('wooriga_spouse_hub') || 'NONE';
+    } catch {
+      return 'NONE';
+    }
+  });
+  const [maxCommuteMinutes, setMaxCommuteMinutes] = useState(0); // 0: 전체, 35, 45, 60, 75
+
+  const handleChangeMyHub = (val) => {
+    setMyHub(val);
+    try {
+      localStorage.setItem('wooriga_my_hub', val);
+    } catch {}
+  };
+
+  const handleChangeSpouseHub = (val) => {
+    setSpouseHub(val);
+    try {
+      localStorage.setItem('wooriga_spouse_hub', val);
+    } catch {}
+  };
   
   // ❤️ 즐겨찾기 (브라우저 localStorage + 백엔드 서버 파일 이중 영구 저장 & 부부 기기 간 공유)
   const [favorites, setFavorites] = useState(() => {
@@ -351,16 +383,30 @@ export default function PropertiesTab({
         const activeVariant =
           matchingVariants.find((v) => v.id === userSelectedId) || matchingVariants[0];
 
+        // 🚇 맞벌이 부부 통근시간 계산 및 최대 통근시간 필터
+        const coupleCommute = evaluateCoupleCommute(activeVariant.commuteInfo, myHub, spouseHub);
+        if (maxCommuteMinutes > 0 && coupleCommute) {
+          // 선택한 업무지구 기준(미선택 시 단지의 최단 업무지구 기준) 통근시간 필터
+          if (coupleCommute.maxMinutes > maxCommuteMinutes) return null;
+        }
+
         return {
           ...complex,
           availableVariants: matchingVariants,
           activeVariant,
+          coupleCommute,
         };
       })
       .filter(Boolean)
       .sort((a, b) => {
         const vA = a.activeVariant;
         const vB = b.activeVariant;
+        if (sortOption === 'commuteFast') {
+          const cA = a.coupleCommute?.avgMinutes || 99;
+          const cB = b.coupleCommute?.avgMinutes || 99;
+          if (cA !== cB) return cA - cB;
+          return vA.priceKrw - vB.priceKrw;
+        }
         if (sortOption === 'regionPrice') {
           // 1순위: 지역 (서울 -> 경기 -> 인천)
           const regionOrder = { '서울': 1, '경기': 2, '인천': 3 };
@@ -380,7 +426,7 @@ export default function PropertiesTab({
         if (sortOption === 'unitsHigh') return (b.totalUnits || 0) - (a.totalUnits || 0);
         return vA.priceKrw - vB.priceKrw; // default: 가격 낮은순
       });
-  }, [visibleComplexes, selectedVariants, showFavoritesOnly, favorites, selectedRegion, selectedDistrict, priceBand, sizeFilter, sortOption, searchTerm, includeOver600M]);
+  }, [visibleComplexes, selectedVariants, showFavoritesOnly, favorites, selectedRegion, selectedDistrict, priceBand, sizeFilter, sortOption, searchTerm, includeOver600M, myHub, spouseHub, maxCommuteMinutes]);
 
   // 단지 전체 숨기기/제외 핸들러
   const toggleHideComplex = async (e, complex) => {
@@ -1236,10 +1282,98 @@ export default function PropertiesTab({
             >
               대단지순
             </button>
+
+            <button
+              type="button"
+              onClick={() => setSortOption('commuteFast')}
+              className={`px-2.5 sm:px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 flex items-center gap-1 ${
+                sortOption === 'commuteFast'
+                  ? 'bg-emerald-600 text-white shadow-xs'
+                  : 'bg-emerald-50/70 text-emerald-800 border border-emerald-200 hover:bg-emerald-100/80'
+              }`}
+            >
+              <span>🚇 직주근접(통근 빠른순)</span>
+            </button>
           </div>
 
           <div className="hidden sm:block text-xs text-slate-500 shrink-0">
-            현재 정렬: <strong className="text-blue-600 font-extrabold">{sortOption === 'regionPrice' ? '지역 > 금액순' : sortOption === 'priceLow' ? '가격 낮은순' : sortOption === 'priceHigh' ? '가격 높은순' : sortOption === 'jeonseHigh' ? '전세가율순' : sortOption === 'yearNew' ? '신축순' : '대단지순'}</strong>
+            현재 정렬: <strong className="text-blue-600 font-extrabold">{sortOption === 'regionPrice' ? '지역 > 금액순' : sortOption === 'priceLow' ? '가격 낮은순' : sortOption === 'priceHigh' ? '가격 높은순' : sortOption === 'jeonseHigh' ? '전세가율순' : sortOption === 'yearNew' ? '신축순' : sortOption === 'commuteFast' ? '통근 빠른순' : '대단지순'}</strong>
+          </div>
+        </div>
+
+        {/* 🌟 🚇 맞벌이 부부 직장 업무지구(5대 허브) & 최대 통근시간 필터 바 */}
+        <div className="bg-gradient-to-r from-emerald-50/70 via-teal-50/40 to-indigo-50/40 rounded-xl p-2.5 sm:p-3 border border-emerald-200/80 flex flex-col lg:flex-row lg:items-center justify-between gap-2.5">
+          <div className="flex flex-wrap items-center gap-2">
+            <div className="flex items-center gap-1.5 text-xs font-black text-emerald-950 shrink-0">
+              <Train className="w-3.5 h-3.5 text-emerald-600" />
+              <span>맞벌이 직주근접 설정:</span>
+            </div>
+
+            {/* 본인 직장 */}
+            <div className="flex items-center gap-1 bg-white px-2.5 py-1 rounded-lg border border-emerald-200 shadow-2xs">
+              <span className="text-[11px] font-bold text-slate-500">👔 본인 직장</span>
+              <select
+                value={myHub}
+                onChange={(e) => {
+                  handleChangeMyHub(e.target.value);
+                  if (e.target.value !== 'NONE' && sortOption === 'regionPrice') {
+                    // 직장 설정 시 통근 배지 즉시 활성화
+                  }
+                }}
+                className="text-xs font-extrabold text-emerald-800 bg-transparent focus:outline-none cursor-pointer"
+              >
+                {WORKPLACE_HUBS.map((hub) => (
+                  <option key={hub.id} value={hub.id}>{hub.shortName}</option>
+                ))}
+              </select>
+            </div>
+
+            {/* 배우자 직장 */}
+            <div className="flex items-center gap-1 bg-white px-2.5 py-1 rounded-lg border border-indigo-200 shadow-2xs">
+              <span className="text-[11px] font-bold text-slate-500">👜 배우자 직장</span>
+              <select
+                value={spouseHub}
+                onChange={(e) => handleChangeSpouseHub(e.target.value)}
+                className="text-xs font-extrabold text-indigo-800 bg-transparent focus:outline-none cursor-pointer"
+              >
+                {WORKPLACE_HUBS.map((hub) => (
+                  <option key={hub.id} value={hub.id}>{hub.shortName}</option>
+                ))}
+              </select>
+            </div>
+
+            {(myHub !== 'NONE' || spouseHub !== 'NONE' || maxCommuteMinutes > 0) && (
+              <button
+                type="button"
+                onClick={() => {
+                  handleChangeMyHub('NONE');
+                  handleChangeSpouseHub('NONE');
+                  setMaxCommuteMinutes(0);
+                }}
+                className="text-[11px] text-slate-500 hover:text-rose-600 font-bold px-2 py-1 rounded-lg hover:bg-white/80 cursor-pointer transition-colors"
+              >
+                초기화
+              </button>
+            )}
+          </div>
+
+          {/* 최대 통근시간 칩 필터 */}
+          <div className="flex items-center gap-1 overflow-x-auto no-scrollbar">
+            <span className="text-[11px] font-bold text-slate-600 shrink-0 mr-1">편도 통근컷:</span>
+            {COMMUTE_LIMIT_OPTIONS.map((opt) => (
+              <button
+                key={opt.value}
+                type="button"
+                onClick={() => setMaxCommuteMinutes(opt.value)}
+                className={`px-2.5 py-1 rounded-lg text-[11px] font-bold whitespace-nowrap cursor-pointer transition-all shrink-0 ${
+                  maxCommuteMinutes === opt.value
+                    ? 'bg-emerald-700 text-white shadow-2xs'
+                    : 'bg-white text-slate-600 border border-slate-200 hover:bg-emerald-50'
+                }`}
+              >
+                {opt.label}
+              </button>
+            ))}
           </div>
         </div>
 
@@ -1598,6 +1732,67 @@ export default function PropertiesTab({
                         {fp.roomsCount ? `${fp.roomsCount}룸 ${fp.bathroomsCount}욕` : property.rooms} · {fp.structure || '판상형'}
                       </span>
                     </div>
+
+                    {/* [5행] 🚇 5대 주요 업무지구(강남·광화문·여의도·마곡·판교) & 맞벌이 통근 배지 */}
+                    {property.commuteInfo?.byHub && (
+                      <div className="mt-2 pt-2 border-t border-slate-100/90 flex items-center justify-between gap-1.5 flex-wrap">
+                        {complex.coupleCommute?.isActive ? (
+                          <>
+                            <div className="flex items-center gap-1.5 flex-wrap">
+                              {complex.coupleCommute.activeHubs.map((hub) => (
+                                <span
+                                  key={`${hub.role}_${hub.hubId}`}
+                                  title={`${hub.role} (${hub.shortName}): ${hub.routeSummary}`}
+                                  className={`text-[10px] font-extrabold px-2 py-0.5 rounded-md border flex items-center gap-1 ${
+                                    hub.totalMinutes <= 35
+                                      ? 'bg-emerald-50 text-emerald-800 border-emerald-300'
+                                      : hub.totalMinutes <= 50
+                                      ? 'bg-blue-50 text-blue-800 border-blue-200'
+                                      : 'bg-slate-100 text-slate-700 border-slate-200'
+                                  }`}
+                                >
+                                  <span>{hub.role === '본인' ? '👔' : '👜'} {hub.shortName.split(' ')[0]}</span>
+                                  <strong className="font-black">{hub.totalMinutes}분</strong>
+                                </span>
+                              ))}
+                            </div>
+                            <span className="text-[10px] font-extrabold text-indigo-700 bg-indigo-50 px-1.5 py-0.5 rounded border border-indigo-200 whitespace-nowrap">
+                              평균 {complex.coupleCommute.avgMinutes}분 {complex.coupleCommute.balanceGrade ? `· ${complex.coupleCommute.balanceGrade.replace(/^[^\s]+\s/, '')}` : ''}
+                            </span>
+                          </>
+                        ) : (
+                          <div className="flex items-center justify-between w-full gap-1 overflow-x-auto no-scrollbar">
+                            <span className="text-[10px] font-bold text-slate-400 shrink-0">주요업무지구:</span>
+                            <div className="flex items-center gap-1 shrink-0">
+                              {[
+                                { id: 'GBD', label: '강남' },
+                                { id: 'CBD', label: '광화문' },
+                                { id: 'YBD', label: '여의도' },
+                                { id: 'MAGOK_DMC', label: '마곡·DMC' },
+                                { id: 'PANGYO', label: '판교' },
+                              ].map((h) => {
+                                const info = property.commuteInfo.byHub[h.id];
+                                if (!info) return null;
+                                const isFast = info.totalMinutes <= 35;
+                                return (
+                                  <span
+                                    key={h.id}
+                                    title={`${h.label} 약 ${info.totalMinutes}분 (${info.routeSummary})`}
+                                    className={`text-[10px] px-1.5 py-0.2 rounded border whitespace-nowrap ${
+                                      isFast
+                                        ? 'bg-emerald-50 text-emerald-800 border-emerald-200 font-extrabold'
+                                        : 'bg-slate-50 text-slate-600 border-slate-200/80 font-medium'
+                                    }`}
+                                  >
+                                    {h.label} <strong>{info.totalMinutes}분</strong>
+                                  </span>
+                                );
+                              })}
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </div>
 
                   {/* 🏛️ 공식 실물 평면도 & 단지 평형 안내 배너 */}
