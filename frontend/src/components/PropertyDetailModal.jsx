@@ -14,7 +14,9 @@ export default function PropertyDetailModal({
   userCriteria, 
   initialTab = 'all',
   isFavorite = false,
-  onToggleFavorite
+  onToggleFavorite,
+  isInCompare = false,
+  onToggleCompare
 }) {
   const [modalTab, setModalTab] = useState(initialTab); // 'all', 'floorPlan', 'financial'
   const [activeProperty, setActiveProperty] = useState(property);
@@ -303,6 +305,20 @@ export default function PropertyDetailModal({
             )}
           </div>
           <div className="flex items-center gap-1.5 shrink-0">
+            {onToggleCompare && (
+              <button
+                type="button"
+                onClick={() => onToggleCompare(prop.id)}
+                className={`px-2.5 py-1.5 rounded-xl text-xs font-bold border transition-all flex items-center gap-1 cursor-pointer active:scale-95 whitespace-nowrap ${
+                  isInCompare
+                    ? 'bg-indigo-600 border-indigo-600 text-white shadow-xs'
+                    : 'bg-slate-50 border-slate-200 text-slate-600 hover:text-indigo-600 hover:border-indigo-300'
+                }`}
+              >
+                <Scale className="w-3.5 h-3.5" />
+                <span>{isInCompare ? '✓ 비교담김' : '비교담기'}</span>
+              </button>
+            )}
             {onToggleFavorite && (
               <button
                 type="button"

@@ -2,9 +2,10 @@ import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { 
   Building2, Search, SlidersHorizontal, Train, ArrowUpDown, 
   ChevronRight, Sparkles, ShieldCheck, DollarSign, ExternalLink,
-  Info, Check, RefreshCw, LayoutGrid, Eye, EyeOff, ArrowDownAZ, ArrowUpZA, Maximize2, Calendar, Heart, AlertTriangle, MapPin
+  Info, Check, RefreshCw, LayoutGrid, Eye, EyeOff, ArrowDownAZ, ArrowUpZA, Maximize2, Calendar, Heart, AlertTriangle, MapPin, Scale, X, Trash2
 } from 'lucide-react';
 import PropertyDetailModal from './PropertyDetailModal';
+import CompareModal from './CompareModal';
 
 export default function PropertiesTab({ 
   properties, 
@@ -81,6 +82,74 @@ export default function PropertiesTab({
       localStorage.setItem('wooriga_hidden', JSON.stringify([]));
     } catch {}
   };
+
+  // ⚖️ VS 스펙 비교함 (최대 3개 단지, localStorage 영구 저장)
+  const [compareIds, setCompareIds] = useState(() => {
+    try {
+      const saved = localStorage.getItem('wooriga_compare');
+      return saved ? JSON.parse(saved).slice(0, 3) : [];
+    } catch {
+      return [];
+    }
+  });
+  const [isCompareModalOpen, setIsCompareModalOpen] = useState(false);
+  const [compareToast, setCompareToast] = useState(null);
+
+  const showToastMsg = (msg) => {
+    setCompareToast(msg);
+    setTimeout(() => {
+      setCompareToast((prev) => (prev === msg ? null : prev));
+    }, 2800);
+  };
+
+  const toggleCompare = (e, propId) => {
+    if (e && e.stopPropagation) e.stopPropagation();
+    setCompareIds((prev) => {
+      if (prev.includes(propId)) {
+        const next = prev.filter((id) => id !== propId);
+        try {
+          localStorage.setItem('wooriga_compare', JSON.stringify(next));
+        } catch {}
+        return next;
+      }
+      if (prev.length >= 3) {
+        showToastMsg('⚖️ 비교함은 최대 3개 단지까지 담을 수 있습니다. (기존 단지를 빼고 추가해 주세요)');
+        return prev;
+      }
+      const next = [...prev, propId];
+      try {
+        localStorage.setItem('wooriga_compare', JSON.stringify(next));
+      } catch {}
+      return next;
+    });
+  };
+
+  const clearCompare = () => {
+    setCompareIds([]);
+    try {
+      localStorage.setItem('wooriga_compare', JSON.stringify([]));
+    } catch {}
+  };
+
+  const loadFavoritesToCompare = () => {
+    const validFavs = favorites.filter((id) => properties.some((p) => p.id === id)).slice(0, 3);
+    if (validFavs.length === 0) {
+      showToastMsg('❤️ 먼저 마음에 드는 단지의 하트(찜)를 눌러주세요!');
+      return;
+    }
+    setCompareIds(validFavs);
+    try {
+      localStorage.setItem('wooriga_compare', JSON.stringify(validFavs));
+    } catch {}
+    setIsCompareModalOpen(true);
+  };
+
+  // 비교함에 담긴 실제 매물 객체 배열 (최신 대출 시뮬레이션 반영)
+  const compareProperties = useMemo(() => {
+    return compareIds
+      .map((id) => properties.find((p) => p.id === id))
+      .filter(Boolean);
+  }, [compareIds, properties]);
 
   // Modal state
   const [selectedProperty, setSelectedProperty] = useState(null);
@@ -866,6 +935,33 @@ export default function PropertiesTab({
               </span>
             </button>
 
+            {/* ⚖️ VS 스펙 비교함 열기 버튼 */}
+            <button
+              type="button"
+              onClick={() => {
+                if (compareIds.length === 0 && favorites.length > 0) {
+                  loadFavoritesToCompare();
+                } else if (compareIds.length === 0) {
+                  showToastMsg('⚖️ 매물 카드 우측 상단의 [비교] 버튼을 눌러 비교할 단지를 2~3개 담아보세요!');
+                } else {
+                  setIsCompareModalOpen(true);
+                }
+              }}
+              className={`px-3.5 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center gap-1.5 shrink-0 whitespace-nowrap border ${
+                compareIds.length > 0
+                  ? 'bg-indigo-600 text-white border-indigo-600 shadow-sm'
+                  : 'bg-indigo-50/70 text-indigo-700 border-indigo-200 hover:bg-indigo-100/80'
+              }`}
+            >
+              <Scale className="w-3.5 h-3.5" />
+              <span>VS 단지 비교함</span>
+              <span className={`text-[11px] px-1.5 py-0.2 rounded-full font-extrabold ${
+                compareIds.length > 0 ? 'bg-amber-400 text-slate-950' : 'bg-indigo-200/70 text-indigo-800'
+              }`}>
+                {compareIds.length}/3
+              </span>
+            </button>
+
             {/* 🚫 숨긴 단지 복구 버튼 (숨긴 단지가 있을 때만 표시) */}
             {hiddenIds.length > 0 && (
               <button
@@ -1290,6 +1386,7 @@ export default function PropertiesTab({
             const kb = property.kbPrice || {};
             const fp = property.floorPlan || {};
             const isFav = favorites.includes(property.id);
+            const isInComp = compareIds.includes(property.id);
             const currentYear = new Date().getFullYear();
             const buildingAge = Math.max(1, currentYear - complex.buildYear);
 
@@ -1323,7 +1420,11 @@ export default function PropertiesTab({
                 <div
                   onClick={() => handleOpenDetail(property)}
                   className={`bg-white rounded-2xl border hover:border-blue-400 hover:shadow-lg transition-all duration-200 flex flex-col justify-between overflow-hidden cursor-pointer group active:scale-[0.99] ${
-                    isFav ? 'border-rose-300 ring-1 ring-rose-100' : 'border-slate-200'
+                    isInComp
+                      ? 'border-indigo-400 ring-2 ring-indigo-200'
+                      : isFav
+                      ? 'border-rose-300 ring-1 ring-rose-100'
+                      : 'border-slate-200'
                   }`}
                 >
                 <div>
@@ -1341,6 +1442,21 @@ export default function PropertiesTab({
                       </div>
 
                       <div className="flex items-center gap-1 shrink-0">
+                        {/* ⚖️ 비교함 담기 토글 버튼 */}
+                        <button
+                          type="button"
+                          onClick={(e) => toggleCompare(e, property.id)}
+                          title={isInComp ? '비교함에서 빼기' : 'VS 비교함에 담기 (최대 3개)'}
+                          className={`px-2 py-0.5 rounded-md text-[10px] sm:text-[11px] font-extrabold transition-all flex items-center gap-1 shrink-0 border cursor-pointer active:scale-95 ${
+                            isInComp
+                              ? 'bg-indigo-600 text-white border-indigo-600 shadow-2xs'
+                              : 'bg-indigo-50/80 hover:bg-indigo-600 text-indigo-700 hover:text-white border-indigo-200'
+                          }`}
+                        >
+                          <Scale className="w-3 h-3" />
+                          <span>{isInComp ? '✓ 비교중' : '비교'}</span>
+                        </button>
+
                         {/* 공식 실물 도면 안내 버튼 */}
                         <button
                           type="button"
@@ -1349,7 +1465,8 @@ export default function PropertiesTab({
                           title="네이버부동산 공식 실물 평면도 안내 열기"
                         >
                           <ExternalLink className="w-3 h-3 text-emerald-700 group-hover:text-white" />
-                          <span>공식 도면 안내</span>
+                          <span className="hidden sm:inline">공식 도면</span>
+                          <span className="sm:hidden">도면</span>
                         </button>
 
                         {/* ❤️ 즐겨찾기(찜) 버튼 */}
@@ -1612,6 +1729,89 @@ export default function PropertiesTab({
         </div>
       )}
 
+      {/* 안내 토스트 메시지 */}
+      {compareToast && (
+        <div className="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-slate-900/95 text-white px-4 py-2.5 rounded-xl shadow-2xl border border-indigo-400/50 text-xs font-bold flex items-center gap-2 whitespace-nowrap animate-bounce">
+          <span>{compareToast}</span>
+        </div>
+      )}
+
+      {/* ⚖️ 하단 플로팅 VS 비교 트레이 (1개 이상 담겼을 때 노출) */}
+      {compareProperties.length > 0 && (
+        <div className="fixed bottom-20 md:bottom-6 inset-x-0 z-40 px-3 sm:px-6 pointer-events-none flex justify-center">
+          <div className="pointer-events-auto max-w-4xl w-full bg-slate-900/95 backdrop-blur-md text-white rounded-2xl p-3 sm:p-4 shadow-2xl border border-indigo-500/40 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div className="flex items-center gap-2 overflow-x-auto no-scrollbar">
+              <div className="flex items-center gap-1.5 shrink-0 pr-1 border-r border-slate-700">
+                <span className="w-7 h-7 rounded-lg bg-amber-400 text-slate-950 flex items-center justify-center font-black">
+                  <Scale className="w-4 h-4 stroke-[2.5]" />
+                </span>
+                <div className="text-xs">
+                  <span className="font-black text-white block whitespace-nowrap">
+                    VS 비교함 ({compareProperties.length}/3)
+                  </span>
+                  <span className="text-[10px] text-slate-400 hidden sm:block whitespace-nowrap">
+                    최대 3개 단지 동시 비교
+                  </span>
+                </div>
+              </div>
+
+              {/* 담긴 단지 칩 목록 */}
+              <div className="flex items-center gap-1.5">
+                {compareProperties.map((item) => {
+                  const shortTitle = item.name.replace(/\s*\(\d+평형?\)/g, '');
+                  return (
+                    <div
+                      key={item.id}
+                      className="bg-slate-800 border border-slate-700 rounded-xl px-2.5 py-1.5 flex items-center gap-2 text-xs shrink-0"
+                    >
+                      <div>
+                        <span className="font-bold text-white whitespace-nowrap">{shortTitle}</span>
+                        <span className="text-[10px] text-amber-300 font-bold ml-1 whitespace-nowrap">
+                          {item.pyeong}평 · {item.priceDisplay}
+                        </span>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={(e) => toggleCompare(e, item.id)}
+                        className="text-slate-400 hover:text-rose-400 transition-colors cursor-pointer"
+                        title="비교함에서 제외"
+                      >
+                        <X className="w-3.5 h-3.5" />
+                      </button>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* 우측 액션 버튼 */}
+            <div className="flex items-center justify-end gap-2 shrink-0">
+              <button
+                type="button"
+                onClick={clearCompare}
+                className="px-2.5 py-2 rounded-xl text-xs font-bold text-slate-300 hover:text-white bg-slate-800 hover:bg-slate-700 transition-colors cursor-pointer whitespace-nowrap flex items-center gap-1"
+                title="비교함 비우기"
+              >
+                <Trash2 className="w-3.5 h-3.5" />
+                <span>비우기</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setIsCompareModalOpen(true)}
+                className="px-4 py-2 rounded-xl text-xs sm:text-sm font-black bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-slate-950 shadow-md transition-all cursor-pointer whitespace-nowrap flex items-center gap-1.5 active:scale-95"
+              >
+                <Scale className="w-4 h-4 stroke-[2.5]" />
+                <span>
+                  {compareProperties.length >= 2
+                    ? `${compareProperties.length}개 단지 VS 스펙 비교하기`
+                    : '비교표 열기 (1개 더 담아보세요)'}
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Property Detail Modal */}
       {selectedProperty && (
         <PropertyDetailModal
@@ -1620,7 +1820,34 @@ export default function PropertiesTab({
           initialTab={modalInitialTab}
           isFavorite={favorites.includes(selectedProperty.id)}
           onToggleFavorite={(e) => toggleFavorite(e, selectedProperty.id)}
+          isInCompare={compareIds.includes(selectedProperty.id)}
+          onToggleCompare={(propId) => toggleCompare(null, propId)}
           onClose={() => setSelectedProperty(null)}
+        />
+      )}
+
+      {/* ⚖️ VS 스펙 비교 모달 */}
+      {isCompareModalOpen && (
+        <CompareModal
+          compareProperties={compareProperties}
+          onClose={() => setIsCompareModalOpen(false)}
+          onRemoveProperty={(propId) => toggleCompare(null, propId)}
+          onClearAll={() => {
+            clearCompare();
+            setIsCompareModalOpen(false);
+          }}
+          onSelectPropertyDetail={(prop) => {
+            setIsCompareModalOpen(false);
+            handleOpenDetail(prop, 'financial');
+          }}
+          onSelectPropertyFloorPlan={(prop) => {
+            setIsCompareModalOpen(false);
+            handleOpenDetail(prop, 'floorPlan');
+          }}
+          userCriteria={userCriteria}
+          favorites={favorites}
+          allProperties={properties}
+          onAddProperty={(propId) => toggleCompare(null, propId)}
         />
       )}
     </div>
