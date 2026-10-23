@@ -1,8 +1,41 @@
 {
-  "lastUpdated": "2026-10-22T21:32:32.037Z",
+  "lastUpdated": "2026-10-23T04:44:12.204Z",
   "scrapedPolicies": [
     {
-      "id": "gov-1792695600000-rfhte",
+      "id": "gov-1792720977000-o0i4y",
+      "ministry": "금융위원회",
+      "title": "이억원 금융위원장 \"가계대출 총량 규제 필요…은행 자율관리 방식은 보완 검토\" - 폴리뉴스 Polinews",
+      "date": "2026. 10. 23.",
+      "pubTimestamp": 1792720977000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "이억원 금융위원장 \"가계대출 총량 규제 필요…은행 자율관리 방식은 보완 검토\"  폴리뉴스 Polinews...",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBXdThTUXVnNzlIVHVBYmUzaHNyVTZjNWtKdGhpV0gxYW41c1RWeVFkb2dJQzM3VjRyMjctdndJdFVaS3dBSG9DVTJqZWc5aENKZ2JVVklmbkp4Q280QlF6Ym40RjNCSml2ZzZTU3Z3?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1792719776000-88rd1",
+      "ministry": "정책당국",
+      "title": "'사내대출 1조원 시대' DSR 규제 가능한가?... '법적 근거' 공백 - 법률방송뉴스",
+      "date": "2026. 10. 23.",
+      "pubTimestamp": 1792719776000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "'사내대출 1조원 시대' DSR 규제 가능한가?... '법적 근거' 공백  법률방송뉴스...",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE13WFFyQ2xhbkNNVE50M2JrdXVCRUtuanUtU1YtRmllT2hQWFlIVG9rTmdXN0tmMjdqbG13aGlHaFBVekkwNDhnZnZ3bkhvQzgwdVlZNnZXbkc2OEc0aTNtX0hOdk8?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1792716448000-t160e",
+      "ministry": "정책당국",
+      "title": "'15억원 이상 주담대 전면금지' 루머에...이억원 \"절대 없다\" 일축 [2026년 국감] - 조세일보",
+      "date": "2026. 10. 23.",
+      "pubTimestamp": 1792716448000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "'15억원 이상 주담대 전면금지' 루머에...이억원 \"절대 없다\" 일축 [2026년 국감]  조세일보...",
+      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE90bVZRVXdYMG82YnNoLXF5Y1lveXlhZWd1MkQ5VTZQMW90SkRQcFNuSHM4dDVRLVIzeUJCRDFyMGROTklwVFNEc3Z5WEF3bUhlNFFpend3bGNhNG1jRVpzcDNZVWhtcWNHTzJQSzFyYw?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1792695600000-s0kcd",
       "ministry": "정책당국",
       "title": "이억원 \"15억 이상 주담대 전면금지? 절대 없다\" - 머니투데이 - 머니투데이",
       "date": "2026. 10. 22.",
@@ -13,7 +46,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792659457000-60ekk",
+      "id": "gov-1792659457000-3otnk",
       "ministry": "정책당국",
       "title": "[2026 국정감사] 이찬진 금감원장 한국처럼 DSR 관대한 나라 없어 - 아주경제",
       "date": "2026. 10. 22.",
@@ -24,18 +57,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792658103000-gzq1r",
-      "ministry": "정책당국",
-      "title": "이억원 \"15억 주담대 금지? 허위사실\"...이찬진 \"DSR 관대한 나라\" - 머니투데이 - 머니투데이",
-      "date": "2026. 10. 22.",
-      "pubTimestamp": 1792658103000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "이억원 \"15억 주담대 금지? 허위사실\"...이찬진 \"DSR 관대한 나라\" - 머니투데이  머니투데이...",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9uSlVJN01YcGxUdTlhV3dkclV4c3EzZXktMy1FTFBJeU9LSERBNjZCeWg0b25zVzl6bTlPdVBOY19qVXY2elFSWWEwcW9acktaUlV3Rzk3SkdMWXlxQVJhVzlQSzZkX3pNcDZjaXFxVEjSAXBBVV95cUxPbkpVSTdNWHBsVHU5YVd3ZHJVeHNxM2V5LTMtRUxQSXlPS0hEQTY2QnloNG9uc1c5em05T3VQTmNfalV2NnpRUllhMHFvWnJLWlJVd0c5N0pHTFl5cUFSYVc5UEs2ZF96TXA2Y2lxcVRI?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1792657690000-v6k88",
+      "id": "gov-1792657690000-1opdb",
       "ministry": "정책당국",
       "title": "이억원 \"가계부채 리스크에 총량 규제 필요…방법 보완 검토\" - 연합뉴스",
       "date": "2026. 10. 22.",
@@ -46,7 +68,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792652666000-sto9y",
+      "id": "gov-1792652666000-l0san",
       "ministry": "정책당국",
       "title": "1조원 육박한 사내대출…금융당국, DSR 적용 검토 - 시사저널",
       "date": "2026. 10. 22.",
@@ -57,7 +79,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1791423604000-xssj8",
+      "id": "gov-1791423604000-esoq8",
       "ministry": "금융위원회",
       "title": "[금융위 국감] 가계대출 총량 3%로 넓힌다…주택공급 금융 47.8조원+α - ebn.co.kr",
       "date": "2026. 10. 8.",
@@ -68,7 +90,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1791356400000-9iwxa",
+      "id": "gov-1791356400000-n2k9n",
       "ministry": "국토교통부",
       "title": "김은혜 “문재인 정부 국토부, 부동산 정책 비판한 민간인 불법 사찰” - 경기신문",
       "date": "2026. 10. 7.",
@@ -79,7 +101,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1790406000000-tqy5b",
+      "id": "gov-1790406000000-pkrla",
       "ministry": "국토교통부",
       "title": "[보도자료] 국토부, 외국인 부동산 거래 ‘숫자’보다 ‘자금’을 본다 - 국토교통신문",
       "date": "2026. 9. 26.",
@@ -90,7 +112,18 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1786690800000-dofkt",
+      "id": "gov-1786690800000-gvql8",
+      "ministry": "정책당국",
+      "title": "'닥치고'·'미친' 공급? 8.13 부동산종합대책 전문가도 '극과 극' 평가 - YTN",
+      "date": "2026. 8. 14.",
+      "pubTimestamp": 1786690800000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "'닥치고'·'미친' 공급? 8.13 부동산종합대책 전문가도 '극과 극' 평가  YTN...",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5DZ3NpUWc4d0ZwcFF2MVotdjRPRVlDY21tb0c1RTRmTlpKeElIS2FOcVUwaVY4N3dTbGZXSnNFZV9VNUh0Znd3NTRUcFpHMFRJazAxNlcyVm9KQUFIUlE?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1786690800000-3x7g1",
       "ministry": "정책당국",
       "title": "수도권 13만 호 신속 공급! 달라지는 8.13 부동산 대책 - 카드/한컷 | 멀티미디어 - 대한민국 정책브리핑",
       "date": "2026. 8. 14.",
@@ -101,29 +134,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1786604400000-xvp06",
-      "ministry": "정책당국",
-      "title": "대출 ‘오픈런’ 숨통 트이나…금융권 가계대출 30조 더 푼다 - 경기일보",
-      "date": "2026. 8. 13.",
-      "pubTimestamp": 1786604400000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "대출 ‘오픈런’ 숨통 트이나…금융권 가계대출 30조 더 푼다  경기일보...",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5xWGEyN2U1eUdaUjhDU2VjZkdhdFF3MG9LT0hMNTNEYlRDQTdRU0t4d1Z2czh3ekVvMnVBM1BJRVBoMlJhSU5fV2ViTEtTZDRHYUc0eGVneERTWEk?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1784098800000-jn05w",
-      "ministry": "금융위원회",
-      "title": "[금융위 업무보고] 삼전닉스 '억'대 성과급 받은만큼 DSR 한도 못 늘린다 - KB Think",
-      "date": "2026. 7. 15.",
-      "pubTimestamp": 1784098800000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "[금융위 업무보고] 삼전닉스 '억'대 성과급 받은만큼 DSR 한도 못 늘린다  KB Think...",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE40ejM0MVB1LVh5dlpzemMycWs2bkZWOWgyTm9rcHk4blFvVklsT3RVV2hBRm5fM19oU1lWQzY1NXRHQl8xZFNWMTdDT2l2WTdWcGhlQkRzcHJrV1pxTlBHUzNHR2F3aExVQUFUNmhWbnUyZw?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1784012400000-zbxkp",
+      "id": "gov-1784012400000-ziyzx",
       "ministry": "정책당국",
       "title": "부동산정책 수립에 '국민 목소리' 담는다…공개 토론회 개최 - 정책뉴스 | 뉴스 - 대한민국 정책브리핑",
       "date": "2026. 7. 14.",
@@ -134,7 +145,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1783666800000-onlhq",
+      "id": "gov-1783666800000-aw3cj",
       "ministry": "국토교통부",
       "title": "재경·금융·국토부, 세제·금융·공급 분야 부동산 국민 의견 듣는다 - 브릿지경제",
       "date": "2026. 7. 10.",
@@ -145,7 +156,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1782802800000-vgvc0",
+      "id": "gov-1782802800000-qk65r",
       "ministry": "정책당국",
       "title": "'동탄·기흥·구리' 3곳 투기과열지구·조정대상지역 지정 - 대한민국 정책브리핑",
       "date": "2026. 6. 30.",
@@ -153,17 +164,6 @@
       "category": "최신 부동산 정책 발표",
       "summary": "'동탄·기흥·구리' 3곳 투기과열지구·조정대상지역 지정  대한민국 정책브리핑...",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5uY1FiM3NleWZVb1dseFhLSzY4a1NQaTd4NERvSGhqNjZRU0RUVDdrR1RIMk1oeGZXZmZZV1BHSXk2UlJrVkpvLWNDRDFONUc2TjdyWlVEV2hLT01BNkZ5Z3lGWmpIRkk3aFVGMg?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1781766000000-s66if",
-      "ministry": "정책당국",
-      "title": "[불편한 진실] 컨트롤타워 없는 AI 정책 난립 논란 - 국토교통신문",
-      "date": "2026. 6. 18.",
-      "pubTimestamp": 1781766000000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "[불편한 진실] 컨트롤타워 없는 AI 정책 난립 논란  국토교통신문...",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFA4MnNDdlRGb1FreXRENmJoREFlNUh5U1FBWTQyZVBROTIyQ0RtSmp0cW5XV0VaX3lUQmw0VmszZWlmcEJoeGZfZ3RSMzlQU1Y3RXZ5bWY2VlUzUzRvc3JOSnZtZ1p6MGc?oc=5",
       "status": "실시간 수집"
     }
   ]
