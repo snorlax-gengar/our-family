@@ -9,6 +9,11 @@ import FloorPlanViewer from './FloorPlanViewer';
 import { calculateAllInCashReceipt } from '../lib/closingCostCalculator';
 import { compareAllRepaymentMethods } from '../lib/repaymentCalculator';
 import { WORKPLACE_HUBS, calculatePropertyCommute } from '../lib/commuteCalculator';
+import {
+  generateSpecialClauses,
+  buildFullSpecialClausesText,
+  CONTRACT_TIMELINE_STEPS,
+} from '../lib/contractSpecialClauses';
 
 export default function PropertyDetailModal({ 
   property, 
@@ -45,6 +50,50 @@ export default function PropertyDetailModal({
   const [repaymentMethod, setRepaymentMethod] = useState(userCriteria?.repaymentMethod || 'level'); // 'level' | 'principal' | 'graduated'
   const [graceYears, setGraceYears] = useState(0); // 0 (비거치) | 1 (1년 이자만 거치)
   const [holdingYears, setHoldingYears] = useState(5); // 거주 후 매도/갈아타기 시점 (3, 5, 7, 10년 등)
+
+  // 📝 [실전 매수 계약서 필수 특약사항 생성기 & D-Day 체크리스트] 상태
+  const [selectedClauseIds, setSelectedClauseIds] = useState([
+    'electronic_contract',
+    'policy_loan_coop',
+    'prior_mortgage_repay',
+    'major_defect_leak',
+    'long_term_repair_reserve',
+  ]);
+  const [copiedClauseId, setCopiedClauseId] = useState(null);
+  const [checkedTimelineItems, setCheckedTimelineItems] = useState(() => {
+    try {
+      const saved = localStorage.getItem('wooriga_contract_checklist');
+      return saved ? JSON.parse(saved) : {};
+    } catch {
+      return {};
+    }
+  });
+
+  const toggleTimelineCheck = (itemId) => {
+    setCheckedTimelineItems((prev) => {
+      const next = { ...prev, [itemId]: !prev[itemId] };
+      try {
+        localStorage.setItem('wooriga_contract_checklist', JSON.stringify(next));
+      } catch {}
+      return next;
+    });
+  };
+
+  const toggleClauseSelection = (clauseId) => {
+    setSelectedClauseIds((prev) =>
+      prev.includes(clauseId) ? prev.filter((id) => id !== clauseId) : [...prev, clauseId]
+    );
+  };
+
+  const copyTextToClipboard = async (text, badgeKey) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopiedClauseId(badgeKey);
+      setTimeout(() => {
+        setCopiedClauseId((prev) => (prev === badgeKey ? null : prev));
+      }, 2200);
+    } catch {}
+  };
 
   useEffect(() => {
     if (userCriteria?.repaymentMethod) {
@@ -444,6 +493,19 @@ export default function PropertyDetailModal({
               }`}
             >
               💰 정책대출 & 실제 총현금(All-in) 영수증
+            </button>
+            <button
+              onClick={() => setModalTab('contract')}
+              className={`pb-2 border-b-2 transition-all cursor-pointer flex items-center gap-1.5 whitespace-nowrap ${
+                modalTab === 'contract'
+                  ? 'border-indigo-600 text-indigo-700 font-extrabold'
+                  : 'border-transparent text-slate-400 hover:text-slate-700'
+              }`}
+            >
+              <span>📝 실전 계약 특약 생성기 & 체크리스트</span>
+              <span className="bg-indigo-100 text-indigo-800 text-[10px] px-1.5 py-0.2 rounded font-bold">
+                원클릭 복사
+              </span>
             </button>
           </div>
 
@@ -1910,6 +1972,194 @@ export default function PropertyDetailModal({
               )}
             </>
           )}
+
+          {/* Section 5: 📝 실전 매수 계약서 필수 특약사항 생성기 & 계약~잔금 D-Day 체크리스트 */}
+          {(modalTab === 'all' || modalTab === 'contract') && (() => {
+            const allClauses = generateSpecialClauses({
+              propertyName: cleanPropertyName,
+              priceKrw: activePrice,
+              loanType: selectedLoanType,
+              loanAmount: maxLoan,
+            });
+            const chosenClauses = allClauses.filter((c) => selectedClauseIds.includes(c.id));
+            const mergedClausesText = buildFullSpecialClausesText({
+              propertyName: cleanPropertyName,
+              priceKrw: activePrice,
+              loanType: selectedLoanType,
+              loanAmount: maxLoan,
+              selectedClauses: chosenClauses,
+            });
+
+            const totalChecklistCount = CONTRACT_TIMELINE_STEPS.reduce(
+              (acc, step) => acc + step.items.length,
+              0
+            );
+            const doneChecklistCount = CONTRACT_TIMELINE_STEPS.reduce(
+              (acc, step) =>
+                acc + step.items.filter((it) => checkedTimelineItems[it.id]).length,
+              0
+            );
+
+            return (
+              <div className="space-y-5 pt-2">
+                {/* 5-1. 맞춤형 계약서 필수 특약사항 원클릭 생성기 */}
+                <div className="bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-950 rounded-2xl p-4 sm:p-6 text-white border border-indigo-400/40 shadow-xl space-y-4">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-white/15 pb-3.5">
+                    <div>
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className="bg-amber-400 text-slate-950 text-[10px] font-black px-2 py-0.5 rounded">
+                          중개사 카톡·문자 전송용
+                        </span>
+                        <h3 className="font-black text-base sm:text-lg text-white">
+                          📝 {cleanPropertyName} 매매계약서 필수 특약사항 생성기
+                        </h3>
+                      </div>
+                      <p className="text-xs text-indigo-200 mt-1">
+                        선택하신 <strong className="text-amber-300">{selectedLoanType === 'newborn' ? '신생아 특례 디딤돌' : selectedLoanType === 'bogeumjari' ? 'HF 보금자리론' : '생애최초 디딤돌'}</strong> 및 매매가(<strong className="text-white">{formatMoney(activePrice)}</strong>)에 맞춘 표준 보호 특약입니다.
+                      </p>
+                    </div>
+
+                    <button
+                      type="button"
+                      onClick={() => copyTextToClipboard(mergedClausesText, 'ALL_CLAUSES')}
+                      className={`px-4 py-2.5 rounded-xl text-xs font-black transition-all cursor-pointer flex items-center gap-1.5 shrink-0 shadow-md ${
+                        copiedClauseId === 'ALL_CLAUSES'
+                          ? 'bg-emerald-500 text-white'
+                          : 'bg-amber-400 hover:bg-amber-300 text-slate-950'
+                      }`}
+                    >
+                      <CheckCircle2 className="w-4 h-4" />
+                      <span>
+                        {copiedClauseId === 'ALL_CLAUSES'
+                          ? '✓ 선택 특약 전체 복사 완료! (카톡에 붙여넣으세요)'
+                          : `선택된 특약 ${chosenClauses.length}개 한 번에 복사하기`}
+                      </span>
+                    </button>
+                  </div>
+
+                  {/* 특약 카드 리스트 */}
+                  <div className="grid grid-cols-1 gap-3">
+                    {allClauses.map((clause) => {
+                      const isChecked = selectedClauseIds.includes(clause.id);
+                      const isCopied = copiedClauseId === clause.id;
+                      return (
+                        <div
+                          key={clause.id}
+                          className={`rounded-xl p-3.5 sm:p-4 border transition-all ${
+                            isChecked
+                              ? 'bg-white/10 border-indigo-400/60'
+                              : 'bg-white/5 border-white/10 opacity-65'
+                          }`}
+                        >
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                            <label className="flex items-center gap-2.5 cursor-pointer">
+                              <input
+                                type="checkbox"
+                                checked={isChecked}
+                                onChange={() => toggleClauseSelection(clause.id)}
+                                className="w-4 h-4 accent-amber-400 rounded cursor-pointer"
+                              />
+                              <span className="text-[10px] font-black px-2 py-0.5 rounded bg-indigo-500/40 text-amber-300 border border-indigo-400/40">
+                                {clause.badge}
+                              </span>
+                              <span className="font-extrabold text-xs sm:text-sm text-white">
+                                {clause.title}
+                              </span>
+                            </label>
+
+                            <button
+                              type="button"
+                              onClick={() => copyTextToClipboard(clause.clauseText, clause.id)}
+                              className={`px-2.5 py-1 rounded-lg text-[11px] font-bold transition-all cursor-pointer shrink-0 self-end sm:self-auto ${
+                                isCopied
+                                  ? 'bg-emerald-500 text-white'
+                                  : 'bg-white/15 hover:bg-white/25 text-indigo-100'
+                              }`}
+                            >
+                              {isCopied ? '✓ 문구 복사됨' : '이 조항만 복사'}
+                            </button>
+                          </div>
+
+                          <div className="mt-2.5 p-3 rounded-lg bg-black/35 border border-white/10 text-xs text-amber-100 font-medium leading-relaxed select-all">
+                            "{clause.clauseText}"
+                          </div>
+
+                          <div className="mt-2 text-[11px] text-slate-300 leading-normal flex items-start gap-1.5">
+                            <span className="text-amber-400 font-bold shrink-0">💡 이유:</span>
+                            <span>{clause.whyNeeded}</span>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* 5-2. 가계약 ~ 본계약 ~ 대출심사 ~ 잔금 D-Day 실전 타임라인 체크리스트 */}
+                <div className="bg-white rounded-2xl p-4 sm:p-6 border border-slate-200 shadow-xs space-y-4">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-3">
+                    <div>
+                      <h3 className="font-black text-slate-900 text-sm sm:text-base flex items-center gap-2">
+                        <Calendar className="w-4 h-4 text-indigo-600" />
+                        <span>✅ 가계약부터 잔금 D-Day까지 내집마련 실전 체크리스트</span>
+                      </h3>
+                      <p className="text-xs text-slate-500 mt-0.5">
+                        체크한 항목은 브라우저에 자동 저장되어 부부가 함께 단계별 진행 상황을 점검할 수 있습니다.
+                      </p>
+                    </div>
+                    <div className="flex items-center gap-2 shrink-0">
+                      <span className="text-xs font-extrabold text-indigo-700 bg-indigo-50 px-3 py-1 rounded-full border border-indigo-200">
+                        진행률 {doneChecklistCount} / {totalChecklistCount} 완료 ({Math.round((doneChecklistCount / totalChecklistCount) * 100)}%)
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+                    {CONTRACT_TIMELINE_STEPS.map((stepGroup) => (
+                      <div
+                        key={stepGroup.step}
+                        className="bg-slate-50/80 rounded-xl p-3.5 border border-slate-200/90 space-y-2.5"
+                      >
+                        <div className="flex items-center justify-between gap-2">
+                          <span className="text-[11px] font-black text-indigo-700 bg-indigo-100/80 px-2 py-0.5 rounded">
+                            {stepGroup.step}
+                          </span>
+                          <span className="text-[10px] font-bold text-slate-500">
+                            {stepGroup.badge}
+                          </span>
+                        </div>
+                        <div className="font-extrabold text-xs sm:text-sm text-slate-900">
+                          {stepGroup.title}
+                        </div>
+                        <div className="space-y-1.5 pt-1">
+                          {stepGroup.items.map((item) => {
+                            const isDone = !!checkedTimelineItems[item.id];
+                            return (
+                              <label
+                                key={item.id}
+                                className={`flex items-start gap-2 p-2 rounded-lg border text-xs cursor-pointer transition-all ${
+                                  isDone
+                                    ? 'bg-emerald-50/70 border-emerald-200 text-emerald-900 line-through opacity-75'
+                                    : 'bg-white border-slate-200/80 text-slate-700 hover:border-indigo-300'
+                                }`}
+                              >
+                                <input
+                                  type="checkbox"
+                                  checked={isDone}
+                                  onChange={() => toggleTimelineCheck(item.id)}
+                                  className="mt-0.5 w-3.5 h-3.5 accent-emerald-600 rounded cursor-pointer shrink-0"
+                                />
+                                <span className="leading-snug">{item.text}</span>
+                              </label>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
         </div>
 
         {/* Modal Footer */}
