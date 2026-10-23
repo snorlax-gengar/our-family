@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-21T02:37:26.376Z",
+  "lastUpdated": "2026-10-23T11:33:37.569Z",
   "rates": {
     "baseRate": {
       "name": "한국은행 기준금리",
@@ -59,21 +59,21 @@
     "marketBonds": [
       {
         "name": "국고채 3년물",
-        "rate": 3.83,
-        "change": 0,
+        "rate": 3.82,
+        "change": -0.02,
         "unit": "%",
         "note": "대표 단기·중기 시장 채권 지표"
       },
       {
         "name": "국고채 5년물",
-        "rate": 3.98,
-        "change": -0.01,
+        "rate": 3.95,
+        "change": -0.03,
         "unit": "%",
         "note": "중장기 시중 금리 선행 지표"
       },
       {
         "name": "국고채 10년물",
-        "rate": 4.17,
+        "rate": 4.1,
         "change": -0.04,
         "unit": "%",
         "note": "장기 채권 벤치마크 지표"
@@ -152,37 +152,27 @@
   },
   "news": [
     {
-      "id": "scraped-1792545773000-ng41o",
-      "title": "주담대 금리 상단 6%대 중반 돌파..기준금리 동결 전망에도 이자 부담 가중 우려 - 한국정경신문",
-      "summary": "주담대 금리 상단 6%대 중반 돌파..기준금리 동결 전망에도 이자 부담 가중 우려  한국정경신문...",
-      "source": "한국정경신문",
-      "date": "2026. 10. 21.",
-      "pubTimestamp": 1792545773000,
+      "id": "scraped-1792752820000-vzetv",
+      "title": "[경제, 알고 보면] 기준금리 동결됐는데 내 대출이자는 왜 오를까…'금리의 역설' - 폴리뉴스 Polinews",
+      "summary": "[경제, 알고 보면] 기준금리 동결됐는데 내 대출이자는 왜 오를까…'금리의 역설'  폴리뉴스 Polinews...",
+      "source": "폴리뉴스 Polinews",
+      "date": "2026. 10. 23.",
+      "pubTimestamp": 1792752820000,
       "tag": "기준금리",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9taTNmYzJ4NnFGX0lZU25YMHhxX2MyZGt4bmtKTFJuel9UM29yUzdVUUw4YnhXS1dyTUJaTGFjNWZUQ2FtbWRhd05OUlUycV9hUEE?oc=5"
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9kMmlLU2ptVWd1XzBzZ1dTMG9yNC1aQTh1Z2RUbXJlZzl1ekJWNG5mTV9ZaEhORzNiR0lxdnAtNm54cUdfUFF1aURXekd6NFdhLWw0Ui1iU3ZjYW9rR05QRG1Hcy1FOU1FbWhFUGt3?oc=5"
     },
     {
-      "id": "scraped-1792539661000-quhzo",
-      "title": "우대금리 깎은 은행들…주담대 금리 2년 새 1.34%p 올랐다 - 콜뉴스24",
-      "summary": "우대금리 깎은 은행들…주담대 금리 2년 새 1.34%p 올랐다  콜뉴스24...",
-      "source": "콜뉴스24",
-      "date": "2026. 10. 21.",
-      "pubTimestamp": 1792539661000,
+      "id": "scraped-1792731600000-kyf1y",
+      "title": "주담대 변동형 62.3%…재산정 때 이자 얼마나 뛰나 - 자본시장뉴스",
+      "summary": "주담대 변동형 62.3%…재산정 때 이자 얼마나 뛰나  자본시장뉴스...",
+      "source": "자본시장뉴스",
+      "date": "2026. 10. 23.",
+      "pubTimestamp": 1792731600000,
       "tag": "주담대 금리",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5BNk9zNTlVdVFBd0JYWkcyNUhUdWRhNzBRRHREQVoyNmtWOWM1dVNsY1JrSmVDdTJfOU1ndkluTzN4U0l5SGktTnVwR0NGal9TdEYtNk9GdlpMQ1FQUUdUU0ZXUUdXaW5MWXZlRA?oc=5"
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1xbWg2UXlzb0lUamdEM0J2akd1TVBrZUNVaHRvQ1ZORTJMdGVkTzA0RnA2TGl0UTc3WV92VEF3eGVsdnFNdHdhTjZldy1ja1hCTTI5bVZKTnVVT3Mxa3ZSOXFJakxNQzg?oc=5"
     },
     {
-      "id": "scraped-1792533600000-12xrx",
-      "title": "가산금리 올리고, 우대금리 줄인 은행들…금리 격차 4배 벌어졌다 - 뉴시스",
-      "summary": "가산금리 올리고, 우대금리 줄인 은행들…금리 격차 4배 벌어졌다  뉴시스...",
-      "source": "뉴시스",
-      "date": "2026. 10. 21.",
-      "pubTimestamp": 1792533600000,
-      "tag": "주담대 금리",
-      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9vOFM3STNTSGhldWEwdzdzTUZKOG1JbGJJRm5ZSDZjTWhpTHVMX0RTNVNvZVlWLWRTblpuOVRxM2JFRmFYMlhtd1lKVzg5c3lQR2lvbFpia2FObklybG9tN29GM1EyYnktcXdCdlZBQzN0S3VqRWlyZ9IBeEFVX3lxTE9vOFM3STNTSGhldWEwdzdzTUZKOG1JbGJJRm5ZSDZjTWhpTHVMX0RTNVNvZVlWLWRTblpuOVRxM2JFRmFYMlhtd1lKVzg5c3lQR2lvbFpia2FObklybG9tN29GM1EyYnktcXdCdlZBQzN0S3VqRWlyZw?oc=5"
-    },
-    {
-      "id": "scraped-1792472400000-azx4l",
+      "id": "scraped-1792472400000-n6g7h",
       "title": "주담대 어디까지 오르나...케이뱅크 주담대 금리 최고 9% 돌파 - 뉴스핌",
       "summary": "주담대 어디까지 오르나...케이뱅크 주담대 금리 최고 9% 돌파  뉴스핌...",
       "source": "뉴스핌",
@@ -192,7 +182,17 @@
       "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9OM0tYb1hpT2xBYVVhNDlyQlFvVHdXZWFxSVNlT3hEVUZ5aXRXaFBWWW5VbmZyM2tqVVBYQTQwa0k0dW9oTUMtWkJrbm93bEJKdjdva21jM1JHYmdK?oc=5"
     },
     {
-      "id": "scraped-1792387500000-ooguj",
+      "id": "scraped-1792460280000-gnwqt",
+      "title": "기준금리 동결 전망에도 대출금리 ‘고공행진’…4분기 주담대 165조원 금리 재산정 - 브릿지경제",
+      "summary": "기준금리 동결 전망에도 대출금리 ‘고공행진’…4분기 주담대 165조원 금리 재산정  브릿지경제...",
+      "source": "브릿지경제",
+      "date": "2026. 10. 20.",
+      "pubTimestamp": 1792460280000,
+      "tag": "기준금리",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nbUwwR180Sl9LVnZYRUlmbVAzR1I1UE9FNG1fZS1vbjdQU1p4bmNnSDVyMXFqcVE2Q1NUQlhaTFNVby1IR0FaSmpJWmpuejVYT1o0Ym54VFoydw?oc=5"
+    },
+    {
+      "id": "scraped-1792387500000-dlckp",
       "title": "주담대 변동금리 6%대 돌파: 내 대출이자 더 오를수도 있다고? 💸📈 - 뉴닉",
       "summary": "주담대 변동금리 6%대 돌파: 내 대출이자 더 오를수도 있다고? 💸📈  뉴닉...",
       "source": "뉴닉",
@@ -202,17 +202,17 @@
       "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5yOVFhY0hWX1Y1THJXYTk0c200Sjktc1JwT2ZRQzBpZjBkMW5RSDlJZjZiTWtxUnhkMERxd2ZUc1BmcUJQTG5TVlpsa1h0VGo2YzNv?oc=5"
     },
     {
-      "id": "scraped-1792222980000-jqr5m",
-      "title": "주담대 변동금리 상단 줄줄이 6% 돌파...차주들 '한숨' - YTN",
-      "summary": "주담대 변동금리 상단 줄줄이 6% 돌파...차주들 '한숨'  YTN...",
-      "source": "YTN",
-      "date": "2026. 10. 17.",
-      "pubTimestamp": 1792222980000,
+      "id": "scraped-1792364846000-mdlwr",
+      "title": "7% 뚫은 주담대 변동금리…'영끌' 덮친 이중고 - 뉴스토마토",
+      "summary": "7% 뚫은 주담대 변동금리…'영끌' 덮친 이중고  뉴스토마토...",
+      "source": "뉴스토마토",
+      "date": "2026. 10. 18.",
+      "pubTimestamp": 1792364846000,
       "tag": "주담대 금리",
       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE02QW5ObU1DNHQzdmRGX1NCRzMwSzJMc05IZm5pc19YeWQ5bkk4c21jRWxjSXhZQjZNVHdmdFRqQnlVc0xXTmVUU1RtYTNIVHBWM010dHVSNkJjUTdQeHJ0aA?oc=5"
     },
     {
-      "id": "scraped-1791702000000-j64np",
+      "id": "scraped-1791702000000-96vtj",
       "title": "스트레스 DSR, 마통 2000만원이 주담대 5000만원 깎는다 - 매일신문",
       "summary": "스트레스 DSR, 마통 2000만원이 주담대 5000만원 깎는다  매일신문...",
       "source": "매일신문",
@@ -222,7 +222,7 @@
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBPZFBmUFRHQTRqRHlDWGJEX0pyR2NYRFJRa2xMbXZSdFIwZjZpSndrQ05KVmVxcU1kaXE3YnFxcVpZTlVLUGhpRXpRRWpnajJPdnd4aExKeE5aU1Qyamtmb2VB?oc=5"
     },
     {
-      "id": "scraped-1791504000000-6pfna",
+      "id": "scraped-1791504000000-kshod",
       "title": "스트레스 DSR 확대에 내 집 마련 멀어지다 - 위클리서울",
       "summary": "스트레스 DSR 확대에 내 집 마련 멀어지다  위클리서울...",
       "source": "위클리서울",
@@ -232,7 +232,7 @@
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5lMTVJS2lMNmlqLVZNY1lUR180MjV0YTJHZ0djM3E2cm1PazM4N2FmUnZOU3JNMTg1ajFDa2V3bXdkZnpWNllnZmF4VHdSeC1WMXBUTGhHdU9KYkdseHpnVmZ5MHZEdVJ6dV9kMDZB?oc=5"
     },
     {
-      "id": "scraped-1789974000000-xlnfg",
+      "id": "scraped-1789974000000-mln34",
       "title": "변동금리 주담대에 스트레스 DSR 역할 할까…가계대출 '버퍼' 시험대 - KB Think",
       "summary": "변동금리 주담대에 스트레스 DSR 역할 할까…가계대출 '버퍼' 시험대  KB Think...",
       "source": "KB Think",
@@ -242,7 +242,17 @@
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE0xbEs2VGxPLVhJYmQ5R2hERmdkZXVYRU9VeGx1dTViT3kySG0tQVdldXBLUHZGaU5Sc0NZZGM2d0FJd2NFQVk4SlBlUXgyZWtnZU0wcmZxemlETkswUFlVaW0yOXFzRy13dC1CWVBiZWhlQQ?oc=5"
     },
     {
-      "id": "scraped-1786345200000-0ggz0",
+      "id": "scraped-1786950000000-0v01c",
+      "title": "“결혼하면 대출 손해?”... 신혼부부 ‘결혼 페널티’ 확 뜯어고친다 - 네이버페이 머니스토리",
+      "summary": "“결혼하면 대출 손해?”... 신혼부부 ‘결혼 페널티’ 확 뜯어고친다  네이버페이 머니스토리...",
+      "source": "네이버페이 머니스토리",
+      "date": "2026. 8. 17.",
+      "pubTimestamp": 1786950000000,
+      "tag": "주담대 금리",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5vTWxic1U3c3FQRU93dFpWLTVKNjhVZ3VGeUV4VHJvUTZWUlM1VzRuUnlKT0tMNHR3MWFvaHNGUFdrcnNBSnptSloyUjVPMzFpMGc?oc=5"
+    },
+    {
+      "id": "scraped-1786345200000-2sd6m",
       "title": "\"결혼했더니 대출 안돼\"…정부 '결혼 페널티' 손본다 [영상PICK] - 메트로신문",
       "summary": "\"결혼했더니 대출 안돼\"…정부 '결혼 페널티' 손본다 [영상PICK]  메트로신문...",
       "source": "메트로신문",
@@ -252,7 +262,7 @@
       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBuVU45TEJKZTFtZVgtTFJuMFVQVGl0NFZOVC1ySXhCeXpjZkFHcnRwRHN3RUtFMDdfME5nOUQ1RXR2U05DUmdKUmItVzJMYjBzMWFwZThpYXlfWjFYbzNTbw?oc=5"
     },
     {
-      "id": "scraped-1786258800000-2t3i7",
+      "id": "scraped-1786258800000-l7ahd",
       "title": "\"결혼 페널티 없다\" 디딤돌·보금자리·생초·신생아 대출 '문턱' 확 낮춘다 - 머니투데이 - 머니투데이",
       "summary": "\"결혼 페널티 없다\" 디딤돌·보금자리·생초·신생아 대출 '문턱' 확 낮춘다 - 머니투데이  머니투데이...",
       "source": "머니투데이",
@@ -262,7 +272,7 @@
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE52Z0YzQ0N4U0tfeGNfS3F2Qi1qb0VWR2gzdUVncDZWb0otZ21JSjFQdkx1Z0NFMmRnM1dkQXl0bU5vNm05VHhFVlRPRGtfdHlBdlotVzB2ZzlKX2R6RzV0Wk5vM25sSmtTYVRv0gFwQVVfeXFMTzVBQWd3RXloZTdaYmFOenRKalFUVFBOS3p1SHF0blNkVWl3NnFxNC1DbUhlMnBqc0VKVmdYbmlCMmtNWmdpZ0R5T1dxUTV6eVBUNHk2SjQzNEVzU2pWV05aRGk3VXhOXzVXdUoxSWt0bQ?oc=5"
     },
     {
-      "id": "scraped-1786258800000-oxyyc",
+      "id": "scraped-1786258800000-zj5xz",
       "title": "李대통령 “결혼 페널티 22개”…세제·대출·청약 손질한다 - 서울경제",
       "summary": "李대통령 “결혼 페널티 22개”…세제·대출·청약 손질한다  서울경제...",
       "source": "서울경제",
@@ -272,7 +282,7 @@
       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5XdE55TkZPcTY1dUM2TUhKMWp2bFR5d2pZbUNET1FoTHRHSEtxSTFBVF93TThhYUU5b0Z2OWRGd1lLZzhIckxFaDVQMTlkaERoVHfSAVNBVV95cUxQMWNrdlRtWHhxUzE5RzZPSEVhVTdhWURZdUcxYzV6VW1FelVKSnVSZDRucnZnY0lMakxnbmpIazZQcTl5MEdta0ZmbkdKT0JySlhDbw?oc=5"
     },
     {
-      "id": "scraped-1781766000000-oglzk",
+      "id": "scraped-1781766000000-swwow",
       "title": "지방 주담대 '3단계 스트레스 DSR' 연말까지 또 유예 - 연합뉴스",
       "summary": "지방 주담대 '3단계 스트레스 DSR' 연말까지 또 유예  연합뉴스...",
       "source": "연합뉴스",
@@ -282,7 +292,7 @@
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBwZTB2TC1zMlQ4SXRSY09JRTV3WDMtWDhEU3h4MmdnNkxHc1hMRUkzbVVjeXJxTW1fSkxIR20wM3Ruc01DajFPTlpSWFVpYWQ1RU1OdVVQakFReU3SAWBBVV95cUxQakJzeG8zdnd1ODZDMEdyUngtZllJYy1QQ3NxY1VBbi1VWDRHTTBMTWdfMGxyTS1oNFlhTm1PS2xZcDBXYUQ4ampwbWVKamdNbnNZbHQ5MjJPWHk1a21kbVY?oc=5"
     },
     {
-      "id": "scraped-1781766000000-1w175",
+      "id": "scraped-1781766000000-ovatz",
       "title": "지방 주담대 ‘3단계 스트레스 DSR’ 연말까지 또 유예 - KBS 뉴스",
       "summary": "지방 주담대 ‘3단계 스트레스 DSR’ 연말까지 또 유예  KBS 뉴스...",
       "source": "KBS 뉴스",
@@ -292,7 +302,7 @@
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE14dndNTlU0bGZweUNTenhUUWJ6dC1VOGd6Z2ZNWDFrRnItX3lLZmo1NHo5SV9ScDB0a3RCWlJRdVpuYlNiM2p2X2xKR0EzOHE5ZUdBZHIxWUk0ZU0?oc=5"
     },
     {
-      "id": "scraped-1781506800000-cubbs",
+      "id": "scraped-1781506800000-fjb2g",
       "title": "[갈 길 잃은 고정금리] 한도 규제에 스트레스DSR '유명무실' - 연합인포맥스",
       "summary": "[갈 길 잃은 고정금리] 한도 규제에 스트레스DSR '유명무실'  연합인포맥스...",
       "source": "연합인포맥스",
@@ -302,7 +312,7 @@
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBocW1rQk9uU3pxZDV4YldFdjlqMVNTWXVfX1dJbTlWVy1mSzJnTTJISDBXd1kwdm5nTHNFS1FkZS1nb3BqOWtZd2ozSUtLMFRTQkk5NHh5dG9SQ0NPR3dFTm0tdy1MLS1JaXBIUXNUeXg?oc=5"
     },
     {
-      "id": "scraped-1778569200000-fl2lb",
+      "id": "scraped-1778569200000-jvzcb",
       "title": "[대출·금융] 디딤돌·보금자리론·신생아 특례 대출 완벽 비교 및 대출 영끌 전략 - 홈두부",
       "summary": "[대출·금융] 디딤돌·보금자리론·신생아 특례 대출 완벽 비교 및 대출 영끌 전략  홈두부...",
       "source": "홈두부",
@@ -312,7 +322,7 @@
       "link": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE1tWlQyQ1N4Yy1Od2M2cHhBaGYtY1VEamZaNDdpWmJRcU5nLXVTendQelBNTEU4R0l3MjBpeDFmOA?oc=5"
     },
     {
-      "id": "scraped-1773644400000-3ewz5",
+      "id": "scraped-1773644400000-tzvij",
       "title": "[체험기] “방 한 칸 빼니 대출 뚝”…4억 신기루 된 ‘신생아 특례’ 현실 - 조세금융신문",
       "summary": "[체험기] “방 한 칸 빼니 대출 뚝”…4억 신기루 된 ‘신생아 특례’ 현실  조세금융신문...",
       "source": "조세금융신문",
@@ -320,16 +330,6 @@
       "pubTimestamp": 1773644400000,
       "tag": "신생아특례",
       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1EM3dVYk9fOWJpWUI5Tk01LWFhZzVZdFBqRzVxVHZHckE4RGFJQUEzOVR2SzhRbmNpZmJYZzBCY1l6X3d5MDdMT1NHeFpTYXdCenNkR0ZabTUyTWhneENwN0pqNA?oc=5"
-    },
-    {
-      "id": "scraped-1763366400000-d72y1",
-      "title": "[부동산 인사이트] 3중 규제의 시대, ‘위기 속 기회’ 전략 가이드 - 비즈한국",
-      "summary": "[부동산 인사이트] 3중 규제의 시대, ‘위기 속 기회’ 전략 가이드  비즈한국...",
-      "source": "비즈한국",
-      "date": "2025. 11. 17.",
-      "pubTimestamp": 1763366400000,
-      "tag": "대출규제",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9qRXlvTnNQZVAxR3JSRWNiT2VxbnlnYWpTTDdRdE9KTG9LUkp0LXMwN05ZQUxLaXpxUG5POWZqOWItSUlNTWtPQ2lKMWN4RXlFQU12bw?oc=5"
     }
   ]
 }
