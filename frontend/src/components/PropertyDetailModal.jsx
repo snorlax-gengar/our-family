@@ -7,6 +7,7 @@ import {
 
 import FloorPlanViewer from './FloorPlanViewer';
 import { calculateAllInCashReceipt } from '../lib/closingCostCalculator';
+import { compareAllRepaymentMethods } from '../lib/repaymentCalculator';
 
 export default function PropertyDetailModal({ 
   property, 
@@ -38,6 +39,17 @@ export default function PropertyDetailModal({
   const [interiorLevel, setInteriorLevel] = useState('none'); // 'none' | 'basic' | 'partial' | 'full'
   const [myBudgetKrw, setMyBudgetKrw] = useState(200000000); // 우리 부부 보유 현금 예산 (기본 2.0억)
   const [showBudgetChecker, setShowBudgetChecker] = useState(false);
+
+  // 📊 [3대 상환방식 & 거치/갈아타기 스케줄러] 상태
+  const [repaymentMethod, setRepaymentMethod] = useState(userCriteria?.repaymentMethod || 'level'); // 'level' | 'principal' | 'graduated'
+  const [graceYears, setGraceYears] = useState(0); // 0 (비거치) | 1 (1년 이자만 거치)
+  const [holdingYears, setHoldingYears] = useState(5); // 거주 후 매도/갈아타기 시점 (3, 5, 7, 10년 등)
+
+  useEffect(() => {
+    if (userCriteria?.repaymentMethod) {
+      setRepaymentMethod(userCriteria.repaymentMethod);
+    }
+  }, [userCriteria?.repaymentMethod]);
 
   useEffect(() => {
     setActiveProperty(property);
@@ -219,10 +231,25 @@ export default function PropertyDetailModal({
   const maxLoan = activeLoan.maxLoan;
   const requiredCash = activeLoan.requiredCash;
   const finalInterestRate = activeLoan.rate;
-  const monthlyPayment = activeLoan.monthlyPayment;
   const marketMonthlyPayment = activeLoan.marketMonthlyPayment;
-  const monthlySavings = activeLoan.monthlySavings;
   const totalSavings = activeLoan.totalSavings;
+
+  // 📊 3대 상환방식(원리금균등 / 원금균등 / 체증식) & 거치·보유기간 정밀 비교
+  const repaymentComparison = compareAllRepaymentMethods({
+    loanAmount: maxLoan,
+    annualRate: finalInterestRate,
+    tenureYears: tenure,
+    graceYears,
+    holdingYears,
+  });
+  const activeRepaySchedule =
+    repaymentMethod === 'graduated'
+      ? repaymentComparison.graduated
+      : repaymentMethod === 'principal'
+      ? repaymentComparison.principal
+      : repaymentComparison.level;
+  const monthlyPayment = activeRepaySchedule.firstMonthPayment || activeLoan.monthlyPayment;
+  const monthlySavings = Math.max(0, marketMonthlyPayment - monthlyPayment);
 
   // 💸 현재 선택된 옵션 기준 정밀 '실제 필요 총현금(All-in Cash) 영수증' 계산
   const allInReceipt = calculateAllInCashReceipt({
@@ -963,7 +990,9 @@ export default function PropertyDetailModal({
                       </div>
 
                       <div className="bg-white p-4 rounded-xl border border-blue-200 shadow-xs">
-                        <span className="text-xs font-medium text-slate-500 whitespace-nowrap">월 예상 상환액 (원리금균등)</span>
+                        <span className="text-xs font-medium text-slate-500 whitespace-nowrap">
+                          1년차 월 상환액 ({repaymentMethod === 'graduated' ? '🔥체증식' : repaymentMethod === 'principal' ? '원금균등' : '원리금균등'}{graceYears === 1 ? '·1년거치' : ''})
+                        </span>
                         <div className="text-2xl font-black text-slate-900 mt-1 whitespace-nowrap">
                           {activeLoan.isEligible ? `약 ${monthlyPayment.toLocaleString()}원` : '-'}
                         </div>
@@ -990,12 +1019,349 @@ export default function PropertyDetailModal({
                             <span className="font-bold text-slate-800 whitespace-nowrap">월 {marketMonthlyPayment.toLocaleString()}원</span>
                           </div>
                           <div>
-                            <span className="text-slate-400 block whitespace-nowrap">매월 이자 절약액</span>
+                            <span className="text-slate-400 block whitespace-nowrap">매월 지출 절약액</span>
                             <span className="font-extrabold text-blue-600 whitespace-nowrap">매월 +{monthlySavings.toLocaleString()}원 절약!</span>
                           </div>
                           <div>
                             <span className="text-slate-400 block whitespace-nowrap">{tenure}년 총 절감액</span>
                             <span className="font-extrabold text-emerald-600 whitespace-nowrap">총 {formatMoney(totalSavings)} 절약!</span>
+                          </div>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* 📊 [3단계 핵심 기능] 상환 방식별(원리금균등 vs 원금균등 vs 체증식) & 거주기간(갈아타기) 현금흐름 비교기 */}
+                    {activeLoan.isEligible && maxLoan > 0 && (
+                      <div className="bg-white rounded-2xl p-4 sm:p-5 border-2 border-blue-200/90 shadow-md space-y-4">
+                        {/* 상단 타이틀 & 거치기간 토글 */}
+                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 border-b border-slate-100 pb-3">
+                          <div>
+                            <div className="flex items-center gap-2 flex-wrap">
+                              <span className="bg-indigo-600 text-white text-[10px] font-black px-2 py-0.5 rounded">
+                                청년·신혼부부 필수 시뮬레이션
+                              </span>
+                              <h4 className="font-black text-slate-900 text-sm sm:text-base">
+                                📊 상환 방식별(원리금균등 · 원금균등 · 체증식) 현금흐름 비교기
+                              </h4>
+                            </div>
+                            <p className="text-xs text-slate-500 mt-0.5">
+                              만 40세 미만이라면 <strong>체증식 분할상환</strong>으로 초기 1~7년 월 납입액을 대폭 낮추고 3년 뒤 중도상환/갈아타기 전략을 세워보세요!
+                            </p>
+                          </div>
+
+                          {/* 비거치 vs 1년 거치 토글 */}
+                          <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-xl border border-slate-200 shrink-0 self-start sm:self-auto">
+                            {[
+                              { val: 0, label: '비거치 (즉시상환)' },
+                              { val: 1, label: '1년 거치 (첫해 이자만)' },
+                            ].map((g) => (
+                              <button
+                                key={g.val}
+                                type="button"
+                                onClick={() => setGraceYears(g.val)}
+                                className={`px-2.5 py-1 rounded-lg text-[11px] font-bold cursor-pointer transition-all whitespace-nowrap ${
+                                  graceYears === g.val
+                                    ? 'bg-slate-900 text-white shadow-2xs'
+                                    : 'text-slate-600 hover:text-slate-900'
+                                }`}
+                              >
+                                {g.label}
+                              </button>
+                            ))}
+                          </div>
+                        </div>
+
+                        {/* 1. 3대 상환방식 원클릭 선택 카드 */}
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs">
+                          {[
+                            {
+                              id: 'level',
+                              title: '① 원리금균등 (표준 안정형)',
+                              badge: '매월 동일 금액',
+                              sched: repaymentComparison.level,
+                              desc: '만기까지 매월 나가는 (원금+이자)가 일정해 가계부 계획에 안정적',
+                            },
+                            {
+                              id: 'principal',
+                              title: '② 원금균등 (총이자 최소형)',
+                              badge: '🏆 만기 총이자 최저',
+                              sched: repaymentComparison.principal,
+                              desc: '초기 부담은 가장 크지만 원금을 빠르게 줄여 만기 총이자가 가장 적음',
+                            },
+                            {
+                              id: 'graduated',
+                              title: '③ 체증식 (만 40세 미만 특권)',
+                              badge: '🔥 초기 월납입 최소',
+                              sched: repaymentComparison.graduated,
+                              desc: '초기 1~7년 월 부담을 대폭 낮추고 3~7년 뒤 갈아타기 시 압도적 유리',
+                            },
+                          ].map((card) => {
+                            const isSelected = repaymentMethod === card.id;
+                            const diffVsLevel = repaymentComparison.level.afterGraceFirstPayment - card.sched.afterGraceFirstPayment;
+                            return (
+                              <button
+                                key={card.id}
+                                type="button"
+                                onClick={() => setRepaymentMethod(card.id)}
+                                className={`p-3.5 rounded-xl border text-left transition-all cursor-pointer flex flex-col justify-between ${
+                                  isSelected
+                                    ? 'bg-indigo-50/90 border-indigo-600 ring-2 ring-indigo-500/30 shadow-xs'
+                                    : 'bg-slate-50/70 hover:bg-slate-100/80 border-slate-200'
+                                }`}
+                              >
+                                <div>
+                                  <div className="flex items-center justify-between gap-1 mb-1">
+                                    <span className={`font-black text-xs ${isSelected ? 'text-indigo-950' : 'text-slate-800'}`}>
+                                      {card.title}
+                                    </span>
+                                    <span className={`text-[10px] font-extrabold px-1.5 py-0.2 rounded whitespace-nowrap ${
+                                      card.id === 'graduated'
+                                        ? 'bg-rose-100 text-rose-700'
+                                        : card.id === 'principal'
+                                        ? 'bg-emerald-100 text-emerald-800'
+                                        : 'bg-blue-100 text-blue-800'
+                                    }`}>
+                                      {card.badge}
+                                    </span>
+                                  </div>
+                                  <div className="text-lg font-black text-slate-900 mt-1">
+                                    월 {card.sched.afterGraceFirstPayment.toLocaleString()}원
+                                    <span className="text-[10px] font-semibold text-slate-500 ml-1">
+                                      ({graceYears === 1 ? '거치후 첫달' : '1년차'})
+                                    </span>
+                                  </div>
+                                  {diffVsLevel > 0 && (
+                                    <span className="text-[11px] font-extrabold text-rose-600 block mt-0.5">
+                                      💡 원리금균등 대비 매월 -{diffVsLevel.toLocaleString()}원 저렴!
+                                    </span>
+                                  )}
+                                  {diffVsLevel < 0 && (
+                                    <span className="text-[11px] font-semibold text-slate-500 block mt-0.5">
+                                      원리금균등 대비 첫달 +{Math.abs(diffVsLevel).toLocaleString()}원
+                                    </span>
+                                  )}
+                                </div>
+                                <p className="text-[10px] text-slate-500 mt-2 pt-1.5 border-t border-slate-200/70 leading-snug">
+                                  {card.desc}
+                                </p>
+                              </button>
+                            );
+                          })}
+                        </div>
+
+                        {/* 2. 거주(보유) 목표 기간별 현금흐름 & 갈아타기 비교 */}
+                        <div className="bg-gradient-to-r from-indigo-950 via-slate-900 to-blue-950 text-white p-4 rounded-xl space-y-3">
+                          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                            <div className="text-xs">
+                              <span className="text-amber-300 font-extrabold block">
+                                🔄 우리 가족 예상 거주(갈아타기) 목표 기간: {holdingYears}년 거주 후 매도/상환 시나리오
+                              </span>
+                              <span className="text-[11px] text-slate-300">
+                                정책대출은 3년 이후 중도상환수수료가 면제(0원)됩니다. 실제 거주할 기간 동안의 누적 지출액을 비교해 보세요!
+                              </span>
+                            </div>
+                            <div className="flex items-center gap-1 shrink-0">
+                              {[
+                                { yr: 3, label: '3년(수수료면제)' },
+                                { yr: 5, label: '5년(평균거주)' },
+                                { yr: 7, label: '7년' },
+                                { yr: 10, label: '10년' },
+                              ].map((h) => (
+                                <button
+                                  key={h.yr}
+                                  type="button"
+                                  onClick={() => setHoldingYears(h.yr)}
+                                  className={`px-2.5 py-1 rounded-lg text-[11px] font-bold cursor-pointer transition-colors whitespace-nowrap ${
+                                    holdingYears === h.yr
+                                      ? 'bg-amber-400 text-slate-950 font-black'
+                                      : 'bg-white/10 hover:bg-white/20 text-slate-300'
+                                  }`}
+                                >
+                                  {h.label}
+                                </button>
+                              ))}
+                            </div>
+                          </div>
+
+                          {/* 체증식 vs 원리금균등 보유기간 혜택 브리핑 */}
+                          <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs pt-1">
+                            <div className="bg-white/10 p-3 rounded-lg border border-white/10">
+                              <span className="text-[11px] text-slate-300 block">
+                                🔥 체증식 선택 시 1년차 월 절감액
+                              </span>
+                              <span className="text-base font-black text-amber-300 block mt-0.5">
+                                매월 -{repaymentComparison.holdingAnalysis.firstYearMonthlyDiffGraduatedVsLevel.toLocaleString()}원 부담 감소
+                              </span>
+                              <span className="text-[10px] text-slate-400">
+                                육아·출산 초기 가계 현금흐름 방어
+                              </span>
+                            </div>
+                            <div className="bg-white/10 p-3 rounded-lg border border-white/10">
+                              <span className="text-[11px] text-slate-300 block">
+                                💰 {holdingYears}년간 체증식 누적 지출 절감액
+                              </span>
+                              <span className="text-base font-black text-emerald-300 block mt-0.5">
+                                총 {formatMoney(repaymentComparison.holdingAnalysis.holdingCashFlowSavedGraduatedVsLevel)} 여유자금 확보
+                              </span>
+                              <span className="text-[10px] text-slate-400">
+                                원리금균등 대비 {holdingYears}년간 덜 내는 총 원리금
+                              </span>
+                            </div>
+                            <div className="bg-white/10 p-3 rounded-lg border border-white/10">
+                              <span className="text-[11px] text-slate-300 block">
+                                🏆 만기({tenure}년) 유지 시 원금균등 이자절약
+                              </span>
+                              <span className="text-base font-black text-sky-300 block mt-0.5">
+                                총 {formatMoney(repaymentComparison.holdingAnalysis.totalInterestSavedPrincipalVsLevel)} 이자 절감
+                              </span>
+                              <span className="text-[10px] text-slate-400">
+                                갈아타기 없이 {tenure}년 만기 보유 시 유리
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* 3. 3대 상환방식 연차별 월 납입액 & 잔액 상세 비교표 */}
+                        <div className="overflow-x-auto -webkit-overflow-scrolling-touch rounded-xl border border-slate-200">
+                          <table className="w-full text-left text-xs border-collapse min-w-[540px]">
+                            <thead>
+                              <tr className="bg-slate-100 text-slate-700 font-bold border-b border-slate-200 whitespace-nowrap">
+                                <th className="py-2.5 px-3">연차별 시점</th>
+                                <th className={`py-2.5 px-3 ${repaymentMethod === 'level' ? 'bg-blue-50 text-blue-900' : ''}`}>
+                                  ① 원리금균등 (매월동일)
+                                </th>
+                                <th className={`py-2.5 px-3 ${repaymentMethod === 'principal' ? 'bg-emerald-50 text-emerald-900' : ''}`}>
+                                  ② 원금균등 (이자최소)
+                                </th>
+                                <th className={`py-2.5 px-3 ${repaymentMethod === 'graduated' ? 'bg-rose-50 text-rose-900' : ''}`}>
+                                  ③ 🔥 체증식 (초기최소)
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody className="divide-y divide-slate-100 text-slate-700">
+                              {graceYears === 1 && (
+                                <tr className="bg-amber-50/40">
+                                  <td className="py-2 px-3 font-bold text-amber-900 whitespace-nowrap">1년차 (거치기간·이자만)</td>
+                                  <td className="py-2 px-3 font-bold">월 {repaymentComparison.level.firstMonthPayment.toLocaleString()}원</td>
+                                  <td className="py-2 px-3 font-bold">월 {repaymentComparison.principal.firstMonthPayment.toLocaleString()}원</td>
+                                  <td className="py-2 px-3 font-bold">월 {repaymentComparison.graduated.firstMonthPayment.toLocaleString()}원</td>
+                                </tr>
+                              )}
+                              {[1, 3, 5, 7, 10, 20, tenure]
+                                .filter((yr, idx, arr) => yr <= tenure && arr.indexOf(yr) === idx && !(graceYears === 1 && yr === 1))
+                                .map((yr) => {
+                                  const lRow = repaymentComparison.level.scheduleByYear.find((s) => s.year === yr);
+                                  const pRow = repaymentComparison.principal.scheduleByYear.find((s) => s.year === yr);
+                                  const gRow = repaymentComparison.graduated.scheduleByYear.find((s) => s.year === yr);
+                                  if (!lRow || !pRow || !gRow) return null;
+                                  const minPayForYr = Math.min(lRow.avgMonthlyPayment, pRow.avgMonthlyPayment, gRow.avgMonthlyPayment);
+                                  return (
+                                    <tr key={yr} className={yr === holdingYears ? 'bg-indigo-50/50 font-semibold' : ''}>
+                                      <td className="py-2 px-3 font-bold bg-slate-50 whitespace-nowrap">
+                                        {yr}년차 월평균
+                                        {yr === 3 && <span className="ml-1 text-[10px] text-blue-600 font-extrabold">(수수료면제)</span>}
+                                        {yr === holdingYears && <span className="ml-1 text-[10px] text-indigo-700 font-extrabold">(목표시점)</span>}
+                                      </td>
+                                      <td className={`py-2 px-3 whitespace-nowrap ${lRow.avgMonthlyPayment === minPayForYr ? 'font-black text-blue-700' : ''}`}>
+                                        월 {lRow.avgMonthlyPayment.toLocaleString()}원
+                                      </td>
+                                      <td className={`py-2 px-3 whitespace-nowrap ${pRow.avgMonthlyPayment === minPayForYr ? 'font-black text-emerald-700' : ''}`}>
+                                        월 {pRow.avgMonthlyPayment.toLocaleString()}원
+                                      </td>
+                                      <td className={`py-2 px-3 whitespace-nowrap ${gRow.avgMonthlyPayment === minPayForYr ? 'font-black text-rose-600' : ''}`}>
+                                        월 {gRow.avgMonthlyPayment.toLocaleString()}원
+                                        {gRow.avgMonthlyPayment === minPayForYr && yr <= 7 && (
+                                          <span className="ml-1 text-[10px] bg-rose-100 text-rose-700 px-1 py-0.2 rounded font-extrabold">최저</span>
+                                        )}
+                                      </td>
+                                    </tr>
+                                  );
+                                })}
+                              {/* 보유기간 누적 납부 원리금 및 남은 대출잔액 */}
+                              <tr className="bg-slate-50 border-t-2 border-slate-200">
+                                <td className="py-2.5 px-3 font-black text-slate-900 whitespace-nowrap">
+                                  {holdingYears}년 거주 시 누적 납부액<br />
+                                  <span className="text-[10px] text-slate-500 font-normal">(남은 대출 원금 잔액)</span>
+                                </td>
+                                <td className="py-2.5 px-3 whitespace-nowrap">
+                                  <div className="font-bold text-slate-900">{formatMoney(repaymentComparison.holdingAnalysis.level.cumulativePayment)}</div>
+                                  <div className="text-[11px] text-slate-500">잔액 {formatMoney(repaymentComparison.holdingAnalysis.level.remainingBalance)}</div>
+                                </td>
+                                <td className="py-2.5 px-3 whitespace-nowrap">
+                                  <div className="font-bold text-slate-900">{formatMoney(repaymentComparison.holdingAnalysis.principal.cumulativePayment)}</div>
+                                  <div className="text-[11px] text-emerald-700 font-semibold">잔액 {formatMoney(repaymentComparison.holdingAnalysis.principal.remainingBalance)}</div>
+                                </td>
+                                <td className="py-2.5 px-3 whitespace-nowrap bg-rose-50/40">
+                                  <div className="font-black text-rose-600">{formatMoney(repaymentComparison.holdingAnalysis.graduated.cumulativePayment)}</div>
+                                  <div className="text-[11px] text-slate-500">잔액 {formatMoney(repaymentComparison.holdingAnalysis.graduated.remainingBalance)}</div>
+                                </td>
+                              </tr>
+                              {/* 만기 총이자 비교 */}
+                              <tr>
+                                <td className="py-2.5 px-3 font-bold bg-slate-50 whitespace-nowrap">
+                                  {tenure}년 만기 총이자 합계
+                                </td>
+                                <td className="py-2.5 px-3 font-bold text-slate-800 whitespace-nowrap">
+                                  {formatMoney(repaymentComparison.level.totalInterest)}
+                                </td>
+                                <td className="py-2.5 px-3 font-black text-emerald-700 whitespace-nowrap">
+                                  {formatMoney(repaymentComparison.principal.totalInterest)} 🏆
+                                </td>
+                                <td className="py-2.5 px-3 font-bold text-slate-600 whitespace-nowrap">
+                                  {formatMoney(repaymentComparison.graduated.totalInterest)}
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+
+                        {/* 4. 선택된 상환방식의 연차별(원금 vs 이자) 구성비 시각화 바 */}
+                        <div className="bg-slate-50 p-3.5 rounded-xl border border-slate-200/80 space-y-2.5">
+                          <div className="flex items-center justify-between text-xs flex-wrap gap-2">
+                            <span className="font-extrabold text-slate-800">
+                              📈 [{repaymentMethod === 'graduated' ? '체증식 분할상환' : repaymentMethod === 'principal' ? '원금균등 분할상환' : '원리금균등 분할상환'}] 연차별 원금 vs 이자 비중 추이
+                            </span>
+                            <div className="flex items-center gap-3 text-[11px]">
+                              <span className="flex items-center gap-1 font-bold text-blue-700">
+                                <span className="w-2.5 h-2.5 rounded-xs bg-blue-600 inline-block" /> 원금 상환액
+                              </span>
+                              <span className="flex items-center gap-1 font-bold text-amber-600">
+                                <span className="w-2.5 h-2.5 rounded-xs bg-amber-400 inline-block" /> 이자 납부액
+                              </span>
+                            </div>
+                          </div>
+
+                          <div className="space-y-1.5 text-[11px]">
+                            {activeRepaySchedule.milestones.map((ms) => {
+                              const maxMilestonePay = Math.max(
+                                ...activeRepaySchedule.milestones.map((m) => m.avgMonthlyPayment),
+                                1
+                              );
+                              const principalWidth = Math.round((ms.avgMonthlyPrincipal / maxMilestonePay) * 100);
+                              const interestWidth = Math.round((ms.avgMonthlyInterest / maxMilestonePay) * 100);
+                              return (
+                                <div key={ms.year} className="grid grid-cols-12 items-center gap-2">
+                                  <div className="col-span-2 sm:col-span-2 font-bold text-slate-700 whitespace-nowrap">
+                                    {ms.year}년차
+                                  </div>
+                                  <div className="col-span-6 sm:col-span-7 bg-slate-200/70 h-4 rounded-full overflow-hidden flex">
+                                    <div
+                                      style={{ width: `${principalWidth}%` }}
+                                      className="bg-blue-600 h-full transition-all duration-300"
+                                      title={`원금: 월 ${ms.avgMonthlyPrincipal.toLocaleString()}원`}
+                                    />
+                                    <div
+                                      style={{ width: `${interestWidth}%` }}
+                                      className="bg-amber-400 h-full transition-all duration-300"
+                                      title={`이자: 월 ${ms.avgMonthlyInterest.toLocaleString()}원`}
+                                    />
+                                  </div>
+                                  <div className="col-span-4 sm:col-span-3 text-right font-bold text-slate-800 whitespace-nowrap">
+                                    월 {ms.avgMonthlyPayment.toLocaleString()}원
+                                  </div>
+                                </div>
+                              );
+                            })}
                           </div>
                         </div>
                       </div>

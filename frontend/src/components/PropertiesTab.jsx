@@ -811,28 +811,28 @@ export default function PropertiesTab({
             </div>
           </div>
 
-          {/* Card 3: 대출 만기 (원리금균등 분할상환 특징 가이드) */}
+          {/* Card 3: 대출 만기 & 상환 방식 (원리금균등 · 원금균등 · 체증식 선택) */}
           <div className="bg-white/10 p-4 rounded-2xl border border-white/15 backdrop-blur-md flex flex-col justify-between shadow-lg hover:border-white/25 transition-all">
             <div>
               {/* Header */}
               <div className="flex justify-between items-center mb-2">
                 <label className="text-slate-200 font-bold flex items-center gap-1.5">
                   <Calendar className="w-3.5 h-3.5 text-sky-400" />
-                  <span>대출 만기 (상환기간)</span>
+                  <span>만기 & 상환방식</span>
                 </label>
-                <span className="font-extrabold text-sky-300 text-xs bg-sky-500/20 px-2 py-0.5 rounded-full border border-sky-400/30 whitespace-nowrap">
-                  {userCriteria.loanTenureYears}년 만기
+                <span className="font-extrabold text-sky-300 text-[10px] bg-sky-500/20 px-2 py-0.5 rounded-full border border-sky-400/30 whitespace-nowrap">
+                  {userCriteria.loanTenureYears}년 · {userCriteria.repaymentMethod === 'graduated' ? '체증식(초기최소)' : userCriteria.repaymentMethod === 'principal' ? '원금균등' : '원리금균등'}
                 </span>
               </div>
 
               {/* 4-way Tenure Buttons */}
-              <div className="grid grid-cols-4 gap-1.5 my-2">
+              <div className="grid grid-cols-4 gap-1.5 my-1.5">
                 {loanProductInfo.tenures.map((yr) => (
                   <button
                     key={yr}
                     type="button"
                     onClick={() => setUserCriteria({ ...userCriteria, loanTenureYears: yr })}
-                    className={`py-2 rounded-xl text-xs font-bold cursor-pointer transition-all ${
+                    className={`py-1.5 rounded-xl text-xs font-bold cursor-pointer transition-all ${
                       userCriteria.loanTenureYears === yr 
                         ? 'bg-blue-600 text-white shadow-md' 
                         : 'bg-white/10 text-slate-300 hover:bg-white/20'
@@ -842,24 +842,49 @@ export default function PropertiesTab({
                   </button>
                 ))}
               </div>
+
+              {/* 3-way Repayment Method Switcher */}
+              <div className="grid grid-cols-3 gap-1 my-1.5">
+                {[
+                  { id: 'level', label: '원리금균등' },
+                  { id: 'principal', label: '원금균등' },
+                  { id: 'graduated', label: '🔥체증식' },
+                ].map((m) => (
+                  <button
+                    key={m.id}
+                    type="button"
+                    onClick={() => setUserCriteria({ ...userCriteria, repaymentMethod: m.id })}
+                    className={`py-1.5 rounded-lg text-[11px] font-bold cursor-pointer transition-all whitespace-nowrap ${
+                      (userCriteria.repaymentMethod || 'level') === m.id
+                        ? 'bg-amber-400 text-slate-950 font-black shadow-xs'
+                        : 'bg-white/10 text-slate-300 hover:bg-white/20'
+                    }`}
+                  >
+                    {m.label}
+                  </button>
+                ))}
+              </div>
             </div>
 
             {/* Informative Insight Box to Fill Space Evenly */}
-            <div className="bg-black/25 p-2.5 rounded-xl border border-white/10 space-y-1 mt-2">
+            <div className="bg-black/25 p-2.5 rounded-xl border border-white/10 space-y-1 mt-1">
               <div className="flex items-center gap-1 text-[11px] font-bold text-sky-300">
                 <Calendar className="w-3 h-3 shrink-0" />
-                <span className="whitespace-nowrap">{userCriteria.loanTenureYears}년 상환 플랜 특징</span>
+                <span className="whitespace-nowrap">
+                  {userCriteria.repaymentMethod === 'graduated'
+                    ? '만 40세 미만 특권: 초기 월납입액 대폭 절감'
+                    : userCriteria.repaymentMethod === 'principal'
+                    ? '원금균등: 만기 총이자 3종 중 최소'
+                    : '원리금균등: 매월 동일한 상환액 유지'}
+                </span>
               </div>
               <p className="text-[10px] text-slate-300 leading-tight break-keep">
-                {userCriteria.loanTenureYears === 40 
-                  ? '청년·신혼가구 추천: 매달 원리금 상환액 최소화' 
-                  : userCriteria.loanTenureYears === 30 
-                  ? '가장 보편적인 표준 만기: 월 원리금과 총이자 균형' 
-                  : '단기 상환 집중: 총이자 절약 및 빠른 자산 형성'}
+                {userCriteria.repaymentMethod === 'graduated'
+                  ? '초기 1~7년 월 부담을 낮추고 3년 뒤 중도상환/갈아타기에 최적'
+                  : userCriteria.repaymentMethod === 'principal'
+                  ? '초기 부담은 높지만 매달 원금을 빠르게 줄여 이자 극소화'
+                  : '가장 보편적인 방식으로 만기까지 매달 지출액이 일정함'}
               </p>
-              <div className="text-[9px] text-slate-400 pt-0.5 border-t border-white/5 whitespace-nowrap">
-                원리금균등분할상환 방식 적용
-              </div>
             </div>
           </div>
 
@@ -1655,12 +1680,14 @@ export default function PropertiesTab({
                           </span>
                         </div>
                         <div className="text-right">
-                          <span className="text-[10px] text-slate-500 block whitespace-nowrap">월 원리금 ({sim.loanTenureYears}년)</span>
+                          <span className="text-[10px] text-slate-500 block whitespace-nowrap">
+                            월 납입액 ({sim.loanTenureYears}년·{sim.repaymentMethod === 'graduated' ? '체증식' : sim.repaymentMethod === 'principal' ? '원금균등' : '원리금균등'})
+                          </span>
                           <span className="font-extrabold text-slate-900 text-sm whitespace-nowrap">
                             약 {sim.monthlyPayment?.toLocaleString()}원
                           </span>
                           <span className="text-[10px] text-emerald-600 font-semibold block whitespace-nowrap">
-                            연 {sim.finalInterestRate}%
+                            연 {sim.finalInterestRate}% {sim.repaymentMethod === 'graduated' ? '(초기최소)' : ''}
                           </span>
                         </div>
                       </div>

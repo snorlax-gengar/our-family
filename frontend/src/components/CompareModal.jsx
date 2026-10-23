@@ -608,10 +608,14 @@ export default function CompareModal({
                 {/* 월 원리금 상환액 */}
                 <tr>
                   <td className="py-3 px-4 font-bold bg-slate-50 whitespace-nowrap">
-                    월 원리금 상환액 ({userCriteria?.loanTenureYears || 30}년)
+                    월 원리금 상환액 ({userCriteria?.loanTenureYears || 30}년)<br />
+                    <span className="text-[10px] text-indigo-600 font-bold">
+                      ({userCriteria?.repaymentMethod === 'graduated' ? '체증식 1년차' : userCriteria?.repaymentMethod === 'principal' ? '원금균등 1회차' : '원리금균등'})
+                    </span>
                   </td>
                   {enrichedList.map((item) => {
                     const isBest = canHighlight && minMonthlyPay && item.sim.monthlyPayment === minMonthlyPay;
+                    const repSummary = item.sim.repaymentSummary;
                     return (
                       <td key={item.id} className={`py-3 px-4 border-l border-slate-100 ${isBest ? 'bg-emerald-50/40' : ''}`}>
                         {item.sim.isEligible ? (
@@ -629,6 +633,22 @@ export default function CompareModal({
                             <span className="text-[11px] text-emerald-600 font-bold block mt-0.5">
                               적용금리 연 {item.sim.finalInterestRate}% (시중은행 대비 월 {item.sim.comparison?.monthlySavings?.toLocaleString()}원 절약)
                             </span>
+                            {repSummary && (
+                              <div className="mt-1.5 pt-1.5 border-t border-slate-200/70 text-[10px] text-slate-600 space-y-0.5">
+                                <div className="flex justify-between">
+                                  <span>· 체증식(1년차):</span>
+                                  <strong className="text-indigo-700">월 {repSummary.graduatedFirstMonth?.toLocaleString()}원</strong>
+                                </div>
+                                <div className="flex justify-between">
+                                  <span>· 원리금균등:</span>
+                                  <strong className="text-slate-800">월 {repSummary.levelMonthly?.toLocaleString()}원</strong>
+                                </div>
+                                <div className="flex justify-between">
+                                  <span>· 원금균등(1회차):</span>
+                                  <strong className="text-emerald-700">월 {repSummary.principalFirstMonth?.toLocaleString()}원</strong>
+                                </div>
+                              </div>
+                            )}
                           </>
                         ) : (
                           <span className="text-slate-400">-</span>

@@ -48,26 +48,52 @@ function getAppraisalData(propertyPrice, kbPrice) {
 }
 
 /**
- * 원리금균등 상환액 계산
+ * 상환방식별(원리금균등 / 원금균등 / 체증식) 상환액 계산
  */
-function calculateAmortization(loanAmount, annualInterestRate, tenureYears) {
+function calculateAmortization(loanAmount, annualInterestRate, tenureYears, repaymentMethod = 'level') {
   const monthlyRate = (annualInterestRate / 100) / 12;
   const totalMonths = tenureYears * 12;
   
+  let levelMonthlyPayment = 0;
+  let principalFirstPayment = 0;
+  let graduatedFirstPayment = 0;
   let monthlyPayment = 0;
   let totalPayment = 0;
   let totalInterest = 0;
 
   if (loanAmount > 0 && monthlyRate > 0) {
-    monthlyPayment = Math.round(
+    // 1. 원리금균등 월 납입액
+    levelMonthlyPayment = Math.round(
       (loanAmount * monthlyRate * Math.pow(1 + monthlyRate, totalMonths)) /
       (Math.pow(1 + monthlyRate, totalMonths) - 1)
     );
-    totalPayment = monthlyPayment * totalMonths;
-    totalInterest = totalPayment - loanAmount;
+
+    // 2. 원금균등 1회차(초기) 월 납입액 = (원금/개월수) + 첫달 이자
+    principalFirstPayment = Math.round((loanAmount / totalMonths) + (loanAmount * monthlyRate));
+
+    // 3. 체증식 1년차 평균 월 납입액 (초기 원금 최소화 + 이자 중심)
+    const gradDenom = (totalMonths * (totalMonths + 1)) / 2;
+    const firstYearAvgPrincipal = (loanAmount * 6.5) / gradDenom;
+    graduatedFirstPayment = Math.round(firstYearAvgPrincipal + (loanAmount * monthlyRate));
+
+    if (repaymentMethod === 'principal') {
+      monthlyPayment = principalFirstPayment;
+      totalInterest = Math.round((loanAmount * monthlyRate * (totalMonths + 1)) / 2);
+      totalPayment = loanAmount + totalInterest;
+    } else if (repaymentMethod === 'graduated') {
+      monthlyPayment = graduatedFirstPayment;
+      // 체증식 만기 총이자는 원리금균등 대비 약 1.24배 수준
+      const levelTotalInterest = (levelMonthlyPayment * totalMonths) - loanAmount;
+      totalInterest = Math.round(levelTotalInterest * 1.24);
+      totalPayment = loanAmount + totalInterest;
+    } else {
+      monthlyPayment = levelMonthlyPayment;
+      totalPayment = levelMonthlyPayment * totalMonths;
+      totalInterest = totalPayment - loanAmount;
+    }
   }
 
-  // 시중은행(4.30% 가정) 대비 절감액
+  // 시중은행(4.30% 원리금균등 가정) 대비 절감액
   const marketRate = 4.30;
   const marketMonthlyRate = (marketRate / 100) / 12;
   const marketMonthlyPayment = (loanAmount > 0) ? Math.round(
@@ -75,10 +101,22 @@ function calculateAmortization(loanAmount, annualInterestRate, tenureYears) {
     (Math.pow(1 + marketMonthlyRate, totalMonths) - 1)
   ) : 0;
   const monthlySavings = Math.max(0, marketMonthlyPayment - monthlyPayment);
-  const totalSavings = monthlySavings * totalMonths;
+  const totalSavings = Math.max(0, (marketMonthlyPayment * totalMonths) - (levelMonthlyPayment * totalMonths));
+
+  const repaymentMethodLabel =
+    repaymentMethod === 'graduated'
+      ? '체증식(초기최소)'
+      : repaymentMethod === 'principal'
+      ? '원금균등(총이자최소)'
+      : '원리금균등';
 
   return {
+    repaymentMethod,
+    repaymentMethodLabel,
     monthlyPayment,
+    levelMonthlyPayment,
+    principalFirstPayment,
+    graduatedFirstPayment,
     totalPayment,
     totalInterest,
     marketRate,
@@ -111,6 +149,7 @@ export function calculateNewbornLoan({
   loanTenureYears = 30,
   useMcg = true,
   preferentialDiscount = 0.2,
+  repaymentMethod = 'level',
 }) {
   const loanId = 'newborn';
   const loanName = '신생아 특례 디딤돌 대출';
@@ -144,7 +183,7 @@ export function calculateNewbornLoan({
   const baseRate = matchedBracket.rates[validTenure] || 3.30;
   const finalInterestRate = Math.max(1.20, +(baseRate - preferentialDiscount).toFixed(2));
 
-  const amort = calculateAmortization(maxLoan, finalInterestRate, validTenure);
+  const amort = calculateAmortization(maxLoan, finalInterestRate, validTenure, repaymentMethod);
 
   return {
     loanId,
@@ -170,8 +209,13 @@ export function calculateNewbornLoan({
     baseRate,
     finalInterestRate,
     preferentialDiscount,
+    repaymentMethod: amort.repaymentMethod,
+    repaymentMethodLabel: amort.repaymentMethodLabel,
     monthlyPayment: amort.monthlyPayment,
     monthlyPaymentFormatted: formatKrw(amort.monthlyPayment),
+    levelMonthlyPayment: amort.levelMonthlyPayment,
+    principalFirstPayment: amort.principalFirstPayment,
+    graduatedFirstPayment: amort.graduatedFirstPayment,
     totalInterest: amort.totalInterest,
     totalInterestFormatted: formatKrw(amort.totalInterest),
     comparison: {
@@ -228,6 +272,7 @@ export function calculateBogeumjariLoan({
   useMcg = true,
   preferentialDiscount = 0.1, // 기본 아낌e 전자약정 0.1%p 할인
   isNewlywed = true, // 신혼부부/다자녀 기본 고려
+  repaymentMethod = 'level',
 }) {
   const loanId = 'bogeumjari';
   const loanName = 'HF 한국주택금융공사 보금자리론';
@@ -266,7 +311,7 @@ export function calculateBogeumjariLoan({
   const totalDiscount = preferentialDiscount + (isFirstHome ? 0.2 : 0);
   const finalInterestRate = Math.max(2.65, +(baseRate - totalDiscount).toFixed(2));
 
-  const amort = calculateAmortization(maxLoan, finalInterestRate, validTenure);
+  const amort = calculateAmortization(maxLoan, finalInterestRate, validTenure, repaymentMethod);
 
   return {
     loanId,
@@ -292,8 +337,13 @@ export function calculateBogeumjariLoan({
     baseRate,
     finalInterestRate,
     preferentialDiscount: totalDiscount,
+    repaymentMethod: amort.repaymentMethod,
+    repaymentMethodLabel: amort.repaymentMethodLabel,
     monthlyPayment: amort.monthlyPayment,
     monthlyPaymentFormatted: formatKrw(amort.monthlyPayment),
+    levelMonthlyPayment: amort.levelMonthlyPayment,
+    principalFirstPayment: amort.principalFirstPayment,
+    graduatedFirstPayment: amort.graduatedFirstPayment,
     totalInterest: amort.totalInterest,
     totalInterestFormatted: formatKrw(amort.totalInterest),
     comparison: {
@@ -342,6 +392,7 @@ export function calculateDidimdolLoan({
   useMcg = true,
   preferentialDiscount = 0.2, // 청약/전자계약 우대
   isNewlywed = true,
+  repaymentMethod = 'level',
 }) {
   const loanId = 'didimdol';
   const loanName = isFirstHome ? '내집마련 디딤돌 대출 (생애최초 특례)' : '내집마련 디딤돌 대출 (일반)';
@@ -386,7 +437,7 @@ export function calculateDidimdolLoan({
   const totalDiscount = preferentialDiscount + (isFirstHome ? 0.2 : 0);
   const finalInterestRate = Math.max(1.50, +(baseRate - totalDiscount).toFixed(2));
 
-  const amort = calculateAmortization(maxLoan, finalInterestRate, validTenure);
+  const amort = calculateAmortization(maxLoan, finalInterestRate, validTenure, repaymentMethod);
 
   return {
     loanId,
@@ -412,8 +463,13 @@ export function calculateDidimdolLoan({
     baseRate,
     finalInterestRate,
     preferentialDiscount: totalDiscount,
+    repaymentMethod: amort.repaymentMethod,
+    repaymentMethodLabel: amort.repaymentMethodLabel,
     monthlyPayment: amort.monthlyPayment,
     monthlyPaymentFormatted: formatKrw(amort.monthlyPayment),
+    levelMonthlyPayment: amort.levelMonthlyPayment,
+    principalFirstPayment: amort.principalFirstPayment,
+    graduatedFirstPayment: amort.graduatedFirstPayment,
     totalInterest: amort.totalInterest,
     totalInterestFormatted: formatKrw(amort.totalInterest),
     comparison: {

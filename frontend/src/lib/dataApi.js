@@ -37,6 +37,7 @@ export async function getProperties({
   useMcg = true,
   preferentialDiscount = 0.2,
   loanType = 'newborn',
+  repaymentMethod = 'level',
 } = {}) {
   const all = await loadRawProperties();
   const income = Number(annualIncome);
@@ -62,6 +63,7 @@ export async function getProperties({
         loanTenureYears: tenure,
         useMcg: Boolean(useMcg),
         preferentialDiscount: discount,
+        repaymentMethod,
       };
       const loanSimulation = calculateLoan({ loanType, ...loanParams });
       const allLoans = calculateAllLoans(loanParams);

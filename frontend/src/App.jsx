@@ -19,6 +19,7 @@ export default function App() {
     useMcg: true,           // MCG 모기지신용보증 가입 (방공제 면제)
     preferentialDiscount: 0.2, // 우대금리 (청약통장 + 전자계약 등 0.2%p)
     loanType: 'newborn',    // 'newborn' | 'bogeumjari' | 'didimdol'
+    repaymentMethod: 'level', // 'level' (원리금균등) | 'principal' (원금균등) | 'graduated' (체증식)
   });
 
   const [properties, setProperties] = useState([]);
