@@ -5,7 +5,8 @@
  * 이제는 빌드 때 만들어진 /data/*.json 을 직접 읽고 대출 계산도 브라우저에서 한다.
  * 결과 형태는 기존 /api/properties 응답과 동일하다.
  */
-import { calculateLoan, calculateAllLoans } from './loanCalculator.js';
+import { calculateLoan, calculateAllLoans, formatKrw } from './loanCalculator.js';
+import { calculateAllInCashReceipt } from './closingCostCalculator.js';
 
 const fetchJson = async (url, { fresh = false } = {}) => {
   const res = await fetch(url, { cache: fresh ? 'reload' : 'no-cache' });
@@ -24,7 +25,7 @@ const loadRawProperties = () => {
   return propertiesPromise;
 };
 
-/** 기존 GET /api/properties 와 같은 계산: 단지별 선택 대출 + 3대 대출 비교 */
+/** 기존 GET /api/properties 와 같은 계산: 단지별 선택 대출 + 3대 대출 비교 + 부대비용 포함 총현금 */
 export async function getProperties({
   region,
   district,
@@ -62,10 +63,36 @@ export async function getProperties({
         useMcg: Boolean(useMcg),
         preferentialDiscount: discount,
       };
+      const loanSimulation = calculateLoan({ loanType, ...loanParams });
+      const allLoans = calculateAllLoans(loanParams);
+      const defaultTaxRelief = isFirstHome
+        ? 'firstHome'
+        : loanType === 'newborn'
+        ? 'newborn'
+        : 'none';
+      const closingReceipt = calculateAllInCashReceipt({
+        priceKrw: item.priceKrw,
+        loanAmount: loanSimulation.maxLoanAmount || 0,
+        areaSqMeter: item.areaSqMeter,
+        pyeong: item.pyeong,
+        region: item.region,
+        taxReliefType: defaultTaxRelief,
+        includeBrokerVat: true,
+        registrationMode: 'lawyer',
+        includeMoving: false,
+        interiorLevel: 'none',
+      });
       return {
         ...item,
-        loanSimulation: calculateLoan({ loanType, ...loanParams }),
-        allLoans: calculateAllLoans(loanParams),
+        loanSimulation: {
+          ...loanSimulation,
+          allInCash: closingReceipt.totalAllInCash,
+          allInCashFormatted: formatKrw(closingReceipt.totalAllInCash),
+          mandatoryClosingCosts: closingReceipt.mandatoryClosingCosts,
+          mandatoryClosingCostsFormatted: formatKrw(closingReceipt.mandatoryClosingCosts),
+        },
+        closingCostSummary: closingReceipt,
+        allLoans,
       };
     });
 }

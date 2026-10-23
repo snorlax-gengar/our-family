@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { 
   X, Building2, MapPin, Train, Calendar, TrendingUp, DollarSign, 
   ShieldCheck, Calculator, Sparkles, ExternalLink, CheckCircle2, ArrowRight, Heart,
-  RotateCcw, SlidersHorizontal, Search, AlertTriangle
+  RotateCcw, SlidersHorizontal, Search, AlertTriangle, Receipt, Truck, Hammer, Scale, Wallet
 } from 'lucide-react';
 
 import FloorPlanViewer from './FloorPlanViewer';
+import { calculateAllInCashReceipt } from '../lib/closingCostCalculator';
 
 export default function PropertyDetailModal({ 
   property, 
@@ -23,6 +24,19 @@ export default function PropertyDetailModal({
   const [customPrice, setCustomPrice] = useState(null);
   const [customKbPrice, setCustomKbPrice] = useState(null);
 
+  // 💸 [All-in Cash 영수증] 부대비용 & 입주비용 상세 옵션 상태
+  const [taxReliefType, setTaxReliefType] = useState(() => {
+    if (userCriteria?.isFirstHome) return 'firstHome';
+    if ((userCriteria?.loanType || 'newborn') === 'newborn') return 'newborn';
+    return 'none';
+  });
+  const [includeBrokerVat, setIncludeBrokerVat] = useState(true);
+  const [registrationMode, setRegistrationMode] = useState('lawyer'); // 'lawyer' | 'self'
+  const [includeMoving, setIncludeMoving] = useState(false);
+  const [interiorLevel, setInteriorLevel] = useState('none'); // 'none' | 'basic' | 'partial' | 'full'
+  const [myBudgetKrw, setMyBudgetKrw] = useState(200000000); // 우리 부부 보유 현금 예산 (기본 2.0억)
+  const [showBudgetChecker, setShowBudgetChecker] = useState(false);
+
   useEffect(() => {
     setActiveProperty(property);
     setCustomPrice(null);
@@ -35,6 +49,17 @@ export default function PropertyDetailModal({
     }
   }, [userCriteria?.loanType]);
 
+  // 상위 조건(생애최초/대출유형) 변경 시 취득세 감면 기본값 동기화
+  useEffect(() => {
+    if (userCriteria?.isFirstHome) {
+      setTaxReliefType('firstHome');
+    } else if (selectedLoanType === 'newborn') {
+      setTaxReliefType('newborn');
+    } else {
+      setTaxReliefType('none');
+    }
+  }, [userCriteria?.isFirstHome, selectedLoanType]);
+
   useEffect(() => {
     if (initialTab) {
       setModalTab(initialTab);
@@ -44,7 +69,6 @@ export default function PropertyDetailModal({
   if (!activeProperty) return null;
 
   const prop = activeProperty;
-  const sim = prop.loanSimulation || {};
   const kb = prop.kbPrice || {};
   const cleanPropertyName = (prop.name || '')
     .replace(/\s*\(\d+평형?\).*$/, '')
@@ -149,6 +173,20 @@ export default function PropertyDetailModal({
     const mSavings = Math.max(0, mktMonthlyPay - mPay);
     const totSavings = mSavings * totalMonths;
 
+    // 해당 대출 적용 시 All-in Cash 영수증 계산
+    const receipt = calculateAllInCashReceipt({
+      priceKrw: activePrice,
+      loanAmount: maxL,
+      areaSqMeter: prop.areaSqMeter,
+      pyeong: prop.pyeong,
+      region: prop.region || '서울',
+      taxReliefType: type === 'newborn' ? 'newborn' : (isFirstHome ? 'firstHome' : taxReliefType),
+      includeBrokerVat,
+      registrationMode,
+      includeMoving,
+      interiorLevel,
+    });
+
     return {
       type,
       name,
@@ -157,6 +195,7 @@ export default function PropertyDetailModal({
       reasons,
       maxLoan: maxL,
       requiredCash: reqCash,
+      allInCash: receipt.totalAllInCash,
       rate,
       monthlyPayment: mPay,
       ltvRatio: Math.round(ltv * 100),
@@ -179,21 +218,39 @@ export default function PropertyDetailModal({
   const requiredCash = activeLoan.requiredCash;
   const finalInterestRate = activeLoan.rate;
   const monthlyPayment = activeLoan.monthlyPayment;
-  const marketRate = activeLoan.marketRate;
   const marketMonthlyPayment = activeLoan.marketMonthlyPayment;
   const monthlySavings = activeLoan.monthlySavings;
   const totalSavings = activeLoan.totalSavings;
 
-  // 부대비용 계산: 취득세 (6억 이하 1.1%), 생애최초 시 최대 200만 원 감면
-  const rawAcquisitionTax = Math.round(activePrice * 0.011);
-  const acquisitionDiscount = isFirstHome ? Math.min(2000000, rawAcquisitionTax) : 0;
-  const finalAcquisitionTax = rawAcquisitionTax - acquisitionDiscount;
+  // 💸 현재 선택된 옵션 기준 정밀 '실제 필요 총현금(All-in Cash) 영수증' 계산
+  const allInReceipt = calculateAllInCashReceipt({
+    priceKrw: activePrice,
+    loanAmount: maxLoan,
+    areaSqMeter: prop.areaSqMeter,
+    pyeong: prop.pyeong,
+    region: prop.region || '서울',
+    taxReliefType,
+    includeBrokerVat,
+    registrationMode,
+    includeMoving,
+    interiorLevel,
+  });
 
-  // 부동산 중개보수 (매매 2억~9억 이하 상한요율 0.4%)
-  const maxBrokerFee = Math.round(activePrice * 0.004);
+  const {
+    taxes,
+    brokerage,
+    registration,
+    livingPrep,
+    contractDeposit10,
+    balanceDayPropertyCash,
+    mandatoryClosingCosts,
+    optionalPrepCosts,
+    totalExtraCosts,
+    totalAllInCash,
+    balanceDayTotalCash,
+  } = allInReceipt;
 
-  // 총 필요 현금 = 매수 잔금 + 취득세 + 중개수수료
-  const totalCashNeeded = requiredCash + finalAcquisitionTax + maxBrokerFee;
+  const budgetDiff = myBudgetKrw - totalAllInCash;
 
   const handleResetCustomPrices = () => {
     setCustomPrice(null);
@@ -319,7 +376,7 @@ export default function PropertyDetailModal({
                   : 'border-transparent text-slate-400 hover:text-slate-700'
               }`}
             >
-              종합 정보 보기 (도면 + 시세 + 대출)
+              종합 정보 보기 (도면 + 시세 + 총현금 영수증)
             </button>
             <button
               onClick={() => setModalTab('floorPlan')}
@@ -342,7 +399,7 @@ export default function PropertyDetailModal({
                   : 'border-transparent text-slate-400 hover:text-slate-700'
               }`}
             >
-              💰 KB시세 & 3대 정책대출 견적서
+              💰 정책대출 & 실제 총현금(All-in) 영수증
             </button>
           </div>
 
@@ -365,7 +422,7 @@ export default function PropertyDetailModal({
           {/* Section: 금융/대출 탭 및 종합 탭 공통 */}
           {(modalTab === 'all' || modalTab === 'financial') && (
             <>
-              {/* ⚙️ [강력 추천 기능] 실제 매매가 & KB 시세 직접 수정 / 입력 패널 */}
+              {/* ⚙️ 실제 매매가 & KB 시세 직접 수정 / 입력 패널 */}
               <div className="bg-gradient-to-br from-indigo-900 via-slate-900 to-blue-950 rounded-2xl p-4 sm:p-5 text-white border-2 border-indigo-400/50 shadow-xl space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-3">
                   <div className="flex items-center gap-2">
@@ -404,7 +461,7 @@ export default function PropertyDetailModal({
                 </div>
 
                 <p className="text-xs text-slate-300 break-keep leading-relaxed">
-                  KB부동산에서 확인하신 <strong>실제 최신 시세</strong>나 <strong>부동산과 네고 중인 매매가</strong>를 직접 입력해 보세요. Min(매매가, KB시세) 원칙에 따라 대출 가능액과 총 필요 현금이 즉시 실시간 재계산됩니다.
+                  KB부동산에서 확인하신 <strong>실제 최신 시세</strong>나 <strong>부동산과 네고 중인 매매가</strong>를 직접 입력해 보세요. Min(매매가, KB시세) 원칙에 따라 대출 가능액과 부대비용 포함 총 필요 현금이 즉시 재계산됩니다.
                 </p>
 
                 {/* 2열 입력 폼: 매매가 & KB시세 */}
@@ -761,21 +818,37 @@ export default function PropertyDetailModal({
                             </td>
                           </tr>
 
-                          {/* 7. 최소 필요 현금 */}
+                          {/* 7. 순수 매매 필요 현금 */}
                           <tr>
-                            <td className="py-2.5 px-3 font-bold bg-slate-50 whitespace-nowrap">최소 필요 현금</td>
-                            <td className="py-2.5 px-3 font-extrabold text-rose-600 whitespace-nowrap">
+                            <td className="py-2.5 px-3 font-bold bg-slate-50 whitespace-nowrap">순수 매수 현금 (매매-대출)</td>
+                            <td className="py-2.5 px-3 font-bold text-slate-700 whitespace-nowrap">
                               {newbornLoan.isEligible ? formatMoney(newbornLoan.requiredCash) : formatMoney(activePrice)}
                             </td>
-                            <td className="py-2.5 px-3 font-extrabold text-rose-600 whitespace-nowrap">
+                            <td className="py-2.5 px-3 font-bold text-slate-700 whitespace-nowrap">
                               {bogeumjariLoan.isEligible ? formatMoney(bogeumjariLoan.requiredCash) : formatMoney(activePrice)}
                             </td>
-                            <td className="py-2.5 px-3 font-extrabold text-rose-600 whitespace-nowrap">
+                            <td className="py-2.5 px-3 font-bold text-slate-700 whitespace-nowrap">
                               {didimdolLoan.isEligible ? formatMoney(didimdolLoan.requiredCash) : formatMoney(activePrice)}
                             </td>
                           </tr>
 
-                          {/* 8. DSR 규제 */}
+                          {/* 8. 부대비용 포함 실제 필요 총현금 (All-in) */}
+                          <tr className="bg-rose-50/40">
+                            <td className="py-2.5 px-3 font-black text-rose-900 bg-rose-100/60 whitespace-nowrap">
+                              실제 필요 총현금 (세금·복비 포함)
+                            </td>
+                            <td className="py-2.5 px-3 font-black text-rose-600 whitespace-nowrap text-sm">
+                              {formatMoney(newbornLoan.allInCash)}
+                            </td>
+                            <td className="py-2.5 px-3 font-black text-rose-600 whitespace-nowrap text-sm">
+                              {formatMoney(bogeumjariLoan.allInCash)}
+                            </td>
+                            <td className="py-2.5 px-3 font-black text-rose-600 whitespace-nowrap text-sm">
+                              {formatMoney(didimdolLoan.allInCash)}
+                            </td>
+                          </tr>
+
+                          {/* 9. DSR 규제 */}
                           <tr>
                             <td className="py-2.5 px-3 font-bold bg-slate-50 whitespace-nowrap">DSR 규제 적용</td>
                             <td className="py-2.5 px-3 text-emerald-600 font-bold whitespace-nowrap">미적용 (DTI 60%)</td>
@@ -783,7 +856,7 @@ export default function PropertyDetailModal({
                             <td className="py-2.5 px-3 text-emerald-600 font-bold whitespace-nowrap">미적용 (DTI 60%)</td>
                           </tr>
 
-                          {/* 9. 바로가기 버튼 */}
+                          {/* 10. 바로가기 버튼 */}
                           <tr>
                             <td className="py-2.5 px-3 font-bold bg-slate-50 whitespace-nowrap">견적서 보기</td>
                             <td className="py-2.5 px-3">
@@ -864,12 +937,12 @@ export default function PropertyDetailModal({
                       </div>
 
                       <div className="bg-white p-4 rounded-xl border border-blue-200 shadow-xs">
-                        <span className="text-xs font-medium text-slate-500 whitespace-nowrap">필요 자기자본 (순수 매수금)</span>
+                        <span className="text-xs font-medium text-slate-500 whitespace-nowrap">실제 필요 총현금 (All-in)</span>
                         <div className="text-2xl font-black text-rose-600 mt-1 whitespace-nowrap">
-                          {formatMoney(requiredCash)}
+                          {formatMoney(totalAllInCash)}
                         </div>
-                        <div className="text-xs text-slate-500 mt-1 whitespace-nowrap">
-                          실매매가 {formatMoney(activePrice)} - 대출금
+                        <div className="text-[11px] text-slate-500 mt-1 whitespace-nowrap">
+                          순수매수금 {formatMoney(requiredCash)} + 부대비용 {formatMoney(totalExtraCosts)}
                         </div>
                       </div>
 
@@ -915,43 +988,441 @@ export default function PropertyDetailModal({
                 )}
               </div>
 
-              {/* Section 3: 최종 매수 필요 현금 & 부대비용 견적서 */}
-              <div className="bg-slate-50 rounded-xl p-5 border border-slate-200">
-                <h3 className="font-bold text-slate-900 text-base mb-3 flex items-center gap-2">
-                  <Calculator className="w-5 h-5 text-indigo-600" />
-                  <span>실제 취득 시 최종 필요 현금 총액 (견적서)</span>
-                </h3>
+              {/* Section 3: 💸 부대비용 포함 '실제 필요 총현금(All-in Cash) 영수증' & D-Day 자금 스케줄러 */}
+              <div className="bg-white rounded-2xl border-2 border-indigo-200 shadow-lg overflow-hidden">
+                {/* 영수증 헤더 */}
+                <div className="bg-gradient-to-r from-slate-900 via-indigo-950 to-slate-900 px-4 sm:px-6 py-4 text-white flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                  <div className="flex items-center gap-2.5">
+                    <div className="w-9 h-9 rounded-xl bg-amber-400 text-slate-950 flex items-center justify-center shrink-0 shadow-sm">
+                      <Receipt className="w-5 h-5 stroke-[2.5]" />
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <h3 className="font-black text-base sm:text-lg text-white tracking-tight">
+                          부대비용 포함 '실제 필요 총현금(All-in Cash)' 영수증
+                        </h3>
+                        <span className="bg-amber-400/20 text-amber-300 border border-amber-400/40 text-[10px] font-extrabold px-2 py-0.5 rounded-full whitespace-nowrap">
+                          2026 지방세법·중개보수율 반영
+                        </span>
+                      </div>
+                      <p className="text-xs text-slate-300 mt-0.5">
+                        순수 매매대금 외에 취득세·복비·채권할인·법무사·이사/인테리어까지 합산한 실전 자금표입니다.
+                      </p>
+                    </div>
+                  </div>
 
-                <div className="space-y-2.5 text-sm">
-                  <div className="flex justify-between py-1 border-b border-slate-200">
-                    <span className="text-slate-600 whitespace-nowrap">① 아파트 매매 잔금 (매매가 - 대출금)</span>
-                    <span className="font-bold text-slate-900 whitespace-nowrap">{formatMoney(requiredCash)}</span>
-                  </div>
-                  <div className="flex justify-between py-1 border-b border-slate-200">
-                    <div className="flex items-center gap-1.5 flex-wrap">
-                      <span className="text-slate-600 whitespace-nowrap">② 취득세 및 지방교육세 (1.1%)</span>
-                      {isFirstHome && (
-                        <span className="text-[11px] bg-emerald-100 text-emerald-700 px-1.5 py-0.2 rounded font-semibold whitespace-nowrap">
-                          생애최초 200만 원 감면 적용
+                  <button
+                    type="button"
+                    onClick={() => setShowBudgetChecker(!showBudgetChecker)}
+                    className={`px-3 py-1.5 rounded-xl text-xs font-extrabold transition-all flex items-center gap-1.5 cursor-pointer shrink-0 self-start sm:self-auto border ${
+                      showBudgetChecker
+                        ? 'bg-amber-400 text-slate-950 border-amber-300 shadow-xs'
+                        : 'bg-white/10 hover:bg-white/20 text-white border-white/20'
+                    }`}
+                  >
+                    <Wallet className="w-3.5 h-3.5" />
+                    <span>{showBudgetChecker ? '내 예산 비교 닫기' : '내 보유현금 예산 비교'}</span>
+                  </button>
+                </div>
+
+                <div className="p-4 sm:p-6 space-y-5">
+                  {/* [선택형] 우리 부부 보유 현금(가용 예산) 비교 바 */}
+                  {showBudgetChecker && (
+                    <div className="bg-slate-900 text-white p-4 rounded-xl border border-slate-700 space-y-3">
+                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                        <div className="flex items-center gap-2">
+                          <Wallet className="w-4 h-4 text-amber-400 shrink-0" />
+                          <span className="text-xs sm:text-sm font-bold">우리 부부 가용 현금(예산) 설정:</span>
+                          <span className="text-base font-black text-amber-300">{formatMoney(myBudgetKrw)}</span>
+                        </div>
+                        <div className="flex items-center gap-1.5 flex-wrap">
+                          {[150000000, 200000000, 250000000, 300000000].map((preset) => (
+                            <button
+                              key={preset}
+                              type="button"
+                              onClick={() => setMyBudgetKrw(preset)}
+                              className={`px-2 py-0.5 rounded text-[11px] font-bold cursor-pointer transition-colors ${
+                                myBudgetKrw === preset
+                                  ? 'bg-amber-400 text-slate-950'
+                                  : 'bg-slate-800 hover:bg-slate-700 text-slate-300'
+                              }`}
+                            >
+                              {preset / 100000000}억
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+                      <input
+                        type="range"
+                        min="50000000"
+                        max="500000000"
+                        step="5000000"
+                        value={myBudgetKrw}
+                        onChange={(e) => setMyBudgetKrw(Number(e.target.value))}
+                        className="custom-slider w-full cursor-pointer"
+                      />
+                      <div className={`p-3 rounded-lg border flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs ${
+                        budgetDiff >= 0
+                          ? 'bg-emerald-950/70 border-emerald-500/40 text-emerald-200'
+                          : 'bg-rose-950/70 border-rose-500/40 text-rose-200'
+                      }`}>
+                        <span className="font-bold">
+                          {budgetDiff >= 0
+                            ? `✅ 보유 현금(${formatMoney(myBudgetKrw)})으로 세금·부대비용까지 모두 내고도 여유가 있습니다!`
+                            : `⚠️ 보유 현금(${formatMoney(myBudgetKrw)}) 대비 부대비용 포함 시 자금이 부족합니다.`}
                         </span>
-                      )}
-                    </div>
-                    <div className="text-right">
-                      <span className="font-bold text-slate-900 whitespace-nowrap">{finalAcquisitionTax.toLocaleString()}원</span>
-                      {isFirstHome && (
-                        <span className="text-xs text-slate-400 block line-through whitespace-nowrap">
-                          정상세액: {rawAcquisitionTax.toLocaleString()}원
+                        <span className={`font-black text-sm whitespace-nowrap ${
+                          budgetDiff >= 0 ? 'text-emerald-400' : 'text-rose-400'
+                        }`}>
+                          {budgetDiff >= 0 ? `+${formatMoney(budgetDiff)} 여유` : `-${formatMoney(Math.abs(budgetDiff))} 부족`}
                         </span>
-                      )}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* 🛠️ 4대 절세 & 부대비용 옵션 컨트롤 패널 */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 bg-slate-50 p-3.5 sm:p-4 rounded-xl border border-slate-200/90 text-xs">
+                    {/* 옵션 1: 취득세 감면 특례 선택 */}
+                    <div className="bg-white p-3 rounded-xl border border-slate-200/80 space-y-2">
+                      <div className="flex items-center justify-between">
+                        <span className="font-bold text-slate-700 flex items-center gap-1">
+                          <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
+                          <span>① 취득세 감면 특례 적용</span>
+                        </span>
+                        {taxes.totalTaxSaved > 0 && (
+                          <span className="text-[10px] font-extrabold text-emerald-700 bg-emerald-50 border border-emerald-200 px-1.5 py-0.5 rounded">
+                            -{taxes.totalTaxSaved.toLocaleString()}원 절세
+                          </span>
+                        )}
+                      </div>
+                      <div className="grid grid-cols-3 gap-1">
+                        {[
+                          { id: 'newborn', label: '🐣 출산가구 (-500만)' },
+                          { id: 'firstHome', label: '🌱 생애최초 (-200만)' },
+                          { id: 'none', label: '일반 무주택 (0원)' },
+                        ].map((opt) => (
+                          <button
+                            key={opt.id}
+                            type="button"
+                            onClick={() => setTaxReliefType(opt.id)}
+                            className={`py-1.5 px-1.5 rounded-lg text-[11px] font-bold transition-all cursor-pointer truncate ${
+                              taxReliefType === opt.id
+                                ? 'bg-emerald-600 text-white shadow-2xs'
+                                : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                            }`}
+                          >
+                            {opt.label}
+                          </button>
+                        ))}
+                      </div>
+                      <p className="text-[10px] text-slate-500 leading-tight">
+                        {taxReliefType === 'newborn'
+                          ? '출산·양육 목적 주택 취득 시 취득세 최대 500만 원(지방교육세 포함 최대 550만 원) 감면'
+                          : taxReliefType === 'firstHome'
+                          ? '생애최초 주택 구입 시 소득 무관 취득세 최대 200만 원(지방교육세 포함 최대 220만 원) 감면'
+                          : '감면 특례 미적용 시 6억 이하 1.1%, 6~9억 구간별(1.1%~3.3%) 세율 적용'}
+                      </p>
+                    </div>
+
+                    {/* 옵션 2: 등기 방식 (법무사 vs 셀프등기) & 중개보수 부가세 */}
+                    <div className="bg-white p-3 rounded-xl border border-slate-200/80 space-y-2">
+                      <div className="flex items-center justify-between">
+                        <span className="font-bold text-slate-700 flex items-center gap-1">
+                          <Scale className="w-3.5 h-3.5 text-blue-600" />
+                          <span>② 등기 방식 & 복비 부가세</span>
+                        </span>
+                        {registrationMode === 'self' && (
+                          <span className="text-[10px] font-extrabold text-blue-700 bg-blue-50 border border-blue-200 px-1.5 py-0.5 rounded">
+                            법무사 보수 {registration.estimatedLawyerFee.toLocaleString()}원 절약
+                          </span>
+                        )}
+                      </div>
+                      <div className="grid grid-cols-2 gap-1.5">
+                        <button
+                          type="button"
+                          onClick={() => setRegistrationMode(registrationMode === 'lawyer' ? 'self' : 'lawyer')}
+                          className={`py-1.5 px-2 rounded-lg text-[11px] font-bold transition-all cursor-pointer ${
+                            registrationMode === 'self'
+                              ? 'bg-blue-600 text-white shadow-2xs'
+                              : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                          }`}
+                        >
+                          {registrationMode === 'lawyer' ? '👨‍⚖️ 법무사 위임 (표준)' : '🙋‍♂️ 셀프등기 (보수 0원)'}
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setIncludeBrokerVat(!includeBrokerVat)}
+                          className={`py-1.5 px-2 rounded-lg text-[11px] font-bold transition-all cursor-pointer ${
+                            !includeBrokerVat
+                              ? 'bg-indigo-600 text-white shadow-2xs'
+                              : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                          }`}
+                        >
+                          {includeBrokerVat ? '🏢 일반과세 복비 (+10%)' : '🤝 부가세 면제/포함협의'}
+                        </button>
+                      </div>
+                      <p className="text-[10px] text-slate-500 leading-tight">
+                        채권할인({registration.bondDiscountCost.toLocaleString()}원)과 인지·증지세(17만 원)는 셀프등기 시에도 필수 납부 항목입니다.
+                      </p>
+                    </div>
+
+                    {/* 옵션 3: 포장이사 + 사다리차 + 입주청소 */}
+                    <div className="bg-white p-3 rounded-xl border border-slate-200/80 space-y-2">
+                      <div className="flex items-center justify-between">
+                        <span className="font-bold text-slate-700 flex items-center gap-1">
+                          <Truck className="w-3.5 h-3.5 text-amber-600" />
+                          <span>③ 포장이사 · 사다리차 · 입주청소</span>
+                        </span>
+                        <span className="font-extrabold text-slate-800">
+                          {includeMoving ? `+${livingPrep.movingCost.toLocaleString()}원` : '미포함 (0원)'}
+                        </span>
+                      </div>
+                      <div className="grid grid-cols-2 gap-1.5">
+                        <button
+                          type="button"
+                          onClick={() => setIncludeMoving(false)}
+                          className={`py-1.5 rounded-lg text-[11px] font-bold cursor-pointer transition-all ${
+                            !includeMoving
+                              ? 'bg-slate-800 text-white'
+                              : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                          }`}
+                        >
+                          미포함 (별도 예산)
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => setIncludeMoving(true)}
+                          className={`py-1.5 rounded-lg text-[11px] font-bold cursor-pointer transition-all ${
+                            includeMoving
+                              ? 'bg-amber-500 text-slate-950 shadow-2xs'
+                              : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                          }`}
+                        >
+                          🚚 이사·입주청소 포함 ({prop.pyeong}평)
+                        </button>
+                      </div>
+                    </div>
+
+                    {/* 옵션 4: 인테리어 여유자금 (도배장판 ~ 올수리) */}
+                    <div className="bg-white p-3 rounded-xl border border-slate-200/80 space-y-2">
+                      <div className="flex items-center justify-between">
+                        <span className="font-bold text-slate-700 flex items-center gap-1">
+                          <Hammer className="w-3.5 h-3.5 text-indigo-600" />
+                          <span>④ 인테리어 수리 예산 ({prop.pyeong}평 기준)</span>
+                        </span>
+                        <span className="font-extrabold text-indigo-700">
+                          {livingPrep.interiorCost > 0 ? `+${formatMoney(livingPrep.interiorCost)}` : '미포함 (0원)'}
+                        </span>
+                      </div>
+                      <div className="grid grid-cols-4 gap-1">
+                        {[
+                          { id: 'none', label: '즉시입주' },
+                          { id: 'basic', label: '도배·장판' },
+                          { id: 'partial', label: '부분수리' },
+                          { id: 'full', label: '전체올수리' },
+                        ].map((item) => (
+                          <button
+                            key={item.id}
+                            type="button"
+                            onClick={() => setInteriorLevel(item.id)}
+                            className={`py-1.5 px-1 rounded-lg text-[11px] font-bold cursor-pointer transition-all truncate ${
+                              interiorLevel === item.id
+                                ? 'bg-indigo-600 text-white shadow-2xs'
+                                : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                            }`}
+                          >
+                            {item.label}
+                          </button>
+                        ))}
+                      </div>
                     </div>
                   </div>
-                  <div className="flex justify-between py-1 border-b border-slate-200">
-                    <span className="text-slate-600 whitespace-nowrap">③ 공인중개사 중개보수 (법정상한 0.4% 기준)</span>
-                    <span className="font-bold text-slate-900 whitespace-nowrap">약 {maxBrokerFee.toLocaleString()}원</span>
+
+                  {/* 🧾 영수증 상세 항목 Breakdown */}
+                  <div className="bg-slate-50 rounded-xl p-4 sm:p-5 border border-slate-200/90 space-y-3 text-xs sm:text-sm">
+                    {/* 1. 순수 매매 자기자본 */}
+                    <div className="flex items-center justify-between pb-2.5 border-b border-slate-200">
+                      <div>
+                        <span className="font-extrabold text-slate-900 block">
+                          [A] 순수 매매 필요 자기자본 (매매가 - 대출금)
+                        </span>
+                        <span className="text-[11px] text-slate-500">
+                          실매매가 {formatMoney(activePrice)} - {activeLoan.shortName} {formatMoney(maxLoan)}
+                        </span>
+                      </div>
+                      <span className="text-base sm:text-lg font-black text-slate-900 whitespace-nowrap">
+                        {formatMoney(requiredCash)}
+                      </span>
+                    </div>
+
+                    {/* 2. 필수 세금 및 등기·중개 부대비용 */}
+                    <div className="space-y-2 pb-2.5 border-b border-slate-200">
+                      <div className="flex items-center justify-between">
+                        <span className="font-extrabold text-slate-800">
+                          [B] 필수 취득 부대비용 합계 (세금 + 복비 + 등기)
+                        </span>
+                        <span className="font-extrabold text-indigo-700 whitespace-nowrap">
+                          +{ mandatoryClosingCosts.toLocaleString() }원 ({formatMoney(mandatoryClosingCosts)})
+                        </span>
+                      </div>
+
+                      <div className="pl-3 border-l-2 border-indigo-200 space-y-2 text-xs">
+                        {/* 취득세 + 지방교육세 + 농특세 */}
+                        <div className="flex items-start justify-between gap-2">
+                          <div>
+                            <div className="flex items-center gap-1.5 flex-wrap">
+                              <span className="font-semibold text-slate-700">
+                                ① 취득세({taxes.baseTaxRatePercent}%) + 지방교육세 + 농특세
+                              </span>
+                              <span className="text-[10px] bg-emerald-100 text-emerald-800 px-1.5 py-0.2 rounded font-bold">
+                                {taxes.reliefLabel}
+                              </span>
+                            </div>
+                            <span className="text-[11px] text-slate-400 block">
+                              실효세율 {taxes.effectiveRatePercent}% · {taxes.isOver85 ? '전용 85㎡ 초과 농특세 0.2% 포함' : '전용 85㎡ 이하 농특세 비과세'}
+                            </span>
+                          </div>
+                          <div className="text-right shrink-0">
+                            <span className="font-bold text-slate-900">{taxes.finalTotalTax.toLocaleString()}원</span>
+                            {taxes.totalTaxSaved > 0 && (
+                              <span className="text-[10px] text-slate-400 block line-through">
+                                감면전 {taxes.rawTotalTax.toLocaleString()}원
+                              </span>
+                            )}
+                          </div>
+                        </div>
+
+                        {/* 공인중개사 중개보수 */}
+                        <div className="flex items-start justify-between gap-2">
+                          <div>
+                            <span className="font-semibold text-slate-700">
+                              ② 공인중개사 중개보수 (법정 상한 {brokerage.ratePercent}%)
+                            </span>
+                            <span className="text-[11px] text-slate-400 block">
+                              중개보수 {brokerage.baseFee.toLocaleString()}원 {brokerage.includeVat ? `+ 부가세(10%) ${brokerage.vat.toLocaleString()}원` : '(부가세 면제/포함)'}
+                            </span>
+                          </div>
+                          <span className="font-bold text-slate-900 shrink-0">
+                            {brokerage.totalBrokerFee.toLocaleString()}원
+                          </span>
+                        </div>
+
+                        {/* 소유권이전등기 부대비용 */}
+                        <div className="flex items-start justify-between gap-2">
+                          <div>
+                            <span className="font-semibold text-slate-700">
+                              ③ 소유권이전등기 필수 비용 ({registrationMode === 'self' ? '셀프등기 기준' : '법무사 위임 기준'})
+                            </span>
+                            <span className="text-[11px] text-slate-400 block">
+                              국민주택채권 할인 {registration.bondDiscountCost.toLocaleString()}원 + 인지·증지세 {(registration.stampTax + registration.courtFee).toLocaleString()}원 + 법무사보수 {registration.lawyerFee.toLocaleString()}원
+                            </span>
+                          </div>
+                          <span className="font-bold text-slate-900 shrink-0">
+                            {registration.totalRegistrationCost.toLocaleString()}원
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* 3. 선택 입주 준비비용 (이사/청소/인테리어) */}
+                    {(includeMoving || interiorLevel !== 'none') && (
+                      <div className="space-y-1.5 pb-2.5 border-b border-slate-200">
+                        <div className="flex items-center justify-between">
+                          <span className="font-extrabold text-slate-800">
+                            [C] 선택 입주 준비비용 (이사·청소·인테리어)
+                          </span>
+                          <span className="font-extrabold text-amber-700 whitespace-nowrap">
+                            +{optionalPrepCosts.toLocaleString()}원 ({formatMoney(optionalPrepCosts)})
+                          </span>
+                        </div>
+                        <div className="pl-3 border-l-2 border-amber-300 space-y-1 text-xs text-slate-600">
+                          {includeMoving && (
+                            <div className="flex justify-between">
+                              <span>· 포장이사 + 사다리차 + 입주청소 ({prop.pyeong}평 기준)</span>
+                              <span className="font-bold text-slate-800">{livingPrep.movingCost.toLocaleString()}원</span>
+                            </div>
+                          )}
+                          {interiorLevel !== 'none' && (
+                            <div className="flex justify-between">
+                              <span>· {livingPrep.interiorLabel}</span>
+                              <span className="font-bold text-slate-800">{livingPrep.interiorCost.toLocaleString()}원</span>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    )}
+
+                    {/* 최종 총 필요 현금 합계 박스 */}
+                    <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-4 rounded-xl shadow-md flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                      <div>
+                        <span className="text-xs text-blue-100 font-bold block">
+                          최종 통장에 준비해야 할 총 필요 현금 ([A] + [B]{optionalPrepCosts > 0 ? ' + [C]' : ''})
+                        </span>
+                        <span className="text-[11px] text-blue-200">
+                          순수 매수금 외 총 부대비용 {formatMoney(totalExtraCosts)} (매매가의 {allInReceipt.extraCostRatioPercent}%) 포함
+                        </span>
+                      </div>
+                      <div className="text-right">
+                        <span className="text-2xl sm:text-3xl font-black text-amber-300 tracking-tight block whitespace-nowrap">
+                          {formatMoney(totalAllInCash)}
+                        </span>
+                        <span className="text-[11px] text-blue-100 font-mono">
+                          정확히 {totalAllInCash.toLocaleString()}원
+                        </span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex justify-between py-2 pt-3 font-bold text-base bg-blue-50/60 px-3 rounded-lg text-blue-900">
-                    <span className="whitespace-nowrap">총 준비 필요 자금 (① + ② + ③)</span>
-                    <span className="text-lg font-black text-blue-700 whitespace-nowrap">{formatMoney(totalCashNeeded)}</span>
+
+                  {/* 📅 계약일(10%) ➔ 잔금일(D-Day) 시기별 필요 현금 스케줄러 */}
+                  <div className="bg-indigo-50/60 rounded-xl p-4 border border-indigo-200/80 space-y-3">
+                    <div className="flex items-center justify-between flex-wrap gap-1">
+                      <h4 className="text-xs sm:text-sm font-extrabold text-indigo-950 flex items-center gap-1.5">
+                        <Calendar className="w-4 h-4 text-indigo-600" />
+                        <span>언제 얼마가 필요한가요? (계약일 vs 잔금일 현금 흐름표)</span>
+                      </h4>
+                      <span className="text-[11px] text-indigo-700 font-bold">
+                        ※ 정책대출금은 잔금일(D-Day) 당일에만 실행됩니다
+                      </span>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                      {/* Step 1: 본계약일 */}
+                      <div className="bg-white p-3.5 rounded-xl border border-indigo-200/80 shadow-2xs flex flex-col justify-between">
+                        <div>
+                          <div className="flex items-center justify-between mb-1">
+                            <span className="bg-indigo-100 text-indigo-800 font-extrabold px-2 py-0.5 rounded text-[11px]">
+                              STEP 1 · 본계약일 (통상 매매가의 10%)
+                            </span>
+                            <span className="text-[11px] text-rose-600 font-bold">대출불가 · 순수현금</span>
+                          </div>
+                          <div className="text-lg font-black text-slate-900 mt-1">
+                            {formatMoney(contractDeposit10)}
+                          </div>
+                        </div>
+                        <p className="text-[11px] text-slate-500 mt-2 pt-2 border-t border-slate-100 leading-relaxed">
+                          가계약금(통상 300~500만 원)을 포함하여 본계약 당일 매도인 계좌로 이체하는 계약금입니다.
+                        </p>
+                      </div>
+
+                      {/* Step 2: 잔금일 D-Day */}
+                      <div className="bg-white p-3.5 rounded-xl border border-blue-300 shadow-2xs flex flex-col justify-between">
+                        <div>
+                          <div className="flex items-center justify-between mb-1">
+                            <span className="bg-blue-600 text-white font-extrabold px-2 py-0.5 rounded text-[11px]">
+                              STEP 2 · 잔금일 D-Day (입주 & 등기일)
+                            </span>
+                            <span className="text-[11px] text-blue-700 font-bold">나머지 내 현금 + 부대비용</span>
+                          </div>
+                          <div className="text-lg font-black text-blue-700 mt-1">
+                            {formatMoney(balanceDayTotalCash)}
+                          </div>
+                        </div>
+                        <p className="text-[11px] text-slate-600 mt-2 pt-2 border-t border-slate-100 leading-relaxed">
+                          남은 매매잔금({formatMoney(balanceDayPropertyCash)}) + 세금·복비·등기({formatMoney(mandatoryClosingCosts)})
+                          {optionalPrepCosts > 0 ? ` + 이사·수리(${formatMoney(optionalPrepCosts)})` : ''}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

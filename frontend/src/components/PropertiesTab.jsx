@@ -338,8 +338,8 @@ export default function PropertiesTab({
   };
 
   // 상세 견적 모달 열기 핸들러
-  const handleOpenDetail = (prop) => {
-    setModalInitialTab('all');
+  const handleOpenDetail = (prop, tab = 'all') => {
+    setModalInitialTab(tab);
     setSelectedProperty(prop);
   };
 
@@ -1525,13 +1525,16 @@ export default function PropertiesTab({
                       </div>
                     </div>
 
-                    {/* 하단: 최소 필요 현금 vs 월 원리금 (또는 대안 대출 안내) */}
+                    {/* 하단: 실제 필요 총현금(All-in) vs 월 원리금 (또는 대안 대출 안내) */}
                     {sim.isEligible ? (
                       <div className="pt-2 border-t border-slate-200/70 grid grid-cols-2 gap-2 text-xs">
                         <div>
-                          <span className="text-[10px] text-slate-500 block whitespace-nowrap">최소 필요 현금</span>
+                          <span className="text-[10px] text-slate-500 block whitespace-nowrap">실제 필요 총현금 (세금·복비 포함)</span>
                           <span className="font-extrabold text-rose-600 text-sm whitespace-nowrap">
-                            {sim.requiredCashFormatted}
+                            {sim.allInCashFormatted || sim.requiredCashFormatted}
+                          </span>
+                          <span className="text-[10px] text-slate-400 block whitespace-nowrap truncate" title={`순수 매수금 ${sim.requiredCashFormatted} + 세금·복비·등기 ${sim.mandatoryClosingCostsFormatted || ''}`}>
+                            매수금 {sim.requiredCashFormatted} + 부대비용
                           </span>
                         </div>
                         <div className="text-right">
@@ -1577,11 +1580,11 @@ export default function PropertiesTab({
                       type="button"
                       onClick={(e) => {
                         e.stopPropagation();
-                        handleOpenDetail(property);
+                        handleOpenDetail(property, 'financial');
                       }}
                       className="px-2 py-0.5 rounded bg-indigo-50 hover:bg-indigo-100 text-indigo-700 border border-indigo-200 font-bold text-[10px] sm:text-[11px] flex items-center gap-0.5 transition-colors whitespace-nowrap cursor-pointer shadow-2xs"
                     >
-                      <span>⚖️ 3종 대출 비교</span>
+                      <span>🧾 총현금 영수증</span>
                     </button>
                     {(property.naverMobileUrl || property.naverLandUrl) && (
                       <a
