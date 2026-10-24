@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-10-24T04:31:31.142Z",
+  "lastUpdated": "2026-10-24T10:53:20.777Z",
   "scrapedPolicies": [
     {
-      "id": "gov-1792720977000-s3bxd",
+      "id": "gov-1792720977000-pnlvh",
       "ministry": "금융위원회",
       "title": "이억원 금융위원장 \"가계대출 총량 규제 필요…은행 자율관리 방식은 보완 검토\" - 폴리뉴스 Polinews",
       "date": "2026. 10. 23.",
@@ -13,7 +13,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792719776000-ehdjz",
+      "id": "gov-1792719776000-vbxa2",
       "ministry": "정책당국",
       "title": "'사내대출 1조원 시대' DSR 규제 가능한가?... '법적 근거' 공백 - 법률방송뉴스",
       "date": "2026. 10. 23.",
@@ -24,7 +24,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792716448000-38xpi",
+      "id": "gov-1792716448000-glhe4",
       "ministry": "정책당국",
       "title": "'15억원 이상 주담대 전면금지' 루머에...이억원 \"절대 없다\" 일축 [2026년 국감] - 조세일보",
       "date": "2026. 10. 23.",
@@ -35,7 +35,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792695600000-mzrcj",
+      "id": "gov-1792695600000-e8qjf",
       "ministry": "정책당국",
       "title": "이억원 \"15억 이상 주담대 전면금지? 절대 없다\" - 머니투데이 - 머니투데이",
       "date": "2026. 10. 22.",
@@ -46,7 +46,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792659457000-nc76p",
+      "id": "gov-1792659457000-xje34",
       "ministry": "정책당국",
       "title": "[2026 국정감사] 이찬진 금감원장 한국처럼 DSR 관대한 나라 없어 - 아주경제",
       "date": "2026. 10. 22.",
@@ -57,7 +57,18 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792657690000-fbibi",
+      "id": "gov-1792658103000-zee04",
+      "ministry": "정책당국",
+      "title": "이억원 \"15억 주담대 금지? 허위사실\"...이찬진 \"DSR 관대한 나라\" - 머니투데이 - 머니투데이",
+      "date": "2026. 10. 22.",
+      "pubTimestamp": 1792658103000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "이억원 \"15억 주담대 금지? 허위사실\"...이찬진 \"DSR 관대한 나라\" - 머니투데이  머니투데이...",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB1X1UtX1BWcG9tMnYya0QtVzYxVURlcTZ5YUpQaHJnczlsSTBQeUZqck5OZlh6ZEZCdUlJMndfNzhCWDZwS0RjeTBlbmltbkNxc1BnUUs5MjBXeWozSnJlYTJmaFY4WVB2NXpr0gFwQVVfeXFMT25KVUk3TVhwbFR1OWFXd2RyVXhzcTNleS0zLUVMUEl5T0tIREE2NkJ5aDRvbnNXOXptOU91UE5jX2pVdjZ6UVJZYTBxb1pyS1pSVXdHOTdKR0xZeXFBUmFXOVBLNmRfek1wNmNpcXFUSA?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1792657690000-t9zsa",
       "ministry": "정책당국",
       "title": "이억원 \"가계부채 리스크에 총량 규제 필요…방법 보완 검토\" - 연합뉴스",
       "date": "2026. 10. 22.",
@@ -68,7 +79,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792652666000-mg5k5",
+      "id": "gov-1792652666000-g2hyd",
       "ministry": "정책당국",
       "title": "1조원 육박한 사내대출…금융당국, DSR 적용 검토 - 시사저널",
       "date": "2026. 10. 22.",
@@ -79,18 +90,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1791423604000-jxazh",
-      "ministry": "금융위원회",
-      "title": "[금융위 국감] 가계대출 총량 3%로 넓힌다…주택공급 금융 47.8조원+α - ebn.co.kr",
-      "date": "2026. 10. 8.",
-      "pubTimestamp": 1791423604000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "[금융위 국감] 가계대출 총량 3%로 넓힌다…주택공급 금융 47.8조원+α  ebn.co.kr...",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5iT2lZX1REVXYyVzkwMVRIaTA4Q2lSOVFpUDJnUGJSMEgzWTQ5NjZheWppRm9mVjV2QmtmMGtWRzBoU0o4Z0JCcG9RM3VGS2NDT3R1YzhZYTY2cDc4bjZOTzk3a05IRHpR?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1791356400000-ci42d",
+      "id": "gov-1791356400000-v1exs",
       "ministry": "국토교통부",
       "title": "김은혜 “문재인 정부 국토부, 부동산 정책 비판한 민간인 불법 사찰” - 경기신문",
       "date": "2026. 10. 7.",
@@ -101,7 +101,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1790406000000-e87u1",
+      "id": "gov-1790406000000-rmqxh",
       "ministry": "국토교통부",
       "title": "[보도자료] 국토부, 외국인 부동산 거래 ‘숫자’보다 ‘자금’을 본다 - 국토교통신문",
       "date": "2026. 9. 26.",
@@ -112,29 +112,18 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1786690800000-1cwrq",
+      "id": "gov-1786690800000-i1l9e",
       "ministry": "정책당국",
-      "title": "'닥치고'·'미친' 공급? 8.13 부동산종합대책 전문가도 '극과 극' 평가 - YTN",
+      "title": "수도권 13만 호 신속 공급! 달라지는 8.13 부동산 대책 - 대한민국 정책브리핑",
       "date": "2026. 8. 14.",
       "pubTimestamp": 1786690800000,
       "category": "최신 부동산 정책 발표",
-      "summary": "'닥치고'·'미친' 공급? 8.13 부동산종합대책 전문가도 '극과 극' 평가  YTN...",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5DZ3NpUWc4d0ZwcFF2MVotdjRPRVlDY21tb0c1RTRmTlpKeElIS2FOcVUwaVY4N3dTbGZXSnNFZV9VNUh0Znd3NTRUcFpHMFRJazAxNlcyVm9KQUFIUlE?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1786690800000-4zppr",
-      "ministry": "정책당국",
-      "title": "수도권 13만 호 신속 공급! 달라지는 8.13 부동산 대책 - 카드/한컷 | 멀티미디어 - 대한민국 정책브리핑",
-      "date": "2026. 8. 14.",
-      "pubTimestamp": 1786690800000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "수도권 13만 호 신속 공급! 달라지는 8.13 부동산 대책 - 카드/한컷 | 멀티미디어  대한민국 정책브리핑...",
+      "summary": "수도권 13만 호 신속 공급! 달라지는 8.13 부동산 대책  대한민국 정책브리핑...",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5WaHhvMHBsVy1jMS10NHNnMnpxYXhsU1ZHbE1RNXMtcHMwQ3ktZU9Na21zV1MzS2Y3dDlLSFRHQWRBT3BxLXdPbUM4NlN2WENockRMXzFHS0w5eE9tRTNsdERhemJPRlQ0TTd0ZGJB?oc=5",
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1784012400000-mv2s0",
+      "id": "gov-1784012400000-7k35m",
       "ministry": "정책당국",
       "title": "부동산정책 수립에 '국민 목소리' 담는다…공개 토론회 개최 - 정책뉴스 | 뉴스 - 대한민국 정책브리핑",
       "date": "2026. 7. 14.",
@@ -145,7 +134,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1783666800000-ahi9i",
+      "id": "gov-1783666800000-53s3l",
       "ministry": "국토교통부",
       "title": "재경·금융·국토부, 세제·금융·공급 분야 부동산 국민 의견 듣는다 - 브릿지경제",
       "date": "2026. 7. 10.",
@@ -156,7 +145,18 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1781766000000-5l9yi",
+      "id": "gov-1783580400000-s4of5",
+      "ministry": "정책당국",
+      "title": "[보도자료] 한성숙 국무총리 주택공급현장 점검 - 이즈보험",
+      "date": "2026. 7. 9.",
+      "pubTimestamp": 1783580400000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "[보도자료] 한성숙 국무총리 주택공급현장 점검  이즈보험...",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5CTjF4U01DNUZDN0RnX1NPcnNCMEE4XzZKTEJhTzV4UzMtVHI2ZXd2YXpSZHVGdHdEdDhmOC13eVRERkhkUkZnN2htUFZzandJTXlqRHB4Vi1aZWxlQ29wZ2JXSFZFeTJIVFE?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1781766000000-gcy8q",
       "ministry": "정책당국",
       "title": "[불편한 진실] 컨트롤타워 없는 AI 정책 난립 논란 - 국토교통신문",
       "date": "2026. 6. 18.",
