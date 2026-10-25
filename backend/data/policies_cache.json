@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-10-25T20:47:29.454Z",
+  "lastUpdated": "2026-10-25T23:14:05.160Z",
   "scrapedPolicies": [
     {
-      "id": "gov-1792720977000-ojtui",
+      "id": "gov-1792720977000-psa3j",
       "ministry": "금융위원회",
       "title": "이억원 금융위원장 \"가계대출 총량 규제 필요…은행 자율관리 방식은 보완 검토\" - 폴리뉴스 Polinews",
       "date": "2026. 10. 23.",
@@ -13,7 +13,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792719776000-oxhsi",
+      "id": "gov-1792719776000-hhvnq",
       "ministry": "정책당국",
       "title": "'사내대출 1조원 시대' DSR 규제 가능한가?... '법적 근거' 공백 - 법률방송뉴스",
       "date": "2026. 10. 23.",
@@ -24,7 +24,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792716448000-1ftlo",
+      "id": "gov-1792716448000-h8tir",
       "ministry": "정책당국",
       "title": "'15억원 이상 주담대 전면금지' 루머에...이억원 \"절대 없다\" 일축 [2026년 국감] - 조세일보",
       "date": "2026. 10. 23.",
@@ -35,7 +35,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792659457000-mnkhc",
+      "id": "gov-1792659457000-w2020",
       "ministry": "정책당국",
       "title": "[2026 국정감사] 이찬진 금감원장 한국처럼 DSR 관대한 나라 없어 - 아주경제",
       "date": "2026. 10. 22.",
@@ -46,7 +46,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792658103000-pdoho",
+      "id": "gov-1792658103000-r5m8x",
       "ministry": "정책당국",
       "title": "이억원 \"15억 주담대 금지? 허위사실\"...이찬진 \"DSR 관대한 나라\" - 머니투데이 - 머니투데이",
       "date": "2026. 10. 22.",
@@ -57,7 +57,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792657690000-l4u0n",
+      "id": "gov-1792657690000-8mwhe",
       "ministry": "정책당국",
       "title": "이억원 \"가계부채 리스크에 총량 규제 필요…방법 보완 검토\" - 연합뉴스",
       "date": "2026. 10. 22.",
@@ -68,7 +68,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792652666000-1x37t",
+      "id": "gov-1792652666000-ezqqv",
       "ministry": "정책당국",
       "title": "1조원 육박한 사내대출…금융당국, DSR 적용 검토 - 시사저널",
       "date": "2026. 10. 22.",
@@ -79,18 +79,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1791423604000-n4ign",
-      "ministry": "금융위원회",
-      "title": "[금융위 국감] 가계대출 총량 3%로 넓힌다…주택공급 금융 47.8조원+α - ebn.co.kr",
-      "date": "2026. 10. 8.",
-      "pubTimestamp": 1791423604000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "[금융위 국감] 가계대출 총량 3%로 넓힌다…주택공급 금융 47.8조원+α  ebn.co.kr...",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5iT2lZX1REVXYyVzkwMVRIaTA4Q2lSOVFpUDJnUGJSMEgzWTQ5NjZheWppRm9mVjV2QmtmMGtWRzBoU0o4Z0JCcG9RM3VGS2NDT3R1YzhZYTY2cDc4bjZOTzk3a05IRHpR?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1791356400000-6a4fl",
+      "id": "gov-1791356400000-1b68j",
       "ministry": "국토교통부",
       "title": "김은혜 “문재인 정부 국토부, 부동산 정책 비판한 민간인 불법 사찰” - 경기신문",
       "date": "2026. 10. 7.",
@@ -101,7 +90,18 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1790406000000-mzpe2",
+      "id": "gov-1790821581000-9k91f",
+      "ministry": "금융위원회",
+      "title": "보도자료 - 금융위원회",
+      "date": "2026. 10. 1.",
+      "pubTimestamp": 1790821581000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "보도자료  금융위원회...",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8wRXFweGhYOWk4T05OVXlYVmFYUy1KMV8wRnQyTUp3NjZyRERJdjBMdFdSVG8xWHlpVDFRbjAtajNxemc5eFB1djVVVWRWclV2OTFwUHBoY1dJY1ozUlE?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1790406000000-btj6d",
       "ministry": "국토교통부",
       "title": "[보도자료] 국토부, 외국인 부동산 거래 ‘숫자’보다 ‘자금’을 본다 - 국토교통신문",
       "date": "2026. 9. 26.",
@@ -112,7 +112,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1786690800000-fbzlw",
+      "id": "gov-1786690800000-pp10g",
       "ministry": "정책당국",
       "title": "'닥치고'·'미친' 공급? 8.13 부동산종합대책 전문가도 '극과 극' 평가 - YTN",
       "date": "2026. 8. 14.",
@@ -123,7 +123,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1786690800000-bi64b",
+      "id": "gov-1786690800000-3jee0",
       "ministry": "정책당국",
       "title": "수도권 13만 호 신속 공급! 달라지는 8.13 부동산 대책 - 대한민국 정책브리핑",
       "date": "2026. 8. 14.",
@@ -134,7 +134,18 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1784012400000-5lk4n",
+      "id": "gov-1786604400000-3yc0j",
+      "ministry": "정책당국",
+      "title": "수도권에 23만 호+α 추가 공급…부동산PF 자금지원 늘려 속도전 - 대한민국 정책브리핑",
+      "date": "2026. 8. 13.",
+      "pubTimestamp": 1786604400000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "수도권에 23만 호+α 추가 공급…부동산PF 자금지원 늘려 속도전  대한민국 정책브리핑...",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5iUDRQR2JvQ0J2clhhZWduVGsxUEZiLVptdEx0WDF4X3dvdW1LNERyQTViRHhIQ3Nla0JRLUxGaHJHZ2N4bUlHWXVReV9XcENoeWoyT01pclVQUWdOQmVtR1J1SDV0c0VxemIzdQ?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1784012400000-2ihi9",
       "ministry": "정책당국",
       "title": "부동산정책 수립에 '국민 목소리' 담는다…공개 토론회 개최 - 정책뉴스 | 뉴스 - 대한민국 정책브리핑",
       "date": "2026. 7. 14.",
@@ -145,7 +156,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1783666800000-f1qi1",
+      "id": "gov-1783666800000-7f818",
       "ministry": "국토교통부",
       "title": "재경·금융·국토부, 세제·금융·공급 분야 부동산 국민 의견 듣는다 - 브릿지경제",
       "date": "2026. 7. 10.",
@@ -153,17 +164,6 @@
       "category": "최신 부동산 정책 발표",
       "summary": "재경·금융·국토부, 세제·금융·공급 분야 부동산 국민 의견 듣는다  브릿지경제...",
       "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB3ZDdrNjBsQkFYaXNCdElvd3hVYWpycGZfM1pWV2x3OTRMcHRFbTFQSUpPM0x2Ulh4VmZqUzRTMGRsbnZqMzlSeWpDNVV6M2ZSOWNCVFlOZzhDQQ?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1780297200000-ptvdh",
-      "ministry": "국토교통부",
-      "title": "[인사] 국토교통부 - 이투뉴스",
-      "date": "2026. 6. 1.",
-      "pubTimestamp": 1780297200000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "[인사] 국토교통부  이투뉴스...",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE15QmNPUWpBLUhCMUZCWUJDVzNNQUMwdWpER19nR1VzcU9OdDA2WVJRcXVSV2JjV2RrYjR4SEhJZy1vejdyd0EwMzdsWXFrd0YxdzFDYlhnMW4yY3FmZGxsdy0xYk5iSEHSAWtBVV95cUxOU1pHOUZBVmRia2Z2elN1R2ZSUWJFQ0QtYWx5VFB0MERiS19wZEt1LUFodHZyTmd4aTRmTXQtRHczTVc4djFWeU95SWxBVXBqamRmRGFvTjhhOVlWYlVwaU9JSklsM1FSUFZPaw?oc=5",
       "status": "실시간 수집"
     }
   ]
