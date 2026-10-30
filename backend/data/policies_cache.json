@@ -1,8 +1,19 @@
 {
-  "lastUpdated": "2026-10-30T17:59:19.153Z",
+  "lastUpdated": "2026-10-30T22:15:06.779Z",
   "scrapedPolicies": [
     {
-      "id": "gov-1792895289000-4s3nx",
+      "id": "gov-1793394160000-r3ydc",
+      "ministry": "정책당국",
+      "title": "침체 빠진 지방 부동산… ‘스트레스 DSR 3단계’ 시행 또 유예되나 - Chosunbiz",
+      "date": "2026. 10. 30.",
+      "pubTimestamp": 1793394160000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "침체 빠진 지방 부동산… ‘스트레스 DSR 3단계’ 시행 또 유예되나  Chosunbiz...",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNYUFLS1RzZGU3WGwtcGpoLTU1NmlNXzUzVXVtdVpfSXpERjlEQWJiOGtwb2dFdkdFS2JaVG1faDcwQlJnN3Y3UWs2TWNXTmlwbzIwRjhNeXYwRnFtdTFTRkpaaWF3VVJxV1BNaF9rVDdrUkZjWVphSUN4VlFodHZjbtIBlAFBVV95cUxONnplSkhXX1dLS3VPWWVmWk5hYzdXdDlFNzNodGVmY19mbl9RdFh0ZFVBSHJaRTVRVTQ3UERKeVZ4TmJRNUtVelhHNTVKNVFDLWhhV3NwaksxOHZXWWxfZlFwT1VtYW5GM25WZ0ZmaldvbmtzX0tDYXhtNlFLV3NqZ24tQWM5cnNqTDNXZnZlclJWam9K?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1792895289000-vz8sq",
       "ministry": "정책당국",
       "title": "'사내대출 1조원 시대' DSR 규제 가능한가?... '법적 근거' 공백 - 법률방송뉴스",
       "date": "2026. 10. 25.",
@@ -13,7 +24,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1791356400000-g8ztj",
+      "id": "gov-1791356400000-g1be6",
       "ministry": "정책당국",
       "title": "국토위 국감서 '부동산 정책' 쓴소리…여 \"서민 고려했나\" 야 \"오만과 오기\"(종합) - 뉴시스",
       "date": "2026. 10. 7.",
@@ -24,7 +35,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1791356400000-83srp",
+      "id": "gov-1791356400000-zxjnv",
       "ministry": "국토교통부",
       "title": "김은혜 “문재인 정부 국토부, 부동산 정책 비판한 민간인 불법 사찰” - 경기신문",
       "date": "2026. 10. 7.",
@@ -35,7 +46,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1791270000000-j303z",
+      "id": "gov-1791270000000-nzyor",
       "ministry": "정책당국",
       "title": "전세사기 피해 보증금 '최소 3분의 1 회복' 보장…11월 13일 시행 - 대한민국 정책브리핑",
       "date": "2026. 10. 6.",
@@ -46,7 +57,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1790821581000-2h1yn",
+      "id": "gov-1790821581000-kl6ce",
       "ministry": "금융위원회",
       "title": "보도자료 - 금융위원회",
       "date": "2026. 10. 1.",
@@ -57,7 +68,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1790406000000-9vhln",
+      "id": "gov-1790406000000-y0kyq",
       "ministry": "국토교통부",
       "title": "[보도자료] 국토부, 외국인 부동산 거래 ‘숫자’보다 ‘자금’을 본다 - 국토교통신문",
       "date": "2026. 9. 26.",
@@ -68,7 +79,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1786690800000-30q3s",
+      "id": "gov-1786690800000-7atsx",
       "ministry": "정책당국",
       "title": "'닥치고'·'미친' 공급? 8.13 부동산종합대책 전문가도 '극과 극' 평가 - YTN",
       "date": "2026. 8. 14.",
@@ -79,7 +90,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1786604400000-nru96",
+      "id": "gov-1786604400000-tqcx3",
       "ministry": "정책당국",
       "title": "수도권에 23만 호+α 추가 공급…부동산PF 자금지원 늘려 속도전 - 대한민국 정책브리핑",
       "date": "2026. 8. 13.",
@@ -90,7 +101,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1783666800000-au77z",
+      "id": "gov-1783666800000-fypt9",
       "ministry": "국토교통부",
       "title": "재경·금융·국토부, 세제·금융·공급 분야 부동산 국민 의견 듣는다 - 브릿지경제",
       "date": "2026. 7. 10.",
@@ -101,7 +112,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1780556400000-vw6gc",
+      "id": "gov-1780556400000-nf0xo",
       "ministry": "정책당국",
       "title": "[보도자료] 제12차 부동산 불법행위 대응 협의회 - 이즈보험",
       "date": "2026. 6. 4.",
@@ -112,7 +123,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1778914800000-0ko6t",
+      "id": "gov-1778914800000-7q51g",
       "ministry": "금융위원회",
       "title": "금융위 \"가계대출 증가세 안정…주담대 확대에 모니터링 강화\" - 연합뉴스",
       "date": "2026. 5. 16.",
@@ -123,7 +134,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1775631600000-7gccv",
+      "id": "gov-1775631600000-mw95o",
       "ministry": "금융위원회",
       "title": "알림마당 - 금융위원회",
       "date": "2026. 4. 8.",
@@ -134,7 +145,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1768051055000-5maxq",
+      "id": "gov-1768051055000-qdiga",
       "ministry": "금융위원회",
       "title": "정책영상 - 금융위원회",
       "date": "2026. 1. 10.",
@@ -145,7 +156,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1762243200000-waqgy",
+      "id": "gov-1762243200000-cv91i",
       "ministry": "정책당국",
       "title": "스트레스 DSR 3단계 시행, 대출 한도 얼만큼 줄었을까? - KB Think",
       "date": "2025. 11. 4.",
@@ -153,17 +164,6 @@
       "category": "최신 부동산 정책 발표",
       "summary": "스트레스 DSR 3단계 시행, 대출 한도 얼만큼 줄었을까?  KB Think...",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9EWmlGVV92ZjEzVGExVlBUbTAtdmxuTExpY1JZTlFtZmtEcmtTX19peFhtRVA0OElHYjRyRzg2M1V5R3JfbUFfalRSZHY1Nm5rcGE1VEhCSUg?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1635231600000-g9az3",
-      "ministry": "금융위원회",
-      "title": "[보도자료] 「가계부채 관리 강화방안」발표 - 금융위원회",
-      "date": "2021. 10. 26.",
-      "pubTimestamp": 1635231600000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "[보도자료] 「가계부채 관리 강화방안」발표  금융위원회...",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5aSGZiUEFSbjE0ZE9iQmJkNTVvc0JNQ2haeHQxdzZKZjU0V0JNVGkycVNXRklxbUdFSk1WMXY1cTI1MEVEUk5zSnJSbHQ?oc=5",
       "status": "실시간 수집"
     }
   ]
