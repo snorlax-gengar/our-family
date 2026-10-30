@@ -1,8 +1,19 @@
 {
-  "lastUpdated": "2026-10-29T18:26:48.557Z",
+  "lastUpdated": "2026-10-30T00:57:09.107Z",
   "scrapedPolicies": [
     {
-      "id": "gov-1793243979000-yyw6v",
+      "id": "gov-1793311038000-3hs9o",
+      "ministry": "정책당국",
+      "title": "군위군, 7월 1일 기준 개별공시지가 결정·공시…내달 27일까지 이의신청 - 펜앤마이크",
+      "date": "2026. 10. 29.",
+      "pubTimestamp": 1793311038000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "군위군, 7월 1일 기준 개별공시지가 결정·공시…내달 27일까지 이의신청  펜앤마이크...",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1pdzlZYi1sUG1DdUhxMEdkaUl3cXNBRXhSOWp0SGE4QUFCWGNPRXJ0Q2VlenFYZDFNSHdycDJiOTVReC1zcXFBbnpqdnlvTmEtLU91WDBzZmMtYTFQUWxacjlHb20zbXA4Nlpj0gFvQVVfeXFMT2RKckhGbkNmWVFFb0JiSjhMX2dvNExaMWtZS0NRUEVoQkhYT09DeFBSU09SLUdZYTNrdHdJVnZEcGl1VEpCb2pVX2ZWU2EtLTdQRmJzWHFLOEpPNVQzZDRBaDRGanFLUXQ5dEZlVTZJ?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1793243979000-ciye0",
       "ministry": "정책당국",
       "title": "[성명] 이재명 정부의 그린벨트 해제 확대 강력 규탄한다 - 경제정의실천시민연합",
       "date": "2026. 10. 29.",
@@ -13,7 +24,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1793240592000-ad6o8",
+      "id": "gov-1793240592000-rl1yb",
       "ministry": "정책당국",
       "title": "홍성 국가산단 예타 탈락에 반발…강승규 의원, \"정권 입맛 맞춘 정치적 평가\" - 국제뉴스",
       "date": "2026. 10. 29.",
@@ -24,7 +35,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1793238077000-4co5a",
+      "id": "gov-1793238077000-rhxal",
       "ministry": "정책당국",
       "title": "김현기 강남구청장, 조합장·실무자·전문가와 한자리에…재건축 해법 찾는다 - 연합뉴스",
       "date": "2026. 10. 29.",
@@ -35,7 +46,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1793177014000-y1c4f",
+      "id": "gov-1793177014000-ph1tz",
       "ministry": "정책당국",
       "title": "한국부동산원, ‘REB-AI 시세’로 공공기관 AI 혁신 부총리상 - 인사이트코리아",
       "date": "2026. 10. 28.",
@@ -46,7 +57,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1793174600000-r317v",
+      "id": "gov-1793174600000-sg9dh",
       "ministry": "정책당국",
       "title": "국토안전관리원, '건축물 에너지·온실가스 총량제 협의체' 개최 - 국제뉴스",
       "date": "2026. 10. 28.",
@@ -57,7 +68,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1793084220000-3bf97",
+      "id": "gov-1793084220000-1eiry",
       "ministry": "정책당국",
       "title": "연말까지 12만호 추가공급, 정부목표 채울 수 있을까? — 주택공급 현실성 분석 : 언제, 어디에, 얼마나 가능한가? - 네이버 프리미엄콘텐츠",
       "date": "2026. 10. 27.",
@@ -68,7 +79,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792895289000-d7ccg",
+      "id": "gov-1792895289000-gziud",
       "ministry": "정책당국",
       "title": "'사내대출 1조원 시대' DSR 규제 가능한가?... '법적 근거' 공백 - 법률방송뉴스",
       "date": "2026. 10. 25.",
@@ -79,7 +90,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792720977000-zmenb",
+      "id": "gov-1792720977000-pizrt",
       "ministry": "금융위원회",
       "title": "이억원 금융위원장 \"가계대출 총량 규제 필요…은행 자율관리 방식은 보완 검토\" - 폴리뉴스 Polinews",
       "date": "2026. 10. 23.",
@@ -90,40 +101,18 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792695600000-6wnpm",
+      "id": "gov-1792658103000-vlgq4",
       "ministry": "정책당국",
-      "title": "이억원 \"15억 이상 주담대 전면금지? 절대 없다\" - 머니투데이 - 머니투데이",
+      "title": "이억원 \"15억 주담대 금지? 허위사실\"...이찬진 \"DSR 관대한 나라\" - 머니투데이 - 머니투데이",
       "date": "2026. 10. 22.",
-      "pubTimestamp": 1792695600000,
+      "pubTimestamp": 1792658103000,
       "category": "최신 부동산 정책 발표",
-      "summary": "이억원 \"15억 이상 주담대 전면금지? 절대 없다\" - 머니투데이  머니투데이...",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE82a0xoNDJoaU9jb2J6Q1VMUUlPXzZZVWpKbWd4dXVWSDdDUHA0MERNdzZwVjhmN1VTajgxdXdwUWpzem1CdTdfenVvaThFaFpfRzZVdkstMG9QZ09wNXRqb3Z6Z2d4MnQ0YVpR0gFwQVVfeXFMT202ekpWSUtMaXhJMlVEVGJXRXFTaFJ4dTVQSlh6OXNSMkZTUXpqU3FBZ1VQUjFydWd1MDBwa0N3cHZrMHJQME93QThPMVRvYzdEd0NqODdpS1pvcjV0aXNpMi10ZU5DWVk1N291dnVYTg?oc=5",
+      "summary": "이억원 \"15억 주담대 금지? 허위사실\"...이찬진 \"DSR 관대한 나라\" - 머니투데이  머니투데이...",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFB1X1UtX1BWcG9tMnYya0QtVzYxVURlcTZ5YUpQaHJnczlsSTBQeUZqck5OZlh6ZEZCdUlJMndfNzhCWDZwS0RjeTBlbmltbkNxc1BnUUs5MjBXeWozSnJlYTJmaFY4WVB2NXpr0gFwQVVfeXFMT25KVUk3TVhwbFR1OWFXd2RyVXhzcTNleS0zLUVMUEl5T0tIREE2NkJ5aDRvbnNXOXptOU91UE5jX2pVdjZ6UVJZYTBxb1pyS1pSVXdHOTdKR0xZeXFBUmFXOVBLNmRfek1wNmNpcXFUSA?oc=5",
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792652666000-okumb",
-      "ministry": "정책당국",
-      "title": "1조원 육박한 사내대출…금융당국, DSR 적용 검토 - 시사저널",
-      "date": "2026. 10. 22.",
-      "pubTimestamp": 1792652666000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "1조원 육박한 사내대출…금융당국, DSR 적용 검토  시사저널...",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1JV1hHNUFZMUllemVER25MT0VMMzIxb3kzS3lwSndzZkpyZ0ItcVI1cU9UclhNLXBwSjhhOTMxeENqSk14X0ZQQ3RzaHpCWlJBcXhvdVdKbHAtZlltYjA3cW9JcF9xOXprU21uNUNrY9IBc0FVX3lxTE02ZnE3S2lOaDVvQ29GX3VvMDIzamlFLXBrNk1ESkJtMk5XMmdvRGRwaDNyaXZoUGpSZmxmQkJhVDJETHdVbWFLc05OQndPZ1M3aXhJRzkyNEZHSUFpUWtfZktoc3VyY0dsYVNxRUR6QkQ1X0E?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1791442800000-0qh6z",
-      "ministry": "금융위원회",
-      "title": "[금융위 국감] 가계대출 총량 3%로 넓힌다…주택공급 금융 47.8조원+α - www.ebn.co.kr",
-      "date": "2026. 10. 8.",
-      "pubTimestamp": 1791442800000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "[금융위 국감] 가계대출 총량 3%로 넓힌다…주택공급 금융 47.8조원+α  www.ebn.co.kr...",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5iT2lZX1REVXYyVzkwMVRIaTA4Q2lSOVFpUDJnUGJSMEgzWTQ5NjZheWppRm9mVjV2QmtmMGtWRzBoU0o4Z0JCcG9RM3VGS2NDT3R1YzhZYTY2cDc4bjZOTzk3a05IRHpR?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1790821581000-nwk5m",
+      "id": "gov-1790821581000-seick",
       "ministry": "금융위원회",
       "title": "보도자료 - 금융위원회",
       "date": "2026. 10. 1.",
@@ -134,36 +123,47 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1786604400000-8dh26",
-      "ministry": "정책당국",
-      "title": "대출 ‘오픈런’ 숨통 트이나…금융권 가계대출 30조 더 푼다 - 경기일보",
-      "date": "2026. 8. 13.",
-      "pubTimestamp": 1786604400000,
+      "id": "gov-1778914800000-yvl9k",
+      "ministry": "금융위원회",
+      "title": "금융위 \"가계대출 증가세 안정…주담대 확대에 모니터링 강화\" - 연합뉴스",
+      "date": "2026. 5. 16.",
+      "pubTimestamp": 1778914800000,
       "category": "최신 부동산 정책 발표",
-      "summary": "대출 ‘오픈런’ 숨통 트이나…금융권 가계대출 30조 더 푼다  경기일보...",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5xWGEyN2U1eUdaUjhDU2VjZkdhdFF3MG9LT0hMNTNEYlRDQTdRU0t4d1Z2czh3ekVvMnVBM1BJRVBoMlJhSU5fV2ViTEtTZDRHYUc0eGVneERTWEk?oc=5",
+      "summary": "금융위 \"가계대출 증가세 안정…주담대 확대에 모니터링 강화\"  연합뉴스...",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5PWkc2MEFrOWNhOVhZSUVDc183MjFGRzRob3BUMGV2WWl4RzgxSWJhQ1ZhN1JLY0RWSlhEeld4ZGtSWnpKeUlRWi1rU3NkOHRLS3lrRUhzNGE0S2fSAWBBVV95cUxOQkJxREthODdDaHJRWUtYOXFYdEJqSVNUMGYzVnJ5UDRwbC01Mk9rNER4d0g0UWU2VzVOa1lIMWZYVHZTV0g3S2hFTzlCWHlWbURQTG5MNjR3SXB3X0Y0TG8?oc=5",
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1786604400000-69mnr",
-      "ministry": "정책당국",
-      "title": "[이슈체크] 은행권 ‘대출 곳간’ 넓어진다…가계대출 총량 2배 상향 - 조세금융신문",
-      "date": "2026. 8. 13.",
-      "pubTimestamp": 1786604400000,
+      "id": "gov-1768051055000-86o7u",
+      "ministry": "금융위원회",
+      "title": "정책영상 - 금융위원회",
+      "date": "2026. 1. 10.",
+      "pubTimestamp": 1768051055000,
       "category": "최신 부동산 정책 발표",
-      "summary": "[이슈체크] 은행권 ‘대출 곳간’ 넓어진다…가계대출 총량 2배 상향  조세금융신문...",
-      "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA5Z0VzTzhoelVJamZWdDJBNldlTEZYYUlNVnJoUWtndll2d1g2OFRRMWJyYkxsVHdxVVhmRkRtSVhBMDBuRzB1Q0l1SHhjUFlPX3pjM0Exb2dvWlZfQjdqS1AxSQ?oc=5",
+      "summary": "정책영상  금융위원회...",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPNjhWbVhRTHdBenRkTVdNN0tjeWlHaHVSc0c3Rnd5TEdtMWRTQ3J2Z3hpRUFjODdNNzU1RHN6MVJXaXJ2T1h4MWRrNFJ2X1A3aWRpbUl1WThSVy1IRXVGQklycEp6cHVJTVdkZVBfSFNmeFZoa1RvSEtuMHJrWHpyVU9XUTkwYnNYQmp1eWozbV8tOVUzeVJMbEV3dk5xdw?oc=5",
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1792684676000-qpyfz",
+      "id": "gov-1762243200000-vmtar",
       "ministry": "정책당국",
-      "title": "가계대출 총량 규제는 유지…금융당국, 운영 방식 개선 가능성 시사 - https://www.sisaworld.kr/",
-      "date": "2026. 10. 22.",
-      "pubTimestamp": 1792684676000,
+      "title": "스트레스 DSR 3단계 시행, 대출 한도 얼만큼 줄었을까? - KB Think",
+      "date": "2025. 11. 4.",
+      "pubTimestamp": 1762243200000,
       "category": "최신 부동산 정책 발표",
-      "summary": "가계대출 총량 규제는 유지…금융당국, 운영 방식 개선 가능성 시사  https://www.sisaworld.kr/...",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE43X2s1Zll2bGFKQVBYMU1Oa0UtRTBrcmNSSUFaYU5tX2pXOWxVNjRkdF9BaHY2M1pPWmJMRXBoZ2NGbkdqVFpEQ0lySUJOSDdSWWJDaUVDeHVjVVlkWnp1RzJ2cEFTM0lQYVE?oc=5",
+      "summary": "스트레스 DSR 3단계 시행, 대출 한도 얼만큼 줄었을까?  KB Think...",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9EWmlGVV92ZjEzVGExVlBUbTAtdmxuTExpY1JZTlFtZmtEcmtTX19peFhtRVA0OElHYjRyRzg2M1V5R3JfbUFfalRSZHY1Nm5rcGE1VEhCSUg?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1635231600000-1flha",
+      "ministry": "금융위원회",
+      "title": "[보도자료] 「가계부채 관리 강화방안」발표 - 금융위원회",
+      "date": "2021. 10. 26.",
+      "pubTimestamp": 1635231600000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "[보도자료] 「가계부채 관리 강화방안」발표  금융위원회...",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5aSGZiUEFSbjE0ZE9iQmJkNTVvc0JNQ2haeHQxdzZKZjU0V0JNVGkycVNXRklxbUdFSk1WMXY1cTI1MEVEUk5zSnJSbHQ?oc=5",
       "status": "실시간 수집"
     }
   ]
