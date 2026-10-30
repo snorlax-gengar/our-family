@@ -1,96 +1,8 @@
 {
-  "lastUpdated": "2026-10-30T09:57:00.666Z",
+  "lastUpdated": "2026-10-30T17:59:19.153Z",
   "scrapedPolicies": [
     {
-      "id": "gov-1793349000000-75s16",
-      "ministry": "국토교통부",
-      "title": "TK신공항 민항 고시했지만…국토부 추진단장은 석 달째 공석 - 매일신문",
-      "date": "2026. 10. 30.",
-      "pubTimestamp": 1793349000000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "TK신공항 민항 고시했지만…국토부 추진단장은 석 달째 공석  매일신문...",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9JR1RRT19CZ2Z6bUxKcmxFSmhWaERlS3lvS1JFRTVvT19TcWRjLTNMMU1tVHJmT294eEJrckdfdE9kUWdvbHcwa2x2dkRLX293SXUwdXZTbEVwc05LUkc1dDJn?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1793324292000-i7uu3",
-      "ministry": "정책당국",
-      "title": "충남도, 2만6491필지 개별공시지가 결정·공시 - 뉴스프리존",
-      "date": "2026. 10. 30.",
-      "pubTimestamp": 1793324292000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "충남도, 2만6491필지 개별공시지가 결정·공시  뉴스프리존...",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9BUm1BYk9yWFJpcTBYWmtUanZyU1Z6SXg0U1V0OFBxNkhEbnQ0M24tM3ppOUdpVkNEWURKMy10Ml9CQ2NsZGZQNlYwN0luMGM4b0JrVVN2QURlUWtwTnF0b3V2MHVtTkZnangwSkIxeXpuSTjSAXdBVV95cUxPc2JqV1k4VzB5UllpS0xkOTFVZDF4UC1IMFdLSlBiSW1Rd1BNeXRKLS1ySV9RdHF6bzV5M2YwV09MQmdpR0h1LWIxOHFtWUpnRVVrenFYdU0zcVp4bWpxa2RYbzdIYVNZQkIxM1JDUi1ycEJ1a3JjTQ?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1793311038000-18i3z",
-      "ministry": "정책당국",
-      "title": "군위군, 7월 1일 기준 개별공시지가 결정·공시…내달 27일까지 이의신청 - 펜앤마이크",
-      "date": "2026. 10. 29.",
-      "pubTimestamp": 1793311038000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "군위군, 7월 1일 기준 개별공시지가 결정·공시…내달 27일까지 이의신청  펜앤마이크...",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1pdzlZYi1sUG1DdUhxMEdkaUl3cXNBRXhSOWp0SGE4QUFCWGNPRXJ0Q2VlenFYZDFNSHdycDJiOTVReC1zcXFBbnpqdnlvTmEtLU91WDBzZmMtYTFQUWxacjlHb20zbXA4Nlpj0gFvQVVfeXFMT2RKckhGbkNmWVFFb0JiSjhMX2dvNExaMWtZS0NRUEVoQkhYT09DeFBSU09SLUdZYTNrdHdJVnZEcGl1VEpCb2pVX2ZWU2EtLTdQRmJzWHFLOEpPNVQzZDRBaDRGanFLUXQ5dEZlVTZJ?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1793243979000-dz041",
-      "ministry": "정책당국",
-      "title": "[성명] 이재명 정부의 그린벨트 해제 확대 강력 규탄한다 - 경제정의실천시민연합",
-      "date": "2026. 10. 29.",
-      "pubTimestamp": 1793243979000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "[성명] 이재명 정부의 그린벨트 해제 확대 강력 규탄한다  경제정의실천시민연합...",
-      "link": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1MVTJOYWxBUVFwX29ycDNUSENyR2swdnFGXzBRbUhRN1RnbGRBMUs0X1ZvN0loYmE4Zk5ibmhJZUlYQkc2b3Nn?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1793240592000-vbdo4",
-      "ministry": "정책당국",
-      "title": "홍성 국가산단 예타 탈락에 반발…강승규 의원, \"정권 입맛 맞춘 정치적 평가\" - 국제뉴스",
-      "date": "2026. 10. 29.",
-      "pubTimestamp": 1793240592000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "홍성 국가산단 예타 탈락에 반발…강승규 의원, \"정권 입맛 맞춘 정치적 평가\"  국제뉴스...",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFA1TnM3bUNTa3MwMFlTZ3pERGZCRU15c2xDdDN6WHd3OGVUaDAzNFJ3Z08yZVdGdlVlV0VGSlc4X252ODlHYXY1bmp4dFEwaVRCT3ZQMkVkUTBQVW4wUXY5dDExQ0FrbUZUdGpVSVFn?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1793238077000-7whqr",
-      "ministry": "정책당국",
-      "title": "김현기 강남구청장, 조합장·실무자·전문가와 한자리에…재건축 해법 찾는다 - 연합뉴스",
-      "date": "2026. 10. 29.",
-      "pubTimestamp": 1793238077000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "김현기 강남구청장, 조합장·실무자·전문가와 한자리에…재건축 해법 찾는다  연합뉴스...",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9LQXY1Skt5ckZqZzUwSHhpLU9ld2prSXhSUVZVTWd0MnFaTXhrVEU4NmxETUtHUUhReWhqSkJRUWF6Tko2aUhsb2NIYVQxdzZyeHo0Yk5udVlNUkE?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1793177014000-4aksx",
-      "ministry": "정책당국",
-      "title": "한국부동산원, ‘REB-AI 시세’로 공공기관 AI 혁신 부총리상 - 인사이트코리아",
-      "date": "2026. 10. 28.",
-      "pubTimestamp": 1793177014000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "한국부동산원, ‘REB-AI 시세’로 공공기관 AI 혁신 부총리상  인사이트코리아...",
-      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE14VDVoUENnb0VhZjVyNjdRY2pyQ1hUNlpQeHF4TFMtNEU0OFpMSG8tRWx1QlBkUkVtczdUSlNObWdwRUhOUVMtcjROV3U5aDQ5RnlaM3hCa1FmN0FRcnBJODh5cUcwdFpKRHNUN19wTzVRMVHSAXdBVV95cUxPSVBiUk9WMm5HTXItbWdTaU5kTnVpUktRTXpiM1BaRk9felk0UUkyZVc4N1hFZlQzb1lZZVg0bENSd0N0WWpXVDRlN3pralAyMF9YYUJhNFY2bkQ2bFVNbFdaMHVNZHd3aUMzQVphNVlLUXBadXd2cw?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1793174600000-u0y2s",
-      "ministry": "정책당국",
-      "title": "국토안전관리원, '건축물 에너지·온실가스 총량제 협의체' 개최 - 국제뉴스",
-      "date": "2026. 10. 28.",
-      "pubTimestamp": 1793174600000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "국토안전관리원, '건축물 에너지·온실가스 총량제 협의체' 개최  국제뉴스...",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5SMy03dktOWmN4NnNKWDUzQlFEQ1pGcjdWNm9vS2FoX1NFTXVReTNwYW5ESFJXenBPd3hBOS1MeHAwRElLOUFjeS1LMDQ2TVhOV0ZqSUNSeWFibTluY19TM2pWNmdheU90cUo5Y0V3?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1792895289000-staix",
+      "id": "gov-1792895289000-4s3nx",
       "ministry": "정책당국",
       "title": "'사내대출 1조원 시대' DSR 규제 가능한가?... '법적 근거' 공백 - 법률방송뉴스",
       "date": "2026. 10. 25.",
@@ -101,7 +13,40 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1790821581000-el8xp",
+      "id": "gov-1791356400000-g8ztj",
+      "ministry": "정책당국",
+      "title": "국토위 국감서 '부동산 정책' 쓴소리…여 \"서민 고려했나\" 야 \"오만과 오기\"(종합) - 뉴시스",
+      "date": "2026. 10. 7.",
+      "pubTimestamp": 1791356400000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "국토위 국감서 '부동산 정책' 쓴소리…여 \"서민 고려했나\" 야 \"오만과 오기\"(종합)  뉴시스...",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1TZDc0QjQ5VVprRXJ5YS1KLXhEZUMyb2MzQTJ2dUtBVXQzQlJsS0lnUTBKOTI1aU04cVhLRWlpd0dTR0JJcEJKcmllMXJJcGNTV0VMUkVWR3gtakJwcDBGSdIBeEFVX3lxTE5tTjVJRHRBQ2UwUHc0ZVZpZFVhQU9PZm5PTk9vYkktNkcydENoNlFLYjZQYkoyVUo4RGtmV3NiWWVUYkVjLVhXLXNIcWVma3VMN3pGYUxlazFCWllzV29fZTZFVWtsdUxPdW9mVDVPZ0VGblROa1d2Zw?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1791356400000-83srp",
+      "ministry": "국토교통부",
+      "title": "김은혜 “문재인 정부 국토부, 부동산 정책 비판한 민간인 불법 사찰” - 경기신문",
+      "date": "2026. 10. 7.",
+      "pubTimestamp": 1791356400000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "김은혜 “문재인 정부 국토부, 부동산 정책 비판한 민간인 불법 사찰”  경기신문...",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE0yQ0I5ZVhob1hKSmtLbGV3ai1CcTVJUHlnSWZIbkVMQ0lNWXlJV2RITV9hRjZfUXVsTHpZRmdQaXVxYlZTeDBEejR2Q3d2RVU4eGtoSFZXX21DdmFfMlZLa2dB?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1791270000000-j303z",
+      "ministry": "정책당국",
+      "title": "전세사기 피해 보증금 '최소 3분의 1 회복' 보장…11월 13일 시행 - 대한민국 정책브리핑",
+      "date": "2026. 10. 6.",
+      "pubTimestamp": 1791270000000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "전세사기 피해 보증금 '최소 3분의 1 회복' 보장…11월 13일 시행  대한민국 정책브리핑...",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBCVDJjcVpUZVJKaE1UU21VUk5McWEweDB2RDZ2ZjdlbGpYWlNkd0ZXa1V3WWVLZ2R6RmVMbkFPMG5yc1RxOXUyZXViWlFRbEpRYl9VWUlDdHlJa2NTTWk3SkNZeThTMzg0WVctTw?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1790821581000-2h1yn",
       "ministry": "금융위원회",
       "title": "보도자료 - 금융위원회",
       "date": "2026. 10. 1.",
@@ -112,7 +57,62 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1778914800000-6h7lw",
+      "id": "gov-1790406000000-9vhln",
+      "ministry": "국토교통부",
+      "title": "[보도자료] 국토부, 외국인 부동산 거래 ‘숫자’보다 ‘자금’을 본다 - 국토교통신문",
+      "date": "2026. 9. 26.",
+      "pubTimestamp": 1790406000000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "[보도자료] 국토부, 외국인 부동산 거래 ‘숫자’보다 ‘자금’을 본다  국토교통신문...",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9LUk1fLVpuVWtuWl9HUVVYU3BzeFZzdC1uOEtLbXc5Z0pMMDRXT1RDRkJrSTIwTlkzUm1pS1hPbGRuNVpXdTRwRmRxOEVqSzdKMkRnbWFoWkdRTkFvdzdEZTV4dVctZHc?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1786690800000-30q3s",
+      "ministry": "정책당국",
+      "title": "'닥치고'·'미친' 공급? 8.13 부동산종합대책 전문가도 '극과 극' 평가 - YTN",
+      "date": "2026. 8. 14.",
+      "pubTimestamp": 1786690800000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "'닥치고'·'미친' 공급? 8.13 부동산종합대책 전문가도 '극과 극' 평가  YTN...",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5DZ3NpUWc4d0ZwcFF2MVotdjRPRVlDY21tb0c1RTRmTlpKeElIS2FOcVUwaVY4N3dTbGZXSnNFZV9VNUh0Znd3NTRUcFpHMFRJazAxNlcyVm9KQUFIUlE?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1786604400000-nru96",
+      "ministry": "정책당국",
+      "title": "수도권에 23만 호+α 추가 공급…부동산PF 자금지원 늘려 속도전 - 대한민국 정책브리핑",
+      "date": "2026. 8. 13.",
+      "pubTimestamp": 1786604400000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "수도권에 23만 호+α 추가 공급…부동산PF 자금지원 늘려 속도전  대한민국 정책브리핑...",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5iUDRQR2JvQ0J2clhhZWduVGsxUEZiLVptdEx0WDF4X3dvdW1LNERyQTViRHhIQ3Nla0JRLUxGaHJHZ2N4bUlHWXVReV9XcENoeWoyT01pclVQUWdOQmVtR1J1SDV0c0VxemIzdQ?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1783666800000-au77z",
+      "ministry": "국토교통부",
+      "title": "재경·금융·국토부, 세제·금융·공급 분야 부동산 국민 의견 듣는다 - 브릿지경제",
+      "date": "2026. 7. 10.",
+      "pubTimestamp": 1783666800000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "재경·금융·국토부, 세제·금융·공급 분야 부동산 국민 의견 듣는다  브릿지경제...",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB3ZDdrNjBsQkFYaXNCdElvd3hVYWpycGZfM1pWV2x3OTRMcHRFbTFQSUpPM0x2Ulh4VmZqUzRTMGRsbnZqMzlSeWpDNVV6M2ZSOWNCVFlOZzhDQQ?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1780556400000-vw6gc",
+      "ministry": "정책당국",
+      "title": "[보도자료] 제12차 부동산 불법행위 대응 협의회 - 이즈보험",
+      "date": "2026. 6. 4.",
+      "pubTimestamp": 1780556400000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "[보도자료] 제12차 부동산 불법행위 대응 협의회  이즈보험...",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE90OV9rRkZ4dk5XOVFDZldVM0swRkJTWmpYZFpIQWhkVTBnSGVSWE9lZlpJSzYyQWxMaFFCVGdZRm1OY2ZYWHdJWHNOcWs5NHQ5QUxsY2ZYWlFmcEIxN0VtYVI4T2dWRzgyYmc?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1778914800000-0ko6t",
       "ministry": "금융위원회",
       "title": "금융위 \"가계대출 증가세 안정…주담대 확대에 모니터링 강화\" - 연합뉴스",
       "date": "2026. 5. 16.",
@@ -123,7 +123,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1775631600000-tb2nu",
+      "id": "gov-1775631600000-7gccv",
       "ministry": "금융위원회",
       "title": "알림마당 - 금융위원회",
       "date": "2026. 4. 8.",
@@ -134,7 +134,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1768051055000-xevrx",
+      "id": "gov-1768051055000-5maxq",
       "ministry": "금융위원회",
       "title": "정책영상 - 금융위원회",
       "date": "2026. 1. 10.",
@@ -145,7 +145,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1762243200000-m82kk",
+      "id": "gov-1762243200000-waqgy",
       "ministry": "정책당국",
       "title": "스트레스 DSR 3단계 시행, 대출 한도 얼만큼 줄었을까? - KB Think",
       "date": "2025. 11. 4.",
@@ -156,7 +156,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1635231600000-3n2t9",
+      "id": "gov-1635231600000-g9az3",
       "ministry": "금융위원회",
       "title": "[보도자료] 「가계부채 관리 강화방안」발표 - 금융위원회",
       "date": "2021. 10. 26.",
