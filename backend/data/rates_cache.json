@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-06T23:05:21.199Z",
+  "lastUpdated": "2026-11-07T05:53:21.559Z",
   "rates": {
     "baseRate": {
       "name": "한국은행 기준금리",
@@ -152,17 +152,17 @@
   },
   "news": [
     {
-      "id": "scraped-1793944400000-1t5yl",
-      "title": "저금리 믿고 집 샀는데…5년 만에 돌아온 고금리 청구서에 차주들 비명 - 아주경제",
-      "summary": "저금리 믿고 집 샀는데…5년 만에 돌아온 고금리 청구서에 차주들 비명  아주경제...",
-      "source": "아주경제",
-      "date": "2026. 11. 6.",
-      "pubTimestamp": 1793944400000,
-      "tag": "주담대 금리",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1kZHdZZFdHaDdxY1RpZFlnd2J2ajJoUDU3ZWhMOGRqc2YwTGN2bmV0eUJwYUdjcTVoSVZUODNfSE1wczQ0UkVoNmJtcExkd1dGUXY0aHhqTk5xd9IBWEFVX3lxTE9Bb2tRVDlvNk1jdURtekQzU0xsaFFlZWlPMU5XLUNrT1NyZDBTX0RrSmlZQlBqcHJtaDlubmU4VG8telRKbDJPVWx2eWhMMWZPREVrMXJxYUc?oc=5"
+      "id": "scraped-1793919600000-uys2m",
+      "title": "\"또 오르나?\"…11월 26일 기준금리 3.25% 갈림길, 주담대 3억 원이면 매달 4만3천 원 더 낸다 - 경제시그널",
+      "summary": "\"또 오르나?\"…11월 26일 기준금리 3.25% 갈림길, 주담대 3억 원이면 매달 4만3천 원 더 낸다  경제시그널...",
+      "source": "경제시그널",
+      "date": "2026. 11. 5.",
+      "pubTimestamp": 1793919600000,
+      "tag": "기준금리",
+      "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1WdGE3M2UyVGRnRUE3aDdYX1kzOE5xZURLLVBjbEYyRlVBN0s3WE1TTjBHejRqbUNXb1pZZTV5N0QwS0pxeUpxWkx3b3BrTnltRklJYllobnhOdnZVcVZKbnVPVW1CTGZibDZTSjhTWkFranc?oc=5"
     },
     {
-      "id": "scraped-1792306800000-ykm5d",
+      "id": "scraped-1792306800000-rdqbd",
       "title": "금통위 '숨고르기' 우세에도 코픽스 등 대출금리 더 오를라 - 비즈워치",
       "summary": "금통위 '숨고르기' 우세에도 코픽스 등 대출금리 더 오를라  비즈워치...",
       "source": "비즈워치",
@@ -172,7 +172,7 @@
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1FTU84T0JsSzJpeHo0VWZkcUE5bFBqX0h4VnBsV2tKSFUyaGQyVkFQa3pyOW5QMloxb1Jmam9jaVNhUDR0M1dBajRXTUNUZkxyaVdnRHpsdUFUaF9kNjlKMmRCY293Zk14bWQw?oc=5"
     },
     {
-      "id": "scraped-1792047600000-b0mjk",
+      "id": "scraped-1792047600000-apaa6",
       "title": "’주담대 변동금리 기준’ 코픽스, 0.25%p 상승 - 연합뉴스TV",
       "summary": "’주담대 변동금리 기준’ 코픽스, 0.25%p 상승  연합뉴스TV...",
       "source": "연합뉴스TV",
@@ -182,7 +182,7 @@
       "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1UVUlZbEwwblRqVDFiLWxZaUxmQU5TY3FLNVBEaF94bk12TnFiRHFfWXNVaEh1Nl9abWRVbk0wUm1BWE5uZmZuZTNJT1NKZnVyNENXTU1wNGxIRmg0MzRWUTdqWkwxd00?oc=5"
     },
     {
-      "id": "scraped-1792047600000-qspqe",
+      "id": "scraped-1792047600000-t97ik",
       "title": "주담대 변동금리 또 오른다…코픽스 3년 10개월만 최대폭 상승(종합) - 연합뉴스",
       "summary": "주담대 변동금리 또 오른다…코픽스 3년 10개월만 최대폭 상승(종합)  연합뉴스...",
       "source": "연합뉴스",
@@ -192,7 +192,7 @@
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBhUXpYRlJXWmcwN0JQR1NESGliVlVScDRENVZVVnFURWU2QjduRVJpWjVrUWc5OWpqRE1INktRdE1KUmlUTmtpMEpobEpNV05TUXBTdG95dHRMZGPSAWBBVV95cUxQQUFCMzhobnRaQjVaR243TnBiOWgzOFhuUC1INFpReVZBQ0g1aTdvem10UzhhQWNrX29sWlJLQzFER3RoN19ZSXFWbFB5LXdqdnBnMkFSb2tmSk9fN2dSRUE?oc=5"
     },
     {
-      "id": "scraped-1792047600000-99wth",
+      "id": "scraped-1792047600000-ree9l",
       "title": "주담대 변동금리 3년 10개월만 최대폭 상승…9월 코픽스 0.25%p↑(종합) - KB Think",
       "summary": "주담대 변동금리 3년 10개월만 최대폭 상승…9월 코픽스 0.25%p↑(종합)  KB Think...",
       "source": "KB Think",
@@ -202,7 +202,7 @@
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5lbEI5bXpSNkNXLU1DYzFXYUNVbWhDWVI2ODF1RnRxdkxYOUVSNTNDSnpXSmVMbWRYN01nR0k5VzZObUdUZnkyY0piakFISUItQ3FuMXI0c3gwczVWaXRsNlJkejJfZ0pka01wd3dOTE5wdw?oc=5"
     },
     {
-      "id": "scraped-1792047600000-4lrzh",
+      "id": "scraped-1792047600000-q9kui",
       "title": "코픽스 3년 10개월 만에 최대폭 상승‥주담대 변동금리 또 올라 - MBC 뉴스",
       "summary": "코픽스 3년 10개월 만에 최대폭 상승‥주담대 변동금리 또 올라  MBC 뉴스...",
       "source": "MBC 뉴스",
@@ -212,7 +212,7 @@
       "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFByN3VJczYxNzI0UExhVGlKVGZVdTBFVU5JV1kzU3ZaRElnV1RKV3FCdzRpdkc0NTg4dERnekU4NTRkQXU4d09vRHFfSXo5Y3NhclBXWG5YLWpKWnlQaXhHSzVoLUVCdlgyZjFvMS1MWWlmUHpj0gF0QVVfeXFMT1dGNnF4dHVwVGNqTTF1aGszbW5PcWxpeTJCSmIzRWt5NTBNUFVUTndvSFJhMHJTdXVGcHNVcHBvUnNzS2N1ZV9LSGpscy1BZlN1dkJPOWFqcV9fSnBCU3JJLW9VbUJqWExRTk52STByc3RkT2k?oc=5"
     },
     {
-      "id": "scraped-1787295600000-i9w47",
+      "id": "scraped-1787295600000-tqwcg",
       "title": "“집값만 문제가 아니었다”… 내 집 마련 발목 잡는 대출 규제 - 네이버페이 머니스토리",
       "summary": "“집값만 문제가 아니었다”… 내 집 마련 발목 잡는 대출 규제  네이버페이 머니스토리...",
       "source": "네이버페이 머니스토리",
@@ -222,7 +222,7 @@
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBTMkx4YkJNUU1jRjRIWF9adHBJWmVxc2xHMkRXM05uWExQa0h0NFluQzZWVmZzWEtObklETWVoY0tNWndwZUw0Y1FwQ0FXM01NT2V0QVFkTzlSVzg?oc=5"
     },
     {
-      "id": "scraped-1786950000000-czshy",
+      "id": "scraped-1786950000000-rec85",
       "title": "“결혼하면 대출 손해?”... 신혼부부 ‘결혼 페널티’ 확 뜯어고친다 - 네이버페이 머니스토리",
       "summary": "“결혼하면 대출 손해?”... 신혼부부 ‘결혼 페널티’ 확 뜯어고친다  네이버페이 머니스토리...",
       "source": "네이버페이 머니스토리",
@@ -232,7 +232,7 @@
       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5vTWxic1U3c3FQRU93dFpWLTVKNjhVZ3VGeUV4VHJvUTZWUlM1VzRuUnlKT0tMNHR3MWFvaHNGUFdrcnNBSnptSloyUjVPMzFpMGc?oc=5"
     },
     {
-      "id": "scraped-1786345200000-4wghu",
+      "id": "scraped-1786345200000-cfue0",
       "title": "\"결혼했더니 대출 안돼\"…정부 '결혼 페널티' 손본다 [영상PICK] - 메트로신문",
       "summary": "\"결혼했더니 대출 안돼\"…정부 '결혼 페널티' 손본다 [영상PICK]  메트로신문...",
       "source": "메트로신문",
@@ -242,7 +242,7 @@
       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBuVU45TEJKZTFtZVgtTFJuMFVQVGl0NFZOVC1ySXhCeXpjZkFHcnRwRHN3RUtFMDdfME5nOUQ1RXR2U05DUmdKUmItVzJMYjBzMWFwZThpYXlfWjFYbzNTbw?oc=5"
     },
     {
-      "id": "scraped-1786258800000-miul6",
+      "id": "scraped-1786258800000-fb0pu",
       "title": "\"결혼 페널티 없다\" 디딤돌·보금자리·생초·신생아 대출 '문턱' 확 낮춘다 - 머니투데이 - 머니투데이",
       "summary": "\"결혼 페널티 없다\" 디딤돌·보금자리·생초·신생아 대출 '문턱' 확 낮춘다 - 머니투데이  머니투데이...",
       "source": "머니투데이",
@@ -252,7 +252,7 @@
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE52Z0YzQ0N4U0tfeGNfS3F2Qi1qb0VWR2gzdUVncDZWb0otZ21JSjFQdkx1Z0NFMmRnM1dkQXl0bU5vNm05VHhFVlRPRGtfdHlBdlotVzB2ZzlKX2R6RzV0Wk5vM25sSmtTYVRv0gFwQVVfeXFMTzVBQWd3RXloZTdaYmFOenRKalFUVFBOS3p1SHF0blNkVWl3NnFxNC1DbUhlMnBqc0VKVmdYbmlCMmtNWmdpZ0R5T1dxUTV6eVBUNHk2SjQzNEVzU2pWV05aRGk3VXhOXzVXdUoxSWt0bQ?oc=5"
     },
     {
-      "id": "scraped-1786258800000-vrdqm",
+      "id": "scraped-1786258800000-43dmq",
       "title": "李대통령 “결혼 페널티 22개”…세제·대출·청약 손질한다 - 서울경제",
       "summary": "李대통령 “결혼 페널티 22개”…세제·대출·청약 손질한다  서울경제...",
       "source": "서울경제",
@@ -262,7 +262,7 @@
       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5XdE55TkZPcTY1dUM2TUhKMWp2bFR5d2pZbUNET1FoTHRHSEtxSTFBVF93TThhYUU5b0Z2OWRGd1lLZzhIckxFaDVQMTlkaERoVHfSAVNBVV95cUxQMWNrdlRtWHhxUzE5RzZPSEVhVTdhWURZdUcxYzV6VW1FelVKSnVSZDRucnZnY0lMakxnbmpIazZQcTl5MEdta0ZmbkdKT0JySlhDbw?oc=5"
     },
     {
-      "id": "scraped-1782889200000-noxyt",
+      "id": "scraped-1782889200000-zq3he",
       "title": "지방 주담대 스트레스 DSR 또 연장… 내 대출 한도는? - KB Think",
       "summary": "지방 주담대 스트레스 DSR 또 연장… 내 대출 한도는?  KB Think...",
       "source": "KB Think",
@@ -272,7 +272,7 @@
       "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1Gbm1keEtaS0Q0eGFBOGo1dktmcnNNbHNaQi1JemRoSk0wbF9NS3lZcHhGaENyRlBHMkpmUkNoZkhFVzhFaWt0clBrYVhWUHRNOG9DV2FTMVFfc0x6UHUzaWdNRHVOUQ?oc=5"
     },
     {
-      "id": "scraped-1782802800000-flhh7",
+      "id": "scraped-1782802800000-sm4rk",
       "title": "지방 주담대, 2단계 스트레스 DSR 유지…연말까지 - 에너지경제신문",
       "summary": "지방 주담대, 2단계 스트레스 DSR 유지…연말까지  에너지경제신문...",
       "source": "에너지경제신문",
@@ -282,7 +282,7 @@
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB4UXZUS1BrcHptNTNrd3hWMnZ2S3M1YmFUN3l3WDBBbTRVSmcycjlIVUJ5Q29TR21MODFQS2ZuTm5JcEVOSTVRWE1DaWdVTXNmUktOMUdaaXpodE0?oc=5"
     },
     {
-      "id": "scraped-1781766000000-v8rgs",
+      "id": "scraped-1781766000000-k3vqg",
       "title": "지방 주담대 '3단계 스트레스 DSR' 연말까지 또 유예 - 연합뉴스",
       "summary": "지방 주담대 '3단계 스트레스 DSR' 연말까지 또 유예  연합뉴스...",
       "source": "연합뉴스",
@@ -292,7 +292,7 @@
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBwZTB2TC1zMlQ4SXRSY09JRTV3WDMtWDhEU3h4MmdnNkxHc1hMRUkzbVVjeXJxTW1fSkxIR20wM3Ruc01DajFPTlpSWFVpYWQ1RU1OdVVQakFReU3SAWBBVV95cUxQakJzeG8zdnd1ODZDMEdyUngtZllJYy1QQ3NxY1VBbi1VWDRHTTBMTWdfMGxyTS1oNFlhTm1PS2xZcDBXYUQ4ampwbWVKamdNbnNZbHQ5MjJPWHk1a21kbVY?oc=5"
     },
     {
-      "id": "scraped-1781766000000-mk3ie",
+      "id": "scraped-1781766000000-vt3i1",
       "title": "지방 주담대 ‘3단계 스트레스 DSR’ 연말까지 또 유예 - KBS 뉴스",
       "summary": "지방 주담대 ‘3단계 스트레스 DSR’ 연말까지 또 유예  KBS 뉴스...",
       "source": "KBS 뉴스",
@@ -302,7 +302,7 @@
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE14dndNTlU0bGZweUNTenhUUWJ6dC1VOGd6Z2ZNWDFrRnItX3lLZmo1NHo5SV9ScDB0a3RCWlJRdVpuYlNiM2p2X2xKR0EzOHE5ZUdBZHIxWUk0ZU0?oc=5"
     },
     {
-      "id": "scraped-1781506800000-m8rv3",
+      "id": "scraped-1781506800000-6krgr",
       "title": "[갈 길 잃은 고정금리] 한도 규제에 스트레스DSR '유명무실' - 연합인포맥스",
       "summary": "[갈 길 잃은 고정금리] 한도 규제에 스트레스DSR '유명무실'  연합인포맥스...",
       "source": "연합인포맥스",
@@ -312,7 +312,7 @@
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBocW1rQk9uU3pxZDV4YldFdjlqMVNTWXVfX1dJbTlWVy1mSzJnTTJISDBXd1kwdm5nTHNFS1FkZS1nb3BqOWtZd2ozSUtLMFRTQkk5NHh5dG9SQ0NPR3dFTm0tdy1MLS1JaXBIUXNUeXg?oc=5"
     },
     {
-      "id": "scraped-1778569200000-zgkw9",
+      "id": "scraped-1778569200000-c5qhc",
       "title": "[대출·금융] 디딤돌·보금자리론·신생아 특례 대출 완벽 비교 및 대출 영끌 전략 - 홈두부",
       "summary": "[대출·금융] 디딤돌·보금자리론·신생아 특례 대출 완벽 비교 및 대출 영끌 전략  홈두부...",
       "source": "홈두부",
@@ -322,7 +322,7 @@
       "link": "https://news.google.com/rss/articles/CBMiP0FVX3lxTE1tWlQyQ1N4Yy1Od2M2cHhBaGYtY1VEamZaNDdpWmJRcU5nLXVTendQelBNTEU4R0l3MjBpeDFmOA?oc=5"
     },
     {
-      "id": "scraped-1773644400000-3diif",
+      "id": "scraped-1773644400000-sg34f",
       "title": "[체험기] “방 한 칸 빼니 대출 뚝”…4억 신기루 된 ‘신생아 특례’ 현실 - 조세금융신문",
       "summary": "[체험기] “방 한 칸 빼니 대출 뚝”…4억 신기루 된 ‘신생아 특례’ 현실  조세금융신문...",
       "source": "조세금융신문",
