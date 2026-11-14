@@ -1,8 +1,19 @@
 {
-  "lastUpdated": "2026-11-14T01:25:42.462Z",
+  "lastUpdated": "2026-11-14T10:17:00.155Z",
   "scrapedPolicies": [
     {
-      "id": "gov-1794564970000-mjq2y",
+      "id": "gov-1794582476000-2sd9j",
+      "ministry": "금융위원회",
+      "title": "상세화면 - 자본시장정책 - 정책일반 - 정책마당 - 금융위원회",
+      "date": "2026. 11. 13.",
+      "pubTimestamp": 1794582476000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "상세화면 - 자본시장정책 - 정책일반 - 정책마당  금융위원회...",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9vSlpzcm93bjk3enR5eVhteERXZVBVaGlQaTNPMzJ2TEJpTUM1OU5JWGJvV1lDV29vYXFoTmxaRUpxMDhMdnluVU1BRU8?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1794564970000-hl6rg",
       "ministry": "정책당국",
       "title": "부안군, 청년임대주택 15세대 입주 시작 - 천지일보",
       "date": "2026. 11. 13.",
@@ -13,7 +24,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794543715000-uxjgr",
+      "id": "gov-1794543715000-aime5",
       "ministry": "정책당국",
       "title": "리더경제 전세사기 보증금 최소보장제 13일 시행…1억 5천만 원 맡겼다면 얼마 받나 https://www.leader-economy.kr/news/491060 - 유스연합",
       "date": "2026. 11. 13.",
@@ -24,7 +35,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794533992000-9vlkm",
+      "id": "gov-1794533992000-r8k49",
       "ministry": "정책당국",
       "title": "국토안전관리원, 오는 17일 국회서 '건설안전 정책토론회' 연다 - 국제뉴스",
       "date": "2026. 11. 13.",
@@ -35,18 +46,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794467769000-kv953",
-      "ministry": "정책당국",
-      "title": "한국부동산원, ‘2026년 제3차 부동산 데이터 아카데미’ 개최 - 매일일보",
-      "date": "2026. 11. 12.",
-      "pubTimestamp": 1794467769000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "한국부동산원, ‘2026년 제3차 부동산 데이터 아카데미’ 개최  매일일보...",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1KWnBieWNYZGF1d2VzV1ZmU25aeG9aRm5ZcWhSdEc3U09fUjhtUDh6TWFES1lwX2V1SGxDLVlBcE9RTmFsNHhJZUFMeTV6TFI2MWNRMElRTWNPdVJTdWNLRURZOU4?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1794453221000-afy07",
+      "id": "gov-1794453221000-qz2xk",
       "ministry": "정책당국",
       "title": "아파트 부정청약 354건 적발…위장전입, 334건으로 최다 - 대한민국 정책브리핑",
       "date": "2026. 11. 12.",
@@ -57,7 +57,18 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794375133000-r9y58",
+      "id": "gov-1794385506000-91y2c",
+      "ministry": "국토교통부",
+      "title": "허태정 대전시장, 국토부 장관에 지역 현안 건의 - 천지일보",
+      "date": "2026. 11. 11.",
+      "pubTimestamp": 1794385506000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "허태정 대전시장, 국토부 장관에 지역 현안 건의  천지일보...",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB6NjNQY05Cbm9oMk9QcE5JV291Q2Y2YTFFYU9UR1N0ODU5SXBNSWdFRUJjWWtJR1dTWnNPRE5CWkthOHcxbmNrcFdMNUtOd2JRMTZpenlFVFlia1lxRENRT2pkZkQ0Q0t0X2c?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1794375133000-oxqrj",
       "ministry": "정책당국",
       "title": "한국공인중개사협회, 제11회 부동산산업의 날 기념식 성황리 개최 - 매일일보",
       "date": "2026. 11. 11.",
@@ -68,18 +79,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794370246000-hn1fd",
-      "ministry": "정책당국",
-      "title": "가계대출 한 달 새 6.4조원 급증⋯은행권 1200조원 첫 돌파 - 포커스온경제",
-      "date": "2026. 11. 11.",
-      "pubTimestamp": 1794370246000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "가계대출 한 달 새 6.4조원 급증⋯은행권 1200조원 첫 돌파  포커스온경제...",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1QZUNjamtxcVR0UTJxcUEyTlpmVHhvRjBnWEhyUzhHc1BXZW5SQXM5SEotQW5Gd0MtOFJZUUpvUVdFX0gzTGZGQXRaZ1pub21GM1NiaHAzWGNrT0p3aEJuWg?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1794368826000-2oaq3",
+      "id": "gov-1794368826000-n0odo",
       "ministry": "정책당국",
       "title": "은행 가계대출 1200조원 첫 돌파…집단대출·주식투자에 증가폭 확대 - 아시아투데이",
       "date": "2026. 11. 11.",
@@ -90,7 +90,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794360946000-3x2j3",
+      "id": "gov-1794360946000-1nbal",
       "ministry": "정책당국",
       "title": "광명시, '신천∼하안∼신림선' 국가철도망 반영 총력…시민 설문 참여 독려 - 연합뉴스",
       "date": "2026. 11. 11.",
@@ -101,18 +101,18 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794186540000-v0o3e",
+      "id": "gov-1794271200000-o08dg",
       "ministry": "정책당국",
-      "title": "과천·분당 토허구역, 12월 31일에 풀리면 12억 집 사는 현금 1.8억 감소 — 경기 12곳 중 재지정4곳, 해제 4곳 어디가 될까? - 네이버 프리미엄콘텐츠",
-      "date": "2026. 11. 9.",
-      "pubTimestamp": 1794186540000,
+      "title": "고양창릉 S-2 지분적립형 284세대, 6.2억 집에 1.55억 내고 입주, 20년 동안 내는 돈 vs 광교 GH 모델과의 차이 - 네이버 프리미엄콘텐츠",
+      "date": "2026. 11. 10.",
+      "pubTimestamp": 1794271200000,
       "category": "최신 부동산 정책 발표",
-      "summary": "과천·분당 토허구역, 12월 31일에 풀리면 12억 집 사는 현금 1.8억 감소 — 경기 12곳 중 재지정4곳, 해제 4곳 어디가 될까?  네이버 프리미엄콘텐츠...",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9MUXJhdHdaeExqeV9tUVE5NWtlMTBKVzJyRWZFRWQ2ajR6NVN4UURrY2g0dklvVzAxT1dWVkxtNVBUWDVrT2NuMmZYN2pIRDJaVTZGTUFiTmIwTWlFUTRZWHdTQVBwa0lBWFNBY3BNeUYzTl8zcnJ4SzZJb0c?oc=5",
+      "summary": "고양창릉 S-2 지분적립형 284세대, 6.2억 집에 1.55억 내고 입주, 20년 동안 내는 돈 vs 광교 GH 모델과의 차이  네이버 프리미엄콘텐츠...",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1FZ2tnYmpxam4tb2RuUVNOaGoxLXd4am0tNnozM1owWkRzdDVIUmhiaEhYV00zbTMxVVZFTkZ5YWNLR1N4cXZ1RHpVdmk5S08zSzh6ZzVWRVB4OUkyNnRTRkZmQmtSdzZDYVMzRS1nRm5JaXpQR3ZNVEw1bUQ?oc=5",
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1778914800000-rdz3j",
+      "id": "gov-1778914800000-xjb8i",
       "ministry": "금융위원회",
       "title": "금융위 \"가계대출 증가세 안정…주담대 확대에 모니터링 강화\" - 연합뉴스",
       "date": "2026. 5. 16.",
@@ -123,7 +123,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1775631600000-9x6wz",
+      "id": "gov-1775631600000-hwty2",
       "ministry": "금융위원회",
       "title": "알림마당 - 금융위원회",
       "date": "2026. 4. 8.",
@@ -134,7 +134,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1762243200000-rpq2a",
+      "id": "gov-1762243200000-etwd5",
       "ministry": "정책당국",
       "title": "스트레스 DSR 3단계 시행, 대출 한도 얼만큼 줄었을까? - KB Think",
       "date": "2025. 11. 4.",
@@ -145,7 +145,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1747810800000-ohi41",
+      "id": "gov-1747810800000-zcim3",
       "ministry": "금융위원회",
       "title": "정책영상 - 금융위원회",
       "date": "2025. 5. 21.",
@@ -156,7 +156,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1635231600000-4c0bl",
+      "id": "gov-1635231600000-6kn9m",
       "ministry": "금융위원회",
       "title": "[보도자료] 「가계부채 관리 강화방안」발표 - 금융위원회",
       "date": "2021. 10. 26.",
