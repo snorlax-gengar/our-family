@@ -1,8 +1,19 @@
 {
-  "lastUpdated": "2026-11-18T11:33:47.917Z",
+  "lastUpdated": "2026-11-18T20:27:03.416Z",
   "scrapedPolicies": [
     {
-      "id": "gov-1794992226000-u0n6t",
+      "id": "gov-1794998105000-3auf1",
+      "ministry": "정책당국",
+      "title": "공동주택 리모델링 주민 동의율, 75%→70%로 완화 - 대한민국 정책브리핑",
+      "date": "2026. 11. 18.",
+      "pubTimestamp": 1794998105000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "공동주택 리모델링 주민 동의율, 75%→70%로 완화  대한민국 정책브리핑...",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5SZWVhSDZCTXNrdElVLTNNREdWVkRtMk00QjNZb0JSeTRZeE8xRElIdjZUUmpRX0ZYd1hNOEJuNnd4RGk2d19Ld0R4RjQ0dXJOUFFVSmhLXzVKck56YURza21GUlhub2NaUWZycA?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1794992226000-uq6bt",
       "ministry": "정책당국",
       "title": "[이슈분석] 내년 주담대 영업 서두르는 은행들…연말 ‘빚투’가 복병 - 조세금융신문",
       "date": "2026. 11. 18.",
@@ -13,18 +24,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794900400000-gyr4l",
-      "ministry": "정책당국",
-      "title": "공동주택 리모델링 주민 동의율, 75%→70%로 완화 - 대한민국 정책브리핑",
-      "date": "2026. 11. 17.",
-      "pubTimestamp": 1794900400000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "공동주택 리모델링 주민 동의율, 75%→70%로 완화  대한민국 정책브리핑...",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5SZWVhSDZCTXNrdElVLTNNREdWVkRtMk00QjNZb0JSeTRZeE8xRElIdjZUUmpRX0ZYd1hNOEJuNnd4RGk2d19Ld0R4RjQ0dXJOUFFVSmhLXzVKck56YURza21GUlhub2NaUWZycA?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1794881862000-b30q8",
+      "id": "gov-1794881862000-wm4k3",
       "ministry": "정책당국",
       "title": "서울 빌라 매매시장 얼어붙었다…3분기 거래량 29.8% 감소 - 매일일보",
       "date": "2026. 11. 17.",
@@ -35,7 +35,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794877938000-wrisk",
+      "id": "gov-1794877938000-3y4vy",
       "ministry": "정책당국",
       "title": "대출규제 비웃는 셀러·세입자 파이낸싱…금융권 밖 사금융 막을 방법 없다 - 헤럴드경제",
       "date": "2026. 11. 17.",
@@ -46,7 +46,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794582476000-9f0ek",
+      "id": "gov-1794582476000-n52ep",
       "ministry": "금융위원회",
       "title": "상세화면 - 자본시장정책 - 정책일반 - 정책마당 - 금융위원회",
       "date": "2026. 11. 13.",
@@ -57,7 +57,18 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794370246000-362pc",
+      "id": "gov-1794496803000-41br7",
+      "ministry": "정책당국",
+      "title": "뉴스후] 가계대출 반등의 실제 구조, 증시 하락에 촉발된 ‘빚투’와 집단대출 동시 실행 - 데일리연합",
+      "date": "2026. 11. 12.",
+      "pubTimestamp": 1794496803000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "뉴스후] 가계대출 반등의 실제 구조, 증시 하락에 촉발된 ‘빚투’와 집단대출 동시 실행  데일리연합...",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9tZkk2T3ZLSzkwM3lPd3V5RGhHNlRCNWtpa3NRTkVaUkN3N2xFekNQQlJia002a1lZazhidlhKa1hKUV83a1VoQ01UNkxkWkFUZUVRV0dqOVE2TlE?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1794370246000-6dzh9",
       "ministry": "정책당국",
       "title": "가계대출 한 달 새 6.4조원 급증⋯은행권 1200조원 첫 돌파 - 포커스온경제",
       "date": "2026. 11. 11.",
@@ -68,7 +79,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1775631600000-iex1l",
+      "id": "gov-1775631600000-77gvb",
       "ministry": "금융위원회",
       "title": "알림마당 - 금융위원회",
       "date": "2026. 4. 8.",
@@ -79,7 +90,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1760511600000-5pxhm",
+      "id": "gov-1760511600000-noetn",
       "ministry": "정책당국",
       "title": "서울 전역·경기 12곳 투기과열지구·토지거래허가구역 지정 - 대한민국 정책브리핑",
       "date": "2025. 10. 15.",
@@ -87,6 +98,17 @@
       "category": "최신 부동산 정책 발표",
       "summary": "서울 전역·경기 12곳 투기과열지구·토지거래허가구역 지정  대한민국 정책브리핑...",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBTcTlTTVdLZVpwTGl6ZkU0UEN2eTROUE5vXzNWMzM1amd4VlpwNTkxSi1zNVVBTXZZX1Qwd0dPTFdXaC1HaEVqdF9feVFkQ1g4RlY4eTU0X2pIM0U3eDdQaFJmaVNTNGU4TXZzaw?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1635231600000-kopg8",
+      "ministry": "금융위원회",
+      "title": "[보도자료] 「가계부채 관리 강화방안」발표 - 금융위원회",
+      "date": "2021. 10. 26.",
+      "pubTimestamp": 1635231600000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "[보도자료] 「가계부채 관리 강화방안」발표  금융위원회...",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5aSGZiUEFSbjE0ZE9iQmJkNTVvc0JNQ2haeHQxdzZKZjU0V0JNVGkycVNXRklxbUdFSk1WMXY1cTI1MEVEUk5zSnJSbHQ?oc=5",
       "status": "실시간 수집"
     },
     {
@@ -98,17 +120,6 @@
       "category": "최신 부동산 정책 발표",
       "summary": "정책영상  금융위원회...",
       "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeXJQd2NYT1lQTjY0TXRPQ0hrQW5KWVhCYUw5TzlMQUhTenN2SkNWVGplUFJSeHg5c3B5UW5fRW1vSEVlbTIxYlZkRk93T09XZGhJVVAybmJsbnBYMmM2UE5ZY202NFpqUDlnNnlxWGRwelRjT0hkX2Fobk1RcVJBemx2X0NfSEpnRzZNd3Qyc25yOUItYzUxZVVaSk44LU1a?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1635231600000-5e3r5",
-      "ministry": "금융위원회",
-      "title": "[보도자료] 「가계부채 관리 강화방안」발표 - 금융위원회",
-      "date": "2021. 10. 26.",
-      "pubTimestamp": 1635231600000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "[보도자료] 「가계부채 관리 강화방안」발표  금융위원회...",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5aSGZiUEFSbjE0ZE9iQmJkNTVvc0JNQ2haeHQxdzZKZjU0V0JNVGkycVNXRklxbUdFSk1WMXY1cTI1MEVEUk5zSnJSbHQ?oc=5",
       "status": "실시간 수집"
     },
     {
@@ -153,17 +164,6 @@
       "category": "최신 부동산 정책 발표",
       "summary": "포천시, 지티엑스-지(GTX-G) 노선 제5차 국가철도망 구축계획 반영 촉구  연합뉴스...",
       "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0yaFJNVlVReVdFQjRJQ2IxV1Rrd1U3YmFhV2RwS3UzQUhMZkVIR2VoT1BIR0tFQmJvV19JWFU0OEFRellUOVZFWmNiemR6MjFoWWRfRmsyZFJEUTQ?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1794797400000-mfcmj",
-      "ministry": "정책당국",
-      "title": "고흥군, '우주선철도 국가계획 반영' 총력전···서울 현장 달궜다! - 이뉴스투데이",
-      "date": "2026. 11. 16.",
-      "pubTimestamp": 1794797400000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "고흥군, '우주선철도 국가계획 반영' 총력전···서울 현장 달궜다!  이뉴스투데이...",
-      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE03RTFPTHh1QkxCUEVhbVJaMlVXMUVTcmx6enNwT0RfWjM2bEhqTHU5VUs3TldiVlNpbzBlSE1tNXh4aTBlLTd6clVmUzJvbXBsR3RKclpha0tlYy1WaDdoX3lpaVZ6THRCWlpCVW0yZ2bSAXRBVV95cUxQaGx0ZTVBaWo3RGZOYTZJT2dscWdVeXpTLUc3djJkdjhkejRKOTFoY1dKaGs5QU5JQ2ZSMldySXNQN2hyVU9DMmxubjVjeEphbnBjWmNrRE1ZNHd5UkVfUTc4QlNncFU0T0xycU9yblEtVFptYg?oc=5",
       "status": "실시간 수집"
     }
   ]
