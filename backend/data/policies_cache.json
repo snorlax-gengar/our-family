@@ -1,8 +1,19 @@
 {
-  "lastUpdated": "2026-11-19T11:32:07.292Z",
+  "lastUpdated": "2026-11-19T20:30:09.713Z",
   "scrapedPolicies": [
     {
-      "id": "gov-1795083185000-ls89e",
+      "id": "gov-1795099798000-trrt9",
+      "ministry": "국토교통부",
+      "title": "서초구, 재건축부담금 부과기한 국토부 회신에 유감…“제도 폐지 지속 건의” - 제이앤엠뉴스",
+      "date": "2026. 11. 19.",
+      "pubTimestamp": 1795099798000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "서초구, 재건축부담금 부과기한 국토부 회신에 유감…“제도 폐지 지속 건의”  제이앤엠뉴스...",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5HOTFCaEdVenVQczc4Tk5RRTA2VjV2ZzhjMGdtUXlOUlk2aXRGeUdERzNMekk5YmRzV1dSUy1pS0l1V0tEM0VGWUQzVlV1UVlCWVJNaFFrZmRYck5VWWZyRQ?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1795083185000-ckxli",
       "ministry": "정책당국",
       "title": "주택법 시행령 개정, 리모델링 동의율 70%로 - 뉴스앤넷",
       "date": "2026. 11. 19.",
@@ -13,29 +24,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1795075320000-7j4ou",
-      "ministry": "정책당국",
-      "title": "집 크기부터 안전까지 다시 따진다...최저주거기준 15년 만에 개정 논의 - www.ppss.kr",
-      "date": "2026. 11. 19.",
-      "pubTimestamp": 1795075320000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "집 크기부터 안전까지 다시 따진다...최저주거기준 15년 만에 개정 논의  www.ppss.kr...",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBWVi1DY1hvbmlvVy1XaUV0aXZUTHIyalBwYlRhLTNvLWtOeXdka2dCaE95SW1JdWZYV0UzWXhGbUJBRXNZc29OYl9iRnFuaWpvbWFFNFlaSDVoY1d2YzhULXc4Nk0?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1795074944000-9nhmx",
-      "ministry": "국토교통부",
-      "title": "국토부 ‘재초환 부과기한 연장 불가’…반포현대 연내 부과 예정 - 매일일보",
-      "date": "2026. 11. 19.",
-      "pubTimestamp": 1795074944000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "국토부 ‘재초환 부과기한 연장 불가’…반포현대 연내 부과 예정  매일일보...",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBFQ0d3WlliRDByakFKT3NlMVJ1RGlMU2dLWkZWQVZqUE50MXM3WFdvdTRsR2QzTzRtaE1PaVFydWYyVXl2TkZRaWdRNF85ZDU4OHROTXVJZUoxNHh3QTZ4YUNHbnQ?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1795066776000-pird9",
+      "id": "gov-1795066776000-sac4k",
       "ministry": "국토교통부",
       "title": "국토부, '재초환 부과 기한 연장 불가' 서초구 의견 수용...반포현대 연내 부과 전망 - 파이낸셜뉴스",
       "date": "2026. 11. 19.",
@@ -46,7 +35,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1795054962000-38c8p",
+      "id": "gov-1795054962000-68f5w",
       "ministry": "정책당국",
       "title": "최소 주거면적부터 안전 기준까지…주거복지 정책 논의 : 부동산 - 재경일보",
       "date": "2026. 11. 19.",
@@ -57,7 +46,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1795043513000-9dqvg",
+      "id": "gov-1795043513000-ta2wj",
       "ministry": "정책당국",
       "title": "양천구, 월촌경로당 그린리모델링 마치고 재개장 - 핀포인트뉴스",
       "date": "2026. 11. 18.",
@@ -68,7 +57,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794998105000-l7xx8",
+      "id": "gov-1794998105000-70eee",
       "ministry": "정책당국",
       "title": "공동주택 리모델링 주민 동의율, 75%→70%로 완화 - 대한민국 정책브리핑",
       "date": "2026. 11. 18.",
@@ -79,7 +68,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794992226000-tokfj",
+      "id": "gov-1794992226000-maa99",
       "ministry": "정책당국",
       "title": "[이슈분석] 내년 주담대 영업 서두르는 은행들…연말 ‘빚투’가 복병 - 조세금융신문",
       "date": "2026. 11. 18.",
@@ -90,7 +79,18 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794877938000-zlmux",
+      "id": "gov-1794968538000-87bd0",
+      "ministry": "국토교통부",
+      "title": "인사말하는 홍지선 국토교통부 장관 - 뉴스1",
+      "date": "2026. 11. 18.",
+      "pubTimestamp": 1794968538000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "인사말하는 홍지선 국토교통부 장관  뉴스1...",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5vZTZaQnZyS2ZaalFxM0JJUmpZMVFNUzd5QVR0S2s2REgyNm1yNG1yVjNSdEtBalNWdmRmbFotY0MxajRFR01rTG5oWQ?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1794877938000-o1dd8",
       "ministry": "정책당국",
       "title": "대출규제 비웃는 셀러·세입자 파이낸싱…금융권 밖 사금융 막을 방법 없다 - 헤럴드경제",
       "date": "2026. 11. 17.",
@@ -101,7 +101,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794582476000-mg241",
+      "id": "gov-1794582476000-lts32",
       "ministry": "금융위원회",
       "title": "상세화면 - 자본시장정책 - 정책일반 - 정책마당 - 금융위원회",
       "date": "2026. 11. 13.",
@@ -112,7 +112,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1775631600000-b1kmi",
+      "id": "gov-1775631600000-4vd6v",
       "ministry": "금융위원회",
       "title": "알림마당 - 금융위원회",
       "date": "2026. 4. 8.",
@@ -123,7 +123,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1760511600000-v8x1m",
+      "id": "gov-1760511600000-2x8yf",
       "ministry": "정책당국",
       "title": "서울 전역·경기 12곳 투기과열지구·토지거래허가구역 지정 - 대한민국 정책브리핑",
       "date": "2025. 10. 15.",
@@ -134,7 +134,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1699430400000-w4yv6",
+      "id": "gov-1699430400000-8dziw",
       "ministry": "정책당국",
       "title": "가계대출 고금리 차주 중도상환수수료 한시 면제 추진 - 매일경제 마켓",
       "date": "2023. 11. 8.",
@@ -145,7 +145,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1699430400000-iolqw",
+      "id": "gov-1699430400000-419fh",
       "ministry": "정책당국",
       "title": "가계부채 증가에 금융당국 방어전…\"그 어느때보다 안정적\"(종합) - 매일경제 마켓",
       "date": "2023. 11. 8.",
@@ -156,7 +156,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1635231600000-rujqg",
+      "id": "gov-1635231600000-u4h78",
       "ministry": "금융위원회",
       "title": "[보도자료] 「가계부채 관리 강화방안」발표 - 금융위원회",
       "date": "2021. 10. 26.",
