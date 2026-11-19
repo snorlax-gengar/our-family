@@ -1,19 +1,63 @@
 {
-  "lastUpdated": "2026-11-19T02:31:22.651Z",
+  "lastUpdated": "2026-11-19T11:32:07.292Z",
   "scrapedPolicies": [
     {
-      "id": "gov-1795048825000-us1rd",
-      "ministry": "국토교통부",
-      "title": "이혜훈 ‘래미안원펜타스’ 부정청약 의혹…국토부, 등기 제한·계약 취소 요청 - 키즈맘",
+      "id": "gov-1795083185000-ls89e",
+      "ministry": "정책당국",
+      "title": "주택법 시행령 개정, 리모델링 동의율 70%로 - 뉴스앤넷",
       "date": "2026. 11. 19.",
-      "pubTimestamp": 1795048825000,
+      "pubTimestamp": 1795083185000,
       "category": "최신 부동산 정책 발표",
-      "summary": "이혜훈 ‘래미안원펜타스’ 부정청약 의혹…국토부, 등기 제한·계약 취소 요청  키즈맘...",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFA3NUxFTWdJUUdIQ19HTmdLdjR2WXFBdzlibU9UbGNobnhFdmxfaE13MW5OaWNPMEtOelc1VFpQSnFMS09qY3R0ZkotVFZrRkdqODNFdmw4dUgxdklBbkpmam9pRlZIbkV1?oc=5",
+      "summary": "주택법 시행령 개정, 리모델링 동의율 70%로  뉴스앤넷...",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBaMlVpa0llbHZfQzFaYXZBNHh0MDNrX1NLbVg4VW9mN3hhdjBGUnBnMEs5YldmbEZsZngtYlZJTU9RX2x4dkNCeXJpZW5XNW10amtkX2xSbkpyaFNTZFZ6dTFXX29DdEVuaEE?oc=5",
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1795043513000-7xziq",
+      "id": "gov-1795075320000-7j4ou",
+      "ministry": "정책당국",
+      "title": "집 크기부터 안전까지 다시 따진다...최저주거기준 15년 만에 개정 논의 - www.ppss.kr",
+      "date": "2026. 11. 19.",
+      "pubTimestamp": 1795075320000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "집 크기부터 안전까지 다시 따진다...최저주거기준 15년 만에 개정 논의  www.ppss.kr...",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBWVi1DY1hvbmlvVy1XaUV0aXZUTHIyalBwYlRhLTNvLWtOeXdka2dCaE95SW1JdWZYV0UzWXhGbUJBRXNZc29OYl9iRnFuaWpvbWFFNFlaSDVoY1d2YzhULXc4Nk0?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1795074944000-9nhmx",
+      "ministry": "국토교통부",
+      "title": "국토부 ‘재초환 부과기한 연장 불가’…반포현대 연내 부과 예정 - 매일일보",
+      "date": "2026. 11. 19.",
+      "pubTimestamp": 1795074944000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "국토부 ‘재초환 부과기한 연장 불가’…반포현대 연내 부과 예정  매일일보...",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBFQ0d3WlliRDByakFKT3NlMVJ1RGlMU2dLWkZWQVZqUE50MXM3WFdvdTRsR2QzTzRtaE1PaVFydWYyVXl2TkZRaWdRNF85ZDU4OHROTXVJZUoxNHh3QTZ4YUNHbnQ?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1795066776000-pird9",
+      "ministry": "국토교통부",
+      "title": "국토부, '재초환 부과 기한 연장 불가' 서초구 의견 수용...반포현대 연내 부과 전망 - 파이낸셜뉴스",
+      "date": "2026. 11. 19.",
+      "pubTimestamp": 1795066776000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "국토부, '재초환 부과 기한 연장 불가' 서초구 의견 수용...반포현대 연내 부과 전망  파이낸셜뉴스...",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1lMmprdkowMDJrWUprY3JRWmFOTVN0Y093VEE2Z1dJdno4bnF0TUZmNFhPUm81ZmJxelA4dXNDOEhtVmlxZnRSZ3BwQnF0c0d4OENCWWFuNS1mdw?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1795054962000-38c8p",
+      "ministry": "정책당국",
+      "title": "최소 주거면적부터 안전 기준까지…주거복지 정책 논의 : 부동산 - 재경일보",
+      "date": "2026. 11. 19.",
+      "pubTimestamp": 1795054962000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "최소 주거면적부터 안전 기준까지…주거복지 정책 논의 : 부동산  재경일보...",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9WZENRdlRpbXZsNV9PaEIwSFVaWDRYYUFJYWpDaU1sT1FqOUtCcExmTmVYcmVpZS1PNFRnODVIX1NPdWVzbVB3RS1sbw?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1795043513000-9dqvg",
       "ministry": "정책당국",
       "title": "양천구, 월촌경로당 그린리모델링 마치고 재개장 - 핀포인트뉴스",
       "date": "2026. 11. 18.",
@@ -24,7 +68,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794998105000-69z3z",
+      "id": "gov-1794998105000-l7xx8",
       "ministry": "정책당국",
       "title": "공동주택 리모델링 주민 동의율, 75%→70%로 완화 - 대한민국 정책브리핑",
       "date": "2026. 11. 18.",
@@ -35,7 +79,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794992226000-axj5b",
+      "id": "gov-1794992226000-tokfj",
       "ministry": "정책당국",
       "title": "[이슈분석] 내년 주담대 영업 서두르는 은행들…연말 ‘빚투’가 복병 - 조세금융신문",
       "date": "2026. 11. 18.",
@@ -46,7 +90,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794877938000-k153z",
+      "id": "gov-1794877938000-zlmux",
       "ministry": "정책당국",
       "title": "대출규제 비웃는 셀러·세입자 파이낸싱…금융권 밖 사금융 막을 방법 없다 - 헤럴드경제",
       "date": "2026. 11. 17.",
@@ -57,7 +101,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794582476000-nlgy5",
+      "id": "gov-1794582476000-mg241",
       "ministry": "금융위원회",
       "title": "상세화면 - 자본시장정책 - 정책일반 - 정책마당 - 금융위원회",
       "date": "2026. 11. 13.",
@@ -68,29 +112,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1794496803000-aw9cu",
-      "ministry": "정책당국",
-      "title": "뉴스후] 가계대출 반등의 실제 구조, 증시 하락에 촉발된 ‘빚투’와 집단대출 동시 실행 - 데일리연합",
-      "date": "2026. 11. 12.",
-      "pubTimestamp": 1794496803000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "뉴스후] 가계대출 반등의 실제 구조, 증시 하락에 촉발된 ‘빚투’와 집단대출 동시 실행  데일리연합...",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9tZkk2T3ZLSzkwM3lPd3V5RGhHNlRCNWtpa3NRTkVaUkN3N2xFekNQQlJia002a1lZazhidlhKa1hKUV83a1VoQ01UNkxkWkFUZUVRV0dqOVE2TlE?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1794370246000-nd0hm",
-      "ministry": "정책당국",
-      "title": "가계대출 한 달 새 6.4조원 급증⋯은행권 1200조원 첫 돌파 - 포커스온경제",
-      "date": "2026. 11. 11.",
-      "pubTimestamp": 1794370246000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "가계대출 한 달 새 6.4조원 급증⋯은행권 1200조원 첫 돌파  포커스온경제...",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1QZUNjamtxcVR0UTJxcUEyTlpmVHhvRjBnWEhyUzhHc1BXZW5SQXM5SEotQW5Gd0MtOFJZUUpvUVdFX0gzTGZGQXRaZ1pub21GM1NiaHAzWGNrT0p3aEJuWg?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1775631600000-pbelz",
+      "id": "gov-1775631600000-b1kmi",
       "ministry": "금융위원회",
       "title": "알림마당 - 금융위원회",
       "date": "2026. 4. 8.",
@@ -101,7 +123,7 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1760511600000-fzgcm",
+      "id": "gov-1760511600000-v8x1m",
       "ministry": "정책당국",
       "title": "서울 전역·경기 12곳 투기과열지구·토지거래허가구역 지정 - 대한민국 정책브리핑",
       "date": "2025. 10. 15.",
@@ -112,7 +134,29 @@
       "status": "실시간 수집"
     },
     {
-      "id": "gov-1635231600000-en7jc",
+      "id": "gov-1699430400000-w4yv6",
+      "ministry": "정책당국",
+      "title": "가계대출 고금리 차주 중도상환수수료 한시 면제 추진 - 매일경제 마켓",
+      "date": "2023. 11. 8.",
+      "pubTimestamp": 1699430400000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "가계대출 고금리 차주 중도상환수수료 한시 면제 추진  매일경제 마켓...",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9QdWZYZFJpbTdGVDM2ZjBjbnlXQmE5V1dBRnk1VGJVLXgxUC0zS2lBaHJ5bGFlX1ZnQkR4bnpCWGI5UTc1cGJKQlFIaXBpcnU2?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1699430400000-iolqw",
+      "ministry": "정책당국",
+      "title": "가계부채 증가에 금융당국 방어전…\"그 어느때보다 안정적\"(종합) - 매일경제 마켓",
+      "date": "2023. 11. 8.",
+      "pubTimestamp": 1699430400000,
+      "category": "최신 부동산 정책 발표",
+      "summary": "가계부채 증가에 금융당국 방어전…\"그 어느때보다 안정적\"(종합)  매일경제 마켓...",
+      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9DejZoWXhyRWhyMHdMbGh6LUQyU2xFdWQ1aS1sWi1hek9ycEN0WWhuREpfNTFpb0llb2dkWjhTQjFmV0E4V0diamdwSXVFTUdK?oc=5",
+      "status": "실시간 수집"
+    },
+    {
+      "id": "gov-1635231600000-rujqg",
       "ministry": "금융위원회",
       "title": "[보도자료] 「가계부채 관리 강화방안」발표 - 금융위원회",
       "date": "2021. 10. 26.",
@@ -120,50 +164,6 @@
       "category": "최신 부동산 정책 발표",
       "summary": "[보도자료] 「가계부채 관리 강화방안」발표  금융위원회...",
       "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5aSGZiUEFSbjE0ZE9iQmJkNTVvc0JNQ2haeHQxdzZKZjU0V0JNVGkycVNXRklxbUdFSk1WMXY1cTI1MEVEUk5zSnJSbHQ?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1571036400000-8tekg",
-      "ministry": "정책당국",
-      "title": "부동산 정책 - 대한민국 정책브리핑",
-      "date": "2019. 10. 14.",
-      "pubTimestamp": 1571036400000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "부동산 정책  대한민국 정책브리핑...",
-      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4tc195TDhMOEhEVzNtN281eEl4bjhQdkp0eDB2QjRRdGRfV3VqRTF4UE5hUFA4TjRZcjJRMHEyZ3pNdm9Td3dDaGFsM1FSTXVOdktUM05vNy1lOVBaSXFrdE9QSWJtbjd6WkkzVHA1X3VHQi1PcHln?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1794881862000-wm4k3",
-      "ministry": "정책당국",
-      "title": "서울 빌라 매매시장 얼어붙었다…3분기 거래량 29.8% 감소 - 매일일보",
-      "date": "2026. 11. 17.",
-      "pubTimestamp": 1794881862000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "서울 빌라 매매시장 얼어붙었다…3분기 거래량 29.8% 감소  매일일보...",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE4xTUd3UHY3VHVzZm5HZlJQbTA0V3FMWW5HaC1PNEtiT051S3VELXZNaWZJVU1hSU52VXlpTmxtQVRJNHNsSW5NYnNCTGpnTUJoRGZ6TWpMZjN4WEhsNXN3c1JhN0s?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1747810800000-rzbh3",
-      "ministry": "금융위원회",
-      "title": "정책영상 - 금융위원회",
-      "date": "2025. 5. 21.",
-      "pubTimestamp": 1747810800000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "정책영상  금융위원회...",
-      "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeXJQd2NYT1lQTjY0TXRPQ0hrQW5KWVhCYUw5TzlMQUhTenN2SkNWVGplUFJSeHg5c3B5UW5fRW1vSEVlbTIxYlZkRk93T09XZGhJVVAybmJsbnBYMmM2UE5ZY202NFpqUDlnNnlxWGRwelRjT0hkX2Fobk1RcVJBemx2X0NfSEpnRzZNd3Qyc25yOUItYzUxZVVaSk44LU1a?oc=5",
-      "status": "실시간 수집"
-    },
-    {
-      "id": "gov-1794911275000-fdiqu",
-      "ministry": "국토교통부",
-      "title": "국토부, 공동주택 리모델링 동의율 70%로 완화…한국부동산원 검토기관 추가 - 한국사회복지저널",
-      "date": "2026. 11. 17.",
-      "pubTimestamp": 1794911275000,
-      "category": "최신 부동산 정책 발표",
-      "summary": "국토부, 공동주택 리모델링 동의율 70%로 완화…한국부동산원 검토기관 추가  한국사회복지저널...",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBMbElaVUNuVndIZkV4UVhlQlBiOGZKQW9hM1BvaGhZSjJwLUh6UWZLSC10UHBZcHR6RUtyUUZnUVpFVGhqT2N0b3ZlNFh3TzNrcUdPcTdmeEVELXNrV0gwNmtpT0hMTWk5bnI4?oc=5",
       "status": "실시간 수집"
     }
   ]
